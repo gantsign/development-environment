@@ -40,6 +40,9 @@ Vagrant.configure(2) do |config|
   # config.vm.synced_folder "../data", "/vagrant_data"
 
   config.vm.provider "virtualbox" do |vb|
+    # Give the VM a name
+    vb.name = "development-environment"
+
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
 
