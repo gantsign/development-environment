@@ -224,3 +224,6 @@ local.properties
 
 ### Vagrant ###
 .vagrant/
+
+# Ignore Vagrant customization file
+Customfile

@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+vagrant_dir = File.expand_path(File.dirname(__FILE__))
+
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
@@ -56,6 +58,15 @@ Vagrant.configure(2) do |config|
     # Enable host desktop integration
     vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
     vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
+  end
+
+  # Customfile
+  #
+  # Use this to insert your own (and possibly rewrite) Vagrant config lines.
+  # If a file 'Customfile' exists in the same directory as this Vagrantfile,
+  # it will be evaluated as ruby inline as it loads.
+  if File.exists?(File.join(vagrant_dir,'Customfile')) then
+    eval(IO.read(File.join(vagrant_dir,'Customfile')), binding)
   end
 
   # View the documentation for the provider you are using for more

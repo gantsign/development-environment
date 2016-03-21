@@ -1,0 +1,9 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Rename to Customfile to override Vagrant configuration
+
+# For example the following will increase the RAM to 8 GB:
+# config.vm.provider "virtualbox" do |vb|
+#   vb.memory = 8192
+# end
