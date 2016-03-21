@@ -1,5 +1,4 @@
-
-# Created by https://www.gitignore.io/api/windows,linux,osx,vim,emacs,intellij,eclipse
+# Created by https://www.gitignore.io/api/windows,linux,osx,vim,emacs,intellij,eclipse,vagrant
 
 ### Windows ###
 # Windows image file caches
@@ -221,3 +220,7 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+
+### Vagrant ###
+.vagrant/

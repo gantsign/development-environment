@@ -16,6 +16,7 @@
 *.xhtml text
 *.js text
 *.css text
+Vagrantfile text
 
 # Declare files that will always have CRLF line endings on checkout.
 *.bat text eol=crlf
