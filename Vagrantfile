@@ -82,6 +82,14 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
+  # Install the vagrant-cachier if you want to speed up rebuilds at the cost
+  # of some disk space.
+  if Vagrant.has_plugin?("vagrant-cachier")
+    # Configure cached packages to be shared between instances of the same base
+    # box. More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
+    config.cache.scope = :box
+  end
+
   # Install Ansible 1.9.2 through Ubuntu package (Vagrant auto-install tries to
   # install Ansible 2.0, which doesn't work with Vagrant 1.8.1)
   config.vm.provision "shell", inline: <<-SHELL
