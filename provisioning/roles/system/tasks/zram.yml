@@ -1,0 +1,5 @@
+---
+- name: install linux-generic
+  apt: name=linux-generic state=present
+- name: install zram-config
+  apt: name=zram-config state=present

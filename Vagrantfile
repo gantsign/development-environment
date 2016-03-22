@@ -1,6 +1,17 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+required_plugins = %w( vagrant-reload )
+plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
+if not plugins_to_install.empty?
+  puts "Installing plugins: #{plugins_to_install.join(' ')}"
+  if system "vagrant plugin install #{plugins_to_install.join(' ')}"
+    exec "vagrant #{ARGV.join(' ')}"
+  else
+    abort "Installation of one or more plugins has failed. Aborting."
+  end
+end
+
 vagrant_dir = File.expand_path(File.dirname(__FILE__))
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
@@ -110,5 +121,8 @@ Vagrant.configure(2) do |config|
       ansible.sudo = true
     end
   end
+
+  # Restart the VM after everything is installed
+  config.vm.provision :reload
 
 end
