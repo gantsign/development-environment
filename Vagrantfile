@@ -1,9 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# ansible_local requires version >= 1.8.0
-Vagrant.require_version ">= 1.8.0"
-
 vagrant_dir = File.expand_path(File.dirname(__FILE__))
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
@@ -90,15 +87,28 @@ Vagrant.configure(2) do |config|
     config.cache.scope = :box
   end
 
-  # Install Ansible 1.9.2 through Ubuntu package (Vagrant auto-install tries to
-  # install Ansible 2.0, which doesn't work with Vagrant 1.8.1)
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y --no-install-recommends ansible
-  SHELL
-
-  # Run Ansible from the Vagrant VM
-  config.vm.provision "ansible_local" do |ansible|
-    ansible.playbook = "provisioning/playbook.yml"
+  # TODO remove when ansible_local provisioner is stable on
+  # Windows (Vagrant 1.8.2?)
+  # Use rbconfig to determine if we're on a windows host or not.
+  require 'rbconfig'
+  is_windows = (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/)
+  if is_windows
+    # Install Ansible 1.9.2 through Ubuntu package
+    config.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get -qq update
+      sudo apt-get -qq install -y --no-install-recommends ansible
+    SHELL
+    # Provisioning configuration for shell script.
+    config.vm.provision "shell" do |sh|
+      sh.path = "provisioning/JJG-Ansible-Windows/windows.sh"
+      sh.args = "provisioning/playbook.yml"
+    end
+  else
+    # Provisioning configuration for Ansible (for Mac/Linux hosts).
+    config.vm.provision "ansible" do |ansible|
+      ansible.playbook = "provisioning/playbook.yml"
+      ansible.sudo = true
+    end
   end
+
 end
