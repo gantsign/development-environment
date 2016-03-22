@@ -1,6 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# ansible_local requires version >= 1.8.0
+Vagrant.require_version ">= 1.8.0"
+
 vagrant_dir = File.expand_path(File.dirname(__FILE__))
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
@@ -79,11 +82,15 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
-  # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   sudo apt-get update
-  #   sudo apt-get install -y apache2
-  # SHELL
+  # Install Ansible 1.9.2 through Ubuntu package (Vagrant auto-install tries to
+  # install Ansible 2.0, which doesn't work with Vagrant 1.8.1)
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo apt-get install -y --no-install-recommends ansible
+  SHELL
+
+  # Run Ansible from the Vagrant VM
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
 end
