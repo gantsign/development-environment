@@ -6,6 +6,7 @@
       apt: update_cache=yes
   roles:
     - system
+    - common-cli
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant

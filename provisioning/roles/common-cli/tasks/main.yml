@@ -1,0 +1,13 @@
+---
+- name: install common command line tools
+  apt: name={{ item }} state=present
+  with_items:
+    - curl
+    - glances
+    - grc
+    - htop
+    - mtr
+    - multitail
+    - silversearcher-ag
+    - tree
+    - wget
