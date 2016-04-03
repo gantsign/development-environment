@@ -5,6 +5,9 @@
     - name: update apt cache
       apt: update_cache=yes
   roles:
+    - role: keyboard
+      model: pc105
+      layout: gb
     - system
     - common-cli
     - role: angstwad.docker_ubuntu

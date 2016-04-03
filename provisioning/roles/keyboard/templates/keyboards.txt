@@ -1,0 +1,5 @@
+XKBMODEL="{{model}}"
+XKBLAYOUT="{{layout}}"
+XKBVARIANT="{{variant}}"
+XKBOPTIONS="{{options}}"
+BACKSPACE="{{backspace}}"
