@@ -5,6 +5,13 @@
     - name: update apt cache
       apt: update_cache=yes
   roles:
+    - role: unison
+      includeDirectories:
+        - .ssh
+      includeFiles:
+        - .bash_history
+      ignorePaths:
+        - Path .ssh/authorized_keys
     - role: keyboard
       model: pc105
       layout: gb

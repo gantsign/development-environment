@@ -1,0 +1,42 @@
+# Unison preferences
+label = Mirror home directory
+root = /home/vagrant
+root = /vagrant/home
+
+# Paths to mirror
+{% for includeFile in includeFiles %}
+path = {{includeFile}}
+{% endfor %}
+{% for includeDirectorie in includeDirectories %}
+path = {{includeDirectorie}}
+{% endfor %}
+
+# Paths to ignore
+{% for ignorePath in ignorePaths %}
+ignore = {{ignorePath}}
+{% endfor %}
+
+# Paths to protect
+nodeletionpartial = BelowPath .ssh -> /home/vagrant
+noupdatepartial = Path .ssh/authorized_keys -> /home/vagrant
+
+# Make it work with limitations of Windows file system
+fat = true
+
+# Don't ask for confirmation for non-conflicting files
+auto=true
+
+# Don't ask for conflicting files (conflicts will be resolved using the "prefer" configuration below)
+batch=true
+
+# Don't prompt when emptying directories
+confirmbigdel=false
+
+# Resolve conflicts by selecting the newer file
+prefer=newer
+
+# Compare date and length rather than file contents
+fastcheck=true
+
+# Synchronize modification times
+times=true

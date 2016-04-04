@@ -1,0 +1,34 @@
+---
+- name: add unison ppa
+  apt_repository: repo='ppa:john-freeman/unison'
+- name: install unison
+  apt: name=unison state=present
+- name: write unison systemd configration
+  template: src=unison.service dest=/etc/systemd/system/unison.service
+- name: create vagrant .unison directory
+  file: path=/home/vagrant/.unison/ state=directory owner=vagrant group=vagrant
+- name: write unison vagrant profile
+  template: src=vagrant.prf dest=/home/vagrant/.unison/vagrant.prf owner=vagrant group=vagrant
+- name: sync missing files from host to client
+  command: /usr/bin/unison vagrant -nodeletion=/home/vagrant -noupdate=/home/vagrant -prefer=/vagrant/home -ignorearchives
+  become: yes
+  become_method: sudo
+  become_user: vagrant
+- name: create missing includeDirectories
+  file: path=/home/vagrant/{{ item }} state=directory owner=vagrant group=vagrant
+  with_items: "{{includeDirectories}}"
+- name: create missing includeFiles
+  copy: content="" dest=/home/vagrant/{{ item }} owner=vagrant group=vagrant
+  with_items: "{{includeFiles}}"
+- name: sync missing files from client to host
+  command: /usr/bin/unison vagrant -nodeletion=/vagrant/home -noupdate=/vagrant/home -prefer=/home/vagrant -ignorearchives
+  become: yes
+  become_method: sudo
+  become_user: vagrant
+- name: sync file changes from host to client
+  command: /usr/bin/unison vagrant -prefer=/vagrant/home -nodeletion=/home/vagrant -ignorearchives
+  become: yes
+  become_method: sudo
+  become_user: vagrant
+- name: add unison service to default run level and start
+  service: name=unison enabled=yes state=started
