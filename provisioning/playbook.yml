@@ -11,6 +11,7 @@
       includeFiles:
         - .bash_history
         - .zsh_history
+        - .gitconfig
       ignorePaths:
         - Path .ssh/authorized_keys
     - role: keyboard
@@ -18,6 +19,15 @@
       layout: gb
     - system
     - common-cli
+    - role: franklinkim.git
+      git_config:
+        core:
+          autocrlf: input
+        alias:
+          ls: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate'
+          ll: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
+          lds: 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
+          rom: 'rebase origin/master'
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant
@@ -28,4 +38,4 @@
           authorized_keys: []
           oh_my_zsh:
             theme: robbyrussell
-            plugins: command-not-found docker
+            plugins: command-not-found docker git
