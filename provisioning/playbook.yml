@@ -28,4 +28,4 @@
           authorized_keys: []
           oh_my_zsh:
             theme: robbyrussell
-            plugins: command-not-found
+            plugins: command-not-found docker
