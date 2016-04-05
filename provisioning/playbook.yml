@@ -8,12 +8,14 @@
     - role: unison
       includeDirectories:
         - .ssh
+        - .m2
       includeFiles:
         - .bash_history
         - .zsh_history
         - .gitconfig
       ignorePaths:
         - Path .ssh/authorized_keys
+        - BelowPath .m2/repository
     - role: keyboard
       model: pc105
       layout: gb
@@ -35,9 +37,11 @@
       java_flavor: openjdk
       java_major_version: '8'
       java_version: '8*'
+    - maven
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+        M2_HOME: /usr/share/maven
     - role: franklinkim.users-oh-my-zsh
       users:
         - name: Vagrant
@@ -45,4 +49,4 @@
           authorized_keys: []
           oh_my_zsh:
             theme: robbyrussell
-            plugins: command-not-found docker git
+            plugins: command-not-found docker git mvn
