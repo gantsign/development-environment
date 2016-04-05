@@ -21,12 +21,11 @@
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant
-    - franklinkim.users-oh-my-zsh
-  vars:
-    users:
-      - name: Vagrant
-        username: vagrant
-        authorized_keys: []
-        oh_my_zsh:
-          theme: robbyrussell
-          plugins: command-not-found
+    - role: franklinkim.users-oh-my-zsh
+      users:
+        - name: Vagrant
+          username: vagrant
+          authorized_keys: []
+          oh_my_zsh:
+            theme: robbyrussell
+            plugins: command-not-found
