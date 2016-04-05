@@ -10,7 +10,7 @@
 - name: write unison vagrant profile
   template: src=vagrant.prf dest=/home/vagrant/.unison/vagrant.prf owner=vagrant group=vagrant
 - name: sync missing files from host to client
-  command: /usr/bin/unison vagrant -nodeletion=/home/vagrant -noupdate=/home/vagrant -prefer=/vagrant/home -ignorearchives
+  command: /usr/bin/unison vagrant -nodeletion=/home/vagrant -noupdate=/home/vagrant -prefer=/vagrant/home -force=/vagrant/home -ignorearchives
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
@@ -20,17 +20,24 @@
   file: path=/home/vagrant/{{ item }} state=directory owner=vagrant group=vagrant
   with_items: "{{includeDirectories}}"
 - name: create missing includeFiles
-  copy: content="" dest=/home/vagrant/{{ item }} owner=vagrant group=vagrant
+  copy: content="" dest=/home/vagrant/{{ item }} force=no owner=vagrant group=vagrant
   with_items: "{{includeFiles}}"
 - name: sync missing files from client to host
-  command: /usr/bin/unison vagrant -nodeletion=/vagrant/home -noupdate=/vagrant/home -prefer=/home/vagrant -ignorearchives
+  command: /usr/bin/unison vagrant -nodeletion=/vagrant/home -noupdate=/vagrant/home -prefer=/home/vagrant -force=/home/vagrant -ignorearchives
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
   become_method: sudo
   become_user: vagrant
 - name: sync file changes from host to client
-  command: /usr/bin/unison vagrant -prefer=/vagrant/home -nodeletion=/home/vagrant -ignorearchives
+  command: /usr/bin/unison vagrant -prefer=/vagrant/home -force=/vagrant/home -nodeletion=/home/vagrant -ignorearchives
+  register: command_result
+  failed_when: command_result.rc > 1
+  become: yes
+  become_method: sudo
+  become_user: vagrant
+- name: update unison archives
+  command: /usr/bin/unison vagrant -prefer=/vagrant/home
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
