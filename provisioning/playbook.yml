@@ -31,6 +31,13 @@
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant
+    - role: azavea.java
+      java_flavor: openjdk
+      java_major_version: '8'
+      java_version: '8*'
+    - role: franklinkim.environment
+      environment_config:
+        JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
     - role: franklinkim.users-oh-my-zsh
       users:
         - name: Vagrant
