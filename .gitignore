@@ -227,3 +227,6 @@ local.properties
 
 # Ignore Vagrant customization file
 Customfile
+
+# Ignore files persisted between VM rebuilds
+/home
