@@ -4,3 +4,6 @@
 - src: franklinkim.git
 - src: azavea.java
 - src: franklinkim.environment
+- src: groover.util
+  name: silpion.util
+- src: groover.maven

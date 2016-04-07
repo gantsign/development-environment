@@ -4,6 +4,9 @@
   pre_tasks:
     - name: update apt cache
       apt: update_cache=yes cache_valid_time=86400
+  vars:
+    maven_version: 3.3.9
+    maven_redis_sha256sum: 6e3e9c949ab4695a204f74038717aa7b2689b1be94875899ac1b3fe42800ff82
   roles:
     - role: unison
       includeDirectories:
@@ -37,11 +40,11 @@
       java_flavor: openjdk
       java_major_version: '8'
       java_version: '8*'
-    - maven
+    - groover.maven
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-        M2_HOME: /usr/share/maven
+        M2_HOME: /opt/maven/apache-maven-{{ maven_version }}
     - role: franklinkim.users-oh-my-zsh
       users:
         - name: Vagrant
