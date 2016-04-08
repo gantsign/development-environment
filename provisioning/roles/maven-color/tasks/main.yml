@@ -1,0 +1,30 @@
+---
+- name: Load version vars
+  tags: maven
+  with_first_found:
+    - ../vars/versions/{{ maven_color_version }}.yml
+    - ../vars/versions/default.yml
+  include_vars: "{{ item }}"
+
+- name: Assert version vars
+  tags: maven
+  assert:
+    that:
+      - maven_color_redis_sha256sum not in (None, "")
+      - slf4j_version not in (None, "")
+
+- name: Include util get/put instructions
+  tags: maven
+  include: util.yml
+
+- name: Install Maven Color
+  tags: maven
+  become: yes
+  unarchive:
+    src: "{{ util_persistent_data_path_remote }}/{{ maven_color_redis_filename }}"
+    dest: "{{ ansible_local.maven.general.maven_home }}"
+    copy: false
+    creates: "{{ ansible_local.maven.general.maven_home }}/lib/ext/maven-color-core-{{ maven_color_version }}.jar"
+
+- name: Remove SLF4J Simple Logger
+  file: path="{{ ansible_local.maven.general.maven_home }}/lib/slf4j-simple-{{ slf4j_version }}.jar" state=absent
