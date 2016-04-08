@@ -4,6 +4,23 @@
   pre_tasks:
     - name: update apt cache
       apt: update_cache=yes cache_valid_time=86400
+    # Workaround for https://github.com/ansible/ansible/issues/9526
+    # Can't cache /usr/local/src/ansible directly.
+    - name: restore ansible download cache
+      shell: >
+        [ -d "/tmp/vagrant-cache/ansible" ]
+        && mkdir --parents /usr/local/src/ansible
+        && cp --recursive --no-clobber /tmp/vagrant-cache/ansible/* /usr/local/src/ansible/
+        || exit 1
+  post_tasks:
+    # Workaround for https://github.com/ansible/ansible/issues/9526
+    # Can't cache /usr/local/src/ansible directly.
+    - name: restore ansible download cache
+      shell: >
+        [ -d "/usr/local/src/ansible" ]
+        && mkdir --parents /tmp/vagrant-cache/ansible
+        && cp --recursive --no-clobber /usr/local/src/ansible/* /tmp/vagrant-cache/ansible/
+        || exit 1
   roles:
     - role: unison
       includeDirectories:
