@@ -1,4 +1,16 @@
 ---
+- name: create xfce4 config directory
+  file: >
+    path=/home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml
+    state=directory
+    owner=vagrant
+    group=vagrant
+- name: write xfce4 power manager config
+  template: >
+    src=xfce4-power-manager.xml
+    dest=/home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+    owner=vagrant
+    group=vagrant
 - name: install xubuntu-core
   apt: name=xubuntu-core state=present
 - name: uninstall xscreensaver
