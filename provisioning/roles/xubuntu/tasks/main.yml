@@ -1,0 +1,3 @@
+---
+- name: install xubuntu-core
+  apt: name=xubuntu-core state=present
