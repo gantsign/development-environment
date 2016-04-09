@@ -26,6 +26,7 @@
       includeDirectories:
         - .ssh
         - .m2
+        - workspace
       includeFiles:
         - .bash_history
         - .zsh_history
@@ -33,6 +34,7 @@
       ignorePaths:
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
+        - Name target
     - role: keyboard
       model: pc105
       layout: gb
@@ -63,6 +65,7 @@
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
         M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
+        CDPATH: ".:/home/vagrant/workspace"
     - role: franklinkim.users-oh-my-zsh
       users:
         - name: Vagrant
