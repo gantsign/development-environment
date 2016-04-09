@@ -21,3 +21,5 @@
   apt: name=xubuntu-core state=present
 - name: uninstall xscreensaver
   apt: name=xscreensaver state=absent
+- name: install xfce4-mixer
+  apt: name=xfce4-mixer state=present

@@ -1,0 +1,12 @@
+---
+- name: add vagrant to audio groups
+  user: name=vagrant groups=audio,video append=yes
+- name: install audio packages
+  apt: name={{ item }} state=present
+  with_items:
+    - linux-sound-base
+    - alsa-base
+    - alsa-utils
+    - linux-image-{{ ansible_kernel }}
+    - linux-image-extra-{{ ansible_kernel }}
+    - libasound2

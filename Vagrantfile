@@ -88,6 +88,9 @@ Vagrant.configure(2) do |config|
     # Enable host desktop integration
     vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
     vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
+
+    # Enable sound
+    vb.customize ["modifyvm", :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
   end
 
   # Customfile
