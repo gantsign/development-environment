@@ -1,3 +1,5 @@
 ---
 - name: install xubuntu-core
   apt: name=xubuntu-core state=present
+- name: uninstall xscreensaver
+  apt: name=xscreensaver state=absent
