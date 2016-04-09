@@ -81,11 +81,20 @@
   become: yes
   become_method: sudo
   become_user: vagrant
-- name: update unison archives
+- name: delete unison archives
+  command: >
+    /usr/bin/find
+    /home/vagrant/.unison
+    -regextype posix-extended
+    -regex ".*/(ar|fp)[0-9a-f]{32}"
+    -delete
+  become: yes
+  become_method: sudo
+  become_user: vagrant
+- name: recreate unison archives
   shell: >
     /usr/bin/unison vagrant
     -dumbtty
-    -prefer=/vagrant/home
     -logfile=/home/vagrant/.unison/init4.log
     &> /home/vagrant/.unison/init4.out
   register: command_result
@@ -94,4 +103,6 @@
   become_method: sudo
   become_user: vagrant
 - name: add unison service to default run level and start
-  service: name=unison enabled=yes state=started
+  # Since Vagrant shares are mounted/unmounted outside the systemd lifecycle
+  # we can't auto-start/auto-stop the service using systemd.
+  service: name=unison enabled=no state=stopped

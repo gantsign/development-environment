@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-required_plugins = %w( vagrant-reload )
+required_plugins = %w( vagrant-reload vagrant-triggers )
 plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
 if not plugins_to_install.empty?
   puts "Installing plugins: #{plugins_to_install.join(' ')}"
@@ -31,6 +31,22 @@ Vagrant.configure(2) do |config|
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
   # config.vm.box_check_update = false
+
+  # Ensure Unison service isn't started until Vagrant shared folders are mounted
+  # and stopped before shared folders are unmounted (if we don't Unison will
+  # assume all files have been deleted and cascade the delete to the client VM).
+  config.trigger.after :up do
+    run_remote "sudo systemctl start unison"
+  end
+  config.trigger.after :reload do
+    run_remote "sudo systemctl start unison"
+  end
+  config.trigger.before :halt do
+    run_remote "sudo systemctl stop unison"
+  end
+  config.trigger.before :reload do
+    run_remote "sudo systemctl stop unison"
+  end
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
