@@ -38,7 +38,7 @@
     - role: keyboard
       model: pc105
       layout: gb
-    - system
+    - zram
     - common-cli
     - role: franklinkim.git
       git_config:
