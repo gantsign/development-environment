@@ -20,13 +20,16 @@
     owner=vagrant
     group=vagrant
 - name: sync missing files from host to client
-  command: >
+  shell: >
     /usr/bin/unison vagrant
+    -dumbtty
     -nodeletion=/home/vagrant
     -noupdate=/home/vagrant
     -prefer=/vagrant/home
     -force=/vagrant/home
     -ignorearchives
+    -logfile=/home/vagrant/.unison/init1.log
+    &> /home/vagrant/.unison/init1.out
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
@@ -48,34 +51,43 @@
     group=vagrant
   with_items: "{{includeFiles}}"
 - name: sync missing files from client to host
-  command: >
+  shell: >
     /usr/bin/unison vagrant
+    -dumbtty
     -nodeletion=/vagrant/home
     -noupdate=/vagrant/home
     -prefer=/home/vagrant
     -force=/home/vagrant
     -ignorearchives
+    -logfile=/home/vagrant/.unison/init2.log
+    &> /home/vagrant/.unison/init2.out
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
   become_method: sudo
   become_user: vagrant
 - name: sync file changes from host to client
-  command: >
+  shell: >
     /usr/bin/unison vagrant
+    -dumbtty
     -prefer=/vagrant/home
     -force=/vagrant/home
     -nodeletion=/home/vagrant
     -ignorearchives
+    -logfile=/home/vagrant/.unison/init3.log
+    &> /home/vagrant/.unison/init3.out
   register: command_result
   failed_when: command_result.rc > 1
   become: yes
   become_method: sudo
   become_user: vagrant
 - name: update unison archives
-  command: >
+  shell: >
     /usr/bin/unison vagrant
+    -dumbtty
     -prefer=/vagrant/home
+    -logfile=/home/vagrant/.unison/init4.log
+    &> /home/vagrant/.unison/init4.out
   register: command_result
   failed_when: command_result.rc > 1
   become: yes

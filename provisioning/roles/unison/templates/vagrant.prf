@@ -40,3 +40,6 @@ fastcheck=true
 
 # Synchronize modification times
 times=true
+
+# Move logfile into hidden directory
+logfile=/home/vagrant/.unison/unison.log
