@@ -14,6 +14,7 @@
         <value type="int" value="7"/>
         <value type="int" value="5"/>
         <value type="int" value="8"/>
+        <value type="int" value="6"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-alpha" type="uint" value="80"/>
@@ -55,6 +56,7 @@
       <property name="command" type="string" value="xfce4-mixer"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
+    <property name="plugin-6" type="string" value="showdesktop"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
