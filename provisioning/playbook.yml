@@ -65,11 +65,13 @@
     - xubuntu
     - auto-login
     - cmprescott.chrome
+    - atom
     - role: dockbarx
       launchers:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
         - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
         - 'google-chrome;/usr/share/applications/google-chrome.desktop'
+        - 'atom;/usr/share/applications/atom.desktop'
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
