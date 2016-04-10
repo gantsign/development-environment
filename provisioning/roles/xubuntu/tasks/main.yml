@@ -23,3 +23,5 @@
   apt: name=xscreensaver state=absent
 - name: install xfce4-mixer
   apt: name=xfce4-mixer state=present
+- name: install gedit
+  apt: name=gedit state=present
