@@ -1,0 +1,42 @@
+- name: create xfce4 dockbarx config directory
+  file: >
+    path=/home/vagrant/.config/xfce4/panel
+    state=directory
+    owner=vagrant
+    group=vagrant
+- name: write xfce4 dockbarx config
+  template: >
+    src=dockbarx-9.rc
+    dest=/home/vagrant/.config/xfce4/panel/dockbarx-9.rc
+    owner=vagrant
+    group=vagrant
+- name: add dockbarx ppa
+  apt_repository: repo='ppa:dockbar-main/ppa'
+- name: install dockbarx
+  apt: name=dockbarx state=present
+- name: install xfce4-dockbarx-plugin
+  apt: name=xfce4-dockbarx-plugin state=present
+- name: install gconf2
+  apt: name=gconf2 state=present
+- name: add launchers to dockbarx
+  shell: |
+    new_launcher='{{ item }}'
+
+    # Get the current list of launchers
+    existing_launchers=$(gconftool-2 --get /apps/dockbarx/launchers 2> /dev/null \
+      | grep --color=never '^\[' || echo "[]")
+
+    # If the launcher is already in the list exit successfully here
+    echo "$existing_launchers" | grep -P "[\[,]${new_launcher}[\],]" && exit 0
+
+    # Append the new launcher to the end of the list
+    new_launchers=$(echo "$existing_launchers" | sed "s:\]$:,${new_launcher}\]:" | sed "s:^\[,:\[:")
+
+    # Update the list of launchers
+    gconftool-2 --type list --list-type=string \
+      --set /apps/dockbarx/launchers "$new_launchers" \
+    || exit 1
+  with_items: "{{ launchers }}"
+  become: yes
+  become_method: sudo
+  become_user: vagrant

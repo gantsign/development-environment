@@ -64,6 +64,10 @@
     - audio
     - xubuntu
     - auto-login
+    - role: dockbarx
+      launchers:
+        - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
+        - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
