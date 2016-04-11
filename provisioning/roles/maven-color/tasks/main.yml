@@ -27,4 +27,5 @@
     creates: "{{ ansible_local.maven.general.maven_home }}/lib/ext/maven-color-core-{{ maven_color_version }}.jar"
 
 - name: Remove SLF4J Simple Logger
+  tags: maven
   file: path="{{ ansible_local.maven.general.maven_home }}/lib/slf4j-simple-{{ slf4j_version }}.jar" state=absent
