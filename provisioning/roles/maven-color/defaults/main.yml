@@ -1,6 +1,6 @@
 ---
-# Maven version number
+# Maven Color version number
 maven_color_version: 1.4.1
 
-# Mirror where to dowload Maven redistributable package from.
+# Mirror where to dowload Maven Color redistributable package from.
 maven_color_mirror: "http://dl.bintray.com/jcgay/maven/com/github/jcgay/maven/color/maven-color-logback/{{ maven_color_version }}"
