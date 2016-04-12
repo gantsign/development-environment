@@ -1,0 +1,3 @@
+{% for disabled_plugin in (item.idea_disabled_plugins | default([])) %}
+{{ disabled_plugin }}
+{% endfor %}

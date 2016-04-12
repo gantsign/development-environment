@@ -66,15 +66,32 @@
     - auto-login
     - cmprescott.chrome
     - atom
+    - role: idea
+      idea_default_jdk_home: /usr/lib/jvm/java-8-openjdk-amd64
+      idea_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
+      users:
+        - username: vagrant
+          idea_disabled_plugins:
+            - org.jetbrains.plugins.gradle
+            - CVS
+            - com.intellij.uiDesigner
+            - org.jetbrains.android
+            - TestNG-J
+            - hg4idea
+            - Subversion
+            - AntSupport
+            - DevKit
     - role: dockbarx
       launchers:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
         - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
         - 'google-chrome;/usr/share/applications/google-chrome.desktop'
         - 'atom;/usr/share/applications/atom.desktop'
+        - 'idea;{{ ansible_local.idea.general.idea_desktop_file }}'
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+        IDEA_JDK: /usr/lib/jvm/java-8-openjdk-amd64
         M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
         CDPATH: ".:/home/vagrant/workspace"
     - role: franklinkim.users-oh-my-zsh

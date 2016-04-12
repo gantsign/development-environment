@@ -1,0 +1,14 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="MavenImportPreferences">
+        <option name="generalSettings">
+          <MavenGeneralSettings>
+            <option name="mavenHome" value="{{ idea_default_maven_home }}" />
+          </MavenGeneralSettings>
+        </option>
+      </component>
+      <component name="ProjectRootManager" version="2" languageLevel="{{ idea_default_language_level }}" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="default" project-jdk-type="JavaSDK" />
+    </defaultProject>
+  </component>
+</application>

@@ -1,0 +1,16 @@
+---
+# IntelliJ IDEA version number
+idea_version: 2016.1.1
+
+# Mirror where to dowload IntelliJ IDEA redistributable package from
+# Using HTTP because of https://github.com/ansible/ansible/issues/11579
+idea_mirror: "http://download.jetbrains.com/idea"
+
+# Edition to install (community or ultimate)
+idea_edition: community
+
+# Base installation directory for any IntelliJ IDEA distribution
+idea_install_dir: /opt/idea/idea-{{ idea_edition }}-{{ idea_version }}
+
+# List of users to configure IntelliJ IDEA for
+users: []

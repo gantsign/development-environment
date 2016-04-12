@@ -1,0 +1,146 @@
+---
+- name: Assert role vars
+  assert:
+    that:
+      - idea_default_jdk_home not in (None, "")
+      - idea_default_maven_home not in (None, "")
+
+- name: Assert edition vars
+  assert:
+    that:
+      - idea_edition in ("community", "ultimate")
+
+- name: Load edition vars
+  include_vars: "../vars/editions/{{ idea_edition }}.yml"
+
+- name: Load version vars
+  with_first_found:
+    - ../vars/versions/{{ idea_version }}-{{ idea_edition }}.yml
+    - ../vars/versions/default.yml
+  include_vars: "{{ item }}"
+
+- name: Assert version vars
+  assert:
+    that:
+      - idea_redis_sha256sum not in (None, "")
+
+- name: Include util get/put instructions
+  include: util.yml
+
+- name: Create IntelliJ IDEA installation directory
+  tags: maven
+  become: yes
+  file:
+    state: directory
+    owner: 0
+    group: 0
+    mode: '0755'
+    dest: "{{ idea_install_dir }}"
+
+- name: Install IntelliJ IDEA
+  become: yes
+  command: >
+    /bin/tar --extract --gunzip --strip-components=1
+    --file '{{ util_persistent_data_path_remote }}/{{ idea_redis_filename }}'
+    --directory '{{ idea_install_dir }}'
+  args:
+    creates: "{{ idea_install_dir }}/bin"
+
+- name: Create bin link
+  file:
+    src: "{{ idea_install_dir }}/bin/idea.sh"
+    dest: /usr/local/bin/idea
+    state: link
+
+- name: Install IntelliJ IDEA desktop file
+  template:
+    src: jetbrains-idea.desktop
+    dest: "/usr/share/applications/{{ idea_desktop_filename }}"
+
+- name: Create IntelliJ IDEA user config directory
+  tags: maven
+  become: yes
+  file:
+    dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config"
+    state: directory
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ users }}"
+
+- name: Configure disabled plugins
+  template:
+    src: disabled_plugins.txt
+    dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/disabled_plugins.txt"
+    force: false
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ users }}"
+
+- name: Create IntelliJ IDEA user options directory
+  tags: maven
+  become: yes
+  file:
+    dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options"
+    state: directory
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ users }}"
+
+- name: Query Java specification version
+  command: "{{ idea_default_jdk_home }}/bin/jrunscript -e \"print(java.lang.System.getProperty('java.specification.version'))\""
+  register: java_specification_version_result
+
+- name: Load JDK vars
+  include_vars: "../vars/jdk_version/{{ java_specification_version_result.stdout }}.yml"
+
+- name: Assert JDK vars
+  assert:
+    that:
+      - idea_default_jdk_classpath not in (None, "")
+      - idea_default_language_level not in (None, "")
+
+- name: Query Java version
+  command: "{{ idea_default_jdk_home }}/bin/jrunscript -e \"print(java.lang.System.getProperty('java.version'))\""
+  register: java_version_result
+
+- name: Configure JDKs
+  template:
+    src: jdk.table.xml
+    dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options/jdk.table.xml"
+    force: false
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ users }}"
+
+- name: Configure project
+  template:
+    src: project.default.xml
+    dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options/project.default.xml"
+    force: false
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ users }}"
+
+- name: Install Ansible facts.d directory
+  tags: maven
+  become: yes
+  file:
+    state: directory
+    dest: /etc/ansible/facts.d
+    owner: 0
+    group: 0
+    mode: '0755'
+
+- name: Install Maven facts
+  tags: maven
+  sudo: yes
+  template:
+    src: facts.j2
+    dest: /etc/ansible/facts.d/idea.fact
+    owner: 0
+    group: 0
+    mode: '0644'
+
+- name: Re-read facts
+  tags: maven
+  setup: filter=ansible_local
