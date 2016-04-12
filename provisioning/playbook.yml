@@ -81,6 +81,7 @@
             - Subversion
             - AntSupport
             - DevKit
+    - maven-notifier
     - role: dockbarx
       launchers:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
