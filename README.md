@@ -38,7 +38,7 @@ same time. Enabling RAM compression in the virtual machine is going to stretch
 the RAM significantly further. Essentially this create a virtual swap disk
 backed by compressed RAM; this is typically much faster than disk based swap,
 particularly on machines with fast CPUs. Given Java applications tend to reserve
-a lot more RAM then they end up using, they benefit more from RAM compression
+a lot more RAM than they end up using, they benefit more from RAM compression
 than native applications.
 
 ### File synchronization
