@@ -121,7 +121,7 @@ Rather than a specific command, oh-my-zsh changes your default shell from `bash`
 to `zsh` and customizes the `zsh` shell with themes to enhance your command
 prompt and plugins to enable better tab completion etc.
 
-![zsh terminal output](docs/images/Oh-my-zsh.png)
+![zsh terminal output](docs/images/oh-my-zsh.png)
 
 #### CDPATH
 
