@@ -27,6 +27,7 @@
     - role: unison
       includeDirectories:
         - .ssh
+        - .gnupg
         - .m2
         - workspace
       includeFiles:
@@ -66,6 +67,7 @@
     - audio
     - xubuntu
     - auto-login
+    - seahorse
     - cmprescott.chrome
     - atom
     - role: idea
