@@ -1,4 +1,5 @@
 ---
+- src: franklinkim.timezone
 - src: angstwad.docker_ubuntu
 - src: franklinkim.users-oh-my-zsh
 - src: franklinkim.git

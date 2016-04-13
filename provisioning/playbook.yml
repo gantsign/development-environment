@@ -22,6 +22,8 @@
         && cp --recursive --no-clobber /usr/local/src/ansible/* /tmp/vagrant-cache/ansible/
         || exit 1
   roles:
+    - role: franklinkim.timezone
+      timezone: Europe/London
     - role: unison
       includeDirectories:
         - .ssh
