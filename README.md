@@ -238,11 +238,11 @@ vagrant halt
 vagrant destroy
 ```
 
-## Customizing provisioning
+## Customizing the provisioning
 
 The provisioning is done using Ansible (https://www.ansible.com/) with a little
 help from JJG-Ansible-Windows
 (https://github.com/geerlingguy/JJG-Ansible-Windows).
 
-If you want to customize the provisioning the place to start is
-`provisioning/playbook.yml`.
+If you want to customize the provisioning the place to start is the
+`provisioning/playbook.yml` file.
