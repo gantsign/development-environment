@@ -22,8 +22,10 @@
         && cp --recursive --no-clobber /usr/local/src/ansible/* /tmp/vagrant-cache/ansible/
         || exit 1
   roles:
+    # Set system timezone
     - role: franklinkim.timezone
       timezone: Europe/London
+    # Synchronize files/directories between client and host
     - role: unison
       includeDirectories:
         - .ssh
@@ -38,11 +40,15 @@
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
         - Name target
+    # Set keyboard layout
     - role: keyboard
       model: pc105
       layout: gb
+    # Enable compressed RAM swap
     - zram
+    # Install common command line tools
     - common-cli
+    # Install and configure Git version control
     - role: franklinkim.git
       git_config:
         core:
@@ -52,24 +58,35 @@
           ll: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
           lds: 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
           rom: 'rebase origin/master'
+    # Install Docker
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant
+    # Install Java JDK
     - role: azavea.java
       java_flavor: openjdk
       java_major_version: '8'
       java_version: '8*'
+    # Install Maven
     - role: groover.maven
       maven_version: 3.3.9
       maven_redis_sha256sum: 6e3e9c949ab4695a204f74038717aa7b2689b1be94875899ac1b3fe42800ff82
       maven_mirror: "http://mirrors.ukfast.co.uk/sites/ftp.apache.org/maven/maven-{{ maven_version|regex_replace('\\..*', '') }}/{{ maven_version }}/binaries"
+    # Add Maven extension to colorize Maven output
     - maven-color
+    # Enable audio support
     - audio
+    # Install Xfce desktop
     - xubuntu
+    # Auto-login to X desktop
     - auto-login
+    # Install Seahorse SSH agent GUI
     - seahorse
+    # Install Google Chrome web broswer
     - cmprescott.chrome
+    # Install Atom editor
     - atom
+    # Install and configure IntelliJ IDEA IDE
     - role: idea
       idea_default_jdk_home: /usr/lib/jvm/java-8-openjdk-amd64
       idea_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
@@ -85,7 +102,9 @@
             - Subversion
             - AntSupport
             - DevKit
+    # Add Maven extension to popup a GUI notification when builds finish
     - maven-notifier
+    # Install and configure DockbarX docbar for Xfce
     - role: dockbarx
       launchers:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
@@ -93,13 +112,16 @@
         - 'google-chrome;/usr/share/applications/google-chrome.desktop'
         - 'atom;/usr/share/applications/atom.desktop'
         - 'idea;{{ ansible_local.idea.general.idea_desktop_file }}'
+    # Configure environment variables
     - role: franklinkim.environment
       environment_config:
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
         IDEA_JDK: /usr/lib/jvm/java-8-openjdk-amd64
         M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
         CDPATH: ".:/home/vagrant/workspace"
+        # The tree command uses LS_COLORS instead of LSCOLORS 
         LS_COLORS: "di=1;36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+    # Install oh-my-zsh shell enhancements
     - role: franklinkim.users-oh-my-zsh
       users:
         - name: Vagrant
