@@ -63,10 +63,8 @@
       docker_group_members:
         - vagrant
     # Install Java JDK
-    - role: azavea.java
-      java_flavor: openjdk
-      java_major_version: '8'
-      java_version: '8*'
+    - role: groover.java
+      java_oracle_version: 8u66
     # Install Maven
     - role: groover.maven
       maven_version: 3.3.9
@@ -88,7 +86,7 @@
     - atom
     # Install and configure IntelliJ IDEA IDE
     - role: idea
-      idea_default_jdk_home: /usr/lib/jvm/java-8-openjdk-amd64
+      idea_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
       idea_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
       users:
         - username: vagrant
@@ -115,11 +113,11 @@
     # Configure environment variables
     - role: franklinkim.environment
       environment_config:
-        JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-        IDEA_JDK: /usr/lib/jvm/java-8-openjdk-amd64
+        JAVA_HOME: "{{ ansible_local.java.general.java_home }}"
+        IDEA_JDK: "{{ ansible_local.java.general.java_home }}"
         M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
         CDPATH: ".:/home/vagrant/workspace"
-        # The tree command uses LS_COLORS instead of LSCOLORS 
+        # The tree command uses LS_COLORS instead of LSCOLORS
         LS_COLORS: "di=1;36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
     # Install oh-my-zsh shell enhancements
     - role: franklinkim.users-oh-my-zsh

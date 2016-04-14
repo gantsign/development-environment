@@ -3,7 +3,7 @@
 - src: angstwad.docker_ubuntu
 - src: franklinkim.users-oh-my-zsh
 - src: franklinkim.git
-- src: azavea.java
+- src: groover.java
 - src: franklinkim.environment
 - src: groover.util
   name: silpion.util

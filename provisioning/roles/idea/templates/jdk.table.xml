@@ -22,7 +22,10 @@
           <root type="composite" />
         </javadocPath>
         <sourcePath>
-          <root type="composite" />
+          <root type="composite">
+            <root type="simple" url="jar://{{ idea_default_jdk_home }}/src.zip!/" />
+            <root type="simple" url="jar://{{ idea_default_jdk_home }}/javafx-src.zip!/" />
+          </root>
         </sourcePath>
       </roots>
       <additional />
