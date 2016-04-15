@@ -1,7 +1,0 @@
----
-- name: enable auto-login
-  template: >
-    src=70-vagrant.conf
-    dest=/usr/share/lightdm/lightdm.conf.d/70-vagrant.conf
-- name: apply glib schemas changes
-  command: /usr/bin/glib-compile-schemas {{ glib_schemas_directory }}

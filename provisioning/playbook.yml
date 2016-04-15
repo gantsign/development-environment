@@ -77,7 +77,8 @@
     # Install Xfce desktop
     - xubuntu
     # Auto-login to X desktop
-    - auto-login
+    - role: gantsign.lightdm
+      lightdm_autologin_user: vagrant
     # Install Seahorse SSH agent GUI
     - seahorse
     # Install Google Chrome web broswer
