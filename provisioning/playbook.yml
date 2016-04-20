@@ -76,7 +76,7 @@
       maven_redis_sha256sum: 6e3e9c949ab4695a204f74038717aa7b2689b1be94875899ac1b3fe42800ff82
       maven_mirror: "http://mirrors.ukfast.co.uk/sites/ftp.apache.org/maven/maven-{{ maven_version|regex_replace('\\..*', '') }}/{{ maven_version }}/binaries"
     # Add Maven extension to colorize Maven output
-    - maven-color
+    - gantsign.maven-color
     # Enable audio support
     - audio
     # Install Xfce desktop

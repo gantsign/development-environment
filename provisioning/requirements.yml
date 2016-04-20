@@ -10,3 +10,4 @@
 - src: groover.maven
 - src: cmprescott.chrome
 - src: gantsign.lightdm
+- src: gantsign.maven-color

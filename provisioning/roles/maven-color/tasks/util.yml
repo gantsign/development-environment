@@ -1,8 +1,0 @@
----
-- include: /etc/ansible/roles/silpion.util/tasks/_get.yml
-  url: "{{ maven_color_mirror }}/{{ maven_color_redis_filename }}"
-  dest: "{{ util_persistent_data_path_local }}/{{ maven_color_redis_filename }}"
-  sha256sum: "{{ maven_color_redis_sha256sum }}"
-- include: /etc/ansible/roles/silpion.util/tasks/_put.yml
-  src: "{{ util_persistent_data_path_local }}/{{ maven_color_redis_filename }}"
-  dest: "{{ util_persistent_data_path_remote }}/{{ maven_color_redis_filename }}"
