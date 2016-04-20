@@ -11,7 +11,6 @@
   assert:
     that:
       - maven_color_redis_sha256sum not in (None, "")
-      - slf4j_version not in (None, "")
 
 - name: Include util get/put instructions
   tags: maven
@@ -26,6 +25,15 @@
     copy: false
     creates: "{{ ansible_local.maven.general.maven_home }}/lib/ext/maven-color-core-{{ maven_color_version }}.jar"
 
+- name: List SLF4J Simple Logger JARs
+  tags: maven
+  shell: "ls --width=1 {{ ansible_local.maven.general.maven_home }}/lib/slf4j-simple-*.jar"
+  register: slf4j_jars
+  ignore_errors: yes
+
 - name: Remove SLF4J Simple Logger
   tags: maven
-  file: path="{{ ansible_local.maven.general.maven_home }}/lib/slf4j-simple-{{ slf4j_version }}.jar" state=absent
+  file:
+    path: "{{ item }}"
+    state: absent
+  with_items: slf4j_jars.stdout_lines
