@@ -107,7 +107,7 @@
             - AntSupport
             - DevKit
     # Add Maven extension to popup a GUI notification when builds finish
-    - maven-notifier
+    - gantsign.maven-notifier
     # Install and configure DockbarX docbar for Xfce
     - role: dockbarx
       launchers:

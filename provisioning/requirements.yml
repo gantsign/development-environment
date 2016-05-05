@@ -11,3 +11,4 @@
 - src: cmprescott.chrome
 - src: gantsign.lightdm
 - src: gantsign.maven-color
+- src: gantsign.maven-notifier

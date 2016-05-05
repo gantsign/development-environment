@@ -1,8 +1,0 @@
----
-- include: /etc/ansible/roles/silpion.util/tasks/_get.yml
-  url: "{{ maven_notifier_mirror }}/{{ maven_notifier_redis_filename }}"
-  dest: "{{ util_persistent_data_path_local }}/{{ maven_notifier_redis_filename }}"
-  sha256sum: "{{ maven_notifier_redis_sha256sum }}"
-- include: /etc/ansible/roles/silpion.util/tasks/_put.yml
-  src: "{{ util_persistent_data_path_local }}/{{ maven_notifier_redis_filename }}"
-  dest: "{{ util_persistent_data_path_remote }}/{{ maven_notifier_redis_filename }}"
