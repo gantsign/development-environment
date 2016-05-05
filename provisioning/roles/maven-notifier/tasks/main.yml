@@ -20,4 +20,4 @@
   tags: maven
   copy:
     src: "{{ util_persistent_data_path_remote }}/{{ maven_notifier_redis_filename }}"
-    dest: "{{ ansible_local.maven.general.maven_home }}/lib/ext/{{ maven_notifier_redis_filename }}"
+    dest: "{{ maven_notifier_maven_home }}/lib/ext/{{ maven_notifier_redis_filename }}"
