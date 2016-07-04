@@ -1,6 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# ansible_local requires version >= 1.8.4 to work stably
+Vagrant.require_version ">= 1.8.4"
+
 required_plugins = %w( vagrant-reload vagrant-triggers )
 plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
 if not plugins_to_install.empty?
@@ -120,28 +123,19 @@ Vagrant.configure(2) do |config|
     config.cache.scope = :box
   end
 
-  # TODO remove when ansible_local provisioner is stable on
-  # Windows (Vagrant 1.8.2?)
-  # Use rbconfig to determine if we're on a windows host or not.
-  require 'rbconfig'
-  is_windows = (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/)
-  if is_windows
-    # Install Ansible 1.9.2 through Ubuntu package
-    config.vm.provision "shell", inline: <<-SHELL
-      sudo apt-get -qq update
-      sudo apt-get -qq install -y --no-install-recommends ansible
-    SHELL
-    # Provisioning configuration for shell script.
-    config.vm.provision "shell" do |sh|
-      sh.path = "provisioning/JJG-Ansible-Windows/windows.sh"
-      sh.args = "provisioning/playbook.yml"
-    end
-  else
-    # Provisioning configuration for Ansible (for Mac/Linux hosts).
-    config.vm.provision "ansible" do |ansible|
-      ansible.playbook = "provisioning/playbook.yml"
-      ansible.sudo = true
-    end
+  # Install Ansible 1.9.2 through Ubuntu package (Vagrant auto-install tries to
+  # install Ansible 2.0, which doesn't work with the roles using groover.util)
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get -qq update
+    sudo apt-get -qq install -y --no-install-recommends ansible
+  SHELL
+
+  # Run Ansible from the Vagrant VM
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "provisioning/playbook.yml"
+    ansible.galaxy_role_file = "provisioning/requirements.yml"
+    ansible.galaxy_roles_path = "/etc/ansible/roles"
+    ansible.galaxy_command = "sudo ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force"
   end
 
   # Restart the VM after everything is installed

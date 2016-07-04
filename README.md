@@ -240,9 +240,7 @@ vagrant destroy
 
 ## Customizing the provisioning
 
-The provisioning is done using Ansible (https://www.ansible.com/) with a little
-help from JJG-Ansible-Windows
-(https://github.com/geerlingguy/JJG-Ansible-Windows).
+The provisioning is done using Ansible (https://www.ansible.com/).
 
 If you want to customize the provisioning the place to start is the
 `provisioning/playbook.yml` file.
