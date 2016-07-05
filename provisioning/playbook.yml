@@ -47,8 +47,8 @@
         - Name target
     # Set keyboard layout
     - role: keyboard
-      model: pc105
-      layout: gb
+      keyboard_model: pc105
+      keyboard_layout: gb
     # Enable compressed RAM swap
     - gantsign.zram-config
     # Install common command line tools

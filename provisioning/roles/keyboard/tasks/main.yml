@@ -1,7 +1,12 @@
 ---
 - name: install keyboard-configuration
-  apt: name=keyboard-configuration state=present
+  apt:
+    name: keyboard-configuration
+    state: present
 - name: write keyboard configration
-  template: src=keyboards.txt dest=/etc/default/keyboard force=true
+  template:
+    src: keyboards.txt
+    dest: /etc/default/keyboard
+    force: true
 - name: apply keyboard configration
   command: /usr/sbin/dpkg-reconfigure -f noninteractive keyboard-configuration
