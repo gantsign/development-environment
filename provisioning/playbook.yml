@@ -89,7 +89,7 @@
     # Install Google Chrome web broswer
     - cmprescott.chrome
     # Install Atom editor
-    - atom
+    - gantsign.atom
     # Install and configure IntelliJ IDEA IDE
     - role: idea
       idea_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
