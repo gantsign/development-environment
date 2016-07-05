@@ -12,3 +12,4 @@
 - src: gantsign.lightdm
 - src: gantsign.maven-color
 - src: gantsign.maven-notifier
+- src: gantsign.zram-config

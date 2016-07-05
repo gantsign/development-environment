@@ -1,9 +1,0 @@
----
-- name: install linux-image-extra
-  apt:
-    name: "linux-image-extra-{{ ansible_kernel }}"
-    state: present
-- name: install zram-config
-  apt:
-    name: zram-config
-    state: present

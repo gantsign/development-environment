@@ -50,7 +50,7 @@
       model: pc105
       layout: gb
     # Enable compressed RAM swap
-    - zram
+    - gantsign.zram-config
     # Install common command line tools
     - common-cli
     # Install and configure Git version control
