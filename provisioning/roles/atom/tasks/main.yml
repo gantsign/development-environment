@@ -1,5 +1,8 @@
 ---
 - name: add atom ppa
-  apt_repository: repo='ppa:webupd8team/atom'
+  apt_repository:
+    repo: 'ppa:webupd8team/atom'
 - name: install atom
-  apt: name=atom state=present
+  apt:
+    name: atom
+    state: present
