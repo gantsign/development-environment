@@ -14,3 +14,6 @@ idea_install_dir: /opt/idea/idea-{{ idea_edition }}-{{ idea_version }}
 
 # List of users to configure IntelliJ IDEA for
 users: []
+
+# path for Ansible to store downloaded files
+local_ansible_data_path: '/tmp/ansible/data'
