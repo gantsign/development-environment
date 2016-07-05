@@ -10,6 +10,7 @@
 - src: groover.maven
 - src: cmprescott.chrome
 - src: gantsign.atom
+- src: gantsign.audio
 - src: gantsign.keyboard
 - src: gantsign.lightdm
 - src: gantsign.maven-color

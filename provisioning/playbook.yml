@@ -78,7 +78,7 @@
     # Add Maven extension to colorize Maven output
     - gantsign.maven-color
     # Enable audio support
-    - role: audio
+    - role: gantsign.audio
       audio_users:
         - vagrant
     # Install Xfce desktop
