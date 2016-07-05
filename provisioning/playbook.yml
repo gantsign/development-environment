@@ -46,7 +46,7 @@
         - BelowPath .m2/repository
         - Name target
     # Set keyboard layout
-    - role: keyboard
+    - role: gantsign.keyboard
       keyboard_model: pc105
       keyboard_layout: gb
     # Enable compressed RAM swap
