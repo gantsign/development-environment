@@ -41,7 +41,6 @@
     mode: '0644'
 
 - name: Create IntelliJ IDEA installation directory
-  tags: maven
   become: yes
   file:
     state: directory
@@ -71,7 +70,6 @@
     dest: "/usr/share/applications/{{ idea_desktop_filename }}"
 
 - name: Create IntelliJ IDEA user config directory
-  tags: maven
   become: yes
   file:
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config"
@@ -90,7 +88,6 @@
   with_items: "{{ users }}"
 
 - name: Create IntelliJ IDEA user options directory
-  tags: maven
   become: yes
   file:
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options"
@@ -135,7 +132,6 @@
   with_items: "{{ users }}"
 
 - name: Install Ansible facts.d directory
-  tags: maven
   become: yes
   file:
     state: directory
@@ -145,7 +141,6 @@
     mode: '0755'
 
 - name: Install Maven facts
-  tags: maven
   sudo: yes
   template:
     src: facts.j2
@@ -155,5 +150,4 @@
     mode: '0644'
 
 - name: Re-read facts
-  tags: maven
   setup: filter=ansible_local
