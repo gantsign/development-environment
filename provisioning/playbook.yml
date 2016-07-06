@@ -82,7 +82,7 @@
       audio_users:
         - vagrant
     # Install Xfce desktop
-    - xubuntu
+    - xdesktop
     # Auto-login to X desktop
     - role: gantsign.lightdm
       lightdm_autologin_user: vagrant
@@ -109,7 +109,7 @@
     # Add Maven extension to popup a GUI notification when builds finish
     - gantsign.maven-notifier
     # Install and configure DockbarX docbar for Xfce
-    - role: dockbarx
+    - role: dockbarx-launcher
       launchers:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
         - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
