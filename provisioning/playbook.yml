@@ -93,12 +93,12 @@
     # Install Atom editor
     - gantsign.atom
     # Install and configure IntelliJ IDEA IDE
-    - role: idea
-      idea_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
-      idea_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
+    - role: gantsign.intellij
+      intellij_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
+      intellij_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
       users:
         - username: vagrant
-          idea_disabled_plugins:
+          intellij_disabled_plugins:
             - org.jetbrains.plugins.gradle
             - CVS
             - com.intellij.uiDesigner
@@ -117,7 +117,7 @@
         - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
         - 'google-chrome;/usr/share/applications/google-chrome.desktop'
         - 'atom;/usr/share/applications/atom.desktop'
-        - 'idea;{{ ansible_local.idea.general.idea_desktop_file }}'
+        - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
     # Configure environment variables
     - role: franklinkim.environment
       environment_config:

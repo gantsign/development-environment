@@ -11,6 +11,7 @@
 - src: cmprescott.chrome
 - src: gantsign.atom
 - src: gantsign.audio
+- src: gantsign.intellij
 - src: gantsign.keyboard
 - src: gantsign.lightdm
 - src: gantsign.maven-color
