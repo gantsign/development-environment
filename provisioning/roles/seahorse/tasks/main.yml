@@ -1,3 +1,5 @@
 ---
 - name: install seahorse
-  apt: name=seahorse-daemon state=present
+  apt:
+    name: seahorse-daemon
+    state: present
