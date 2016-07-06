@@ -1,27 +1,35 @@
 ---
 - name: create xfce4 config directory
-  file: >
-    path=/home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml
-    state=directory
-    owner=vagrant
-    group=vagrant
+  file:
+    path: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml
+    state: directory
+    owner: vagrant
+    group: vagrant
 - name: write xfce4 power manager config
-  template: >
-    src=xfce4-power-manager.xml
-    dest=/home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-    owner=vagrant
-    group=vagrant
+  template:
+    src: xfce4-power-manager.xml
+    dest: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+    owner: vagrant
+    group: vagrant
 - name: write xfce4 panel config
-  template: >
-    src=xfce4-panel.xml
-    dest=/home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-    owner=vagrant
-    group=vagrant
+  template:
+    src: xfce4-panel.xml
+    dest: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+    owner: vagrant
+    group: vagrant
 - name: install xubuntu-core
-  apt: name=xubuntu-core state=present
+  apt:
+    name: xubuntu-core
+    state: present
 - name: uninstall xscreensaver
-  apt: name=xscreensaver state=absent
+  apt:
+    name: xscreensaver
+    state: absent
 - name: install xfce4-mixer
-  apt: name=xfce4-mixer state=present
+  apt:
+    name: xfce4-mixer
+    state: present
 - name: install gedit
-  apt: name=gedit state=present
+  apt:
+    name: gedit
+    state: present
