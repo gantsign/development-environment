@@ -31,7 +31,7 @@
     - role: franklinkim.timezone
       timezone: Europe/London
     # Synchronize files/directories between client and host
-    - role: unison
+    - role: gantsign.unison
       unison_include_directories:
         - .ssh
         - .gnupg

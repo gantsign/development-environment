@@ -18,4 +18,6 @@
 - src: gantsign.lightdm
 - src: gantsign.maven-color
 - src: gantsign.maven-notifier
+- src: https://github.com/gantsign/ansible-role-unison
+  name: gantsign.unison
 - src: gantsign.zram-config
