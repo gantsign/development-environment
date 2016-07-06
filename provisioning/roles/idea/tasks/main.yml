@@ -74,8 +74,8 @@
   file:
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config"
     state: directory
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
   with_items: "{{ users }}"
 
 - name: Configure disabled plugins
@@ -83,8 +83,8 @@
     src: disabled_plugins.txt
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/disabled_plugins.txt"
     force: false
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
   with_items: "{{ users }}"
 
 - name: Create IntelliJ IDEA user options directory
@@ -92,8 +92,8 @@
   file:
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options"
     state: directory
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
   with_items: "{{ users }}"
 
 - name: Query Java specification version
@@ -118,8 +118,8 @@
     src: jdk.table.xml
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options/jdk.table.xml"
     force: false
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
   with_items: "{{ users }}"
 
 - name: Configure project
@@ -127,8 +127,8 @@
     src: project.default.xml
     dest: "/home/{{ item.username }}/{{ idea_user_dir }}/config/options/project.default.xml"
     force: false
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
   with_items: "{{ users }}"
 
 - name: Install Ansible facts.d directory
