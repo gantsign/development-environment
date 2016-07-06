@@ -86,8 +86,6 @@
     # Auto-login to X desktop
     - role: gantsign.lightdm
       lightdm_autologin_user: vagrant
-    # Install Seahorse SSH agent GUI
-    - seahorse
     # Install Google Chrome web broswer
     - cmprescott.chrome
     # Install Atom editor

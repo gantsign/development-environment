@@ -1,26 +1,5 @@
-- name: create xfce4 dockbarx config directory
-  file:
-    path: /home/vagrant/.config/xfce4/panel
-    state: directory
-    owner: vagrant
-    group: vagrant
-- name: write xfce4 dockbarx config
-  template:
-    src: dockbarx-9.rc
-    dest: /home/vagrant/.config/xfce4/panel/dockbarx-9.rc
-    owner: vagrant
-    group: vagrant
-- name: add dockbarx ppa
-  apt_repository:
-    repo: 'ppa:dockbar-main/ppa'
-- name: install dockbarx
-  apt:
-    name: dockbarx
-    state: present
-- name: install xfce4-dockbarx-plugin
-  apt:
-    name: xfce4-dockbarx-plugin
-    state: present
+---
+# Configure DockbarX launcher
 - name: install gconf2
   apt:
     name: gconf2
