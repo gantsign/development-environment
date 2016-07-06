@@ -1,2 +1,3 @@
 ---
-clock_format: '%d %b, %H:%M'
+# Format for the desktop clock
+xdesktop_clock_format: '%d %b, %H:%M'

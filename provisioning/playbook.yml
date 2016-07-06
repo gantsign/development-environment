@@ -108,9 +108,9 @@
             - DevKit
     # Add Maven extension to popup a GUI notification when builds finish
     - gantsign.maven-notifier
-    # Install and configure DockbarX docbar for Xfce
+    # Add items to DockbarX launcher
     - role: dockbarx-launcher
-      launchers:
+      docbarx_launcher_items:
         - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
         - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
         - 'google-chrome;/usr/share/applications/google-chrome.desktop'

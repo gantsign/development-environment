@@ -22,7 +22,7 @@
     gconftool-2 --type list --list-type=string \
       --set /apps/dockbarx/launchers "$new_launchers" \
     || exit 1
-  with_items: "{{ launchers }}"
+  with_items: "{{ docbarx_launcher_items }}"
   become: yes
   become_method: sudo
   become_user: vagrant

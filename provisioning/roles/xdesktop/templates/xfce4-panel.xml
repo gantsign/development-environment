@@ -45,7 +45,7 @@
       <property name="expand" type="bool" value="false"/>
     </property>
     <property name="plugin-8" type="string" value="clock">
-      <property name="digital-format" type="string" value="{{ clock_format }}"/>
+      <property name="digital-format" type="string" value="{{ xdesktop_clock_format }}"/>
     </property>
     <property name="plugin-5" type="string" value="mixer">
       <property name="sound-card" type="string" value=""/>
