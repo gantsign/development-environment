@@ -52,7 +52,7 @@
     # Enable compressed RAM swap
     - gantsign.zram-config
     # Install common command line tools
-    - common-cli
+    - gantsign.command-line-tools
     # Install and configure Git version control
     - role: franklinkim.git
       git_config:

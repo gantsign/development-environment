@@ -11,6 +11,8 @@
 - src: cmprescott.chrome
 - src: gantsign.atom
 - src: gantsign.audio
+- src: https://github.com/gantsign/ansible-role-command-line-tools
+  name: gantsign.command-line-tools
 - src: gantsign.intellij
 - src: gantsign.keyboard
 - src: gantsign.lightdm
