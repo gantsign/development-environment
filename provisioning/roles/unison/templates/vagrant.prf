@@ -4,16 +4,16 @@ root = /home/vagrant
 root = /vagrant/home
 
 # Paths to mirror
-{% for includeFile in includeFiles %}
-path = {{includeFile}}
+{% for include_file in unison_include_files %}
+path = {{ include_file }}
 {% endfor %}
-{% for includeDirectorie in includeDirectories %}
-path = {{includeDirectorie}}
+{% for include_directory in unison_include_directories %}
+path = {{ include_directory }}
 {% endfor %}
 
 # Paths to ignore
-{% for ignorePath in ignorePaths %}
-ignore = {{ignorePath}}
+{% for ignore_path in unison_ignore_paths %}
+ignore = {{ ignore_path }}
 {% endfor %}
 
 # Paths to protect

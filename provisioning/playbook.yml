@@ -32,16 +32,16 @@
       timezone: Europe/London
     # Synchronize files/directories between client and host
     - role: unison
-      includeDirectories:
+      unison_include_directories:
         - .ssh
         - .gnupg
         - .m2
         - workspace
-      includeFiles:
+      unison_include_files:
         - .bash_history
         - .zsh_history
         - .gitconfig
-      ignorePaths:
+      unison_ignore_paths:
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
         - Name target

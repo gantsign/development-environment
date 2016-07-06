@@ -1,24 +1,27 @@
 ---
 - name: add unison ppa
-  apt_repository: repo='ppa:john-freeman/unison'
+  apt_repository:
+    repo: 'ppa:john-freeman/unison'
 - name: install unison
-  apt: name=unison state=present
+  apt:
+    name: unison
+    state: present
 - name: write unison systemd configration
-  template: >
-    src=unison.service
-    dest=/etc/systemd/system/unison.service
+  template:
+    src: unison.service
+    dest: /etc/systemd/system/unison.service
 - name: create vagrant .unison directory
-  file: >
-    path=/home/vagrant/.unison/
-    state=directory
-    owner=vagrant
-    group=vagrant
+  file:
+    path: /home/vagrant/.unison/
+    state: directory
+    owner: vagrant
+    group: vagrant
 - name: write unison vagrant profile
-  template: >
-    src=vagrant.prf
-    dest=/home/vagrant/.unison/vagrant.prf
-    owner=vagrant
-    group=vagrant
+  template:
+    src: vagrant.prf
+    dest: /home/vagrant/.unison/vagrant.prf
+    owner: vagrant
+    group: vagrant
 - name: sync missing files from host to client
   shell: >
     /usr/bin/unison vagrant
@@ -36,20 +39,20 @@
   become_method: sudo
   become_user: vagrant
 - name: create missing includeDirectories
-  file: >
-    path=/home/vagrant/{{ item }}
-    state=directory
-    owner=vagrant
-    group=vagrant
-  with_items: "{{includeDirectories}}"
+  file:
+    path: "/home/vagrant/{{ item }}"
+    state: directory
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ unison_include_directories }}"
 - name: create missing includeFiles
-  copy: >
-    content=""
-    dest=/home/vagrant/{{ item }}
-    force=no
-    owner=vagrant
-    group=vagrant
-  with_items: "{{includeFiles}}"
+  copy:
+    content: ''
+    dest: "/home/vagrant/{{ item }}"
+    force: no
+    owner: vagrant
+    group: vagrant
+  with_items: "{{ unison_include_files }}"
 - name: sync missing files from client to host
   shell: >
     /usr/bin/unison vagrant
@@ -105,4 +108,7 @@
 - name: add unison service to default run level and start
   # Since Vagrant shares are mounted/unmounted outside the systemd lifecycle
   # we can't auto-start/auto-stop the service using systemd.
-  service: name=unison enabled=no state=stopped
+  service:
+    name: unison
+    enabled: no
+    state: stopped
