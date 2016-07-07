@@ -27,6 +27,9 @@
         && cp --recursive --no-clobber {{ local_ansible_data_path }}/* {{ cached_ansible_data_path }}
         || exit 1
   roles:
+    # Preserve the apt cache
+    - role: apt
+      apt_preserve_cache: "{{ has_vagrant_cachier }}"
     # Set system timezone
     - role: franklinkim.timezone
       timezone: Europe/London

@@ -1,0 +1,18 @@
+{% if apt_preserve_cache %}
+APT::Archives::MaxAge "0";
+APT::Archives::MinAge "0";
+APT::Archives::MaxSize "0";
+{% else %}
+{% if not apt_archives_maxage in [None, ''] %}
+APT::Archives::MaxAge "{{ apt_archives_maxage }}";
+
+{% endif %}
+{% if not apt_archives_minage in [None, ''] %}
+APT::Archives::MinAge "{{ apt_archives_minage }}";
+
+{% endif %}
+{% if not apt_archives_maxsize in [None, ''] %}
+APT::Archives::MaxSize "{{ apt_archives_maxsize }}";
+
+{% endif %}
+{% endif %}

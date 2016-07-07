@@ -1,0 +1,12 @@
+---
+# Whether the cache of DEB files should be preserved or cleaned
+apt_preserve_cache: false
+
+# Max age (in days) of DEB files to keep when cleaning cache
+apt_archives_maxage: null
+
+# Min age (in days) of DEB files to keep when cleaning cache
+apt_archives_minage: null
+
+# Max size (in MB) of DEB files to keep when cleaning cache
+apt_archives_maxsize: null
