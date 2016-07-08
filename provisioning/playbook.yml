@@ -112,13 +112,15 @@
     # Add Maven extension to popup a GUI notification when builds finish
     - gantsign.maven-notifier
     # Add items to DockbarX launcher
-    - role: dockbarx-launcher
-      docbarx_launcher_items:
-        - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
-        - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
-        - 'google-chrome;/usr/share/applications/google-chrome.desktop'
-        - 'atom;/usr/share/applications/atom.desktop'
-        - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
+    - role: gantsign.dockbarx-launcher
+      users:
+        - username: vagrant
+          docbarx_launcher_items:
+            - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
+            - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
+            - 'google-chrome;/usr/share/applications/google-chrome.desktop'
+            - 'atom;/usr/share/applications/atom.desktop'
+            - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
     # Configure environment variables
     - role: franklinkim.environment
       environment_config:
