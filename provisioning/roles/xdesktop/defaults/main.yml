@@ -1,6 +1,0 @@
----
-# Default format for the desktop clock (will be overriden by user specific setting)
-xdesktop_default_clock_format: '%d %b, %H:%M'
-
-# Users to configure the desktop for
-users: []

@@ -85,7 +85,7 @@
       audio_users:
         - vagrant
     # Install Xfce desktop
-    - role: xdesktop
+    - role: gantsign.xdesktop
       users:
         - username: vagrant
     # Auto-login to X desktop
