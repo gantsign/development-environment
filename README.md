@@ -168,6 +168,14 @@ languages that it does support. It also has excelent built-in Git support.
 
 ![Visual Studio Code editor window](docs/images/visual-studio-code.png)
 
+#### GitKraken
+
+Website: https://www.gitkraken.com
+
+A user firendly Git GUI client.
+
+![GitKraken window](docs/images/gitkraken.png)
+
 #### Seahorse
 
 Website: https://wiki.gnome.org/Apps/Seahorse

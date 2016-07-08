@@ -1,0 +1,24 @@
+---
+- name: create local Ansible data directory
+  file:
+    state: directory
+    mode: '0755'
+    dest: "{{ local_ansible_data_path }}"
+
+- name: download GitKraken
+  get_url:
+    url: "{{ gitkraken_redis_url }}"
+    dest: "{{ local_ansible_data_path }}/{{ gitkraken_redis_filename }}"
+    force: false
+    use_proxy: true
+    validate_certs: true
+    mode: '0644'
+
+- name: install GitKraken dependencies
+  apt:
+    name: gvfs-bin
+    state: present
+
+- name: install GitKraken
+  apt:
+    deb: "{{ local_ansible_data_path }}/{{ gitkraken_redis_filename }}"

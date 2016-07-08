@@ -1,0 +1,6 @@
+---
+# The download URL for the redistributable package
+gitkraken_redis_url: https://release.gitkraken.com/linux/gitkraken-amd64.deb
+
+# path for Ansible to store downloaded files
+local_ansible_data_path: '/tmp/ansible/data'
