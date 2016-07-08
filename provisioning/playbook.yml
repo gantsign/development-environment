@@ -95,6 +95,8 @@
     - cmprescott.chrome
     # Install Atom editor
     - gantsign.atom
+    # Install Visual Studio Code editor
+    - visual-studio-code
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
       intellij_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
@@ -122,6 +124,7 @@
             - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
             - 'google-chrome;/usr/share/applications/google-chrome.desktop'
             - 'atom;/usr/share/applications/atom.desktop'
+            - 'code;/usr/share/applications/code.desktop'
             - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
     # Configure environment variables
     - role: franklinkim.environment

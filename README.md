@@ -159,6 +159,15 @@ An extremely powerful text editor with tons of available plugins.
 
 ![Atom editor window](docs/images/atom.png)
 
+#### Visual Studio Code
+
+Website: https://code.visualstudio.com
+
+Similar to Atom, fewer plugins available but gernerally more polished for the
+languages that it does support. It also has excelent built-in Git support.
+
+![Visual Studio Code editor window](docs/images/visual-studio-code.png)
+
 #### Seahorse
 
 Website: https://wiki.gnome.org/Apps/Seahorse
