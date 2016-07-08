@@ -134,7 +134,7 @@ adding the `/home/vagrant/workspace` directory to this path you can `cd` into
 any of your project folders (assuming they are sub-directories of `workspace`)
 from any directory in the file system.
 
-### X Windows tools
+### X Windows desktop
 
 #### Xubuntu Core
 
@@ -150,6 +150,49 @@ Website: https://github.com/M7S/dockbarx
 
 Integrates with the Xfce Panel to provide a modern dockbar interface for
 launching and switching between applications.
+
+#### Seahorse
+
+Website: https://wiki.gnome.org/Apps/Seahorse
+
+Graphical user interface for managing your keys and SSH agent to save you having
+to put in your SSH password more than once in the same session.
+
+![Seahorse](docs/images/seahorse.png)
+
+### Maven extensions
+
+#### Maven Color
+
+Website: https://github.com/jcgay/maven-color
+
+Makes your Maven console output more readable by adding color.
+
+![Maven Color terminal output](docs/images/maven-color.png)
+
+#### Maven Notifier
+
+Website: https://github.com/jcgay/maven-notifier
+
+One for all you multi-taskers; if you like to check your email while waiting for
+a long build to finish, this extension will trigger a popup notification to let
+you know when the build is complete.
+
+![Maven Notifier popup](docs/images/maven-notifier.png)
+
+### Development tools
+
+#### IntelliJ IDEA IDE
+
+Website: https://www.jetbrains.com/idea
+
+In my opinion IntelliJ IDEA is the best Java IDE available. While the Community
+Edition is excellent at what it does, you need to pay for the Ultimate Edition
+if you want support for common tools/frameworks such as the JavaEE and the
+Spring Framework; the relatively small price for the Ultimate Edition is well
+worth the money. By default the Community Edition is installed.
+
+![IntelliJ IDEA IDE](docs/images/intellij.png)
 
 #### Atom
 
@@ -175,48 +218,6 @@ Website: https://www.gitkraken.com
 A user firendly Git GUI client.
 
 ![GitKraken window](docs/images/gitkraken.png)
-
-#### Seahorse
-
-Website: https://wiki.gnome.org/Apps/Seahorse
-
-Graphical user interface for managing your keys and SSH agent to save you having
-to put in your SSH password more than once in the same session.
-
-![Seahorse](docs/images/seahorse.png)
-
-
-### Maven extensions
-
-#### Maven Color
-
-Website: https://github.com/jcgay/maven-color
-
-Makes your Maven console output more readable by adding color.
-
-![Maven Color terminal output](docs/images/maven-color.png)
-
-#### Maven Notifier
-
-Website: https://github.com/jcgay/maven-notifier
-
-One for all you multi-taskers; if you like to check your email while waiting for
-a long build to finish, this extension will trigger a popup notification to let
-you know when the build is complete.
-
-![Maven Notifier popup](docs/images/maven-notifier.png)
-
-### IntelliJ IDEA IDE
-
-Website: https://www.jetbrains.com/idea
-
-In my opinion IntelliJ IDEA is the best Java IDE available. While the Community
-Edition is excellent at what it does, you need to pay for the Ultimate Edition
-if you want support for common tools/frameworks such as the JavaEE and the
-Spring Framework; the relatively small price for the Ultimate Edition is well
-worth the money. By default the Community Edition is installed.
-
-![IntelliJ IDEA IDE](docs/images/intellij.png)
 
 ## Installation
 
