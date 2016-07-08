@@ -40,6 +40,7 @@
         - .gnupg
         - .m2
         - .gitkraken
+        - .config/Code
         - workspace
       unison_include_files:
         - .bash_history
@@ -49,6 +50,8 @@
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
         - Name target
+        - Name GPUCache
+        - Name Local Storage
     # Set keyboard layout
     - role: gantsign.keyboard
       keyboard_model: pc105
