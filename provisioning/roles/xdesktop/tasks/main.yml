@@ -2,22 +2,25 @@
 # Configure Xfce desktop
 - name: create xfce4 config directory
   file:
-    path: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml
+    path: "/home/{{ item.username }}/.config/xfce4/xfconf/xfce-perchannel-xml"
     state: directory
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
 - name: write xfce4 power manager config
   template:
     src: xfce4-power-manager.xml
-    dest: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-    owner: vagrant
-    group: vagrant
+    dest: "/home/{{ item.username }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml"
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
 - name: write xfce4 panel config
   template:
     src: xfce4-panel.xml
-    dest: /home/vagrant/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-    owner: vagrant
-    group: vagrant
+    dest: "/home/{{ item.username }}/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
 
 # Install Xfce desktop
 - name: install xubuntu-core
@@ -50,16 +53,18 @@
 # Install and configure DockbarX docbar for Xfce
 - name: create xfce4 dockbarx config directory
   file:
-    path: /home/vagrant/.config/xfce4/panel
+    path: "/home/{{ item.username }}/.config/xfce4/panel"
     state: directory
-    owner: vagrant
-    group: vagrant
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
 - name: write xfce4 dockbarx config
   template:
     src: dockbarx-9.rc
-    dest: /home/vagrant/.config/xfce4/panel/dockbarx-9.rc
-    owner: vagrant
-    group: vagrant
+    dest: "/home/{{ item.username }}/.config/xfce4/panel/dockbarx-9.rc"
+    owner: "{{ item.username }}"
+    group: "{{ item.username }}"
+  with_items: "{{ users }}"
 - name: add dockbarx ppa
   apt_repository:
     repo: 'ppa:dockbar-main/ppa'

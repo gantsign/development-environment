@@ -85,7 +85,9 @@
       audio_users:
         - vagrant
     # Install Xfce desktop
-    - xdesktop
+    - role: xdesktop
+      users:
+        - username: vagrant
     # Auto-login to X desktop
     - role: gantsign.lightdm
       lightdm_autologin_user: vagrant
