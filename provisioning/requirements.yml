@@ -9,6 +9,7 @@
   name: silpion.util
 - src: groover.maven
 - src: cmprescott.chrome
+- src: gantsign.apt
 - src: gantsign.atom
 - src: gantsign.audio
 - src: https://github.com/gantsign/ansible-role-command-line-tools

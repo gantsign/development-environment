@@ -28,7 +28,7 @@
         || exit 1
   roles:
     # Preserve the apt cache
-    - role: apt
+    - role: gantsign.apt
       apt_preserve_cache: "{{ has_vagrant_cachier }}"
     # Set system timezone
     - role: franklinkim.timezone
