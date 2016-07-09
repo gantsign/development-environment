@@ -206,8 +206,8 @@ An extremely powerful text editor with tons of available plugins.
 
 Website: https://code.visualstudio.com
 
-Similar to Atom, fewer plugins available but gernerally more polished for the
-languages that it does support. It also has excelent built-in Git support.
+Similar to Atom, fewer plugins available but generally more polished for the
+languages that it does support. It also has excellent built-in Git support.
 
 ![Visual Studio Code editor window](docs/images/visual-studio-code.png)
 
@@ -215,7 +215,7 @@ languages that it does support. It also has excelent built-in Git support.
 
 Website: https://www.gitkraken.com
 
-A user firendly Git GUI client.
+A user friendly Git GUI client.
 
 ![GitKraken window](docs/images/gitkraken.png)
 
