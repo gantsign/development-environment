@@ -102,7 +102,7 @@
     # Install Atom editor
     - gantsign.atom
     # Install Visual Studio Code editor
-    - visual-studio-code
+    - gantsign.visual-studio-code
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
       intellij_default_jdk_home: "{{ ansible_local.java.general.java_home }}"

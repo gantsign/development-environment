@@ -22,6 +22,7 @@
 - src: gantsign.maven-notifier
 - src: https://github.com/gantsign/ansible-role-unison
   name: gantsign.unison
+- src: gantsign.visual-studio-code
 - src: https://github.com/gantsign/ansible-role-xdesktop
   name: gantsign.xdesktop
 - src: gantsign.zram-config
