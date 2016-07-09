@@ -98,7 +98,7 @@
     # Install Google Chrome web broswer
     - cmprescott.chrome
     # Install GitKraken
-    - gitkraken
+    - gantsign.gitkraken
     # Install Atom editor
     - gantsign.atom
     # Install Visual Studio Code editor

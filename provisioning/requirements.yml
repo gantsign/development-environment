@@ -15,6 +15,7 @@
 - src: https://github.com/gantsign/ansible-role-command-line-tools
   name: gantsign.command-line-tools
 - src: gantsign.dockbarx-launcher
+- src: gantsign.gitkraken
 - src: gantsign.intellij
 - src: gantsign.keyboard
 - src: gantsign.lightdm
