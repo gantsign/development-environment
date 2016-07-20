@@ -52,6 +52,8 @@
         - Name target
         - Name GPUCache
         - Name Local Storage
+        - Name .bin
+        - Name node_modules
     # Set keyboard layout
     - role: gantsign.keyboard
       keyboard_model: pc105
@@ -84,6 +86,13 @@
       maven_mirror: "http://mirrors.ukfast.co.uk/sites/ftp.apache.org/maven/maven-{{ maven_version|regex_replace('\\..*', '') }}/{{ maven_version }}/binaries"
     # Add Maven extension to colorize Maven output
     - gantsign.maven-color
+    # Add Node.js
+    - role: geerlingguy.nodejs
+      nodejs_version: 6.x
+      nodejs_install_npm_user: vagrant
+      nodejs_npm_global_packages:
+        - name: grunt-cli
+        - name: grunt-init
     # Enable audio support
     - role: gantsign.audio
       audio_users:

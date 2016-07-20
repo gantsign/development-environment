@@ -9,6 +9,7 @@
   name: silpion.util
 - src: groover.maven
 - src: cmprescott.chrome
+- src: geerlingguy.nodejs
 - src: gantsign.apt
 - src: gantsign.atom
 - src: gantsign.audio
