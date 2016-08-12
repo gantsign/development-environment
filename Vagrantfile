@@ -6,7 +6,7 @@ Vagrant.require_version '>= 1.8.4'
 
 required_plugins = %w(vagrant-reload vagrant-triggers vagrant-vbguest)
 plugins_to_install = required_plugins.select { |plugin| !Vagrant.has_plugin? plugin }
-if !plugins_to_install.empty?
+unless plugins_to_install.empty?
   puts "Installing plugins: #{plugins_to_install.join(' ')}"
   if system "vagrant plugin install #{plugins_to_install.join(' ')}"
     exec "vagrant #{ARGV.join(' ')}"
