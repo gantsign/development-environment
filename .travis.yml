@@ -1,4 +1,8 @@
 ---
+rvm:
+  # Specify Ruby version
+  - '2.2'
+
 install:
   # Install lint tools.
   - gem install rubocop
