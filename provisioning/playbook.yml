@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  sudo: true
+  become: yes
   vars:
     local_ansible_data_path: /usr/local/src/ansible/data
     cached_ansible_data_path: /tmp/vagrant-cache/ansible/data
