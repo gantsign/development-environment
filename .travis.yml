@@ -1,12 +1,37 @@
 ---
+# Require the standard build environment
+sudo: required
+
 rvm:
   # Specify Ruby version
   - '2.2'
+
+python:
+  # Specify Python version
+  - '2.7'
+
+# Install ansible
+addons:
+  apt:
+    packages:
+      - python-pip
 
 install:
   # Install lint tools.
   - gem install rubocop
 
+  # Install ansible
+  - sudo pip install ansible
+
+  # Check ansible version
+  - ansible --version
+
 script:
   # Vagrantfile syntax check
   - rubocop ./Vagrantfile --except LineLength,Eval,MutableConstant
+
+  # Install Ansible roles
+  - sudo ansible-galaxy install -r provisioning/requirements.yml
+
+  # Ansible syntax check
+  - ansible-playbook provisioning/playbook.yml -i tests/inventory --syntax-check
