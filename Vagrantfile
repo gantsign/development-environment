@@ -101,8 +101,8 @@ Vagrant.configure(2) do |config|
   # Use this to insert your own (and possibly rewrite) Vagrant config lines.
   # If a file 'Customfile' exists in the same directory as this Vagrantfile,
   # it will be evaluated as ruby inline as it loads.
-  if File.exists?(File.join(vagrant_dir,'Customfile')) then
-    eval(IO.read(File.join(vagrant_dir,'Customfile')), binding)
+  if File.exists?(File.join(vagrant_dir, 'Customfile')) then
+    eval(IO.read(File.join(vagrant_dir, 'Customfile')), binding)
   end
 
   # View the documentation for the provider you are using for more
