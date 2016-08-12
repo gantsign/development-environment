@@ -1,5 +1,7 @@
 # Java Development Environment
 
+[![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
+
 Getting your development environment setup correctly can be a time consuming and
 error prone process; getting everyone on a team to setup their environment
 correctly is even more challenging. The goal of this project is to make setting
