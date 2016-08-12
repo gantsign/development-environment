@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 # ansible_local requires version >= 1.8.4 to work stably
-Vagrant.require_version ">= 1.8.4"
+Vagrant.require_version '>= 1.8.4'
 
 required_plugins = %w( vagrant-reload vagrant-triggers vagrant-vbguest )
 plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
@@ -11,13 +11,13 @@ if not plugins_to_install.empty?
   if system "vagrant plugin install #{plugins_to_install.join(' ')}"
     exec "vagrant #{ARGV.join(' ')}"
   else
-    abort "Installation of one or more plugins has failed. Aborting."
+    abort 'Installation of one or more plugins has failed. Aborting.'
   end
 end
 
 vagrant_dir = File.expand_path(File.dirname(__FILE__))
 
-# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# All Vagrant configuration is done below. The '2' in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
@@ -28,7 +28,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "ubuntu/wily64"
+  config.vm.box = 'ubuntu/wily64'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -39,41 +39,41 @@ Vagrant.configure(2) do |config|
   # and stopped before shared folders are unmounted (if we don't Unison will
   # assume all files have been deleted and cascade the delete to the client VM).
   config.trigger.after :up do
-    run_remote "sudo systemctl start unison"
+    run_remote 'sudo systemctl start unison'
   end
   config.trigger.after :reload do
-    run_remote "sudo systemctl start unison"
+    run_remote 'sudo systemctl start unison'
   end
   config.trigger.before :halt do
-    run_remote "sudo systemctl stop unison"
+    run_remote 'sudo systemctl stop unison'
   end
   config.trigger.before :reload do
-    run_remote "sudo systemctl stop unison"
+    run_remote 'sudo systemctl stop unison'
   end
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
-  # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  # accessing 'localhost:8080' will access port 80 on the guest machine.
+  # config.vm.network 'forwarded_port', guest: 80, host: 8080
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  # config.vm.network 'private_network', ip: '192.168.33.10'
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network "public_network"
+  # config.vm.network 'public_network'
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  # config.vm.synced_folder '../data', '/vagrant_data'
 
-  config.vm.provider "virtualbox" do |vb|
+  config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
-    vb.name = "development-environment"
+    vb.name = 'development-environment'
 
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
@@ -82,18 +82,18 @@ Vagrant.configure(2) do |config|
     vb.cpus = 2
 
     # Customize graphics settings
-    vb.customize ["modifyvm", :id, "--vram", "64"]
-    vb.customize ["modifyvm", :id, "--accelerate3d", "off"]
+    vb.customize ['modifyvm', :id, '--vram', '64']
+    vb.customize ['modifyvm', :id, '--accelerate3d', 'off']
 
     # Customize the amount of memory on the VM:
-    vb.memory = "4096"
+    vb.memory = '4096'
 
     # Enable host desktop integration
-    vb.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
-    vb.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
+    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+    vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
 
     # Enable sound
-    vb.customize ["modifyvm", :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
+    vb.customize ['modifyvm', :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
   end
 
   # Customfile
@@ -111,13 +111,13 @@ Vagrant.configure(2) do |config|
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
   # such as FTP and Heroku are also available. See the documentation at
   # https://docs.vagrantup.com/v2/push/atlas.html for more information.
-  # config.push.define "atlas" do |push|
-  #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
+  # config.push.define 'atlas' do |push|
+  #   push.app = 'YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME'
   # end
 
   # Install the vagrant-cachier if you want to speed up rebuilds at the cost
   # of some disk space.
-  if Vagrant.has_plugin?("vagrant-cachier")
+  if Vagrant.has_plugin?('vagrant-cachier')
     # Configure cached packages to be shared between instances of the same base
     # box. More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
     config.cache.scope = :box
@@ -125,19 +125,19 @@ Vagrant.configure(2) do |config|
 
   # Install Ansible 1.9.2 through Ubuntu package (Vagrant auto-install tries to
   # install Ansible 2.0, which doesn't work with the roles using groover.util)
-  config.vm.provision "shell", inline: <<-SHELL
+  config.vm.provision 'shell', inline: <<-SHELL
     sudo apt-get -qq update
     sudo apt-get -qq install -y --no-install-recommends ansible
   SHELL
 
   # Run Ansible from the Vagrant VM
-  config.vm.provision "ansible_local" do |ansible|
-    ansible.playbook = "provisioning/playbook.yml"
-    ansible.galaxy_role_file = "provisioning/requirements.yml"
-    ansible.galaxy_roles_path = "/etc/ansible/roles"
-    ansible.galaxy_command = "sudo ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force"
+  config.vm.provision 'ansible_local' do |ansible|
+    ansible.playbook = 'provisioning/playbook.yml'
+    ansible.galaxy_role_file = 'provisioning/requirements.yml'
+    ansible.galaxy_roles_path = '/etc/ansible/roles'
+    ansible.galaxy_command = 'sudo ansible-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force'
     ansible.extra_vars = {
-      has_vagrant_cachier: Vagrant.has_plugin?("vagrant-cachier")
+      has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier')
     }
   end
 
