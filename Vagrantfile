@@ -144,4 +144,6 @@ Vagrant.configure(2) do |config|
   # Restart the VM after everything is installed
   config.vm.provision :reload
 
+  # It takes a second restart to get the screen resizing to work
+  config.vm.provision :reload
 end
