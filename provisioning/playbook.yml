@@ -80,10 +80,8 @@
     - role: groover.java
       java_oracle_version: 8u66
     # Install Maven
-    - role: groover.maven
-      maven_version: 3.3.9
-      maven_redis_sha256sum: 6e3e9c949ab4695a204f74038717aa7b2689b1be94875899ac1b3fe42800ff82
-      maven_mirror: "http://mirrors.ukfast.co.uk/sites/ftp.apache.org/maven/maven-{{ maven_version|regex_replace('\\..*', '') }}/{{ maven_version }}/binaries"
+    - role: gantsign.maven
+      maven_version: '3.3.9'
     # Add Maven extension to colorize Maven output
     - gantsign.maven-color
     # Add Node.js
