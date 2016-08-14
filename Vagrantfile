@@ -71,6 +71,10 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder '../data', '/vagrant_data'
 
+  # Disable auto update of VirtualBox Guest Additions.
+  # Slows down rebuilds without providing any clear benefit.
+  config.vbguest.auto_update = false
+
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
     vb.name = 'development-environment'
@@ -142,8 +146,5 @@ Vagrant.configure(2) do |config|
   end
 
   # Restart the VM after everything is installed
-  config.vm.provision :reload
-
-  # It takes a second restart to get the screen resizing to work
   config.vm.provision :reload
 end
