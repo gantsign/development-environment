@@ -3,10 +3,7 @@
 - src: angstwad.docker_ubuntu
 - src: franklinkim.users-oh-my-zsh
 - src: franklinkim.git
-- src: groover.java
 - src: franklinkim.environment
-- src: groover.util
-  name: silpion.util
 - src: cmprescott.chrome
 - src: geerlingguy.nodejs
 - src: gantsign.apt
@@ -17,6 +14,8 @@
 - src: gantsign.dockbarx-launcher
 - src: gantsign.gitkraken
 - src: gantsign.intellij
+- src: https://github.com/gantsign/ansible-role-java
+  name: gantsign.java
 - src: gantsign.keyboard
 - src: gantsign.lightdm
 - src: gantsign.maven

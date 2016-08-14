@@ -77,8 +77,8 @@
       docker_group_members:
         - vagrant
     # Install Java JDK
-    - role: groover.java
-      java_oracle_version: 8u66
+    - role: gantsign.java
+      java_version: 8u102
     # Install Maven
     - role: gantsign.maven
       maven_version: '3.3.9'
