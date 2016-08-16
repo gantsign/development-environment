@@ -85,22 +85,34 @@
 
     # Install Docker
     - role: angstwad.docker_ubuntu
+      tags:
+        - docker
       docker_group_members:
         - vagrant
 
     # Install Java JDK
     - role: gantsign.java
+      tags:
+        - java
       java_version: 8u102
 
     # Install Maven
     - role: gantsign.maven
+      tags:
+        - java
+        - maven
       maven_version: '3.3.9'
 
     # Add Maven extension to colorize Maven output
-    - gantsign.maven-color
+    - role: gantsign.maven-color
+      tags:
+        - java
+        - maven
 
     # Add Node.js
     - role: geerlingguy.nodejs
+      tags:
+        - nodejs
       nodejs_version: 6.x
       nodejs_install_npm_user: vagrant
       nodejs_npm_global_packages:
@@ -109,32 +121,49 @@
 
     # Enable audio support
     - role: gantsign.audio
+      tags:
+        - gui
       audio_users:
         - vagrant
 
     # Install Xfce desktop
     - role: gantsign.xdesktop
+      tags:
+        - gui
       users:
         - username: vagrant
 
     # Auto-login to X desktop
     - role: gantsign.lightdm
+      tags:
+        - gui
       lightdm_autologin_user: vagrant
 
     # Install Google Chrome web broswer
-    - cmprescott.chrome
+    - role: cmprescott.chrome
+      tags:
+        - gui
 
     # Install GitKraken
-    - gantsign.gitkraken
+    - role: gantsign.gitkraken
+      tags:
+        - gui
 
     # Install Atom editor
-    - gantsign.atom
+    - role: gantsign.atom
+      tags:
+        - gui
 
     # Install Visual Studio Code editor
-    - gantsign.visual-studio-code
+    - role: gantsign.visual-studio-code
+      tags:
+        - gui
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
+      tags:
+        - java
+        - gui
       intellij_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
       intellij_default_maven_home: "{{ ansible_local.maven.general.maven_home }}"
       users:
@@ -151,10 +180,16 @@
             - DevKit
 
     # Add Maven extension to popup a GUI notification when builds finish
-    - gantsign.maven-notifier
+    - role: gantsign.maven-notifier
+      tags:
+        - java
+        - maven
+        - gui
 
     # Add items to DockbarX launcher
     - role: gantsign.dockbarx-launcher
+      tags:
+        - gui
       users:
         - username: vagrant
           docbarx_launcher_items:

@@ -237,3 +237,6 @@ Customfile
 
 # Ignore files persisted between VM rebuilds
 /home
+
+# Ignore Nugrant config
+/.vagrantuser

@@ -4,7 +4,7 @@
 # ansible_local requires version >= 1.8.4 to work stably
 Vagrant.require_version '>= 1.8.4'
 
-required_plugins = %w(vagrant-reload vagrant-triggers vagrant-vbguest)
+required_plugins = %w(vagrant-reload vagrant-triggers vagrant-vbguest nugrant)
 plugins_to_install = required_plugins.select { |plugin| !Vagrant.has_plugin? plugin }
 unless plugins_to_install.empty?
   puts "Installing plugins: #{plugins_to_install.join(' ')}"
@@ -34,6 +34,14 @@ Vagrant.configure(2) do |config|
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
   # config.vm.box_check_update = false
+
+  # Customizable configuration
+  # See https://github.com/maoueh/nugrant
+  config.user.defaults = {
+    'ansible' => {
+      'skip_tags' => []
+    }
+  }
 
   # Ensure Unison service isn't started until Vagrant shared folders are mounted
   # and stopped before shared folders are unmounted (if we don't Unison will
@@ -134,6 +142,7 @@ Vagrant.configure(2) do |config|
     ansible.extra_vars = {
       has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier')
     }
+    ansible.skip_tags = config.user.ansible.skip_tags
   end
 
   # Restart the VM after everything is installed
