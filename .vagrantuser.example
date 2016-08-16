@@ -1,0 +1,4 @@
+---
+ansible:
+    skip_tags:
+        - gui
