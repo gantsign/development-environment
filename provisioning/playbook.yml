@@ -1,9 +1,11 @@
 ---
 - hosts: all
   become: yes
+
   vars:
     local_ansible_data_path: /usr/local/src/ansible/data
     cached_ansible_data_path: /tmp/vagrant-cache/ansible/data
+
   pre_tasks:
     - name: update apt cache
       apt: update_cache=yes cache_valid_time=86400
@@ -16,6 +18,7 @@
         mkdir --parents {{ local_ansible_data_path }}
         && cp --recursive --no-clobber {{ cached_ansible_data_path }}/* {{ local_ansible_data_path }}
         || exit 1
+
   post_tasks:
     # Workaround for https://github.com/ansible/ansible/issues/9526
     # Can't cache /usr/local/src/ansible directly.
@@ -26,13 +29,16 @@
         mkdir --parents {{ cached_ansible_data_path }}
         && cp --recursive --no-clobber {{ local_ansible_data_path }}/* {{ cached_ansible_data_path }}
         || exit 1
+
   roles:
     # Preserve the apt cache
     - role: gantsign.apt
       apt_preserve_cache: "{{ has_vagrant_cachier }}"
+
     # Set system timezone
     - role: franklinkim.timezone
       timezone: Europe/London
+
     # Synchronize files/directories between client and host
     - role: gantsign.unison
       unison_include_directories:
@@ -54,14 +60,18 @@
         - Name Local Storage
         - Name .bin
         - Name node_modules
+
     # Set keyboard layout
     - role: gantsign.keyboard
       keyboard_model: pc105
       keyboard_layout: gb
+
     # Enable compressed RAM swap
     - gantsign.zram-config
+
     # Install common command line tools
     - gantsign.command-line-tools
+
     # Install and configure Git version control
     - role: franklinkim.git
       git_config:
@@ -72,18 +82,23 @@
           ll: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
           lds: 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
           rom: 'rebase origin/master'
+
     # Install Docker
     - role: angstwad.docker_ubuntu
       docker_group_members:
         - vagrant
+
     # Install Java JDK
     - role: gantsign.java
       java_version: 8u102
+
     # Install Maven
     - role: gantsign.maven
       maven_version: '3.3.9'
+
     # Add Maven extension to colorize Maven output
     - gantsign.maven-color
+
     # Add Node.js
     - role: geerlingguy.nodejs
       nodejs_version: 6.x
@@ -91,25 +106,33 @@
       nodejs_npm_global_packages:
         - name: grunt-cli
         - name: grunt-init
+
     # Enable audio support
     - role: gantsign.audio
       audio_users:
         - vagrant
+
     # Install Xfce desktop
     - role: gantsign.xdesktop
       users:
         - username: vagrant
+
     # Auto-login to X desktop
     - role: gantsign.lightdm
       lightdm_autologin_user: vagrant
+
     # Install Google Chrome web broswer
     - cmprescott.chrome
+
     # Install GitKraken
     - gantsign.gitkraken
+
     # Install Atom editor
     - gantsign.atom
+
     # Install Visual Studio Code editor
     - gantsign.visual-studio-code
+
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
       intellij_default_jdk_home: "{{ ansible_local.java.general.java_home }}"
@@ -126,8 +149,10 @@
             - Subversion
             - AntSupport
             - DevKit
+
     # Add Maven extension to popup a GUI notification when builds finish
     - gantsign.maven-notifier
+
     # Add items to DockbarX launcher
     - role: gantsign.dockbarx-launcher
       users:
@@ -140,6 +165,7 @@
             - 'atom;/usr/share/applications/atom.desktop'
             - 'code;/usr/share/applications/code.desktop'
             - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
+
     # Configure environment variables
     - role: franklinkim.environment
       environment_config:
@@ -149,6 +175,7 @@
         CDPATH: ".:/home/vagrant/workspace"
         # The tree command uses LS_COLORS instead of LSCOLORS
         LS_COLORS: "di=1;36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+
     # Install oh-my-zsh shell enhancements
     - role: franklinkim.users-oh-my-zsh
       users:
