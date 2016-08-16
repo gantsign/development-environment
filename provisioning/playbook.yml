@@ -41,6 +41,8 @@
 
     # Synchronize files/directories between client and host
     - role: gantsign.unison
+      tags:
+        - unison
       unison_include_directories:
         - .ssh
         - .gnupg
