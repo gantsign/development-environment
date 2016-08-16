@@ -47,16 +47,16 @@ Vagrant.configure(2) do |config|
   # and stopped before shared folders are unmounted (if we don't Unison will
   # assume all files have been deleted and cascade the delete to the client VM).
   config.trigger.after :up do
-    run_remote 'sudo systemctl start unison'
+    run_remote 'bash -c "sudo systemctl start unison || true"'
   end
   config.trigger.after :reload do
-    run_remote 'sudo systemctl start unison'
+    run_remote 'bash -c "sudo systemctl start unison || true"'
   end
   config.trigger.before :halt do
-    run_remote 'sudo systemctl stop unison'
+    run_remote 'bash -c "sudo systemctl stop unison || true"'
   end
   config.trigger.before :reload do
-    run_remote 'sudo systemctl stop unison'
+    run_remote 'bash -c "sudo systemctl stop unison || true"'
   end
 
   # Create a forwarded port mapping which allows access to a specific port
