@@ -68,6 +68,14 @@
       keyboard_model: pc105
       keyboard_layout: gb
 
+    # Configure locale
+    - role: tersmitten.locales
+      locales_present:
+        - en_GB.UTF-8
+        - en_US.UTF-8
+      locales_default:
+        lang: en_GB.UTF-8
+
     # Enable compressed RAM swap
     - gantsign.zram-config
 
