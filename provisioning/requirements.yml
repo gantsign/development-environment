@@ -6,6 +6,7 @@
 - src: franklinkim.environment
 - src: cmprescott.chrome
 - src: geerlingguy.nodejs
+- src: tersmitten.locales
 - src: gantsign.apt
 - src: gantsign.atom
 - src: gantsign.audio
