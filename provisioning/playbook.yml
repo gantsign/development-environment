@@ -203,15 +203,28 @@
             - 'code;/usr/share/applications/code.desktop'
             - 'idea;{{ ansible_local.intellij.general.intellij_desktop_file }}'
 
-    # Configure environment variables
+    # Configure general environment variables
     - role: franklinkim.environment
       environment_config:
-        JAVA_HOME: "{{ ansible_local.java.general.java_home }}"
-        IDEA_JDK: "{{ ansible_local.java.general.java_home }}"
-        M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
         CDPATH: ".:/home/vagrant/workspace"
         # The tree command uses LS_COLORS instead of LSCOLORS
         LS_COLORS: "di=1;36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:"
+
+    # Configure Java environment variables
+    - role: franklinkim.environment
+      tags:
+        - java
+      environment_config:
+        JAVA_HOME: "{{ ansible_local.java.general.java_home }}"
+        IDEA_JDK: "{{ ansible_local.java.general.java_home }}"
+
+    # Configure Maven environment variable
+    - role: franklinkim.environment
+      tags:
+        - java
+        - maven
+      environment_config:
+        M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
 
     # Install oh-my-zsh shell enhancements
     - role: franklinkim.users-oh-my-zsh
