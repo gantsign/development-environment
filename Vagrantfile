@@ -40,6 +40,19 @@ Vagrant.configure(2) do |config|
   config.user.defaults = {
     'ansible' => {
       'skip_tags' => []
+    },
+
+    'virtualbox' => {
+      'name' => 'development-environment',
+      'gui' => true,
+      'cpus' => 2,
+      'vram' => '64',
+      'accelerate3d' => 'off',
+      'memory' => '4096',
+      'clipboard' => 'bidirectional',
+      'draganddrop' => 'bidirectional',
+      'audio' => 'dsound',
+      'audiocontroller' => 'ac97'
     }
   }
 
@@ -85,27 +98,27 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
-    vb.name = 'development-environment'
+    vb.name = config.user.virtualbox.name
 
     # Display the VirtualBox GUI when booting the machine
-    vb.gui = true
+    vb.gui = config.user.virtualbox.gui
 
     # Customize CPU settings
-    vb.cpus = 2
+    vb.cpus = config.user.virtualbox.cpus
 
     # Customize graphics settings
-    vb.customize ['modifyvm', :id, '--vram', '64']
-    vb.customize ['modifyvm', :id, '--accelerate3d', 'off']
+    vb.customize ['modifyvm', :id, '--vram', config.user.virtualbox.vram]
+    vb.customize ['modifyvm', :id, '--accelerate3d', config.user.virtualbox.accelerate3d]
 
-    # Customize the amount of memory on the VM:
-    vb.memory = '4096'
+    # Customize the amount of memory on the VM
+    vb.memory = config.user.virtualbox.memory
 
     # Enable host desktop integration
-    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
-    vb.customize ['modifyvm', :id, '--draganddrop', 'bidirectional']
+    vb.customize ['modifyvm', :id, '--clipboard', config.user.virtualbox.clipboard]
+    vb.customize ['modifyvm', :id, '--draganddrop', config.user.virtualbox.draganddrop]
 
     # Enable sound
-    vb.customize ['modifyvm', :id, '--audio', 'dsound', '--audiocontroller', 'ac97']
+    vb.customize ['modifyvm', :id, '--audio', config.user.virtualbox.audio, '--audiocontroller', config.user.virtualbox.audiocontroller]
   end
 
   # Customfile

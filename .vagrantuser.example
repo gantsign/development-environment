@@ -2,3 +2,14 @@
 ansible:
   skip_tags:
     - gui
+virtualbox:
+  name: development-environment
+  gui: true
+  cpus: 2
+  vram: '64'
+  accelerate3d: off
+  memory: '4096'
+  clipboard: bidirectional
+  draganddrop: bidirectional
+  audio: dsound
+  audiocontroller: ac97
