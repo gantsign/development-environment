@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/windows,linux,osx,vim,emacs,visualstudiocode,intellij,eclipse,vagrant
+# Created by https://www.gitignore.io/api/windows,linux,osx,vim,emacs,visualstudiocode,intellij,eclipse,vagrant,ansible
 
 ### Windows ###
 # Windows image file caches
@@ -231,6 +231,10 @@ local.properties
 
 ### Vagrant ###
 .vagrant/
+
+
+### Ansible ###
+*.retry
 
 # Ignore Vagrant customization file
 Customfile
