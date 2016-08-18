@@ -28,7 +28,9 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = 'ubuntu/wily64'
+  # Important: use Bento boxes https://atlas.hashicorp.com/bento not the Canonical ones.
+  # Bento boxes are officially-recommended by Vagrant https://www.vagrantup.com/docs/boxes.html
+  config.vm.box = 'bento/ubuntu-15.10'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
