@@ -235,11 +235,13 @@
         M2_HOME: "{{ ansible_local.maven.general.maven_home }}"
 
     # Install oh-my-zsh shell enhancements
-    - role: franklinkim.users-oh-my-zsh
+    - role: gantsign.oh-my-zsh
       users:
-        - name: Vagrant
-          username: vagrant
-          authorized_keys: []
+        - username: vagrant
           oh_my_zsh:
             theme: robbyrussell
-            plugins: command-not-found docker git mvn
+            plugins:
+              - command-not-found
+              - docker
+              - git
+              - mvn
