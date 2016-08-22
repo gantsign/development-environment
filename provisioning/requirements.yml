@@ -26,8 +26,8 @@
 - src: gantsign.gitkraken
   version: '1.1.0'
 - src: gantsign.intellij
-- src: https://github.com/gantsign/ansible-role-java/archive/3.0.0.tar.gz
-  name: gantsign.java
+- src: gantsign.java
+  version: '3.0.0'
 - src: gantsign.keyboard
   version: '1.1.0'
 - src: gantsign.lightdm
