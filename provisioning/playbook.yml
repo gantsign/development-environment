@@ -4,7 +4,6 @@
 
   vars:
     x_ansible_download_dir: /usr/local/src/ansible/data
-    local_ansible_data_path: "{{ x_ansible_download_dir }}"
     cached_ansible_download_dir: /tmp/vagrant-cache/ansible/downloads
 
   pre_tasks:
