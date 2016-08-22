@@ -70,16 +70,10 @@ Vagrant.configure(2) do |config|
   # Ensure Unison service isn't started until Vagrant shared folders are mounted
   # and stopped before shared folders are unmounted (if we don't Unison will
   # assume all files have been deleted and cascade the delete to the client VM).
-  config.trigger.after :up do
+  config.trigger.after [:up, :reload] do
     run_remote 'bash -c "sudo systemctl start unison || true"'
   end
-  config.trigger.after :reload do
-    run_remote 'bash -c "sudo systemctl start unison || true"'
-  end
-  config.trigger.before :halt do
-    run_remote 'bash -c "sudo systemctl stop unison || true"'
-  end
-  config.trigger.before :reload do
+  config.trigger.before [:halt, :reload] do
     run_remote 'bash -c "sudo systemctl stop unison || true"'
   end
 
