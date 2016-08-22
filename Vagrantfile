@@ -55,8 +55,17 @@ Vagrant.configure(2) do |config|
       'draganddrop' => 'bidirectional',
       'audio' => 'dsound',
       'audiocontroller' => 'ac97'
-    }
+    },
+
+    'java_license_declaration' => ''
   }
+
+  # Fail if Java is being installed and license hasn't been accepted.
+  config.trigger.before [:up, :provision] do
+    if (!config.user.ansible.skip_tags.include? 'java') && config.user.java_license_declaration != 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
+      abort "Aborting... to continue you must accept the Oracle Binary Code License Agreement\n(see https://github.com/gantsign/development-environment/wiki/Java-license-declaration)."
+    end
+  end
 
   # Ensure Unison service isn't started until Vagrant shared folders are mounted
   # and stopped before shared folders are unmounted (if we don't Unison will
@@ -155,7 +164,8 @@ Vagrant.configure(2) do |config|
     ansible.playbook = 'provisioning/playbook.yml'
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
     ansible.extra_vars = {
-      has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier')
+      has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier'),
+      java_license_declaration: config.user.java_license_declaration
     }
     ansible.skip_tags = config.user.ansible.skip_tags
   end

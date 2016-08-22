@@ -25,6 +25,18 @@ Website: https://www.virtualbox.org
 Multi-platform virtualization provider with excellent integration with
 Vagrant.
 
+## Oracle Binary Code License Agreement
+
+To install the Oracle JDK you must accept the "Oracle Binary Code License
+Agreement for the Java SE Platform Products and JavaFX"; you can do this by
+specifying the following variable in the `.vagrantuser` file (either in
+the project root directory or your user home directory):
+
+```yaml
+---
+java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
+```
+
 ## Features
 
 There are a lot of hidden gems out there to aid in your productivity; this
