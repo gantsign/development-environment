@@ -3,8 +3,9 @@
   become: yes
 
   vars:
-    local_ansible_data_path: /usr/local/src/ansible/data
-    cached_ansible_data_path: /tmp/vagrant-cache/ansible/data
+    x_ansible_download_dir: /usr/local/src/ansible/data
+    local_ansible_data_path: "{{ x_ansible_download_dir }}"
+    cached_ansible_download_dir: /tmp/vagrant-cache/ansible/downloads
 
   pre_tasks:
     - name: update apt cache
@@ -13,10 +14,10 @@
     # Can't cache /usr/local/src/ansible directly.
     - name: restore ansible download cache
       shell: >
-        [ -d "{{ cached_ansible_data_path }}" ] || exit 0 ;
-        [ "$(ls --almost-all {{ cached_ansible_data_path }})" ] || exit 0 ;
-        mkdir --parents {{ local_ansible_data_path }}
-        && cp --recursive --no-clobber {{ cached_ansible_data_path }}/* {{ local_ansible_data_path }}
+        [ -d "{{ cached_ansible_download_dir }}" ] || exit 0 ;
+        [ "$(ls --almost-all {{ cached_ansible_download_dir }})" ] || exit 0 ;
+        mkdir --parents {{ x_ansible_download_dir }}
+        && cp --recursive --no-clobber {{ cached_ansible_download_dir }}/* {{ x_ansible_download_dir }}
         || exit 1
 
   post_tasks:
@@ -24,10 +25,10 @@
     # Can't cache /usr/local/src/ansible directly.
     - name: cache ansible downloads
       shell: >
-        [ -d "{{ local_ansible_data_path }}" ] || exit 0 ;
-        [ "$(ls --almost-all {{ local_ansible_data_path }})" ] || exit 0 ;
-        mkdir --parents {{ cached_ansible_data_path }}
-        && cp --recursive --no-clobber {{ local_ansible_data_path }}/* {{ cached_ansible_data_path }}
+        [ -d "{{ x_ansible_download_dir }}" ] || exit 0 ;
+        [ "$(ls --almost-all {{ x_ansible_download_dir }})" ] || exit 0 ;
+        mkdir --parents {{ cached_ansible_download_dir }}
+        && cp --recursive --no-clobber {{ x_ansible_download_dir }}/* {{ cached_ansible_download_dir }}
         || exit 1
 
   roles:
