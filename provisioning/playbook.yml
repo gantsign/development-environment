@@ -100,6 +100,12 @@
       docker_group_members:
         - vagrant
 
+    # Install Molecule for testing Ansible roles & playbooks
+    - role: gantsign.molecule
+      tags:
+        - docker
+        - molecule
+
     # Install Java JDK
     - role: gantsign.java
       tags:
