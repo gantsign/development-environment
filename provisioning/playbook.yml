@@ -153,27 +153,32 @@
     - role: cmprescott.chrome
       tags:
         - gui
+        - chrome
 
     # Install GitKraken
     - role: gantsign.gitkraken
       tags:
         - gui
+        - gitkraken
 
     # Install Atom editor
     - role: gantsign.atom
       tags:
         - gui
+        - atom
 
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
       tags:
         - gui
+        - vscode
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
       tags:
         - java
         - gui
+        - intellij
       intellij_default_jdk_home: "{{ ansible_local.java.general.home }}"
       intellij_default_maven_home: "{{ ansible_local.maven.general.home }}"
       users:
@@ -236,6 +241,8 @@
 
     # Install oh-my-zsh shell enhancements
     - role: gantsign.oh-my-zsh
+      tags:
+        - oh-my-zsh
       users:
         - username: vagrant
           oh_my_zsh:

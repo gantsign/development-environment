@@ -20,6 +20,12 @@
 #     - nodejs
 #     - java
 #     - gui
+#     - chrome
+#     - gitkraken
+#     - atom
+#     - vscode
+#     - intellij
+#     - oh-my-zsh
 
 # Uncomment the section below to change any of the VirtualBox Settings
 # virtualbox:
