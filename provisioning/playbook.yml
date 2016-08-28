@@ -219,7 +219,7 @@
         - application: gitkraken.desktop
         - application: atom.desktop
         - application: code.desktop
-        - application: "{{ ansible_local.intellij.general.desktop_filename }}"
+        - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"
 
     # Configure general environment variables
     - role: franklinkim.environment
