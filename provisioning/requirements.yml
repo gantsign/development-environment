@@ -41,7 +41,7 @@
 - src: gantsign.oh-my-zsh
   version: '1.1.0'
 - src: gantsign.pin-to-launcher
-  version: '1.0.0'
+  version: '1.1.0'
 - src: https://github.com/gantsign/ansible-role-unison/archive/1.1.1.tar.gz
   name: gantsign.unison
 - src: gantsign.visual-studio-code
