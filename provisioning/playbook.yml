@@ -214,7 +214,7 @@
       pin_to_launcher: dockbarx
       pin_to_launcher_favorites:
         - application: exo-terminal-emulator.desktop
-        - application: Thunar-folder-handler.desktop
+        - application: Thunar.desktop
         - application: google-chrome.desktop
         - application: gitkraken.desktop
         - application: atom.desktop
