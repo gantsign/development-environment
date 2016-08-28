@@ -208,19 +208,18 @@
         - gui
 
     # Add items to DockbarX launcher
-    - role: gantsign.dockbarx-launcher
+    - role: gantsign.pin-to-launcher
       tags:
         - gui
-      users:
-        - username: vagrant
-          docbarx_launcher_items:
-            - 'exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop'
-            - 'thunar;/usr/share/applications/Thunar-folder-handler.desktop'
-            - 'google-chrome;/usr/share/applications/google-chrome.desktop'
-            - 'gitkraken;/usr/share/applications/gitkraken.desktop'
-            - 'atom;/usr/share/applications/atom.desktop'
-            - 'code;/usr/share/applications/code.desktop'
-            - 'idea;{{ ansible_local.intellij.general.desktop_file }}'
+      pin_to_launcher: dockbarx
+      pin_to_launcher_favorites:
+        - application: exo-terminal-emulator.desktop
+        - application: Thunar-folder-handler.desktop
+        - application: google-chrome.desktop
+        - application: gitkraken.desktop
+        - application: atom.desktop
+        - application: code.desktop
+        - application: "{{ ansible_local.intellij.general.desktop_filename }}"
 
     # Configure general environment variables
     - role: franklinkim.environment

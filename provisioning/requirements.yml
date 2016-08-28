@@ -21,8 +21,6 @@
   version: '1.1.1'
 - src: https://github.com/gantsign/ansible-role-command-line-tools/archive/1.1.1.tar.gz
   name: gantsign.command-line-tools
-- src: gantsign.dockbarx-launcher
-  version: '2.1.1'
 - src: gantsign.gitkraken
   version: '2.0.1'
 - src: gantsign.intellij
@@ -42,6 +40,8 @@
   version: '1.0.0'
 - src: gantsign.oh-my-zsh
   version: '1.0.1'
+- src: gantsign.pin-to-launcher
+  version: '1.0.0'
 - src: https://github.com/gantsign/ansible-role-unison/archive/1.1.1.tar.gz
   name: gantsign.unison
 - src: gantsign.visual-studio-code
