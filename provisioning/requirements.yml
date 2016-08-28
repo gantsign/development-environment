@@ -29,7 +29,7 @@
 - src: gantsign.keyboard
   version: '1.1.2'
 - src: gantsign.lightdm
-  version: 'v1.2.1'
+  version: 'v2.0.0'
 - src: gantsign.maven
   version: '3.0.2'
 - src: gantsign.maven-color
