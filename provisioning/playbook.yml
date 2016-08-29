@@ -144,10 +144,9 @@
 
     # Install Xfce desktop
     - role: gantsign.xdesktop
+      xdesktop_desktop: xfce4
       tags:
         - gui
-      users:
-        - username: vagrant
 
     # Auto-login to X desktop
     - role: gantsign.lightdm
