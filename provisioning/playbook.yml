@@ -155,6 +155,11 @@
         - gui
       lightdm_autologin_user: vagrant
 
+    # Install Terminator terminal emulator
+    - role: gantsign.terminator
+      tags:
+        - gui
+
     # Install Google Chrome web broswer
     - role: cmprescott.chrome
       tags:
@@ -213,7 +218,7 @@
         - gui
       pin_to_launcher: dockbarx
       pin_to_launcher_favorites:
-        - application: exo-terminal-emulator.desktop
+        - application: terminator.desktop
         - application: Thunar.desktop
         - application: google-chrome.desktop
         - application: gitkraken.desktop
