@@ -16,10 +16,10 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# Install minimal-mistakes theme
+gem 'minimal-mistakes', '1.0', :git => 'https://github.com/mmistakes/minimal-mistakes.git', :branch => 'gh-pages'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
-  gem "jekyll-feed"
 end
