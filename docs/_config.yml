@@ -6,42 +6,42 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Minimal Mistakes"
-title_separator          : "-"
-name                     : &name "Michael Rose"
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-repository               : "mmistakes/minimal-mistakes"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+locale: en-US
+title: Minimal Mistakes
+title_separator: '-'
+name: &name 'Michael Rose'
+description: &description 'A flexible Jekyll theme for your blog or site with a minimalist aesthetic.'
+url: https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl: /minimal-mistakes # the subpath of your site, e.g. "/blog"
+repository: mmistakes/minimal-mistakes
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+# breadcrumbs: no # true, false (default)
+words_per_minute: 200
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path: # blank (default) uses feed.xml
 
 # Social Sharing
 twitter:
-  username               : &twitter "mmistakes"
+  username: &twitter 'mmistakes'
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://facebook.com/michaelrose"
+    - 'https://twitter.com/mmistakes'
+    - 'https://facebook.com/michaelrose'
 
 # Site Author
 author:
-  name             : *name
-  avatar           : "michael-rose.jpg"
-  bio              : "Just another boring, tattooed, time traveling, designer."
-  location         : "Buffalo, NY"
-  email            :
-  uri              : "https://mademistakes.com"
-  github           : "mmistakes"
-  twitter          : *twitter
+  name: *name
+  avatar: michael-rose.jpg
+  bio: 'Just another boring, tattooed, time traveling, designer.'
+  location: 'Buffalo, NY'
+  email:
+  uri: https://mademistakes.com
+  github: mmistakes
+  twitter: *twitter
 
 
 # Reading Files
@@ -49,8 +49,8 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
+  - '*.sublime-project'
+  - '*.sublime-workspace'
   - vendor
   - .asset-cache
   - .bundle
@@ -75,43 +75,43 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: utf-8
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
 
 # Conversion
 markdown: kramdown
 highlighter: rouge
-lsi: false
+lsi: no
 excerpt_separator: "\n\n"
-incremental: false
+incremental: no
 
 
 # Markdown Processing
 kramdown:
   input: GFM
-  hard_wrap: false
-  auto_ids: true
+  hard_wrap: no
+  auto_ids: yes
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  smart_quotes: 'lsquo,rsquo,ldquo,rdquo'
+  enable_coderay: no
 
 
 # Collections
 collections:
   docs:
-    output: true
+    output: yes
     permalink: /:collection/:path/
   recipes:
-    output: true
+    output: yes
     permalink: /:collection/:path/
   pets:
-    output: true
+    output: yes
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: yes
     permalink: /:collection/:path/
 
 
@@ -119,34 +119,34 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      author_profile: yes
+      read_time: yes
+      comments: yes
+      share: yes
+      related: yes
   # _pages
   - scope:
-      path: ""
+      path: ''
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: yes
   # _docs
   - scope:
-      path: ""
+      path: ''
       type: docs
     values:
       layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
+      read_time: no
+      author_profile: no
+      share: no
+      comments: no
       sidebar:
-        nav: "docs"
+        nav: docs
 
 
 # Sass/SCSS

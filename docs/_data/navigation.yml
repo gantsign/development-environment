@@ -1,18 +1,18 @@
 # main links links
 main:
-  - title: "Quick-Start Guide"
+  - title: Quick-Start Guide
     url: /docs/quick-start-guide/
 
-  - title: "About"
+  - title: About
     url: /about/
 
-  - title: "Sample Posts"
+  - title: Sample Posts
     url: /year-archive/
 
-  - title: "Sample Collections"
+  - title: Sample Collections
     url: /collection-archive/
 
-  - title: "Terms &amp; Privacy Policy"
+  - title: Terms &amp; Privacy Policy
     url: /terms/
 
 
@@ -20,57 +20,57 @@ main:
 docs:
   - title: Getting Started
     children:
-      - title: "Quick-Start Guide"
+      - title: Quick-Start Guide
         url: /docs/quick-start-guide/
-      - title: "Structure"
+      - title: Structure
         url: /docs/structure/
-      - title: "Installation"
+      - title: Installation
         url: /docs/installation/
-      - title: "Upgrading"
+      - title: Upgrading
         url: /docs/upgrading/
 
   - title: Customization
     children:
-      - title: "Configuration"
+      - title: Configuration
         url: /docs/configuration/
-      - title: "Navigation"
+      - title: Navigation
         url: /docs/navigation/
-      - title: "UI Text"
+      - title: UI Text
         url: /docs/ui-text/
-      - title: "Authors"
+      - title: Authors
         url: /docs/authors/
-      - title: "Layouts"
+      - title: Layouts
         url: /docs/layouts/
 
   - title: Content
     children:
-      - title: "Working with Posts"
+      - title: Working with Posts
         url: /docs/posts/
-      - title: "Working with Pages"
+      - title: Working with Pages
         url: /docs/pages/
-      - title: "Working with Collections"
+      - title: Working with Collections
         url: /docs/collections/
-      - title: "Helpers"
+      - title: Helpers
         url: /docs/helpers/
-      - title: "Utility Classes"
+      - title: Utility Classes
         url: /docs/utility-classes/
 
   - title: Extras
     children:
-      - title: "Stylesheets"
+      - title: Stylesheets
         url: /docs/stylesheets/
-      - title: "JavaScript"
+      - title: JavaScript
         url: /docs/javascript/
 
   - title: Meta
     children:
-      - title: "History"
+      - title: History
         url: /docs/history/
-      - title: "Contributing"
+      - title: Contributing
         url: /docs/contributing/
-      - title: "Old 2.2 Docs"
+      - title: Old 2.2 Docs
         url: /docs/docs-2-2/
-      - title: "License"
+      - title: License
         url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
+      - title: 'Terms &amp; Privacy Policy'
         url: /terms/
