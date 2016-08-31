@@ -3,49 +3,37 @@ layout: splash
 permalink: /
 header:
   overlay_color: '#5e616c'
-  overlay_image: mm-home-page-feature.jpg
+  overlay_image: header-laptop.jpg
   cta_label: "<i class='fa fa-download'></i> Install Now"
-  cta_url: /docs/quick-start-guide/
+  cta_url: /docs/
   caption:
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and
-  portfolios hosted on GitHub or your own server.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.4">Latest release v3.4.4</a></small><br />
-  <br />
-  {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-  <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}
+  A Java development environment built using Vagrant.<br />
+  [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 feature_row:
-  - image_path: mm-customizable-feature.png
-    alt: customizable
-    title: Super Customizable
+  - title: Reproducible
     excerpt: >
-      Everything from the menus, sidebars, comments, and more can be configured
-      or set with YAML Front Matter.
-    url: /docs/configuration/
+      Whether it's for a new starter, or you're switching between projects, this
+      gives you a reliable baseline setup.
+    url: /features/
     btn_label: Learn More
-  - image_path: mm-responsive-feature.png
-    alt: fully responsive
-    title: Responsive Layouts
+  - title: Fork this project
     excerpt: >
-      Built on HTML5 + CSS3. All layouts are fully responsive with helpers to
-      augment your content.
-    url: /docs/layouts/
-    btn_label: Learn More
-  - image_path: mm-free-feature.png
-    alt: 100% free
-    title: 100% Free
+      Version control all your project specific configuration. No more having to
+      ask Dave because the wiki is out of date.
+    url: https://github.com/gantsign/development-environment
+    btn_label: Fork
+  - title: MIT licensed
     excerpt: >
-      Free to use however you want under the MIT License. Clone it, fork it,
-      customize it, whatever!
-    url: /docs/license/
-    btn_label: Learn More
-github:
-  - excerpt: >
-      {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}
+      Having benefitted from opensource so much over the years, it's nice to be
+      able give back. This project is free to use under the terms of the MIT
+      license.
+    url: https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE
+    btn_label: View
 intro:
   - excerpt: >
-      Get notified when I add new stuff &nbsp;
-      [<i class="fa fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter}
+      Get notified when new features are added &nbsp;
+      [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 ---
 
 {% include feature_row id="intro" type="center" %}
