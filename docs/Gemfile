@@ -22,4 +22,5 @@ gem 'minimal-mistakes', '1.0', :git => 'https://github.com/mmistakes/minimal-mis
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
+  gem 'html-proofer', '3.0.6'
 end
