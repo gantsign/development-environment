@@ -37,3 +37,10 @@
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Project specific customizations */
+
+/* Disble circular clipping of company logo. */
+.author__avatar img {
+  border-radius: 0
+}
