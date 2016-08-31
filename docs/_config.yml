@@ -132,7 +132,7 @@ defaults:
       author_profile: yes
       read_time: yes
       comments: yes
-      share: yes
+      share: no
       related: yes
   # _pages
   - scope:
