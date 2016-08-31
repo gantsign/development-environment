@@ -15,7 +15,7 @@ feature_row:
     excerpt: >
       Whether it's for a new starter, or you're switching between projects, this
       gives you a reliable baseline setup.
-    url: /features/
+    url: /docs/features/
     btn_label: Learn More
   - title: Fork this project
     excerpt: >
