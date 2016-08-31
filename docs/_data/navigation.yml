@@ -1,0 +1,29 @@
+# main links links
+main:
+  - title: About
+    url: /about/
+
+  - title: Features
+    url: /docs/features/
+
+  - title: Documentation
+    url: /docs/
+
+  - title: What's New
+    url: /news/
+
+  - title: GitHub
+    url: https://github.com/gantsign/development-environment
+
+docs:
+  - title: Requirements
+    url: /docs/requirements/
+
+  - title: Features
+    url: /docs/features/
+
+  - title: Getting started
+    url: /docs/getting-started/
+
+  - title: User guide
+    url: /docs/user-guide/

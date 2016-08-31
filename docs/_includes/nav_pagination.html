@@ -1,0 +1,70 @@
+{% include base_path %}
+
+{% assign navigation = site.data.navigation[include.nav] %}
+
+{% assign page_matched = false %}
+{% assign previous_title = false %}
+{% assign previous_url = false %}
+{% assign next_title = false %}
+{% assign next_url = false %}
+
+{% for nav in navigation %}
+  {% unless  nav.url %}
+    {% continue %}
+  {% endunless %}
+
+  {% if next_url %}
+    {% break %}
+  {% endif %}
+
+  {% if page_matched %}
+    {% assign next_title = nav.title %}
+    {% assign next_url = nav.url %}
+    {% break %}
+  {% endif %}
+
+  {% if nav.url == page.url %}
+    {% assign page_matched = true %}
+  {% else %}
+    {% assign previous_title = nav.title %}
+    {% assign previous_url = nav.url %}
+  {% endif %}
+
+  {% if nav.children != null %}
+    {% for child in nav.children %}
+
+      {% unless child.url %}
+        {% continue %}
+      {% endunless %}
+
+      {% if page_matched %}
+        {% assign next_title = child.title %}
+        {% assign next_url = child.url %}
+        {% break %}
+      {% endif %}
+
+      {% if nav.url == page.url %}
+        {% assign page_matched = true %}
+      {% else %}
+        {% assign previous_title = nav.title %}
+        {% assign previous_url = nav.url %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+{% endfor %}
+
+{% if page_matched %}
+  <nav class="pagination">
+    {% if previous_url %}
+      <a href="{{ base_path }}{{ previous_url }}" class="pagination--pager" title="{{ previous_title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% endif %}
+    {% if next_url %}
+      <a href="{{ base_path }}{{ next_url }}" class="pagination--pager" title="{{ next_title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% endif %}
+  </nav>
+{% endif %}

@@ -1,0 +1,195 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Site Settings
+locale: en-GB
+title: Development Environment
+title_separator: '-'
+name: &name 'GantSign Ltd. Company No. 06109112 (registered in England)'
+description: &description 'Java development environment built using Vagrant.'
+
+# The base hostname & protocol for your site e.g. "https://example.github.io"
+url: https://gantsign.github.io
+
+# The subpath of your site, e.g. "/blog"
+baseurl: /development-environment 
+repository: gantsign/development-environment
+
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+
+# breadcrumbs: no # true, false (default)
+
+words_per_minute: 200
+atom_feed:
+  path: # blank (default) uses feed.xml
+
+# Social Sharing
+twitter:
+  username: &twitter 'gantsign'
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: Organization # Person or Organization (defaults to Person)
+  name: GantSign Ltd. # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - 'https://twitter.com/gantsign'
+
+# Site Author
+author:
+  name: GantSign Ltd.
+  avatar: logo.png
+  bio: Software Consultancy
+  location: 'London, UK'
+  email:
+  uri: # http://gantsign.com
+  github: gantsign
+  twitter: *twitter
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: utf-8
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: no
+excerpt_separator: "\n\n"
+incremental: no
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: no
+  auto_ids: yes
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: 'lsquo,rsquo,ldquo,rdquo'
+  enable_coderay: no
+
+
+# Collections
+collections:
+  docs:
+    output: yes
+    permalink: /:collection/:path/
+  recipes:
+    output: yes
+    permalink: /:collection/:path/
+  pets:
+    output: yes
+    permalink: /:collection/:path/
+  portfolio:
+    output: yes
+    permalink: /:collection/:path/
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      author_profile: yes
+      read_time: yes
+      comments: yes
+      share: yes
+      related: yes
+  # _pages
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: single
+      author_profile: yes
+  # _docs
+  - scope:
+      path: ''
+      type: docs
+    values:
+      layout: docs
+      read_time: no
+      author_profile: no
+      share: no
+      comments: no
+      sidebar:
+        nav: docs
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Include minimal-mistakes from Gemfile 
+theme: minimal-mistakes
