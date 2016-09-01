@@ -3,6 +3,7 @@ title: Getting started
 permalink: /docs/getting-started/
 excerpt: >
   How to setup the development environment.
+modified: 2016-08-31T09:05:34+01:00
 ---
 
 ## Install dependencies
