@@ -4,6 +4,7 @@ permalink: /about/
 excerpt: >
     The goal of this project is to make setting up a development environment
     reliable and reproducible.
+date: 2016-08-31T09:05:34+01:00
 modified: 2016-08-31T09:05:34+01:00
 ---
 

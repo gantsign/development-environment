@@ -4,6 +4,7 @@ permalink: /docs/features/
 excerpt: >
   This development environment provides many command line and GUI features.
 numbered_headings: yes
+date: 2016-09-01T16:07:15+01:00
 modified: 2016-09-01T16:07:15+01:00
 ---
 
