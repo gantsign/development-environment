@@ -57,7 +57,18 @@ Vagrant.configure(2) do |config|
       'audiocontroller' => 'ac97'
     },
 
-    'java_license_declaration' => ''
+    'java_license_declaration' => '',
+
+    'locales' => {
+      'default' => 'en_GB.UTF-8',
+      'present' => ['en_GB.UTF-8', 'en_US.UTF-8']
+    },
+
+    'keyboard' => {
+      'model' => 'pc105',
+      'layout' => 'gb',
+      'variant' => ''
+    }
   }
 
   # Fail if Java is being installed and license hasn't been accepted.
@@ -159,7 +170,16 @@ Vagrant.configure(2) do |config|
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
     ansible.extra_vars = {
       has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier'),
-      java_license_declaration: config.user.java_license_declaration
+
+      java_license_declaration: config.user.java_license_declaration,
+
+      locales_present: config.user.locales.present,
+      locales_default: {
+        lang: config.user.locales['default']
+      },
+      keyboard_model: config.user.keyboard.model,
+      keyboard_layout: config.user.keyboard.layout,
+      keyboard_variant: config.user.keyboard.variant
     }
     ansible.skip_tags = config.user.ansible.skip_tags
   end
