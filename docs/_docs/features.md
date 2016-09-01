@@ -3,13 +3,16 @@ title: Features
 permalink: /docs/features/
 excerpt: >
   This development environment provides many command line and GUI features.
-modified: 2016-08-31T09:05:34+01:00
+numbered_headings: yes
+modified: 2016-09-01T16:07:15+01:00
 ---
 
 {% include base_path %}
 
 There are a lot of hidden gems out there to aid in your productivity; this
 project aims to install the best of them to make life a little easier.
+
+{% include inline_toc.html %}
 
 ## Compressed RAM
 
