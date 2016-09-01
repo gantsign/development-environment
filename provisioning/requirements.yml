@@ -22,7 +22,7 @@
 - src: https://github.com/gantsign/ansible-role-command-line-tools/archive/1.1.1.tar.gz
   name: gantsign.command-line-tools
 - src: gantsign.gitkraken
-  version: '2.0.1'
+  version: '2.1.0'
 - src: gantsign.intellij
 - src: gantsign.java
   version: '3.0.3'
