@@ -3,6 +3,7 @@ title: Features
 permalink: /docs/features/
 excerpt: >
   This development environment provides many command line and GUI features.
+modified: 2016-08-31T09:05:34+01:00
 ---
 
 {% include base_path %}
