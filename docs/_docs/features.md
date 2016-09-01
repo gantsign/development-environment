@@ -51,6 +51,27 @@ and disk usage on the host.
 
 ## For command line users
 
+### CDPATH
+
+Website: [http://zsh.sourceforge.net/Intro/intro_13.html](http://zsh.sourceforge.net/Intro/intro_13.html)
+
+This environment variable changes how tab completion and the `cd` command works.
+The `CDPATH` environment variable allows you to provide a list of directories
+to search in addition to the current directory when changing directory. By
+adding the `/home/vagrant/workspace` directory to this path you can `cd` into
+any of your project folders (assuming they are sub-directories of `workspace`)
+from any directory in the file system.
+
+### Oh-my-zsh
+
+Website: [http://ohmyz.sh](http://ohmyz.sh)
+
+Rather than a specific command, oh-my-zsh changes your default shell from `bash`
+to `zsh` and customizes the `zsh` shell with themes to enhance your command
+prompt and plugins to enable better tab completion etc.
+
+![zsh terminal output]({{ base_path }}/images/oh-my-zsh.png)
+
 ### The Silver Searcher
 
 Website: [http://geoff.greer.fm/ag](http://geoff.greer.fm/ag)
@@ -101,27 +122,6 @@ network I/O, warnings/alerts, in addition to RAM and CPU usage.
 
 ![Glances terminal output]({{ base_path }}/images/glances.png)
 
-### Oh-my-zsh
-
-Website: [http://ohmyz.sh](http://ohmyz.sh)
-
-Rather than a specific command, oh-my-zsh changes your default shell from `bash`
-to `zsh` and customizes the `zsh` shell with themes to enhance your command
-prompt and plugins to enable better tab completion etc.
-
-![zsh terminal output]({{ base_path }}/images/oh-my-zsh.png)
-
-### CDPATH
-
-Website: [http://zsh.sourceforge.net/Intro/intro_13.html](http://zsh.sourceforge.net/Intro/intro_13.html)
-
-This environment variable changes how tab completion and the `cd` command works.
-The `CDPATH` environment variable allows you to provide a list of directories
-to search in addition to the current directory when changing directory. By
-adding the `/home/vagrant/workspace` directory to this path you can `cd` into
-any of your project folders (assuming they are sub-directories of `workspace`)
-from any directory in the file system.
-
 ## For GUI desktop users
 
 ### Xubuntu Core
@@ -147,6 +147,33 @@ Graphical user interface for managing your keys and SSH agent to save you having
 to put in your SSH password more than once in the same session.
 
 ![Seahorse]({{ base_path }}/images/seahorse.png)
+
+## For developers
+
+### Visual Studio Code
+
+Website: [https://code.visualstudio.com](https://code.visualstudio.com)
+
+Similar to Atom, fewer plugins available but generally more polished for the
+languages that it does support. It also has excellent built-in Git support.
+
+![Visual Studio Code editor window]({{ base_path }}/images/visual-studio-code.png)
+
+### Atom
+
+Website: [https://atom.io](https://atom.io)
+
+An extremely powerful text editor with tons of available plugins.
+
+![Atom editor window]({{ base_path }}/images/atom.png)
+
+### GitKraken
+
+Website: [https://www.gitkraken.com](https://www.gitkraken.com)
+
+A user friendly Git GUI client.
+
+![GitKraken window]({{ base_path }}/images/gitkraken.png)
 
 ## For Java developers
 
@@ -179,30 +206,3 @@ Spring Framework; the relatively small price for the Ultimate Edition is well
 worth the money. By default the Community Edition is installed.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
-
-## For developers
-
-### Atom
-
-Website: [https://atom.io](https://atom.io)
-
-An extremely powerful text editor with tons of available plugins.
-
-![Atom editor window]({{ base_path }}/images/atom.png)
-
-### Visual Studio Code
-
-Website: [https://code.visualstudio.com](https://code.visualstudio.com)
-
-Similar to Atom, fewer plugins available but generally more polished for the
-languages that it does support. It also has excellent built-in Git support.
-
-![Visual Studio Code editor window]({{ base_path }}/images/visual-studio-code.png)
-
-### GitKraken
-
-Website: [https://www.gitkraken.com](https://www.gitkraken.com)
-
-A user friendly Git GUI client.
-
-![GitKraken window]({{ base_path }}/images/gitkraken.png)
