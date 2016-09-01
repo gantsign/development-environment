@@ -14,7 +14,9 @@ project aims to install the best of them to make life a little easier.
 
 {% include inline_toc.html %}
 
-## Compressed RAM
+## For everybody
+
+### Compressed RAM
 
 Website: [https://www.kernel.org/doc/Documentation/blockdev/zram.txt](https://www.kernel.org/doc/Documentation/blockdev/zram.txt)
 
@@ -27,7 +29,7 @@ particularly on machines with fast CPUs. Given Java applications tend to reserve
 a lot more RAM than they end up using, they benefit more from RAM compression
 than native applications.
 
-## File synchronization
+### File synchronization
 
 Website: [https://www.cis.upenn.edu/~bcpierce/unison](https://www.cis.upenn.edu/~bcpierce/unison)
 
@@ -47,7 +49,7 @@ virtual machine. The `unison` synchronization tool allows the use of exclusion
 patterns to avoid duplicating compiled artifacts; this reduces unnecessary I/O
 and disk usage on the host.
 
-## Linux command line tools
+## For command line users
 
 ### The Silver Searcher
 
@@ -120,7 +122,7 @@ adding the `/home/vagrant/workspace` directory to this path you can `cd` into
 any of your project folders (assuming they are sub-directories of `workspace`)
 from any directory in the file system.
 
-## X Windows desktop
+## For GUI desktop users
 
 ### Xubuntu Core
 
@@ -146,7 +148,7 @@ to put in your SSH password more than once in the same session.
 
 ![Seahorse]({{ base_path }}/images/seahorse.png)
 
-## Maven extensions
+## For Java developers
 
 ### Maven Color
 
@@ -166,8 +168,6 @@ you know when the build is complete.
 
 ![Maven Notifier popup]({{ base_path }}/images/maven-notifier.png)
 
-## Development tools
-
 ### IntelliJ IDEA IDE
 
 Website: [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)
@@ -179,6 +179,8 @@ Spring Framework; the relatively small price for the Ultimate Edition is well
 worth the money. By default the Community Edition is installed.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
+
+## For developers
 
 ### Atom
 
