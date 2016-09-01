@@ -16,9 +16,33 @@ docker_build() {
         chpst -u jekyll:jekyll /srv/jekyll/build.sh --local
 }
 
+publish_git() {
+    git init
+    git remote add -t gh-pages origin https://github.com/gantsign/development-environment.git
+    git fetch --depth=1
+    git symbolic-ref HEAD refs/heads/gh-pages
+    git reset --mixed origin/gh-pages
+    git add --all -v .
+    if output=$(git status --porcelain) && [ -z "$output" ]; then
+        echo 'No changes to push.'
+    else 
+        git commit -F- <<'MSG'
+Pushed documentation update from master
+MSG
+        git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/gantsign/development-environment.git gh-pages:gh-pages
+    fi
+}
+
+publish() {
+    (cd _site && publish_git)
+}
+
 case "$1" in
         --local)
             local
+            ;;
+        --publish)
+            publish
             ;;
         *)
             docker_build
