@@ -11,9 +11,15 @@ local() {
     bundler exec htmlproofer /tmp/_site --log-level debug
 }
 
-if [ "$1" == '--local' ]; then
-    local
-else
+docker_build() {
     docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll/jekyll \
         chpst -u jekyll:jekyll /srv/jekyll/build.sh --local
-fi
+}
+
+case "$1" in
+        --local)
+            local
+            ;;
+        *)
+            docker_build
+esac
