@@ -14,15 +14,17 @@ feature_row:
   - title: Reproducible
     excerpt: >
       Whether it's for a new starter, or you're switching between projects, this
-      gives you a reliable baseline setup.
+      project enables you to reliably provide a development environment ready
+      for use.
     url: /docs/features/
     btn_label: Learn More
-  - title: Fork this project
+  - title: Configurable
     excerpt: >
       Version control all your project specific configuration. No more having to
-      ask Dave because the wiki is out of date.
-    url: https://github.com/gantsign/development-environment
-    btn_label: Fork
+      ask Dave because the wiki is out of date. Also supports user specific
+      configuration like regional preferences.
+    url: /docs/configuration
+    btn_label: Learn More
   - title: MIT licensed
     excerpt: >
       Having benefitted from opensource so much over the years, it's nice to be
