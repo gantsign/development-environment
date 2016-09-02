@@ -59,6 +59,8 @@ Vagrant.configure(2) do |config|
 
     'java_license_declaration' => '',
 
+    'timezone' => 'Europe/London',
+
     'locales' => {
       'default' => 'en_GB.UTF-8',
       'present' => ['en_GB.UTF-8', 'en_US.UTF-8']
@@ -172,6 +174,8 @@ Vagrant.configure(2) do |config|
       has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier'),
 
       java_license_declaration: config.user.java_license_declaration,
+
+      timezone: config.user.timezone,
 
       locales_present: config.user.locales.present,
       locales_default: {
