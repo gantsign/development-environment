@@ -268,8 +268,8 @@ A user friendly Git GUI client.
 
 ![GitKraken window]({{ base_path }}/images/gitkraken.png)
 
-One it's a bit lacking is the diff/merge tool, which is Meld is also included
-(see below).
+One it's a bit lacking is the diff/merge tool, which is why Meld is also
+included (see below).
 
 ### Meld
 
