@@ -179,6 +179,14 @@ disk I/O, network I/O and warnings/alerts.
 
 ## For GUI desktop users
 
+### Pre-pinned applications
+
+No more fishing through menus to run the applications you use the most. The
+provisioning script pre-pins selected applications to the launcher so they're
+ready to use.
+
+![Pre-pinned applications]({{ base_path }}/images/pin-to-launcher.png)
+
 ### Xubuntu Core
 
 Website: [http://xubuntu.org](http://xubuntu.org)
