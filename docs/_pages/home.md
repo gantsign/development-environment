@@ -5,7 +5,7 @@ header:
   overlay_color: '#5e616c'
   overlay_image: header-laptop.jpg
   cta_label: "<i class='fa fa-download'></i> Install Now"
-  cta_url: /docs/
+  cta_url: /docs/getting-started
   caption:
 excerpt: >
   A Java development environment built using Vagrant.<br />
@@ -35,7 +35,7 @@ intro:
       Get notified when new features are added &nbsp;
       [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2016-08-31T23:33:51+01:00
-modified: 2016-08-31T23:33:51+01:00
+modified: 2016-09-02T16:41:10+01:00
 ---
 
 {% include feature_row id="intro" type="center" %}
