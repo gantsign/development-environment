@@ -24,9 +24,12 @@ publish_git() {
     git symbolic-ref HEAD refs/heads/gh-pages
     git reset --mixed origin/gh-pages
     git add --all -v .
-    if output=$(git status --porcelain) && [ -z "$output" ]; then
+    # Don't push if there are no changes or if only the feed.xml has changed
+    if output=$(git status --porcelain) \
+            && ([ -z "$output" ] || [ "$output" = ' M feed.xml' ]); then
+
         echo 'No changes to push.'
-    else 
+    else
         git commit -F- <<'MSG'
 Pushed documentation update from master
 MSG
