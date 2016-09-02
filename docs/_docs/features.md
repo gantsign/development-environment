@@ -256,6 +256,19 @@ A user friendly Git GUI client.
 
 ![GitKraken window]({{ base_path }}/images/gitkraken.png)
 
+One it's a bit lacking is the diff/merge tool, which is Meld is also included
+(see below).
+
+### Meld
+
+Website: [http://meldmerge.org](http://meldmerge.org)
+
+A GUI diff/merge tool with Git support.
+
+![Meld diff/merge tool]({{ base_path }}/images/meld.png)
+
+Tip: run `meld .` in your Git working directory to review your changes.
+
 ## For Java developers
 
 ### Oracle JDK
