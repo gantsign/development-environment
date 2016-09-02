@@ -74,7 +74,7 @@ virtual machine.
 
 Website: [http://gnometerminator.blogspot.co.uk/p/introduction.html](http://gnometerminator.blogspot.co.uk/p/introduction.html)
 
-A highly customizable terminal emulator that support splitting the screen into
+A highly customizable terminal emulator that supports splitting the screen into
 grids of separate console windows (as well as supporting multiple tabs).
 
 ![Terminator terminal emulator]({{ base_path }}/images/terminator.png)
