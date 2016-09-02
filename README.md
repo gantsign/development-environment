@@ -276,3 +276,5 @@ The provisioning is done using Ansible (https://www.ansible.com/).
 
 If you want to customize the provisioning the place to start is the
 `provisioning/playbook.yml` file.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-83612642-2/chromeskel_a/readme?pixel)](https://github.com/igrigorik/ga-beacon)
