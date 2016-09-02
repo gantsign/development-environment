@@ -12,7 +12,8 @@
 # java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
 # Tip: place a copy of .vagrantuser in your home directory so you only have to do this once.
 
-# For the American developers uncomment the lines below to set your locale and keyboard.
+# For the American developers uncomment the lines below to set your timezone, locale and keyboard.
+# timezone: 'America/Los_Angeles' #https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # locales:
 #   default: en_US.UTF-8
 # keyboard:
