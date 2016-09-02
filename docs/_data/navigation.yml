@@ -25,5 +25,8 @@ docs:
   - title: Getting started
     url: /docs/getting-started/
 
+  - title: Configuration
+    url: /docs/configuration/
+
   - title: User guide
     url: /docs/user-guide/
