@@ -5,7 +5,7 @@ excerpt: >
   This development environment provides many command line and GUI features.
 numbered_headings: yes
 date: 2016-09-01T16:07:15+01:00
-modified: 2016-09-01T23:07:15+01:00
+modified: 2016-09-02T09:44:00+01:00
 ---
 
 {% include base_path %}
@@ -69,6 +69,18 @@ restarts (e.g when you restart the VM).
 virtual machine.
 
 ## For command line users
+
+### Terminator
+
+Website: [http://gnometerminator.blogspot.co.uk/p/introduction.html](http://gnometerminator.blogspot.co.uk/p/introduction.html)
+
+A highly customizable terminal emulator that support splitting the screen into
+grids of separate console windows (as well as supporting multiple tabs).
+
+![Terminator terminal emulator]({{ base_path }}/images/terminator.png)
+
+Tip: right click on the window to bring up the menu to split the screen or open
+a new tab.
 
 ### CDPATH
 
