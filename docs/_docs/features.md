@@ -5,7 +5,7 @@ excerpt: >
   This development environment provides many command line and GUI features.
 numbered_headings: yes
 date: 2016-09-01T16:07:15+01:00
-modified: 2016-09-02T09:44:00+01:00
+modified: 2016-09-02T12:30:37+01:00
 ---
 
 {% include base_path %}
@@ -224,6 +224,20 @@ having to put in your SSH password more than once in the same session.
 ![Seahorse]({{ base_path }}/images/seahorse.png)
 
 ## For developers
+
+### Docker
+
+Website: [https://www.docker.com](https://www.docker.com)
+
+Solves the problem of handling dependencies and common configuration between
+development, build, test and production.
+
+When using a Docker image, there's no more worrying if you have the correct
+Java/Ruby/Python version installed, or is the `JAVA_HOME` set to the correct
+installation; all of that is provided in the Docker image, you just use it.
+
+It's also easy to build your own Docker images so you can get the same benefits
+with your own software.
 
 ### Visual Studio Code
 
