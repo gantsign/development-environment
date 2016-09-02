@@ -35,9 +35,13 @@ intro:
       Get notified when new features are added &nbsp;
       [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2016-08-31T23:33:51+01:00
-modified: 2016-09-02T16:41:10+01:00
+modified: 2016-09-02T19:20:23+01:00
 ---
 
 {% include feature_row id="intro" type="center" %}
+
+{% for post in site.posts limit: 3 %}
+  {% include archive-single.html %}
+{% endfor %}
 
 {% include feature_row %}
