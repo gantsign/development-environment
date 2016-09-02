@@ -17,9 +17,10 @@ docker_build() {
 }
 
 publish_git() {
+    REPO_URL="https://$GIT_USERNAME:$GIT_PASSWORD@github.com/gantsign/development-environment.git"
     git init
-    git remote add -t gh-pages origin https://github.com/gantsign/development-environment.git
-    git fetch --depth=1
+    git fetch --depth=1 $REPO_URL \
+      refs/heads/gh-pages:refs/remotes/origin/gh-pages
     git symbolic-ref HEAD refs/heads/gh-pages
     git reset --mixed origin/gh-pages
     git add --all -v .
@@ -29,7 +30,7 @@ publish_git() {
         git commit -F- <<'MSG'
 Pushed documentation update from master
 MSG
-        git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/gantsign/development-environment.git gh-pages:gh-pages
+        git push $REPO_URL gh-pages:gh-pages
     fi
 }
 
