@@ -45,7 +45,7 @@ git pull
 
 ### Destroying the development environment
 
-Before you can rebuild you development environment you have to destroy your
+Before you can rebuild your development environment you have to destroy your
 current one; make sure all your files are backed up outside the development
 environment before continuing.
 
