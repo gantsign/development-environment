@@ -7,7 +7,7 @@
 
 # Site Settings
 locale: en-GB
-title: Development Environment
+title: GantSign EnV
 title_separator: '-'
 name: &name 'GantSign Ltd. Company No. 06109112 (registered in England)'
 description: &description 'Java development environment built using Vagrant.'
