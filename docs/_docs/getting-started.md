@@ -1,7 +1,7 @@
 ---
 title: Getting started
 permalink: /docs/getting-started/
-excerpt: >
+description: >
   How to setup the development environment.
 date: 2016-08-31T09:05:34+01:00
 modified: 2016-08-31T09:05:34+01:00

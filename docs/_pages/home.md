@@ -7,6 +7,8 @@ header:
   cta_label: "<i class='fa fa-download'></i> Install Now"
   cta_url: /docs/getting-started
   caption:
+description:
+  GantSign EnV: a Java development environment built using Vagrant.
 excerpt: >
   A Java development environment built using Vagrant.<br />
   [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)

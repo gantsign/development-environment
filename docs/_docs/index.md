@@ -1,8 +1,8 @@
 ---
 title: Documentation
 permalink: /docs/
-excerpt: >
-  Documentation index
+description: >
+  Documentation index.
 author_profile: yes
 sidebar:
   nav: no

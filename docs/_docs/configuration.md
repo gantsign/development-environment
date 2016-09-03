@@ -1,7 +1,7 @@
 ---
 title: Configuration
 permalink: /docs/configuration/
-excerpt: >
+description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00

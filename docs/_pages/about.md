@@ -1,9 +1,11 @@
 ---
 title: About
 permalink: /about/
+description: >
+  About the GantSign EnV development environment.
 excerpt: >
-    The goal of this project is to make setting up a development environment
-    reliable and reproducible.
+  Getting your development environment setup correctly can be a time consuming and
+  error prone process...
 date: 2016-08-31T09:05:34+01:00
 modified: 2016-08-31T09:05:34+01:00
 ---
