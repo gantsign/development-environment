@@ -1,7 +1,7 @@
 ---
 title: User guide
 permalink: /docs/user-guide/
-excerpt: >
+description: >
   How to use the development environment.
 date: 2016-08-31T09:05:34+01:00
 modified: 2016-08-31T09:05:34+01:00
