@@ -165,6 +165,15 @@
         - gui
         - chrome
 
+    # Set the default web browser
+    # This is only a partial solution as Google Chrome will still ask if you
+    # want to make it the default browser when it first runs.
+    - role: gantsign.default-web-browser
+      tags:
+        - gui
+        - chrome
+      default_web_browser: google-chrome
+
     # Install GitKraken
     - role: gantsign.gitkraken
       tags:
