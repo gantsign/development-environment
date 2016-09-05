@@ -39,7 +39,7 @@
 - src: gantsign.maven-notifier
   version: '2.0.2'
 - src: gantsign.molecule
-  version: '1.0.0'
+  version: '2.0.0'
 - src: gantsign.oh-my-zsh
   version: '1.1.0'
 - src: gantsign.pin-to-launcher
