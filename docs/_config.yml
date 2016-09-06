@@ -141,7 +141,7 @@ defaults:
       read_time: yes
       comments: yes
       share: no
-      related: yes
+      related: no
   # _pages
   - scope:
       path: ''

@@ -83,6 +83,27 @@ keyboard:
   variant: ''
 ```
 
+### Desktop choice
+
+Each user can choose between the [Ubuntu Unity](https://unity.ubuntu.com)
+desktop or the [Xfce](http://www.xfce.org) desktop.
+
+{% capture fig_img %}
+![Desktop choice]({{ base_path }}/images/desktop-choice.png)
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+</figure>
+
+The default is the Ubuntu Unity desktop but you can select the Xfce desktop by
+adding the following to your `.vagrantuser` file:
+
+```yaml
+desktop: xfce4
+```
+
 ### VirtualBox configuration
 
 #### VM name
