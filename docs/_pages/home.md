@@ -8,9 +8,9 @@ header:
   cta_url: /docs/getting-started
   caption:
 description:
-  GantSign EnV: a Java development environment built using Vagrant.
+  GantSign EnV: A development environment for Java and Ansible built using Vagrant.
 excerpt: >
-  A Java development environment built using Vagrant.<br />
+  A development environment for Java and Ansible built using Vagrant.<br />
   [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 feature_row:
   - title: Reproducible
@@ -39,7 +39,7 @@ intro:
       Get notified when new features are added &nbsp;
       [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2016-08-31T23:33:51+01:00
-modified: 2016-09-02T19:20:23+01:00
+modified: 2016-09-05T16:46:44+01:00
 ---
 
 <div class="home_news">

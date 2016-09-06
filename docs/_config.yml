@@ -10,7 +10,7 @@ locale: en-GB
 title: GantSign EnV
 title_separator: '-'
 name: &name 'GantSign Ltd. Company No. 06109112 (registered in England)'
-description: &description 'Java development environment built using Vagrant.'
+description: &description 'A development environment for Java and Ansible built using Vagrant.'
 
 # The base hostname & protocol for your site e.g. "https://example.github.io"
 url: https://gantsign.github.io

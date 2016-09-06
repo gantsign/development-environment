@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2016-09-01T16:07:15+01:00
-modified: 2016-09-02T12:30:37+01:00
+modified: 2016-09-05T16:46:44+01:00
 ---
 
 {% include base_path %}
@@ -95,7 +95,7 @@ directory in the file system.
 For example:
 
 ```bash
-# Create a directory under /home/vagrant/workspace 
+# Create a directory under /home/vagrant/workspace
 mkdir -p /home/vagrant/workspace/my-awesome-project
 
 # Change directory somewhere else
@@ -248,7 +248,7 @@ TypeScript, Node.js, Python, Bash and many more.
 
 Core languages have IntelliSense support for smart completion.
 
-The built in debugger is very good and supports several languages. 
+The built in debugger is very good and supports several languages.
 
 Has good built-in support for Git; while, it's missing a few features that you'd
 expect from a standalone Git client, it covers the normal development workflow.
@@ -344,3 +344,19 @@ The IDE is pre-configured so new projects will use the Oracle JDK and Maven
 installation.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
+
+## For Ansible Developers
+
+### Molecule
+
+Website: [http://molecule.readthedocs.io](http://molecule.readthedocs.io)
+
+Molecule is an excellent tool to assist you in developing and testing Ansible
+Roles and Playbooks.
+
+Molecule integrates with Docker to provide an isolated environment to try your
+provisioning and uses [Testinfa](http://testinfra.readthedocs.io/) to test the
+results.
+
+As well as running it locally, it's easy to run Molecule as part of your CI
+build to ensure your code is sound before merging.
