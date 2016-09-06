@@ -48,3 +48,6 @@
 #   draganddrop: bidirectional
 #   audio: dsound
 #   audiocontroller: ac97
+
+# Uncomment the line below if you prefer the xfce4 desktop
+# desktop: xfce4

@@ -199,20 +199,26 @@ ready to use.
 
 ![Pre-pinned applications]({{ base_path }}/images/pin-to-launcher.png)
 
-### Xubuntu Core
+### Choice of desktops
 
-Website: [http://xubuntu.org](http://xubuntu.org)
+This development environment offers the choice between
+[Ubuntu Unity](https://unity.ubuntu.com) and [Xfce](http://www.xfce.org)
+desktops.
 
-Lightweight X desktop with a minimal number of packages installed. Xubuntu
-uses [Xfce](http://www.xfce.org), which provides a more traditional desktop
-experience than the standard [Unity](http://unity.ubuntu.com) desktop on Ubuntu.
+Unity is the default desktop on Ubuntu and will be familiar to many Linux users.
 
-### DockbarX
+Using the [Xubuntu](https://xubuntu.org) install of Xfce4 and
+[DockbarX](https://github.com/M7S/dockbarx) enables a more traditional
+desktop experience than Unity.
 
-Website: [https://github.com/M7S/dockbarx](https://github.com/M7S/dockbarx)
+{% capture fig_img %}
+![Desktop choice]({{ base_path }}/images/desktop-choice.png)
+{% endcapture %}
 
-Integrates with the Xfce Panel to provide a modern dockbar interface for
-launching and switching between applications.
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+</figure>
 
 ### Seahorse
 
