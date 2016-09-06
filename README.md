@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE)
 
+A development environment for Java and Ansible built using Vagrant.
+
 ## About
 
 Getting your development environment setup correctly can be a time consuming and
@@ -42,6 +44,7 @@ environment that you can fork to add your project specific configuration.
 * Maven Color
 * Maven Notifier
 * IntelliJ IDEA IDE
+* Molecule
 
 [Learn more about the features](https://gantsign.github.io/development-environment/docs/features)
 
