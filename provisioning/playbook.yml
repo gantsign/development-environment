@@ -48,6 +48,7 @@
         - .gnupg
         - .m2
         - .gitkraken
+        - .atom
         - .config/Code
         - workspace
       unison_include_files:
@@ -57,6 +58,11 @@
       unison_ignore_paths:
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
+        - BelowPath .atom/.apm
+        - BelowPath .atom/.node-gyp
+        - BelowPath .atom/compile-cache
+        - BelowPath .atom/packages
+        - BelowPath .atom/storage
         - Name target
         - Name GPUCache
         - Name Local Storage
