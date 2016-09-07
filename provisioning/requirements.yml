@@ -16,7 +16,7 @@
 - src: gantsign.apt
   version: '1.1.1'
 - src: gantsign.atom
-  version: '1.1.1'
+  version: '1.2.0'
 - src: gantsign.audio
   version: '1.1.1'
 - src: https://github.com/gantsign/ansible-role-command-line-tools/archive/1.1.1.tar.gz
