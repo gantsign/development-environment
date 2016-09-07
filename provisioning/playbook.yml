@@ -185,6 +185,20 @@
       tags:
         - gui
         - atom
+      users:
+        - username: vagrant
+          atom_packages:
+            - minimap
+            - linter
+            - atom-beautify
+            - file-icons
+          atom_config:
+            "*":
+              core:
+                projectHome: "/home/vagrant/workspace"
+              editor:
+                showIndentGuide: true
+                showInvisibles: true
 
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
