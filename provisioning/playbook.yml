@@ -194,6 +194,7 @@
       users:
         - username: vagrant
           atom_packages:
+            - editorconfig
             - minimap
             - linter
             - atom-beautify
@@ -214,6 +215,7 @@
       users:
         - username: vagrant
           visual_studio_code_extensions:
+            - EditorConfig.EditorConfig
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
             - donjayamanne.python

@@ -280,6 +280,24 @@ plugins to choose from.
 
 ![Atom editor window]({{ base_path }}/images/atom.png)
 
+### EditorConfig
+
+Website: [http://editorconfig.org](http://editorconfig.org)
+
+EditorConfig is a project that defines a common configuration file supported by
+many IDEs and text editors (some require a plugin installed).
+
+The EditorConfig configuration file defines the basic editor preferences for
+particular files and file types (e.g. charset, line endings, indent, trailing
+whitespace).
+
+This development environment installs the EditorConfig plugins for Visual
+Studio Code and Atom as part of the provisioning; IntelliJ IDEA supports
+EditorConfig without the need for a plugin.
+
+For an example of an `.editorconfig` file see the root directory of this
+project.
+
 ### GitKraken
 
 Website: [https://www.gitkraken.com](https://www.gitkraken.com)
