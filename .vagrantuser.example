@@ -51,3 +51,6 @@
 
 # Uncomment the line below if you prefer the xfce4 desktop
 # desktop: xfce4
+
+# Uncomment the line below to install IntelliJ IDEA Ultimate rather than Community
+# intellij_edition: ultimate
