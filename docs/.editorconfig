@@ -1,0 +1,9 @@
+# EditorConfig: http://EditorConfig.org
+
+# Files with a smaller indent
+[*.{scss,xml,html,md},Gemfile]
+indent_size = 2
+
+# Specify encoding of Markdown files (as per _config.yml)
+[*.md]
+charset = utf-8
