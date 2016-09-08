@@ -234,6 +234,7 @@
         - java
         - gui
         - intellij
+      intellij_edition: community
       intellij_default_jdk_home: "{{ ansible_local.java.general.home }}"
       intellij_default_maven_home: "{{ ansible_local.maven.general.home }}"
       users:

@@ -158,7 +158,7 @@ virtualbox: # All VirtualBox configuration has to be under the same `virtualbox`
 Ansible tags can be used to skip certain features when installing the
 development environment.
 
-This can speed up rebuilds and save on disk space. 
+This can speed up rebuilds and save on disk space.
 
 ```yaml
 ansible:
@@ -198,6 +198,21 @@ If you don't want to accept the license you can skip the Java install using:
 ansible:
   skip_tags:
     - java
+```
+
+### IntelliJ IDEA edition
+
+If your employer provides IntelliJ IDEA Ultimate licenses for your whole team,
+then you'll want to make that the default (see
+[Project specific configuration](#project-specific-configuration) below); for
+everyone else this development environment supports individual developers using
+their personal licenses.
+
+To install IntelliJ IDEA Ultimate instead of IntelliJ IDEA Community add the
+following line to your `.vagrantuser` file.
+
+```yaml
+intellij_edition: ultimate
 ```
 
 ## Project specific configuration

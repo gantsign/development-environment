@@ -72,7 +72,9 @@ Vagrant.configure(2) do |config|
       'variant' => ''
     },
 
-    'desktop' => 'unity'
+    'desktop' => 'unity',
+
+    'intellij_edition' => 'community'
   }
 
   # Fail if Java is being installed and license hasn't been accepted.
@@ -188,7 +190,9 @@ Vagrant.configure(2) do |config|
       keyboard_variant: config.user.keyboard.variant,
 
       xdesktop_desktop: config.user.desktop,
-      pin_to_launcher: config.user.desktop == 'xfce4' ? 'dockbarx' : config.user.desktop
+      pin_to_launcher: config.user.desktop == 'xfce4' ? 'dockbarx' : config.user.desktop,
+
+      intellij_edition: config.user.intellij_edition
     }
     ansible.skip_tags = config.user.ansible.skip_tags
   end
