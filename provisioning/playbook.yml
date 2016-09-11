@@ -255,6 +255,8 @@
             - name: GantSign
               url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/1.0.0/GantSign.xml'
           intellij_active_codestyle: GantSign
+          intellij_plugins:
+            - CheckStyle-IDEA
 
     # Add Maven extension to popup a GUI notification when builds finish
     - role: gantsign.maven-notifier
