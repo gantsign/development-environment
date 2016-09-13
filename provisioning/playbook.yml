@@ -237,10 +237,14 @@
         - gui
         - intellij
       intellij_edition: community
-      intellij_default_jdk_home: "{{ ansible_local.java.general.home }}"
+      intellij_jdk_home: "{{ ansible_local.java.general.home }}"
       intellij_default_maven_home: "{{ ansible_local.maven.general.home }}"
       users:
         - username: vagrant
+          intellij_jdks:
+            - name: '1.8'
+              home: "{{ ansible_local.java.general.home }}"
+          intellij_default_jdk: '1.8'
           intellij_disabled_plugins:
             - org.jetbrains.plugins.gradle
             - CVS
