@@ -50,6 +50,7 @@
         - .gitkraken
         - .atom
         - .config/Code
+        - .local/share/keyrings
         - workspace
       unison_include_files:
         - .bash_history
