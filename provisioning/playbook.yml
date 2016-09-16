@@ -262,6 +262,7 @@
           intellij_active_codestyle: GantSign
           intellij_plugins:
             - CheckStyle-IDEA
+            - Lombook Plugin
 
     # Add Maven extension to popup a GUI notification when builds finish
     - role: gantsign.maven-notifier
