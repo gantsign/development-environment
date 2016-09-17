@@ -59,6 +59,7 @@
       unison_ignore_paths:
         - Path .ssh/authorized_keys
         - BelowPath .m2/repository
+        - BelowPath .m2/wrapper
         - BelowPath .atom/.apm
         - BelowPath .atom/.node-gyp
         - BelowPath .atom/compile-cache
