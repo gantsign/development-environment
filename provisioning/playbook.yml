@@ -39,6 +39,11 @@
     - role: franklinkim.timezone
       timezone: Europe/London
 
+    # Increase the number of files that can be watched.
+    # https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
+    - role: gantsign.inotify
+      inotify_max_user_watches: 524288
+
     # Synchronize files/directories between client and host
     - role: gantsign.unison
       tags:
