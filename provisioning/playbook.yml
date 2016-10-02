@@ -167,6 +167,12 @@
         - gui
       lightdm_autologin_user: vagrant
 
+    # Configure proxy settings for Gnome applications
+    - role: gantsign.gnome-proxy
+      tags:
+        - proxy
+        - gui
+
     # Install Terminator terminal emulator
     - role: gantsign.terminator
       tags:
