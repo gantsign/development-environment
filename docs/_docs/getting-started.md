@@ -7,6 +7,8 @@ date: 2016-08-31T09:05:34+01:00
 modified: 2016-08-31T09:05:34+01:00
 ---
 
+{% include base_path %}
+
 ## Install dependencies
 
 * Install Git [https://git-scm.com](https://git-scm.com)
@@ -21,7 +23,23 @@ Clone the development environment repository.
 git clone https://github.com/gantsign/development-environment.git
 ```
 
-## Oracle Binary Code License Agreement
+## Configuration
+
+User specific configuration is done through the
+[Nugrant](https://github.com/maoueh/nugrant) plugin for Vagrant.
+
+The Nugrant configuration file is located in the following two locations:
+
+* Your home folder (configuration shared between projects)
+
+    `~/.vagrantuser`
+
+* The project folder (configuration specific to this clone of the project)
+
+    `.vagrantuser` (you'll find a `.vagrantuser.example` file in the project
+    directory)
+
+### Oracle Binary Code License Agreement
 
 To install the Oracle JDK you must accept the "Oracle Binary Code License
 Agreement for the Java SE Platform Products and JavaFX"; you can do this by
@@ -32,6 +50,11 @@ the project root directory or your user home directory):
 ---
 java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
 ```
+
+### Advanced Configuration
+
+For more configuration options, including configuring regional preferences, view
+the [configuration]({{ base_path }}/docs/configuration) documentation.
 
 ## Vagrant Cachier Plugin
 
