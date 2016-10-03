@@ -31,9 +31,9 @@ The Nugrant configuration file is located in the following two locations:
 
     `~/.vagrantuser`
 
-* The project folder
+* The project folder (configuration specific to this clone of the project)
 
-    `.vagrantuser` (you'll find a .vagrantuser.example file in the project
+    `.vagrantuser` (you'll find a `.vagrantuser.example` file in the project
     directory)
 
 Note: changes only take effect when the development environment is next
