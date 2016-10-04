@@ -39,6 +39,130 @@ The Nugrant configuration file is located in the following two locations:
 Note: changes only take effect when the development environment is next
 rebuilt/provisioned.
 
+### Proxy Configuration
+
+If you're behind a firewall and need to access the web through a HTTP proxy
+there's a little extra config you need to do; if you have direct internet access
+you can skip this section.
+
+#### Common Proxy Config
+
+This configuration will apply to most command line tools and GUI applications.
+This can be set by adding the following to the `.vagrantuser` file (replace the
+proxy host and port with the values for your network):
+
+```yaml
+proxy:
+  enabled: true
+  http: 'http://proxy.example.com:3128/'
+  https: 'http://proxy.example.com:3128/'
+  ftp: 'http://proxy.example.com:3128/'
+  no_proxy: 'localhost,127.0.0.1'
+```
+
+#### APT Proxy Override
+
+If you need to use a different proxy for the APT package manager, this can be
+set by adding the following to the `.vagrantuser` file (replace the proxy host
+and port with the values for your network):
+
+```yaml
+apt_proxy:
+  http: 'http://proxy.example.com:3128/'
+  https: 'http://proxy.example.com:3128/'
+  ftp: 'http://proxy.example.com:3128/'
+```
+
+#### Git Proxy Override
+
+If you need to use a different proxy for the Git version control system, this
+can be set by adding the following to the `.vagrantuser` file (replace the proxy
+host and port with the values for your network):
+
+```yaml
+git_proxy:
+  http: 'http://proxy.example.com:3128/'
+```
+
+#### Gnome Proxy Override
+
+If you need to use a different proxy for Gnome applications, or just want to
+take advantage of more advanced proxy options for Gnome applications, you can
+follow the documentation below.
+
+Note: the Gnome proxy settings are also used by some other non-gnome
+applications such as the Google Chrome web browser.
+
+##### Proxy auto-config
+
+To use [proxy auto config](https://en.wikipedia.org/wiki/Proxy_auto-config) add
+the following to the `.vagrantuser` file (replace the `autoconfig_url` with the
+value for your network):
+
+```yaml
+gnome_proxy:
+  mode: 'auto'
+  autoconfig_url: 'http://wpad.example.com/wpad.dat'
+```
+
+Note: in theory Gnome should be able to auto-discover the value for the
+`autoconfig_url` using the
+[Web Proxy Auto-Discovery Protocol](https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol);
+in practice auto-discovery is unlikely to work when you're running Linux in a
+VM using NAT rather than directly on your corporate network, so you'll likely
+have to specify the location manually.
+
+##### Minimal manual configuration
+
+To manually specify a different proxy for Gnome applications add the following
+to the `.vagrantuser` file (replace the hosts and ports with the values for your
+network):
+
+```yaml
+gnome_proxy:
+  mode: 'manual'
+  ignore_hosts:
+    - 'localhost'
+    - '127.0.0.0/8'
+    - '::1'
+  use_same_proxy: true
+  http:
+    host: 'proxy.example.com'
+    port: 3128
+    enabled: true
+```
+
+##### Full manual configuration
+
+For full manual control add the following to the `.vagrantuser` file (replace
+the hosts, ports and credentials with the values for your network):
+
+```yaml
+gnome_proxy:
+  mode: 'manual'
+  ignore_hosts:
+    - 'localhost'
+    - '127.0.0.0/8'
+    - '::1'
+  use_same_proxy: false
+  http:
+    host: 'proxy.example.com'
+    port: 3128
+    use_authentication: true
+    authentication_user: 'example_username'
+    authentication_password: 'example_password'
+    enabled: true
+  https:
+    host: 'proxy.example.com'
+    port: 3128
+  ftp:
+    host: 'proxy.example.com'
+    port: 3128
+  socks:
+    host: 'proxy.example.com'
+    port: 9000
+```
+
 ### Regional preferences
 
 Within a team you may have developers in multiple regions, these settings allow
