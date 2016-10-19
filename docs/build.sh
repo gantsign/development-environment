@@ -12,7 +12,8 @@ local() {
 }
 
 docker_build() {
-    docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll/jekyll \
+    docker build -t jekyll-fix .
+    docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll-fix \
         chpst -u jekyll:jekyll /srv/jekyll/build.sh --local
 }
 
