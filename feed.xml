@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GantSign EnV</title>
+    <description>A development environment for Java and Ansible built using Vagrant.</description>
+    <link>https://gantsign.github.io/development-environment/</link>
+    <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 19 Oct 2016 22:57:24 +0100</pubDate>
+    <lastBuildDate>Wed, 19 Oct 2016 22:57:24 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Improved and documented proxy support</title>
+        <description>
+&lt;p&gt;While it was always possible to use the development environment behind a proxy,
+you had to know about the
+&lt;a href=&quot;https://github.com/tmatilai/vagrant-proxyconf&quot;&gt;vagrant proxyconf plugin&lt;/a&gt;; the
+process wasn&amp;#8217;t part of the documentation and some post install manual setup was
+still required to get Google Chrome to use the proxy.&lt;/p&gt;
+
+&lt;p&gt;This has now been addressed by updates to both the
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/getting-started&quot;&gt;Getting Started&lt;/a&gt; documentation and the
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/configuration&quot;&gt;Configuration&lt;/a&gt; documentation; the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant-proxyconf&lt;/code&gt; plugin is now auto-installed and the Gnome proxy is
+configured as part of the provisioning; the proxy configuration is part of the
+standard Nugrant configuration approach, so you can set the default values in
+the &lt;code class=&quot;highlighter-rouge&quot;&gt;Vagrantfile&lt;/code&gt; and users can override it in their &lt;code class=&quot;highlighter-rouge&quot;&gt;.vagrantuser&lt;/code&gt; files if
+necessary.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Oct 2016 13:15:42 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/proxy/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/proxy/</guid>
+        
+        <category>proxy</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Default desktop is now Ubuntu Unity</title>
+        <description>
+&lt;p&gt;To make the development environment as robust as possible, the
+&lt;a href=&quot;https://unity.ubuntu.com&quot;&gt;Ubuntu Unity&lt;/a&gt; desktop is now installed by default. As
+Unity is the default desktop on Ubuntu it tends to have better support
+from third party apps.&lt;/p&gt;
+
+&lt;figure&gt;
+  
+&lt;img src=&quot;https://gantsign.github.io/development-environment/images/desktop-choice.png&quot; alt=&quot;Desktop choice&quot; /&gt;
+
+  &lt;figcaption&gt;Left: Ubuntu Unity desktop, right: Xfce desktop.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For those of you who prefer the previous &lt;a href=&quot;http://www.xfce.org&quot;&gt;Xfce&lt;/a&gt; desktop,
+it&amp;#8217;s still available and can be selected through
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/configuration#desktop-choice&quot;&gt;configuration&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Sep 2016 12:29:44 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/unity/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/unity/</guid>
+        
+        <category>documentation</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Welcome to the new website!</title>
+        <description>
+&lt;p&gt;&lt;img src=&quot;https://gantsign.github.io/development-environment/images/new-website.png&quot; alt=&quot;New website&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The documentation was getting a bit long for the &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; so here is the
+shiny new website; it&amp;#8217;s built using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and
+hosted using &lt;a href=&quot;https://pages.github.com&quot;&gt;GitHub&lt;/a&gt; pages.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Aug 2016 09:05:34 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/new-website/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/new-website/</guid>
+        
+        <category>documentation</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

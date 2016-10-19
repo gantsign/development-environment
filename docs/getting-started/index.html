@@ -1,0 +1,538 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Getting started - GantSign EnV</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="GantSign EnV">
+<meta property="og:title" content="Getting started">
+
+
+  <link rel="canonical" href="https://gantsign.github.io/development-environment/docs/getting-started/">
+  <meta property="og:url" content="https://gantsign.github.io/development-environment/docs/getting-started/">
+
+
+
+  <meta property="og:description" content="How to setup the development environment.">
+
+
+
+  <meta name="twitter:site" content="@gantsign">
+  <meta name="twitter:title" content="Getting started">
+  <meta name="twitter:description" content="How to setup the development environment.">
+  <meta name="twitter:url" content="https://gantsign.github.io/docs/getting-started/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-08-31T09:05:34+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "GantSign Ltd.",
+      "url" : "https://gantsign.github.io/development-environment",
+      "sameAs" : ["https://twitter.com/gantsign"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://gantsign.github.io/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://gantsign.github.io/development-environment/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://gantsign.github.io/development-environment/">GantSign EnV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/features/">Features</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/">Documentation</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/news/">What's New</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://github.com/gantsign/development-environment">GitHub</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/requirements/"><span class="nav__sub-title">Requirements</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/features/"><span class="nav__sub-title">Features</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/getting-started/"><span class="nav__sub-title">Getting started</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/configuration/"><span class="nav__sub-title">Configuration</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/user-guide/"><span class="nav__sub-title">User guide</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Getting started">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="August 31, 2016">
+    <meta itemprop="dateModified" content="August 31, 2016">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Getting started
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<h2 id="install-dependencies">Install dependencies</h2>
+
+<ul>
+  <li>Install Git <a href="https://git-scm.com">https://git-scm.com</a></li>
+  <li>Install Vagrant <a href="https://www.vagrantup.com">https://www.vagrantup.com</a></li>
+  <li>Install VirtualBox <a href="https://www.virtualbox.org">https://www.virtualbox.org</a></li>
+</ul>
+
+<h2 id="clone-the-project">Clone the project</h2>
+
+<p>Clone the development environment repository.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/gantsign/development-environment.git
+</code></pre>
+</div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>User specific configuration is done through the
+<a href="https://github.com/maoueh/nugrant">Nugrant</a> plugin for Vagrant.</p>
+
+<p>The Nugrant configuration file is located in the following two locations:</p>
+
+<ul>
+  <li>
+    <p>Your home folder (configuration shared between projects)</p>
+
+    <p><code class="highlighter-rouge">~/.vagrantuser</code></p>
+  </li>
+  <li>
+    <p>The project folder (configuration specific to this clone of the project)</p>
+
+    <p><code class="highlighter-rouge">.vagrantuser</code> (you&#8217;ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
+  directory)</p>
+  </li>
+</ul>
+
+<h3 id="oracle-binary-code-license-agreement">Oracle Binary Code License Agreement</h3>
+
+<p>To install the Oracle JDK you must accept the &#8220;Oracle Binary Code License
+Agreement for the Java SE Platform Products and JavaFX&#8221;; you can do this by
+specifying the following variable in the <code class="highlighter-rouge">.vagrantuser</code> file (either in
+the project root directory or your user home directory):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">java_license_declaration</span><span class="pi">:</span> <span class="s1">'</span><span class="s">I</span><span class="nv"> </span><span class="s">accept</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">"Oracle</span><span class="nv"> </span><span class="s">Binary</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">License</span><span class="nv"> </span><span class="s">Agreement</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Java</span><span class="nv"> </span><span class="s">SE</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Products</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">JavaFX"</span><span class="nv"> </span><span class="s">under</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">terms</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">http://www.oracle.com/technetwork/java/javase/terms/license/index.html'</span>
+</code></pre>
+</div>
+
+<h3 id="proxy-configuration">Proxy Configuration</h3>
+
+<p>If you&#8217;re behind a firewall and need to access the web through a HTTP proxy
+there&#8217;s a little extra config you need to do; if you have direct internet access
+you can skip this section.</p>
+
+<h4 id="host-proxy-config">Host Proxy Config</h4>
+
+<p>On the host machine, Vagrant needs to be able to access the internet to install
+plugins and download the base image for the virtual machine. To do this you need
+to set the following environment variable before running the <code class="highlighter-rouge">vagrant</code> command
+(replace the proxy host and port with the values for your network):</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>SET <span class="nv">https_proxy</span><span class="o">=</span>proxy.example.com:3128
+</code></pre>
+</div>
+
+<p>Note: on Linux / Mac OS use <code class="highlighter-rouge">export</code> rather than <code class="highlighter-rouge">SET</code>.</p>
+
+<p>You&#8217;ll need to reset the environment variable each time you open a new console
+window before you run <code class="highlighter-rouge">vagrant</code>; while there are ways of setting the environment
+variable permanently care should be taken as doing so may affect other
+applications.</p>
+
+<h4 id="client-vm-proxy-config">Client VM Proxy Config</h4>
+
+<p>Add the following to the <code class="highlighter-rouge">.vagrantuser</code> file, either in the project root
+directory or your user home directory (replace the proxy host and port with the
+values for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">proxy</span><span class="pi">:</span>
+  <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">no_proxy</span><span class="pi">:</span> <span class="s1">'</span><span class="s">localhost,127.0.0.1'</span>
+</code></pre>
+</div>
+
+<p>For more proxy configuration options, including proxy auto-config support,
+see the <a href="https://gantsign.github.io/development-environment/docs/configuration">configuration</a> documentation.</p>
+
+<h3 id="advanced-configuration">Advanced Configuration</h3>
+
+<p>For more configuration options, including configuring regional preferences, view
+the <a href="https://gantsign.github.io/development-environment/docs/configuration">configuration</a> documentation.</p>
+
+<h2 id="vagrant-cachier-plugin">Vagrant Cachier Plugin</h2>
+
+<p>Website: <a href="https://github.com/fgrehm/vagrant-cachier">https://github.com/fgrehm/vagrant-cachier</a></p>
+
+<p>Installing the development environment requires a lot of installation packages
+to be downloaded; even on a fast internet connection this can take a while to
+complete. As it&#8217;s standard practice to rebuild the development environment
+rather than manually installing software updates, it&#8217;s better to cache these
+downloads on the host machine to speed up rebuilds.</p>
+
+<p>The Vagrant Cachier Plugin will configure various package managers on the client
+virtual machine; this configuration will cache most standard installation
+packages in a shared folder on the host machine (<code class="highlighter-rouge">~/.vagrant.d/cache</code>).</p>
+
+<p>If you have sufficient free disk space to store the cached installation
+packages, we recommend you install the Vagrant Cachier Plugin by running the
+following command:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant plugin install vagrant-cachier
+</code></pre>
+</div>
+
+<h2 id="run-vagrant">Run Vagrant</h2>
+
+<p>All that&#8217;s left is to run Vagrant to provision the virtual machine.</p>
+
+<p>Run the following command from the project root directory:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant up
+</code></pre>
+</div>
+
+<h2 id="stopping-the-virtual-machine">Stopping the virtual machine</h2>
+
+<p>It&#8217;s essential you use Vagrant to stop the VM rather than shutting down via the
+OS or the VirtualBox controls; failure to shutdown using Vagrant may result in
+file loss.</p>
+
+<p>To shut down the VM using Vagrant the following command from the project root
+directory:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant halt
+</code></pre>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-08-31">August 31, 2016</time></p>
+        
+      </footer>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+    
+    
+    
+
+
+  <nav class="pagination">
+    
+      <a href="https://gantsign.github.io/development-environment/docs/features/" class="pagination--pager" title="Features
+">Previous</a>
+    
+    
+      <a href="https://gantsign.github.io/development-environment/docs/configuration/" class="pagination--pager" title="Configuration
+">Next</a>
+    
+  </nav>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://gantsign.github.io/development-environment/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="https://gantsign.github.io/development-environment/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83612642-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

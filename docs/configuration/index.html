@@ -1,0 +1,812 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Configuration - GantSign EnV</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="GantSign EnV">
+<meta property="og:title" content="Configuration">
+
+
+  <link rel="canonical" href="https://gantsign.github.io/development-environment/docs/configuration/">
+  <meta property="og:url" content="https://gantsign.github.io/development-environment/docs/configuration/">
+
+
+
+  <meta property="og:description" content="Instructions for how to configure your development environment.">
+
+
+
+  <meta name="twitter:site" content="@gantsign">
+  <meta name="twitter:title" content="Configuration">
+  <meta name="twitter:description" content="Instructions for how to configure your development environment.">
+  <meta name="twitter:url" content="https://gantsign.github.io/docs/configuration/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2016-09-02T14:47:02+01:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "GantSign Ltd.",
+      "url" : "https://gantsign.github.io/development-environment",
+      "sameAs" : ["https://twitter.com/gantsign"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://gantsign.github.io/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://gantsign.github.io/development-environment/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://gantsign.github.io/development-environment/">GantSign EnV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/features/">Features</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/">Documentation</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/news/">What's New</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://github.com/gantsign/development-environment">GitHub</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+
+<nav class="nav__list">
+  
+  <ul>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/requirements/"><span class="nav__sub-title">Requirements</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/features/"><span class="nav__sub-title">Features</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/getting-started/"><span class="nav__sub-title">Getting started</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/configuration/"><span class="nav__sub-title">Configuration</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="https://gantsign.github.io/development-environment/docs/user-guide/"><span class="nav__sub-title">User guide</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page numbered_headings" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Configuration">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="September 02, 2016">
+    <meta itemprop="dateModified" content="September 02, 2016">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Configuration
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<p>The goal of this project is to make it easy to build your development
+environment in a reliable and reproducible way.</p>
+
+<p>To achieve this any essential configuration has to be version controlled.</p>
+
+<p>This still leaves room for a certain amount of user specific configuration on
+a users local machine.</p>
+
+<ol class="inline_toc" id="markdown-toc">
+  <li><a href="#user-specific-configuration" id="markdown-toc-user-specific-configuration">User specific configuration</a>    <ol>
+      <li><a href="#proxy-configuration" id="markdown-toc-proxy-configuration">Proxy Configuration</a>        <ol>
+          <li><a href="#common-proxy-config" id="markdown-toc-common-proxy-config">Common Proxy Config</a></li>
+          <li><a href="#apt-proxy-override" id="markdown-toc-apt-proxy-override">APT Proxy Override</a></li>
+          <li><a href="#git-proxy-override" id="markdown-toc-git-proxy-override">Git Proxy Override</a></li>
+          <li><a href="#gnome-proxy-override" id="markdown-toc-gnome-proxy-override">Gnome Proxy Override</a>            <ol>
+              <li><a href="#proxy-auto-config" id="markdown-toc-proxy-auto-config">Proxy auto-config</a></li>
+              <li><a href="#minimal-manual-configuration" id="markdown-toc-minimal-manual-configuration">Minimal manual configuration</a></li>
+              <li><a href="#full-manual-configuration" id="markdown-toc-full-manual-configuration">Full manual configuration</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#regional-preferences" id="markdown-toc-regional-preferences">Regional preferences</a>        <ol>
+          <li><a href="#timezone" id="markdown-toc-timezone">Timezone</a></li>
+          <li><a href="#locale" id="markdown-toc-locale">Locale</a></li>
+          <li><a href="#keyboard" id="markdown-toc-keyboard">Keyboard</a></li>
+        </ol>
+      </li>
+      <li><a href="#desktop-choice" id="markdown-toc-desktop-choice">Desktop choice</a></li>
+      <li><a href="#virtualbox-configuration" id="markdown-toc-virtualbox-configuration">VirtualBox configuration</a>        <ol>
+          <li><a href="#vm-name" id="markdown-toc-vm-name">VM name</a></li>
+          <li><a href="#ram-and-cpu" id="markdown-toc-ram-and-cpu">RAM and CPU</a></li>
+          <li><a href="#audio-controller" id="markdown-toc-audio-controller">Audio controller</a></li>
+        </ol>
+      </li>
+      <li><a href="#ansible-configuration" id="markdown-toc-ansible-configuration">Ansible configuration</a></li>
+      <li><a href="#oracle-binary-code-license-agreement" id="markdown-toc-oracle-binary-code-license-agreement">Oracle Binary Code License Agreement</a></li>
+      <li><a href="#intellij-idea-edition" id="markdown-toc-intellij-idea-edition">IntelliJ IDEA edition</a></li>
+    </ol>
+  </li>
+  <li><a href="#project-specific-configuration" id="markdown-toc-project-specific-configuration">Project specific configuration</a>    <ol>
+      <li><a href="#default-values-for-user-specific-configuration" id="markdown-toc-default-values-for-user-specific-configuration">Default values for user specific configuration</a></li>
+      <li><a href="#ansible-provisioning" id="markdown-toc-ansible-provisioning">Ansible provisioning</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="user-specific-configuration">User specific configuration</h2>
+
+<p>User specific configuration is done through the
+<a href="https://github.com/maoueh/nugrant">Nugrant</a> plugin for Vagrant.</p>
+
+<p>The Nugrant configuration file is located in the following two locations:</p>
+
+<ul>
+  <li>
+    <p>Your home folder (configuration shared between projects)</p>
+
+    <p><code class="highlighter-rouge">~/.vagrantuser</code></p>
+  </li>
+  <li>
+    <p>The project folder (configuration specific to this clone of the project)</p>
+
+    <p><code class="highlighter-rouge">.vagrantuser</code> (you&#8217;ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
+  directory)</p>
+  </li>
+</ul>
+
+<p>Note: changes only take effect when the development environment is next
+rebuilt/provisioned.</p>
+
+<h3 id="proxy-configuration">Proxy Configuration</h3>
+
+<p>If you&#8217;re behind a firewall and need to access the web through a HTTP proxy
+there&#8217;s a little extra config you need to do; if you have direct internet access
+you can skip this section.</p>
+
+<h4 id="common-proxy-config">Common Proxy Config</h4>
+
+<p>This configuration will apply to most command line tools and GUI applications.
+This can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the
+proxy host and port with the values for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">proxy</span><span class="pi">:</span>
+  <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">no_proxy</span><span class="pi">:</span> <span class="s1">'</span><span class="s">localhost,127.0.0.1'</span>
+</code></pre>
+</div>
+
+<h4 id="apt-proxy-override">APT Proxy Override</h4>
+
+<p>If you need to use a different proxy for the APT package manager, this can be
+set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy host
+and port with the values for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">apt_proxy</span><span class="pi">:</span>
+  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="s">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+</code></pre>
+</div>
+
+<h4 id="git-proxy-override">Git Proxy Override</h4>
+
+<p>If you need to use a different proxy for the Git version control system, this
+can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy
+host and port with the values for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">git_proxy</span><span class="pi">:</span>
+  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+</code></pre>
+</div>
+
+<h4 id="gnome-proxy-override">Gnome Proxy Override</h4>
+
+<p>If you need to use a different proxy for Gnome applications, or just want to
+take advantage of more advanced proxy options for Gnome applications, you can
+follow the documentation below.</p>
+
+<p>Note: the Gnome proxy settings are also used by some other non-gnome
+applications such as the Google Chrome web browser.</p>
+
+<h5 id="proxy-auto-config">Proxy auto-config</h5>
+
+<p>To use <a href="https://en.wikipedia.org/wiki/Proxy_auto-config">proxy auto config</a> add
+the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the <code class="highlighter-rouge">autoconfig_url</code> with the
+value for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
+  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">auto'</span>
+  <span class="s">autoconfig_url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://wpad.example.com/wpad.dat'</span>
+</code></pre>
+</div>
+
+<p>Note: in theory Gnome should be able to auto-discover the value for the
+<code class="highlighter-rouge">autoconfig_url</code> using the
+<a href="https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol">Web Proxy Auto-Discovery Protocol</a>;
+in practice auto-discovery is unlikely to work when you&#8217;re running Linux in a
+VM using NAT rather than directly on your corporate network, so you&#8217;ll likely
+have to specify the location manually.</p>
+
+<h5 id="minimal-manual-configuration">Minimal manual configuration</h5>
+
+<p>To manually specify a different proxy for Gnome applications add the following
+to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the hosts and ports with the values for your
+network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
+  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
+  <span class="s">ignore_hosts</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">localhost'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">127.0.0.0/8'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">::1'</span>
+  <span class="s">use_same_proxy</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">http</span><span class="pi">:</span>
+    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
+</code></pre>
+</div>
+
+<h5 id="full-manual-configuration">Full manual configuration</h5>
+
+<p>For full manual control add the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace
+the hosts, ports and credentials with the values for your network):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
+  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
+  <span class="s">ignore_hosts</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">localhost'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">127.0.0.0/8'</span>
+    <span class="pi">-</span> <span class="s1">'</span><span class="s">::1'</span>
+  <span class="s">use_same_proxy</span><span class="pi">:</span> <span class="s">false</span>
+  <span class="s">http</span><span class="pi">:</span>
+    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="s">use_authentication</span><span class="pi">:</span> <span class="s">true</span>
+    <span class="s">authentication_user</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_username'</span>
+    <span class="s">authentication_password</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_password'</span>
+    <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">https</span><span class="pi">:</span>
+    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
+  <span class="s">ftp</span><span class="pi">:</span>
+    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
+  <span class="s">socks</span><span class="pi">:</span>
+    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="s">port</span><span class="pi">:</span> <span class="s">9000</span>
+</code></pre>
+</div>
+
+<h3 id="regional-preferences">Regional preferences</h3>
+
+<p>Within a team you may have developers in multiple regions, these settings allow
+them to build the development environment according to their regional
+preferences:</p>
+
+<p><strong>Note:</strong> since this project is developed in the United Kingdom all the regional
+defaults are for Great Britain.</p>
+
+<h4 id="timezone">Timezone</h4>
+
+<p>You can find the list of available timezones at
+<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a>.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">timezone</span><span class="pi">:</span> <span class="s">Europe/London</span>
+</code></pre>
+</div>
+
+<h4 id="locale">Locale</h4>
+
+<p>You can find more information on locales at:
+<a href="https://help.ubuntu.com/community/Locale">https://help.ubuntu.com/community/Locale</a>.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">locales</span><span class="pi">:</span>
+  <span class="s">default</span><span class="pi">:</span> <span class="s">en_GB.UTF-8</span>
+  <span class="c1"># Please ensure the default locate is in the list of present locales.</span>
+  <span class="s">present</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="s">en_GB.UTF-8</span>
+   <span class="pi">-</span> <span class="s">en_US.UTF-8</span>
+</code></pre>
+</div>
+
+<h4 id="keyboard">Keyboard</h4>
+
+<p>You can find more information on keyboard configuration at:
+<a href="https://wiki.debian.org/Keyboard">https://wiki.debian.org/Keyboard</a>.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">keyboard</span><span class="pi">:</span>
+  <span class="s">model</span><span class="pi">:</span> <span class="s">pc105</span>
+  <span class="s">layout</span><span class="pi">:</span> <span class="s">gb</span>
+  <span class="s">variant</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre>
+</div>
+
+<h3 id="desktop-choice">Desktop choice</h3>
+
+<p>Each user can choose between the <a href="https://unity.ubuntu.com">Ubuntu Unity</a>
+desktop or the <a href="http://www.xfce.org">Xfce</a> desktop.</p>
+
+<figure>
+  
+<img src="https://gantsign.github.io/development-environment/images/desktop-choice.png" alt="Desktop choice" />
+
+  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+</figure>
+
+<p>The default is the Ubuntu Unity desktop but you can select the Xfce desktop by
+adding the following to your <code class="highlighter-rouge">.vagrantuser</code> file:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">desktop</span><span class="pi">:</span> <span class="s">xfce4</span>
+</code></pre>
+</div>
+
+<h3 id="virtualbox-configuration">VirtualBox configuration</h3>
+
+<h4 id="vm-name">VM name</h4>
+
+<p>This is important if you want to maintain separate copies of the environment
+(e.g. for working on different branches).</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">development-environment</span>
+</code></pre>
+</div>
+
+<p>For example you may keep an environment for performing patches to production:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">patches-environment</span>
+</code></pre>
+</div>
+
+<p><strong>Important:</strong> each separately named environment must be cloned into a separate
+directory.</p>
+
+<h4 id="ram-and-cpu">RAM and CPU</h4>
+
+<p>If your workstation has more resources than your laptop you may want to allocate
+more CPU cores to the VM or more RAM.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="s">memory</span><span class="pi">:</span> <span class="s1">'</span><span class="s">4096'</span> <span class="c1"># in MB</span>
+  <span class="s">cpus</span><span class="pi">:</span> <span class="s">2</span>
+</code></pre>
+</div>
+
+<h4 id="audio-controller">Audio controller</h4>
+
+<p>If you&#8217;re not running on Microsoft Windows you&#8217;ll probably need to change the
+audio controller settings.</p>
+
+<p>You can find more information about VirtualBox audio options at:
+<a href="https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm">https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm</a>.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+   <span class="s">audio</span><span class="pi">:</span> <span class="s">dsound</span>
+   <span class="s">audiocontroller</span><span class="pi">:</span> <span class="s">ac97</span>
+</code></pre>
+</div>
+
+<p><strong>Note:</strong> this project is only tested with Microsoft Windows as the host OS.</p>
+
+<h3 id="ansible-configuration">Ansible configuration</h3>
+
+<p>Ansible tags can be used to skip certain features when installing the
+development environment.</p>
+
+<p>This can speed up rebuilds and save on disk space.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">ansible</span><span class="pi">:</span>
+  <span class="s">skip_tags</span><span class="pi">:</span>
+    <span class="c1"># Choose from any of the below</span>
+    <span class="pi">-</span> <span class="s">unison</span>
+    <span class="pi">-</span> <span class="s">docker</span>
+    <span class="pi">-</span> <span class="s">nodejs</span>
+    <span class="pi">-</span> <span class="s">molecule</span>
+    <span class="pi">-</span> <span class="s">java</span>
+    <span class="pi">-</span> <span class="s">gui</span>
+    <span class="pi">-</span> <span class="s">chrome</span>
+    <span class="pi">-</span> <span class="s">gitkraken</span>
+    <span class="pi">-</span> <span class="s">atom</span>
+    <span class="pi">-</span> <span class="s">vscode</span>
+    <span class="pi">-</span> <span class="s">intellij</span>
+    <span class="pi">-</span> <span class="s">oh-my-zsh</span>
+</code></pre>
+</div>
+
+<p><strong>Note:</strong> there are dependencies between some of the features e.g. skipping
+<code class="highlighter-rouge">java</code> will also skip <code class="highlighter-rouge">intellij</code>.</p>
+
+<h3 id="oracle-binary-code-license-agreement">Oracle Binary Code License Agreement</h3>
+
+<p>To install the Oracle JDK you must accept the &#8220;Oracle Binary Code License
+Agreement for the Java SE Platform Products and JavaFX&#8221;; you can do this by
+specifying the following variable in the <code class="highlighter-rouge">.vagrantuser</code> file (either in
+the project root directory or your user home directory):</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">java_license_declaration</span><span class="pi">:</span> <span class="s1">'</span><span class="s">I</span><span class="nv"> </span><span class="s">accept</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">"Oracle</span><span class="nv"> </span><span class="s">Binary</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">License</span><span class="nv"> </span><span class="s">Agreement</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Java</span><span class="nv"> </span><span class="s">SE</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Products</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">JavaFX"</span><span class="nv"> </span><span class="s">under</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">terms</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">http://www.oracle.com/technetwork/java/javase/terms/license/index.html'</span>
+</code></pre>
+</div>
+
+<p>If you don&#8217;t want to accept the license you can skip the Java install using:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">ansible</span><span class="pi">:</span>
+  <span class="s">skip_tags</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">java</span>
+</code></pre>
+</div>
+
+<h3 id="intellij-idea-edition">IntelliJ IDEA edition</h3>
+
+<p>If your employer provides IntelliJ IDEA Ultimate licenses for your whole team,
+then you&#8217;ll want to make that the default (see
+<a href="#project-specific-configuration">Project specific configuration</a> below); for
+everyone else this development environment supports individual developers using
+their personal licenses.</p>
+
+<p>To install IntelliJ IDEA Ultimate instead of IntelliJ IDEA Community add the
+following line to your <code class="highlighter-rouge">.vagrantuser</code> file.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">intellij_edition</span><span class="pi">:</span> <span class="s">ultimate</span>
+</code></pre>
+</div>
+
+<h2 id="project-specific-configuration">Project specific configuration</h2>
+
+<p>All project specific configuration should be version controlled.</p>
+
+<p>The easiest way to version control your configuration this is to fork this
+project from GitHub
+<a href="https://github.com/gantsign/development-environment">https://github.com/gantsign/development-environment</a>.
+This project is under the MIT license so you&#8217;re free to fork into a private
+repository either on GitHub or elsewhere.</p>
+
+<h3 id="default-values-for-user-specific-configuration">Default values for user specific configuration</h3>
+
+<p>The default values for the user specific configuration can be found in the
+<code class="highlighter-rouge">config.user.defaults</code> block in the Vagrant file.</p>
+
+<p><strong>Important:</strong> the values in the <code class="highlighter-rouge">Vagrantfile</code> override similar values in the
+<code class="highlighter-rouge">playbook.yml</code> changing the values in the <code class="highlighter-rouge">playbook.yml</code> will have no effect.</p>
+
+<h3 id="ansible-provisioning">Ansible provisioning</h3>
+
+<p>What you need to install for your development environment and how it needs to be
+configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code>.</p>
+
+<p>You can find out more about Ansible at:
+<a href="https://www.ansible.com">https://www.ansible.com</a>.</p>
+
+<p>What you may want to configure in the <code class="highlighter-rouge">playbook.yml</code>:</p>
+
+<ul>
+  <li>Software Development Kits and versions</li>
+  <li>Build tools and versions</li>
+  <li>Required IDE plugins</li>
+  <li>Environment variables</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-09-02">September 02, 2016</time></p>
+        
+      </footer>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+    
+    
+    
+
+
+  <nav class="pagination">
+    
+      <a href="https://gantsign.github.io/development-environment/docs/getting-started/" class="pagination--pager" title="Getting started
+">Previous</a>
+    
+    
+      <a href="https://gantsign.github.io/development-environment/docs/user-guide/" class="pagination--pager" title="User guide
+">Next</a>
+    
+  </nav>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="https://gantsign.github.io/development-environment/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      </footer>
+    </div>
+
+    <script src="https://gantsign.github.io/development-environment/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83612642-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+
