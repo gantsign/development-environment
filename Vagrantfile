@@ -4,7 +4,7 @@
 # ansible_local requires version >= 1.8.4 to work stably
 Vagrant.require_version '>= 1.8.4'
 
-required_plugins = %w(vagrant-reload vagrant-triggers vagrant-vbguest vagrant-proxyconf nugrant)
+required_plugins = %w(vagrant-reload vagrant-persistent-storage vagrant-triggers vagrant-vbguest vagrant-proxyconf nugrant)
 plugins_to_install = required_plugins.select { |plugin| !Vagrant.has_plugin? plugin }
 unless plugins_to_install.empty?
   puts "Installing plugins: #{plugins_to_install.join(' ')}"
@@ -156,6 +156,14 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder '../data', '/vagrant_data'
 
+  config.persistent_storage.enabled = true
+  config.persistent_storage.location = '.vagrant/persistent-disk.vdi'
+  config.persistent_storage.size = 16_000
+  config.persistent_storage.mountname = 'persistent'
+  config.persistent_storage.filesystem = 'ext4'
+  config.persistent_storage.mountpoint = '/var/persistent'
+  config.persistent_storage.volgroupname = 'persist-vg'
+
   # Disable auto update of VirtualBox Guest Additions.
   # Slows down rebuilds without providing any clear benefit.
   config.vbguest.auto_update = false
@@ -203,14 +211,6 @@ Vagrant.configure(2) do |config|
   # config.push.define 'atlas' do |push|
   #   push.app = 'YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME'
   # end
-
-  # Install the vagrant-cachier if you want to speed up rebuilds at the cost
-  # of some disk space.
-  if Vagrant.has_plugin?('vagrant-cachier')
-    # Configure cached packages to be shared between instances of the same base
-    # box. More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
-    config.cache.scope = :box
-  end
 
   if config.user.proxy.enabled
     config.proxy.enabled = config.user.proxy.enabled
@@ -261,6 +261,20 @@ Vagrant.configure(2) do |config|
     gnome_proxy['ftp_port'] = config.user.proxy.ftp.gsub(%r{^http://([^:]+):([0-9]+)/$}, '\2')
   end
 
+  # Use persistent APT cache
+  config.vm.provision 'shell', inline: <<SCRIPT
+persistent_mount='/var/persistent/var/cache/apt/archives /var/cache/apt/archives none bind 0 0'
+mkdir -p /var/persistent/var/cache/apt/archives \
+&& grep -q -F "${persistent_mount}" /etc/fstab || echo "${persistent_mount}" >> /etc/fstab \
+&& mount /var/cache/apt/archives
+
+persistent_mount='/var/persistent/usr/local/src/ansible/data /usr/local/src/ansible/data none bind 0 0'
+mkdir -p /var/persistent/usr/local/src/ansible/data \
+mkdir -p /usr/local/src/ansible/data \
+&& grep -q -F "${persistent_mount}" /etc/fstab || echo "${persistent_mount}" >> /etc/fstab \
+&& mount /usr/local/src/ansible/data
+SCRIPT
+
   # Install alt-galaxy
   config.vm.provision 'shell', inline: <<SCRIPT
 apt-get update \
@@ -280,8 +294,6 @@ SCRIPT
     ansible.galaxy_command = 'alt-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force'
 
     ansible.extra_vars = {
-      has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier'),
-
       java_license_declaration: config.user.java_license_declaration,
 
       timezone: config.user.timezone,
