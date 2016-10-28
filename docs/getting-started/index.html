@@ -347,28 +347,6 @@ see the <a href="https://gantsign.github.io/development-environment/docs/configu
 <p>For more configuration options, including configuring regional preferences, view
 the <a href="https://gantsign.github.io/development-environment/docs/configuration">configuration</a> documentation.</p>
 
-<h2 id="vagrant-cachier-plugin">Vagrant Cachier Plugin</h2>
-
-<p>Website: <a href="https://github.com/fgrehm/vagrant-cachier">https://github.com/fgrehm/vagrant-cachier</a></p>
-
-<p>Installing the development environment requires a lot of installation packages
-to be downloaded; even on a fast internet connection this can take a while to
-complete. As it&#8217;s standard practice to rebuild the development environment
-rather than manually installing software updates, it&#8217;s better to cache these
-downloads on the host machine to speed up rebuilds.</p>
-
-<p>The Vagrant Cachier Plugin will configure various package managers on the client
-virtual machine; this configuration will cache most standard installation
-packages in a shared folder on the host machine (<code class="highlighter-rouge">~/.vagrant.d/cache</code>).</p>
-
-<p>If you have sufficient free disk space to store the cached installation
-packages, we recommend you install the Vagrant Cachier Plugin by running the
-following command:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant plugin install vagrant-cachier
-</code></pre>
-</div>
-
 <h2 id="run-vagrant">Run Vagrant</h2>
 
 <p>All that&#8217;s left is to run Vagrant to provision the virtual machine.</p>
