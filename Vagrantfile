@@ -261,10 +261,24 @@ Vagrant.configure(2) do |config|
     gnome_proxy['ftp_port'] = config.user.proxy.ftp.gsub(%r{^http://([^:]+):([0-9]+)/$}, '\2')
   end
 
+  # Install alt-galaxy
+  config.vm.provision 'shell', inline: <<SCRIPT
+apt-get update \
+&& apt-get install -y curl \
+&& echo 'Installing: alt-galaxy' \
+&& curl --silent --location 'https://github.com/gantsign/alt-galaxy/releases/download/1.0.0/alt-galaxy_linux_amd64.tar.xz' \
+    | tar --extract --xz --directory=/usr/local/bin
+SCRIPT
+
   # Run Ansible from the Vagrant VM
   config.vm.provision 'ansible_local' do |ansible|
     ansible.playbook = 'provisioning/playbook.yml'
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
+
+    # Use alt-galaxy to download roles instead of ansible-galaxy.
+    # Workaround for: "[ERROR]: failed to download the file: [Errno 104] Connection reset by peer"
+    ansible.galaxy_command = 'alt-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force'
+
     ansible.extra_vars = {
       has_vagrant_cachier: Vagrant.has_plugin?('vagrant-cachier'),
 
