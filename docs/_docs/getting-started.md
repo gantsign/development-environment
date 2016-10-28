@@ -98,28 +98,6 @@ see the [configuration]({{ base_path }}/docs/configuration) documentation.
 For more configuration options, including configuring regional preferences, view
 the [configuration]({{ base_path }}/docs/configuration) documentation.
 
-## Vagrant Cachier Plugin
-
-Website: [https://github.com/fgrehm/vagrant-cachier](https://github.com/fgrehm/vagrant-cachier)
-
-Installing the development environment requires a lot of installation packages
-to be downloaded; even on a fast internet connection this can take a while to
-complete. As it's standard practice to rebuild the development environment
-rather than manually installing software updates, it's better to cache these
-downloads on the host machine to speed up rebuilds.
-
-The Vagrant Cachier Plugin will configure various package managers on the client
-virtual machine; this configuration will cache most standard installation
-packages in a shared folder on the host machine (`~/.vagrant.d/cache`).
-
-If you have sufficient free disk space to store the cached installation
-packages, we recommend you install the Vagrant Cachier Plugin by running the
-following command:
-
-```bash
-vagrant plugin install vagrant-cachier
-```
-
 ## Run Vagrant
 
 All that's left is to run Vagrant to provision the virtual machine.
