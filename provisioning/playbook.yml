@@ -54,6 +54,10 @@
         - Name Local Storage
         - Name .bin
         - Name node_modules
+      unison_src_root: /home/vagrant
+      unison_mirror_root: /var/persistent/home/vagrant
+      unison_fat: no
+      unison_service_auto_start: yes
 
     # Set keyboard layout
     - role: gantsign.keyboard

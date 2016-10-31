@@ -42,7 +42,8 @@ However, you want to keep your user specific setup, and your workspace with all
 the repositories you've cloned.
 
 This project uses [unison](https://www.cis.upenn.edu/~bcpierce/unison) to
-synchronize selected files and folders from the client to the host machine.
+synchronize selected files and folders from the client machine a separate
+persistent virtual disk on the host machine.
 
 When the virtual machine is rebuilt, these files and folders are copied back to
 the new client virtual machine.
@@ -60,13 +61,9 @@ The following are some of the files and folders synchronized by default:
 * `/home/vagrant/.gnupg/`
 * `/home/vagrant/.m2/`  (except the `repository` directory)
 
-**Note:** the synchronization is two way, but due to limitations of VirtualBox
-shared folders only the client to host synchronization is done in real-time;
-the host to client synchronization only occurs when the `unison` service
-restarts (e.g when you restart the VM).
-
-**Important:** ensure your important files are backed up before rebuilding your
-virtual machine.
+**Important:** ensure your important files have been synchronized to the
+persistent disk before rebuilding your virtual machine; you can find the
+persistent copies of your files under `/var/persistent/home/vagrant`.
 
 ## For command line users
 

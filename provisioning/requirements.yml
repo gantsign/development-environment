@@ -50,7 +50,7 @@
   version: '1.2.0'
 - src: gantsign.terminator
   version: '1.0.0'
-- src: https://github.com/gantsign/ansible-role-unison/archive/1.1.2.tar.gz
+- src: https://github.com/gantsign/ansible-role-unison/archive/1.2.0.tar.gz
   name: gantsign.unison
 - src: gantsign.visual-studio-code
 - src: https://github.com/gantsign/ansible-role-xdesktop/archive/2.0.0.tar.gz

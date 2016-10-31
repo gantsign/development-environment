@@ -46,8 +46,9 @@ git pull
 ### Destroying the development environment
 
 Before you can rebuild your development environment you have to destroy your
-current one; make sure all your files are backed up outside the development
-environment before continuing.
+current one; make sure all your files your important files have been backed up
+to the persistent disk before rebuilding your virtual machine; you can find the
+persistent copies of your files under `/var/persistent/home/vagrant`.
 
 When you're ready to destroy the development environment, run the following
 command from the project root directory:
