@@ -5,8 +5,8 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Nov 2016 21:39:24 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Nov 2016 21:39:24 +0000</lastBuildDate>
+    <pubDate>Tue, 01 Nov 2016 21:55:05 +0000</pubDate>
+    <lastBuildDate>Tue, 01 Nov 2016 21:55:05 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -18,8 +18,8 @@ Ubuntu 16.04 LTS (Xenial Xerus).&lt;/p&gt;
 &lt;p&gt;You can find out the highlights of the Ubuntu 16.04 by reviewing the
 &lt;a href=&quot;https://wiki.ubuntu.com/XenialXerus/ReleaseNotes&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The biggest change to be aware of is Ubuntu 16.04 has moved to Python 3; if your
-using this project for Python development or just using Python scripts/apps
+&lt;p&gt;The biggest change to be aware of is Ubuntu 16.04 has moved to Python 3; if you
+are using this project for Python development or just using Python scripts/apps
 you may encounter breaking changes. You can review the Python 3 changes in the
 &lt;a href=&quot;https://docs.python.org/3.0/whatsnew/3.0.html&quot;&gt;what&amp;#8217;s new&lt;/a&gt; documentation.&lt;/p&gt;
 </description>
