@@ -19,7 +19,7 @@
 
 
 
-<title>User guide - GantSign EnV</title>
+<title>Improved storage of persisted files - GantSign EnV</title>
 
 
 
@@ -29,22 +29,22 @@
 
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="GantSign EnV">
-<meta property="og:title" content="User guide">
+<meta property="og:title" content="Improved storage of persisted files">
 
 
-  <link rel="canonical" href="https://gantsign.github.io/development-environment/docs/user-guide/">
-  <meta property="og:url" content="https://gantsign.github.io/development-environment/docs/user-guide/">
+  <link rel="canonical" href="https://gantsign.github.io/development-environment/persistence/">
+  <meta property="og:url" content="https://gantsign.github.io/development-environment/persistence/">
 
 
 
-  <meta property="og:description" content="How to use the development environment.">
+  <meta property="og:description" content="Moved persisted files from VirtualBox shared folders to virtual disk.">
 
 
 
   <meta name="twitter:site" content="@gantsign">
-  <meta name="twitter:title" content="User guide">
-  <meta name="twitter:description" content="How to use the development environment.">
-  <meta name="twitter:url" content="https://gantsign.github.io/docs/user-guide/">
+  <meta name="twitter:title" content="Improved storage of persisted files">
+  <meta name="twitter:description" content="Moved persisted files from VirtualBox shared folders to virtual disk.">
+  <meta name="twitter:url" content="https://gantsign.github.io/persistence/">
 
   
     <meta name="twitter:card" content="summary">
@@ -60,7 +60,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2016-08-31T09:05:34+01:00">
+  <meta property="article:published_time" content="2016-10-31T17:04:34+00:00">
 
 
 
@@ -158,155 +158,103 @@
 
   <div class="sidebar sticky">
   
-  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
     
+    	<img src="https://gantsign.github.io/development-environment/images/logo.png" class="author__avatar" alt="GantSign Ltd.">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">GantSign Ltd.</h3>
+    <p class="author__bio">Software Consultancy</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> London, UK</li>
       
       
       
-    
-    
       
+      
+        <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
 
-
-<nav class="nav__list">
-  
-  <ul>
-    
-      <li>
-        
-          
-          
-
-          <a href="https://gantsign.github.io/development-environment/docs/requirements/"><span class="nav__sub-title">Requirements</span></a>
-        
-
-        
-      </li>
-    
-      <li>
-        
-          
-          
-
-          <a href="https://gantsign.github.io/development-environment/docs/features/"><span class="nav__sub-title">Features</span></a>
-        
-
-        
-      </li>
-    
-      <li>
-        
-          
-          
-
-          <a href="https://gantsign.github.io/development-environment/docs/getting-started/"><span class="nav__sub-title">Getting started</span></a>
-        
-
-        
-      </li>
-    
-      <li>
-        
-          
-          
-
-          <a href="https://gantsign.github.io/development-environment/docs/configuration/"><span class="nav__sub-title">Configuration</span></a>
-        
-
-        
-      </li>
-    
-      <li>
-        
-          
-          
-
-          <a href="https://gantsign.github.io/development-environment/docs/user-guide/"><span class="nav__sub-title">User guide</span></a>
-        
-
-        
-      </li>
-    
-  </ul>
-</nav>
-    
   
   </div>
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="User guide">
-    <meta itemprop="description" content="Using Vagrant">
-    <meta itemprop="datePublished" content="August 31, 2016">
-    <meta itemprop="dateModified" content="August 31, 2016">
+    <meta itemprop="headline" content="Improved storage of persisted files">
+    <meta itemprop="description" content="… this project has changed from storing persistent copies of files on the host filesystem using VirtualBox shared folders, to storing persistent copies…">
+    <meta itemprop="datePublished" content="October 31, 2016">
+    <meta itemprop="dateModified" content="October 31, 2016">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">User guide
+          <h1 class="page__title" itemprop="headline">Improved storage of persisted files
 </h1>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
-        <h2 id="using-vagrant">Using Vagrant</h2>
+        
+<p>When using a virtual development environment it&#8217;s important to be able to
+rebuild it with the minimum of effort so you can perform software updates or
+just repair your environment.</p>
 
-<p>All the following commands must be run from the project root directory.</p>
+<p>When rebuilding your environment you want to keep your workspace and certain
+other user specific files; this enables you to resume working without having to
+clone all your project repositories again and perform user specific setup after
+each rebuild.</p>
 
-<h3 id="to-start-the-development-environment">To start the development environment</h3>
+<p>To make the persistence of these files as robust as possible, this project has
+changed from storing persistent copies of files on the host filesystem using
+VirtualBox shared folders, to storing persistent copies of files in a separate
+virtual disk using the
+<a href="https://github.com/kusnier/vagrant-persistent-storage">vagrant-persistent-storage</a>
+plugin.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>vagrant up
-</code></pre>
-</div>
+<p>To upgrade to the new storage mechanism update the development environment to
+the latest version, rebuild the VM, and run the following command to copy the
+files from the old storage location:</p>
 
-<h3 id="to-stop-the-development-environment">To stop the development environment</h3>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>vagrant halt
-</code></pre>
-</div>
-
-<h3 id="to-remove-the-development-environment">To remove the development environment</h3>
-
-<p>Use with caution this will delete all the files in your development environment.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>vagrant destroy
-</code></pre>
-</div>
-
-<h2 id="rebuilding-the-development-environment">Rebuilding the development environment</h2>
-
-<h3 id="updating-the-project">Updating the project</h3>
-
-<p>To get all the latest improvements you’ll want to update from time to time; to
-update the project directory run the following command from the project root
-directory:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git pull
-</code></pre>
-</div>
-
-<h3 id="destroying-the-development-environment">Destroying the development environment</h3>
-
-<p>Before you can rebuild your development environment you have to destroy your
-current one; make sure all your files your important files have been backed up
-to the persistent disk before rebuilding your virtual machine; you can find the
-persistent copies of your files under <code class="highlighter-rouge">/var/persistent/home/vagrant</code>.</p>
-
-<p>When you’re ready to destroy the development environment, run the following
-command from the project root directory:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant destroy
-</code></pre>
-</div>
-
-<h3 id="recreating-the-development-environment">Recreating the development environment</h3>
-
-<p>This is the same as provisioning for the first time.</p>
-
-<p>Run the following command from the project root directory:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant up
+<div class="highlighter-rouge"><pre class="highlight"><code>rsync --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r --verbose \
+    /vagrant/home/* /home/vagrant
 </code></pre>
 </div>
 
@@ -321,84 +269,18 @@ command from the project root directory:</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-08-31">August 31, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-10-31">October 31, 2016</time></p>
         
       </footer>
 
       
 
       
-        
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
 
 
   <nav class="pagination">
     
-      <a href="https://gantsign.github.io/development-environment/docs/configuration/" class="pagination--pager" title="Configuration
+      <a href="https://gantsign.github.io/development-environment/proxy/" class="pagination--pager" title="Improved and documented proxy support
 ">Previous</a>
     
     
@@ -407,7 +289,6 @@ command from the project root directory:</p>
   </nav>
 
 
-      
     </div>
 
     
@@ -416,7 +297,6 @@ command from the project root directory:</p>
   
   
 </div>
-
 
     <div class="page__footer">
       <footer>

@@ -326,7 +326,8 @@ clean working state by rebuilding the virtual machine.</p>
 the repositories you&#8217;ve cloned.</p>
 
 <p>This project uses <a href="https://www.cis.upenn.edu/~bcpierce/unison">unison</a> to
-synchronize selected files and folders from the client to the host machine.</p>
+synchronize selected files and folders from the client machine a separate
+persistent virtual disk on the host machine.</p>
 
 <p>When the virtual machine is rebuilt, these files and folders are copied back to
 the new client virtual machine.</p>
@@ -349,13 +350,9 @@ the new client virtual machine.</p>
   <li><code class="highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="highlighter-rouge">repository</code> directory)</li>
 </ul>
 
-<p><strong>Note:</strong> the synchronization is two way, but due to limitations of VirtualBox
-shared folders only the client to host synchronization is done in real-time;
-the host to client synchronization only occurs when the <code class="highlighter-rouge">unison</code> service
-restarts (e.g when you restart the VM).</p>
-
-<p><strong>Important:</strong> ensure your important files are backed up before rebuilding your
-virtual machine.</p>
+<p><strong>Important:</strong> ensure your important files have been synchronized to the
+persistent disk before rebuilding your virtual machine; you can find the
+persistent copies of your files under <code class="highlighter-rouge">/var/persistent/home/vagrant</code>.</p>
 
 <h2 id="for-command-line-users">For command line users</h2>
 

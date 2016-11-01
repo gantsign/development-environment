@@ -5,9 +5,46 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Nov 2016 19:40:30 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Nov 2016 19:40:30 +0000</lastBuildDate>
+    <pubDate>Tue, 01 Nov 2016 21:09:49 +0000</pubDate>
+    <lastBuildDate>Tue, 01 Nov 2016 21:09:49 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Improved storage of persisted files</title>
+        <description>
+&lt;p&gt;When using a virtual development environment it&amp;#8217;s important to be able to
+rebuild it with the minimum of effort so you can perform software updates or
+just repair your environment.&lt;/p&gt;
+
+&lt;p&gt;When rebuilding your environment you want to keep your workspace and certain
+other user specific files; this enables you to resume working without having to
+clone all your project repositories again and perform user specific setup after
+each rebuild.&lt;/p&gt;
+
+&lt;p&gt;To make the persistence of these files as robust as possible, this project has
+changed from storing persistent copies of files on the host filesystem using
+VirtualBox shared folders, to storing persistent copies of files in a separate
+virtual disk using the
+&lt;a href=&quot;https://github.com/kusnier/vagrant-persistent-storage&quot;&gt;vagrant-persistent-storage&lt;/a&gt;
+plugin.&lt;/p&gt;
+
+&lt;p&gt;To upgrade to the new storage mechanism update the development environment to
+the latest version, rebuild the VM, and run the following command to copy the
+files from the old storage location:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rsync --recursive --times --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r --verbose \
+    /vagrant/home/* /home/vagrant
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 31 Oct 2016 17:04:34 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/persistence/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/persistence/</guid>
+        
+        <category>storage</category>
+        
+        
+      </item>
     
       <item>
         <title>Improved and documented proxy support</title>
