@@ -126,16 +126,6 @@ Vagrant.configure(2) do |config|
     end
   end
 
-  # Ensure Unison service isn't started until Vagrant shared folders are mounted
-  # and stopped before shared folders are unmounted (if we don't Unison will
-  # assume all files have been deleted and cascade the delete to the client VM).
-  config.trigger.after [:up, :reload] do
-    run_remote 'bash -c "sudo systemctl start unison || true"'
-  end
-  config.trigger.before [:halt, :reload] do
-    run_remote 'bash -c "sudo systemctl stop unison || true"'
-  end
-
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing 'localhost:8080' will access port 80 on the guest machine.
