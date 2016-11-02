@@ -10,3 +10,23 @@
         src: https://github.com/gantsign/alt-galaxy/releases/download/1.0.0/alt-galaxy_linux_amd64.tar.xz
         remote_src: yes
         dest: /usr/local/bin
+
+    # Reduce the number of times `apt-get update` needs to be run by
+    # pre-registering repositories
+    - name: pre-register apt repositories
+      become: yes
+      apt_repository:
+        repo: '{{ item }}'
+        update_cache: no
+      with_items:
+        - ppa:git-core/ppa
+        - ppa:gnome-terminator/ppa
+        - ppa:john-freeman/unison
+        - ppa:webupd8team/atom
+      register: register_repos
+
+    - name: apt-get update
+      become: yes
+      apt:
+        update_cache: yes
+      when: register_repos.changed
