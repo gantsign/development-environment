@@ -11,7 +11,7 @@ indent_size = 4
 trim_trailing_whitespace = true
 
 # Files with a smaller indent
-[*.yml,Vagrantfile,Customfile.example,Customfile,.vagrantuser.example,.vagrantuser]
+[{*.yml,Vagrantfile,Customfile.example,Customfile,.vagrantuser.example,.vagrantuser}]
 indent_size = 2
 
 # Shell scripts can be fussy about line endings
