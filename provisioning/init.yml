@@ -1,0 +1,12 @@
+---
+- hosts: all
+
+  pre_tasks:
+
+    # Install alt-galaxy
+    - name: install alt-galaxy
+      become: yes
+      unarchive:
+        src: https://github.com/gantsign/alt-galaxy/releases/download/1.0.0/alt-galaxy_linux_amd64.tar.xz
+        remote_src: yes
+        dest: /usr/local/bin

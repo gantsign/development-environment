@@ -265,14 +265,10 @@ mkdir -p /usr/local/src/ansible/data \
 && mount /usr/local/src/ansible/data
 SCRIPT
 
-  # Install alt-galaxy
-  config.vm.provision 'shell', inline: <<SCRIPT
-apt-get update \
-&& apt-get install -y curl \
-&& echo 'Installing: alt-galaxy' \
-&& curl --silent --location 'https://github.com/gantsign/alt-galaxy/releases/download/1.0.0/alt-galaxy_linux_amd64.tar.xz' \
-    | tar --extract --xz --directory=/usr/local/bin
-SCRIPT
+  # Perform preliminary setup before the main Ansible provisioning
+  config.vm.provision 'ansible_local' do |ansible|
+    ansible.playbook = 'provisioning/init.yml'
+  end
 
   # Run Ansible from the Vagrant VM
   config.vm.provision 'ansible_local' do |ansible|
