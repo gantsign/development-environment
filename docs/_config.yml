@@ -5,6 +5,12 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Release information
+release:
+  git_url: https://github.com/gantsign/development-environment.git
+  list_url: https://github.com/gantsign/development-environment/releases
+  version: '1.0.0'
+
 # Site Settings
 locale: en-GB
 title: GantSign EnV
@@ -16,7 +22,7 @@ description: &description 'A development environment for Java and Ansible built 
 url: https://gantsign.github.io
 
 # The subpath of your site, e.g. "/blog"
-baseurl: /development-environment 
+baseurl: /development-environment
 repository: gantsign/development-environment
 
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -199,5 +205,5 @@ compress_html:
   ignore:
     envs: development
 
-# Include minimal-mistakes from Gemfile 
+# Include minimal-mistakes from Gemfile
 theme: minimal-mistakes
