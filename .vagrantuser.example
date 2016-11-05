@@ -50,6 +50,7 @@
 #     - unison
 #     - docker
 #     - nodejs
+#     - golang
 #     - molecule
 #     - java
 #     - gui

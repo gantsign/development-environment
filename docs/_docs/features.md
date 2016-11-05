@@ -366,6 +366,27 @@ installation.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
 
+## For Go developers
+
+### Go SDK
+
+This development environment comes with Go language
+[SDK 1.7.3](https://golang.org/dl/#go1.7.3) installed.
+
+### Go environment variables
+
+`GOROOT` is set to the location where Go is installed.
+
+`GOPATH` is set to `$HOME/workspace-go`.
+
+`$GOROOT\bin` and `$GOPATH\bin` are added to your `PATH`.
+
+### Go plugins for IDEs
+
+* [IntelliJ IDEA](https://plugins.jetbrains.com/plugin/5047?pr=idea)
+* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
+* [Atom](https://atom.io/packages/go-plus)
+
 ## For Ansible developers
 
 ### Molecule
