@@ -366,7 +366,7 @@ installation.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
 
-## For Ansible Developers
+## For Ansible developers
 
 ### Molecule
 
