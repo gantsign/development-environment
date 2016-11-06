@@ -36,6 +36,7 @@
         - .config/Code
         - .local/share/keyrings
         - workspace
+        - workspace-go
       unison_include_files:
         - .bash_history
         - .zsh_history
@@ -52,6 +53,7 @@
         - Name target
         - Name GPUCache
         - Name Local Storage
+        - Name bin
         - Name .bin
         - Name node_modules
       unison_src_root: /home/vagrant
@@ -131,6 +133,12 @@
         - name: grunt-cli
         - name: grunt-init
 
+    # Install Go language SDK
+    - role: gantsign.golang
+      tags:
+        - golang
+      golang_gopath: '$HOME/workspace-go'
+
     # Enable audio support
     - role: gantsign.audio
       tags:
@@ -203,6 +211,17 @@
                 showIndentGuide: true
                 showInvisibles: true
 
+    # Install Go package for Atom
+    - role: gantsign.atom-packages
+      tags:
+        - gui
+        - atom
+        - golang
+      users:
+        - username: vagrant
+          atom_packages:
+            - go-plus
+
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
       tags:
@@ -225,6 +244,17 @@
               ".vagrantuser.example": "yaml"
             }
           }
+
+    # Install Go extension for Visual Studio Code editor
+    - role: gantsign.visual-studio-code-extensions
+      tags:
+        - gui
+        - vscode
+        - golang
+      users:
+        - username: vagrant
+          visual_studio_code_extensions:
+            - lukehoban.Go
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
@@ -258,6 +288,18 @@
           intellij_plugins:
             - CheckStyle-IDEA
             - Lombook Plugin
+
+    # Install Go plugin for IntelliJ IDEA IDE
+    - role: gantsign.intellij-plugins
+      tags:
+        - java
+        - gui
+        - intellij
+        - golang
+      users:
+        - username: vagrant
+          intellij_plugins:
+            - ro.redeul.google.go
 
     # Add Maven extension to popup a GUI notification when builds finish
     - role: gantsign.maven-notifier
