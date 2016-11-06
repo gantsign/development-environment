@@ -98,6 +98,13 @@
       docker_group_members:
         - vagrant
 
+    # Install Kubernetes
+    - role: gantsign.kubernetes
+      tags:
+        - kubernetes
+        - docker
+      kubernetes_node_type: admin
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:

@@ -11,6 +11,14 @@
         remote_src: yes
         dest: /usr/local/bin
 
+    # Install repository keys
+    - name: add kubernetes key
+      become: yes
+      apt_key:
+        id: '3746C208A7317B0F'
+        url: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
+        state: present
+
     # Reduce the number of times `apt-get update` needs to be run by
     # pre-registering repositories
     - name: pre-register apt repositories
@@ -23,6 +31,7 @@
         - ppa:gnome-terminator/ppa
         - ppa:john-freeman/unison
         - ppa:webupd8team/atom
+        - 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
       register: register_repos
 
     - name: apt-get update
