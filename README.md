@@ -37,6 +37,7 @@ environment that you can fork to add your project specific configuration.
 * Terminator
 * Oh-my-zsh
 * Docker
+* Kubernetes
 * Visual Studio Code
 * GitKraken
 * Oracle JDK
@@ -44,6 +45,7 @@ environment that you can fork to add your project specific configuration.
 * Maven Color
 * Maven Notifier
 * IntelliJ IDEA IDE
+* Go language SDK
 * Molecule
 
 [Learn more about the features](https://gantsign.github.io/development-environment/docs/features)
