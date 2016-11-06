@@ -49,6 +49,7 @@
 #   skip_tags:
 #     - unison
 #     - docker
+#     - kubernetes
 #     - nodejs
 #     - golang
 #     - molecule

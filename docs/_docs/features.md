@@ -242,6 +242,22 @@ installation; all of that is provided in the Docker image, you just use it.
 It's also easy to build your own Docker images so you can get the same benefits
 with your own software.
 
+### Kubernetes
+
+Website: [http://kubernetes.io](http://kubernetes.io)
+
+Kubernetes is the leading solution for managing containerized applications.
+
+When you have a microservice application it quickly becomes impractical to
+manually spin up and maintain all the different services. With Kubernetes you
+create a deployment descriptor describing all the parts of your application
+(microservices, databases, message buses, etc.), then Kubernetes can deal with
+the low level details of running it.
+
+Kubernetes provides a layer of abstraction from the underlying infrastructure,
+so its just as easy to run your application locally as it is to deploy the
+application to a cluster of nodes in the cloud.
+
 ### Visual Studio Code
 
 Website: [https://code.visualstudio.com](https://code.visualstudio.com)
