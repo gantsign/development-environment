@@ -5,9 +5,36 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 11 Nov 2016 14:09:56 +0000</pubDate>
-    <lastBuildDate>Fri, 11 Nov 2016 14:09:56 +0000</lastBuildDate>
+    <pubDate>Fri, 11 Nov 2016 14:36:50 +0000</pubDate>
+    <lastBuildDate>Fri, 11 Nov 2016 14:36:50 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Version 1.2 released</title>
+        <description>
+&lt;p&gt;Release highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/issues/139&quot;&gt;#139&lt;/a&gt;:
+Added Postman HTTP tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/137&quot;&gt;#137&lt;/a&gt;:
+Performance improvements&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fore more details see the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features&quot;&gt;features&lt;/a&gt;
+documentation.&lt;/p&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.2.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Nov 2016 14:17:23 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/1.2-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.2-release/</guid>
+        
+        <category>release</category>
+        
+        
+      </item>
     
       <item>
         <title>Version 1.1 released</title>
