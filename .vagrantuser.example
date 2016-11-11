@@ -53,6 +53,7 @@
 #     - nodejs
 #     - golang
 #     - molecule
+#     - postman
 #     - java
 #     - gui
 #     - chrome
