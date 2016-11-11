@@ -40,6 +40,7 @@ environment that you can fork to add your project specific configuration.
 * Kubernetes
 * Visual Studio Code
 * GitKraken
+* Postman
 * Oracle JDK
 * Maven
 * Maven Color

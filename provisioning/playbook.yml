@@ -34,6 +34,7 @@
         - .gitkraken
         - .atom
         - .config/Code
+        - .config/Postman
         - .local/share/keyrings
         - workspace
         - workspace-go
@@ -51,8 +52,8 @@
         - BelowPath .atom/packages
         - BelowPath .atom/storage
         - Name target
+        - Name Cache
         - Name GPUCache
-        - Name Local Storage
         - Name bin
         - Name .bin
         - Name node_modules
@@ -197,6 +198,12 @@
         - gui
         - gitkraken
 
+    # Install Postman HTTP tool
+    - role: gantsign.postman
+      tags:
+        - gui
+        - postman
+
     # Install Atom editor
     - role: gantsign.atom
       tags:
@@ -329,6 +336,7 @@
         - application: Thunar.desktop
         - application: google-chrome.desktop
         - application: gitkraken.desktop
+        - application: Postman.desktop
         - application: atom.desktop
         - application: code.desktop
         - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"

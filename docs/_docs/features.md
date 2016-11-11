@@ -332,6 +332,14 @@ A GUI diff/merge tool with Git support.
 
 Tip: run `meld .` in your Git working directory to review your changes.
 
+### Postman
+
+Website: [https://www.getpostman.com](https://www.getpostman.com)
+
+A user friendly tool for testing REST services.
+
+![Postman window]({{ base_path }}/images/postman.png)
+
 ## For Java developers
 
 ### Oracle JDK
