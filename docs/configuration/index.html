@@ -238,7 +238,7 @@
     <meta itemprop="headline" content="Configuration">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="September 02, 2016">
-    <meta itemprop="dateModified" content="September 02, 2016">
+    <meta itemprop="dateModified" content="November 23, 2016">
 
     <div class="page__inner-wrap">
       
@@ -283,7 +283,7 @@ a users local machine.</p>
       <li><a href="#virtualbox-configuration" id="markdown-toc-virtualbox-configuration">VirtualBox configuration</a>        <ol>
           <li><a href="#vm-name" id="markdown-toc-vm-name">VM name</a></li>
           <li><a href="#ram-and-cpu" id="markdown-toc-ram-and-cpu">RAM and CPU</a></li>
-          <li><a href="#audio-controller" id="markdown-toc-audio-controller">Audio controller</a></li>
+          <li><a href="#audio" id="markdown-toc-audio">Audio</a></li>
         </ol>
       </li>
       <li><a href="#ansible-configuration" id="markdown-toc-ansible-configuration">Ansible configuration</a></li>
@@ -542,16 +542,16 @@ more CPU cores to the VM or more RAM.</p>
 </code></pre>
 </div>
 
-<h4 id="audio-controller">Audio controller</h4>
+<h4 id="audio">Audio</h4>
 
-<p>If you&#8217;re not running on Microsoft Windows you&#8217;ll probably need to change the
-audio controller settings.</p>
+<p>If you&#8217;re not running on Microsoft Windows or macOS you&#8217;ll need to change the
+audio settings to enable audio support.</p>
 
 <p>You can find more information about VirtualBox audio options at:
 <a href="https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm">https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm</a>.</p>
 
 <div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
-   <span class="s">audio</span><span class="pi">:</span> <span class="s">dsound</span>
+   <span class="s">audio</span><span class="pi">:</span> <span class="s">alsa</span>
    <span class="s">audiocontroller</span><span class="pi">:</span> <span class="s">ac97</span>
 </code></pre>
 </div>
@@ -666,7 +666,7 @@ configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-09-02">September 02, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-11-23">November 23, 2016</time></p>
         
       </footer>
 
