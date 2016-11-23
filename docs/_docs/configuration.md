@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2016-09-02T14:47:02+01:00
+modified: 2016-11-23T12:09:35+00:00
 ---
 
 {% include base_path %}
@@ -261,17 +261,17 @@ virtualbox: # All VirtualBox configuration has to be under the same `virtualbox`
   cpus: 2
 ```
 
-#### Audio controller
+#### Audio
 
-If you're not running on Microsoft Windows you'll probably need to change the
-audio controller settings.
+If you're not running on Microsoft Windows or macOS you'll need to change the
+audio settings to enable audio support.
 
 You can find more information about VirtualBox audio options at:
 [https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm](https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm).
 
 ```yaml
 virtualbox: # All VirtualBox configuration has to be under the same `virtualbox` tag.
-   audio: dsound
+   audio: alsa
    audiocontroller: ac97
 ```
 

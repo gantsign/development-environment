@@ -37,6 +37,17 @@ Vagrant.configure(2) do |config|
   # `vagrant box outdated`. This is not recommended.
   # config.vm.box_check_update = false
 
+  # Specifying an unsupported audio setting will cause VirtualBox provisioning
+  # to fail.
+  default_vb_audio = nil
+  default_vb_audiocontroler = 'ac97'
+  if Vagrant::Util::Platform.windows?
+    default_vb_audio  = 'dsound'
+  elsif Vagrant::Util::Platform.mac?
+    default_vb_audio  = 'coreaudio'
+    default_vb_audiocontroler = 'hda'
+  end
+
   # Customizable configuration
   # See https://github.com/maoueh/nugrant
   config.user.defaults = {
@@ -95,8 +106,8 @@ Vagrant.configure(2) do |config|
       'memory' => '4096',
       'clipboard' => 'bidirectional',
       'draganddrop' => 'bidirectional',
-      'audio' => 'dsound',
-      'audiocontroller' => 'ac97'
+      'audio' => default_vb_audio,
+      'audiocontroller' => default_vb_audiocontroler
     },
 
     'java_license_declaration' => '',
@@ -179,8 +190,10 @@ Vagrant.configure(2) do |config|
     vb.customize ['modifyvm', :id, '--clipboard', config.user.virtualbox.clipboard]
     vb.customize ['modifyvm', :id, '--draganddrop', config.user.virtualbox.draganddrop]
 
-    # Enable sound
-    vb.customize ['modifyvm', :id, '--audio', config.user.virtualbox.audio, '--audiocontroller', config.user.virtualbox.audiocontroller]
+    unless config.user.virtualbox.audio.nil?
+      # Enable sound
+      vb.customize ['modifyvm', :id, '--audio', config.user.virtualbox.audio, '--audiocontroller', config.user.virtualbox.audiocontroller]
+    end
   end
 
   # Customfile
