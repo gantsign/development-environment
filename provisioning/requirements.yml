@@ -30,7 +30,7 @@
 - src: gantsign.gnome-proxy
   version: '1.0.0'
 - src: gantsign.golang
-  version: '1.0.0'
+  version: '1.0.1'
 - src: gantsign.inotify
   version: '1.0.0'
 - src: gantsign.intellij
