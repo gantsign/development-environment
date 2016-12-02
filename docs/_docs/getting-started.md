@@ -4,7 +4,7 @@ permalink: /docs/getting-started/
 description: >
   How to setup the development environment.
 date: 2016-08-31T09:05:34+01:00
-modified: 2016-11-03T13:30:37+00:00
+modified: 2016-12-02T00:42:24+00:00
 ---
 
 {% include base_path %}
