@@ -360,7 +360,6 @@
         - java
       environment_config:
         JAVA_HOME: "{{ ansible_local.java.general.home }}"
-        IDEA_JDK: "{{ ansible_local.java.general.home }}"
 
     # Configure Maven environment variable
     - role: franklinkim.environment
