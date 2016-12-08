@@ -4,7 +4,7 @@ permalink: /docs/getting-started/
 description: >
   How to setup the development environment.
 date: 2016-08-31T09:05:34+01:00
-modified: 2016-12-02T00:42:24+00:00
+modified: 2016-12-08T13:38:15+00:00
 ---
 
 {% include base_path %}
@@ -106,6 +106,33 @@ All that's left is to run Vagrant to provision the virtual machine.
 Run the following command from the project root directory:
 
 ```bash
+vagrant up
+```
+
+### Troubleshooting
+
+It's relatively common for provisioning to fail due to transient HTTP failures
+(e.g. connection failures, timeouts, connection reset by peer); this is
+particularly true the first time provisioning is run as everything has to be
+downloaded.
+
+This project will cache most of the downloads on your local machine so you'll
+find provisioning is much faster and more reliable from the second time it is
+run.
+
+If provisioning fails partway through, you can restart provisioning by running
+the following command from the project root directory:
+
+```bash
+vagrant provision
+```
+
+If provisioning fails leaving the virtual machine in an unrecoverable state, you
+can run the following commands from the project root directory, to rebuild the
+virtual machine from scratch:
+
+```bash
+vagrant destroy
 vagrant up
 ```
 
