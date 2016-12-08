@@ -52,13 +52,13 @@ the project root directory or your user home directory):
 java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
 ```
 
-### Proxy Configuration
+### Proxy configuration
 
 If you're behind a firewall and need to access the web through a HTTP proxy
 there's a little extra config you need to do; if you have direct internet access
 you can skip this section.
 
-#### Host Proxy Config
+#### Host proxy config
 
 On the host machine, Vagrant needs to be able to access the internet to install
 plugins and download the base image for the virtual machine. To do this you need
@@ -76,7 +76,7 @@ window before you run `vagrant`; while there are ways of setting the environment
 variable permanently care should be taken as doing so may affect other
 applications.
 
-#### Client VM Proxy Config
+#### Client VM proxy config
 
 Add the following to the `.vagrantuser` file, either in the project root
 directory or your user home directory (replace the proxy host and port with the
@@ -94,7 +94,7 @@ proxy:
 For more proxy configuration options, including proxy auto-config support,
 see the [configuration]({{ base_path }}/docs/configuration) documentation.
 
-### Advanced Configuration
+### Advanced configuration
 
 For more configuration options, including configuring regional preferences, view
 the [configuration]({{ base_path }}/docs/configuration) documentation.
