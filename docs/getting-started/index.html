@@ -238,7 +238,7 @@
     <meta itemprop="headline" content="Getting started">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="August 31, 2016">
-    <meta itemprop="dateModified" content="December 02, 2016">
+    <meta itemprop="dateModified" content="December 08, 2016">
 
     <div class="page__inner-wrap">
       
@@ -358,6 +358,33 @@ the <a href="https://gantsign.github.io/development-environment/docs/configurati
 </code></pre>
 </div>
 
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<p>It&#8217;s relatively common for provisioning to fail due to transient HTTP failures
+(e.g. connection failures, timeouts, connection reset by peer); this is
+particularly true the first time provisioning is run as everything has to be
+downloaded.</p>
+
+<p>This project will cache most of the downloads on your local machine so you&#8217;ll
+find provisioning is much faster and more reliable from the second time it is
+run.</p>
+
+<p>If provisioning fails partway through, you can restart provisioning by running
+the following command from the project root directory:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant provision
+</code></pre>
+</div>
+
+<p>If provisioning fails leaving the virtual machine in an unrecoverable state, you
+can run the following commands from the project root directory, to rebuild the
+virtual machine from scratch:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>vagrant destroy
+vagrant up
+</code></pre>
+</div>
+
 <h2 id="stopping-the-virtual-machine">Stopping the virtual machine</h2>
 
 <p>It&#8217;s essential you use Vagrant to stop the VM rather than shutting down via the
@@ -382,7 +409,7 @@ directory:</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-12-02">December 02, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-12-08">December 08, 2016</time></p>
         
       </footer>
 
