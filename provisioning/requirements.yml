@@ -39,7 +39,7 @@
 - src: gantsign.java
   version: '3.5.0'
 - src: gantsign.keyboard
-  version: '1.1.3'
+  version: '1.2.0'
 - src: gantsign.kubernetes
   version: '1.0.0'
 - src: gantsign.lightdm
@@ -55,7 +55,7 @@
 - src: gantsign.postman
   version: '1.1.0'
 - src: gantsign.oh-my-zsh
-  version: '1.1.1'
+  version: '1.2.0'
 - src: gantsign.pin-to-launcher
   version: '1.2.0'
 - src: gantsign.terminator
