@@ -3,11 +3,17 @@ title: Getting started
 permalink: /docs/getting-started/
 description: >
   How to setup the development environment.
+numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2016-12-08T13:38:15+00:00
+modified: 2016-12-11T15:15:34+00:00
 ---
 
 {% include base_path %}
+
+The following instructions will guide you through the process of provisioning
+your local development environment using GantSign EnV.
+
+{% include inline_toc.html %}
 
 ## Install dependencies
 
