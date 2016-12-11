@@ -5,9 +5,39 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Dec 2016 19:27:27 +0000</pubDate>
-    <lastBuildDate>Sun, 11 Dec 2016 19:27:27 +0000</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2016 20:01:49 +0000</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 20:01:49 +0000</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Version 1.3 released</title>
+        <description>
+&lt;p&gt;Release highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/146&quot;&gt;#146&lt;/a&gt;:
+Updated Go to 1.7.4&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/155&quot;&gt;#155&lt;/a&gt;:
+Updated Molecule to 1.16&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/156&quot;&gt;#156&lt;/a&gt;:
+Added troubleshooting instructions
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/getting-started/#troubleshooting&quot;&gt;View Troubleshooting section of Getting Started guide&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.3.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Dec 2016 19:40:24 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/1.3-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.3-release/</guid>
+        
+        <category>release</category>
+        
+        
+      </item>
     
       <item>
         <title>Version 1.2.1 released</title>
