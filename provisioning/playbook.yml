@@ -287,7 +287,6 @@
               home: "{{ ansible_local.java.general.home }}"
           intellij_default_jdk: '1.8'
           intellij_disabled_plugins:
-            - org.jetbrains.plugins.gradle
             - CVS
             - com.intellij.uiDesigner
             - org.jetbrains.android
