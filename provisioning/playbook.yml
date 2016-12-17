@@ -44,6 +44,7 @@
         - .gitconfig
       unison_ignore_paths:
         - Path .ssh/authorized_keys
+        - Path .gnupg/S.gpg-agent
         - BelowPath .m2/repository
         - BelowPath .m2/wrapper
         - BelowPath .atom/.apm
