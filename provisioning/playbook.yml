@@ -295,6 +295,37 @@
             - Subversion
             - AntSupport
             - DevKit
+            - ClearcasePlugin
+            - CloudBees
+            - CloudFoundry
+            - Geronimo
+            - GlassFish
+            - Heroku
+            - JBoss
+            - JSR45Plugin
+            - OpenShift
+            - Resin
+            - StrutsAssistant
+            - WebSphere
+            - Weblogic
+            - com.intellij.appengine
+            - com.intellij.aspectj
+            - com.intellij.dmserver
+            - com.intellij.flex
+            - com.intellij.gwt
+            - com.intellij.seam
+            - com.intellij.seam.pageflow
+            - com.intellij.seam.pages
+            - com.intellij.struts2
+            - com.intellij.tapestry
+            - com.intellij.vaadin
+            - com.intellij.velocity
+            - org.coffeescript
+            - org.intellij.grails
+            - org.jetbrains.plugins.haml
+            - org.jetbrains.plugins.stylus
+            - TFS
+            - PerforceDirectPlugin
           intellij_codestyles:
             - name: GantSign
               url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/1.0.0/GantSign.xml'
