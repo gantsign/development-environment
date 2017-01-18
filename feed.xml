@@ -5,8 +5,8 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 22:57:38 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 22:57:38 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 23:27:28 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 23:27:28 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -16,8 +16,8 @@
 &lt;a href=&quot;https://blog.axosoft.com/2016/10/07/gitkraken-pricing-clarification/&quot;&gt;commercial use&lt;/a&gt;
 it&amp;#8217;s been replaced in the GantSign development environment.&lt;/p&gt;
 
-&lt;p&gt;Installed in it&amp;#8217;s place are Git-GUI and Gitk; while they&amp;#8217;re a lot less pretty,
-they are more stable, feature complete and are open source.&lt;/p&gt;
+&lt;p&gt;Installed in place of GitKraken are Git-GUI and Gitk; while they&amp;#8217;re a lot less
+pretty, they are more stable, feature complete and are open source.&lt;/p&gt;
 
 &lt;p&gt;For more details of Git-GUI and Gitk support view the
 &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#for-nodejs-developers&quot;&gt;features&lt;/a&gt;
