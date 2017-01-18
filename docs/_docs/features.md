@@ -4,8 +4,8 @@ permalink: /docs/features/
 description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
-date: 2016-09-01T16:07:15+01:00
-modified: 2016-09-05T16:46:44+01:00
+date: 2017-01-18T16:35:52+00:00
+modified: 2017-01-18T16:35:52+00:00
 ---
 
 {% include base_path %}
@@ -389,6 +389,28 @@ The IDE is pre-configured so new projects will use the Oracle JDK and Maven
 installation.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
+
+## For Node.js developers
+
+### Node.js runtime
+
+This development environment comes with Node.js
+[v6.9.4](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.9.4)
+installed.
+
+### Pre-installed global packages
+
+To provide a better out of the box experience the following global packages come
+pre-installed.
+
+* [Grunt](http://gruntjs.com) task runner
+* [Gulp](http://gulpjs.com) task runner
+* [TS Node](https://github.com/TypeStrong/ts-node) CLI TypeScript support
+
+### IDE Support
+
+[Visual Studio Code](https://code.visualstudio.com/) comes with excellent
+support for Node.js, JavaScript and TypeScript.
 
 ## For Go developers
 

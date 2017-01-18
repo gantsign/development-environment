@@ -7,10 +7,12 @@ header:
   cta_label: "<i class='fa fa-download'></i> Install Now"
   cta_url: /docs/getting-started
   caption:
-description:
-  GantSign EnV: A development environment for Java and Ansible built using Vagrant.
+description: >
+  GantSign EnV: A development environment for Java, Node.js, Go and Ansible
+  built using Vagrant.
 excerpt: >
-  A development environment for Java and Ansible built using Vagrant.<br />
+  A development environment for Java, Node.js, Go and Ansible built using
+  Vagrant.<br />
   [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 feature_row:
   - title: Reproducible
@@ -38,8 +40,8 @@ intro:
   - excerpt: >
       Get notified when new features are added &nbsp;
       [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
-date: 2016-08-31T23:33:51+01:00
-modified: 2016-09-05T16:46:44+01:00
+date: 2017-01-18T16:51:42+00:00
+modified: 2017-01-18T16:51:42+00:00
 ---
 
 <div class="home_news">
