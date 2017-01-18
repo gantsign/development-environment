@@ -143,6 +143,7 @@
         - name: grunt-init
         - name: gulp-cli
         - name: typescript
+        - name: ts-node
 
     # Install Go language SDK
     - role: gantsign.golang
