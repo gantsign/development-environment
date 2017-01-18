@@ -311,16 +311,44 @@ EditorConfig without the need for a plugin.
 For an example of an `.editorconfig` file see the root directory of this
 project.
 
-### GitKraken
+### Git-GUI
 
-Website: [https://www.gitkraken.com](https://www.gitkraken.com)
+Website: [https://git-scm.com/docs/git-gui](https://git-scm.com/docs/git-gui)
 
-A user friendly Git GUI client.
+Git-GUI and Gitk (see below) are companion applications that together make the
+most fully featured open source GUI Git client available for Linux.
 
-![GitKraken window]({{ base_path }}/images/gitkraken.png)
+Git-GUI is the commit dialog and the UI for performing remote operations.
 
-One it's a bit lacking is the diff/merge tool, which is why Meld is also
-included (see below).
+![Git GUI window]({{ base_path }}/images/git-gui.png)
+
+Generally, I'd advise only using Git-GUI when you need to amend a commit, the
+rest of the time you're better off using the commit dialog in your editor/IDE.
+
+Tip: run `git gui` in your Git working directory to launch Git-GUI.
+
+### Gitk
+
+Website: [https://git-scm.com/docs/gitk](https://git-scm.com/docs/gitk)
+
+Gitk and Git-GUI (see above) are companion applications that together make the
+most fully featured open source GUI Git client available for Linux.
+
+Gitk is the repository/history browser.
+
+![Gitk window]({{ base_path }}/images/gitk.png)
+
+As you can see it's not the prettiest application, but the other options are
+either not free for commercial use, require registration to download, or lack
+support for resetting the working branch to a particular commit.
+
+While the built in diff viewer is a bit basic, it supports using Meld
+(see below) as an external diff viewer.
+
+Tip: run `gitk` in your Git working directory to launch Gitk.
+
+Gitk and Git-GUI are integrated, so once you've run one of the applications, you
+can launch the other from the menu bar.
 
 ### Meld
 
@@ -330,7 +358,8 @@ A GUI diff/merge tool with Git support.
 
 ![Meld diff/merge tool]({{ base_path }}/images/meld.png)
 
-Tip: run `meld .` in your Git working directory to review your changes.
+Tip: run `meld .` in your Git working directory to review your uncommitted
+changes.
 
 ### Postman
 

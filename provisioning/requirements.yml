@@ -25,8 +25,6 @@
   name: gantsign.command-line-tools
 - src: gantsign.default-web-browser
   version: '2.0.0'
-- src: gantsign.gitkraken
-  version: '3.0.0'
 - src: gantsign.gnome-proxy
   version: '1.0.0'
 - src: gantsign.golang
@@ -65,7 +63,7 @@
 - src: gantsign.visual-studio-code
 - src: gantsign.visual-studio-code-extensions
   version: '1.0.0'
-- src: https://github.com/gantsign/ansible-role-xdesktop/archive/2.1.1.tar.gz
+- src: https://github.com/gantsign/ansible-role-xdesktop/archive/2.2.0.tar.gz
   name: gantsign.xdesktop
 - src: gantsign.zram-config
   version: '1.1.3'

@@ -39,7 +39,7 @@ environment that you can fork to add your project specific configuration.
 * Docker
 * Kubernetes
 * Visual Studio Code
-* GitKraken
+* Git-GUI and Gitk
 * Postman
 * Oracle JDK
 * Maven
