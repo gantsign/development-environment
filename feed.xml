@@ -5,8 +5,8 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 23:27:28 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 23:27:28 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 23:50:20 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 23:50:20 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -20,8 +20,7 @@ it&amp;#8217;s been replaced in the GantSign development environment.&lt;/p&gt;
 pretty, they are more stable, feature complete and are open source.&lt;/p&gt;
 
 &lt;p&gt;For more details of Git-GUI and Gitk support view the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#for-nodejs-developers&quot;&gt;features&lt;/a&gt;
-page.&lt;/p&gt;
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#gitk&quot;&gt;features&lt;/a&gt; page.&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Dec 2016 22:15:36 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/git-gui/</link>
