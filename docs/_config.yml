@@ -54,7 +54,7 @@ analytics:
 # Site Author
 author:
   name: GantSign Ltd.
-  avatar: logo.png
+  avatar: images/logo.png
   bio: Software Consultancy
   location: 'London, UK'
   email:
@@ -206,4 +206,4 @@ compress_html:
     envs: development
 
 # Include minimal-mistakes from Gemfile
-theme: minimal-mistakes
+theme: minimal-mistakes-jekyll

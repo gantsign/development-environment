@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 header:
   overlay_color: '#5e616c'
-  overlay_image: header-laptop.jpg
+  overlay_image: images/header-laptop.jpg
   cta_label: "<i class='fa fa-download'></i> Install Now"
   cta_url: /docs/getting-started
   caption:
