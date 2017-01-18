@@ -5,9 +5,32 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 21:44:27 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 21:44:27 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 22:57:38 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 22:57:38 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Switched to Git-GUI git client</title>
+        <description>
+&lt;p&gt;Since GitKraken is no longer free for
+&lt;a href=&quot;https://blog.axosoft.com/2016/10/07/gitkraken-pricing-clarification/&quot;&gt;commercial use&lt;/a&gt;
+it&amp;#8217;s been replaced in the GantSign development environment.&lt;/p&gt;
+
+&lt;p&gt;Installed in it&amp;#8217;s place are Git-GUI and Gitk; while they&amp;#8217;re a lot less pretty,
+they are more stable, feature complete and are open source.&lt;/p&gt;
+
+&lt;p&gt;For more details of Git-GUI and Gitk support view the
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#for-nodejs-developers&quot;&gt;features&lt;/a&gt;
+page.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Dec 2016 22:15:36 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/git-gui/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/git-gui/</guid>
+        
+        <category>nodejs</category>
+        
+        
+      </item>
     
       <item>
         <title>Node.js support</title>
@@ -257,34 +280,6 @@ necessary.&lt;/p&gt;
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/proxy/</guid>
         
         <category>proxy</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Default desktop is now Ubuntu Unity</title>
-        <description>
-&lt;p&gt;To make the development environment as robust as possible, the
-&lt;a href=&quot;https://unity.ubuntu.com&quot;&gt;Ubuntu Unity&lt;/a&gt; desktop is now installed by default. As
-Unity is the default desktop on Ubuntu it tends to have better support
-from third party apps.&lt;/p&gt;
-
-&lt;figure&gt;
-  
-&lt;img src=&quot;https://gantsign.github.io/development-environment/images/desktop-choice.png&quot; alt=&quot;Desktop choice&quot; /&gt;
-
-  &lt;figcaption&gt;Left: Ubuntu Unity desktop, right: Xfce desktop.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;For those of you who prefer the previous &lt;a href=&quot;http://www.xfce.org&quot;&gt;Xfce&lt;/a&gt; desktop,
-it&amp;#8217;s still available and can be selected through
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/configuration#desktop-choice&quot;&gt;configuration&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Sep 2016 12:29:44 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/unity/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/unity/</guid>
-        
-        <category>documentation</category>
         
         
       </item>

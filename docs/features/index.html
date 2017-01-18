@@ -276,7 +276,8 @@ little easier.</p>
       <li><a href="#visual-studio-code" id="markdown-toc-visual-studio-code">Visual Studio Code</a></li>
       <li><a href="#atom" id="markdown-toc-atom">Atom</a></li>
       <li><a href="#editorconfig" id="markdown-toc-editorconfig">EditorConfig</a></li>
-      <li><a href="#gitkraken" id="markdown-toc-gitkraken">GitKraken</a></li>
+      <li><a href="#git-gui" id="markdown-toc-git-gui">Git-GUI</a></li>
+      <li><a href="#gitk" id="markdown-toc-gitk">Gitk</a></li>
       <li><a href="#meld" id="markdown-toc-meld">Meld</a></li>
       <li><a href="#postman" id="markdown-toc-postman">Postman</a></li>
     </ol>
@@ -607,16 +608,44 @@ EditorConfig without the need for a plugin.</p>
 <p>For an example of an <code class="highlighter-rouge">.editorconfig</code> file see the root directory of this
 project.</p>
 
-<h3 id="gitkraken">GitKraken</h3>
+<h3 id="git-gui">Git-GUI</h3>
 
-<p>Website: <a href="https://www.gitkraken.com">https://www.gitkraken.com</a></p>
+<p>Website: <a href="https://git-scm.com/docs/git-gui">https://git-scm.com/docs/git-gui</a></p>
 
-<p>A user friendly Git GUI client.</p>
+<p>Git-GUI and Gitk (see below) are companion applications that together make the
+most fully featured open source GUI Git client available for Linux.</p>
 
-<p><img src="https://gantsign.github.io/development-environment/images/gitkraken.png" alt="GitKraken window" /></p>
+<p>Git-GUI is the commit dialog and the UI for performing remote operations.</p>
 
-<p>One it&#8217;s a bit lacking is the diff/merge tool, which is why Meld is also
-included (see below).</p>
+<p><img src="https://gantsign.github.io/development-environment/images/git-gui.png" alt="Git GUI window" /></p>
+
+<p>Generally, I&#8217;d advise only using Git-GUI when you need to amend a commit, the
+rest of the time you&#8217;re better off using the commit dialog in your editor/IDE.</p>
+
+<p>Tip: run <code class="highlighter-rouge">git gui</code> in your Git working directory to launch Git-GUI.</p>
+
+<h3 id="gitk">Gitk</h3>
+
+<p>Website: <a href="https://git-scm.com/docs/gitk">https://git-scm.com/docs/gitk</a></p>
+
+<p>Gitk and Git-GUI (see above) are companion applications that together make the
+most fully featured open source GUI Git client available for Linux.</p>
+
+<p>Gitk is the repository/history browser.</p>
+
+<p><img src="https://gantsign.github.io/development-environment/images/gitk.png" alt="Gitk window" /></p>
+
+<p>As you can see it&#8217;s not the prettiest application, but the other options are
+either not free for commercial use, require registration to download, or lack
+support for resetting the working branch to a particular commit.</p>
+
+<p>While the built in diff viewer is a bit basic, it supports using Meld
+(see below) as an external diff viewer.</p>
+
+<p>Tip: run <code class="highlighter-rouge">gitk</code> in your Git working directory to launch Gitk.</p>
+
+<p>Gitk and Git-GUI are integrated, so once you&#8217;ve run one of the applications, you
+can launch the other from the menu bar.</p>
 
 <h3 id="meld">Meld</h3>
 
@@ -626,7 +655,8 @@ included (see below).</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/meld.png" alt="Meld diff/merge tool" /></p>
 
-<p>Tip: run <code class="highlighter-rouge">meld .</code> in your Git working directory to review your changes.</p>
+<p>Tip: run <code class="highlighter-rouge">meld .</code> in your Git working directory to review your uncommitted
+changes.</p>
 
 <h3 id="postman">Postman</h3>
 
