@@ -141,6 +141,7 @@
       nodejs_npm_global_packages:
         - name: grunt-cli
         - name: grunt-init
+        - name: gulp-cli
 
     # Install Go language SDK
     - role: gantsign.golang
