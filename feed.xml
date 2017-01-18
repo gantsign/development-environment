@@ -5,9 +5,43 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 23:50:20 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 23:50:20 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 23:58:52 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 23:58:52 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.4 released</title>
+        <description>
+&lt;p&gt;Release highlights:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/166&quot;&gt;#166&lt;/a&gt;:
+Updated Java to 8u121&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/172&quot;&gt;#172&lt;/a&gt;:
+Made Node.js a documented feature
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#for-nodejs-developers&quot;&gt;view features guide&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/174&quot;&gt;#174&lt;/a&gt;:
+Replaced GitKraken with Git-GUI and Gitk
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#gitk&quot;&gt;view features guide&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.4.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Jan 2017 23:40:42 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/1.4-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.4-release/</guid>
+        
+        <category>release</category>
+        
+        
+      </item>
     
       <item>
         <title>Switched to Git-GUI git client</title>
@@ -252,33 +286,6 @@ files from the old storage location:&lt;/p&gt;
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/persistence/</guid>
         
         <category>storage</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Improved and documented proxy support</title>
-        <description>
-&lt;p&gt;While it was always possible to use the development environment behind a proxy,
-you had to know about the
-&lt;a href=&quot;https://github.com/tmatilai/vagrant-proxyconf&quot;&gt;vagrant proxyconf plugin&lt;/a&gt;; the
-process wasn&amp;#8217;t part of the documentation and some post install manual setup was
-still required to get Google Chrome to use the proxy.&lt;/p&gt;
-
-&lt;p&gt;This has now been addressed by updates to both the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/getting-started&quot;&gt;Getting Started&lt;/a&gt; documentation and the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/configuration&quot;&gt;Configuration&lt;/a&gt; documentation; the
-&lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant-proxyconf&lt;/code&gt; plugin is now auto-installed and the Gnome proxy is
-configured as part of the provisioning; the proxy configuration is part of the
-standard Nugrant configuration approach, so you can set the default values in
-the &lt;code class=&quot;highlighter-rouge&quot;&gt;Vagrantfile&lt;/code&gt; and users can override it in their &lt;code class=&quot;highlighter-rouge&quot;&gt;.vagrantuser&lt;/code&gt; files if
-necessary.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Oct 2016 13:15:42 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/proxy/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/proxy/</guid>
-        
-        <category>proxy</category>
         
         
       </item>
