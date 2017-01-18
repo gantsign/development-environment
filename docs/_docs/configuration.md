@@ -295,7 +295,6 @@ ansible:
     - java
     - gui
     - chrome
-    - gitkraken
     - atom
     - vscode
     - intellij

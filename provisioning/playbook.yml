@@ -31,7 +31,6 @@
         - .ssh
         - .gnupg
         - .m2
-        - .gitkraken
         - .atom
         - .config/Code
         - .config/Postman
@@ -195,12 +194,6 @@
         - gui
         - chrome
       default_web_browser: google-chrome
-
-    # Install GitKraken
-    - role: gantsign.gitkraken
-      tags:
-        - gui
-        - gitkraken
 
     # Install Postman HTTP tool
     - role: gantsign.postman
@@ -369,7 +362,6 @@
           when_desktop: unity
         - application: Thunar.desktop
         - application: google-chrome.desktop
-        - application: gitkraken.desktop
         - application: Postman.desktop
         - application: atom.desktop
         - application: code.desktop
