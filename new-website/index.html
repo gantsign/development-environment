@@ -1,13 +1,7 @@
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    
-
-<meta charset="utf-8">
-
-
+    <meta charset="utf-8">
 
 <!-- begin SEO -->
 
@@ -23,6 +17,8 @@
 
 
 
+
+<meta name="description" content="New website announcement.">
 
 
 
@@ -109,14 +105,12 @@
 <!-- end custom head snippets -->
   </head>
 
-  <body>
+  <body class="layout--single">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
-    
-
-<div class="masthead">
+    <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
@@ -150,64 +144,106 @@
 
 
 
-
-
 <div id="main" role="main">
   
-
-
   <div class="sidebar sticky">
   
 
-
-
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
-    
-    	<img src="https://gantsign.github.io/development-environment/images/logo.png" class="author__avatar" alt="GantSign Ltd.">
-    
-  </div>
+  
+    <div class="author__avatar">
+      
+        <img src="https://gantsign.github.io/development-environment/images/logo.png" class="author__avatar" alt="GantSign Ltd." itemprop="image">
+      
+    </div>
+  
 
   <div class="author__content">
-    <h3 class="author__name">GantSign Ltd.</h3>
-    <p class="author__bio">Software Consultancy</p>
+    <h3 class="author__name" itemprop="name">GantSign Ltd.</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Software Consultancy
+      </p>
+    
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> London, UK</li>
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">London, UK</span>
+        </li>
       
+
       
+
       
+
       
+
       
-        <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li>
+          <a href="https://twitter.com/gantsign" itemprop="sameAs">
+            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
-        <li><a href="https://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li>
+          <a href="https://github.com/gantsign" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
       
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
     </ul>
   </div>
 </div>
@@ -247,8 +283,6 @@ hosted using <a href="https://pages.github.com">GitHub</a> pages.</p>
         
 
 
-
-
         
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-09-03">September 03, 2016</time></p>
         
@@ -284,9 +318,7 @@ hosted using <a href="https://pages.github.com">GitHub</a> pages.</p>
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
-        
-
-<div class="page__footer-follow">
+        <div class="page__footer-follow">
   <ul class="social-icons">
     
     
@@ -327,4 +359,3 @@ hosted using <a href="https://pages.github.com">GitHub</a> pages.</p>
 
   </body>
 </html>
-
