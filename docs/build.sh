@@ -4,17 +4,20 @@ set -e
 
 local() {
     bundler install
-    bundler exec jekyll clean
-    bundler exec jekyll build
-    bundler exec jekyll serve --config _config.yml,_config.dev.yml \
+    bundler exec ${BASH_SOURCE[0]} --run
+}
+
+run() {
+    jekyll clean
+    jekyll build
+    jekyll serve --config _config.yml,_config.dev.yml \
       --destination /tmp/_site --detach
-    bundler exec htmlproofer /tmp/_site --log-level debug
+    htmlproofer /tmp/_site --log-level debug
 }
 
 docker_build() {
-    docker build -t jekyll-fix .
-    docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll-fix \
-        chpst -u jekyll:jekyll /srv/jekyll/build.sh --local
+    docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll/jekyll \
+        /srv/jekyll/build.sh --run
 }
 
 publish_git() {
@@ -45,6 +48,9 @@ publish() {
 case "$1" in
         --local)
             local
+            ;;
+        --run)
+            run
             ;;
         --publish)
             publish
