@@ -424,7 +424,7 @@ installation.
 ### Node.js runtime
 
 This development environment comes with Node.js
-[v6.9.4](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.9.4)
+[v6](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md)
 installed.
 
 ### Pre-installed global packages
