@@ -143,6 +143,7 @@
         - name: gulp-cli
         - name: typescript
         - name: ts-node
+        - name: typings
 
     # Install Go language SDK
     - role: gantsign.golang
