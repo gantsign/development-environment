@@ -167,6 +167,17 @@ Below is the output of the command `tree` on this project:
 Tip: if you have multiple pages of output you may want to use
 `tree -C | less -R`.
 
+### Jq
+
+Website: [https://stedolan.github.io/jq](https://stedolan.github.io/jq)
+
+The `jq` command would be worth installing just to be able to use it to pretty
+print JSON in colour, but `jq` is amazing at manipulating JSON as well.
+
+![Jq output]({{ base_path }}/images/jq.png)
+
+Tip: to pretty print a JSON file run `jq '.' PATH_TO_JSON_FILE`.
+
 ### htop
 
 Website: [http://hisham.hm/htop](http://hisham.hm/htop)
