@@ -435,6 +435,7 @@ pre-installed.
 * [Grunt](http://gruntjs.com) task runner
 * [Gulp](http://gulpjs.com) task runner
 * [TS Node](https://github.com/TypeStrong/ts-node) CLI TypeScript support
+* [Typings](https://github.com/typings/typings) TypeScript definition manager
 
 ### IDE Support
 
