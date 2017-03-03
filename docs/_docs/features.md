@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2017-01-18T16:35:52+00:00
+modified: 2017-03-03T15:04:25+00:00
 ---
 
 {% include base_path %}
@@ -458,7 +458,7 @@ support for Node.js, JavaScript and TypeScript.
 ### Go SDK
 
 This development environment comes with Go language
-[SDK 1.7.3](https://golang.org/dl/#go1.7.3) installed.
+[SDK 1.8](https://golang.org/dl/#go1.8) installed.
 
 ### Go environment variables
 
