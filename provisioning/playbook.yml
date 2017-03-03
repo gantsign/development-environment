@@ -242,7 +242,11 @@
       users:
         - username: vagrant
           visual_studio_code_extensions:
-            - EditorConfig.EditorConfig
+            # Temporarily disable EditorConfig extension as version 0.4.0 fails
+            # to install via the command line.
+            # Workaround: install manually via the GUI until the issue is
+            # resolved.
+            # - EditorConfig.EditorConfig
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
             - donjayamanne.python
