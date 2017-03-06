@@ -5,9 +5,37 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Mar 2017 16:46:00 +0000</pubDate>
-    <lastBuildDate>Mon, 06 Mar 2017 16:46:00 +0000</lastBuildDate>
+    <pubDate>Mon, 06 Mar 2017 19:41:00 +0000</pubDate>
+    <lastBuildDate>Mon, 06 Mar 2017 19:41:00 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.5.1 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/186&quot;&gt;#186&lt;/a&gt;:
+Restored EditorConfig extension for Visual Studio Code
+    &lt;ul&gt;
+      &lt;li&gt;Version 0.6.0 of the extension installs successfully&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.5.1&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Mar 2017 19:18:26 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/1.5.1-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.5.1-release/</guid>
+        
+        <category>release</category>
+        
+        
+      </item>
     
       <item>
         <title>Version 1.5 released</title>
@@ -279,29 +307,6 @@ release.&lt;/p&gt;
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.0-release/</guid>
         
         <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Upgraded to Ubuntu 16.04 LTS</title>
-        <description>
-&lt;p&gt;Since Ubuntu 15.10 (Wily Werewolf) is out of support this project has moved to
-Ubuntu 16.04 LTS (Xenial Xerus).&lt;/p&gt;
-
-&lt;p&gt;You can find out the highlights of the Ubuntu 16.04 by reviewing the
-&lt;a href=&quot;https://wiki.ubuntu.com/XenialXerus/ReleaseNotes&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The biggest change to be aware of is Ubuntu 16.04 has moved to Python 3; if you
-are using this project for Python development or just using Python scripts/apps
-you may encounter breaking changes. You can review the Python 3 changes in the
-&lt;a href=&quot;https://docs.python.org/3.0/whatsnew/3.0.html&quot;&gt;what&amp;#8217;s new&lt;/a&gt; documentation.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Nov 2016 20:38:26 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/xenial/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/xenial/</guid>
-        
-        <category>ubuntu</category>
         
         
       </item>
