@@ -341,7 +341,7 @@
       users:
         - username: vagrant
           intellij_plugins:
-            - ro.redeul.google.go
+            - "{{ (intellij_edition == 'ultimate') | ternary('org.jetbrains.plugins.go', 'ro.redeul.google.go') }}"
 
     # Add Maven extension to popup a GUI notification when builds finish
     - role: gantsign.maven-notifier
