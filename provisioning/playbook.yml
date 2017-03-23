@@ -57,6 +57,7 @@
         - Name bin
         - Name .bin
         - Name node_modules
+        - Name *-shared.sock
       unison_src_root: /home/vagrant
       unison_mirror_root: /var/persistent/home/vagrant
       unison_fat: no
