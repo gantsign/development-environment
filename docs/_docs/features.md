@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2017-03-03T15:04:25+00:00
+modified: 2017-03-23T14:33:42+00:00
 ---
 
 {% include base_path %}
@@ -470,7 +470,8 @@ This development environment comes with Go language
 
 ### Go plugins for IDEs
 
-* [IntelliJ IDEA](https://plugins.jetbrains.com/plugin/5047?pr=idea)
+* [IntelliJ IDEA Community Edition (community plugin)](https://plugins.jetbrains.com/plugin/5047-go-language-golang-org-support-plugin)
+* [IntelliJ IDEA Ultimate Edition (JetBrains plugin)](https://plugins.jetbrains.com/plugin/9568-go)
 * [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 * [Atom](https://atom.io/packages/go-plus)
 
