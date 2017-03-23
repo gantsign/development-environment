@@ -5,9 +5,39 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Mar 2017 09:30:00 +0000</pubDate>
-    <lastBuildDate>Thu, 23 Mar 2017 09:30:00 +0000</lastBuildDate>
+    <pubDate>Thu, 23 Mar 2017 10:13:12 +0000</pubDate>
+    <lastBuildDate>Thu, 23 Mar 2017 10:13:12 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.5.2 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/188&quot;&gt;#188&lt;/a&gt;:
+Fixed plugin install for IntelliJ 2017.1
+    &lt;ul&gt;
+      &lt;li&gt;Changes in IntelliJ IDEA 2017.1 broke the plugin install script&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.5.2&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Mar 2017 09:52:42 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.5.2-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.5.2-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.5.1 released</title>
@@ -274,37 +304,6 @@ documentation.&lt;/p&gt;
         <pubDate>Sun, 06 Nov 2016 16:00:42 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/1.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Version 1.0 released</title>
-        <description>
-&lt;p&gt;After more than seven months of development, GantSign EnV has matured enough for
-its first production quality release.&lt;/p&gt;
-
-&lt;p&gt;From this point it&amp;#8217;s recommended users GantSign EnV use tagged releases of this
-project rather than following development on the master branch.&lt;/p&gt;
-
-&lt;p&gt;New users can follow the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/getting-started&quot;&gt;getting started guide&lt;/a&gt; to use this
-release.&lt;/p&gt;
-
-&lt;p&gt;Existing users can run the following command to switch to the new version.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch &amp;amp;&amp;amp; git checkout 1.0.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You can always find the latest version and review the release notes on the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases&quot;&gt;releases&lt;/a&gt; page.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 03 Nov 2016 13:30:37 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/1.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.0-release/</guid>
         
         <category>release</category>
         
