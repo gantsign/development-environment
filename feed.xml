@@ -5,9 +5,38 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Mar 2017 19:37:18 +0000</pubDate>
-    <lastBuildDate>Fri, 24 Mar 2017 19:37:18 +0000</lastBuildDate>
+    <pubDate>Fri, 24 Mar 2017 22:19:22 +0000</pubDate>
+    <lastBuildDate>Fri, 24 Mar 2017 22:19:22 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.6.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/190&quot;&gt;#190&lt;/a&gt;:
+Added support for JetBrains Go plugin (requires IntelliJ IDEA Ultimate
+Edition)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/191&quot;&gt;#191&lt;/a&gt;:
+Upgraded to Molecule 1.22&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.6.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Mar 2017 21:57:45 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.6.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.6.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.5.2 released</title>
@@ -275,35 +304,6 @@ documentation.&lt;/p&gt;
         <pubDate>Fri, 11 Nov 2016 14:17:23 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/1.2-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.2-release/</guid>
-        
-        <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Version 1.1 released</title>
-        <description>
-&lt;p&gt;Release highlights:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/issues/129&quot;&gt;#129&lt;/a&gt;:
-Added support for the Go programming language&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/issues/129&quot;&gt;#132&lt;/a&gt;:
-Added Kubernetes support&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/126&quot;&gt;#126&lt;/a&gt;:
-Performance improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Fore more details see the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features&quot;&gt;features&lt;/a&gt;
-documentation.&lt;/p&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 06 Nov 2016 16:00:42 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/1.1-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.1-release/</guid>
         
         <category>release</category>
         
