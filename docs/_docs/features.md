@@ -445,6 +445,8 @@ pre-installed.
 
 * [Grunt](http://gruntjs.com) task runner
 * [Gulp](http://gulpjs.com) task runner
+* [npm-check-updates](https://github.com/tjunnone/npm-check-updates) dependency
+  version upgrade tool
 * [TS Node](https://github.com/TypeStrong/ts-node) CLI TypeScript support
 * [Typings](https://github.com/typings/typings) TypeScript definition manager
 
