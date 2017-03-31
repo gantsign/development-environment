@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 31 Mar 2017 18:23:03 +0000</pubDate>
-    <lastBuildDate>Fri, 31 Mar 2017 18:23:03 +0000</lastBuildDate>
+    <pubDate>Fri, 31 Mar 2017 19:00:08 +0000</pubDate>
+    <lastBuildDate>Fri, 31 Mar 2017 19:00:08 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.7.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/199&quot;&gt;#199&lt;/a&gt;:
+Added &lt;code class=&quot;highlighter-rouge&quot;&gt;git lt&lt;/code&gt; alias for showing a tree view of git commits in the console&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/201&quot;&gt;#201&lt;/a&gt;:
+Added &lt;code class=&quot;highlighter-rouge&quot;&gt;git cane&lt;/code&gt; alias for amending the current commit without changing the
+commit message&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/202&quot;&gt;#202&lt;/a&gt;:
+Added &lt;code class=&quot;highlighter-rouge&quot;&gt;npm-check-updates&lt;/code&gt; node module to help with keeping NPM dependencies up
+to date&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.7.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 31 Mar 2017 18:21:34 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.7.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.7.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.6.0 released</title>
@@ -277,33 +309,6 @@ Fixed default audio settings for macOS&lt;/li&gt;
         <pubDate>Wed, 23 Nov 2016 15:28:32 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/1.2.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.2.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Version 1.2 released</title>
-        <description>
-&lt;p&gt;Release highlights:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/issues/139&quot;&gt;#139&lt;/a&gt;:
-Added Postman HTTP tool&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/137&quot;&gt;#137&lt;/a&gt;:
-Performance improvements&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Fore more details see the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features&quot;&gt;features&lt;/a&gt;
-documentation.&lt;/p&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.2.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Nov 2016 14:17:23 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/1.2-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.2-release/</guid>
         
         <category>release</category>
         
