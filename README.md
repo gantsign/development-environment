@@ -43,7 +43,6 @@ environment that you can fork to add your project specific configuration.
 * Postman
 * Oracle JDK
 * Maven
-* Maven Color
 * Maven Notifier
 * IntelliJ IDEA IDE
 * Node.js

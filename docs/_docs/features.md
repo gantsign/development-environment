@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2017-04-09T10:36:32+01:00
+modified: 2017-04-09T11:16:24+01:00
 ---
 
 {% include base_path %}
@@ -389,18 +389,10 @@ JDK is installed rather than OpenJDK.
 
 ### Maven
 
-Maven 3.3.9 is installed by default.
+Maven 3.5.0 is installed by default.
 
 Note: Gradle is not installed as Gradle users are recommended to use the
 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
-
-### Maven Color
-
-Website: [https://github.com/jcgay/maven-color](https://github.com/jcgay/maven-color)
-
-Makes your Maven console output more readable by adding color.
-
-![Maven Color terminal output]({{ base_path }}/images/maven-color.png)
 
 ### Maven Notifier
 

@@ -43,9 +43,7 @@
 - src: gantsign.lightdm
   version: 'v2.0.1'
 - src: gantsign.maven
-  version: '3.3.0'
-- src: gantsign.maven-color
-  version: '4.1.0'
+  version: '3.5.0'
 - src: gantsign.maven-notifier
   version: '2.3.0'
 - src: gantsign.molecule
