@@ -126,13 +126,7 @@
       tags:
         - java
         - maven
-      maven_version: '3.3.9'
-
-    # Add Maven extension to colorize Maven output
-    - role: gantsign.maven-color
-      tags:
-        - java
-        - maven
+      maven_version: '3.5.0'
 
     # Add Node.js
     - role: geerlingguy.nodejs
