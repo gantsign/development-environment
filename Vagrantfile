@@ -4,7 +4,7 @@
 # ansible_local requires version >= 1.8.4 to work stably
 Vagrant.require_version '>= 1.8.4'
 
-required_plugins = %w(vagrant-reload vagrant-persistent-storage vagrant-triggers vagrant-vbguest vagrant-proxyconf nugrant)
+required_plugins = %w[vagrant-reload vagrant-persistent-storage vagrant-triggers vagrant-vbguest vagrant-proxyconf nugrant]
 plugins_to_install = required_plugins.reject { |plugin| Vagrant.has_plugin? plugin }
 unless plugins_to_install.empty?
   puts "Installing plugins: #{plugins_to_install.join(' ')}"
@@ -131,7 +131,7 @@ Vagrant.configure(2) do |config|
   }
 
   # Fail if Java is being installed and license hasn't been accepted.
-  config.trigger.before %i(up provision) do
+  config.trigger.before %i[up provision] do
     if (!config.user.ansible.skip_tags.include? 'java') && config.user.java_license_declaration != 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
       abort "Aborting... to continue you must accept the Oracle Binary Code License Agreement\n(see https://github.com/gantsign/development-environment/wiki/Java-license-declaration)."
     end
