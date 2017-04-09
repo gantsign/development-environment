@@ -334,6 +334,7 @@
           intellij_plugins:
             - CheckStyle-IDEA
             - Lombook Plugin
+          intellij_license_key_path: '{{ intellij_license_key_path }}'
 
     # Install Go plugin for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
