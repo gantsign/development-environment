@@ -244,3 +244,8 @@ Customfile
 
 # Ignore Nugrant config
 /.vagrantuser
+
+### Project specific ###
+
+# Ignore IntelliJ IDEA license key
+/idea.key

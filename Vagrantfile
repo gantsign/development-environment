@@ -127,7 +127,14 @@ Vagrant.configure(2) do |config|
 
     'desktop' => 'unity',
 
-    'intellij_edition' => 'community'
+    # Deprecated use intellij.edition instead
+    'intellij_edition' => nil,
+
+    'intellij' => {
+      'edition' => 'community',
+      'license_key_path' => nil
+    }
+
   }
 
   # Fail if Java is being installed and license hasn't been accepted.
@@ -326,7 +333,9 @@ SCRIPT
 
       pin_to_launcher: config.user.desktop == 'xfce4' ? 'dockbarx' : config.user.desktop,
 
-      intellij_edition: config.user.intellij_edition
+      intellij_edition: config.user.intellij_edition.nil? ? config.user.intellij.edition : config.user.intellij_edition,
+
+      intellij_license_key_path: config.user.intellij.license_key_path
     }
     ansible.skip_tags = config.user.ansible.skip_tags
   end

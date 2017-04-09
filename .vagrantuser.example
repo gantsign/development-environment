@@ -78,5 +78,8 @@
 # Uncomment the line below if you prefer the xfce4 desktop
 # desktop: xfce4
 
+intellij:
 # Uncomment the line below to install IntelliJ IDEA Ultimate rather than Community
-# intellij_edition: ultimate
+#   edition: ultimate
+# Uncomment the line below to install your IntelliJ IDEA Ultimate license key
+#   license_key_path: '/vagrant/idea.key' # You need to copy your licence key from ~/.IntelliJIdea2017.1/config/idea.key into the project root.
