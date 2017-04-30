@@ -47,7 +47,7 @@
 - src: gantsign.maven-notifier
   version: '2.3.0'
 - src: gantsign.molecule
-  version: '2.2.0'
+  version: '3.0.0'
 - src: gantsign.postman
   version: '1.1.1'
 - src: gantsign.oh-my-zsh
