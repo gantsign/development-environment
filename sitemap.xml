@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://gantsign.github.io/development-environment/news/1.9.0-release/</loc>
+<lastmod>2017-05-01T08:30:23+00:00</lastmod>
+</url>
+<url>
 <loc>https://gantsign.github.io/development-environment/news/1.8.0-release/</loc>
 <lastmod>2017-04-09T12:29:53+00:00</lastmod>
 </url>
