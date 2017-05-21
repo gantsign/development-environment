@@ -120,7 +120,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: 8u121
+      java_version: 8u131
 
     # Install Maven
     - role: gantsign.maven
