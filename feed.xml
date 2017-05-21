@@ -5,9 +5,42 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 May 2017 09:58:42 +0000</pubDate>
-    <lastBuildDate>Sun, 21 May 2017 09:58:42 +0000</lastBuildDate>
+    <pubDate>Sun, 21 May 2017 10:42:25 +0000</pubDate>
+    <lastBuildDate>Sun, 21 May 2017 10:42:25 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.10.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/222&quot;&gt;#222&lt;/a&gt;:
+Fixed JAR packaged IntelliJ plugins install
+    &lt;ul&gt;
+      &lt;li&gt;See &lt;a href=&quot;https://github.com/gantsign/ansible-role-intellij-plugins/pull/30&quot;&gt;gantsign/ansible-role-intellij-plugins#30&lt;/a&gt;
+  for details.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/224&quot;&gt;#224&lt;/a&gt;:
+Updated Java to 8u131&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.10.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 May 2017 10:01:34 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.10.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.10.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.9.0 released</title>
@@ -304,28 +337,6 @@ pretty, they are more stable, feature complete and are open source.&lt;/p&gt;
         <pubDate>Sun, 11 Dec 2016 22:15:36 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/git-gui/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/git-gui/</guid>
-        
-        <category>nodejs</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Node.js support</title>
-        <description>
-&lt;p&gt;While Node.js has been bundled with this development environment for the last
-few months, it hasn&amp;#8217;t been a document feature.&lt;/p&gt;
-
-&lt;p&gt;After successfully using the Node.js support on a couple of projects it&amp;#8217;s time
-to promote it as a documented feature.&lt;/p&gt;
-
-&lt;p&gt;For details of the Node.js support view the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#for-nodejs-developers&quot;&gt;features&lt;/a&gt;
-page.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Dec 2016 19:40:24 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/nodejs/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/nodejs/</guid>
         
         <category>nodejs</category>
         
