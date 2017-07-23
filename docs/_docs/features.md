@@ -452,7 +452,7 @@ support for Node.js, JavaScript and TypeScript.
 ### Go SDK
 
 This development environment comes with Go language
-[SDK 1.8.1](https://golang.org/dl/#go1.8.1) installed.
+[SDK 1.8.3](https://golang.org/dl/#go1.8.3) installed.
 
 ### Go environment variables
 
