@@ -22,6 +22,8 @@ docker_build() {
 
 publish_git() {
     REPO_URL="https://$GIT_USERNAME:$GIT_PASSWORD@github.com/gantsign/development-environment.git"
+    TRAVIS_USER=$USER
+    sudo chown -R "$TRAVIS_USER" .
     git init
     git fetch --depth=1 $REPO_URL \
       refs/heads/gh-pages:refs/remotes/origin/gh-pages
