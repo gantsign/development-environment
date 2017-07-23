@@ -5,8 +5,8 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 May 2017 10:42:25 +0000</pubDate>
-    <lastBuildDate>Sun, 21 May 2017 10:42:25 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Jul 2017 13:41:46 +0100</pubDate>
+    <lastBuildDate>Sun, 23 Jul 2017 13:41:46 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -31,7 +31,7 @@ Updated Java to 8u131&lt;/li&gt;
 &lt;p&gt;For a full list of changes view the
 &lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.10.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 21 May 2017 10:01:34 +0000</pubDate>
+        <pubDate>Sun, 21 May 2017 11:01:34 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.10.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.10.0-release/</guid>
         
@@ -72,7 +72,7 @@ Fixed support for non-JetBrains plugins&lt;/li&gt;
 &lt;p&gt;For a full list of changes view the
 &lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.9.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 01 May 2017 08:30:23 +0000</pubDate>
+        <pubDate>Mon, 01 May 2017 09:30:23 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.9.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.9.0-release/</guid>
         
@@ -104,7 +104,7 @@ Updated Maven to 3.5.0&lt;/li&gt;
 &lt;p&gt;For a full list of changes view the
 &lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.8.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 09 Apr 2017 12:29:53 +0000</pubDate>
+        <pubDate>Sun, 09 Apr 2017 13:29:53 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.8.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.8.0-release/</guid>
         
@@ -136,7 +136,7 @@ to date&lt;/li&gt;
 &lt;p&gt;For a full list of changes view the
 &lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.7.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 31 Mar 2017 18:21:34 +0000</pubDate>
+        <pubDate>Fri, 31 Mar 2017 19:21:34 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.7.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.7.0-release/</guid>
         
