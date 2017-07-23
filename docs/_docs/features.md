@@ -464,8 +464,7 @@ This development environment comes with Go language
 
 ### Go plugins for IDEs
 
-* [IntelliJ IDEA Community Edition (community plugin)](https://plugins.jetbrains.com/plugin/5047-go-language-golang-org-support-plugin)
-* [IntelliJ IDEA Ultimate Edition (JetBrains plugin)](https://plugins.jetbrains.com/plugin/9568-go)
+* [IntelliJ IDEA (Ultimate Edition only)](https://plugins.jetbrains.com/plugin/9568-go)
 * [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
 * [Atom](https://atom.io/packages/go-plus)
 
