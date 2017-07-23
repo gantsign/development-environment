@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jul 2017 14:04:16 +0100</pubDate>
-    <lastBuildDate>Sun, 23 Jul 2017 14:04:16 +0100</lastBuildDate>
+    <pubDate>Sun, 23 Jul 2017 14:23:31 +0100</pubDate>
+    <lastBuildDate>Sun, 23 Jul 2017 14:23:31 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Version 1.11.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/226&quot;&gt;#226&lt;/a&gt;:
+Updated Java to 8u141&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/233&quot;&gt;#233&lt;/a&gt;:
+Updated Go lang to 1.8.3&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.11.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Jul 2017 14:03:42 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.11.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.11.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.10.0 released</title>
@@ -317,28 +349,6 @@ Replaced GitKraken with Git-GUI and Gitk
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.4-release/</guid>
         
         <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Switched to Git-GUI git client</title>
-        <description>
-&lt;p&gt;Since GitKraken is no longer free for
-&lt;a href=&quot;https://blog.axosoft.com/2016/10/07/gitkraken-pricing-clarification/&quot;&gt;commercial use&lt;/a&gt;
-it&amp;#8217;s been replaced in the GantSign development environment.&lt;/p&gt;
-
-&lt;p&gt;Installed in place of GitKraken are Git-GUI and Gitk; while they&amp;#8217;re a lot less
-pretty, they are more stable, feature complete and are open source.&lt;/p&gt;
-
-&lt;p&gt;For more details of Git-GUI and Gitk support view the
-&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#gitk&quot;&gt;features&lt;/a&gt; page.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Dec 2016 22:15:36 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/git-gui/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/git-gui/</guid>
-        
-        <category>nodejs</category>
         
         
       </item>
