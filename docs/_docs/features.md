@@ -210,8 +210,8 @@ ready to use.
 ### Choice of desktops
 
 This development environment offers the choice between
-[Ubuntu Unity](https://unity.ubuntu.com) and [Xfce](http://www.xfce.org)
-desktops.
+[Ubuntu Unity](https://en.wikipedia.org/wiki/Unity_(Ubuntu)) and
+[Xfce](http://www.xfce.org) desktops.
 
 Unity is the default desktop on Ubuntu and will be familiar to many Linux users.
 

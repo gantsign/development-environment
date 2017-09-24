@@ -209,8 +209,9 @@ keyboard:
 
 ### Desktop choice
 
-Each user can choose between the [Ubuntu Unity](https://unity.ubuntu.com)
-desktop or the [Xfce](http://www.xfce.org) desktop.
+Each user can choose between the
+[Ubuntu Unity](https://en.wikipedia.org/wiki/Unity_(Ubuntu)) desktop or the
+[Xfce](http://www.xfce.org) desktop.
 
 {% capture fig_img %}
 ![Desktop choice]({{ base_path }}/images/desktop-choice.png)
