@@ -10,8 +10,14 @@ local() {
 run() {
     jekyll clean
     jekyll build
+    # jekyll serve --detatch has a bug where it tries to start twice and fails
+    # due to the port in use, so we fork and wait for the port to be available
+    # instead.
     jekyll serve --config _config.yml,_config.dev.yml \
-      --destination /tmp/_site --detach
+      --destination /tmp/_site &
+    while ! netstat -tna | grep 'LISTEN\>' | grep -q ':4000\>'; do
+        sleep 1
+    done
     htmlproofer /tmp/_site --log-level debug
 }
 
