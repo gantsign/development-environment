@@ -116,11 +116,19 @@
         - docker
         - molecule
 
-    # Install Java JDK
+    # Install Java JDK 8
     - role: gantsign.java
       tags:
         - java
       java_version: 8u144
+
+    # Install Java JDK 9
+    - role: gantsign.java
+      tags:
+        - java
+      java_version: '9+181'
+      java_is_default_installation: no
+      java_fact_group_name: java_9
 
     # Install Maven
     - role: gantsign.maven
@@ -281,6 +289,8 @@
           intellij_jdks:
             - name: '1.8'
               home: "{{ ansible_local.java.general.home }}"
+            - name: '9'
+              home: "{{ ansible_local.java_9.general.home }}"
           intellij_default_jdk: '1.8'
           intellij_disabled_plugins:
             - CVS
