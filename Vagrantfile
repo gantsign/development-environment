@@ -15,7 +15,7 @@ unless plugins_to_install.empty?
   end
 end
 
-vagrant_dir = File.expand_path(File.dirname(__FILE__))
+vagrant_dir = __dir__
 
 # All Vagrant configuration is done below. The '2' in Vagrant.configure
 # configures the configuration version (we support older styles for
