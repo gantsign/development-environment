@@ -8,7 +8,7 @@
 - src: franklinkim.environment
   version: '1.3.0'
 - src: cmprescott.chrome
-  version: '0.2.3'
+  version: '0.2.4'
 - src: geerlingguy.nodejs
   version: '4.1.1'
 - src: tersmitten.locales
