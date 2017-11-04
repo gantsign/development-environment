@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Nov 2017 20:27:28 +0000</pubDate>
-    <lastBuildDate>Sat, 04 Nov 2017 20:27:28 +0000</lastBuildDate>
+    <pubDate>Sat, 04 Nov 2017 21:03:36 +0000</pubDate>
+    <lastBuildDate>Sat, 04 Nov 2017 21:03:36 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.13.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/239&quot;&gt;#239&lt;/a&gt;:
+Install JDK 9 in addition to JDK 8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/246&quot;&gt;#246&lt;/a&gt;:
+Updated Java to 8u151 &amp;amp; 9.0.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/255&quot;&gt;#255&lt;/a&gt;:
+Updated Go lang to 1.9.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/256&quot;&gt;#256&lt;/a&gt;:
+Updated Node.js to version 8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.13.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Nov 2017 20:43:42 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.13.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.13.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.12.0 released</title>
@@ -286,59 +318,6 @@ Restored EditorConfig extension for Visual Studio Code
         <pubDate>Mon, 06 Mar 2017 19:18:26 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/1.5.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.5.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Version 1.5 released</title>
-        <description>
-&lt;p&gt;&lt;strong&gt;Important: this release contains critical bug fixes and a Go lang version update.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;/h2&gt;
-
-&lt;p&gt;The following fixes resolve two bugs that prevented provisioning from
-completing:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/178&quot;&gt;#178&lt;/a&gt;:
-Fixed broken Postman download
-    &lt;ul&gt;
-      &lt;li&gt;Postman changed their download URL&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/184&quot;&gt;#184&lt;/a&gt;:
-Temporarily disabled EditorConfig extension install for Visual Studio Code
-    &lt;ul&gt;
-      &lt;li&gt;The latest version (0.4.0) fails to install from the command line&lt;/li&gt;
-      &lt;li&gt;Workaround: manually install the EditorConfig extension from the GUI&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;enhancements&quot;&gt;Enhancements&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/180&quot;&gt;#180&lt;/a&gt;:
-Added typings npm module
-    &lt;ul&gt;
-      &lt;li&gt;This is commonly required for development using TypeScript&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/183&quot;&gt;#180&lt;/a&gt;:
-Go lang SDK updated to 1.8&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.5.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Mar 2017 18:57:32 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/1.5-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/1.5-release/</guid>
         
         <category>release</category>
         
