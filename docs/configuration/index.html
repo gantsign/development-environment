@@ -352,14 +352,13 @@ you can skip this section.</p>
 This can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the
 proxy host and port with the values for your network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">proxy</span><span class="pi">:</span>
-  <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
-  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-  <span class="s">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-  <span class="s">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-  <span class="s">no_proxy</span><span class="pi">:</span> <span class="s1">'</span><span class="s">localhost,127.0.0.1'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">proxy</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="na">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="na">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="na">no_proxy</span><span class="pi">:</span> <span class="s1">'</span><span class="s">localhost,127.0.0.1'</span>
+</code></pre></div></div>
 
 <h4 id="apt-proxy-override">APT Proxy Override</h4>
 
@@ -367,12 +366,11 @@ proxy host and port with the values for your network):</p>
 set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy host
 and port with the values for your network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">apt_proxy</span><span class="pi">:</span>
-  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-  <span class="s">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-  <span class="s">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apt_proxy</span><span class="pi">:</span>
+  <span class="na">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="na">https</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+  <span class="na">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+</code></pre></div></div>
 
 <h4 id="git-proxy-override">Git Proxy Override</h4>
 
@@ -380,10 +378,9 @@ and port with the values for your network):</p>
 can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy
 host and port with the values for your network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">git_proxy</span><span class="pi">:</span>
-  <span class="s">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">git_proxy</span><span class="pi">:</span>
+  <span class="na">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
+</code></pre></div></div>
 
 <h4 id="gnome-proxy-override">Gnome Proxy Override</h4>
 
@@ -400,11 +397,10 @@ applications such as the Google Chrome web browser.</p>
 the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the <code class="highlighter-rouge">autoconfig_url</code> with the
 value for your network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
-  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">auto'</span>
-  <span class="s">autoconfig_url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://wpad.example.com/wpad.dat'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
+  <span class="na">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">auto'</span>
+  <span class="na">autoconfig_url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://wpad.example.com/wpad.dat'</span>
+</code></pre></div></div>
 
 <p>Note: in theory Gnome should be able to auto-discover the value for the
 <code class="highlighter-rouge">autoconfig_url</code> using the
@@ -419,50 +415,48 @@ have to specify the location manually.</p>
 to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the hosts and ports with the values for your
 network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
-  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
-  <span class="s">ignore_hosts</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
+  <span class="na">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
+  <span class="na">ignore_hosts</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">localhost'</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">127.0.0.0/8'</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">::1'</span>
-  <span class="s">use_same_proxy</span><span class="pi">:</span> <span class="s">true</span>
-  <span class="s">http</span><span class="pi">:</span>
-    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
-    <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
-</code></pre>
-</div>
+  <span class="na">use_same_proxy</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">http</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
 
 <h5 id="full-manual-configuration">Full manual configuration</h5>
 
 <p>For full manual control add the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace
 the hosts, ports and credentials with the values for your network):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">gnome_proxy</span><span class="pi">:</span>
-  <span class="s">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
-  <span class="s">ignore_hosts</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
+  <span class="na">mode</span><span class="pi">:</span> <span class="s1">'</span><span class="s">manual'</span>
+  <span class="na">ignore_hosts</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">localhost'</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">127.0.0.0/8'</span>
     <span class="pi">-</span> <span class="s1">'</span><span class="s">::1'</span>
-  <span class="s">use_same_proxy</span><span class="pi">:</span> <span class="s">false</span>
-  <span class="s">http</span><span class="pi">:</span>
-    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
-    <span class="s">use_authentication</span><span class="pi">:</span> <span class="s">true</span>
-    <span class="s">authentication_user</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_username'</span>
-    <span class="s">authentication_password</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_password'</span>
-    <span class="s">enabled</span><span class="pi">:</span> <span class="s">true</span>
-  <span class="s">https</span><span class="pi">:</span>
-    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
-  <span class="s">ftp</span><span class="pi">:</span>
-    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="s">port</span><span class="pi">:</span> <span class="s">3128</span>
-  <span class="s">socks</span><span class="pi">:</span>
-    <span class="s">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="s">port</span><span class="pi">:</span> <span class="s">9000</span>
-</code></pre>
-</div>
+  <span class="na">use_same_proxy</span><span class="pi">:</span> <span class="no">false</span>
+  <span class="na">http</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">use_authentication</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">authentication_user</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_username'</span>
+    <span class="na">authentication_password</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_password'</span>
+    <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">https</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+  <span class="na">ftp</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+  <span class="na">socks</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="s">9000</span>
+</code></pre></div></div>
 
 <h3 id="regional-preferences">Regional preferences</h3>
 
@@ -478,35 +472,32 @@ defaults are for Great Britain.</p>
 <p>You can find the list of available timezones at
 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a>.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">timezone</span><span class="pi">:</span> <span class="s">Europe/London</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">timezone</span><span class="pi">:</span> <span class="s">Europe/London</span>
+</code></pre></div></div>
 
 <h4 id="locale">Locale</h4>
 
 <p>You can find more information on locales at:
 <a href="https://help.ubuntu.com/community/Locale">https://help.ubuntu.com/community/Locale</a>.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">locales</span><span class="pi">:</span>
-  <span class="s">default</span><span class="pi">:</span> <span class="s">en_GB.UTF-8</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">locales</span><span class="pi">:</span>
+  <span class="na">default</span><span class="pi">:</span> <span class="s">en_GB.UTF-8</span>
   <span class="c1"># Please ensure the default locate is in the list of present locales.</span>
-  <span class="s">present</span><span class="pi">:</span>
+  <span class="na">present</span><span class="pi">:</span>
    <span class="pi">-</span> <span class="s">en_GB.UTF-8</span>
    <span class="pi">-</span> <span class="s">en_US.UTF-8</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="keyboard">Keyboard</h4>
 
 <p>You can find more information on keyboard configuration at:
 <a href="https://wiki.debian.org/Keyboard">https://wiki.debian.org/Keyboard</a>.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">keyboard</span><span class="pi">:</span>
-  <span class="s">model</span><span class="pi">:</span> <span class="s">pc105</span>
-  <span class="s">layout</span><span class="pi">:</span> <span class="s">gb</span>
-  <span class="s">variant</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">keyboard</span><span class="pi">:</span>
+  <span class="na">model</span><span class="pi">:</span> <span class="s">pc105</span>
+  <span class="na">layout</span><span class="pi">:</span> <span class="s">gb</span>
+  <span class="na">variant</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+</code></pre></div></div>
 
 <h3 id="desktop-choice">Desktop choice</h3>
 
@@ -524,9 +515,8 @@ defaults are for Great Britain.</p>
 <p>The default is the Ubuntu Unity desktop but you can select the Xfce desktop by
 adding the following to your <code class="highlighter-rouge">.vagrantuser</code> file:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">desktop</span><span class="pi">:</span> <span class="s">xfce4</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">desktop</span><span class="pi">:</span> <span class="s">xfce4</span>
+</code></pre></div></div>
 
 <h3 id="virtualbox-configuration">VirtualBox configuration</h3>
 
@@ -535,17 +525,15 @@ adding the following to your <code class="highlighter-rouge">.vagrantuser</code>
 <p>This is important if you want to maintain separate copies of the environment
 (e.g. for working on different branches).</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
-  <span class="s">name</span><span class="pi">:</span> <span class="s">development-environment</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">development-environment</span>
+</code></pre></div></div>
 
 <p>For example you may keep an environment for performing patches to production:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
-  <span class="s">name</span><span class="pi">:</span> <span class="s">patches-environment</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">patches-environment</span>
+</code></pre></div></div>
 
 <p><strong>Important:</strong> each separately named environment must be cloned into a separate
 directory.</p>
@@ -555,11 +543,10 @@ directory.</p>
 <p>If your workstation has more resources than your laptop you may want to allocate
 more CPU cores to the VM or more RAM.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
-  <span class="s">memory</span><span class="pi">:</span> <span class="s1">'</span><span class="s">4096'</span> <span class="c1"># in MB</span>
-  <span class="s">cpus</span><span class="pi">:</span> <span class="s">2</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+  <span class="na">memory</span><span class="pi">:</span> <span class="s1">'</span><span class="s">4096'</span> <span class="c1"># in MB</span>
+  <span class="na">cpus</span><span class="pi">:</span> <span class="s">2</span>
+</code></pre></div></div>
 
 <h4 id="audio">Audio</h4>
 
@@ -569,11 +556,10 @@ audio settings to enable audio support.</p>
 <p>You can find more information about VirtualBox audio options at:
 <a href="https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm">https://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm</a>.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
-   <span class="s">audio</span><span class="pi">:</span> <span class="s">alsa</span>
-   <span class="s">audiocontroller</span><span class="pi">:</span> <span class="s">ac97</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
+   <span class="na">audio</span><span class="pi">:</span> <span class="s">alsa</span>
+   <span class="na">audiocontroller</span><span class="pi">:</span> <span class="s">ac97</span>
+</code></pre></div></div>
 
 <p><strong>Note:</strong> this project is only tested with Microsoft Windows as the host OS.</p>
 
@@ -584,8 +570,8 @@ development environment.</p>
 
 <p>This can speed up rebuilds and save on disk space.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">ansible</span><span class="pi">:</span>
-  <span class="s">skip_tags</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ansible</span><span class="pi">:</span>
+  <span class="na">skip_tags</span><span class="pi">:</span>
     <span class="c1"># Choose from any of the below</span>
     <span class="pi">-</span> <span class="s">unison</span>
     <span class="pi">-</span> <span class="s">docker</span>
@@ -598,8 +584,7 @@ development environment.</p>
     <span class="pi">-</span> <span class="s">vscode</span>
     <span class="pi">-</span> <span class="s">intellij</span>
     <span class="pi">-</span> <span class="s">oh-my-zsh</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong>Note:</strong> there are dependencies between some of the features e.g. skipping
 <code class="highlighter-rouge">java</code> will also skip <code class="highlighter-rouge">intellij</code>.</p>
@@ -611,17 +596,15 @@ Agreement for the Java SE Platform Products and JavaFX&#8221;; you can do this b
 specifying the following variable in the <code class="highlighter-rouge">.vagrantuser</code> file (either in
 the project root directory or your user home directory):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">java_license_declaration</span><span class="pi">:</span> <span class="s1">'</span><span class="s">I</span><span class="nv"> </span><span class="s">accept</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">"Oracle</span><span class="nv"> </span><span class="s">Binary</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">License</span><span class="nv"> </span><span class="s">Agreement</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Java</span><span class="nv"> </span><span class="s">SE</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Products</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">JavaFX"</span><span class="nv"> </span><span class="s">under</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">terms</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">http://www.oracle.com/technetwork/java/javase/terms/license/index.html'</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">java_license_declaration</span><span class="pi">:</span> <span class="s1">'</span><span class="s">I</span><span class="nv"> </span><span class="s">accept</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">"Oracle</span><span class="nv"> </span><span class="s">Binary</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">License</span><span class="nv"> </span><span class="s">Agreement</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Java</span><span class="nv"> </span><span class="s">SE</span><span class="nv"> </span><span class="s">Platform</span><span class="nv"> </span><span class="s">Products</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">JavaFX"</span><span class="nv"> </span><span class="s">under</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">terms</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">http://www.oracle.com/technetwork/java/javase/terms/license/index.html'</span>
+</code></pre></div></div>
 
 <p>If you don&#8217;t want to accept the license you can skip the Java install using:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">ansible</span><span class="pi">:</span>
-  <span class="s">skip_tags</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ansible</span><span class="pi">:</span>
+  <span class="na">skip_tags</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">java</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="intellij-idea-edition">IntelliJ IDEA edition</h3>
 
@@ -634,9 +617,8 @@ their personal licenses.</p>
 <p>To install IntelliJ IDEA Ultimate instead of IntelliJ IDEA Community add the
 following line to your <code class="highlighter-rouge">.vagrantuser</code> file.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">intellij_edition</span><span class="pi">:</span> <span class="s">ultimate</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">intellij_edition</span><span class="pi">:</span> <span class="s">ultimate</span>
+</code></pre></div></div>
 
 <h2 id="project-specific-configuration">Project specific configuration</h2>
 

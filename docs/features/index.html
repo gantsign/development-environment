@@ -413,8 +413,8 @@ directory in the file system.</p>
 
 <p>For example:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># Create a directory under /home/vagrant/workspace</span>
-mkdir -p /home/vagrant/workspace/my-awesome-project
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a directory under /home/vagrant/workspace</span>
+mkdir <span class="nt">-p</span> /home/vagrant/workspace/my-awesome-project
 
 <span class="c"># Change directory somewhere else</span>
 <span class="nb">cd</span> /etc
@@ -428,8 +428,7 @@ mkdir -p /home/vagrant/workspace/my-awesome-project
 <span class="c"># Check you're in the right directory</span>
 <span class="nb">pwd</span>
 /home/vagrant/workspace/my-awesome-project
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This makes it really quick and easy to access your project directories.</p>
 
@@ -452,12 +451,11 @@ to <code class="highlighter-rouge">zsh</code>, and customizes the <code class="h
 
 <p>Try this:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>cat /u/s/a/vim&lt;TAB&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> /u/s/a/vim&lt;TAB&gt;
 
 <span class="c"># Expands to:</span>
-cat /usr/share/applications/vim.desktop
-</code></pre>
-</div>
+<span class="nb">cat</span> /usr/share/applications/vim.desktop
+</code></pre></div></div>
 
 <h3 id="the-silver-searcher">The Silver Searcher</h3>
 
