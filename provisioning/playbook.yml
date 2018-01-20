@@ -120,13 +120,13 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: 8u151
+      java_version: 8u161
 
     # Install Java JDK 9
     - role: gantsign.java
       tags:
         - java
-      java_version: '9.0.1'
+      java_version: '9.0.4'
       java_is_default_installation: no
       java_fact_group_name: java_9
 
