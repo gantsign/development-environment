@@ -5,9 +5,35 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Jan 2018 20:47:56 +0000</pubDate>
-    <lastBuildDate>Sat, 20 Jan 2018 20:47:56 +0000</lastBuildDate>
+    <pubDate>Sat, 20 Jan 2018 21:37:28 +0000</pubDate>
+    <lastBuildDate>Sat, 20 Jan 2018 21:37:28 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.14.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/264&quot;&gt;#264&lt;/a&gt;:
+Updated Java to 8u161 &amp;amp; 9.0.4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.14.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jan 2018 21:16:24 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.14.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.14.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.13.1 released</title>
@@ -284,36 +310,6 @@ Upgraded to Molecule 1.22&lt;/li&gt;
         <pubDate>Fri, 24 Mar 2017 21:57:45 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.6.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.6.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.5.2 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/188&quot;&gt;#188&lt;/a&gt;:
-Fixed plugin install for IntelliJ 2017.1
-    &lt;ul&gt;
-      &lt;li&gt;Changes in IntelliJ IDEA 2017.1 broke the plugin install script&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.5.2&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 Mar 2017 09:52:42 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.5.2-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.5.2-release/</guid>
         
         <category>release</category>
         
