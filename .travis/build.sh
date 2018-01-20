@@ -2,7 +2,7 @@
 set -ev
 
 # Vagrantfile syntax check
-rubocop ./Vagrantfile --except LineLength,BlockLength,Eval,MutableConstant,FormatStringToken
+rubocop ./Vagrantfile --except LineLength,BlockLength,Eval,MutableConstant,FormatStringToken,EmptyLinesAroundArguments
 
 # Install Ansible roles
 sudo ansible-galaxy install -r provisioning/requirements.yml
