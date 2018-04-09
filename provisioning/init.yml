@@ -15,7 +15,7 @@
     - name: add kubernetes key
       become: yes
       apt_key:
-        id: '3746C208A7317B0F'
+        id: '6A030B21BA07F4FB'
         url: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
         state: present
 
