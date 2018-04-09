@@ -126,9 +126,9 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: '9.0.4'
+      java_version: '10.0.0'
       java_is_default_installation: no
-      java_fact_group_name: java_9
+      java_fact_group_name: java_10
 
     # Install Maven
     - role: gantsign.maven
@@ -289,8 +289,8 @@
           intellij_jdks:
             - name: '1.8'
               home: "{{ ansible_local.java.general.home }}"
-            - name: '9'
-              home: "{{ ansible_local.java_9.general.home }}"
+            - name: '10'
+              home: "{{ ansible_local.java_10.general.home }}"
           intellij_default_jdk: '1.8'
           intellij_disabled_plugins:
             - CVS
