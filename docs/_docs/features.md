@@ -135,6 +135,16 @@ cat /u/s/a/vim<TAB>
 cat /usr/share/applications/vim.desktop
 ```
 
+### HTTPie
+
+Website: [https://httpie.org](https://httpie.org)
+
+HTTPie is a command line HTTP client. HTTPie is somewhat like cURL or Wget, but
+designed more for interactive use than use in shell scripting. It has a more
+intuitive command line interface, JSON support and syntax highlighting.
+
+![HTTPie]({{ base_path }}/images/httpie.png)
+
 ### The Silver Searcher
 
 Website: [http://geoff.greer.fm/ag](http://geoff.greer.fm/ag)
