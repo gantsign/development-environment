@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
   default_vb_audiocontroler = 'ac97'
   if Vagrant::Util::Platform.windows?
     default_vb_audio  = 'dsound'
-  elsif Vagrant::Util::Platform.mac?
+  elsif Vagrant::Util::Platform.platform =~ /darwin/
     default_vb_audio  = 'coreaudio'
     default_vb_audiocontroler = 'hda'
   end
