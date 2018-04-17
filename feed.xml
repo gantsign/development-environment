@@ -5,9 +5,43 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Apr 2018 17:36:02 +0100</pubDate>
-    <lastBuildDate>Tue, 17 Apr 2018 17:36:02 +0100</lastBuildDate>
+    <pubDate>Tue, 17 Apr 2018 18:06:38 +0100</pubDate>
+    <lastBuildDate>Tue, 17 Apr 2018 18:06:38 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.16.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/286&quot;&gt;#286&lt;/a&gt;:
+Updated Maven to 3.5.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/287&quot;&gt;#287&lt;/a&gt;:
+Updated Maven Notifier to 1.10.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/288&quot;&gt;#288&lt;/a&gt;:
+Updated Molecule to 2.12.1
+    &lt;ul&gt;
+      &lt;li&gt;Also contains a workaround for an installation issue under pip 10&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.16.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 17 Apr 2018 17:47:32 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.16.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.16.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.15.0 released</title>
@@ -286,38 +320,6 @@ Updated Maven to 3.5.0&lt;/li&gt;
         <pubDate>Sun, 09 Apr 2017 13:29:53 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.8.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.8.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.7.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/199&quot;&gt;#199&lt;/a&gt;:
-Added &lt;code class=&quot;highlighter-rouge&quot;&gt;git lt&lt;/code&gt; alias for showing a tree view of git commits in the console&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/201&quot;&gt;#201&lt;/a&gt;:
-Added &lt;code class=&quot;highlighter-rouge&quot;&gt;git cane&lt;/code&gt; alias for amending the current commit without changing the
-commit message&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/202&quot;&gt;#202&lt;/a&gt;:
-Added &lt;code class=&quot;highlighter-rouge&quot;&gt;npm-check-updates&lt;/code&gt; node module to help with keeping NPM dependencies up
-to date&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.7.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 31 Mar 2017 19:21:34 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.7.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.7.0-release/</guid>
         
         <category>release</category>
         
