@@ -120,7 +120,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: 8u161
+      java_version: 8u171
 
     # Install Java JDK 9
     - role: gantsign.java
