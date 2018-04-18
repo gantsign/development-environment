@@ -122,11 +122,11 @@
         - java
       java_version: 8u171
 
-    # Install Java JDK 9
+    # Install Java JDK 10
     - role: gantsign.java
       tags:
         - java
-      java_version: '10.0.0'
+      java_version: '10.0.1'
       java_is_default_installation: no
       java_fact_group_name: java_10
 
