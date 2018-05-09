@@ -475,7 +475,7 @@ This development environment comes with Go language
 ### Go plugins for IDEs
 
 * [IntelliJ IDEA (Ultimate Edition only)](https://plugins.jetbrains.com/plugin/9568-go)
-* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=lukehoban.Go)
+* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
 * [Atom](https://atom.io/packages/go-plus)
 
 ## For Ansible developers
