@@ -10,7 +10,7 @@
 - src: cmprescott.chrome
   version: '0.2.4'
 - src: geerlingguy.nodejs
-  version: '4.1.2'
+  version: '4.2.0'
 - src: tersmitten.locales
   version: 'v1.0.17'
 - src: gantsign.apt
