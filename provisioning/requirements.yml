@@ -12,7 +12,7 @@
 - src: geerlingguy.nodejs
   version: '4.2.0'
 - src: tersmitten.locales
-  version: 'v1.0.17'
+  version: 'v1.0.18'
 - src: gantsign.apt
   version: '1.2.0'
 - src: gantsign.atom
