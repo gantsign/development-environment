@@ -5,9 +5,37 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 May 2018 09:30:27 +0100</pubDate>
-    <lastBuildDate>Thu, 10 May 2018 09:30:27 +0100</lastBuildDate>
+    <pubDate>Thu, 10 May 2018 10:14:01 +0100</pubDate>
+    <lastBuildDate>Thu, 10 May 2018 10:14:01 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.18.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/300&quot;&gt;#300&lt;/a&gt;:
+Updated ID for VS Code Go extension&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/301&quot;&gt;#301&lt;/a&gt;:
+Updated Go lang to 1.10.2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.18.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 May 2018 09:39:52 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.18.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.18.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.17.0 released</title>
@@ -275,47 +303,6 @@ Updated Java to 8u131&lt;/li&gt;
         <pubDate>Sun, 21 May 2017 11:01:34 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.10.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.10.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.9.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/217&quot;&gt;#217&lt;/a&gt;:
-Updated Molecule to 1.24&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/214&quot;&gt;#214&lt;/a&gt;:
-Critical bug fixes for IntelliJ IDEA plugin support
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/ansible-role-intellij-plugins/pull/26&quot;&gt;gantsign/ansible-role-intellij-plugins#26&lt;/a&gt;:
-&lt;strong&gt;Fixed plugin downloads&lt;/strong&gt;
-        &lt;ul&gt;
-          &lt;li&gt;JetBrains moved the plugins to Amazon S3, which had broken the &lt;code class=&quot;highlighter-rouge&quot;&gt;gantsign.intellij-plugins&lt;/code&gt; role&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/ansible-role-intellij-plugins/pull/25&quot;&gt;gantsign/ansible-role-intellij-plugins#25&lt;/a&gt;:
-Fixed support for plugins distributed as JARs&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/ansible-role-intellij-plugins/pull/24&quot;&gt;gantsign/ansible-role-intellij-plugins#24&lt;/a&gt;:
-Fixed support for non-JetBrains plugins&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.9.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 May 2017 09:30:23 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.9.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.9.0-release/</guid>
         
         <category>release</category>
         
