@@ -5,10 +5,13 @@ set -ev
 rubocop ./Vagrantfile --except LineLength,BlockLength,Eval,MutableConstant,FormatStringToken,EmptyLinesAroundArguments
 
 # Install Ansible roles
-sudo ansible-galaxy install -r provisioning/requirements.yml
+ansible-galaxy install --role-file=provisioning/requirements.yml "--roles-path=$HOME/roles"
+
+# Set role path
+export ANSIBLE_ROLES_PATH="$HOME/roles"
 
 # Ansible syntax check
-ansible-playbook provisioning/playbook.yml -i tests/inventory --syntax-check
+ansible-playbook provisioning/playbook.yml --inventory=tests/inventory --syntax-check
 
 # Build docs
 (cd docs && sudo chmod go+rw -R . && ./build.sh)
