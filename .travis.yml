@@ -9,26 +9,18 @@ dist: trusty
 services:
   - docker
 
-rvm:
-  # Specify Ruby version
-  - '2.2'
+language: python
 
 python:
   # Specify Python version
   - '2.7'
-
-# Install ansible
-addons:
-  apt:
-    packages:
-      - python-pip
 
 install:
   # Install lint tools.
   - gem install rubocop
 
   # Install ansible
-  - sudo pip install ansible
+  - pip install ansible
 
   # Check ansible version
   - ansible --version
