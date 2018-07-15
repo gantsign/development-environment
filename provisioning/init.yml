@@ -7,7 +7,7 @@
     - name: install alt-galaxy
       become: yes
       unarchive:
-        src: https://github.com/gantsign/alt-galaxy/releases/download/1.4.0/alt-galaxy_linux_amd64.tar.xz
+        src: https://github.com/gantsign/alt-galaxy/releases/download/1.4.1/alt-galaxy_linux_amd64.tar.xz
         remote_src: yes
         dest: /usr/local/bin
 
