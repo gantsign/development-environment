@@ -11,7 +11,7 @@
   version: '0.2.4'
 - src: geerlingguy.nodejs
   version: '4.2.0'
-- src: tersmitten.locales
+- src: oefenweb.locales
   version: 'v1.0.18'
 - src: gantsign.apt
   version: '1.2.0'
