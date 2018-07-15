@@ -22,6 +22,7 @@ feature_row:
       for use.
     url: /docs/features/
     btn_label: Learn More
+    btn_class: btn--primary
   - title: Configurable
     excerpt: >
       Version control all your project specific configuration. No more having to
@@ -29,6 +30,7 @@ feature_row:
       configuration like regional preferences.
     url: /docs/configuration
     btn_label: Learn More
+    btn_class: btn--primary
   - title: MIT licensed
     excerpt: >
       Having benefitted from opensource so much over the years, it's nice to be
@@ -36,6 +38,7 @@ feature_row:
       license.
     url: https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE
     btn_label: View
+    btn_class: btn--primary
 intro:
   - excerpt: >
       Get notified when new features are added &nbsp;
