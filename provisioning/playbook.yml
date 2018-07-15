@@ -70,7 +70,7 @@
       keyboard_layout: gb
 
     # Configure locale
-    - role: tersmitten.locales
+    - role: oefenweb.locales
       locales_present:
         - en_GB.UTF-8
         - en_US.UTF-8
