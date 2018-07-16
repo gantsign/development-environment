@@ -178,4 +178,9 @@ var store = [{
         "excerpt":"Release highlights   #300:Updated ID for VS Code Go extension  #301:Updated Go lang to 1.10.2Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.18.0-release/",
+        "teaser":null},{
+        "title": "Version 1.19.0 released",
+        "excerpt":"Release highlights   #307:Fixed locales role install  #308:Updated Go lang to 1.10.3Full change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.19.0-release/",
         "teaser":null},]

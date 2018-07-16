@@ -5,9 +5,37 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Jul 2018 01:00:11 +0100</pubDate>
-    <lastBuildDate>Mon, 16 Jul 2018 01:00:11 +0100</lastBuildDate>
+    <pubDate>Mon, 16 Jul 2018 09:32:49 +0100</pubDate>
+    <lastBuildDate>Mon, 16 Jul 2018 09:32:49 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.19.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/307&quot;&gt;#307&lt;/a&gt;:
+Fixed locales role install&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/308&quot;&gt;#308&lt;/a&gt;:
+Updated Go lang to 1.10.3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.19.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Jul 2018 09:16:35 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.19.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.19.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.18.0 released</title>
@@ -270,39 +298,6 @@ Updated Go lang to 1.8.3&lt;/p&gt;
         <pubDate>Sun, 23 Jul 2017 14:03:42 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.11.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.11.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.10.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/222&quot;&gt;#222&lt;/a&gt;:
-Fixed JAR packaged IntelliJ plugins install
-    &lt;ul&gt;
-      &lt;li&gt;See &lt;a href=&quot;https://github.com/gantsign/ansible-role-intellij-plugins/pull/30&quot;&gt;gantsign/ansible-role-intellij-plugins#30&lt;/a&gt;
-  for details.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/224&quot;&gt;#224&lt;/a&gt;:
-Updated Java to 8u131&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.10.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 May 2017 11:01:34 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.10.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.10.0-release/</guid>
         
         <category>release</category>
         
