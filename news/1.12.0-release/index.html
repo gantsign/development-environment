@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.6.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -9,46 +9,28 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>Version 1.12.0 released - GantSign EnV</title>
-
-
-
-
+<!-- begin _includes/seo.html --><title>Version 1.12.0 released - GantSign EnV</title>
 <meta name="description" content="Version 1.12.0 of this project has been released.">
 
 
 
-
-<meta name="author" content="GantSign Ltd.">
-
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="GantSign EnV">
 <meta property="og:title" content="Version 1.12.0 released">
-
-
-  <link rel="canonical" href="https://gantsign.github.io/development-environment/news/1.12.0-release/">
-  <meta property="og:url" content="https://gantsign.github.io/development-environment/news/1.12.0-release/">
-
+<meta property="og:url" content="https://gantsign.github.io/development-environment/news/1.12.0-release/">
 
 
   <meta property="og:description" content="Version 1.12.0 of this project has been released.">
 
 
 
+
+
   <meta name="twitter:site" content="@gantsign">
   <meta name="twitter:title" content="Version 1.12.0 released">
   <meta name="twitter:description" content="Version 1.12.0 of this project has been released.">
-  <meta name="twitter:url" content="https://gantsign.github.io/news/1.12.0-release/">
+  <meta name="twitter:url" content="https://gantsign.github.io/development-environment/news/1.12.0-release/">
 
   
     <meta name="twitter:card" content="summary">
@@ -56,18 +38,17 @@
   
 
   
-    <meta name="twitter:creator" content="@GantSign Ltd.">
-  
 
 
 
-
-
-
-
-  <meta property="og:type" content="article">
   <meta property="article:published_time" content="2017-08-06T07:31:24+01:00">
 
+
+
+
+
+
+<link rel="canonical" href="https://gantsign.github.io/development-environment/news/1.12.0-release/">
 
 
 
@@ -77,11 +58,11 @@
 
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "GantSign Ltd.",
-      "url" : "https://gantsign.github.io/development-environment",
-      "sameAs" : ["https://twitter.com/gantsign"]
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "GantSign Ltd.",
+      "url": "https://gantsign.github.io/development-environment",
+      "sameAs": ["https://twitter.com/gantsign"]
     }
   </script>
 
@@ -90,10 +71,11 @@
 
 
 
-<!-- end SEO -->
+
+<!-- end _includes/seo.html -->
 
 
-<link href="https://gantsign.github.io/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+<link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -105,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://gantsign.github.io/development-environment/assets/css/main.css">
+<link rel="stylesheet" href="/development-environment/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -125,47 +107,64 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
   </head>
 
   <body class="layout--single">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://gantsign.github.io/development-environment/">GantSign EnV</a>
+        <a class="site-title" href="/development-environment/">GantSign EnV</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/about/">About</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/features/">Features</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/">Documentation</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/news/">What's New</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://github.com/gantsign/development-environment">GitHub</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://github.com/gantsign/development-environment" >GitHub</a>
+            </li>
           
         </ul>
-        <button><div class="navicon"></div></button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+    <div class="initial-content">
+      
 
 
 
@@ -174,18 +173,23 @@
   <div class="sidebar sticky">
   
 
+
 <div itemscope itemtype="http://schema.org/Person">
 
   
     <div class="author__avatar">
       
-        <img src="https://gantsign.github.io/development-environment/images/logo.png" class="author__avatar" alt="GantSign Ltd." itemprop="image">
+
+      
+        <img src="/development-environment/images/logo.png" alt="GantSign Ltd." itemprop="image">
       
     </div>
   
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">GantSign Ltd.</h3>
+    
+      <h3 class="author__name" itemprop="name">GantSign Ltd.</h3>
+    
     
       <p class="author__bio" itemprop="description">
         Software Consultancy
@@ -198,7 +202,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">London, UK</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">London, UK</span>
         </li>
       
 
@@ -211,7 +215,7 @@
       
         <li>
           <a href="https://twitter.com/gantsign" itemprop="sameAs">
-            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
           </a>
         </li>
       
@@ -233,7 +237,7 @@
       
         <li>
           <a href="https://github.com/gantsign" itemprop="sameAs">
-            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
           </a>
         </li>
       
@@ -267,7 +271,7 @@
       <!--
   <li>
     <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -288,13 +292,14 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Version 1.12.0 released
+          <h1 id="page-title" class="page__title" itemprop="headline">Version 1.12.0 released
 </h1>
           
         </header>
       
 
       <section class="page__content" itemprop="text">
+        
         
 <h2 id="release-highlights">Release highlights</h2>
 
@@ -317,7 +322,7 @@ Updated Java to 8u144</li>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-08-06T07:31:24+01:00">August 06, 2017</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-08-06T07:31:24+01:00">August 06, 2017</time></p>
         
       </footer>
 
@@ -346,7 +351,9 @@ Updated Java to 8u144</li>
   
   
 </div>
+    </div>
 
+    
 
     <div class="page__footer">
       <footer>
@@ -357,39 +364,27 @@ Updated Java to 8u144</li>
   <ul class="social-icons">
     
     
-      <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
     
     
     
-      <li><a href="http://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     
-    <li><a href="https://gantsign.github.io/development-environment/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
-  <script src="https://gantsign.github.io/development-environment/assets/js/main.min.js"></script>
+  <script src="/development-environment/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
-
-
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83612642-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 

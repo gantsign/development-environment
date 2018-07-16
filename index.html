@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.6.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
@@ -9,57 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
-
-
-
-
-
-
-
-
-
-<title>GantSign EnV</title>
-
-
-
-
+<!-- begin _includes/seo.html --><title>GantSign EnV</title>
 <meta name="description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
 
 
 
-
-<meta name="author" content="GantSign Ltd.">
-
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="GantSign EnV">
 <meta property="og:title" content="GantSign EnV">
-
-
-  <link rel="canonical" href="https://gantsign.github.io/development-environment/">
-  <meta property="og:url" content="https://gantsign.github.io/development-environment/">
-
+<meta property="og:url" content="https://gantsign.github.io/development-environment/">
 
 
   <meta property="og:description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
-
-
-
-  <meta name="twitter:site" content="@gantsign">
-  <meta name="twitter:title" content="GantSign EnV">
-  <meta name="twitter:description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
-  <meta name="twitter:url" content="https://gantsign.github.io/">
-
-  
-    <meta name="twitter:card" content="summary">
-    
-  
-
-  
-    <meta name="twitter:creator" content="@GantSign Ltd.">
-  
-
-
 
 
 
@@ -67,9 +29,28 @@
 
 
 
-  <meta property="og:type" content="article">
+  <meta name="twitter:site" content="@gantsign">
+  <meta name="twitter:title" content="GantSign EnV">
+  <meta name="twitter:description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
+  <meta name="twitter:url" content="https://gantsign.github.io/development-environment/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://gantsign.github.io/development-environment/images/header-laptop.jpg">
+  
+
+  
+
+
+
   <meta property="article:published_time" content="2017-01-18T16:51:42+00:00">
 
+
+
+
+
+
+<link rel="canonical" href="https://gantsign.github.io/development-environment/">
 
 
 
@@ -79,11 +60,11 @@
 
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "GantSign Ltd.",
-      "url" : "https://gantsign.github.io/development-environment",
-      "sameAs" : ["https://twitter.com/gantsign"]
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "GantSign Ltd.",
+      "url": "https://gantsign.github.io/development-environment",
+      "sameAs": ["https://twitter.com/gantsign"]
     }
   </script>
 
@@ -92,10 +73,11 @@
 
 
 
-<!-- end SEO -->
+
+<!-- end _includes/seo.html -->
 
 
-<link href="https://gantsign.github.io/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+<link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -107,7 +89,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://gantsign.github.io/development-environment/assets/css/main.css">
+<link rel="stylesheet" href="/development-environment/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -127,47 +109,64 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
   </head>
 
   <body class="layout--splash">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://gantsign.github.io/development-environment/">GantSign EnV</a>
+        <a class="site-title" href="/development-environment/">GantSign EnV</a>
         <ul class="visible-links">
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/about/">About</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/features/">Features</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/docs/">Documentation</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://gantsign.github.io/development-environment/news/">What's New</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
+            </li>
           
             
-            <li class="masthead__menu-item"><a href="https://github.com/gantsign/development-environment">GitHub</a></li>
+            <li class="masthead__menu-item">
+              <a href="https://github.com/gantsign/development-environment" >GitHub</a>
+            </li>
           
         </ul>
-        <button><div class="navicon"></div></button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
 </div>
 
-    
+    <div class="initial-content">
+      
   
 
 
@@ -181,11 +180,11 @@
 
 
 <div class="page__hero--overlay"
-  style="background-color: #5e616c; background-image: url('https://gantsign.github.io/development-environment/images/header-laptop.jpg');"
+  style="background-color: #5e616c; background-image: url('/development-environment/images/header-laptop.jpg');"
 >
   
     <div class="wrapper">
-      <h1 class="page__title" itemprop="headline">
+      <h1 id="page-title" class="page__title" itemprop="headline">
         
           GantSign EnV
 
@@ -197,7 +196,7 @@
       
       
       
-        <p><a href="https://gantsign.github.io/development-environment/docs/getting-started" class="btn btn--light-outline btn--large"><i class='fa fa-download'></i> Install Now</a></p>
+        <p><a href="/development-environment/docs/getting-started" class="btn btn--light-outline btn--large"><i class='fa fa-download'></i> Install Now</a></p>
       
     </div>
   
@@ -225,7 +224,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gantsign.github.io/development-environment/news/1.18.0-release/" rel="permalink">Version 1.18.0 released
+        <a href="/development-environment/news/1.18.0-release/" rel="permalink">Version 1.18.0 released
 </a>
       
     </h2>
@@ -244,7 +243,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gantsign.github.io/development-environment/news/1.17.0-release/" rel="permalink">Version 1.17.0 released
+        <a href="/development-environment/news/1.17.0-release/" rel="permalink">Version 1.17.0 released
 </a>
       
     </h2>
@@ -263,7 +262,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://gantsign.github.io/development-environment/news/1.16.0-release/" rel="permalink">Version 1.16.0 released
+        <a href="/development-environment/news/1.16.0-release/" rel="permalink">Version 1.16.0 released
 </a>
       
     </h2>
@@ -326,7 +325,7 @@
           
 
           
-            <p><a href="https://gantsign.github.io/development-environment/docs/features/" class="btn ">Learn More</a></p>
+            <p><a href="/development-environment/docs/features/" class="btn btn--primary">Learn More</a></p>
           
         </div>
       </div>
@@ -352,7 +351,7 @@
           
 
           
-            <p><a href="https://gantsign.github.io/development-environment/docs/configuration" class="btn ">Learn More</a></p>
+            <p><a href="/development-environment/docs/configuration" class="btn btn--primary">Learn More</a></p>
           
         </div>
       </div>
@@ -378,7 +377,7 @@
           
 
           
-            <p><a href="https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE" class="btn ">View</a></p>
+            <p><a href="https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE" class="btn btn--primary">View</a></p>
           
         </div>
       </div>
@@ -390,6 +389,9 @@
     </section>
   </article>
 </div>
+    </div>
+
+    
 
     <div class="page__footer">
       <footer>
@@ -400,39 +402,27 @@
   <ul class="social-icons">
     
     
-      <li><a href="https://twitter.com/gantsign"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
     
     
     
-      <li><a href="http://github.com/gantsign"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
     
-    <li><a href="https://gantsign.github.io/development-environment/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2018 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
-  <script src="https://gantsign.github.io/development-environment/assets/js/main.min.js"></script>
+  <script src="/development-environment/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 
-
-
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83612642-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
