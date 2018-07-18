@@ -183,4 +183,9 @@ var store = [{
         "excerpt":"Release highlights   #307:Fixed locales role install  #308:Updated Go lang to 1.10.3Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.19.0-release/",
+        "teaser":null},{
+        "title": "Version 1.20.0 released",
+        "excerpt":"Release highlights   #311:Upgraded Java 8 to 8u181  #312:Upgraded Java 10 to 10.0.2Full change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.20.0-release/",
         "teaser":null},]
