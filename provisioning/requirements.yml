@@ -12,7 +12,7 @@
 - src: geerlingguy.nodejs
   version: '4.2.0'
 - src: oefenweb.locales
-  version: 'v1.0.18'
+  version: 'v1.0.21'
 - src: gantsign.apt
   version: '1.2.0'
 - src: gantsign.atom
