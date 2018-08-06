@@ -399,7 +399,7 @@ JDK is installed rather than OpenJDK.
 
 ### Maven
 
-Maven 3.5.3 is installed by default.
+Maven 3.5.4 is installed by default.
 
 Note: Gradle is not installed as Gradle users are recommended to use the
 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
