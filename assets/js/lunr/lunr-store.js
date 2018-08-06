@@ -188,4 +188,9 @@ var store = [{
         "excerpt":"Release highlights   #311:Upgraded Java 8 to 8u181  #312:Upgraded Java 10 to 10.0.2Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.20.0-release/",
+        "teaser":null},{
+        "title": "Version 1.21.0 released",
+        "excerpt":"Release highlights   #314:Updated Maven to 3.5.4Full change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.21.0-release/",
         "teaser":null},]

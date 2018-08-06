@@ -5,9 +5,35 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Aug 2018 15:40:30 +0100</pubDate>
-    <lastBuildDate>Mon, 06 Aug 2018 15:40:30 +0100</lastBuildDate>
+    <pubDate>Mon, 06 Aug 2018 16:06:34 +0100</pubDate>
+    <lastBuildDate>Mon, 06 Aug 2018 16:06:34 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.21.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/314&quot;&gt;#314&lt;/a&gt;:
+Updated Maven to 3.5.4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.21.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Aug 2018 15:49:25 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.21.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.21.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.20.0 released</title>
@@ -268,32 +294,6 @@ Updated Node.js to version 8&lt;/li&gt;
         <pubDate>Sat, 04 Nov 2017 20:43:42 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.13.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.13.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.12.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/237&quot;&gt;#237&lt;/a&gt;:
-Updated Java to 8u144&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.12.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 06 Aug 2017 07:31:24 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.12.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.12.0-release/</guid>
         
         <category>release</category>
         
