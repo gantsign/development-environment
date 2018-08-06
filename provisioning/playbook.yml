@@ -135,7 +135,7 @@
       tags:
         - java
         - maven
-      maven_version: '3.5.3'
+      maven_version: '3.5.4'
 
     # Add Node.js
     - role: geerlingguy.nodejs
