@@ -111,14 +111,14 @@ pwd
 
 This makes it really quick and easy to access your project directories.
 
-### Oh-my-zsh
+### Oh My Zsh
 
 Website: [http://ohmyz.sh](http://ohmyz.sh)
 
-Rather than a specific command, oh-my-zsh changes your default shell from `bash`
+Rather than a specific command, Oh My Zsh changes your default shell from `bash`
 to `zsh`, and customizes the `zsh` shell.
 
-Oh-my-zsh gives you:
+Oh My Zsh gives you:
 
 * Better tab completion (like expanding partial names in path).
 * Themes to enhance your command prompt (like showing the current git branch).
