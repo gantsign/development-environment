@@ -407,16 +407,20 @@
       environment_config:
         M2_HOME: "{{ ansible_local.maven.general.home }}"
 
-    # Install oh-my-zsh shell enhancements
-    - role: gantsign.oh-my-zsh
+    # Install Antigen Zsh shell enhancements
+    - role: gantsign.antigen
       tags:
         - oh-my-zsh
       users:
         - username: vagrant
-          oh_my_zsh:
-            theme: robbyrussell
-            plugins:
-              - command-not-found
-              - docker
-              - git
-              - mvn
+          antigen_libraries:
+            - name: oh-my-zsh
+              env:
+                DISABLE_AUTO_UPDATE: '"true"' # Should be rebuilding the VM
+          antigen_theme:
+            name: robbyrussell
+          antigen_bundles:
+            - name: command-not-found
+            - name: docker
+            - name: git
+            - name: mvn
