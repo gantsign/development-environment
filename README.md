@@ -35,7 +35,7 @@ environment that you can fork to add your project specific configuration.
 * Compressed RAM
 * File synchronization
 * Terminator
-* Oh-my-zsh
+* Oh My Zsh
 * Docker
 * Kubernetes
 * Visual Studio Code
