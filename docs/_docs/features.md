@@ -135,6 +135,24 @@ cat /u/s/a/vim<TAB>
 cat /usr/share/applications/vim.desktop
 ```
 
+### Antigen
+
+Website: [https://github.com/zsh-users/antigen](https://github.com/zsh-users/antigen)
+
+Oh My Zsh has a wide selection of plugins, but sometimes you want to install
+plugins from elsewhere. This is where Antigen comes in, Antigen is a plugin
+manager for Zsh and can install Zsh plugins from Git repositories.
+
+Note: the Antigen commands don't make persistent changes. Any change you make to
+the theme/plugins will be lost the next time you launch the shell. To make
+changes permanent you need to run the Antigen commands as part of the
+initialisation of your shell. To do this you either need to change the
+`playbook.yml` of this project and re-provision your VM, or run the Antigen
+commands from the `.zshrc` in your home directory.
+
+You can find a list of third-party plugins at:
+[https://github.com/unixorn/awesome-zsh-plugins#plugins](https://github.com/unixorn/awesome-zsh-plugins#plugins)
+
 ### HTTPie
 
 Website: [https://httpie.org](https://httpie.org)
