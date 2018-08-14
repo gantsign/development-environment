@@ -31,6 +31,8 @@
   version: '1.2.0'
 - src: gantsign.golang
   version: '1.6.1'
+- src: gantsign.hub
+  version: '1.0.0'
 - src: gantsign.inotify
   version: '1.2.0'
 - src: gantsign.intellij
