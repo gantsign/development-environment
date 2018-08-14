@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2017-04-09T11:16:24+01:00
+modified: 2018-08-14T19:09:53+01:00
 ---
 
 {% include base_path %}
@@ -399,6 +399,20 @@ A GUI diff/merge tool with Git support.
 
 Tip: run `meld .` in your Git working directory to review your uncommitted
 changes.
+
+### Git Credential Manager for Mac and Linux
+
+Website: [https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux)
+
+Stores credentials for Git version control securely. Useful if you want to write
+to a Git repository using HTTPS rather than SSH.
+
+Note: if you use two-factor authentication with GitHub (you'd be crazy not to),
+you need to generate a
+[personal access token](https://github.com/settings/tokens) with appropriate
+repository permissions. When using Git in the VM, enter this personal access
+token when prompted to enter your password (instead of entering your GitHub
+password).
 
 ### Postman
 
