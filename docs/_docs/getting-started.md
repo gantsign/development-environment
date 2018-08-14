@@ -5,7 +5,7 @@ description: >
   How to setup the development environment.
 numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2016-12-11T15:15:34+00:00
+modified: 2018-08-14T18:40:26+01:00
 ---
 
 {% include base_path %}
@@ -115,6 +115,9 @@ Run the following command from the project root directory:
 vagrant up
 ```
 
+Once provisioning is complete continue to
+[Change your password](#change-your-password).
+
 ### Troubleshooting
 
 It's relatively common for provisioning to fail due to transient HTTP failures
@@ -141,6 +144,19 @@ virtual machine from scratch:
 vagrant destroy
 vagrant up
 ```
+
+## Change your password
+
+Once provisioning is complete you need to change your password. Login using the
+username `vagrant` and password `vagrant`. You'll then be prompted to change
+your password.
+
+Pick a strong password and don't reuse another password (e.g. don't use your
+Windows password). This password will be used to secure access to saved
+passwords in your browser, SSH key passwords and Git credentials etc.
+
+**Important:** you need to complete this procedure before you stop/reload the
+VM.
 
 ## Stopping the virtual machine
 
