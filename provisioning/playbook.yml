@@ -183,11 +183,10 @@
       tags:
         - gui
 
-    # Auto-login to X desktop
+    # Disable guest login
     - role: gantsign.lightdm
       tags:
         - gui
-      lightdm_autologin_user: vagrant
 
     # Configure proxy settings for Gnome applications
     - role: gantsign.gnome-proxy
