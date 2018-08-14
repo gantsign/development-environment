@@ -414,6 +414,54 @@ repository permissions. When using Git in the VM, enter this personal access
 token when prompted to enter your password (instead of entering your GitHub
 password).
 
+### Hub
+
+Website: [https://github.com/github/hub](https://github.com/github/hub)
+
+Hub is a command line tool that wraps Git in order to extend it with extra
+features for GitHub.
+
+Note: Hub only wraps Git when run from Zsh (it works using a shell alias), the
+actual Git executable is unchanged.
+
+e.g. Cloning a GitHub repository
+
+```bash
+git clone Netflix/flamescope
+# Equivalent to:
+# git clone git@github.com:Netflix/flamescope.git
+```
+
+e.g. Creating a pull request
+
+```bash
+git pull-request -m "\
+Pull request title here
+
+Pull request body here.
+"
+```
+
+e.g. Browse issues for current repository
+
+```bash
+git browse -- issues
+```
+
+Run the following to see all the extensions provided by hub:
+
+```bash
+man hub
+```
+
+To view more information about a specific extension run:
+
+```bash
+man hub-<subcommand>
+# e.g.
+man hub-pull-request
+```
+
 ### Postman
 
 Website: [https://www.getpostman.com](https://www.getpostman.com)
