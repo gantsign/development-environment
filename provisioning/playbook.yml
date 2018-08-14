@@ -111,6 +111,9 @@
     # Install Credential Manager for Git
     - role: gantsign.git_credential_manager
 
+    # Install Hub (GitHub wrapper for Git)
+    - role: gantsign.hub
+
     # Install Docker
     - role: angstwad.docker_ubuntu
       tags:
@@ -438,3 +441,5 @@
             - name: docker
             - name: git
             - name: mvn
+            - name: hub
+              url: '/usr/local/share/hub/zsh'
