@@ -342,4 +342,7 @@ SCRIPT
 
   # Restart the VM after everything is installed
   config.vm.provision :reload
+
+  # Force password change on first use
+  config.vm.provision 'shell', inline: 'chage --lastday 0 vagrant'
 end
