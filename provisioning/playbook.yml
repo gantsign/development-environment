@@ -442,8 +442,25 @@
             name: robbyrussell
           antigen_bundles:
             - name: command-not-found
-            - name: docker
             - name: git
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
+        - docker
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: docker
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
+        - java
+        - maven
+      users:
+        - username: vagrant
+          antigen_bundles:
             - name: mvn
 
     - role: gantsign.antigen_bundles
