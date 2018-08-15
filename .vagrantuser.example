@@ -62,6 +62,7 @@
 #     - intellij
 #     - oh-my-zsh
 #     - hub
+#     - git-credential-manager
 
 # Uncomment the section below to change any of the VirtualBox Settings
 # virtualbox:
