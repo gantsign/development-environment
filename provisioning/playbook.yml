@@ -110,6 +110,8 @@
 
     # Install Credential Manager for Git
     - role: gantsign.git_credential_manager
+      tags:
+        - git-credential-manager
 
     # Install Hub (GitHub wrapper for Git)
     - role: gantsign.hub
