@@ -113,6 +113,8 @@
 
     # Install Hub (GitHub wrapper for Git)
     - role: gantsign.hub
+      tags:
+        - hub
 
     # Install Docker
     - role: angstwad.docker_ubuntu
@@ -441,5 +443,13 @@
             - name: docker
             - name: git
             - name: mvn
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
+        - hub
+      users:
+        - username: vagrant
+          antigen_bundles:
             - name: hub
               url: '/usr/local/share/hub/zsh'
