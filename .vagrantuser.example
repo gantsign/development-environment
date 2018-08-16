@@ -47,22 +47,22 @@
 # Uncomment the section below if you want to skip any of the tags in the playbook
 # ansible:
 #   skip_tags:
-#     - unison
-#     - docker
-#     - kubernetes
-#     - nodejs
-#     - golang
-#     - molecule
-#     - postman
-#     - java
-#     - gui
-#     - chrome
 #     - atom
-#     - vscode
-#     - intellij
-#     - oh-my-zsh
-#     - hub
+#     - chrome
+#     - docker
 #     - git-credential-manager
+#     - golang
+#     - gui
+#     - hub
+#     - intellij
+#     - java
+#     - kubernetes
+#     - molecule
+#     - nodejs
+#     - oh-my-zsh
+#     - postman
+#     - unison
+#     - vscode
 
 # Uncomment the section below to change any of the VirtualBox Settings
 # virtualbox:
