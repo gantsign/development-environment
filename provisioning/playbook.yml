@@ -509,6 +509,15 @@
     - role: gantsign.antigen_bundles
       tags:
         - oh-my-zsh
+        - python
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: pip
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
         - hub
       users:
         - username: vagrant
