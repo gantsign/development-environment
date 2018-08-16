@@ -442,6 +442,7 @@
             name: robbyrussell
           antigen_bundles:
             - name: command-not-found
+            - name: common-aliases
             - name: git
 
     - role: gantsign.antigen_bundles
