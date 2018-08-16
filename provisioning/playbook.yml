@@ -444,6 +444,7 @@
             - name: command-not-found
             - name: common-aliases
             - name: git
+            - name: httpie
 
     - role: gantsign.antigen_bundles
       tags:
