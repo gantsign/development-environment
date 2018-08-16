@@ -494,6 +494,7 @@
         - username: vagrant
           antigen_bundles:
             - name: npm
+            - name: yarn
 
     - role: gantsign.antigen_bundles
       tags:
