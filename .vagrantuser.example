@@ -52,6 +52,7 @@
 #     - docker
 #     - git-credential-manager
 #     - golang
+#     - gradle
 #     - gui
 #     - hub
 #     - intellij
