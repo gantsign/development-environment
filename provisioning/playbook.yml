@@ -479,6 +479,16 @@
     - role: gantsign.antigen_bundles
       tags:
         - oh-my-zsh
+        - java
+        - gradle
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: gradle
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
         - hub
       users:
         - username: vagrant
