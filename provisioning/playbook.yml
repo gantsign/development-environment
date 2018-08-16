@@ -489,6 +489,15 @@
     - role: gantsign.antigen_bundles
       tags:
         - oh-my-zsh
+        - nodejs
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: npm
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
         - hub
       users:
         - username: vagrant
