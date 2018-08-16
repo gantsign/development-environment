@@ -273,7 +273,6 @@
             - EditorConfig.EditorConfig
             - streetsidesoftware.code-spell-checker
             - wholroyd.jinja
-            - ms-python.python
             - rebornix.Ruby
           visual_studio_code_settings: {
             "editor.rulers": [80, 100, 120],
@@ -295,6 +294,17 @@
         - username: vagrant
           visual_studio_code_extensions:
             - ms-vscode.Go
+
+    # Install Python extension for Visual Studio Code editor
+    - role: gantsign.visual-studio-code-extensions
+      tags:
+        - gui
+        - vscode
+        - python
+      users:
+        - username: vagrant
+          visual_studio_code_extensions:
+            - ms-python.python
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
