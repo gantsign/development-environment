@@ -456,6 +456,16 @@
     - role: gantsign.antigen_bundles
       tags:
         - oh-my-zsh
+        - docker
+        - kubernetes
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: kubectl
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
         - java
         - maven
       users:

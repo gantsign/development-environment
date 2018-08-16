@@ -14,7 +14,7 @@
 - src: oefenweb.locales
   version: 'v1.0.23'
 - src: gantsign.antigen
-  version: '1.0.0'
+  version: '1.1.0'
 - src: gantsign.antigen_bundles
   version: '1.0.0'
 - src: gantsign.apt
