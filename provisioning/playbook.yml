@@ -456,6 +456,8 @@
             - name: git
             - name: httpie
             - name: sudo
+            - name: zsh-autosuggestions
+              url: zsh-users/zsh-autosuggestions
 
     - role: gantsign.antigen_bundles
       tags:
