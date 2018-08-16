@@ -458,6 +458,10 @@
             - name: sudo
             - name: zsh-autosuggestions
               url: zsh-users/zsh-autosuggestions
+            # bundles are loaded by name alpabetically
+            # and zsh-syntax-highlighting must be loaded last
+            - name: zzz
+              url: zsh-users/zsh-syntax-highlighting
 
     - role: gantsign.antigen_bundles
       tags:
