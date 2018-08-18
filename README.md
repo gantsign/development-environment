@@ -45,6 +45,7 @@ environment that you can fork to add your project specific configuration.
 * Maven
 * Maven Notifier
 * IntelliJ IDEA IDE
+* SDKMAN!
 * Node.js
 * Go language SDK
 * Molecule
