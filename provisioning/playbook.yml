@@ -530,3 +530,51 @@
           antigen_bundles:
             - name: hub
               url: '/usr/local/share/hub/zsh'
+
+    - role: gantsign.antigen_bundles
+      tags:
+        - oh-my-zsh
+        - sdkman
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: sdkman
+              url: '$HOME/.sdkman-zsh'
+
+    # Install SDKMAN software development kit manager
+    - role: gantsign.sdkman
+      tags:
+        - sdkman
+      sdkman_users:
+        - vagrant
+
+    # Add SDKs to SDKMAN
+    - role: gantsign.sdkman_init
+      tags:
+        - sdkman
+        - java
+      users:
+        - username: vagrant
+          sdkman_install:
+            - candidate: java
+              version: '8'
+              path: '{{ ansible_local.java.general.home }}'
+            - candidate: java
+              version: '10'
+              path: '{{ ansible_local.java_10.general.home }}'
+          sdkman_default:
+            java: '8'
+
+    - role: gantsign.sdkman_init
+      tags:
+        - sdkman
+        - java
+        - maven
+      users:
+        - username: vagrant
+          sdkman_install:
+            - candidate: maven
+              version: '3.5'
+              path: '{{ ansible_local.maven.general.home }}'
+          sdkman_default:
+            maven: '3.5'
