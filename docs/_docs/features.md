@@ -512,6 +512,51 @@ installation.
 
 ![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
 
+### SDKMAN!
+
+Website: [https://sdkman.io](https://sdkman.io)
+
+SDKMAN! is a tool for managing parallel versions of multiple Software
+Development Kits. It's similar to [RVM](https://rvm.io) but for Java, Groovy,
+Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.
+
+To switch Java version in the current shell:
+
+```bash
+sdk use java 10
+```
+
+To change the default Java version:
+
+```bash
+sdk default java 10
+```
+
+To install Gradle:
+
+```bash
+sdk install gradle
+```
+
+To play with GraalVM:
+
+```bash
+# List available versions
+sdk list java
+
+# Install latest GraalVM version
+sdk install java 1.0.0-rc5-graal
+
+# Switch to GraalVM in the current shell
+sdk use java 1.0.0-rc5-graal
+```
+
+To list all the supported SDKs:
+
+```bash
+sdk list
+```
+
 ## For Node.js developers
 
 ### Node.js runtime
