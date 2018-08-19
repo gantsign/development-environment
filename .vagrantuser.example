@@ -48,6 +48,7 @@
 # ansible:
 #   skip_tags:
 #     - atom
+#     - backup
 #     - chrome
 #     - docker
 #     - git-credential-manager
@@ -64,7 +65,6 @@
 #     - postman
 #     - python
 #     - sdkman
-#     - unison
 #     - vscode
 
 # Uncomment the section below to change any of the VirtualBox Settings
