@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2016-11-23T12:09:35+00:00
+modified: 2018-08-19T21:03:36+01:00
 ---
 
 {% include base_path %}
@@ -289,17 +289,25 @@ This can speed up rebuilds and save on disk space.
 ansible:
   skip_tags:
     # Choose from any of the below
-    - unison
-    - docker
-    - nodejs
-    - molecule
-    - java
-    - gui
-    - chrome
     - atom
-    - vscode
+    - chrome
+    - docker
+    - git-credential-manager
+    - golang
+    - gradle
+    - gui
+    - hub
     - intellij
+    - java
+    - kubernetes
+    - molecule
+    - nodejs
     - oh-my-zsh
+    - postman
+    - python
+    - sdkman
+    - unison
+    - vscode
 ```
 
 **Note:** there are dependencies between some of the features e.g. skipping
