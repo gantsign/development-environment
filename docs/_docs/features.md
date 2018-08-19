@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-08-14T19:09:53+01:00
+modified: 2018-08-19T22:16:32+01:00
 ---
 
 {% include base_path %}
@@ -31,39 +31,44 @@ once.
 
 It's so fast there's no reason not to enable it by default.
 
-### File synchronization
+### File backup & restore between rebuilds
 
-Website: [https://www.cis.upenn.edu/~bcpierce/unison](https://www.cis.upenn.edu/~bcpierce/unison)
+Website: [https://rsync.samba.org](https://rsync.samba.org)
 
-One of the advantages of a using a virtual machine is it's easy to get back to a
+One of the advantages of using a virtual machine is it's easy to get back to a
 clean working state by rebuilding the virtual machine.
 
-However, you want to keep your user specific setup, and your workspace with all
+However, you want to keep your user-specific setup, and your workspace with all
 the repositories you've cloned.
 
-This project uses [unison](https://www.cis.upenn.edu/~bcpierce/unison) to
-synchronize selected files and folders from the client machine a separate
-persistent virtual disk on the host machine.
+This project uses [rsync](https://rsync.samba.org) to backup selected files and
+folders from the client virtual machine to a separate persistent virtual disk on
+the host machine.
 
 When the virtual machine is rebuilt, these files and folders are copied back to
 the new client virtual machine.
 
-The following are some of the files and folders synchronized by default:
+The following are some of the files and folders backed-up by default:
 
 * `/home/vagrant/workspace/`
 
-    * Put all your projects here.
-    * Tries to only synchronize source files by excluding directories like
-      `target`.
+    * **Put all your projects here**
 
 * `/home/vagrant/.gitconfig`
 * `/home/vagrant/.ssh/` (except the `authorized_keys` file)
 * `/home/vagrant/.gnupg/`
-* `/home/vagrant/.m2/`  (except the `repository` directory)
+* `/home/vagrant/.m2/`  (except the `repository` and `wrapper` directories)
 
-**Important:** ensure your important files have been synchronized to the
-persistent disk before rebuilding your virtual machine; you can find the
-persistent copies of your files under `/var/persistent/home/vagrant`.
+**Caution:** the followings directories are excluded from the backup by
+default: `.bin`, `.molecule`, `.tmp`, `bin`, `build`, `node_modules`, `target`.
+
+**Note:** you can find your backup under: `/var/persistent/home/vagrant/`.
+
+**Notice:** we accept no responsibility for files lost due to a failure of the
+backup/restore process. We recommend you push your work to your source control
+server before rebuilding your virtual machine. We also recommend you manually
+backup important keys and certificates (e.g. SSH, GPG, X.509) on your host
+machine.
 
 ## For command line users
 
