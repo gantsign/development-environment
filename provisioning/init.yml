@@ -29,7 +29,6 @@
       with_items:
         - ppa:git-core/ppa
         - ppa:gnome-terminator/ppa
-        - ppa:john-freeman/unison
         - ppa:webupd8team/atom
         - 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
       register: register_repos
