@@ -23,46 +23,50 @@
     - role: gantsign.inotify
       inotify_max_user_watches: 524288
 
-    # Synchronize files/directories between client and host
-    - role: gantsign.unison
+    # Backup/restore files/directories in vagrant home directory
+    - role: gantsign.backup
       tags:
-        - unison
-      unison_include_directories:
-        - .ssh
-        - .gnupg
-        - .m2
-        - .atom
-        - .config/Code
-        - .config/Postman
-        - .local/share/keyrings
-        - workspace
-        - workspace-go
-      unison_include_files:
-        - .bash_history
-        - .zsh_history
-        - .gitconfig
-      unison_ignore_paths:
-        - Path .ssh/authorized_keys
-        - Path .gnupg/S.gpg-agent
-        - BelowPath .m2/repository
-        - BelowPath .m2/wrapper
-        - BelowPath .atom/.apm
-        - BelowPath .atom/.node-gyp
-        - BelowPath .atom/compile-cache
-        - BelowPath .atom/packages
-        - BelowPath .atom/storage
-        - Name target
-        - Name Cache
-        - Name GPUCache
-        - Name bin
-        - Name .bin
-        - Name node_modules
-        - Name *-shared.sock
-        - Name *-main.sock
-      unison_src_root: /home/vagrant
-      unison_mirror_root: /var/persistent/home/vagrant
-      unison_fat: no
-      unison_service_auto_start: yes
+        - backup
+      backup_user: vagrant
+      backup_src: /home/vagrant/
+      backup_dest: /var/persistent/home/vagrant/
+      backup_filter: |
+        !
+        + /.atom
+        + /.atom
+        + /.atom/config.cson
+        - /.atom/*
+        + /.bash_history
+        + /.config
+        + /.config/Code
+        + /.config/Code/User
+        + /.config/Code/User/settings.json
+        - /.config/Code/User/*
+        - /.config/Code/*
+        + /.config/Postman
+        - /.config/*
+        + /.gitconfig
+        + /.gnupg
+        + /.local/share/keyrings
+        + /.m2
+        - /.m2/repository
+        - /.m2/wrapper
+        + /.ssh
+        - /.ssh/authorized_keys
+        + /workspace
+        + /workspace-go
+        - /workspace-go/pkg
+        + /.zsh_history
+        - .bin
+        - .molecule
+        - .tmp
+        - bin
+        - build/*
+        - Cache
+        - GPUCache
+        - node_modules
+        - target/*
+        - /*
 
     # Set keyboard layout
     - role: gantsign.keyboard

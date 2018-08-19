@@ -290,6 +290,7 @@ ansible:
   skip_tags:
     # Choose from any of the below
     - atom
+    - backup
     - chrome
     - docker
     - git-credential-manager
@@ -306,7 +307,6 @@ ansible:
     - postman
     - python
     - sdkman
-    - unison
     - vscode
 ```
 
