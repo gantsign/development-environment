@@ -33,7 +33,7 @@ environment that you can fork to add your project specific configuration.
 ## Feature Highlights
 
 * Compressed RAM
-* File synchronization
+* File backup & restore between rebuilds
 * Terminator
 * Oh My Zsh
 * Docker
