@@ -78,7 +78,7 @@
         lang: en_GB.UTF-8
 
     # Enable compressed RAM swap
-    - gantsign.zram-config
+    - gantsign.zram_config
 
     # Install common command line tools
     - gantsign.command-line-tools
