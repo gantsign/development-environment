@@ -193,4 +193,9 @@ var store = [{
         "excerpt":"Release highlights   #314:Updated Maven to 3.5.4Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.21.0-release/",
+        "teaser":null},{
+        "title": "Version 1.21.1 released",
+        "excerpt":"Release highlights   #350:Fixed gantsign.zram_config role nameFull change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.21.1-release/",
         "teaser":null},]
