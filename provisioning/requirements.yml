@@ -63,5 +63,5 @@
   version: '1.4.0'
 - src: https://github.com/gantsign/ansible-role-xdesktop/archive/2.3.0.tar.gz
   name: gantsign.xdesktop
-- src: gantsign.zram-config
+- src: gantsign.zram_config
   version: '1.2.0'
