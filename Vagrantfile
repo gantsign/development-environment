@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
   # Specifying an unsupported audio setting will cause VirtualBox provisioning
   # to fail.
   default_vb_audio = nil
-  default_vb_audiocontroler = 'ac97'
+  default_vb_audiocontroler = 'hda'
   if Vagrant::Util::Platform.windows?
     default_vb_audio  = 'dsound'
   elsif Vagrant::Util::Platform.platform =~ /darwin/
