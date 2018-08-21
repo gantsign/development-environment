@@ -49,7 +49,7 @@
 - src: gantsign.molecule
   version: '4.2.0'
 - src: gantsign.postman
-  version: '2.1.0'
+  version: '2.2.0'
 - src: gantsign.oh-my-zsh
   version: '2.0.1'
 - src: gantsign.pin-to-launcher
