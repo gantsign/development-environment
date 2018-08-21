@@ -59,7 +59,7 @@
 - src: gantsign.molecule
   version: '4.2.0'
 - src: gantsign.postman
-  version: '2.1.0'
+  version: '2.2.0'
 - src: gantsign.pin-to-launcher
   version: '3.0.0'
 - src: gantsign.sdkman
