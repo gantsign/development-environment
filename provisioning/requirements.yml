@@ -61,7 +61,7 @@
 - src: gantsign.postman
   version: '2.1.0'
 - src: gantsign.pin-to-launcher
-  version: '2.1.0'
+  version: '3.0.0'
 - src: gantsign.sdkman
   version: '1.0.0'
 - src: gantsign.sdkman_init
