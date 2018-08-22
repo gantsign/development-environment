@@ -5,9 +5,37 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Aug 2018 18:16:03 +0100</pubDate>
-    <lastBuildDate>Wed, 22 Aug 2018 18:16:03 +0100</lastBuildDate>
+    <pubDate>Wed, 22 Aug 2018 18:48:06 +0100</pubDate>
+    <lastBuildDate>Wed, 22 Aug 2018 18:48:06 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.22.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/358&quot;&gt;#358&lt;/a&gt;:
+Updated Molecule to 2.17.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/355&quot;&gt;#355&lt;/a&gt;:
+Fixed Postman icon (the location had changed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.22.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Aug 2018 18:30:42 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.22.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.22.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.21.1 released</title>
@@ -262,32 +290,6 @@ Updated Java to 8u161 &amp;amp; 9.0.4&lt;/li&gt;
         <pubDate>Sat, 20 Jan 2018 21:16:24 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.14.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.14.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.13.1 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/258&quot;&gt;#258&lt;/a&gt;:
-Fixed VS Code Python extension install&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.13.1&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 12 Nov 2017 18:34:32 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.13.1-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.13.1-release/</guid>
         
         <category>release</category>
         

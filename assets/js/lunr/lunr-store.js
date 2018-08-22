@@ -198,4 +198,9 @@ var store = [{
         "excerpt":"Release highlights   #350:Fixed gantsign.zram_config role nameFull change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.21.1-release/",
+        "teaser":null},{
+        "title": "Version 1.22.0 released",
+        "excerpt":"Release highlights   #358:Updated Molecule to 2.17.0  #355:Fixed Postman icon (the location had changed)Full change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.22.0-release/",
         "teaser":null},]
