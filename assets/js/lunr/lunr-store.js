@@ -25,7 +25,7 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/docs/configuration/",
         "teaser":null},{
         "title": "Features",
-        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier. For everybody Compressed RAM File synchronization For command line users Terminator CDPATH Oh-my-zsh HTTPie The Silver Searcher Tree Jq htop Glances...","categories": [],
+        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier. For everybody Compressed RAM File synchronization For command line users Terminator CDPATH Oh My Zsh HTTPie The Silver Searcher Tree Jq...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/features/",
         "teaser":null},{
