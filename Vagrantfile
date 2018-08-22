@@ -28,9 +28,9 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  # Important: use Bento boxes https://atlas.hashicorp.com/bento not the Canonical ones.
+  # Important: use Bento boxes https://app.vagrantup.com/bento not the Canonical ones.
   # Bento boxes are officially-recommended by Vagrant https://www.vagrantup.com/docs/boxes.html
-  config.vm.box = 'bento/ubuntu-16.04'
+  config.vm.box = 'bento/ubuntu-18.04'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -125,7 +125,7 @@ Vagrant.configure(2) do |config|
       'variant' => ''
     },
 
-    'desktop' => 'unity',
+    'dock_position' => 'LEFT',
 
     # Deprecated use intellij.edition instead
     'intellij_edition' => nil,
@@ -312,7 +312,7 @@ SCRIPT
       keyboard_layout: config.user.keyboard.layout,
       keyboard_variant: config.user.keyboard.variant,
 
-      xdesktop_desktop: config.user.desktop,
+      xdesktop_dock_position: config.user.dock_position,
 
       gnome_proxy_mode: gnome_proxy['mode'],
       gnome_proxy_autoconfig_url: gnome_proxy['autoconfig_url'],
@@ -330,8 +330,6 @@ SCRIPT
       gnome_proxy_ftp_port: gnome_proxy['ftp_port'],
       gnome_proxy_socks_host: gnome_proxy['socks_host'],
       gnome_proxy_socks_port: gnome_proxy['socks_port'],
-
-      pin_to_launcher: config.user.desktop == 'xfce4' ? 'dockbarx' : config.user.desktop,
 
       intellij_edition: config.user.intellij_edition.nil? ? config.user.intellij.edition : config.user.intellij_edition,
 
