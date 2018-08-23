@@ -235,30 +235,23 @@ disk I/O, network I/O and warnings/alerts.
 ### Pre-pinned applications
 
 No more fishing through menus to run the applications you use the most. The
-provisioning script pre-pins selected applications to the launcher so they're
+provisioning script pre-pins selected applications to the dock so they're
 ready to use.
 
 ![Pre-pinned applications]({{ base_path }}/images/pin-to-launcher.png)
 
-### Choice of desktops
+### Choice of dock position
 
-This development environment offers the choice between
-[Ubuntu Unity](https://en.wikipedia.org/wiki/Unity_(Ubuntu)) and
-[Xfce](http://www.xfce.org) desktops.
-
-Unity is the default desktop on Ubuntu and will be familiar to many Linux users.
-
-Using the [Xubuntu](https://xubuntu.org) install of Xfce4 and
-[DockbarX](https://github.com/M7S/dockbarx) enables a more traditional
-desktop experience than Unity.
+Each user can choose whether they want the dock bar on the left, right or bottom
+of the screen.
 
 {% capture fig_img %}
-![Desktop choice]({{ base_path }}/images/desktop-choice.png)
+![Dock position]({{ base_path }}/images/dock-position.png)
 {% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+  <figcaption>Examples of left and bottom dock positions</figcaption>
 </figure>
 
 ### Seahorse
