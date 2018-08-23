@@ -207,26 +207,26 @@ keyboard:
   variant: ''
 ```
 
-### Desktop choice
+### Dock position
 
-Each user can choose between the
-[Ubuntu Unity](https://en.wikipedia.org/wiki/Unity_(Ubuntu)) desktop or the
-[Xfce](http://www.xfce.org) desktop.
+Each user can choose whether they want the dock bar on the left, right or bottom
+of the screen.
 
 {% capture fig_img %}
-![Desktop choice]({{ base_path }}/images/desktop-choice.png)
+![Dock position]({{ base_path }}/images/dock-position.png)
 {% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+  <figcaption>Examples of left and bottom dock positions</figcaption>
 </figure>
 
-The default is the Ubuntu Unity desktop but you can select the Xfce desktop by
-adding the following to your `.vagrantuser` file:
+The default position for the dockbar is `LEFT` but you can change the position
+by specifying `BOTTOM` or `RIGHT` in your `.vagrantuser` file before
+provisioning your development environment e.g.:
 
 ```yaml
-desktop: xfce4
+dock_position: BOTTOM
 ```
 
 ### VirtualBox configuration
