@@ -191,9 +191,9 @@
       audio_users:
         - vagrant
 
-    # Install Xfce desktop
+    # Install Gnome desktop
     - role: gantsign.xdesktop
-      xdesktop_desktop: unity
+      xdesktop_desktop: gnome
       tags:
         - gui
 
@@ -400,26 +400,15 @@
     - role: gantsign.pin-to-launcher
       tags:
         - gui
-      pin_to_launcher: unity
+      pin_to_launcher: gnome
       pin_to_launcher_favorites:
-        - application: ubiquity.desktop
-          when_desktop: unity
         - application: terminator.desktop
         - application: org.gnome.Nautilus.desktop
-          when_desktop: unity
-        - application: Thunar.desktop
         - application: google-chrome.desktop
         - application: Postman.desktop
         - application: atom.desktop
         - application: code.desktop
         - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"
-        - application: ubuntu-software-center.desktop
-          when_desktop: unity
-        - application: unity-control-center.desktop
-          when_desktop: unity
-        - unity: running-apps
-        - unity: expo-icon
-        - unity: devices
 
     # Configure general environment variables
     - role: weareinteractive.environment

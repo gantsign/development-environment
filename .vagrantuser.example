@@ -31,7 +31,7 @@
 #   http: 'http://example.com:3128/'
 
 # Uncomment (and configure) the section below to use proxy auto configuration
-# for the Gnome / Ubuntu Unity desktop.
+# for the Gnome desktop.
 # gnome_proxy:
 #   mode: auto
 #   autoconfig_url: 'http://example.com/proxy.pac'
@@ -80,8 +80,8 @@
 #   audio: dsound
 #   audiocontroller: ac97
 
-# Uncomment the line below if you prefer the xfce4 desktop
-# desktop: xfce4
+# Uncomment the line below if you prefer a different dock positon (LEFT, RIGHT, BOTTOM)
+# dock_position: BOTTOM
 
 intellij:
 # Uncomment the line below to install IntelliJ IDEA Ultimate rather than Community
