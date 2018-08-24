@@ -37,6 +37,8 @@
   version: '1.1.0'
 - src: gantsign.golang
   version: '1.4.1'
+- src: gantsign.helm
+  version: '1.0.0'
 - src: gantsign.hub
   version: '1.0.0'
 - src: gantsign.inotify
