@@ -313,6 +313,38 @@ Note: because we're already running inside a VM we're running Minikube with
 `--vm-driver=none` using a Zsh
 [plugin](https://github.com/gantsign/zsh-plugins/tree/master/minikube-none).
 
+### Helm
+
+Website: [https://helm.sh](https://helm.sh)
+
+Helm is a package manager for Kubernetes. It makes it easier to use software
+built for Kubernetes.
+
+Give it a try by running the following from the terminal:
+
+```bash
+# Start Minikube (if you haven't already)
+minikube start
+
+# Initialize helm (if you haven't already)
+helm init
+
+# Wait for tiller to be ready
+# You can watch the tiller status be ready (1/1) by running:
+kubectl get pods -w --namespace kube-system
+# terminate with ctrl-c
+
+# Install Apache Tomcat
+helm install stable/tomcat
+
+# helm will give the service a name <something>-tomcat
+# you can access the tomcat by running:
+http "$(minikube service --url <something>-tomcat)"
+# You'll get a HTTP 404 response (we haven't provided a
+# webarchive), but you'll see it's come from a
+# `Apache-Coyote` server.
+```
+
 ### Visual Studio Code
 
 Website: [https://code.visualstudio.com](https://code.visualstudio.com)
