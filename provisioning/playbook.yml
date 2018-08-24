@@ -136,6 +136,12 @@
         - docker
       kubernetes_node_type: admin
 
+    # Install Minikube
+    - role: gantsign.minikube
+      tags:
+        - kubernetes
+        - docker
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:
@@ -477,6 +483,12 @@
             - name: kubeadm
               url: gantsign/zsh-plugins
               location: kubeadm
+            - name: minikube
+            # bundles are loaded by name alpabetically
+            # and minikube-none must be loaded after minikube
+            - name: z-minikube-none
+              url: gantsign/zsh-plugins
+              location: minikube-none
 
     - role: gantsign.antigen_bundles
       tags:
