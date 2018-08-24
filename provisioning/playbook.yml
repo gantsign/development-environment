@@ -474,6 +474,9 @@
         - username: vagrant
           antigen_bundles:
             - name: kubectl
+            - name: kubeadm
+              url: gantsign/zsh-plugins
+              location: kubeadm
 
     - role: gantsign.antigen_bundles
       tags:
