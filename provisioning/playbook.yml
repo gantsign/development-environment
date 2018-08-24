@@ -142,6 +142,12 @@
         - kubernetes
         - docker
 
+    # Install Helm
+    - role: gantsign.helm
+      tags:
+        - kubernetes
+        - docker
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:
@@ -489,6 +495,7 @@
             - name: z-minikube-none
               url: gantsign/zsh-plugins
               location: minikube-none
+            - name: helm
 
     - role: gantsign.antigen_bundles
       tags:
