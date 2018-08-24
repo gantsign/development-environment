@@ -295,6 +295,24 @@ Kubernetes provides a layer of abstraction from the underlying infrastructure,
 so its just as easy to run your application locally as it is to deploy the
 application to a cluster of nodes in the cloud.
 
+### Minikube
+
+Website: [https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube)
+
+Minikube makes it easy to run a single node Kubernetes cluster in the
+development environment.
+
+Give it a try by running the following from the terminal:
+
+```bash
+minikube start
+minikube dashboard
+```
+
+Note: because we're already running inside a VM we're running Minikube with
+`--vm-driver=none` using a Zsh
+[plugin](https://github.com/gantsign/zsh-plugins/tree/master/minikube-none).
+
 ### Visual Studio Code
 
 Website: [https://code.visualstudio.com](https://code.visualstudio.com)
