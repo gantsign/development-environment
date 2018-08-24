@@ -38,6 +38,7 @@ environment that you can fork to add your project specific configuration.
 * Oh My Zsh
 * Docker
 * Kubernetes
+* Minikube
 * Visual Studio Code
 * Git-GUI and Gitk
 * Postman
