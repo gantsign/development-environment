@@ -39,6 +39,7 @@ environment that you can fork to add your project specific configuration.
 * Docker
 * Kubernetes
 * Minikube
+* Helm
 * Visual Studio Code
 * Git-GUI and Gitk
 * Postman
