@@ -54,6 +54,8 @@
   version: '5.1.0'
 - src: gantsign.maven-notifier
   version: '2.5.0'
+- src: gantsign.minikube
+  version: '1.0.0'
 - src: gantsign.molecule
   version: '4.4.0'
 - src: gantsign.postman
