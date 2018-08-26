@@ -279,6 +279,16 @@ installation; all of that is provided in the Docker image, you just use it.
 It's also easy to build your own Docker images so you can get the same benefits
 with your own software.
 
+### ctop
+
+Website: [https://ctop.sh](https://ctop.sh)
+
+`ctop` is the terminal based tool that provides a `top` like interface for
+container metrics. View CPU, memory, network I/O, and disk I/O for your
+Docker containers at a glance from your terminal.
+
+![ctop in terminal window]({{ base_path }}/images/ctop.png)
+
 ### Kubernetes
 
 Website: [http://kubernetes.io](http://kubernetes.io)
