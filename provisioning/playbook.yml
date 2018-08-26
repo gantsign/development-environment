@@ -129,6 +129,11 @@
       docker_group_members:
         - vagrant
 
+    # Install ctop
+    - role: gantsign.ctop
+      tags:
+        - docker
+
     # Install Kubernetes
     - role: gantsign.kubernetes
       tags:
@@ -476,6 +481,9 @@
         - username: vagrant
           antigen_bundles:
             - name: docker
+            - name: ctop
+              url: gantsign/zsh-plugins
+              location: ctop
 
     - role: gantsign.antigen_bundles
       tags:
