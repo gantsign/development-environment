@@ -283,17 +283,17 @@ with your own software.
 
 Website: [http://kubernetes.io](http://kubernetes.io)
 
-Kubernetes is the leading solution for managing containerized applications.
+Kubernetes is the leading solution for managing containerized applications
+in production.
 
-When you have a microservice application it quickly becomes impractical to
-manually spin up and maintain all the different services. With Kubernetes you
-create a deployment descriptor describing all the parts of your application
-(microservices, databases, message buses, etc.), then Kubernetes can deal with
-the low level details of running it.
+Docker is great for running containerized applications locally, but you need
+something more to manage containerized applications across multiple servers.
+There's [Docker Swarm](https://docs.docker.com/engine/swarm/) and
+[Apache Mesos](http://mesos.apache.org) but the most popular solution is
+Kubernetes.
 
-Kubernetes provides a layer of abstraction from the underlying infrastructure,
-so its just as easy to run your application locally as it is to deploy the
-application to a cluster of nodes in the cloud.
+Kubernetes allows you to deploy services to a cluster of servers, to manage
+configuration, configure networking, perform rolling updates and much more.
 
 ### Minikube
 
