@@ -83,6 +83,13 @@
 # Uncomment the line below if you prefer a different dock positon (LEFT, RIGHT, BOTTOM)
 # dock_position: BOTTOM
 
+# Uncomment and edit the setion below to set your Git user name and email:
+# git_user:
+#   name: Example Name
+#   email: address@example.com
+#   # Uncomment the line below to overwrite your current git user name and email
+#   force: yes
+
 intellij:
 # Uncomment the line below to install IntelliJ IDEA Ultimate rather than Community
 #   edition: ultimate
