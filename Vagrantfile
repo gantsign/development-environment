@@ -127,6 +127,12 @@ Vagrant.configure(2) do |config|
 
     'dock_position' => 'LEFT',
 
+    'git_user' => {
+      'name' => nil,
+      'email' => nil,
+      'force' => false
+    },
+
     # Deprecated use intellij.edition instead
     'intellij_edition' => nil,
 
@@ -330,6 +336,10 @@ SCRIPT
       gnome_proxy_ftp_port: gnome_proxy['ftp_port'],
       gnome_proxy_socks_host: gnome_proxy['socks_host'],
       gnome_proxy_socks_port: gnome_proxy['socks_port'],
+
+      git_user_name: config.user.git_user.name,
+      git_user_email: config.user.git_user.email,
+      git_user_force: config.user.git_user.force,
 
       intellij_edition: config.user.intellij_edition.nil? ? config.user.intellij.edition : config.user.intellij_edition,
 
