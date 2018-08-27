@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2018-08-19T21:03:36+01:00
+modified: 2018-08-26T22:55:37+01:00
 ---
 
 {% include base_path %}
@@ -205,6 +205,20 @@ keyboard:
   model: pc105
   layout: gb
   variant: ''
+```
+
+### Git user name and email address
+
+You can set your Git user name and email address manually (after provisioning)
+using `git config --global ...` and it will be retained between rebuilds.
+However if you want to set it once, and have it be the default for all new VMs,
+you can add the following to your `~/.vagrantuser` file (before provisioning).
+
+
+```yaml
+git_user:
+  name: Example Name
+  email: address@example.com
 ```
 
 ### Dock position
