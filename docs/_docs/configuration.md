@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2018-08-26T22:55:37+01:00
+modified: 2018-08-27T08:40:31+01:00
 ---
 
 {% include base_path %}
@@ -39,13 +39,13 @@ The Nugrant configuration file is located in the following two locations:
 Note: changes only take effect when the development environment is next
 rebuilt/provisioned.
 
-### Proxy Configuration
+### Proxy configuration
 
 If you're behind a firewall and need to access the web through a HTTP proxy
 there's a little extra config you need to do; if you have direct internet access
 you can skip this section.
 
-#### Common Proxy Config
+#### Common proxy config
 
 This configuration will apply to most command line tools and GUI applications.
 This can be set by adding the following to the `.vagrantuser` file (replace the
@@ -60,7 +60,7 @@ proxy:
   no_proxy: 'localhost,127.0.0.1'
 ```
 
-#### APT Proxy Override
+#### APT proxy override
 
 If you need to use a different proxy for the APT package manager, this can be
 set by adding the following to the `.vagrantuser` file (replace the proxy host
@@ -73,7 +73,7 @@ apt_proxy:
   ftp: 'http://proxy.example.com:3128/'
 ```
 
-#### Git Proxy Override
+#### Git proxy override
 
 If you need to use a different proxy for the Git version control system, this
 can be set by adding the following to the `.vagrantuser` file (replace the proxy
@@ -84,7 +84,7 @@ git_proxy:
   http: 'http://proxy.example.com:3128/'
 ```
 
-#### Gnome Proxy Override
+#### Gnome proxy override
 
 If you need to use a different proxy for Gnome applications, or just want to
 take advantage of more advanced proxy options for Gnome applications, you can
