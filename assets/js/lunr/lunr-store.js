@@ -203,4 +203,9 @@ var store = [{
         "excerpt":"Release highlights   #358:Updated Molecule to 2.17.0  #355:Fixed Postman icon (the location had changed)Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.22.0-release/",
+        "teaser":null},{
+        "title": "Version 1.23.0 released",
+        "excerpt":"Release highlights   #368:Updated Go lang to 1.11Full change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.23.0-release/",
         "teaser":null},]
