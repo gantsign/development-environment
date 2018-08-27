@@ -35,6 +35,8 @@
   version: '3.1.0'
 - src: gantsign.git_credential_manager
   version: '1.0.0'
+- src: gantsign.git_user
+  version: '1.0.0'
 - src: gantsign.gnome-proxy
   version: '1.1.0'
 - src: gantsign.golang
