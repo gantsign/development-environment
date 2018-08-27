@@ -117,6 +117,14 @@
       tags:
         - git-credential-manager
 
+    # Configure Git user name and email
+    - role: gantsign.git_user
+      users:
+        - username: vagrant
+          git_user_name: '{{ git_user_name | default(None) }}'
+          git_user_email: '{{ git_user_email | default(None) }}'
+          git_user_force: '{{ git_user_force | default(False) }}'
+
     # Install Hub (GitHub wrapper for Git)
     - role: gantsign.hub
       tags:
