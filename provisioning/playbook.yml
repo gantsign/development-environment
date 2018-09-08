@@ -112,11 +112,6 @@
           release-notes: >
             "!git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -"
 
-    # Install Credential Manager for Git
-    - role: gantsign.git_credential_manager
-      tags:
-        - git-credential-manager
-
     # Configure Git user name and email
     - role: gantsign.git_user
       users:
@@ -231,6 +226,12 @@
     - role: gantsign.gnome-proxy
       tags:
         - proxy
+        - gui
+
+    # Install Credential Manager for Git
+    - role: gantsign.git_credential_manager
+      tags:
+        - git-credential-manager
         - gui
 
     # Install Terminator terminal emulator
