@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-08-19T22:16:32+01:00
+modified: 2018-09-10T08:37:52+01:00
 ---
 
 {% include base_path %}
@@ -353,6 +353,38 @@ http "$(minikube service --url <something>-tomcat)"
 # You'll get a HTTP 404 response (we haven't provided a
 # webarchive), but you'll see it's come from a
 # `Apache-Coyote` server.
+```
+
+### Kompose
+
+Website: [http://kompose.io](http://kompose.io)
+
+Kompose is a conversion tool to go from Docker Compose to Kubernetes.
+
+Give it a try by running the following from the terminal:
+
+```bash
+# Start Minikube (if you haven't already)
+minikube start
+
+# cd into a docker-compose project
+# or use wget to download the following example compose file
+wget https://raw.githubusercontent.com/kubernetes/kompose/master/examples/docker-compose-v3.yaml \
+  -O docker-compose.yaml
+
+# Bring up your services
+kompose up
+
+# Watch your services load
+kubectl get pods -w
+# terminate with ctrl-c
+
+# Once you're done shutdown the services
+kompose down
+
+# Once you're done with the Minikube instance
+minikube stop
+minikube delete
 ```
 
 ### Visual Studio Code
