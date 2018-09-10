@@ -52,6 +52,8 @@
   version: '6.1.0'
 - src: gantsign.keyboard
   version: '1.4.0'
+- src: gantsign.kompose
+  version: '1.0.0'
 - src: gantsign.kubernetes
   version: '3.0.0'
 - src: gantsign.lightdm
