@@ -156,6 +156,12 @@
         - kubernetes
         - docker
 
+    # Install Kompose
+    - role: gantsign.kompose
+      tags:
+        - kubernetes
+        - docker
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:
@@ -513,6 +519,9 @@
               url: gantsign/zsh-plugins
               location: minikube-none
             - name: helm
+            - name: kompose
+              url: gantsign/zsh-plugins
+              location: kompose
 
     - role: gantsign.antigen_bundles
       tags:
