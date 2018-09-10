@@ -265,128 +265,6 @@ having to put in your SSH password more than once in the same session.
 
 ## For developers
 
-### Docker
-
-Website: [https://www.docker.com](https://www.docker.com)
-
-Solves the problem of handling dependencies and common configuration between
-development, build, test and production.
-
-When using a Docker image, there's no more worrying if you have the correct
-Java/Ruby/Python version installed, or is the `JAVA_HOME` set to the correct
-installation; all of that is provided in the Docker image, you just use it.
-
-It's also easy to build your own Docker images so you can get the same benefits
-with your own software.
-
-### ctop
-
-Website: [https://ctop.sh](https://ctop.sh)
-
-`ctop` is the terminal based tool that provides a `top` like interface for
-container metrics. View CPU, memory, network I/O, and disk I/O for your
-Docker containers at a glance from your terminal.
-
-![ctop in terminal window]({{ base_path }}/images/ctop.png)
-
-### Kubernetes
-
-Website: [http://kubernetes.io](http://kubernetes.io)
-
-Kubernetes is the leading solution for managing containerized applications
-in production.
-
-Docker is great for running containerized applications locally, but you need
-something more to manage containerized applications across multiple servers.
-There's [Docker Swarm](https://docs.docker.com/engine/swarm/) and
-[Apache Mesos](http://mesos.apache.org) but the most popular solution is
-Kubernetes.
-
-Kubernetes allows you to deploy services to a cluster of servers, to manage
-configuration, configure networking, perform rolling updates and much more.
-
-### Minikube
-
-Website: [https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube)
-
-Minikube makes it easy to run a single node Kubernetes cluster in the
-development environment.
-
-Give it a try by running the following from the terminal:
-
-```bash
-minikube start
-minikube dashboard
-```
-
-Note: because we're already running inside a VM we're running Minikube with
-`--vm-driver=none` using a Zsh
-[plugin](https://github.com/gantsign/zsh-plugins/tree/master/minikube-none).
-
-### Helm
-
-Website: [https://helm.sh](https://helm.sh)
-
-Helm is a package manager for Kubernetes. It makes it easier to use software
-built for Kubernetes.
-
-Give it a try by running the following from the terminal:
-
-```bash
-# Start Minikube (if you haven't already)
-minikube start
-
-# Initialize helm (if you haven't already)
-helm init
-
-# Wait for tiller to be ready
-# You can watch the tiller status be ready (1/1) by running:
-kubectl get pods -w --namespace kube-system
-# terminate with ctrl-c
-
-# Install Apache Tomcat
-helm install stable/tomcat
-
-# helm will give the service a name <something>-tomcat
-# you can access the tomcat by running:
-http "$(minikube service --url <something>-tomcat)"
-# You'll get a HTTP 404 response (we haven't provided a
-# webarchive), but you'll see it's come from a
-# `Apache-Coyote` server.
-```
-
-### Kompose
-
-Website: [http://kompose.io](http://kompose.io)
-
-Kompose is a conversion tool to go from Docker Compose to Kubernetes.
-
-Give it a try by running the following from the terminal:
-
-```bash
-# Start Minikube (if you haven't already)
-minikube start
-
-# cd into a docker-compose project
-# or use wget to download the following example compose file
-wget https://raw.githubusercontent.com/kubernetes/kompose/master/examples/docker-compose-v3.yaml \
-  -O docker-compose.yaml
-
-# Bring up your services
-kompose up
-
-# Watch your services load
-kubectl get pods -w
-# terminate with ctrl-c
-
-# Once you're done shutdown the services
-kompose down
-
-# Once you're done with the Minikube instance
-minikube stop
-minikube delete
-```
-
 ### Visual Studio Code
 
 Website: [https://code.visualstudio.com](https://code.visualstudio.com)
@@ -559,6 +437,130 @@ Website: [https://www.getpostman.com](https://www.getpostman.com)
 A user friendly tool for testing REST services.
 
 ![Postman window]({{ base_path }}/images/postman.png)
+
+## For containerized development
+
+### Docker
+
+Website: [https://www.docker.com](https://www.docker.com)
+
+Solves the problem of handling dependencies and common configuration between
+development, build, test and production.
+
+When using a Docker image, there's no more worrying if you have the correct
+Java/Ruby/Python version installed, or is the `JAVA_HOME` set to the correct
+installation; all of that is provided in the Docker image, you just use it.
+
+It's also easy to build your own Docker images so you can get the same benefits
+with your own software.
+
+### ctop
+
+Website: [https://ctop.sh](https://ctop.sh)
+
+`ctop` is the terminal based tool that provides a `top` like interface for
+container metrics. View CPU, memory, network I/O, and disk I/O for your
+Docker containers at a glance from your terminal.
+
+![ctop in terminal window]({{ base_path }}/images/ctop.png)
+
+### Kubernetes
+
+Website: [http://kubernetes.io](http://kubernetes.io)
+
+Kubernetes is the leading solution for managing containerized applications
+in production.
+
+Docker is great for running containerized applications locally, but you need
+something more to manage containerized applications across multiple servers.
+There's [Docker Swarm](https://docs.docker.com/engine/swarm/) and
+[Apache Mesos](http://mesos.apache.org) but the most popular solution is
+Kubernetes.
+
+Kubernetes allows you to deploy services to a cluster of servers, to manage
+configuration, configure networking, perform rolling updates and much more.
+
+### Minikube
+
+Website: [https://github.com/kubernetes/minikube](https://github.com/kubernetes/minikube)
+
+Minikube makes it easy to run a single node Kubernetes cluster in the
+development environment.
+
+Give it a try by running the following from the terminal:
+
+```bash
+minikube start
+minikube dashboard
+```
+
+Note: because we're already running inside a VM we're running Minikube with
+`--vm-driver=none` using a Zsh
+[plugin](https://github.com/gantsign/zsh-plugins/tree/master/minikube-none).
+
+### Helm
+
+Website: [https://helm.sh](https://helm.sh)
+
+Helm is a package manager for Kubernetes. It makes it easier to use software
+built for Kubernetes.
+
+Give it a try by running the following from the terminal:
+
+```bash
+# Start Minikube (if you haven't already)
+minikube start
+
+# Initialize helm (if you haven't already)
+helm init
+
+# Wait for tiller to be ready
+# You can watch the tiller status be ready (1/1) by running:
+kubectl get pods -w --namespace kube-system
+# terminate with ctrl-c
+
+# Install Apache Tomcat
+helm install stable/tomcat
+
+# helm will give the service a name <something>-tomcat
+# you can access the tomcat by running:
+http "$(minikube service --url <something>-tomcat)"
+# You'll get a HTTP 404 response (we haven't provided a
+# webarchive), but you'll see it's come from a
+# `Apache-Coyote` server.
+```
+
+### Kompose
+
+Website: [http://kompose.io](http://kompose.io)
+
+Kompose is a conversion tool to go from Docker Compose to Kubernetes.
+
+Give it a try by running the following from the terminal:
+
+```bash
+# Start Minikube (if you haven't already)
+minikube start
+
+# cd into a docker-compose project
+# or use wget to download the following example compose file
+wget https://raw.githubusercontent.com/kubernetes/kompose/master/examples/docker-compose-v3.yaml \
+  -O docker-compose.yaml
+
+# Bring up your services
+kompose up
+
+# Watch your services load
+kubectl get pods -w
+# terminate with ctrl-c
+
+# Once you're done shutdown the services
+kompose down
+
+# Once you're done with the Minikube instance
+minikube stop
+minikube delete
+```
 
 ## For Java developers
 
