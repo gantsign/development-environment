@@ -37,7 +37,7 @@
 - src: gantsign.java
   version: '5.1.0'
 - src: gantsign.keyboard
-  version: '1.3.0'
+  version: '1.4.0'
 - src: gantsign.kubernetes
   version: '2.0.0'
 - src: gantsign.lightdm
