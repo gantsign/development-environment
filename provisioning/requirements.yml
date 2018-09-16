@@ -60,7 +60,7 @@
   name: gantsign.unison
 - src: gantsign.visual-studio-code
 - src: gantsign.visual-studio-code-extensions
-  version: '1.4.0'
+  version: '1.5.0'
 - src: https://github.com/gantsign/ansible-role-xdesktop/archive/3.0.1.tar.gz
   name: gantsign.xdesktop
 - src: gantsign.zram_config
