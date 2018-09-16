@@ -51,7 +51,7 @@
 - src: gantsign.postman
   version: '2.3.0'
 - src: gantsign.oh-my-zsh
-  version: '2.0.1'
+  version: '2.1.0'
 - src: gantsign.pin-to-launcher
   version: '3.0.0'
 - src: gantsign.terminator
