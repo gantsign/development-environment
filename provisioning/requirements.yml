@@ -10,7 +10,7 @@
 - src: cmprescott.chrome
   version: '0.2.4'
 - src: geerlingguy.nodejs
-  version: '4.2.0'
+  version: '4.2.2'
 - src: oefenweb.locales
   version: 'v1.0.21'
 - src: gantsign.apt
