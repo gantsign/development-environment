@@ -24,7 +24,7 @@
 - src: gantsign.audio
   version: '2.0.0'
 - src: gantsign.backup
-  version: '1.0.0'
+  version: '1.0.1'
 - src: https://github.com/gantsign/ansible-role-command-line-tools/archive/2.0.0.tar.gz
   name: gantsign.command-line-tools
 - src: gantsign.ctop
