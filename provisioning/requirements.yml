@@ -73,7 +73,7 @@
 - src: gantsign.pin-to-launcher
   version: '3.0.1'
 - src: gantsign.sdkman
-  version: '1.0.0'
+  version: '1.1.0'
 - src: gantsign.sdkman_init
   version: '1.0.0'
 - src: gantsign.terminator
