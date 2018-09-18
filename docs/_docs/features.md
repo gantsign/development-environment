@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-10T08:37:52+01:00
+modified: 2018-09-18T08:42:51+01:00
 ---
 
 {% include base_path %}
@@ -673,6 +673,14 @@ pre-installed.
 
 [Visual Studio Code](https://code.visualstudio.com/) comes with excellent
 support for Node.js, JavaScript and TypeScript.
+
+## For Python developers
+
+### Python plugin for Visual Studio Code
+
+This development environment comes with Microsoft's excellent Python plugin for
+Visual Studio Code:
+[ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
 
 ## For Go developers
 
