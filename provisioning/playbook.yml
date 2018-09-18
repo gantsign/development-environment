@@ -162,6 +162,13 @@
         - kubernetes
         - docker
 
+    # Install Pyenv
+    - role: gantsign.pyenv
+      tags:
+        - python
+      pyenv_users:
+        - vagrant
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:
@@ -561,6 +568,7 @@
         - username: vagrant
           antigen_bundles:
             - name: pip
+            - name: pyenv
 
     - role: gantsign.antigen_bundles
       tags:
