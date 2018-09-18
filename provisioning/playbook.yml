@@ -280,38 +280,6 @@
         - gui
         - postman
 
-    # Install Atom editor
-    - role: gantsign.atom
-      tags:
-        - gui
-        - atom
-      users:
-        - username: vagrant
-          atom_packages:
-            - editorconfig
-            - minimap
-            - linter
-            - atom-beautify
-            - file-icons
-          atom_config:
-            "*":
-              core:
-                projectHome: "/home/vagrant/workspace"
-              editor:
-                showIndentGuide: true
-                showInvisibles: true
-
-    # Install Go package for Atom
-    - role: gantsign.atom-packages
-      tags:
-        - gui
-        - atom
-        - golang
-      users:
-        - username: vagrant
-          atom_packages:
-            - go-plus
-
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
       tags:
@@ -455,7 +423,6 @@
         - application: org.gnome.Nautilus.desktop
         - application: google-chrome.desktop
         - application: Postman.desktop
-        - application: atom.desktop
         - application: code.desktop
         - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"
 
