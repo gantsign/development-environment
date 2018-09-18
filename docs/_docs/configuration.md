@@ -303,7 +303,6 @@ This can speed up rebuilds and save on disk space.
 ansible:
   skip_tags:
     # Choose from any of the below
-    - atom
     - backup
     - chrome
     - docker

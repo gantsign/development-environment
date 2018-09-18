@@ -28,7 +28,6 @@
         update_cache: no
       with_items:
         - ppa:git-core/ppa
-        - ppa:webupd8team/atom
         - 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
       register: register_repos
 
