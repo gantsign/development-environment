@@ -676,6 +676,14 @@ support for Node.js, JavaScript and TypeScript.
 
 ## For Python developers
 
+### Pyenv version manager
+
+Website: [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
+
+Pyenv lets you install and switch between multiple versions of Python. Other
+tools such as Pipenv use Pyenv when they need a version of Python you don't
+currently have installed.
+
 ### Python plugin for Visual Studio Code
 
 This development environment comes with Microsoft's excellent Python plugin for
