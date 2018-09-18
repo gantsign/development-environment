@@ -47,7 +47,6 @@
 # Uncomment the section below if you want to skip any of the tags in the playbook
 # ansible:
 #   skip_tags:
-#     - atom
 #     - backup
 #     - chrome
 #     - docker
