@@ -420,6 +420,8 @@
           intellij_plugins:
             - CheckStyle-IDEA
             - Lombook Plugin
+            # Save Actions plugin
+            - com.dubreuia
           intellij_license_key_path: '{{ intellij_license_key_path }}'
 
     # Install Go plugin for IntelliJ IDEA IDE
