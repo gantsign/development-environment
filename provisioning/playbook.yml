@@ -169,6 +169,13 @@
       pyenv_users:
         - vagrant
 
+    # Install Pipenv
+    - role: gantsign.pipenv
+      tags:
+        - python
+      pipenv_users:
+        - vagrant
+
     # Install Molecule for testing Ansible roles & playbooks
     - role: gantsign.molecule
       tags:
@@ -569,6 +576,9 @@
           antigen_bundles:
             - name: pip
             - name: pyenv
+            - name: pipenv
+              url: gantsign/zsh-plugins
+              location: pipenv
 
     - role: gantsign.antigen_bundles
       tags:
