@@ -66,6 +66,8 @@
   version: '1.1.0'
 - src: gantsign.molecule
   version: '5.0.0'
+- src: gantsign.pipenv
+  version: '1.0.1'
 - src: gantsign.postman
   version: '2.3.0'
 - src: gantsign.pin-to-launcher
