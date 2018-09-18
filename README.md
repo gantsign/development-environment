@@ -51,6 +51,7 @@ environment that you can fork to add your project specific configuration.
 * Node.js
 * Go language SDK
 * Pyenv
+* Pipenv
 * Molecule
 
 [Learn more about the features](https://gantsign.github.io/development-environment/docs/features)
