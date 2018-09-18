@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-18T08:42:51+01:00
+modified: 2018-09-18T10:18:24+01:00
 ---
 
 {% include base_path %}
@@ -684,11 +684,32 @@ Pyenv lets you install and switch between multiple versions of Python. Other
 tools such as Pipenv use Pyenv when they need a version of Python you don't
 currently have installed.
 
+### Pipenv package manager
+
+Website: [https://docs.pipenv.org](https://docs.pipenv.org)
+
+Pipenv helps you manage a virtualenv for your projects as well as managing
+your packages. It will add/remove packages from your `Pipfile` as you
+install/uninstall packages. It also generates the `Pipfile.lock` for
+deterministic builds.
+
 ### Python plugin for Visual Studio Code
 
 This development environment comes with Microsoft's excellent Python plugin for
 Visual Studio Code:
 [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+
+**Tip:** launch Visual Studio Code from your Pipenv shell. This will give Visual
+Studio Code access to your virtualenv and let it install packages e.g. `pylint`,
+`autopep8` and `rope` without needing sudo.
+
+To launch Visual Studio Code from your Pipenv shell run the following commands:
+
+```bash
+cd your-python-project
+pipenv shell
+code .
+```
 
 ## For Go developers
 
