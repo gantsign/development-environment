@@ -422,6 +422,7 @@
             - Lombook Plugin
             # Save Actions plugin
             - com.dubreuia
+            - LogSupport2
           intellij_license_key_path: '{{ intellij_license_key_path }}'
 
     # Install Go plugin for IntelliJ IDEA IDE
