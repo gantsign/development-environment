@@ -284,22 +284,6 @@ branches.
 
 ![Visual Studio Code editor window]({{ base_path }}/images/visual-studio-code.png)
 
-### Atom
-
-Website: [https://atom.io](https://atom.io)
-
-A powerful and highly customizable text editor from GitHub.
-
-Pioneered a new approach of building cross platform GUI applications using
-Node.js and Chromium.
-
-While they share the same foundations (i.e.
-[http://electron.atom.io](http://electron.atom.io)), Atom is generally less
-polished than Visual Studio Code. That said, Atom came first and has more
-plugins to choose from.
-
-![Atom editor window]({{ base_path }}/images/atom.png)
-
 ### EditorConfig
 
 Website: [http://editorconfig.org](http://editorconfig.org)
@@ -311,9 +295,9 @@ The EditorConfig configuration file defines the basic editor preferences for
 particular files and file types (e.g. charset, line endings, indent, trailing
 whitespace).
 
-This development environment installs the EditorConfig plugins for Visual
-Studio Code and Atom as part of the provisioning; IntelliJ IDEA supports
-EditorConfig without the need for a plugin.
+This development environment installs the EditorConfig plugin for Visual
+Studio Code as part of the provisioning; IntelliJ IDEA supports EditorConfig
+without the need for a plugin.
 
 For an example of an `.editorconfig` file see the root directory of this
 project.
@@ -730,7 +714,6 @@ This development environment comes with Go language
 
 * [IntelliJ IDEA (Ultimate Edition only)](https://plugins.jetbrains.com/plugin/9568-go)
 * [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
-* [Atom](https://atom.io/packages/go-plus)
 
 ## For Ansible developers
 
