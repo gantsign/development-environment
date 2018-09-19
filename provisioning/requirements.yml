@@ -60,8 +60,6 @@
   version: '2.5.0'
 - src: gantsign.minikube
   version: '1.1.0'
-- src: gantsign.molecule
-  version: '4.4.0'
 - src: gantsign.pipenv
   version: '1.0.1'
 - src: gantsign.postman
