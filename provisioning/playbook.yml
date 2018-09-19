@@ -176,12 +176,6 @@
       pipenv_users:
         - vagrant
 
-    # Install Molecule for testing Ansible roles & playbooks
-    - role: gantsign.molecule
-      tags:
-        - docker
-        - molecule
-
     # Install Java JDK 8
     - role: gantsign.java
       tags:
@@ -465,6 +459,9 @@
             - name: git
             - name: httpie
             - name: sudo
+            - name: moleculew
+              url: gantsign/molecule-wrapper
+              location: zsh
             - name: zsh-autosuggestions
               url: zsh-users/zsh-autosuggestions
             # bundles are loaded by name alpabetically
