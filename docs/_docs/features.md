@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-18T10:18:24+01:00
+modified: 2018-09-18T18:07:24+01:00
 ---
 
 {% include base_path %}
@@ -717,16 +717,20 @@ This development environment comes with Go language
 
 ## For Ansible developers
 
-### Molecule
+### Molecule Wrapper Zsh support
 
-Website: [http://molecule.readthedocs.io](http://molecule.readthedocs.io)
+Website: [https://github.com/gantsign/molecule-wrapper](https://github.com/gantsign/molecule-wrapper)
 
-Molecule is an excellent tool to assist you in developing and testing Ansible
-Roles and Playbooks.
+[Molecule](http://molecule.readthedocs.io) is an excellent tool to assist you in
+developing and testing Ansible Roles and Playbooks.
 
 Molecule integrates with Docker to provide an isolated environment to try your
 provisioning and uses [Testinfa](http://testinfra.readthedocs.io/) to test the
 results.
 
-As well as running it locally, it's easy to run Molecule as part of your CI
-build to ensure your code is sound before merging.
+Molecule can be tricky to install and that's where Molecule Wrapper comes in.
+Molecule Wrapper is a shell script that installs Molecule (and its dependencies)
+before invoking Molecule.
+
+The Zsh support for Molecule Wrapper adds an alias so you can run `./moleculew`
+with the `molecule` command and enables tab-completion support.
