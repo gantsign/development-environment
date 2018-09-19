@@ -377,8 +377,10 @@
             - PerforceDirectPlugin
           intellij_codestyles:
             - name: GantSign
-              url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/1.0.0/GantSign.xml'
-          intellij_active_codestyle: GantSign
+              url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/2.0.0/GantSign.xml'
+            - name: GantSign2
+              url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/2.0.0/GantSign2.xml'
+          intellij_active_codestyle: GantSign2
           intellij_plugins:
             - CheckStyle-IDEA
             - Lombook Plugin
