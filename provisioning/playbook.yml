@@ -493,10 +493,7 @@
             - name: kubeadm
               url: gantsign/zsh-plugins
               location: kubeadm
-            - name: minikube
-            # bundles are loaded by name alpabetically
-            # and minikube-none must be loaded after minikube
-            - name: z-minikube-none
+            - name: minikube-none
               url: gantsign/zsh-plugins
               location: minikube-none
             - name: helm
