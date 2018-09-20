@@ -381,6 +381,10 @@
             - name: GantSign2
               url: 'https://raw.githubusercontent.com/gantsign/code-style-intellij/2.0.0/GantSign2.xml'
           intellij_active_codestyle: GantSign2
+          intellij_inspection_profiles:
+            - name: GantSign
+              url: 'https://raw.githubusercontent.com/gantsign/inspection-profile-intellij/1.0.0/GantSign.xml'
+          intellij_default_inspection_profile: GantSign
           intellij_plugins:
             - CheckStyle-IDEA
             - Lombook Plugin
