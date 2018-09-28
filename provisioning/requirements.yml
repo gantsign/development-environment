@@ -28,7 +28,7 @@
 - src: gantsign.default-web-browser
   version: '3.2.0'
 - src: gantsign.git_credential_manager
-  version: '1.2.0'
+  version: '1.2.1'
 - src: gantsign.git_user
   version: '1.1.0'
 - src: gantsign.gnome-proxy
