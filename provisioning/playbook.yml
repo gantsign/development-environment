@@ -321,18 +321,11 @@
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
       tags:
-        - java
         - gui
         - intellij
       intellij_edition: community
       users:
         - username: vagrant
-          intellij_jdks:
-            - name: '1.8'
-              home: "{{ ansible_local.java.general.home }}"
-            - name: '10'
-              home: "{{ ansible_local.java_10.general.home }}"
-          intellij_default_jdk: '1.8'
           intellij_disabled_plugins:
             - CVS
             - com.intellij.uiDesigner
@@ -384,17 +377,41 @@
               url: 'https://raw.githubusercontent.com/gantsign/inspection-profile-intellij/1.0.0/GantSign.xml'
           intellij_default_inspection_profile: GantSign
           intellij_plugins:
-            - CheckStyle-IDEA
-            - Lombook Plugin
             # Save Actions plugin
             - com.dubreuia
-            - LogSupport2
           intellij_license_key_path: '{{ intellij_license_key_path }}'
+
+    # Configure JDKs in IntelliJ IDEA IDE
+    - role: gantsign.intellij_jdks
+      tags:
+        - java
+        - gui
+        - intellij
+      users:
+        - username: vagrant
+          intellij_jdks:
+            - name: '1.8'
+              home: "{{ ansible_local.java.general.home }}"
+            - name: '10'
+              home: "{{ ansible_local.java_10.general.home }}"
+          intellij_jdks_default: '1.8'
+
+    # Install Java related plugins for IntelliJ IDEA IDE
+    - role: gantsign.intellij-plugins
+      tags:
+        - java
+        - gui
+        - intellij
+      users:
+        - username: vagrant
+          intellij_plugins:
+            - CheckStyle-IDEA
+            - Lombook Plugin
+            - LogSupport2
 
     # Install Go plugin for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
       tags:
-        - java
         - gui
         - intellij
         - golang
