@@ -18,7 +18,9 @@ run() {
     while ! netstat -tna | grep 'LISTEN\>' | grep -q ':4000\>'; do
         sleep 1
     done
-    htmlproofer /tmp/_site --log-level debug --url-swap "^/development-environment:"
+    htmlproofer /tmp/_site --log-level debug \
+        --url-swap "^/development-environment:" \
+        --url-ignore 'http://www.xfce.org'
 }
 
 docker_build() {
