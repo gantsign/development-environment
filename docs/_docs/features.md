@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-18T18:07:24+01:00
+modified: 2018-09-28T12:45:23+01:00
 ---
 
 {% include base_path %}
@@ -264,6 +264,25 @@ having to put in your SSH password more than once in the same session.
 ![Seahorse]({{ base_path }}/images/seahorse.png)
 
 ## For developers
+
+### IntelliJ IDEA IDE
+
+Website: [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)
+
+In my opinion IntelliJ IDEA is the best IDE whether you're working in Java,
+Python, Node.js or Go (Node.js and Go support requires IntelliJ IDEA Ultimate
+Edition).
+
+The Community Edition is excellent at what it does but it's quite limited in
+support for languages and frameworks. You need to pay for the
+[Ultimate Edition](https://www.jetbrains.com/idea/features/editions_comparison_matrix.html)
+if you want support for common tools/frameworks such as JavaEE and the Spring
+Framework. The relatively small price for the Ultimate Edition is well worth the
+money.
+
+By default the Community Edition is installed.
+
+![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
 
 ### Visual Studio Code
 
@@ -570,23 +589,14 @@ you know when the build is complete.
 
 ![Maven Notifier popup]({{ base_path }}/images/maven-notifier.png)
 
-### IntelliJ IDEA IDE
+### IntelliJ IDEA Plugins
 
-Website: [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)
-
-In my opinion IntelliJ IDEA is the best Java IDE available.
-
-While the Community Edition is excellent at what it does, you need to pay for
-the Ultimate Edition if you want support for common tools/frameworks such as
-JavaEE and the Spring Framework; the relatively small price for the Ultimate
-Edition is well worth the money.
-
-By default the Community Edition is installed.
-
-The IDE is pre-configured so new projects will use the Oracle JDK and Maven
-installation.
-
-![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
+* [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea)
+  for checking the code style of your Java source files.
+* [Lombok](https://plugins.jetbrains.com/plugin/6317-lombok-plugin) to cut down
+  boilerplate in your Java source code.
+* [LogSupport2](https://plugins.jetbrains.com/plugin/9417-log-support-2) to
+  encourage logging best practice.
 
 ### SDKMAN!
 
