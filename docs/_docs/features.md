@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-28T12:45:23+01:00
+modified: 2018-09-29T08:36:31+01:00
 ---
 
 {% include base_path %}
@@ -210,6 +210,22 @@ print JSON in colour, but `jq` is amazing at manipulating JSON as well.
 ![Jq output]({{ base_path }}/images/jq.png)
 
 Tip: to pretty print a JSON file run `jq '.' PATH_TO_JSON_FILE`.
+
+### fd
+
+Website: [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
+
+`fd` is a simple, fast and user-friendly alternative to `find`.
+
+It's much better for the most common use-case (i.e. finding files/directories by
+name) e.g:
+
+![fd]({{ base_path }}/images/fd.png)
+
+This is obviously easier than `find -iname '*molecule*'`.
+
+`fd` is still capable of handling more advanced use-cases as well, e.g. you can
+specify the type of file or a command to execute.
 
 ### htop
 

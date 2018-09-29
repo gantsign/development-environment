@@ -87,6 +87,9 @@
     # Install common command line tools
     - gantsign.command-line-tools
 
+    # Intuative alternative to find
+    - role: gantsign.fd
+
     # Install and configure Git version control
     - role: franklinkim.git
       git_config:
@@ -480,6 +483,9 @@
             - name: git
             - name: httpie
             - name: sudo
+            - name: fd
+              url: gantsign/zsh-plugins
+              location: fd
             - name: moleculew
               url: gantsign/molecule-wrapper
               location: zsh
