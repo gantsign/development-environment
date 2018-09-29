@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-29T08:36:31+01:00
+modified: 2018-09-29T09:12:37+01:00
 ---
 
 {% include base_path %}
@@ -226,6 +226,17 @@ This is obviously easier than `find -iname '*molecule*'`.
 
 `fd` is still capable of handling more advanced use-cases as well, e.g. you can
 specify the type of file or a command to execute.
+
+### bat
+
+Website: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat)
+
+`bat` is a more advanced alternative to `cat` with support for
+syntax-highlighting, line numbers, searching and paging.
+
+e.g. running `bat ~/.bashrc` will give you:
+
+![fd]({{ base_path }}/images/bat.png)
 
 ### htop
 
