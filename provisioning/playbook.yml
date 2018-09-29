@@ -87,6 +87,9 @@
     # Install common command line tools
     - gantsign.command-line-tools
 
+    # Advanced alternative to cat
+    - role: gantsign.bat
+
     # Intuative alternative to find
     - role: gantsign.fd
 
@@ -483,6 +486,9 @@
             - name: git
             - name: httpie
             - name: sudo
+            - name: bat
+              url: gantsign/zsh-plugins
+              location: bat
             - name: fd
               url: gantsign/zsh-plugins
               location: fd
