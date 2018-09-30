@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-29T09:12:37+01:00
+modified: 2018-09-30T18:28:24+01:00
 ---
 
 {% include base_path %}
@@ -591,6 +591,14 @@ kompose down
 minikube stop
 minikube delete
 ```
+
+### kops
+
+Website: [https://github.com/kubernetes/kops](https://github.com/kubernetes/kops)
+
+Kubernetes operations (`kops`) helps you with production grade K8s installation,
+upgrades, and management. `kops` is the easiest way to get a production grade
+Kubernetes cluster up and running.
 
 ## For Java developers
 
