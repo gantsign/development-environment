@@ -15,7 +15,7 @@
       apt_preserve_cache: yes
 
     # Set system timezone
-    - role: franklinkim.timezone
+    - role: gantsign.timezone
       timezone: Europe/London
 
     # Increase the number of files that can be watched.
