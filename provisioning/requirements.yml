@@ -55,7 +55,7 @@
 - src: gantsign.terminator
   version: '2.0.1'
 - src: gantsign.timezone
-  version: '1.0.0'
+  version: '1.1.0'
 - src: https://github.com/gantsign/ansible-role-unison/archive/1.4.0.tar.gz
   name: gantsign.unison
 - src: gantsign.visual-studio-code
