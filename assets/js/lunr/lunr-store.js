@@ -213,4 +213,9 @@ var store = [{
         "excerpt":"Release highlights   #377:Fixed franklinkim.environment role not found (it has moved toweareinteractive.environment)Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.24.0-release/",
+        "teaser":null},{
+        "title": "Version 1.25.0 released",
+        "excerpt":"Release highlights   #440:Fixed timezone customizationFull change list For a full list of changes view therelease notes. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/1.25.0-release/",
         "teaser":null},]
