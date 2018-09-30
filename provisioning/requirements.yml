@@ -56,6 +56,8 @@
   version: '1.4.0'
 - src: gantsign.kompose
   version: '1.0.1'
+- src: gantsign.kops
+  version: '1.0.0'
 - src: gantsign.kubernetes
   version: '2.0.1'
 - src: gantsign.lightdm

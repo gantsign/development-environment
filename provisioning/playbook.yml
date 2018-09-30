@@ -168,6 +168,12 @@
         - kubernetes
         - docker
 
+    # Install kops
+    - role: gantsign.kops
+      tags:
+        - kubernetes
+        - docker
+
     # Install Pyenv
     - role: gantsign.pyenv
       tags:
@@ -533,6 +539,7 @@
             - name: kompose
               url: gantsign/zsh-plugins
               location: kompose
+            - name: kops
 
     - role: gantsign.antigen_bundles
       tags:
