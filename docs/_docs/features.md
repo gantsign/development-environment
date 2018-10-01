@@ -643,6 +643,12 @@ support for the following JVM languages:
 * Kotlin: based on the
   [Kotlin Style Guide](https://kotlinlang.org/docs/reference/coding-conventions.html)
 
+### IntelliJ inspection profile
+
+The [GantSign Inspection Profile](https://github.com/gantsign/inspection-profile-intellij)
+has support for Java and Kotlin. This is a strict inspection profile intended
+for greenfield code.
+
 ### SDKMAN!
 
 Website: [https://sdkman.io](https://sdkman.io)
