@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-10-01T09:58:27+01:00
+modified: 2018-10-01T14:43:42+01:00
 ---
 
 {% include base_path %}
@@ -760,6 +760,28 @@ To launch Visual Studio Code from your Pipenv shell run the following commands:
 cd your-python-project
 pipenv shell
 code .
+```
+
+### Python plugin for IntelliJ IDEA
+
+Depending whether you're using the IntelliJ IDEA Community Edition or the
+Ultimate Edition a different plugin will be installed. If you're using IntelliJ
+IDEA Community Edition the plugin installed will provide equivalent
+functionality to
+[PyCharm Community Edition](https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html).
+If you're using IntelliJ IDEA Ultimate Edition the plugin installed will provide
+equivalent functionality to [PyCharm Professional Edition](https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html).
+
+**Tip:** launch IntelliJ from your Pipenv shell. This will give IntelliJ access
+to your virtualenv and let it install packages e.g. `pylint`, `autopep8` and
+`rope` without needing sudo.
+
+To launch IntelliJ from your Pipenv shell run the following commands:
+
+```bash
+cd your-python-project
+pipenv shell
+idea .
 ```
 
 ## For Go developers
