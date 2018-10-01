@@ -624,7 +624,7 @@ you know when the build is complete.
 
 ![Maven Notifier popup]({{ base_path }}/images/maven-notifier.png)
 
-### IntelliJ IDEA Plugins
+### IntelliJ IDEA plugins
 
 * [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea)
   for checking the code style of your Java source files.
@@ -708,7 +708,7 @@ pre-installed.
 * [TS Node](https://github.com/TypeStrong/ts-node) CLI TypeScript support
 * [Typings](https://github.com/typings/typings) TypeScript definition manager
 
-### IDE Support
+### IDE support
 
 [Visual Studio Code](https://code.visualstudio.com/) comes with excellent
 support for Node.js, JavaScript and TypeScript.
