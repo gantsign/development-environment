@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-09-30T18:28:24+01:00
+modified: 2018-10-01T09:58:27+01:00
 ---
 
 {% include base_path %}
@@ -633,6 +633,16 @@ you know when the build is complete.
 * [LogSupport2](https://plugins.jetbrains.com/plugin/9417-log-support-2) to
   encourage logging best practice.
 
+### IntelliJ code style
+
+[GantSign Code Style](https://github.com/gantsign/code-style-intellij) has
+support for the following JVM languages:
+
+* Java: based on the
+  [Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)
+* Kotlin: based on the
+  [Kotlin Style Guide](https://kotlinlang.org/docs/reference/coding-conventions.html)
+
 ### SDKMAN!
 
 Website: [https://sdkman.io](https://sdkman.io)
@@ -702,6 +712,12 @@ pre-installed.
 
 [Visual Studio Code](https://code.visualstudio.com/) comes with excellent
 support for Node.js, JavaScript and TypeScript.
+
+### IntelliJ code style
+
+[GantSign Code Style](https://github.com/gantsign/code-style-intellij) has
+support for JavaScript based on
+[JavaScript Standard Style](https://standardjs.com).
 
 ## For Python developers
 
