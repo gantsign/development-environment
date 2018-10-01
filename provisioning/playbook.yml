@@ -4,6 +4,7 @@
 
   vars:
     x_ansible_download_dir: /usr/local/src/ansible/data
+    intellij_edition: community
 
   pre_tasks:
     - name: update apt cache
@@ -335,7 +336,6 @@
       tags:
         - gui
         - intellij
-      intellij_edition: community
       users:
         - username: vagrant
           intellij_disabled_plugins:
@@ -427,6 +427,17 @@
             - CheckStyle-IDEA
             - Lombook Plugin
             - LogSupport2
+
+    # Install Python plugin for IntelliJ IDEA IDE
+    - role: gantsign.intellij-plugins
+      tags:
+        - gui
+        - intellij
+        - python
+      users:
+        - username: vagrant
+          intellij_plugins:
+            - "{{ (intellij_edition == 'community') | ternary('PythonCore', 'Pythonid') }}"
 
     # Install Go plugin for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
