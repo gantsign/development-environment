@@ -347,12 +347,14 @@
             - Subversion
             - AntSupport
             - DevKit
+            - CFML Support
             - ClearcasePlugin
             - CloudBees
             - CloudFoundry
             - Geronimo
             - GlassFish
             - Heroku
+            - J2ME
             - JBoss
             - JSR45Plugin
             - OpenShift
@@ -363,8 +365,12 @@
             - com.intellij.appengine
             - com.intellij.aspectj
             - com.intellij.dmserver
+            - com.intellij.drools
             - com.intellij.flex
             - com.intellij.gwt
+            - com.intellij.javaee.view
+            - com.intellij.jbpm
+            - com.intellij.play
             - com.intellij.seam
             - com.intellij.seam.pageflow
             - com.intellij.seam.pages
@@ -375,6 +381,7 @@
             - org.coffeescript
             - org.intellij.grails
             - org.jetbrains.plugins.haml
+            - org.jetbrains.plugins.javaFX
             - org.jetbrains.plugins.stylus
             - TFS
             - PerforceDirectPlugin
