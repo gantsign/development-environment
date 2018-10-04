@@ -194,14 +194,14 @@
       tags:
         - java
       java_version: 8u181
+      java_is_default_installation: no
+      java_fact_group_name: java_8
 
     # Install Java JDK 11
     - role: gantsign.java
       tags:
         - java
       java_version: 'jdk-11+28'
-      java_is_default_installation: no
-      java_fact_group_name: java_11
 
     # Install Maven
     - role: gantsign.maven
@@ -410,10 +410,10 @@
         - username: vagrant
           intellij_jdks:
             - name: '1.8'
-              home: "{{ ansible_local.java.general.home }}"
+              home: "{{ ansible_local.java_8.general.home }}"
             - name: '11'
-              home: "{{ ansible_local.java_11.general.home }}"
-          intellij_jdks_default: '1.8'
+              home: "{{ ansible_local.java.general.home }}"
+          intellij_jdks_default: '11'
 
     # Install Java related plugins for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
@@ -639,12 +639,12 @@
           sdkman_install:
             - candidate: java
               version: '8'
-              path: '{{ ansible_local.java.general.home }}'
+              path: '{{ ansible_local.java_8.general.home }}'
             - candidate: java
               version: '11'
-              path: '{{ ansible_local.java_11.general.home }}'
+              path: '{{ ansible_local.java.general.home }}'
           sdkman_default:
-            java: '8'
+            java: '11'
 
     - role: gantsign.sdkman_init
       tags:

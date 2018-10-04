@@ -660,13 +660,13 @@ Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.
 To switch Java version in the current shell:
 
 ```bash
-sdk use java 10
+sdk use java 8
 ```
 
 To change the default Java version:
 
 ```bash
-sdk default java 10
+sdk default java 8
 ```
 
 To install Gradle:
