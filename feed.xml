@@ -5,9 +5,35 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Oct 2018 22:16:30 +0100</pubDate>
-    <lastBuildDate>Thu, 04 Oct 2018 22:16:30 +0100</lastBuildDate>
+    <pubDate>Thu, 04 Oct 2018 23:06:42 +0100</pubDate>
+    <lastBuildDate>Thu, 04 Oct 2018 23:06:42 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Version 1.26.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/451&quot;&gt;#451&lt;/a&gt;:
+Replaced Java 10 with Java 11&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.26.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Oct 2018 22:52:52 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/1.26.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.26.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.25.0 released</title>
@@ -244,34 +270,6 @@ Updated Go lang to 1.10.2&lt;/li&gt;
         <pubDate>Thu, 10 May 2018 09:39:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.18.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.18.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.17.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/297&quot;&gt;#297&lt;/a&gt;:
-Upgraded Java 8 to 8u171&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/298&quot;&gt;#298&lt;/a&gt;:
-Upgraded Java 10 to 10.0.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.17.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Apr 2018 23:06:37 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.17.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.17.0-release/</guid>
         
         <category>release</category>
         
