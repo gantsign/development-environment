@@ -314,6 +314,7 @@ ansible:
     - intellij
     - java
     - kubernetes
+    - maven
     - nodejs
     - oh-my-zsh
     - postman
