@@ -491,6 +491,11 @@
         - maven
       environment_config:
         M2_HOME: "{{ ansible_local.maven.general.home }}"
+        # -XX:TieredStopAtLevel=1 disables hotspot profiling and higher tiers of
+        # optimization, which Maven builds are too short lived to benefit from.
+        # -Xverify:none disables class verification; not something you should
+        # ever use in production (or on your CI) but ok for local development.
+        MAVEN_OPTS: '-XX:TieredStopAtLevel=1 -Xverify:none'
 
     # Install Antigen Zsh shell enhancements
     - role: gantsign.antigen
