@@ -4,8 +4,9 @@ permalink: /
 header:
   overlay_color: '#5e616c'
   overlay_image: images/header-laptop.jpg
-  cta_label: "<i class='fa fa-download'></i> Install Now"
-  cta_url: /docs/getting-started
+  actions:
+    - label: "<i class='fas fa-download'></i> Install Now"
+      url: /docs/getting-started
   caption:
 description: >
   GantSign EnV: A development environment for Java, Python, Node.js and Go built
