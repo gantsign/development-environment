@@ -42,9 +42,9 @@ feature_row:
 intro:
   - excerpt: >
       Get notified when new features are added &nbsp;
-      [<i class="fa fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
+      [<i class="fab fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2017-01-18T16:51:42+00:00
-modified: 2017-01-18T16:51:42+00:00
+modified: 2018-10-07T12:34:42+01:00
 ---
 
 <div class="home_news">
