@@ -352,6 +352,75 @@ without the need for a plugin.
 For an example of an `.editorconfig` file see the root directory of this
 project.
 
+### Git aliases
+
+Git aliases save you a lot of typing and make it easy to execute more complex
+Git commands:
+
+* View summary lines for recent commits
+
+    `git ls` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate`
+
+* View summary lines and list changed files for recent commits
+
+    `git ll` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat`
+
+* View summary lines and dates for recent commits
+
+    `git lds` ≡ `git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short`
+
+* View tree of recent commits (all branches)
+
+    `git lt` ≡ `git log --oneline --graph --decorate --all`
+
+* Checkout an existing branch
+
+    `git co` ≡ `git checkout`
+
+* Create a new branch
+
+    `git cb` ≡ `git checkout -b`
+
+* Amend the last commit and change the commit message
+
+    `git ca` ≡ `git commit --amend`
+
+* Amend the last commit without changing the commit message
+
+    `git cane` ≡ `git commit --amend --no-edit`
+
+* Rebase the current branch onto `origin/master`
+
+    `git rom` ≡ `git rebase origin/master`
+
+* Rebase the current branch onto `origin/develop`
+
+    `git rod` ≡ `git rebase origin/develop`
+
+* Push the current branch to `origin HEAD`
+
+    `git po` ≡ `git push origin HEAD`
+
+* Force push the current branch to `origin HEAD`
+
+    `git pof` ≡ `git push origin HEAD --force`
+
+* Switch to the `master` branch pull changes and prune remote branches
+
+    `git cmp` ≡ `git checkout master && git pull -p`
+
+* Switch to the `develop` branch pull changes and prune remote branches
+
+    `git cdp` ≡ `git checkout develop && git pull -p`
+
+* Pop the most recent stash
+
+    `git pop` ≡ `git stash pop`
+
+* Reformat the recent changes as Markdown release notes
+
+    `git release-notes` ≡ `git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -`
+
 ### Git-GUI
 
 Website: [https://git-scm.com/docs/git-gui](https://git-scm.com/docs/git-gui)
