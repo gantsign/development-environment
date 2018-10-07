@@ -8,10 +8,10 @@ header:
   cta_url: /docs/getting-started
   caption:
 description: >
-  GantSign EnV: A development environment for Java, Node.js, Go and Ansible
-  built using Vagrant.
+  GantSign EnV: A development environment for Java, Python, Node.js and Go built
+  using Vagrant.
 excerpt: >
-  A development environment for Java, Node.js, Go and Ansible built using
+  A development environment for Java, Python, Node.js and Go built using
   Vagrant.<br />
   [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 feature_row:
@@ -44,7 +44,7 @@ intro:
       Get notified when new features are added &nbsp;
       [<i class="fab fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2017-01-18T16:51:42+00:00
-modified: 2018-10-07T12:34:42+01:00
+modified: 2018-10-07T12:44:22+01:00
 ---
 
 <div class="home_news">
