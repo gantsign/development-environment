@@ -57,11 +57,23 @@ author:
   avatar: images/logo.png
   bio: Software Consultancy
   location: 'London, UK'
-  email:
-  uri: # http://gantsign.com
-  github: gantsign
-  twitter: *twitter
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/gantsign"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gantsign"
 
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/gantsign"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gantsign"
 
 # Reading Files
 include:
