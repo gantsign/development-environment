@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-10-01T14:43:42+01:00
+modified: 2018-10-07T12:22:35+01:00
 ---
 
 {% include base_path %}
@@ -139,6 +139,10 @@ cat /u/s/a/vim<TAB>
 # Expands to:
 cat /usr/share/applications/vim.desktop
 ```
+
+Tip: tab-completion for command options often only works after you've specified
+the `-`. For example `grep` `TAB` produces no suggestions, but `grep -` `TAB`
+produces 160 suggestions.
 
 ### Antigen
 
