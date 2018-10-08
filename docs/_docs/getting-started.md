@@ -183,6 +183,10 @@ Pick a strong password and don't reuse another password (e.g. don't use your
 Windows password). This password will be used to secure access to saved
 passwords in your browser, SSH key passwords and Git credentials etc.
 
+The password needs to be at least 16 characters long and you cannot repeat the
+same character more than 3 times in a row. Prefer long easy to remember phrases
+over difficult to remember random passwords.
+
 **Important:** you need to complete this procedure before you stop/reload the
 VM.
 
