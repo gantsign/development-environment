@@ -178,9 +178,8 @@ Vagrant.configure(2) do |config|
   config.persistent_storage.mountpoint = '/var/persistent'
   config.persistent_storage.volgroupname = 'persist-vg'
 
-  # Disable auto update of VirtualBox Guest Additions.
-  # Slows down rebuilds without providing any clear benefit.
-  config.vbguest.auto_update = false
+  # Update the VirtualBox Guest Additions
+  config.vbguest.auto_update = true
 
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
