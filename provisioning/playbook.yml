@@ -19,6 +19,12 @@
     - role: gantsign.timezone
       timezone: Europe/London
 
+    # Increase minimum password strength
+    - role: gantsign.pwquality
+      pwquality_minlen: 16
+      pwquality_maxrepeat: 3
+      # See https://github.com/gantsign/ansible_role_pwquality for more options
+
     # Increase the number of files that can be watched.
     # https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
     - role: gantsign.inotify
