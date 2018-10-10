@@ -39,7 +39,7 @@
 - src: gantsign.kubernetes
   version: '3.0.0'
 - src: gantsign.lightdm
-  version: 'v2.3.0'
+  version: 'v3.0.0'
 - src: gantsign.maven
   version: '5.1.0'
 - src: gantsign.maven-notifier
