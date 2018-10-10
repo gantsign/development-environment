@@ -43,7 +43,7 @@
 - src: gantsign.maven
   version: '5.2.0'
 - src: gantsign.maven-notifier
-  version: '2.5.0'
+  version: '2.5.1'
 - src: gantsign.molecule
   version: '4.4.0'
 - src: gantsign.postman
