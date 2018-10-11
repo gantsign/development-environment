@@ -84,13 +84,13 @@ git_proxy:
   http: 'http://proxy.example.com:3128/'
 ```
 
-#### Gnome proxy override
+#### GNOME proxy override
 
-If you need to use a different proxy for Gnome applications, or just want to
-take advantage of more advanced proxy options for Gnome applications, you can
+If you need to use a different proxy for GNOME applications, or just want to
+take advantage of more advanced proxy options for GNOME applications, you can
 follow the documentation below.
 
-Note: the Gnome proxy settings are also used by some other non-gnome
+Note: the GNOME proxy settings are also used by some other non-GNOME
 applications such as the Google Chrome web browser.
 
 ##### Proxy auto-config
@@ -105,7 +105,7 @@ gnome_proxy:
   autoconfig_url: 'http://wpad.example.com/wpad.dat'
 ```
 
-Note: in theory Gnome should be able to auto-discover the value for the
+Note: in theory GNOME should be able to auto-discover the value for the
 `autoconfig_url` using the
 [Web Proxy Auto-Discovery Protocol](https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol);
 in practice auto-discovery is unlikely to work when you're running Linux in a
@@ -114,7 +114,7 @@ have to specify the location manually.
 
 ##### Minimal manual configuration
 
-To manually specify a different proxy for Gnome applications add the following
+To manually specify a different proxy for GNOME applications add the following
 to the `.vagrantuser` file (replace the hosts and ports with the values for your
 network):
 
