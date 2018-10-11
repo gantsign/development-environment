@@ -244,7 +244,7 @@
       audio_users:
         - vagrant
 
-    # Install Gnome desktop
+    # Install GNOME desktop
     - role: gantsign.xdesktop
       xdesktop_desktop: gnome
       tags:
@@ -255,7 +255,7 @@
       tags:
         - gui
 
-    # Configure proxy settings for Gnome applications
+    # Configure proxy settings for GNOME applications
     - role: gantsign.gnome-proxy
       tags:
         - proxy

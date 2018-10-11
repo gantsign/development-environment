@@ -31,7 +31,7 @@
 #   http: 'http://example.com:3128/'
 
 # Uncomment (and configure) the section below to use proxy auto configuration
-# for the Gnome desktop.
+# for the GNOME desktop.
 # gnome_proxy:
 #   mode: auto
 #   autoconfig_url: 'http://example.com/proxy.pac'
