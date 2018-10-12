@@ -5,7 +5,7 @@ description: >
   How to setup the development environment.
 numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2018-10-07T11:55:25+01:00
+modified: 2018-10-12T14:13:26+01:00
 ---
 
 {% include base_path %}
@@ -26,8 +26,7 @@ your local development environment using GantSign EnV.
 Clone the development environment repository.
 
 ```bash
-git clone --branch {{ site.release.version }} \
-    {{ site.release.git_url }}
+git clone {{ site.release.git_url }}
 ```
 
 ## Configuration
@@ -146,32 +145,6 @@ virtual machine from scratch:
 vagrant destroy
 vagrant up
 ```
-
-#### Out of disk space
-
-We cache most of the downloads (so they can be reused for re-provisioning the
-VM). Provisioning multiple times over months will mean the cache will fill with
-multiple versions of the software being installed. Eventually, this leads to out
-of disk space errors during re-provisioning. To resolve these errors you need to
-purge the download cache. To purge the download cache you need to login to the
-VirtualBox VM (username: `vagrant`, password: `vagrant`) and run the following
-commands:
-
-```bash
-rm -rf /var/persistent/usr/local/src/ansible/data/*
-rm -rf /var/persistent/var/cache/apt/archives/*
-```
-
-Now go back to the console where you run Vagrant and run the following to retry
-provisioning:
-
-```bash
-vagrant provision
-```
-
-Be aware purging the download cache will mean all the software will need to be
-downloaded again. So the first time you provision the VM after purging the
-caches will take longer and be more susceptible to HTTP errors.
 
 ## Change your password
 
