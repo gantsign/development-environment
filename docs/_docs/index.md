@@ -17,3 +17,4 @@ modified: 2016-09-02T14:47:02+01:00
 * [Getting started](getting-started)
 * [Configuration](configuration)
 * [User guide](user-guide)
+* [Upgrade](upgrade)
