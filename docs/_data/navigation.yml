@@ -30,3 +30,6 @@ docs:
 
   - title: User guide
     url: /docs/user-guide/
+
+  - title: Upgrade
+    url: /docs/upgrade/
