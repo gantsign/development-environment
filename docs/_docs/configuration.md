@@ -321,6 +321,7 @@ ansible:
     - python
     - sdkman
     - vscode
+    - zsh-autosuggestions
 ```
 
 **Note:** there are dependencies between some of the features e.g. skipping

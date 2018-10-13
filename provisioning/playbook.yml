@@ -530,12 +530,20 @@
             - name: moleculew
               url: gantsign/molecule-wrapper
               location: zsh
-            - name: zsh-autosuggestions
-              url: zsh-users/zsh-autosuggestions
             # bundles are loaded by name alpabetically
             # and zsh-syntax-highlighting must be loaded last
             - name: zzz
               url: zsh-users/zsh-syntax-highlighting
+
+    - role: gantsign.antigen
+      tags:
+        - oh-my-zsh
+        - zsh-autosuggestions
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: zsh-autosuggestions
+              url: zsh-users/zsh-autosuggestions
 
     - role: gantsign.antigen_bundles
       tags:
