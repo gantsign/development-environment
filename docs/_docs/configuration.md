@@ -322,6 +322,7 @@ ansible:
     - sdkman
     - vscode
     - zsh-autosuggestions
+    - zsh-syntax-highlighting
 ```
 
 **Note:** there are dependencies between some of the features e.g. skipping
