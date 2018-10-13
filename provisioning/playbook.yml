@@ -54,7 +54,11 @@
         - /.config/*
         + /.gitconfig
         + /.gnupg
+        + /.local
+        + /.local/share
         + /.local/share/keyrings
+        - /.local/share/*
+        - /.local/*
         + /.m2
         - /.m2/repository
         - /.m2/wrapper
