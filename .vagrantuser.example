@@ -66,6 +66,7 @@
 #     - sdkman
 #     - vscode
 #     - zsh-autosuggestions
+#     - zsh-syntax-highlighting
 
 # Uncomment the section below to change any of the VirtualBox Settings
 # virtualbox:
