@@ -5,7 +5,7 @@ description: >
   How to upgrade your development environment to the latest release.
 numbered_headings: yes
 date: 2018-10-12T13:07:23+01:00
-modified: 2018-10-12T13:07:23+01:00
+modified: 2018-10-14T10:07:43+01:00
 ---
 
 {% include base_path %}
@@ -148,7 +148,8 @@ Once provisioning is complete you need to change your password. Login using the
 username `vagrant` and password `vagrant`. You'll then be prompted to change
 your password. **Important:** change the password to the password you were
 using before you re-provisioned the development environment. This is necessary
-to restore access to all your saved credentials.
+to restore access to all your saved credentials. Once you've changed your
+password you need to logout and log back in (with the new password) for your
+keyring to be unlocked.
 
-**Important:** you need to complete this procedure before you stop/reload the
-VM.
+**Important:** you need to change the password before you stop/reload the VM.
