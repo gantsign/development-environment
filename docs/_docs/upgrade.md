@@ -97,7 +97,8 @@ commands:
 
 ```bash
 rm -rf /var/persistent/usr/local/src/ansible/data/*
-rm -rf /var/persistent/var/cache/apt/archives/*
+# Workaround for /bin/rm: cannot execute [Argument list too long]
+for f in /var/persistent/var/cache/apt/archives/*.deb; do sudo rm -f "$f"; done
 ```
 
 Now go back to the console where you run Vagrant and run the following to retry
