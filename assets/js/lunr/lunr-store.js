@@ -233,4 +233,9 @@ var store = [{
         "excerpt":"Release highlights   #463:Updated Go lang to 1.11.1Full change list For a full list of changes view therelease notes. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/1.27.0-release/",
+        "teaser":null},{
+        "title": "Version 2.0.0 released",
+        "excerpt":"Release highlights Upgraded to Ubuntu Bionic Beaver Ubuntu Bionic Beaver is thelatest LTS release of Ubuntu. The first thing you’ll likely notice is the Gnome desktop has replaced Unityas the standard Ubuntu desktop. We’ve also dropped the option of using the Xfcedesktop for your development environment. While you no longer...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.0.0-release/",
         "teaser":null},]

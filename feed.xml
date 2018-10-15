@@ -5,9 +5,350 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Oct 2018 20:12:29 +0100</pubDate>
-    <lastBuildDate>Mon, 15 Oct 2018 20:12:29 +0100</lastBuildDate>
+    <pubDate>Mon, 15 Oct 2018 21:05:31 +0100</pubDate>
+    <lastBuildDate>Mon, 15 Oct 2018 21:05:31 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.0.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;h3 id=&quot;upgraded-to-ubuntu-bionic-beaver&quot;&gt;Upgraded to Ubuntu Bionic Beaver&lt;/h3&gt;
+
+&lt;p&gt;Ubuntu &lt;a href=&quot;https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes&quot;&gt;Bionic Beaver&lt;/a&gt; is the
+latest LTS release of Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;The first thing you’ll likely notice is the Gnome desktop has replaced Unity
+as the standard Ubuntu desktop. We’ve also dropped the option of using the Xfce
+desktop for your development environment. While you no longer have a choice of
+desktops you can now
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#choice-of-dock-position&quot;&gt;configure the placement&lt;/a&gt;
+of the dock.&lt;/p&gt;
+
+&lt;p&gt;Apart from that you’ll notice newer versions of popular packages, see the
+Ubuntu Bionic Beaver
+&lt;a href=&quot;https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes&quot;&gt;release notes&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;h3 id=&quot;improved-java-support&quot;&gt;Improved Java support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#sdkman&quot;&gt;SDKMAN!&lt;/a&gt; Software Development
+Kit Manager&lt;/li&gt;
+  &lt;li&gt;Java 11 is now the default JDK (Java 8 is still available)
+    &lt;ul&gt;
+      &lt;li&gt;Use SDKMAN! to switch Java versions e.g.
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sdk use java 8&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sdk use java 11&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Added new GantSign
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#intellij-code-style&quot;&gt;code style&lt;/a&gt;
+for IntelliJ IDE&lt;/p&gt;
+
+    &lt;p&gt;Note: while the new GantSign code style is the default, we recommend you
+  add the code style configuration &lt;code class=&quot;highlighter-rouge&quot;&gt;.idea/codeStyles/*&lt;/code&gt; to version control
+  for each of your projects. It’s wise to copy the code style from the IDE to
+  the project so it doesn’t change unintentionally and all developers have the
+  same configuration.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Added GantSign
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#intellij-inspection-profile&quot;&gt;inspection profile&lt;/a&gt;
+for IntelliJ IDEA&lt;/p&gt;
+
+    &lt;p&gt;Note: while the new GantSign inspection profile is the default, we recommend
+  you add the inspection profile configuration &lt;code class=&quot;highlighter-rouge&quot;&gt;.idea/inspectionProfiles/*&lt;/code&gt; to
+  version control for each of your projects. It’s wise to copy the inspection
+  profile from the IDE to the project so it doesn’t change unintentionally and
+  all developers have the same configuration. The GantSign inspection profile
+  is optimized for greenfield projects, for existing projects you may want to
+  use the default IntelliJ inspection profile instead.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added
+&lt;a href=&quot;https://plugins.jetbrains.com/plugin/9417-log-support-2&quot;&gt;LogSupport2 plugin&lt;/a&gt;
+for IntelliJ IDEA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-python-support&quot;&gt;Improved Python support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#pyenv-version-manager&quot;&gt;Pyenv&lt;/a&gt; Python
+version manager&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#pipenv-package-manager&quot;&gt;Pipenv&lt;/a&gt; Python
+package manager with Virtualenv support&lt;/li&gt;
+  &lt;li&gt;Added
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#python-plugin-for-intellij-idea&quot;&gt;Python plugin&lt;/a&gt;
+for IntelliJ IDEA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-kubernetes-support&quot;&gt;Improved Kubernetes support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#minikube&quot;&gt;Minikube&lt;/a&gt; for creating a local
+Kubernetes cluster&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#kops&quot;&gt;Kops&lt;/a&gt; for creating production
+grade Kubernates clusters&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#helm&quot;&gt;Helm&lt;/a&gt; the Kubernetes package
+manager&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#kompose&quot;&gt;Kompose&lt;/a&gt; for using Docker
+Compose files with Kubernetes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-zsh-support&quot;&gt;Improved Zsh support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://github.com/zsh-users/zsh-autosuggestions&quot;&gt;zsh-autosuggestions&lt;/a&gt;
+makes suggestions based on previously executed commands&lt;/li&gt;
+  &lt;li&gt;Added
+&lt;a href=&quot;https://github.com/zsh-users/zsh-syntax-highlighting&quot;&gt;syntax-highlighting&lt;/a&gt;
+syntax highlighting for shell commands&lt;/li&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#antigen&quot;&gt;Antigen&lt;/a&gt; package manager for
+Zsh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-tab-completion-support&quot;&gt;Improved tab-completion support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu Bionic Beaver comes with newer package versions, some with improved Zsh
+support&lt;/li&gt;
+  &lt;li&gt;Added tab-completion for more commands
+    &lt;ul&gt;
+      &lt;li&gt;bat&lt;/li&gt;
+      &lt;li&gt;ctop&lt;/li&gt;
+      &lt;li&gt;fd&lt;/li&gt;
+      &lt;li&gt;gradle&lt;/li&gt;
+      &lt;li&gt;helm&lt;/li&gt;
+      &lt;li&gt;httpie&lt;/li&gt;
+      &lt;li&gt;hub&lt;/li&gt;
+      &lt;li&gt;kompose&lt;/li&gt;
+      &lt;li&gt;kops&lt;/li&gt;
+      &lt;li&gt;kubeadm&lt;/li&gt;
+      &lt;li&gt;kubectl&lt;/li&gt;
+      &lt;li&gt;moleculew&lt;/li&gt;
+      &lt;li&gt;npm&lt;/li&gt;
+      &lt;li&gt;pip&lt;/li&gt;
+      &lt;li&gt;pipenv&lt;/li&gt;
+      &lt;li&gt;pyenv&lt;/li&gt;
+      &lt;li&gt;sdkman&lt;/li&gt;
+      &lt;li&gt;yarn&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-git-support&quot;&gt;Improved Git support&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Added &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#hub&quot;&gt;hub&lt;/a&gt; wrapper for Git with
+additional features for GitHub&lt;/li&gt;
+  &lt;li&gt;Added
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#git-credential-manager-for-mac-and-linux&quot;&gt;Git Credential Manager for Mac and Linux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Added new Git aliases&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Checkout an existing branch&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git co&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Create a new branch&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git cb&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout -b&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Amend the last commit and change the commit message&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git ca&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit --amend&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Amend the last commit without changing the commit message&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git cane&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit --amend --no-edit&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Rebase the current branch onto &lt;code class=&quot;highlighter-rouge&quot;&gt;origin/develop&lt;/code&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git rod&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git rebase origin/develop&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Push the current branch to &lt;code class=&quot;highlighter-rouge&quot;&gt;origin HEAD&lt;/code&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git po&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin HEAD&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Force push the current branch to &lt;code class=&quot;highlighter-rouge&quot;&gt;origin HEAD&lt;/code&gt;&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git pof&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin HEAD --force&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Switch to the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch pull changes and prune remote branches&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git cmp&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout master &amp;amp;&amp;amp; git pull -p&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Switch to the &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt; branch pull changes and prune remote branches&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git cdp&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout develop &amp;amp;&amp;amp; git pull -p&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Pop the most recent stash&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git pop&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git stash pop&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Reformat the recent changes as Markdown release notes&lt;/p&gt;
+
+        &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git release-notes&lt;/code&gt; ≡ &lt;code class=&quot;highlighter-rouge&quot;&gt;git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#git-aliases&quot;&gt;View all Git aliases&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Added configuration for
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/configuration/#git-user-name-and-email-address&quot;&gt;setting the Git user name and email address&lt;/a&gt;
+during provisioning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;more-command-line-tools&quot;&gt;More command line tools&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#bat&quot;&gt;bat&lt;/a&gt; more advanced alternative to &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#ctop&quot;&gt;ctop&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;top&lt;/code&gt; like tool for Docker
+containers&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#fd&quot;&gt;fd&lt;/a&gt; intuitive alternative to &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;improved-credential-handling&quot;&gt;Improved credential handling&lt;/h3&gt;
+
+&lt;p&gt;Version 1 of this development environment was configured to auto-login. The
+problem with this approach was it prevented the Gnome Keyring from persisting
+credentials. This meant you had to put in you Git credentials every time you
+reloaded the VM. It also causes problems for apps such as Google Chrome that
+expect to be able to store credentials.&lt;/p&gt;
+
+&lt;p&gt;Version 2 of this development environment removes the auto-login feature. You
+now have to enter a password to login the development environment, but most
+other credentials can be persisted between sessions. For security, you’re forced
+to change the password on first use.&lt;/p&gt;
+
+&lt;h3 id=&quot;improved-backup--restore&quot;&gt;Improved backup &amp;amp; restore&lt;/h3&gt;
+
+&lt;p&gt;The original backup mechanism (using Unison file synchronization) was prone to
+failure. For version 2 we’re using a
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/features/#file-backup--restore-between-rebuilds&quot;&gt;new backup mechanism&lt;/a&gt;
+using rsync.&lt;/p&gt;
+
+&lt;h3 id=&quot;removed-software&quot;&gt;Removed software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;These days Visual Studio Code is as good or better for practically
+  everything.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://molecule.readthedocs.io&quot;&gt;Molecule&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;We recommend using
+  &lt;a href=&quot;https://github.com/gantsign/molecule-wrapper&quot;&gt;Molecule Wrapper&lt;/a&gt; instead of
+  installing Molecule as a system package.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;changed-minimum-requirements&quot;&gt;Changed minimum requirements&lt;/h3&gt;
+
+&lt;p&gt;You need to upgrade to at least &lt;a href=&quot;https://www.vagrantup.com&quot;&gt;Vagrant&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;2.1.0&lt;/code&gt;
+before you can provision a development-environment (follow the upgrade procedure
+below).&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;h3 id=&quot;preparing-your-existing-vm-for-upgrade&quot;&gt;Preparing your existing VM for upgrade&lt;/h3&gt;
+
+&lt;h4 id=&quot;purge-the-download-cache&quot;&gt;Purge the download cache&lt;/h4&gt;
+
+&lt;p&gt;While not strictly required, it’s best to clean out all the old Ubuntu Xenial
+packages before upgrading to free up disk space.&lt;/p&gt;
+
+&lt;p&gt;Bring up the development environment by running the following on the host:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;From the development environment terminal run:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rm &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /var/persistent/usr/local/src/ansible/data/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Workaround for /bin/rm: cannot execute [Argument list too long]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;f &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /var/persistent/var/cache/apt/archives/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.deb&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;rm &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$f&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;upgrade-to-the-latest-version-of-vagrant&quot;&gt;Upgrade to the latest version of Vagrant&lt;/h3&gt;
+
+&lt;p&gt;Download the latest version of Vagrant from
+&lt;a href=&quot;https://www.vagrantup.com&quot;&gt;https://www.vagrantup.com&lt;/a&gt;. Uninstall your current
+version of Vagrant then install then reboot. Remove any lingering parts of the
+old installation under &lt;code class=&quot;highlighter-rouge&quot;&gt;C:\Program Files\HashiCorp\Vagrant&lt;/code&gt;. Then
+reinstall Vagrant. While it should be possible to upgrade Vagrant without
+uninstalling, it fails when you have the Vagrant Triggers plugin installed (it
+conflicts with the native triggers feature in recent versions of Vagrant).&lt;/p&gt;
+
+&lt;h3 id=&quot;update-the-provisioning-scripts&quot;&gt;Update the provisioning scripts&lt;/h3&gt;
+
+&lt;p&gt;From the host run:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git rebase origin/2.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;re-provision-the-development-environment&quot;&gt;Re-provision the development environment&lt;/h3&gt;
+
+&lt;p&gt;From the host run:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant destroy &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; vagrant up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If there are any problems follow the
+&lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/#troubleshooting&quot;&gt;troubleshooting advice&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;change-your-password&quot;&gt;Change your password&lt;/h2&gt;
+
+&lt;p&gt;Once provisioning is complete you need to change your password. Login using the
+username &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant&lt;/code&gt; and password &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant&lt;/code&gt;. You’ll then be prompted to change
+your password.&lt;/p&gt;
+
+&lt;p&gt;Pick a strong password and don’t reuse another password (e.g. don’t use your
+Windows password). This password will be used to secure access to saved
+passwords in your browser, SSH key passwords and Git credentials etc.&lt;/p&gt;
+
+&lt;p&gt;The password needs to be at least 16 characters long and you cannot repeat the
+same character more than 3 times in a row. Prefer long easy to remember phrases
+over difficult to remember random passwords.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; you need to complete this procedure before you stop/reload the
+VM.&lt;/p&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.0.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 15 Oct 2018 19:18:26 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.0.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.0.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.27.0 released</title>
@@ -240,34 +581,6 @@ Upgraded Java 10 to 10.0.2&lt;/li&gt;
         <pubDate>Wed, 18 Jul 2018 09:15:23 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.20.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.20.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.19.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/307&quot;&gt;#307&lt;/a&gt;:
-Fixed locales role install&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/308&quot;&gt;#308&lt;/a&gt;:
-Updated Go lang to 1.10.3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.19.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Jul 2018 09:16:35 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.19.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.19.0-release/</guid>
         
         <category>release</category>
         
