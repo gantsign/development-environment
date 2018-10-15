@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>GantSign EnV</title>
-<meta name="description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
+<meta name="description" content="GantSign EnV: A development environment for Java, Python, Node.js and Go built using Vagrant.">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://gantsign.github.io/development-environment/">
 
 
-  <meta property="og:description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
+  <meta property="og:description" content="GantSign EnV: A development environment for Java, Python, Node.js and Go built using Vagrant.">
 
 
 
@@ -31,7 +31,7 @@
 
   <meta name="twitter:site" content="@gantsign">
   <meta name="twitter:title" content="GantSign EnV">
-  <meta name="twitter:description" content="GantSign EnV: A development environment for Java, Node.js, Go and Ansible built using Vagrant.">
+  <meta name="twitter:description" content="GantSign EnV: A development environment for Java, Python, Node.js and Go built using Vagrant.">
   <meta name="twitter:url" content="https://gantsign.github.io/development-environment/">
 
   
@@ -126,34 +126,17 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="/development-environment/">GantSign EnV</a>
-        <ul class="visible-links">
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/development-environment/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/features/" >Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/news/" >What's New</a>
+            </li><li class="masthead__menu-item">
               <a href="https://github.com/gantsign/development-environment" >GitHub</a>
-            </li>
-          
-        </ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle Menu</span>
@@ -164,6 +147,7 @@
     </div>
   </div>
 </div>
+
 
     <div class="initial-content">
       
@@ -191,12 +175,16 @@
         
       </h1>
       
-        <p class="page__lead">A development environment for Java, Node.js, Go and Ansible built using Vagrant.<br /> <a href="https://travis-ci.org/gantsign/development-environment"><img src="https://travis-ci.org/gantsign/development-environment.svg?branch=master" alt="Build Status" /></a>
+        <p class="page__lead">A development environment for Java, Python, Node.js and Go built using Vagrant.<br /> <a href="https://travis-ci.org/gantsign/development-environment"><img src="https://travis-ci.org/gantsign/development-environment.svg?branch=master" alt="Build Status" /></a>
 </p>
       
       
       
-        <p><a href="/development-environment/docs/getting-started" class="btn btn--light-outline btn--large"><i class='fa fa-download'></i> Install Now</a></p>
+      
+        <p>
+        
+          <a href="/docs/getting-started" class="btn btn--light-outline btn--large"><i class='fas fa-download'></i> Install Now</a>
+        
       
     </div>
   
@@ -208,7 +196,7 @@
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
     
-    <meta itemprop="description" content="A development environment for Java, Node.js, Go and Ansible built using Vagrant. ">
+    <meta itemprop="description" content="A development environment for Java, Python, Node.js and Go built using Vagrant. ">
     <meta itemprop="datePublished" content="January 18, 2017">
     
 
@@ -289,7 +277,7 @@
 
           
             <div class="archive__item-excerpt">
-              <p>Get notified when new features are added   <a href="https://twitter.com/gantsign" class="btn btn--twitter"><i class="fa fa-twitter"></i> @gantsign</a></p>
+              <p>Get notified when new features are added   <a href="https://twitter.com/gantsign" class="btn btn--twitter"><i class="fab fa-twitter"></i> @gantsign</a></p>
 
             </div>
           
@@ -401,15 +389,19 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
+
     
-      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+        
+          <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
     
-    
-    
-      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    
+
     <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
@@ -421,7 +413,7 @@
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 

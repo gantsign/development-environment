@@ -1,11 +1,11 @@
 var store = [{
         "title": "Getting started",
-        "excerpt":"The following instructions will guide you through the process of provisioningyour local development environment using GantSign EnV. Install dependencies Clone the project Configuration Oracle Binary Code License Agreement Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting Stopping the virtual machineInstall dependencies Install Git https://git-scm.com...","categories": [],
+        "excerpt":"The following instructions will guide you through the process of provisioningyour local development environment using GantSign EnV. Install dependencies Clone the project Configuration Oracle Binary Code License Agreement Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting HTTP errors Change your password Stopping the virtual...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/getting-started/",
         "teaser":null},{
         "title": "Documentation",
-        "excerpt":"  Requirements  Features  Getting started  Configuration  User guide","categories": [],
+        "excerpt":"  Requirements  Features  Getting started  Configuration  User guide  Upgrade","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/",
         "teaser":null},{
@@ -25,9 +25,14 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/docs/configuration/",
         "teaser":null},{
         "title": "Features",
-        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier. For everybody Compressed RAM File synchronization For command line users Terminator CDPATH Oh My Zsh HTTPie The Silver Searcher Tree Jq...","categories": [],
+        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier. For everybody Compressed RAM File backup &amp; restore between rebuilds For command line users Terminator CDPATH Oh My Zsh Antigen HTTPie...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/features/",
+        "teaser":null},{
+        "title": "Upgrade",
+        "excerpt":"The following instructions will guide you through the process of upgrading yourlocal GantSign EnV development environment to the latest release. Backup any essential files Halt the development environment Pull the changes for the latest release Re-provision the development environment Troubleshooting HTTP errors Out of disk space Unable to save credentials...","categories": [],
+        "tags": [],
+        "url": "https://gantsign.github.io/development-environment/docs/upgrade/",
         "teaser":null},{
         "title": "Welcome to the new website!",
         "excerpt":" The documentation was getting a bit long for the README.md so here is theshiny new website; it&#8217;s built using Jekyll andhosted using GitHub pages. ","categories": [],

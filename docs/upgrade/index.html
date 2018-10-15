@@ -1,0 +1,579 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Upgrade - GantSign EnV</title>
+<meta name="description" content="How to upgrade your development environment to the latest release.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="GantSign EnV">
+<meta property="og:title" content="Upgrade">
+<meta property="og:url" content="https://gantsign.github.io/development-environment/docs/upgrade/">
+
+
+  <meta property="og:description" content="How to upgrade your development environment to the latest release.">
+
+
+
+
+
+  <meta name="twitter:site" content="@gantsign">
+  <meta name="twitter:title" content="Upgrade">
+  <meta name="twitter:description" content="How to upgrade your development environment to the latest release.">
+  <meta name="twitter:url" content="https://gantsign.github.io/development-environment/docs/upgrade/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2018-10-12T13:07:23+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://gantsign.github.io/development-environment/docs/upgrade/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "GantSign Ltd.",
+      "url": "https://gantsign.github.io/development-environment",
+      "sameAs": ["https://twitter.com/gantsign"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/development-environment/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--docs">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/development-environment/">GantSign EnV</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/development-environment/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/features/" >Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/news/" >What's New</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/gantsign/development-environment" >GitHub</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/requirements/"><span class="nav__sub-title">Requirements</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/features/"><span class="nav__sub-title">Features</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/getting-started/"><span class="nav__sub-title">Getting started</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/configuration/"><span class="nav__sub-title">Configuration</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/user-guide/"><span class="nav__sub-title">User guide</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/upgrade/"><span class="nav__sub-title">Upgrade</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+    
+  
+  </div>
+
+
+  <article class="page numbered_headings" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Upgrade">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="October 12, 2018">
+    <meta itemprop="dateModified" content="October 14, 2018">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Upgrade
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+<p>The following instructions will guide you through the process of upgrading your
+local GantSign EnV development environment to the latest release.</p>
+
+<ol class="inline_toc" id="markdown-toc">
+  <li><a href="#backup-any-essential-files" id="markdown-toc-backup-any-essential-files">Backup any essential files</a></li>
+  <li><a href="#halt-the-development-environment" id="markdown-toc-halt-the-development-environment">Halt the development environment</a></li>
+  <li><a href="#pull-the-changes-for-the-latest-release" id="markdown-toc-pull-the-changes-for-the-latest-release">Pull the changes for the latest release</a></li>
+  <li><a href="#re-provision-the-development-environment" id="markdown-toc-re-provision-the-development-environment">Re-provision the development environment</a>    <ol>
+      <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a>        <ol>
+          <li><a href="#http-errors" id="markdown-toc-http-errors">HTTP errors</a></li>
+          <li><a href="#out-of-disk-space" id="markdown-toc-out-of-disk-space">Out of disk space</a></li>
+          <li><a href="#unable-to-save-credentials" id="markdown-toc-unable-to-save-credentials">Unable to save credentials</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#change-your-password" id="markdown-toc-change-your-password">Change your password</a></li>
+</ol>
+
+<h2 id="backup-any-essential-files">Backup any essential files</h2>
+
+<p>The development environment is designed to backup and restore projects in your
+workspace and selected configuration files. But there are exclusions (e.g. built
+artifacts) and there is always the risk that the backup/restore process will
+fail.</p>
+
+<p>We recommend you push all your changes, and manually backup any essential files,
+before re-provisioning your development-environment. We accept no responsibility
+for lost files.</p>
+
+<h2 id="halt-the-development-environment">Halt the development environment</h2>
+
+<p>If the development environment is running, shut it down by running the following
+on the host (from the project root directory):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant halt
+</code></pre></div></div>
+
+<h2 id="pull-the-changes-for-the-latest-release">Pull the changes for the latest release</h2>
+
+<p>Pull the latest changes by running the following on the host (from the project
+root directory):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull <span class="nt">--rebase</span> origin 1.27.0
+</code></pre></div></div>
+
+<h2 id="re-provision-the-development-environment">Re-provision the development environment</h2>
+
+<p>Re-provision the development environment by running the following commands on
+the host (from the project root directory):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant destroy <span class="o">&amp;&amp;</span> vagrant up
+</code></pre></div></div>
+
+<p>Once provisioning is complete continue to
+<a href="#change-your-password">Change your password</a>.</p>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<h4 id="http-errors">HTTP errors</h4>
+
+<p>It&#8217;s relatively common for provisioning to fail due to transient HTTP failures
+(e.g. connection failures, timeouts, connection reset by peer); this is
+particularly true the first time provisioning is run as everything has to be
+downloaded.</p>
+
+<p>This project will cache most of the downloads on your local machine so you&#8217;ll
+find provisioning is much faster and more reliable from the second time it is
+run.</p>
+
+<p>If provisioning fails partway through, you can restart provisioning by running
+the following command from the project root directory:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant provision
+</code></pre></div></div>
+
+<p>If provisioning fails leaving the virtual machine in an unrecoverable state, you
+can run the following commands from the project root directory, to rebuild the
+virtual machine from scratch:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant destroy
+vagrant up
+</code></pre></div></div>
+
+<h4 id="out-of-disk-space">Out of disk space</h4>
+
+<p>We cache most of the downloads (so they can be reused for re-provisioning the
+VM). Provisioning multiple times over months will mean the cache will fill with
+multiple versions of the software being installed. Eventually, this leads to out
+of disk space errors during re-provisioning. To resolve these errors you need to
+purge the download cache. To purge the download cache you need to login to the
+VirtualBox VM (username: <code class="highlighter-rouge">vagrant</code>, password: <code class="highlighter-rouge">vagrant</code>) and run the following
+commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm <span class="nt">-rf</span> /var/persistent/usr/local/src/ansible/data/<span class="k">*</span>
+<span class="c"># Workaround for /bin/rm: cannot execute [Argument list too long]</span>
+<span class="k">for </span>f <span class="k">in</span> /var/persistent/var/cache/apt/archives/<span class="k">*</span>.deb<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>rm <span class="nt">-f</span> <span class="s2">"</span><span class="nv">$f</span><span class="s2">"</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div></div>
+
+<p>Now go back to the console where you run Vagrant and run the following to retry
+provisioning:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant provision
+</code></pre></div></div>
+
+<p>Be aware purging the download cache will mean all the software will need to be
+downloaded again. So the first time you provision the VM after purging the
+caches will take longer and be more susceptible to HTTP errors.</p>
+
+<h4 id="unable-to-save-credentials">Unable to save credentials</h4>
+
+<p>Your Unix password may get out of sync with the password for your GNOME Keyring
+when you rebuild your development-environment (as the Unix password is reset to
+<code class="highlighter-rouge">vagrant</code>) or if you reset the password without specifying the current password
+(e.g. using <code class="highlighter-rouge">sudo passwd vagrant</code>).</p>
+
+<p>Once your GNOME Keyring password is out of sync the keyring won&#8217;t unlock when
+you login. You&#8217;ll be unable use save credentials or save new credentials (e.g.
+in Google Chrome or for your SSH keys).</p>
+
+<p>If you remember the password used by the GNOME Keyring (e.g. the last password
+before you re-provisioned the development environment), you can change the Unix
+password to match, then logout and log back in and your passwords should work
+again.</p>
+
+<p>If you don&#8217;t remember the password for the GNOME Keyring (or the password
+doesn&#8217;t work) you&#8217;ll need to delete your keyring and create a new one (any saved
+passwords will be lost).</p>
+
+<p>To delete your keyring run the following from the development environment
+terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp ~/.local/share/keyrings/login.keyring ~/.local/share/keyrings/login.keyring.bak
+cp ~/.local/share/keyrings/user.keystore ~/.local/share/keyrings/user.keystore.bak
+
+rm ~/.local/share/keyrings/login.keyring
+rm ~/.local/share/keyrings/user.keystore
+</code></pre></div></div>
+
+<h2 id="change-your-password">Change your password</h2>
+
+<p>Once provisioning is complete you need to change your password. Login using the
+username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You&#8217;ll then be prompted to change
+your password. <strong>Important:</strong> change the password to the password you were
+using before you re-provisioned the development environment. This is necessary
+to restore access to all your saved credentials. Once you&#8217;ve changed your
+password you need to logout and log back in (with the new password) for your
+keyring to be unlocked.</p>
+
+<p><strong>Important:</strong> you need to change the password before you stop/reload the VM.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-14">October 14, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <nav class="pagination">
+    
+      <a href="https://gantsign.github.io/development-environment/docs/user-guide/" class="pagination--pager" title="User guide
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled" data-proofer-ignore>Next</a>
+    
+  </nav>
+
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 GantSign Ltd. Company No. 06109112 (registered in England). Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/development-environment/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

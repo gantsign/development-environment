@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -124,34 +124,17 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="/development-environment/">GantSign EnV</a>
-        <ul class="visible-links">
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/development-environment/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/features/" >Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/news/" >What's New</a>
+            </li><li class="masthead__menu-item">
               <a href="https://github.com/gantsign/development-environment" >GitHub</a>
-            </li>
-          
-        </ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle Menu</span>
@@ -162,6 +145,7 @@
     </div>
   </div>
 </div>
+
 
     <div class="initial-content">
       
@@ -244,6 +228,17 @@
         
       </li>
     
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/upgrade/"><span class="nav__sub-title">Upgrade</span></a>
+        
+
+        
+      </li>
+    
   </ul>
 </nav>
     
@@ -255,7 +250,7 @@
     <meta itemprop="headline" content="Getting started">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="August 31, 2016">
-    <meta itemprop="dateModified" content="December 11, 2016">
+    <meta itemprop="dateModified" content="October 12, 2018">
 
     <div class="page__inner-wrap">
       
@@ -285,9 +280,13 @@ your local development environment using GantSign EnV.</p>
     </ol>
   </li>
   <li><a href="#run-vagrant" id="markdown-toc-run-vagrant">Run Vagrant</a>    <ol>
-      <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
+      <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a>        <ol>
+          <li><a href="#http-errors" id="markdown-toc-http-errors">HTTP errors</a></li>
+        </ol>
+      </li>
     </ol>
   </li>
+  <li><a href="#change-your-password" id="markdown-toc-change-your-password">Change your password</a></li>
   <li><a href="#stopping-the-virtual-machine" id="markdown-toc-stopping-the-virtual-machine">Stopping the virtual machine</a></li>
 </ol>
 
@@ -303,8 +302,7 @@ your local development environment using GantSign EnV.</p>
 
 <p>Clone the development environment repository.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--branch</span> 1.27.0 <span class="se">\</span>
-    https://github.com/gantsign/development-environment.git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/gantsign/development-environment.git
 </code></pre></div></div>
 
 <h2 id="configuration">Configuration</h2>
@@ -393,7 +391,12 @@ the <a href="https://gantsign.github.io/development-environment/docs/configurati
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant up
 </code></pre></div></div>
 
+<p>Once provisioning is complete continue to
+<a href="#change-your-password">Change your password</a>.</p>
+
 <h3 id="troubleshooting">Troubleshooting</h3>
+
+<h4 id="http-errors">HTTP errors</h4>
 
 <p>It&#8217;s relatively common for provisioning to fail due to transient HTTP failures
 (e.g. connection failures, timeouts, connection reset by peer); this is
@@ -418,6 +421,23 @@ virtual machine from scratch:</p>
 vagrant up
 </code></pre></div></div>
 
+<h2 id="change-your-password">Change your password</h2>
+
+<p>Once provisioning is complete you need to change your password. Login using the
+username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You&#8217;ll then be prompted to change
+your password.</p>
+
+<p>Pick a strong password and don&#8217;t reuse another password (e.g. don&#8217;t use your
+Windows password). This password will be used to secure access to saved
+passwords in your browser, SSH key passwords and Git credentials etc.</p>
+
+<p>The password needs to be at least 16 characters long and you cannot repeat the
+same character more than 3 times in a row. Prefer long easy to remember phrases
+over difficult to remember random passwords.</p>
+
+<p><strong>Important:</strong> you need to complete this procedure before you stop/reload the
+VM.</p>
+
 <h2 id="stopping-the-virtual-machine">Stopping the virtual machine</h2>
 
 <p>It&#8217;s essential you use Vagrant to stop the VM rather than shutting down via the
@@ -439,7 +459,7 @@ directory:</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-12-11">December 11, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-12">October 12, 2018</time></p>
         
       </footer>
 
@@ -534,15 +554,19 @@ directory:</p>
         <div class="page__footer-follow">
   <ul class="social-icons">
     
+
     
-      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+        
+          <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
     
-    
-    
-      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    
+
     <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
@@ -554,7 +578,7 @@ directory:</p>
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 

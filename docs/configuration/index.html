@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -124,34 +124,17 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="/development-environment/">GantSign EnV</a>
-        <ul class="visible-links">
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/development-environment/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/features/" >Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/news/" >What's New</a>
+            </li><li class="masthead__menu-item">
               <a href="https://github.com/gantsign/development-environment" >GitHub</a>
-            </li>
-          
-        </ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle Menu</span>
@@ -162,6 +145,7 @@
     </div>
   </div>
 </div>
+
 
     <div class="initial-content">
       
@@ -244,6 +228,17 @@
         
       </li>
     
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/upgrade/"><span class="nav__sub-title">Upgrade</span></a>
+        
+
+        
+      </li>
+    
   </ul>
 </nav>
     
@@ -255,7 +250,7 @@
     <meta itemprop="headline" content="Configuration">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="September 02, 2016">
-    <meta itemprop="dateModified" content="November 23, 2016">
+    <meta itemprop="dateModified" content="August 27, 2018">
 
     <div class="page__inner-wrap">
       
@@ -278,11 +273,11 @@ a users local machine.</p>
 
 <ol class="inline_toc" id="markdown-toc">
   <li><a href="#user-specific-configuration" id="markdown-toc-user-specific-configuration">User specific configuration</a>    <ol>
-      <li><a href="#proxy-configuration" id="markdown-toc-proxy-configuration">Proxy Configuration</a>        <ol>
-          <li><a href="#common-proxy-config" id="markdown-toc-common-proxy-config">Common Proxy Config</a></li>
-          <li><a href="#apt-proxy-override" id="markdown-toc-apt-proxy-override">APT Proxy Override</a></li>
-          <li><a href="#git-proxy-override" id="markdown-toc-git-proxy-override">Git Proxy Override</a></li>
-          <li><a href="#gnome-proxy-override" id="markdown-toc-gnome-proxy-override">Gnome Proxy Override</a>            <ol>
+      <li><a href="#proxy-configuration" id="markdown-toc-proxy-configuration">Proxy configuration</a>        <ol>
+          <li><a href="#common-proxy-config" id="markdown-toc-common-proxy-config">Common proxy config</a></li>
+          <li><a href="#apt-proxy-override" id="markdown-toc-apt-proxy-override">APT proxy override</a></li>
+          <li><a href="#git-proxy-override" id="markdown-toc-git-proxy-override">Git proxy override</a></li>
+          <li><a href="#gnome-proxy-override" id="markdown-toc-gnome-proxy-override">GNOME proxy override</a>            <ol>
               <li><a href="#proxy-auto-config" id="markdown-toc-proxy-auto-config">Proxy auto-config</a></li>
               <li><a href="#minimal-manual-configuration" id="markdown-toc-minimal-manual-configuration">Minimal manual configuration</a></li>
               <li><a href="#full-manual-configuration" id="markdown-toc-full-manual-configuration">Full manual configuration</a></li>
@@ -296,7 +291,8 @@ a users local machine.</p>
           <li><a href="#keyboard" id="markdown-toc-keyboard">Keyboard</a></li>
         </ol>
       </li>
-      <li><a href="#desktop-choice" id="markdown-toc-desktop-choice">Desktop choice</a></li>
+      <li><a href="#git-user-name-and-email-address" id="markdown-toc-git-user-name-and-email-address">Git user name and email address</a></li>
+      <li><a href="#dock-position" id="markdown-toc-dock-position">Dock position</a></li>
       <li><a href="#virtualbox-configuration" id="markdown-toc-virtualbox-configuration">VirtualBox configuration</a>        <ol>
           <li><a href="#vm-name" id="markdown-toc-vm-name">VM name</a></li>
           <li><a href="#ram-and-cpu" id="markdown-toc-ram-and-cpu">RAM and CPU</a></li>
@@ -339,13 +335,13 @@ a users local machine.</p>
 <p>Note: changes only take effect when the development environment is next
 rebuilt/provisioned.</p>
 
-<h3 id="proxy-configuration">Proxy Configuration</h3>
+<h3 id="proxy-configuration">Proxy configuration</h3>
 
 <p>If you&#8217;re behind a firewall and need to access the web through a HTTP proxy
 there&#8217;s a little extra config you need to do; if you have direct internet access
 you can skip this section.</p>
 
-<h4 id="common-proxy-config">Common Proxy Config</h4>
+<h4 id="common-proxy-config">Common proxy config</h4>
 
 <p>This configuration will apply to most command line tools and GUI applications.
 This can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the
@@ -359,7 +355,7 @@ proxy host and port with the values for your network):</p>
   <span class="na">no_proxy</span><span class="pi">:</span> <span class="s1">'</span><span class="s">localhost,127.0.0.1'</span>
 </code></pre></div></div>
 
-<h4 id="apt-proxy-override">APT Proxy Override</h4>
+<h4 id="apt-proxy-override">APT proxy override</h4>
 
 <p>If you need to use a different proxy for the APT package manager, this can be
 set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy host
@@ -371,7 +367,7 @@ and port with the values for your network):</p>
   <span class="na">ftp</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
 </code></pre></div></div>
 
-<h4 id="git-proxy-override">Git Proxy Override</h4>
+<h4 id="git-proxy-override">Git proxy override</h4>
 
 <p>If you need to use a different proxy for the Git version control system, this
 can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy
@@ -381,13 +377,13 @@ host and port with the values for your network):</p>
   <span class="na">http</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://proxy.example.com:3128/'</span>
 </code></pre></div></div>
 
-<h4 id="gnome-proxy-override">Gnome Proxy Override</h4>
+<h4 id="gnome-proxy-override">GNOME proxy override</h4>
 
-<p>If you need to use a different proxy for Gnome applications, or just want to
-take advantage of more advanced proxy options for Gnome applications, you can
+<p>If you need to use a different proxy for GNOME applications, or just want to
+take advantage of more advanced proxy options for GNOME applications, you can
 follow the documentation below.</p>
 
-<p>Note: the Gnome proxy settings are also used by some other non-gnome
+<p>Note: the GNOME proxy settings are also used by some other non-GNOME
 applications such as the Google Chrome web browser.</p>
 
 <h5 id="proxy-auto-config">Proxy auto-config</h5>
@@ -401,7 +397,7 @@ value for your network):</p>
   <span class="na">autoconfig_url</span><span class="pi">:</span> <span class="s1">'</span><span class="s">http://wpad.example.com/wpad.dat'</span>
 </code></pre></div></div>
 
-<p>Note: in theory Gnome should be able to auto-discover the value for the
+<p>Note: in theory GNOME should be able to auto-discover the value for the
 <code class="highlighter-rouge">autoconfig_url</code> using the
 <a href="https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol">Web Proxy Auto-Discovery Protocol</a>;
 in practice auto-discovery is unlikely to work when you&#8217;re running Linux in a
@@ -410,7 +406,7 @@ have to specify the location manually.</p>
 
 <h5 id="minimal-manual-configuration">Minimal manual configuration</h5>
 
-<p>To manually specify a different proxy for Gnome applications add the following
+<p>To manually specify a different proxy for GNOME applications add the following
 to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the hosts and ports with the values for your
 network):</p>
 
@@ -498,23 +494,35 @@ defaults are for Great Britain.</p>
   <span class="na">variant</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
 </code></pre></div></div>
 
-<h3 id="desktop-choice">Desktop choice</h3>
+<h3 id="git-user-name-and-email-address">Git user name and email address</h3>
 
-<p>Each user can choose between the
-<a href="https://en.wikipedia.org/wiki/Unity_(Ubuntu)">Ubuntu Unity</a> desktop or the
-<a href="http://www.xfce.org">Xfce</a> desktop.</p>
+<p>You can set your Git user name and email address manually (after provisioning)
+using <code class="highlighter-rouge">git config --global ...</code> and it will be retained between rebuilds.
+However if you want to set it once, and have it be the default for all new VMs,
+you can add the following to your <code class="highlighter-rouge">~/.vagrantuser</code> file (before provisioning).</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">git_user</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Example Name</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">address@example.com</span>
+</code></pre></div></div>
+
+<h3 id="dock-position">Dock position</h3>
+
+<p>Each user can choose whether they want the dock bar on the left, right or bottom
+of the screen.</p>
 
 <figure>
   
-<img src="https://gantsign.github.io/development-environment/images/desktop-choice.png" alt="Desktop choice" />
+<img src="https://gantsign.github.io/development-environment/images/dock-position.png" alt="Dock position" />
 
-  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+  <figcaption>Examples of left and bottom dock positions</figcaption>
 </figure>
 
-<p>The default is the Ubuntu Unity desktop but you can select the Xfce desktop by
-adding the following to your <code class="highlighter-rouge">.vagrantuser</code> file:</p>
+<p>The default position for the dockbar is <code class="highlighter-rouge">LEFT</code> but you can change the position
+by specifying <code class="highlighter-rouge">BOTTOM</code> or <code class="highlighter-rouge">RIGHT</code> in your <code class="highlighter-rouge">.vagrantuser</code> file before
+provisioning your development environment e.g.:</p>
 
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">desktop</span><span class="pi">:</span> <span class="s">xfce4</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dock_position</span><span class="pi">:</span> <span class="s">BOTTOM</span>
 </code></pre></div></div>
 
 <h3 id="virtualbox-configuration">VirtualBox configuration</h3>
@@ -572,17 +580,26 @@ development environment.</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ansible</span><span class="pi">:</span>
   <span class="na">skip_tags</span><span class="pi">:</span>
     <span class="c1"># Choose from any of the below</span>
-    <span class="pi">-</span> <span class="s">unison</span>
-    <span class="pi">-</span> <span class="s">docker</span>
-    <span class="pi">-</span> <span class="s">nodejs</span>
-    <span class="pi">-</span> <span class="s">molecule</span>
-    <span class="pi">-</span> <span class="s">java</span>
-    <span class="pi">-</span> <span class="s">gui</span>
+    <span class="pi">-</span> <span class="s">backup</span>
     <span class="pi">-</span> <span class="s">chrome</span>
-    <span class="pi">-</span> <span class="s">atom</span>
-    <span class="pi">-</span> <span class="s">vscode</span>
+    <span class="pi">-</span> <span class="s">docker</span>
+    <span class="pi">-</span> <span class="s">git-credential-manager</span>
+    <span class="pi">-</span> <span class="s">golang</span>
+    <span class="pi">-</span> <span class="s">gradle</span>
+    <span class="pi">-</span> <span class="s">gui</span>
+    <span class="pi">-</span> <span class="s">hub</span>
     <span class="pi">-</span> <span class="s">intellij</span>
+    <span class="pi">-</span> <span class="s">java</span>
+    <span class="pi">-</span> <span class="s">kubernetes</span>
+    <span class="pi">-</span> <span class="s">maven</span>
+    <span class="pi">-</span> <span class="s">nodejs</span>
     <span class="pi">-</span> <span class="s">oh-my-zsh</span>
+    <span class="pi">-</span> <span class="s">postman</span>
+    <span class="pi">-</span> <span class="s">python</span>
+    <span class="pi">-</span> <span class="s">sdkman</span>
+    <span class="pi">-</span> <span class="s">vscode</span>
+    <span class="pi">-</span> <span class="s">zsh-autosuggestions</span>
+    <span class="pi">-</span> <span class="s">zsh-syntax-highlighting</span>
 </code></pre></div></div>
 
 <p><strong>Note:</strong> there are dependencies between some of the features e.g. skipping
@@ -663,7 +680,7 @@ configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2016-11-23">November 23, 2016</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-08-27">August 27, 2018</time></p>
         
       </footer>
 
@@ -769,15 +786,19 @@ configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code
         <div class="page__footer-follow">
   <ul class="social-icons">
     
+
     
-      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+        
+          <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
     
-    
-    
-      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    
+
     <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
@@ -789,7 +810,7 @@ configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 

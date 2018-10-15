@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -124,34 +124,17 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="/development-environment/">GantSign EnV</a>
-        <ul class="visible-links">
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/about/" >About</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/features/" >Features</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/docs/" >Documentation</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
-              <a href="https://gantsign.github.io/development-environment/news/" >What's New</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/development-environment/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/features/" >Features</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/docs/" >Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/development-environment/news/" >What's New</a>
+            </li><li class="masthead__menu-item">
               <a href="https://github.com/gantsign/development-environment" >GitHub</a>
-            </li>
-          
-        </ul>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle Menu</span>
@@ -162,6 +145,7 @@
     </div>
   </div>
 </div>
+
 
     <div class="initial-content">
       
@@ -244,6 +228,17 @@
         
       </li>
     
+      <li>
+        
+          
+          
+
+          <a href="/development-environment/docs/upgrade/"><span class="nav__sub-title">Upgrade</span></a>
+        
+
+        
+      </li>
+    
   </ul>
 </nav>
     
@@ -255,7 +250,7 @@
     <meta itemprop="headline" content="Features">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="January 18, 2017">
-    <meta itemprop="dateModified" content="April 09, 2017">
+    <meta itemprop="dateModified" content="October 07, 2018">
 
     <div class="page__inner-wrap">
       
@@ -275,50 +270,75 @@ little easier.</p>
 <ol class="inline_toc" id="markdown-toc">
   <li><a href="#for-everybody" id="markdown-toc-for-everybody">For everybody</a>    <ol>
       <li><a href="#compressed-ram" id="markdown-toc-compressed-ram">Compressed RAM</a></li>
-      <li><a href="#file-synchronization" id="markdown-toc-file-synchronization">File synchronization</a></li>
+      <li><a href="#file-backup--restore-between-rebuilds" id="markdown-toc-file-backup--restore-between-rebuilds">File backup &amp; restore between rebuilds</a></li>
     </ol>
   </li>
   <li><a href="#for-command-line-users" id="markdown-toc-for-command-line-users">For command line users</a>    <ol>
       <li><a href="#terminator" id="markdown-toc-terminator">Terminator</a></li>
       <li><a href="#cdpath" id="markdown-toc-cdpath">CDPATH</a></li>
       <li><a href="#oh-my-zsh" id="markdown-toc-oh-my-zsh">Oh My Zsh</a></li>
+      <li><a href="#antigen" id="markdown-toc-antigen">Antigen</a></li>
       <li><a href="#httpie" id="markdown-toc-httpie">HTTPie</a></li>
       <li><a href="#the-silver-searcher" id="markdown-toc-the-silver-searcher">The Silver Searcher</a></li>
       <li><a href="#tree" id="markdown-toc-tree">Tree</a></li>
       <li><a href="#jq" id="markdown-toc-jq">Jq</a></li>
+      <li><a href="#fd" id="markdown-toc-fd">fd</a></li>
+      <li><a href="#bat" id="markdown-toc-bat">bat</a></li>
       <li><a href="#htop" id="markdown-toc-htop">htop</a></li>
       <li><a href="#glances" id="markdown-toc-glances">Glances</a></li>
     </ol>
   </li>
   <li><a href="#for-gui-desktop-users" id="markdown-toc-for-gui-desktop-users">For GUI desktop users</a>    <ol>
       <li><a href="#pre-pinned-applications" id="markdown-toc-pre-pinned-applications">Pre-pinned applications</a></li>
-      <li><a href="#choice-of-desktops" id="markdown-toc-choice-of-desktops">Choice of desktops</a></li>
+      <li><a href="#choice-of-dock-position" id="markdown-toc-choice-of-dock-position">Choice of dock position</a></li>
       <li><a href="#seahorse" id="markdown-toc-seahorse">Seahorse</a></li>
     </ol>
   </li>
   <li><a href="#for-developers" id="markdown-toc-for-developers">For developers</a>    <ol>
-      <li><a href="#docker" id="markdown-toc-docker">Docker</a></li>
-      <li><a href="#kubernetes" id="markdown-toc-kubernetes">Kubernetes</a></li>
+      <li><a href="#intellij-idea-ide" id="markdown-toc-intellij-idea-ide">IntelliJ IDEA IDE</a></li>
       <li><a href="#visual-studio-code" id="markdown-toc-visual-studio-code">Visual Studio Code</a></li>
-      <li><a href="#atom" id="markdown-toc-atom">Atom</a></li>
       <li><a href="#editorconfig" id="markdown-toc-editorconfig">EditorConfig</a></li>
+      <li><a href="#git-aliases" id="markdown-toc-git-aliases">Git aliases</a></li>
       <li><a href="#git-gui" id="markdown-toc-git-gui">Git-GUI</a></li>
       <li><a href="#gitk" id="markdown-toc-gitk">Gitk</a></li>
       <li><a href="#meld" id="markdown-toc-meld">Meld</a></li>
+      <li><a href="#git-credential-manager-for-mac-and-linux" id="markdown-toc-git-credential-manager-for-mac-and-linux">Git Credential Manager for Mac and Linux</a></li>
+      <li><a href="#hub" id="markdown-toc-hub">Hub</a></li>
       <li><a href="#postman" id="markdown-toc-postman">Postman</a></li>
+    </ol>
+  </li>
+  <li><a href="#for-containerized-development" id="markdown-toc-for-containerized-development">For containerized development</a>    <ol>
+      <li><a href="#docker" id="markdown-toc-docker">Docker</a></li>
+      <li><a href="#ctop" id="markdown-toc-ctop">ctop</a></li>
+      <li><a href="#kubernetes" id="markdown-toc-kubernetes">Kubernetes</a></li>
+      <li><a href="#minikube" id="markdown-toc-minikube">Minikube</a></li>
+      <li><a href="#helm" id="markdown-toc-helm">Helm</a></li>
+      <li><a href="#kompose" id="markdown-toc-kompose">Kompose</a></li>
+      <li><a href="#kops" id="markdown-toc-kops">kops</a></li>
     </ol>
   </li>
   <li><a href="#for-java-developers" id="markdown-toc-for-java-developers">For Java developers</a>    <ol>
       <li><a href="#oracle-jdk" id="markdown-toc-oracle-jdk">Oracle JDK</a></li>
       <li><a href="#maven" id="markdown-toc-maven">Maven</a></li>
       <li><a href="#maven-notifier" id="markdown-toc-maven-notifier">Maven Notifier</a></li>
-      <li><a href="#intellij-idea-ide" id="markdown-toc-intellij-idea-ide">IntelliJ IDEA IDE</a></li>
+      <li><a href="#intellij-idea-plugins" id="markdown-toc-intellij-idea-plugins">IntelliJ IDEA plugins</a></li>
+      <li><a href="#intellij-code-style" id="markdown-toc-intellij-code-style">IntelliJ code style</a></li>
+      <li><a href="#intellij-inspection-profile" id="markdown-toc-intellij-inspection-profile">IntelliJ inspection profile</a></li>
+      <li><a href="#sdkman" id="markdown-toc-sdkman">SDKMAN!</a></li>
     </ol>
   </li>
   <li><a href="#for-nodejs-developers" id="markdown-toc-for-nodejs-developers">For Node.js developers</a>    <ol>
       <li><a href="#nodejs-runtime" id="markdown-toc-nodejs-runtime">Node.js runtime</a></li>
       <li><a href="#pre-installed-global-packages" id="markdown-toc-pre-installed-global-packages">Pre-installed global packages</a></li>
-      <li><a href="#ide-support" id="markdown-toc-ide-support">IDE Support</a></li>
+      <li><a href="#ide-support" id="markdown-toc-ide-support">IDE support</a></li>
+      <li><a href="#intellij-code-style-1" id="markdown-toc-intellij-code-style-1">IntelliJ code style</a></li>
+    </ol>
+  </li>
+  <li><a href="#for-python-developers" id="markdown-toc-for-python-developers">For Python developers</a>    <ol>
+      <li><a href="#pyenv-version-manager" id="markdown-toc-pyenv-version-manager">Pyenv version manager</a></li>
+      <li><a href="#pipenv-package-manager" id="markdown-toc-pipenv-package-manager">Pipenv package manager</a></li>
+      <li><a href="#python-plugin-for-visual-studio-code" id="markdown-toc-python-plugin-for-visual-studio-code">Python plugin for Visual Studio Code</a></li>
+      <li><a href="#python-plugin-for-intellij-idea" id="markdown-toc-python-plugin-for-intellij-idea">Python plugin for IntelliJ IDEA</a></li>
     </ol>
   </li>
   <li><a href="#for-go-developers" id="markdown-toc-for-go-developers">For Go developers</a>    <ol>
@@ -328,7 +348,7 @@ little easier.</p>
     </ol>
   </li>
   <li><a href="#for-ansible-developers" id="markdown-toc-for-ansible-developers">For Ansible developers</a>    <ol>
-      <li><a href="#molecule" id="markdown-toc-molecule">Molecule</a></li>
+      <li><a href="#molecule-wrapper-zsh-support" id="markdown-toc-molecule-wrapper-zsh-support">Molecule Wrapper Zsh support</a></li>
     </ol>
   </li>
 </ol>
@@ -339,53 +359,58 @@ little easier.</p>
 
 <p>Website: <a href="https://www.kernel.org/doc/Documentation/blockdev/zram.txt">https://www.kernel.org/doc/Documentation/blockdev/zram.txt</a></p>
 
-<p>Unless you have 16GB of RAM you&#8217;re probably going to struggle to run VirtualBox,
+<p>Unless you have 16GB of RAM you’re probably going to struggle to run VirtualBox,
 your IDE, a Maven build, your application, and a few services in Docker at the
 same time.</p>
 
 <p>Enabling RAM compression in the virtual machine allows you to run more things at
 once.</p>
 
-<p>It&#8217;s so fast there&#8217;s no reason not to enable it by default.</p>
+<p>It’s so fast there’s no reason not to enable it by default.</p>
 
-<h3 id="file-synchronization">File synchronization</h3>
+<h3 id="file-backup--restore-between-rebuilds">File backup &amp; restore between rebuilds</h3>
 
-<p>Website: <a href="https://www.cis.upenn.edu/~bcpierce/unison">https://www.cis.upenn.edu/~bcpierce/unison</a></p>
+<p>Website: <a href="https://rsync.samba.org">https://rsync.samba.org</a></p>
 
-<p>One of the advantages of a using a virtual machine is it&#8217;s easy to get back to a
+<p>One of the advantages of using a virtual machine is it’s easy to get back to a
 clean working state by rebuilding the virtual machine.</p>
 
-<p>However, you want to keep your user specific setup, and your workspace with all
-the repositories you&#8217;ve cloned.</p>
+<p>However, you want to keep your user-specific setup, and your workspace with all
+the repositories you’ve cloned.</p>
 
-<p>This project uses <a href="https://www.cis.upenn.edu/~bcpierce/unison">unison</a> to
-synchronize selected files and folders from the client machine a separate
-persistent virtual disk on the host machine.</p>
+<p>This project uses <a href="https://rsync.samba.org">rsync</a> to backup selected files and
+folders from the client virtual machine to a separate persistent virtual disk on
+the host machine.</p>
 
 <p>When the virtual machine is rebuilt, these files and folders are copied back to
 the new client virtual machine.</p>
 
-<p>The following are some of the files and folders synchronized by default:</p>
+<p>The following are some of the files and folders backed-up by default:</p>
 
 <ul>
   <li>
     <p><code class="highlighter-rouge">/home/vagrant/workspace/</code></p>
 
     <ul>
-      <li>Put all your projects here.</li>
-      <li>Tries to only synchronize source files by excluding directories like
-<code class="highlighter-rouge">target</code>.</li>
+      <li><strong>Put all your projects here</strong></li>
     </ul>
   </li>
   <li><code class="highlighter-rouge">/home/vagrant/.gitconfig</code></li>
   <li><code class="highlighter-rouge">/home/vagrant/.ssh/</code> (except the <code class="highlighter-rouge">authorized_keys</code> file)</li>
   <li><code class="highlighter-rouge">/home/vagrant/.gnupg/</code></li>
-  <li><code class="highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="highlighter-rouge">repository</code> directory)</li>
+  <li><code class="highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="highlighter-rouge">repository</code> and <code class="highlighter-rouge">wrapper</code> directories)</li>
 </ul>
 
-<p><strong>Important:</strong> ensure your important files have been synchronized to the
-persistent disk before rebuilding your virtual machine; you can find the
-persistent copies of your files under <code class="highlighter-rouge">/var/persistent/home/vagrant</code>.</p>
+<p><strong>Caution:</strong> the followings directories are excluded from the backup by
+default: <code class="highlighter-rouge">.bin</code>, <code class="highlighter-rouge">.molecule</code>, <code class="highlighter-rouge">.tmp</code>, <code class="highlighter-rouge">bin</code>, <code class="highlighter-rouge">build</code>, <code class="highlighter-rouge">node_modules</code>, <code class="highlighter-rouge">target</code>.</p>
+
+<p><strong>Note:</strong> you can find your backup under: <code class="highlighter-rouge">/var/persistent/home/vagrant/</code>.</p>
+
+<p><strong>Notice:</strong> we accept no responsibility for files lost due to a failure of the
+backup/restore process. We recommend you push your work to your source control
+server before rebuilding your virtual machine. We also recommend you manually
+backup important keys and certificates (e.g. SSH, GPG, X.509) on your host
+machine.</p>
 
 <h2 id="for-command-line-users">For command line users</h2>
 
@@ -407,7 +432,7 @@ a new tab.</p>
 
 <p>This environment variable changes how tab completion and the <code class="highlighter-rouge">cd</code> command works.</p>
 
-<p>We&#8217;ve added the <code class="highlighter-rouge">/home/vagrant/workspace</code> directory to <code class="highlighter-rouge">CDPATH</code>; this enables
+<p>We’ve added the <code class="highlighter-rouge">/home/vagrant/workspace</code> directory to <code class="highlighter-rouge">CDPATH</code>; this enables
 you to <code class="highlighter-rouge">cd</code> into any sub-directory of <code class="highlighter-rouge">/home/vagrant/workspace</code> from any
 directory in the file system.</p>
 
@@ -457,6 +482,28 @@ to <code class="highlighter-rouge">zsh</code>, and customizes the <code class="h
 <span class="nb">cat</span> /usr/share/applications/vim.desktop
 </code></pre></div></div>
 
+<p>Tip: tab-completion for command options often only works after you’ve specified
+the <code class="highlighter-rouge">-</code>. For example <code class="highlighter-rouge">grep</code> <code class="highlighter-rouge">TAB</code> produces no suggestions, but <code class="highlighter-rouge">grep -</code> <code class="highlighter-rouge">TAB</code>
+produces 160 suggestions.</p>
+
+<h3 id="antigen">Antigen</h3>
+
+<p>Website: <a href="https://github.com/zsh-users/antigen">https://github.com/zsh-users/antigen</a></p>
+
+<p>Oh My Zsh has a wide selection of plugins, but sometimes you want to install
+plugins from elsewhere. This is where Antigen comes in, Antigen is a plugin
+manager for Zsh and can install Zsh plugins from Git repositories.</p>
+
+<p>Note: the Antigen commands don’t make persistent changes. Any change you make to
+the theme/plugins will be lost the next time you launch the shell. To make
+changes permanent you need to run the Antigen commands as part of the
+initialisation of your shell. To do this you either need to change the
+<code class="highlighter-rouge">playbook.yml</code> of this project and re-provision your VM, or run the Antigen
+commands from the <code class="highlighter-rouge">.zshrc</code> in your home directory.</p>
+
+<p>You can find a list of third-party plugins at:
+<a href="https://github.com/unixorn/awesome-zsh-plugins#plugins">https://github.com/unixorn/awesome-zsh-plugins#plugins</a></p>
+
 <h3 id="httpie">HTTPie</h3>
 
 <p>Website: <a href="https://httpie.org">https://httpie.org</a></p>
@@ -471,7 +518,7 @@ intuitive command line interface, JSON support and syntax highlighting.</p>
 
 <p>Website: <a href="http://geoff.greer.fm/ag">http://geoff.greer.fm/ag</a></p>
 
-<p>If you&#8217;ve used Linux you&#8217;ve almost certainly used <code class="highlighter-rouge">grep</code>, but you&#8217;ve probably
+<p>If you’ve used Linux you’ve almost certainly used <code class="highlighter-rouge">grep</code>, but you’ve probably
 never heard of <code class="highlighter-rouge">ag</code> (The Silver Searcher).</p>
 
 <p>While <code class="highlighter-rouge">grep</code> is a great general purpose tool, <code class="highlighter-rouge">ag</code> is a specific tool for
@@ -510,6 +557,33 @@ print JSON in colour, but <code class="highlighter-rouge">jq</code> is amazing a
 
 <p>Tip: to pretty print a JSON file run <code class="highlighter-rouge">jq '.' PATH_TO_JSON_FILE</code>.</p>
 
+<h3 id="fd">fd</h3>
+
+<p>Website: <a href="https://github.com/sharkdp/fd">https://github.com/sharkdp/fd</a></p>
+
+<p><code class="highlighter-rouge">fd</code> is a simple, fast and user-friendly alternative to <code class="highlighter-rouge">find</code>.</p>
+
+<p>It’s much better for the most common use-case (i.e. finding files/directories by
+name) e.g:</p>
+
+<p><img src="https://gantsign.github.io/development-environment/images/fd.png" alt="fd" /></p>
+
+<p>This is obviously easier than <code class="highlighter-rouge">find -iname '*molecule*'</code>.</p>
+
+<p><code class="highlighter-rouge">fd</code> is still capable of handling more advanced use-cases as well, e.g. you can
+specify the type of file or a command to execute.</p>
+
+<h3 id="bat">bat</h3>
+
+<p>Website: <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a></p>
+
+<p><code class="highlighter-rouge">bat</code> is a more advanced alternative to <code class="highlighter-rouge">cat</code> with support for
+syntax-highlighting, line numbers, searching and paging.</p>
+
+<p>e.g. running <code class="highlighter-rouge">bat ~/.bashrc</code> will give you:</p>
+
+<p><img src="https://gantsign.github.io/development-environment/images/bat.png" alt="fd" /></p>
+
 <h3 id="htop">htop</h3>
 
 <p>Website: <a href="http://hisham.hm/htop">http://hisham.hm/htop</a></p>
@@ -523,7 +597,7 @@ interface and a few more features.</p>
 
 <p>Website: <a href="https://nicolargo.github.io/glances">https://nicolargo.github.io/glances</a></p>
 
-<p>The <code class="highlighter-rouge">glances</code> application shows a broader view of what&#8217;s going on on your system
+<p>The <code class="highlighter-rouge">glances</code> application shows a broader view of what’s going on on your system
 than <code class="highlighter-rouge">top</code> or <code class="highlighter-rouge">htop</code> provide. In addition to RAM and CPU usage, you can see
 disk I/O, network I/O and warnings/alerts.</p>
 
@@ -534,28 +608,21 @@ disk I/O, network I/O and warnings/alerts.</p>
 <h3 id="pre-pinned-applications">Pre-pinned applications</h3>
 
 <p>No more fishing through menus to run the applications you use the most. The
-provisioning script pre-pins selected applications to the launcher so they&#8217;re
+provisioning script pre-pins selected applications to the dock so they’re
 ready to use.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/pin-to-launcher.png" alt="Pre-pinned applications" /></p>
 
-<h3 id="choice-of-desktops">Choice of desktops</h3>
+<h3 id="choice-of-dock-position">Choice of dock position</h3>
 
-<p>This development environment offers the choice between
-<a href="https://en.wikipedia.org/wiki/Unity_(Ubuntu)">Ubuntu Unity</a> and
-<a href="http://www.xfce.org">Xfce</a> desktops.</p>
-
-<p>Unity is the default desktop on Ubuntu and will be familiar to many Linux users.</p>
-
-<p>Using the <a href="https://xubuntu.org">Xubuntu</a> install of Xfce4 and
-<a href="https://github.com/M7S/dockbarx">DockbarX</a> enables a more traditional
-desktop experience than Unity.</p>
+<p>Each user can choose whether they want the dock bar on the left, right or bottom
+of the screen.</p>
 
 <figure>
   
-<img src="https://gantsign.github.io/development-environment/images/desktop-choice.png" alt="Desktop choice" />
+<img src="https://gantsign.github.io/development-environment/images/dock-position.png" alt="Dock position" />
 
-  <figcaption>Left: Ubuntu Unity desktop, right: Xfce desktop.</figcaption>
+  <figcaption>Examples of left and bottom dock positions</figcaption>
 </figure>
 
 <h3 id="seahorse">Seahorse</h3>
@@ -569,35 +636,24 @@ having to put in your SSH password more than once in the same session.</p>
 
 <h2 id="for-developers">For developers</h2>
 
-<h3 id="docker">Docker</h3>
+<h3 id="intellij-idea-ide">IntelliJ IDEA IDE</h3>
 
-<p>Website: <a href="https://www.docker.com">https://www.docker.com</a></p>
+<p>Website: <a href="https://www.jetbrains.com/idea">https://www.jetbrains.com/idea</a></p>
 
-<p>Solves the problem of handling dependencies and common configuration between
-development, build, test and production.</p>
+<p>In my opinion IntelliJ IDEA is the best IDE whether you’re working in Java,
+Python, Node.js or Go (Node.js and Go support requires IntelliJ IDEA Ultimate
+Edition).</p>
 
-<p>When using a Docker image, there&#8217;s no more worrying if you have the correct
-Java/Ruby/Python version installed, or is the <code class="highlighter-rouge">JAVA_HOME</code> set to the correct
-installation; all of that is provided in the Docker image, you just use it.</p>
+<p>The Community Edition is excellent at what it does but it’s quite limited in
+support for languages and frameworks. You need to pay for the
+<a href="https://www.jetbrains.com/idea/features/editions_comparison_matrix.html">Ultimate Edition</a>
+if you want support for common tools/frameworks such as JavaEE and the Spring
+Framework. The relatively small price for the Ultimate Edition is well worth the
+money.</p>
 
-<p>It&#8217;s also easy to build your own Docker images so you can get the same benefits
-with your own software.</p>
+<p>By default the Community Edition is installed.</p>
 
-<h3 id="kubernetes">Kubernetes</h3>
-
-<p>Website: <a href="http://kubernetes.io">http://kubernetes.io</a></p>
-
-<p>Kubernetes is the leading solution for managing containerized applications.</p>
-
-<p>When you have a microservice application it quickly becomes impractical to
-manually spin up and maintain all the different services. With Kubernetes you
-create a deployment descriptor describing all the parts of your application
-(microservices, databases, message buses, etc.), then Kubernetes can deal with
-the low level details of running it.</p>
-
-<p>Kubernetes provides a layer of abstraction from the underlying infrastructure,
-so its just as easy to run your application locally as it is to deploy the
-application to a cluster of nodes in the cloud.</p>
+<p><img src="https://gantsign.github.io/development-environment/images/intellij.png" alt="IntelliJ IDEA IDE" /></p>
 
 <h3 id="visual-studio-code">Visual Studio Code</h3>
 
@@ -610,29 +666,13 @@ TypeScript, Node.js, Python, Bash and many more.</p>
 
 <p>The built in debugger is very good and supports several languages.</p>
 
-<p>Has good built-in support for Git; while, it&#8217;s missing a few features that you&#8217;d
+<p>Has good built-in support for Git; while, it’s missing a few features that you’d
 expect from a standalone Git client, it covers the normal development workflow.</p>
 
 <p>Tip: click on the branch name in the bottom left corner to change/create
 branches.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/visual-studio-code.png" alt="Visual Studio Code editor window" /></p>
-
-<h3 id="atom">Atom</h3>
-
-<p>Website: <a href="https://atom.io">https://atom.io</a></p>
-
-<p>A powerful and highly customizable text editor from GitHub.</p>
-
-<p>Pioneered a new approach of building cross platform GUI applications using
-Node.js and Chromium.</p>
-
-<p>While they share the same foundations (i.e.
-<a href="http://electron.atom.io">http://electron.atom.io</a>), Atom is generally less
-polished than Visual Studio Code. That said, Atom came first and has more
-plugins to choose from.</p>
-
-<p><img src="https://gantsign.github.io/development-environment/images/atom.png" alt="Atom editor window" /></p>
 
 <h3 id="editorconfig">EditorConfig</h3>
 
@@ -645,12 +685,100 @@ many IDEs and text editors (some require a plugin installed).</p>
 particular files and file types (e.g. charset, line endings, indent, trailing
 whitespace).</p>
 
-<p>This development environment installs the EditorConfig plugins for Visual
-Studio Code and Atom as part of the provisioning; IntelliJ IDEA supports
-EditorConfig without the need for a plugin.</p>
+<p>This development environment installs the EditorConfig plugin for Visual
+Studio Code as part of the provisioning; IntelliJ IDEA supports EditorConfig
+without the need for a plugin.</p>
 
 <p>For an example of an <code class="highlighter-rouge">.editorconfig</code> file see the root directory of this
 project.</p>
+
+<h3 id="git-aliases">Git aliases</h3>
+
+<p>Git aliases save you a lot of typing and make it easy to execute more complex
+Git commands:</p>
+
+<ul>
+  <li>
+    <p>View summary lines for recent commits</p>
+
+    <p><code class="highlighter-rouge">git ls</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate</code></p>
+  </li>
+  <li>
+    <p>View summary lines and list changed files for recent commits</p>
+
+    <p><code class="highlighter-rouge">git ll</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat</code></p>
+  </li>
+  <li>
+    <p>View summary lines and dates for recent commits</p>
+
+    <p><code class="highlighter-rouge">git lds</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short</code></p>
+  </li>
+  <li>
+    <p>View tree of recent commits (all branches)</p>
+
+    <p><code class="highlighter-rouge">git lt</code> ≡ <code class="highlighter-rouge">git log --oneline --graph --decorate --all</code></p>
+  </li>
+  <li>
+    <p>Checkout an existing branch</p>
+
+    <p><code class="highlighter-rouge">git co</code> ≡ <code class="highlighter-rouge">git checkout</code></p>
+  </li>
+  <li>
+    <p>Create a new branch</p>
+
+    <p><code class="highlighter-rouge">git cb</code> ≡ <code class="highlighter-rouge">git checkout -b</code></p>
+  </li>
+  <li>
+    <p>Amend the last commit and change the commit message</p>
+
+    <p><code class="highlighter-rouge">git ca</code> ≡ <code class="highlighter-rouge">git commit --amend</code></p>
+  </li>
+  <li>
+    <p>Amend the last commit without changing the commit message</p>
+
+    <p><code class="highlighter-rouge">git cane</code> ≡ <code class="highlighter-rouge">git commit --amend --no-edit</code></p>
+  </li>
+  <li>
+    <p>Rebase the current branch onto <code class="highlighter-rouge">origin/master</code></p>
+
+    <p><code class="highlighter-rouge">git rom</code> ≡ <code class="highlighter-rouge">git rebase origin/master</code></p>
+  </li>
+  <li>
+    <p>Rebase the current branch onto <code class="highlighter-rouge">origin/develop</code></p>
+
+    <p><code class="highlighter-rouge">git rod</code> ≡ <code class="highlighter-rouge">git rebase origin/develop</code></p>
+  </li>
+  <li>
+    <p>Push the current branch to <code class="highlighter-rouge">origin HEAD</code></p>
+
+    <p><code class="highlighter-rouge">git po</code> ≡ <code class="highlighter-rouge">git push origin HEAD</code></p>
+  </li>
+  <li>
+    <p>Force push the current branch to <code class="highlighter-rouge">origin HEAD</code></p>
+
+    <p><code class="highlighter-rouge">git pof</code> ≡ <code class="highlighter-rouge">git push origin HEAD --force</code></p>
+  </li>
+  <li>
+    <p>Switch to the <code class="highlighter-rouge">master</code> branch pull changes and prune remote branches</p>
+
+    <p><code class="highlighter-rouge">git cmp</code> ≡ <code class="highlighter-rouge">git checkout master &amp;&amp; git pull -p</code></p>
+  </li>
+  <li>
+    <p>Switch to the <code class="highlighter-rouge">develop</code> branch pull changes and prune remote branches</p>
+
+    <p><code class="highlighter-rouge">git cdp</code> ≡ <code class="highlighter-rouge">git checkout develop &amp;&amp; git pull -p</code></p>
+  </li>
+  <li>
+    <p>Pop the most recent stash</p>
+
+    <p><code class="highlighter-rouge">git pop</code> ≡ <code class="highlighter-rouge">git stash pop</code></p>
+  </li>
+  <li>
+    <p>Reformat the recent changes as Markdown release notes</p>
+
+    <p><code class="highlighter-rouge">git release-notes</code> ≡ <code class="highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
+  </li>
+</ul>
 
 <h3 id="git-gui">Git-GUI</h3>
 
@@ -663,8 +791,8 @@ most fully featured open source GUI Git client available for Linux.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/git-gui.png" alt="Git GUI window" /></p>
 
-<p>Generally, I&#8217;d advise only using Git-GUI when you need to amend a commit, the
-rest of the time you&#8217;re better off using the commit dialog in your editor/IDE.</p>
+<p>Generally, I’d advise only using Git-GUI when you need to amend a commit, the
+rest of the time you’re better off using the commit dialog in your editor/IDE.</p>
 
 <p>Tip: run <code class="highlighter-rouge">git gui</code> in your Git working directory to launch Git-GUI.</p>
 
@@ -679,7 +807,7 @@ most fully featured open source GUI Git client available for Linux.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/gitk.png" alt="Gitk window" /></p>
 
-<p>As you can see it&#8217;s not the prettiest application, but the other options are
+<p>As you can see it’s not the prettiest application, but the other options are
 either not free for commercial use, require registration to download, or lack
 support for resetting the working branch to a particular commit.</p>
 
@@ -688,7 +816,7 @@ support for resetting the working branch to a particular commit.</p>
 
 <p>Tip: run <code class="highlighter-rouge">gitk</code> in your Git working directory to launch Gitk.</p>
 
-<p>Gitk and Git-GUI are integrated, so once you&#8217;ve run one of the applications, you
+<p>Gitk and Git-GUI are integrated, so once you’ve run one of the applications, you
 can launch the other from the menu bar.</p>
 
 <h3 id="meld">Meld</h3>
@@ -702,6 +830,63 @@ can launch the other from the menu bar.</p>
 <p>Tip: run <code class="highlighter-rouge">meld .</code> in your Git working directory to review your uncommitted
 changes.</p>
 
+<h3 id="git-credential-manager-for-mac-and-linux">Git Credential Manager for Mac and Linux</h3>
+
+<p>Website: <a href="https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux">https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux</a></p>
+
+<p>Stores credentials for Git version control securely. Useful if you want to write
+to a Git repository using HTTPS rather than SSH.</p>
+
+<p>Note: if you use two-factor authentication with GitHub (you’d be crazy not to),
+you need to generate a
+<a href="https://github.com/settings/tokens">personal access token</a> with appropriate
+repository permissions. When using Git in the VM, enter this personal access
+token when prompted to enter your password (instead of entering your GitHub
+password).</p>
+
+<h3 id="hub">Hub</h3>
+
+<p>Website: <a href="https://github.com/github/hub">https://github.com/github/hub</a></p>
+
+<p>Hub is a command line tool that wraps Git in order to extend it with extra
+features for GitHub.</p>
+
+<p>Note: Hub only wraps Git when run from Zsh (it works using a shell alias), the
+actual Git executable is unchanged.</p>
+
+<p>e.g. Cloning a GitHub repository</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone Netflix/flamescope
+<span class="c"># Equivalent to:</span>
+<span class="c"># git clone git@github.com:Netflix/flamescope.git</span>
+</code></pre></div></div>
+
+<p>e.g. Creating a pull request</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull-request <span class="nt">-m</span> <span class="s2">"</span><span class="se">\</span><span class="s2">
+Pull request title here
+
+Pull request body here.
+"</span>
+</code></pre></div></div>
+
+<p>e.g. Browse issues for current repository</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git browse <span class="nt">--</span> issues
+</code></pre></div></div>
+
+<p>Run the following to see all the extensions provided by hub:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man hub
+</code></pre></div></div>
+
+<p>To view more information about a specific extension run:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man hub-&lt;subcommand&gt;
+<span class="c"># e.g.</span>
+man hub-pull-request
+</code></pre></div></div>
+
 <h3 id="postman">Postman</h3>
 
 <p>Website: <a href="https://www.getpostman.com">https://www.getpostman.com</a></p>
@@ -709,6 +894,135 @@ changes.</p>
 <p>A user friendly tool for testing REST services.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/postman.png" alt="Postman window" /></p>
+
+<h2 id="for-containerized-development">For containerized development</h2>
+
+<h3 id="docker">Docker</h3>
+
+<p>Website: <a href="https://www.docker.com">https://www.docker.com</a></p>
+
+<p>Solves the problem of handling dependencies and common configuration between
+development, build, test and production.</p>
+
+<p>When using a Docker image, there’s no more worrying if you have the correct
+Java/Ruby/Python version installed, or is the <code class="highlighter-rouge">JAVA_HOME</code> set to the correct
+installation; all of that is provided in the Docker image, you just use it.</p>
+
+<p>It’s also easy to build your own Docker images so you can get the same benefits
+with your own software.</p>
+
+<h3 id="ctop">ctop</h3>
+
+<p>Website: <a href="https://ctop.sh">https://ctop.sh</a></p>
+
+<p><code class="highlighter-rouge">ctop</code> is the terminal based tool that provides a <code class="highlighter-rouge">top</code> like interface for
+container metrics. View CPU, memory, network I/O, and disk I/O for your
+Docker containers at a glance from your terminal.</p>
+
+<p><img src="https://gantsign.github.io/development-environment/images/ctop.png" alt="ctop in terminal window" /></p>
+
+<h3 id="kubernetes">Kubernetes</h3>
+
+<p>Website: <a href="http://kubernetes.io">http://kubernetes.io</a></p>
+
+<p>Kubernetes is the leading solution for managing containerized applications
+in production.</p>
+
+<p>Docker is great for running containerized applications locally, but you need
+something more to manage containerized applications across multiple servers.
+There’s <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a> and
+<a href="http://mesos.apache.org">Apache Mesos</a> but the most popular solution is
+Kubernetes.</p>
+
+<p>Kubernetes allows you to deploy services to a cluster of servers, to manage
+configuration, configure networking, perform rolling updates and much more.</p>
+
+<h3 id="minikube">Minikube</h3>
+
+<p>Website: <a href="https://github.com/kubernetes/minikube">https://github.com/kubernetes/minikube</a></p>
+
+<p>Minikube makes it easy to run a single node Kubernetes cluster in the
+development environment.</p>
+
+<p>Give it a try by running the following from the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minikube start
+minikube dashboard
+</code></pre></div></div>
+
+<p>Note: because we’re already running inside a VM we’re running Minikube with
+<code class="highlighter-rouge">--vm-driver=none</code> using a Zsh
+<a href="https://github.com/gantsign/zsh-plugins/tree/master/minikube-none">plugin</a>.</p>
+
+<h3 id="helm">Helm</h3>
+
+<p>Website: <a href="https://helm.sh">https://helm.sh</a></p>
+
+<p>Helm is a package manager for Kubernetes. It makes it easier to use software
+built for Kubernetes.</p>
+
+<p>Give it a try by running the following from the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Start Minikube (if you haven't already)</span>
+minikube start
+
+<span class="c"># Initialize helm (if you haven't already)</span>
+helm init
+
+<span class="c"># Wait for tiller to be ready</span>
+<span class="c"># You can watch the tiller status be ready (1/1) by running:</span>
+kubectl get pods <span class="nt">-w</span> <span class="nt">--namespace</span> kube-system
+<span class="c"># terminate with ctrl-c</span>
+
+<span class="c"># Install Apache Tomcat</span>
+helm install stable/tomcat
+
+<span class="c"># helm will give the service a name &lt;something&gt;-tomcat</span>
+<span class="c"># you can access the tomcat by running:</span>
+http <span class="s2">"</span><span class="k">$(</span>minikube service <span class="nt">--url</span> &lt;something&gt;-tomcat<span class="k">)</span><span class="s2">"</span>
+<span class="c"># You'll get a HTTP 404 response (we haven't provided a</span>
+<span class="c"># webarchive), but you'll see it's come from a</span>
+<span class="c"># `Apache-Coyote` server.</span>
+</code></pre></div></div>
+
+<h3 id="kompose">Kompose</h3>
+
+<p>Website: <a href="http://kompose.io">http://kompose.io</a></p>
+
+<p>Kompose is a conversion tool to go from Docker Compose to Kubernetes.</p>
+
+<p>Give it a try by running the following from the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Start Minikube (if you haven't already)</span>
+minikube start
+
+<span class="c"># cd into a docker-compose project</span>
+<span class="c"># or use wget to download the following example compose file</span>
+wget https://raw.githubusercontent.com/kubernetes/kompose/master/examples/docker-compose-v3.yaml <span class="se">\</span>
+  <span class="nt">-O</span> docker-compose.yaml
+
+<span class="c"># Bring up your services</span>
+kompose up
+
+<span class="c"># Watch your services load</span>
+kubectl get pods <span class="nt">-w</span>
+<span class="c"># terminate with ctrl-c</span>
+
+<span class="c"># Once you're done shutdown the services</span>
+kompose down
+
+<span class="c"># Once you're done with the Minikube instance</span>
+minikube stop
+minikube delete
+</code></pre></div></div>
+
+<h3 id="kops">kops</h3>
+
+<p>Website: <a href="https://github.com/kubernetes/kops">https://github.com/kubernetes/kops</a></p>
+
+<p>Kubernetes operations (<code class="highlighter-rouge">kops</code>) helps you with production grade K8s installation,
+upgrades, and management. <code class="highlighter-rouge">kops</code> is the easiest way to get a production grade
+Kubernetes cluster up and running.</p>
 
 <h2 id="for-java-developers">For Java developers</h2>
 
@@ -734,23 +1048,74 @@ you know when the build is complete.</p>
 
 <p><img src="https://gantsign.github.io/development-environment/images/maven-notifier.png" alt="Maven Notifier popup" /></p>
 
-<h3 id="intellij-idea-ide">IntelliJ IDEA IDE</h3>
+<h3 id="intellij-idea-plugins">IntelliJ IDEA plugins</h3>
 
-<p>Website: <a href="https://www.jetbrains.com/idea">https://www.jetbrains.com/idea</a></p>
+<ul>
+  <li><a href="https://plugins.jetbrains.com/plugin/1065-checkstyle-idea">CheckStyle-IDEA</a>
+for checking the code style of your Java source files.</li>
+  <li><a href="https://plugins.jetbrains.com/plugin/6317-lombok-plugin">Lombok</a> to cut down
+boilerplate in your Java source code.</li>
+  <li><a href="https://plugins.jetbrains.com/plugin/9417-log-support-2">LogSupport2</a> to
+encourage logging best practice.</li>
+</ul>
 
-<p>In my opinion IntelliJ IDEA is the best Java IDE available.</p>
+<h3 id="intellij-code-style">IntelliJ code style</h3>
 
-<p>While the Community Edition is excellent at what it does, you need to pay for
-the Ultimate Edition if you want support for common tools/frameworks such as
-JavaEE and the Spring Framework; the relatively small price for the Ultimate
-Edition is well worth the money.</p>
+<p><a href="https://github.com/gantsign/code-style-intellij">GantSign Code Style</a> has
+support for the following JVM languages:</p>
 
-<p>By default the Community Edition is installed.</p>
+<ul>
+  <li>Java: based on the
+<a href="http://google.github.io/styleguide/javaguide.html">Google Java Style Guide</a></li>
+  <li>Kotlin: based on the
+<a href="https://kotlinlang.org/docs/reference/coding-conventions.html">Kotlin Style Guide</a></li>
+</ul>
 
-<p>The IDE is pre-configured so new projects will use the Oracle JDK and Maven
-installation.</p>
+<h3 id="intellij-inspection-profile">IntelliJ inspection profile</h3>
 
-<p><img src="https://gantsign.github.io/development-environment/images/intellij.png" alt="IntelliJ IDEA IDE" /></p>
+<p>The <a href="https://github.com/gantsign/inspection-profile-intellij">GantSign Inspection Profile</a>
+has support for Java and Kotlin. This is a strict inspection profile intended
+for greenfield code.</p>
+
+<h3 id="sdkman">SDKMAN!</h3>
+
+<p>Website: <a href="https://sdkman.io">https://sdkman.io</a></p>
+
+<p>SDKMAN! is a tool for managing parallel versions of multiple Software
+Development Kits. It’s similar to <a href="https://rvm.io">RVM</a> but for Java, Groovy,
+Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.</p>
+
+<p>To switch Java version in the current shell:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk use java 8
+</code></pre></div></div>
+
+<p>To change the default Java version:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk default java 8
+</code></pre></div></div>
+
+<p>To install Gradle:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk install gradle
+</code></pre></div></div>
+
+<p>To play with GraalVM:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># List available versions</span>
+sdk list java
+
+<span class="c"># Install latest GraalVM version</span>
+sdk install java 1.0.0-rc5-graal
+
+<span class="c"># Switch to GraalVM in the current shell</span>
+sdk use java 1.0.0-rc5-graal
+</code></pre></div></div>
+
+<p>To list all the supported SDKs:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk list
+</code></pre></div></div>
 
 <h2 id="for-nodejs-developers">For Node.js developers</h2>
 
@@ -774,10 +1139,73 @@ version upgrade tool</li>
   <li><a href="https://github.com/typings/typings">Typings</a> TypeScript definition manager</li>
 </ul>
 
-<h3 id="ide-support">IDE Support</h3>
+<h3 id="ide-support">IDE support</h3>
 
 <p><a href="https://code.visualstudio.com/">Visual Studio Code</a> comes with excellent
 support for Node.js, JavaScript and TypeScript.</p>
+
+<h3 id="intellij-code-style-1">IntelliJ code style</h3>
+
+<p><a href="https://github.com/gantsign/code-style-intellij">GantSign Code Style</a> has
+support for JavaScript based on
+<a href="https://standardjs.com">JavaScript Standard Style</a>.</p>
+
+<h2 id="for-python-developers">For Python developers</h2>
+
+<h3 id="pyenv-version-manager">Pyenv version manager</h3>
+
+<p>Website: <a href="https://github.com/pyenv/pyenv">https://github.com/pyenv/pyenv</a></p>
+
+<p>Pyenv lets you install and switch between multiple versions of Python. Other
+tools such as Pipenv use Pyenv when they need a version of Python you don’t
+currently have installed.</p>
+
+<h3 id="pipenv-package-manager">Pipenv package manager</h3>
+
+<p>Website: <a href="https://docs.pipenv.org">https://docs.pipenv.org</a></p>
+
+<p>Pipenv helps you manage a virtualenv for your projects as well as managing
+your packages. It will add/remove packages from your <code class="highlighter-rouge">Pipfile</code> as you
+install/uninstall packages. It also generates the <code class="highlighter-rouge">Pipfile.lock</code> for
+deterministic builds.</p>
+
+<h3 id="python-plugin-for-visual-studio-code">Python plugin for Visual Studio Code</h3>
+
+<p>This development environment comes with Microsoft’s excellent Python plugin for
+Visual Studio Code:
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">ms-python.python</a>.</p>
+
+<p><strong>Tip:</strong> launch Visual Studio Code from your Pipenv shell. This will give Visual
+Studio Code access to your virtualenv and let it install packages e.g. <code class="highlighter-rouge">pylint</code>,
+<code class="highlighter-rouge">autopep8</code> and <code class="highlighter-rouge">rope</code> without needing sudo.</p>
+
+<p>To launch Visual Studio Code from your Pipenv shell run the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>your-python-project
+pipenv shell
+code <span class="nb">.</span>
+</code></pre></div></div>
+
+<h3 id="python-plugin-for-intellij-idea">Python plugin for IntelliJ IDEA</h3>
+
+<p>Depending whether you’re using the IntelliJ IDEA Community Edition or the
+Ultimate Edition a different plugin will be installed. If you’re using IntelliJ
+IDEA Community Edition the plugin installed will provide equivalent
+functionality to
+<a href="https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html">PyCharm Community Edition</a>.
+If you’re using IntelliJ IDEA Ultimate Edition the plugin installed will provide
+equivalent functionality to <a href="https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html">PyCharm Professional Edition</a>.</p>
+
+<p><strong>Tip:</strong> launch IntelliJ from your Pipenv shell. This will give IntelliJ access
+to your virtualenv and let it install packages e.g. <code class="highlighter-rouge">pylint</code>, <code class="highlighter-rouge">autopep8</code> and
+<code class="highlighter-rouge">rope</code> without needing sudo.</p>
+
+<p>To launch IntelliJ from your Pipenv shell run the following commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>your-python-project
+pipenv shell
+idea <span class="nb">.</span>
+</code></pre></div></div>
 
 <h2 id="for-go-developers">For Go developers</h2>
 
@@ -799,24 +1227,27 @@ support for Node.js, JavaScript and TypeScript.</p>
 <ul>
   <li><a href="https://plugins.jetbrains.com/plugin/9568-go">IntelliJ IDEA (Ultimate Edition only)</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go">Visual Studio Code</a></li>
-  <li><a href="https://atom.io/packages/go-plus">Atom</a></li>
 </ul>
 
 <h2 id="for-ansible-developers">For Ansible developers</h2>
 
-<h3 id="molecule">Molecule</h3>
+<h3 id="molecule-wrapper-zsh-support">Molecule Wrapper Zsh support</h3>
 
-<p>Website: <a href="http://molecule.readthedocs.io">http://molecule.readthedocs.io</a></p>
+<p>Website: <a href="https://github.com/gantsign/molecule-wrapper">https://github.com/gantsign/molecule-wrapper</a></p>
 
-<p>Molecule is an excellent tool to assist you in developing and testing Ansible
-Roles and Playbooks.</p>
+<p><a href="http://molecule.readthedocs.io">Molecule</a> is an excellent tool to assist you in
+developing and testing Ansible Roles and Playbooks.</p>
 
 <p>Molecule integrates with Docker to provide an isolated environment to try your
 provisioning and uses <a href="http://testinfra.readthedocs.io/">Testinfa</a> to test the
 results.</p>
 
-<p>As well as running it locally, it&#8217;s easy to run Molecule as part of your CI
-build to ensure your code is sound before merging.</p>
+<p>Molecule can be tricky to install and that’s where Molecule Wrapper comes in.
+Molecule Wrapper is a shell script that installs Molecule (and its dependencies)
+before invoking Molecule.</p>
+
+<p>The Zsh support for Molecule Wrapper adds an alias so you can run <code class="highlighter-rouge">./moleculew</code>
+with the <code class="highlighter-rouge">molecule</code> command and enables tab-completion support.</p>
 
         
       </section>
@@ -827,7 +1258,7 @@ build to ensure your code is sound before merging.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-04-09">April 09, 2017</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-07">October 07, 2018</time></p>
         
       </footer>
 
@@ -911,15 +1342,19 @@ build to ensure your code is sound before merging.</p>
         <div class="page__footer-follow">
   <ul class="social-icons">
     
+
     
-      <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+        
+          <li><a href="https://twitter.com/gantsign"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
     
-    
-    
-      <li><a href="https://github.com/gantsign"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-    
-    
-    
+
     <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
@@ -931,7 +1366,7 @@ build to ensure your code is sound before merging.</p>
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 
