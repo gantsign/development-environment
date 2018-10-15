@@ -32,7 +32,7 @@
 - src: gantsign.fd
   version: '1.0.0'
 - src: gantsign.git_credential_manager
-  version: '1.2.1'
+  version: '1.3.0'
 - src: gantsign.git_user
   version: '1.1.0'
 - src: gantsign.gnome-proxy
