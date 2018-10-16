@@ -5,7 +5,7 @@ description: >
   How to upgrade your development environment to the latest release.
 numbered_headings: yes
 date: 2018-10-12T13:07:23+01:00
-modified: 2018-10-14T10:07:43+01:00
+modified: 2018-10-16T10:45:23+01:00
 ---
 
 {% include base_path %}
@@ -142,6 +142,30 @@ cp ~/.local/share/keyrings/user.keystore ~/.local/share/keyrings/user.keystore.b
 rm ~/.local/share/keyrings/login.keyring
 rm ~/.local/share/keyrings/user.keystore
 ```
+
+#### SSH key not loading
+
+If your SSH key isn't loading it may be down to the file permissions. If your
+key is readable by other you will get the following error when trying to load
+key:
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/vagrant/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+```
+
+To fix the file permissions run the following command from the terminal in the
+client VM:
+
+```bash
+chmod 'go-rwx' ~/.ssh/*
+```
+
+After this is complete logout and log back in so your key is loaded.
 
 ## Change your password
 
