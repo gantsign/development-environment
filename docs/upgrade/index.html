@@ -250,7 +250,7 @@
     <meta itemprop="headline" content="Upgrade">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="October 12, 2018">
-    <meta itemprop="dateModified" content="October 14, 2018">
+    <meta itemprop="dateModified" content="October 16, 2018">
 
     <div class="page__inner-wrap">
       
@@ -275,6 +275,7 @@ local GantSign EnV development environment to the latest release.</p>
           <li><a href="#http-errors" id="markdown-toc-http-errors">HTTP errors</a></li>
           <li><a href="#out-of-disk-space" id="markdown-toc-out-of-disk-space">Out of disk space</a></li>
           <li><a href="#unable-to-save-credentials" id="markdown-toc-unable-to-save-credentials">Unable to save credentials</a></li>
+          <li><a href="#ssh-key-not-loading" id="markdown-toc-ssh-key-not-loading">SSH key not loading</a></li>
         </ol>
       </li>
     </ol>
@@ -402,6 +403,28 @@ rm ~/.local/share/keyrings/login.keyring
 rm ~/.local/share/keyrings/user.keystore
 </code></pre></div></div>
 
+<h4 id="ssh-key-not-loading">SSH key not loading</h4>
+
+<p>If your SSH key isn&#8217;t loading it may be down to the file permissions. If your
+key is readable by other you will get the following error when trying to load
+key:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/vagrant/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+</code></pre></div></div>
+
+<p>To fix the file permissions run the following command from the terminal in the
+client VM:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod <span class="s1">'go-rwx'</span> ~/.ssh/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>After this is complete logout and log back in so your key is loaded.</p>
+
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
@@ -423,7 +446,7 @@ keyring to be unlocked.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-14">October 14, 2018</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-16">October 16, 2018</time></p>
         
       </footer>
 

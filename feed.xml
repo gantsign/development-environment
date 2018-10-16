@@ -5,8 +5,8 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Oct 2018 00:07:16 +0100</pubDate>
-    <lastBuildDate>Tue, 16 Oct 2018 00:07:16 +0100</lastBuildDate>
+    <pubDate>Tue, 16 Oct 2018 11:15:11 +0100</pubDate>
+    <lastBuildDate>Tue, 16 Oct 2018 11:15:11 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -333,6 +333,17 @@ over difficult to remember random passwords.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; you need to complete this procedure before you stop/reload the
 VM.&lt;/p&gt;
+
+&lt;h2 id=&quot;fix-ssh-key-permissions&quot;&gt;Fix SSH key permissions&lt;/h2&gt;
+
+&lt;p&gt;The version of SSH that comes with Ubuntu Bionic will not load an SSH key if
+it’s readable by other users. Run the following command from the terminal in the
+client VM to fix the file permissions:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod &lt;span class=&quot;s1&quot;&gt;'go-rwx'&lt;/span&gt; ~/.ssh/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After this is complete logout and log back in so your key is loaded.&lt;/p&gt;
 
 &lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
 

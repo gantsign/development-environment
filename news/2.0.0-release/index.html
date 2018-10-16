@@ -607,6 +607,17 @@ over difficult to remember random passwords.</p>
 <p><strong>Important:</strong> you need to complete this procedure before you stop/reload the
 VM.</p>
 
+<h2 id="fix-ssh-key-permissions">Fix SSH key permissions</h2>
+
+<p>The version of SSH that comes with Ubuntu Bionic will not load an SSH key if
+it’s readable by other users. Run the following command from the terminal in the
+client VM to fix the file permissions:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod <span class="s1">'go-rwx'</span> ~/.ssh/<span class="k">*</span>
+</code></pre></div></div>
+
+<p>After this is complete logout and log back in so your key is loaded.</p>
+
 <h2 id="full-change-list">Full change list</h2>
 
 <p>For a full list of changes view the
