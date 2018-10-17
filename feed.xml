@@ -5,9 +5,39 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Oct 2018 19:09:58 +0100</pubDate>
-    <lastBuildDate>Wed, 17 Oct 2018 19:09:58 +0100</lastBuildDate>
+    <pubDate>Wed, 17 Oct 2018 19:35:15 +0100</pubDate>
+    <lastBuildDate>Wed, 17 Oct 2018 19:35:15 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.1.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/493&quot;&gt;#493&lt;/a&gt;:
+Upgraded Java 8 to 8u192&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.1.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 17 Oct 2018 18:55:52 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.1.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.1.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 1.28.0 released</title>
@@ -564,32 +594,6 @@ Fixed gantsign.zram_config role name&lt;/li&gt;
         <pubDate>Mon, 20 Aug 2018 22:39:24 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.21.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.21.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.21.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/314&quot;&gt;#314&lt;/a&gt;:
-Updated Maven to 3.5.4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.21.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Aug 2018 15:49:25 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.21.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.21.0-release/</guid>
         
         <category>release</category>
         
