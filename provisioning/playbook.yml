@@ -478,7 +478,7 @@
         - application: org.gnome.Nautilus.desktop
         - application: google-chrome.desktop
         - application: Postman.desktop
-        - application: code.desktop
+        - application: code-url-handler.desktop
         - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"
 
     # Configure general environment variables
