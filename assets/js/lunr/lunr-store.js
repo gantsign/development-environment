@@ -248,4 +248,9 @@ var store = [{
         "excerpt":"Release highlights   #493:Upgraded Java 8 to 8u192Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.1.0-release/",
+        "teaser":null},{
+        "title": "Version 2.1.1 released",
+        "excerpt":"Release highlights   #496:Fixed Visual Studio Code favouriteFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.1.1-release/",
         "teaser":null},]
