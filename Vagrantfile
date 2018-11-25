@@ -127,6 +127,30 @@ Vagrant.configure(2) do |config|
 
     'dock_position' => 'LEFT',
 
+    'git_config' => {
+      'core' => {
+        'autocrlf' => 'input'
+      },
+      'alias' => {
+        'ls' => 'log --pretty=format:"%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]" --decorate',
+        'll' => 'log --pretty=format:"%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]" --decorate --numstat',
+        'lds' => 'log --pretty=format:"%C(yellow)%h\\\\ %ad%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]" --decorate --date=short',
+        'lt' => 'log --oneline --graph --decorate --all',
+        'co' => 'checkout',
+        'cb' => 'checkout -b',
+        'ca' => 'commit --amend',
+        'cane' => 'commit --amend --no-edit',
+        'rom' => 'rebase origin/master',
+        'rod' => 'rebase origin/develop',
+        'po' => 'push origin HEAD',
+        'pof' => 'push origin HEAD --force',
+        'cmp' => '!git checkout master && git pull -p',
+        'cdp' => '!git checkout develop && git pull -p',
+        'pop' => 'stash pop',
+        'release-notes': "!git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\\\((\\\\#[0-9]+)\\\\)/* \\\\2: \\\\1/' | tac -"
+      }
+    },
+
     'git_user' => {
       'name' => nil,
       'email' => nil,
@@ -336,6 +360,7 @@ SCRIPT
       gnome_proxy_socks_host: gnome_proxy['socks_host'],
       gnome_proxy_socks_port: gnome_proxy['socks_port'],
 
+      git_config: config.user.git_config,
       git_user_name: config.user.git_user.name,
       git_user_email: config.user.git_user.email,
       git_user_force: config.user.git_user.force,

@@ -97,3 +97,7 @@ intellij:
 #   edition: ultimate
 # Uncomment the line below to install your IntelliJ IDEA Ultimate license key
 #   license_key_path: '/vagrant/idea.key' # You need to copy your licence key from ~/.IntelliJIdea2017.1/config/idea.key into the project root.
+
+# git_config:
+#  alias:
+#    sync: 'fetch --prune'
