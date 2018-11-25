@@ -110,6 +110,16 @@ Vagrant.configure(2) do |config|
       'audiocontroller' => default_vb_audiocontroler
     },
 
+    'persistent_storage' => {
+      'enabled' => 'true',
+      'location' => '.vagrant/persistent-disk.vdi',
+      'size' => '16_000',
+      'mountname' => 'persistent',
+      'filesystem' => 'ext4',
+      'mountpoint' => '/var/persistent',
+      'volgroupname' => 'persist-vg'
+    },
+
     'java_license_declaration' => '',
 
     'timezone' => 'Europe/London',
@@ -194,13 +204,13 @@ Vagrant.configure(2) do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder '../data', '/vagrant_data'
 
-  config.persistent_storage.enabled = true
-  config.persistent_storage.location = '.vagrant/persistent-disk.vdi'
-  config.persistent_storage.size = 16_000
-  config.persistent_storage.mountname = 'persistent'
-  config.persistent_storage.filesystem = 'ext4'
-  config.persistent_storage.mountpoint = '/var/persistent'
-  config.persistent_storage.volgroupname = 'persist-vg'
+  config.persistent_storage.enabled = config.user.persistent_storage.enabled
+  config.persistent_storage.location = config.user.persistent_storage.location
+  config.persistent_storage.size = config.user.persistent_storage.size
+  config.persistent_storage.mountname = config.user.persistent_storage.mountname
+  config.persistent_storage.filesystem = config.user.persistent_storage.filesystem
+  config.persistent_storage.mountpoint = config.user.persistent_storage.mountpoint
+  config.persistent_storage.volgroupname = config.user.persistent_storage.volgroupname
 
   # Update the VirtualBox Guest Additions
   config.vbguest.auto_update = true

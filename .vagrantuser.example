@@ -101,3 +101,6 @@ intellij:
 # git_config:
 #  alias:
 #    sync: 'fetch --prune'
+
+# persistent_storage:
+#  enabled: false
