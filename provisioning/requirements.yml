@@ -1,6 +1,6 @@
 ---
 - src: angstwad.docker_ubuntu
-  version: 'v3.6.2'
+  version: 'v3.7.0'
 - src: franklinkim.git
   version: '1.2.2'
 - src: weareinteractive.environment
