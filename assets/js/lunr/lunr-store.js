@@ -253,4 +253,9 @@ var store = [{
         "excerpt":"Release highlights   #496:Fixed Visual Studio Code favouriteFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.1.1-release/",
+        "teaser":null},{
+        "title": "Version 2.2.0 released",
+        "excerpt":"Release highlights   #500:Updated Maven to 3.6.0  #501:Updated Go lang to 1.11.2  #502:Updated Java 11 to 11.0.1  #509:Added task to upgrade apt packagesFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.2.0-release/",
         "teaser":null},]

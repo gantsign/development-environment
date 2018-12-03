@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Dec 2018 16:47:42 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Dec 2018 16:47:42 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Dec 2018 18:37:03 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Dec 2018 18:37:03 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.2.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/500&quot;&gt;#500&lt;/a&gt;:
+Updated Maven to 3.6.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/501&quot;&gt;#501&lt;/a&gt;:
+Updated Go lang to 1.11.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/502&quot;&gt;#502&lt;/a&gt;:
+Updated Java 11 to 11.0.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/509&quot;&gt;#509&lt;/a&gt;:
+Added task to upgrade apt packages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.2.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Dec 2018 18:11:42 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.2.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.2.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.1.1 released</title>
@@ -570,34 +606,6 @@ Updated Go lang to 1.11&lt;/li&gt;
         <pubDate>Mon, 27 Aug 2018 08:00:23 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.23.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.23.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.22.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/358&quot;&gt;#358&lt;/a&gt;:
-Updated Molecule to 2.17.0&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/355&quot;&gt;#355&lt;/a&gt;:
-Fixed Postman icon (the location had changed)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.22.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 22 Aug 2018 18:30:42 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.22.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.22.0-release/</guid>
         
         <category>release</category>
         
