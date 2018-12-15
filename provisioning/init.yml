@@ -27,7 +27,6 @@
         repo: '{{ item }}'
         update_cache: no
       with_items:
-        - ppa:git-core/ppa
         - 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
       register: register_repos
 
