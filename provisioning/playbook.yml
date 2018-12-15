@@ -109,7 +109,7 @@
     - role: gantsign.fd
 
     # Install and configure Git version control
-    - role: franklinkim.git
+    - role: weareinteractive.git
       git_config:
         core:
           autocrlf: input
