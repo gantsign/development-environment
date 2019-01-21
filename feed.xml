@@ -5,9 +5,47 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Jan 2019 00:50:18 +0000</pubDate>
-    <lastBuildDate>Mon, 21 Jan 2019 00:50:18 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Jan 2019 14:40:04 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Jan 2019 14:40:04 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.4.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/522&quot;&gt;#522&lt;/a&gt;:
+Updated Java 8 to 8u202&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/526&quot;&gt;#526&lt;/a&gt;:
+Updated Helm to 2.12.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/527&quot;&gt;#527&lt;/a&gt;:
+Updated Hub to 2.7.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/528&quot;&gt;#528&lt;/a&gt;:
+Updated kops to 1.11.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/529&quot;&gt;#529&lt;/a&gt;:
+Updated Minikube to 0.33.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.4.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Jan 2019 14:17:26 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.4.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.4.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.3.0 released</title>
@@ -599,33 +637,6 @@ Fixed timezone customization&lt;/li&gt;
         <pubDate>Sun, 30 Sep 2018 13:06:24 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.25.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.25.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.24.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/377&quot;&gt;#377&lt;/a&gt;:
-Fixed &lt;code class=&quot;highlighter-rouge&quot;&gt;franklinkim.environment&lt;/code&gt; role not found (it has moved to
-&lt;code class=&quot;highlighter-rouge&quot;&gt;weareinteractive.environment&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.24.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Sep 2018 20:36:13 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.24.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.24.0-release/</guid>
         
         <category>release</category>
         

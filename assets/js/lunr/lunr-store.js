@@ -263,4 +263,9 @@ var store = [{
         "excerpt":"Release highlights #511:Updated bat to 0.9.0 #512:Updated fd to 7.2.0 #513:Updated Helm to 2.12.0 #514:Updated Hub to 2.6.0 #515:Updated Kompose to 1.17.0 #516:Updated SDKMAN to 1.1.1 #517:Updated Minikube to 0.31.0 #519:Updated Go lang to 1.11.4 #520:Updated weareinteractive.git role to 1.3.0Full change list For a full list of changes view therelease...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.3.0-release/",
+        "teaser":null},{
+        "title": "Version 2.4.0 released",
+        "excerpt":"Release highlights   #522:Updated Java 8 to 8u202  #526:Updated Helm to 2.12.2  #527:Updated Hub to 2.7.1  #528:Updated kops to 1.11.0  #529:Updated Minikube to 0.33.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.4.0-release/",
         "teaser":null},]
