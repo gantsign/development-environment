@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2018-10-07T12:22:35+01:00
+modified: 2019-02-15T18:10:24+00:00
 ---
 
 {% include base_path %}
@@ -862,7 +862,7 @@ idea .
 ### Go SDK
 
 This development environment comes with Go language
-[SDK 1.11.4](https://golang.org/dl/#go1.11.4) installed.
+[SDK 1.11.5](https://golang.org/dl/#go1.11.5) installed.
 
 ### Go environment variables
 
