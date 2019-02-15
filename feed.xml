@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Feb 2019 19:08:19 +0000</pubDate>
-    <lastBuildDate>Fri, 15 Feb 2019 19:08:19 +0000</lastBuildDate>
+    <pubDate>Fri, 15 Feb 2019 19:42:45 +0000</pubDate>
+    <lastBuildDate>Fri, 15 Feb 2019 19:42:45 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.5.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/537&quot;&gt;#537&lt;/a&gt;:
+Updated gantsign.visual-studio-code role to 6.2.1 (fixes extension install)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/538&quot;&gt;#538&lt;/a&gt;:
+Updated gantsign.visual-studio-code-extensions role to 2.1.1 (fixes extension install)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/531&quot;&gt;#531&lt;/a&gt;:
+Updated Java 11 to 11.0.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/535&quot;&gt;#535&lt;/a&gt;:
+Updated Go lang to 1.11.5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.5.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Feb 2019 19:27:52 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.5.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.5.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.4.0 released</title>
@@ -611,32 +647,6 @@ Replaced Java 10 with Java 11&lt;/li&gt;
         <pubDate>Thu, 04 Oct 2018 22:52:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.26.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.26.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.25.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/440&quot;&gt;#440&lt;/a&gt;:
-Fixed timezone customization&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.25.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 30 Sep 2018 13:06:24 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.25.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.25.0-release/</guid>
         
         <category>release</category>
         
