@@ -273,4 +273,9 @@ var store = [{
         "excerpt":"Release highlights   #537:Updated gantsign.visual-studio-code role to 6.2.1 (fixes extension install)  #538:Updated gantsign.visual-studio-code-extensions role to 2.1.1 (fixes extension install)  #531:Updated Java 11 to 11.0.2  #535:Updated Go lang to 1.11.5Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.5.0-release/",
+        "teaser":null},{
+        "title": "Version 2.6.0 released",
+        "excerpt":"Release highlights #543:Updated Node.js to version 10 #544:Updated Go lang to 1.12.1 #545:Updated Helm to 2.13.0 #546:Updated Hub to 2.10.0 #547:Updated Kompose to 1.18.0 #548:Updated kops to 1.11.1 #549:Updated Minikube to 0.35.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.6.0-release/",
         "teaser":null},]

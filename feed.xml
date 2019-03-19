@@ -5,9 +5,51 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Mar 2019 13:42:31 +0000</pubDate>
-    <lastBuildDate>Tue, 19 Mar 2019 13:42:31 +0000</lastBuildDate>
+    <pubDate>Tue, 19 Mar 2019 15:15:10 +0000</pubDate>
+    <lastBuildDate>Tue, 19 Mar 2019 15:15:10 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.6.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/543&quot;&gt;#543&lt;/a&gt;:
+Updated Node.js to version 10&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/544&quot;&gt;#544&lt;/a&gt;:
+Updated Go lang to 1.12.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/545&quot;&gt;#545&lt;/a&gt;:
+Updated Helm to 2.13.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/546&quot;&gt;#546&lt;/a&gt;:
+Updated Hub to 2.10.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/547&quot;&gt;#547&lt;/a&gt;:
+Updated Kompose to 1.18.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/548&quot;&gt;#548&lt;/a&gt;:
+Updated kops to 1.11.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/549&quot;&gt;#549&lt;/a&gt;:
+Updated Minikube to 0.35.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.6.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Mar 2019 14:47:24 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.6.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.6.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.5.0 released</title>
@@ -621,32 +663,6 @@ Updated Go lang to 1.11.1&lt;/li&gt;
         <pubDate>Sun, 07 Oct 2018 20:23:13 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/1.27.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.27.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.26.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/451&quot;&gt;#451&lt;/a&gt;:
-Replaced Java 10 with Java 11&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.26.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Oct 2018 22:52:52 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.26.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.26.0-release/</guid>
         
         <category>release</category>
         
