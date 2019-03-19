@@ -8,7 +8,7 @@
 - src: cmprescott.chrome
   version: '0.2.4'
 - src: geerlingguy.nodejs
-  version: '4.2.2'
+  version: '5.0.0'
 - src: oefenweb.locales
   version: 'v1.0.31'
 - src: gantsign.antigen
