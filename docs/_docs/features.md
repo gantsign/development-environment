@@ -772,7 +772,7 @@ sdk list
 ### Node.js runtime
 
 This development environment comes with Node.js
-[v6](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md)
+[v10](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V10.md)
 installed.
 
 ### Pre-installed global packages
