@@ -1,6 +1,6 @@
 var store = [{
         "title": "Getting started",
-        "excerpt":"The following instructions will guide you through the process of provisioningyour local development environment using GantSign EnV. Install dependencies Clone the project Configuration Oracle Binary Code License Agreement Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting HTTP errors Change your password Stopping the virtual...","categories": [],
+        "excerpt":"The following instructions will guide you through the process of provisioningyour local development environment using GantSign EnV. Install dependencies Clone the project Configuration Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting HTTP errors Change your password Stopping the virtual machineInstall dependencies Install Git https://git-scm.com...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/getting-started/",
         "teaser":null},{
