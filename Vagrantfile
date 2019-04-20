@@ -110,8 +110,6 @@ Vagrant.configure(2) do |config|
       'audiocontroller' => default_vb_audiocontroler
     },
 
-    'java_license_declaration' => '',
-
     'timezone' => 'Europe/London',
 
     'locales' => {
@@ -142,13 +140,6 @@ Vagrant.configure(2) do |config|
     }
 
   }
-
-  # Fail if Java is being installed and license hasn't been accepted.
-  config.trigger.before [:up, :provision] do
-    if (!config.user.ansible.skip_tags.include? 'java') && config.user.java_license_declaration != 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
-      abort "Aborting... to continue you must accept the Oracle Binary Code License Agreement\n(see https://github.com/gantsign/development-environment/wiki/Java-license-declaration)."
-    end
-  end
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -305,8 +296,6 @@ SCRIPT
     ansible.galaxy_command = 'alt-galaxy install --role-file=%{role_file} --roles-path=%{roles_path} --force'
 
     ansible.extra_vars = {
-      java_license_declaration: config.user.java_license_declaration,
-
       timezone: config.user.timezone,
 
       locales_present: config.user.locales.present,

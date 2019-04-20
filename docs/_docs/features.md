@@ -675,10 +675,10 @@ Kubernetes cluster up and running.
 
 ## For Java developers
 
-### Oracle JDK
+### Open JDK
 
-To provide access to the extra tooling (e.g. Java Mission Control) the Oracle
-JDK is installed rather than OpenJDK.
+To get free patches for longer this project uses builds from
+[AdoptOpenJDK](https://adoptopenjdk.net).
 
 ### Maven
 
