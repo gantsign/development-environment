@@ -5,9 +5,51 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Apr 2019 10:01:48 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Apr 2019 10:01:48 +0100</lastBuildDate>
+    <pubDate>Sat, 20 Apr 2019 11:20:35 +0100</pubDate>
+    <lastBuildDate>Sat, 20 Apr 2019 11:20:35 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.7.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/551&quot;&gt;#551&lt;/a&gt;:
+Moved to AdoptOpenJDK for Java 8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/552&quot;&gt;#552&lt;/a&gt;:
+Updated Java 8 to 8u212&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/553&quot;&gt;#553&lt;/a&gt;:
+Updated Java 11 to 11.0.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/555&quot;&gt;#555&lt;/a&gt;:
+Updated Go lang to 1.12.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/556&quot;&gt;#556&lt;/a&gt;:
+Updated Helm to 2.13.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/557&quot;&gt;#557&lt;/a&gt;:
+Updated Hub to 2.11.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/558&quot;&gt;#558&lt;/a&gt;:
+Updated Maven to 3.6.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.7.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Apr 2019 10:28:31 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.7.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.7.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.6.0 released</title>
@@ -637,32 +679,6 @@ client VM to fix the file permissions:&lt;/p&gt;
         <pubDate>Mon, 15 Oct 2018 19:18:26 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.0.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.0.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.27.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/463&quot;&gt;#463&lt;/a&gt;:
-Updated Go lang to 1.11.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.27.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Oct 2018 20:23:13 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.27.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.27.0-release/</guid>
         
         <category>release</category>
         
