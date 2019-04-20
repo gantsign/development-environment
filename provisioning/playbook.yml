@@ -207,7 +207,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: jdk8u202-b08
+      java_version: jdk8u212-b03
       java_is_default_installation: no
       java_fact_group_name: java_8
 
