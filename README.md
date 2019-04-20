@@ -44,7 +44,7 @@ environment that you can fork to add your project specific configuration.
 * Visual Studio Code
 * Git-GUI and Gitk
 * Postman
-* Oracle JDK
+* Open JDK
 * Maven
 * Maven Notifier
 * IntelliJ IDEA IDE

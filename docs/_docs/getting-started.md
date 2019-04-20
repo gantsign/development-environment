@@ -45,18 +45,6 @@ The Nugrant configuration file is located in the following two locations:
     `.vagrantuser` (you'll find a `.vagrantuser.example` file in the project
     directory)
 
-### Oracle Binary Code License Agreement
-
-To install the Oracle JDK you must accept the "Oracle Binary Code License
-Agreement for the Java SE Platform Products and JavaFX"; you can do this by
-specifying the following variable in the `.vagrantuser` file (either in
-the project root directory or your user home directory):
-
-```yaml
----
-java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
-```
-
 ### Proxy configuration
 
 If you're behind a firewall and need to access the web through a HTTP proxy

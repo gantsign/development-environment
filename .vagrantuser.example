@@ -8,10 +8,6 @@
 # $SYSTEM/.vagrantuser
 # ~/.vagrantuser
 
-# Uncomment the line below to accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html
-# java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
-# Tip: place a copy of .vagrantuser in your home directory so you only have to do this once.
-
 # Uncomment the section below to configure your proxy settings.
 # proxy:
 #   enabled: true

@@ -328,25 +328,6 @@ ansible:
 **Note:** there are dependencies between some of the features e.g. skipping
 `java` will also skip `intellij`.
 
-### Oracle Binary Code License Agreement
-
-To install the Oracle JDK you must accept the "Oracle Binary Code License
-Agreement for the Java SE Platform Products and JavaFX"; you can do this by
-specifying the following variable in the `.vagrantuser` file (either in
-the project root directory or your user home directory):
-
-```yaml
-java_license_declaration: 'I accept the "Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX" under the terms at http://www.oracle.com/technetwork/java/javase/terms/license/index.html'
-```
-
-If you don't want to accept the license you can skip the Java install using:
-
-```yaml
-ansible:
-  skip_tags:
-    - java
-```
-
 ### IntelliJ IDEA edition
 
 If your employer provides IntelliJ IDEA Ultimate licenses for your whole team,
