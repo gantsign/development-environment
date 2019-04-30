@@ -283,4 +283,9 @@ var store = [{
         "excerpt":"Release highlights #551:Moved to AdoptOpenJDK for Java 8 #552:Updated Java 8 to 8u212 #553:Updated Java 11 to 11.0.3 #555:Updated Go lang to 1.12.2 #556:Updated Helm to 2.13.1 #557:Updated Hub to 2.11.2 #558:Updated Maven to 3.6.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.7.0-release/",
+        "teaser":null},{
+        "title": "Version 2.8.0 released",
+        "excerpt":"Release highlights   #560:Updated Go lang to 1.12.4  #561:Updated Minikube to 1.0.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.8.0-release/",
         "teaser":null},]
