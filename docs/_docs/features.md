@@ -862,7 +862,7 @@ idea .
 ### Go SDK
 
 This development environment comes with Go language
-[SDK 1.12.2](https://golang.org/dl/#go1.12.2) installed.
+[SDK 1.12.4](https://golang.org/dl/#go1.12.4) installed.
 
 ### Go environment variables
 
