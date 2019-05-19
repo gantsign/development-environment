@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 May 2019 11:35:34 +0100</pubDate>
-    <lastBuildDate>Sun, 19 May 2019 11:35:34 +0100</lastBuildDate>
+    <pubDate>Sun, 19 May 2019 12:04:56 +0100</pubDate>
+    <lastBuildDate>Sun, 19 May 2019 12:04:56 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.9.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/563&quot;&gt;#563&lt;/a&gt;:
+Updated bat to 0.11.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/565&quot;&gt;#565&lt;/a&gt;:
+Updated Go lang to 1.12.5&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/566&quot;&gt;#566&lt;/a&gt;:
+Updated Helm to 2.14.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/567&quot;&gt;#567&lt;/a&gt;:
+Updated kops to 1.12.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.9.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 May 2019 11:47:24 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.9.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.9.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.8.0 released</title>
@@ -333,32 +369,6 @@ Upgraded Java 8 to 8u192&lt;/li&gt;
         <pubDate>Wed, 17 Oct 2018 18:55:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.1.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.1.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 1.28.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/493&quot;&gt;#493&lt;/a&gt;:
-Upgraded Java 8 to 8u192&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/1.28.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 17 Oct 2018 18:41:34 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/1.28.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/1.28.0-release/</guid>
         
         <category>release</category>
         
