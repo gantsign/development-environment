@@ -510,6 +510,8 @@
         # -Xverify:none disables class verification; not something you should
         # ever use in production (or on your CI) but ok for local development.
         MAVEN_OPTS: '-XX:TieredStopAtLevel=1 -Xverify:none'
+        # Affects the Gradle client not the Gradle server
+        GRADLE_OPTS: '-Xmx64m -XX:TieredStopAtLevel=1 -Xverify:none'
 
     # Install Antigen Zsh shell enhancements
     - role: gantsign.antigen
