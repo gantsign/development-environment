@@ -298,4 +298,9 @@ var store = [{
         "excerpt":"Release highlights   #569:Fixed provisioning error for new users  #570:Updated Minikube to 1.1.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.10.0-release/",
+        "teaser":null},{
+        "title": "Version 2.11.0 released",
+        "excerpt":"Release highlights   #576:Updated Helm to 2.14.1  #577:Updated Minikube to 1.1.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.11.0-release/",
         "teaser":null},]

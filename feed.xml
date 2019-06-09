@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jun 2019 07:53:02 +0100</pubDate>
-    <lastBuildDate>Sun, 09 Jun 2019 07:53:02 +0100</lastBuildDate>
+    <pubDate>Sun, 09 Jun 2019 11:08:30 +0100</pubDate>
+    <lastBuildDate>Sun, 09 Jun 2019 11:08:30 +0100</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Version 2.11.0 released</title>
+        <description>
+&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/576&quot;&gt;#576&lt;/a&gt;:
+Updated Helm to 2.14.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/577&quot;&gt;#577&lt;/a&gt;:
+Updated Minikube to 1.1.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.11.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Jun 2019 10:50:15 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.11.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.11.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.10.0 released</title>
@@ -341,36 +373,6 @@ Added task to upgrade apt packages&lt;/li&gt;
         <pubDate>Mon, 03 Dec 2018 18:11:42 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.2.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.2.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.1.1 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/496&quot;&gt;#496&lt;/a&gt;:
-Fixed Visual Studio Code favourite&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.1.1&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 18 Oct 2018 11:54:25 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.1.1-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.1.1-release/</guid>
         
         <category>release</category>
         
