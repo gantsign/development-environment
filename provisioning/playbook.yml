@@ -97,7 +97,9 @@
         lang: en_GB.UTF-8
 
     # Enable compressed RAM swap
-    - gantsign.zram_config
+    - role: gantsign.zram_config
+      zram_config_min_free_kbytes: 131072
+      zram_config_swappiness: 5
 
     # Install common command line tools
     - gantsign.command-line-tools
