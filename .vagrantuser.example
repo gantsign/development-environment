@@ -77,6 +77,9 @@
 #   audio: dsound
 #   audiocontroller: ac97
 
+# Uncomment the line below to change where the persistent virtual disk is stored
+# persistent_storage_location: '.vagrant/persistent-disk.vdi'
+
 # Uncomment the line below if you prefer a different dock positon (LEFT, RIGHT, BOTTOM)
 # dock_position: BOTTOM
 
