@@ -250,7 +250,7 @@
     <meta itemprop="headline" content="Configuration">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="September 02, 2016">
-    <meta itemprop="dateModified" content="August 27, 2018">
+    <meta itemprop="dateModified" content="June 10, 2019">
 
     <div class="page__inner-wrap">
       
@@ -299,6 +299,7 @@ a users local machine.</p>
           <li><a href="#audio" id="markdown-toc-audio">Audio</a></li>
         </ol>
       </li>
+      <li><a href="#persistent-storage-location" id="markdown-toc-persistent-storage-location">Persistent storage location</a></li>
       <li><a href="#ansible-configuration" id="markdown-toc-ansible-configuration">Ansible configuration</a></li>
       <li><a href="#intellij-idea-edition" id="markdown-toc-intellij-idea-edition">IntelliJ IDEA edition</a></li>
     </ol>
@@ -569,6 +570,16 @@ audio settings to enable audio support.</p>
 
 <p><strong>Note:</strong> this project is only tested with Microsoft Windows as the host OS.</p>
 
+<h3 id="persistent-storage-location">Persistent storage location</h3>
+
+<p>In addition to the virtual disk for the OS, a second virtual disk is mounted to
+the VM to store files that are retained when the OS is re-provisioned. It&#8217;s
+possible to change the location of this virtual disk e.g. to save space on your
+primary disk drive.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">persistent_storage_location</span><span class="pi">:</span> <span class="s1">'</span><span class="s">D:/vagrant/persistent-disk.vdi'</span>
+</code></pre></div></div>
+
 <h3 id="ansible-configuration">Ansible configuration</h3>
 
 <p>Ansible tags can be used to skip certain features when installing the
@@ -662,7 +673,7 @@ configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-08-27">August 27, 2018</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-06-10">June 10, 2019</time></p>
         
       </footer>
 
