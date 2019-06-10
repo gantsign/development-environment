@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2018-08-27T08:40:31+01:00
+modified: 2019-06-10T21:26:52+01:00
 ---
 
 {% include base_path %}
@@ -291,6 +291,17 @@ virtualbox: # All VirtualBox configuration has to be under the same `virtualbox`
 ```
 
 **Note:** this project is only tested with Microsoft Windows as the host OS.
+
+### Persistent storage location
+
+In addition to the virtual disk for the OS, a second virtual disk is mounted to
+the VM to store files that are retained when the OS is re-provisioned. It's
+possible to change the location of this virtual disk e.g. to save space on your
+primary disk drive.
+
+```yaml
+persistent_storage_location: 'D:/vagrant/persistent-disk.vdi'
+```
 
 ### Ansible configuration
 

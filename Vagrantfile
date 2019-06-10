@@ -139,8 +139,9 @@ Vagrant.configure(2) do |config|
     'intellij' => {
       'edition' => 'community',
       'license_key_path' => nil
-    }
+    },
 
+    'persistent_storage_location' => '.vagrant/persistent-disk.vdi'
   }
 
   # Create a forwarded port mapping which allows access to a specific port
@@ -164,7 +165,7 @@ Vagrant.configure(2) do |config|
   # config.vm.synced_folder '../data', '/vagrant_data'
 
   config.persistent_storage.enabled = true
-  config.persistent_storage.location = '.vagrant/persistent-disk.vdi'
+  config.persistent_storage.location = config.user.persistent_storage_location
   config.persistent_storage.size = 16_000
   config.persistent_storage.mountname = 'persistent'
   config.persistent_storage.filesystem = 'ext4'
