@@ -42,7 +42,7 @@
 - src: gantsign.helm
   version: '1.5.1'
 - src: gantsign.hub
-  version: '1.6.1'
+  version: '1.7.0'
 - src: gantsign.inotify
   version: '1.2.0'
 - src: gantsign.intellij
