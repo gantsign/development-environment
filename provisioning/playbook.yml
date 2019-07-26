@@ -472,6 +472,7 @@
       tags:
         - java
         - maven
+        - maven-notifier
         - gui
 
     # Add items to DockbarX launcher

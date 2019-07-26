@@ -55,6 +55,7 @@
 #     - java
 #     - kubernetes
 #     - maven
+#     - maven-notifier
 #     - nodejs
 #     - oh-my-zsh
 #     - postman
