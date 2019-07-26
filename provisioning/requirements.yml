@@ -65,7 +65,7 @@
 - src: gantsign.maven
   version: '5.4.0'
 - src: gantsign.maven-notifier
-  version: '2.5.1'
+  version: '3.0.0'
 - src: gantsign.minikube
   version: '1.9.1'
 - src: gantsign.pipenv
