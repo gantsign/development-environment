@@ -20,7 +20,7 @@ run() {
     done
     htmlproofer /tmp/_site --log-level debug \
         --url-swap "^/development-environment:" \
-        --url-ignore 'http://www.xfce.org'
+        --url-ignore 'http://www.xfce.org,//github.com/gantsign/development-environment/pull/'
 }
 
 docker_build() {
