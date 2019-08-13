@@ -308,4 +308,9 @@ var store = [{
         "excerpt":"Release highlights #579:Made persistent storage location configurable #584:Updated Go lang to 1.12.7 #586:Updated Hub to 2.12.3 #589:Updated Maven Notifier to 2.1.0 #590:Updated Minikube to 1.2.0 #591:Added tag for skipping Maven Notifier install #592:Updated ctop to 0.7.2 #593:Updated Helm to 2.14.3 #596:Updated kops to 1.13.0Full change list For a full list...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.12.0-release/",
+        "teaser":null},{
+        "title": "Version 2.13.0 released",
+        "excerpt":"Release highlights   #599:Updated Minikube to 1.3.0  #600:Fixed compatibility with vagrant-proxyconfFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.13.0-release/",
         "teaser":null},]
