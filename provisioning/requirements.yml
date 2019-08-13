@@ -37,7 +37,6 @@
   version: '2.1.7'
 - src: gantsign.helm
 - src: gantsign.hub
-  version: '1.7.2'
 - src: gantsign.inotify
   version: '1.2.1'
 - src: gantsign.intellij
