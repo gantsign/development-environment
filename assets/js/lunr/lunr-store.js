@@ -313,4 +313,9 @@ var store = [{
         "excerpt":"Release highlights   #599:Updated Minikube to 1.3.0  #600:Fixed compatibility with vagrant-proxyconfFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.13.0-release/",
+        "teaser":null},{
+        "title": "Version 2.14.0 released",
+        "excerpt":"Release highlights #603:Unpinned bat version #604:Unpinned ctop version #605:Unpinned fd version #606:Unpinned Git credential manager version #607:Unpinned Helm version #608:Unpinned hub version #609:Unpinned kompose version #610:Unpinned kops version #611:Unpinned Minikube version #613:Updated Go lang to 1.12.9Full change list For a full list of changes view therelease notes. Upgrade procedure To...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.14.0-release/",
         "teaser":null},]
