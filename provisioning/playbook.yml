@@ -49,6 +49,7 @@
         - /.atom/*
         + /.bash_history
         + /.config
+        + /.config/hub
         + /.config/Code
         + /.config/Code/User
         + /.config/Code/User/settings.json
