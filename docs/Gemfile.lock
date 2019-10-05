@@ -133,6 +133,8 @@ GEM
     jekyll-github-metadata (2.12.1)
       jekyll (~> 3.4)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-include-cache (0.2.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-mentions (1.4.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -215,11 +217,12 @@ GEM
       jekyll (~> 3.5)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minimal-mistakes-jekyll (4.13.0)
+    minimal-mistakes-jekyll (4.16.5)
       jekyll (~> 3.7)
       jekyll-data (~> 1.0)
       jekyll-feed (~> 0.10)
       jekyll-gist (~> 1.5)
+      jekyll-include-cache (~> 0.1)
       jekyll-paginate (~> 1.1)
       jekyll-sitemap (~> 1.2)
       jemoji (~> 0.10)
@@ -266,7 +269,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 198)
   html-proofer (= 3.9.0)
-  minimal-mistakes-jekyll (= 4.13.0)
+  minimal-mistakes-jekyll (= 4.16.5)
 
 BUNDLED WITH
    1.16.1
