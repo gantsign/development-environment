@@ -471,8 +471,6 @@ var idx = lunr(function () {
   }
 });
 
-console.log( jQuery.type(idx) );
-
 $(document).ready(function() {
   $('input#search').on('keyup', function () {
     var resultdiv = $('#results');
@@ -496,7 +494,7 @@ $(document).ready(function() {
       if(store[ref].teaser){
         var searchitem =
           '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
               '<h2 class="archive__item-title" itemprop="headline">'+
                 '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
               '</h2>'+
@@ -510,7 +508,7 @@ $(document).ready(function() {
       else{
     	  var searchitem =
           '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
               '<h2 class="archive__item-title" itemprop="headline">'+
                 '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
               '</h2>'+
