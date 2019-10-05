@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2019-08-16T07:59:25+01:00
+modified: 2019-10-05T17:13:53+01:00
 ---
 
 {% include base_path %}
@@ -810,7 +810,7 @@ currently have installed.
 
 ### Pipenv package manager
 
-Website: [https://docs.pipenv.org](https://docs.pipenv.org)
+Website: [https://pipenv.readthedocs.io](https://pipenv.readthedocs.io)
 
 Pipenv helps you manage a virtualenv for your projects as well as managing
 your packages. It will add/remove packages from your `Pipfile` as you
