@@ -8,8 +8,6 @@ date: 2018-10-12T13:07:23+01:00
 modified: 2018-10-16T10:45:23+01:00
 ---
 
-{% include base_path %}
-
 The following instructions will guide you through the process of upgrading your
 local GantSign EnV development environment to the latest release.
 

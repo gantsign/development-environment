@@ -8,8 +8,6 @@ date: 2016-09-02T14:47:02+01:00
 modified: 2019-06-10T21:26:52+01:00
 ---
 
-{% include base_path %}
-
 The goal of this project is to make it easy to build your development
 environment in a reliable and reproducible way.
 
@@ -227,7 +225,7 @@ Each user can choose whether they want the dock bar on the left, right or bottom
 of the screen.
 
 {% capture fig_img %}
-![Dock position]({{ base_path }}/images/dock-position.png)
+![Dock position]({{ '/images/dock-position.png' | relative_url }})
 {% endcapture %}
 
 <figure>

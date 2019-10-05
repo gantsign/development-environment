@@ -13,8 +13,6 @@ date: 2016-10-31T18:04:34+01:00
 modified: 2016-10-31T18:04:34+01:00
 ---
 
-{% include base_path %}
-
 When using a virtual development environment it's important to be able to
 rebuild it with the minimum of effort so you can perform software updates or
 just repair your environment.
