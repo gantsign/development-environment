@@ -8,8 +8,6 @@ date: 2016-08-31T09:05:34+01:00
 modified: 2018-10-12T14:13:26+01:00
 ---
 
-{% include base_path %}
-
 The following instructions will guide you through the process of provisioning
 your local development environment using GantSign EnV.
 
@@ -85,12 +83,13 @@ proxy:
 ```
 
 For more proxy configuration options, including proxy auto-config support,
-see the [configuration]({{ base_path }}/docs/configuration) documentation.
+see the [configuration]({{ '/docs/configuration' | relative_url }})
+documentation.
 
 ### Advanced configuration
 
 For more configuration options, including configuring regional preferences, view
-the [configuration]({{ base_path }}/docs/configuration) documentation.
+the [configuration]({{ '/docs/configuration' | relative_url }}) documentation.
 
 ## Run Vagrant
 

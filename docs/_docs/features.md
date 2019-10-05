@@ -8,8 +8,6 @@ date: 2017-01-18T16:35:52+00:00
 modified: 2019-08-16T07:59:25+01:00
 ---
 
-{% include base_path %}
-
 There are a lot of well known projects, and hidden gems, which aid in your
 productivity; this project aims to install the best of them to make life a
 little easier.
@@ -79,7 +77,7 @@ Website: [http://gnometerminator.blogspot.co.uk/p/introduction.html](http://gnom
 A highly customizable terminal emulator that supports splitting the screen into
 grids of separate console windows (as well as supporting multiple tabs).
 
-![Terminator terminal emulator]({{ base_path }}/images/terminator.png)
+![Terminator terminal emulator]({{ '/images/terminator.png' | relative_url }})
 
 Tip: right click on the window to bring up the menu to split the screen or open
 a new tab.
@@ -129,7 +127,7 @@ Oh My Zsh gives you:
 * Themes to enhance your command prompt (like showing the current git branch).
 * Plugins to enable command specific tab completion (e.g. `mvn` and `git`).
 
-![zsh terminal output]({{ base_path }}/images/oh-my-zsh.png)
+![zsh terminal output]({{ '/images/oh-my-zsh.png' | relative_url }})
 
 Try this:
 
@@ -170,7 +168,7 @@ HTTPie is a command line HTTP client. HTTPie is somewhat like cURL or Wget, but
 designed more for interactive use than use in shell scripting. It has a more
 intuitive command line interface, JSON support and syntax highlighting.
 
-![HTTPie]({{ base_path }}/images/httpie.png)
+![HTTPie]({{ '/images/httpie.png' | relative_url }})
 
 ### The Silver Searcher
 
@@ -185,7 +183,7 @@ readable format.
 
 Below is the output of the command `ag java` on this project:
 
-![The Silver Searcher terminal output]({{ base_path }}/images/ag.png)
+![The Silver Searcher terminal output]({{ '/images/ag.png' | relative_url }})
 
 Tip: if you have multiple pages of output you may want to use
 `ag --pager=less PATTERN`.
@@ -199,7 +197,7 @@ format.
 
 Below is the output of the command `tree` on this project:
 
-![Tree terminal output]({{ base_path }}/images/tree.png)
+![Tree terminal output]({{ '/images/tree.png' | relative_url }})
 
 Tip: if you have multiple pages of output you may want to use
 `tree -C | less -R`.
@@ -211,7 +209,7 @@ Website: [https://stedolan.github.io/jq](https://stedolan.github.io/jq)
 The `jq` command would be worth installing just to be able to use it to pretty
 print JSON in colour, but `jq` is amazing at manipulating JSON as well.
 
-![Jq output]({{ base_path }}/images/jq.png)
+![Jq output]({{ '/images/jq.png' | relative_url }})
 
 Tip: to pretty print a JSON file run `jq '.' PATH_TO_JSON_FILE`.
 
@@ -224,7 +222,7 @@ Website: [https://github.com/sharkdp/fd](https://github.com/sharkdp/fd)
 It's much better for the most common use-case (i.e. finding files/directories by
 name) e.g:
 
-![fd]({{ base_path }}/images/fd.png)
+![fd]({{ '/images/fd.png' | relative_url }})
 
 This is obviously easier than `find -iname '*molecule*'`.
 
@@ -240,7 +238,7 @@ syntax-highlighting, line numbers, searching and paging.
 
 e.g. running `bat ~/.bashrc` will give you:
 
-![fd]({{ base_path }}/images/bat.png)
+![fd]({{ '/images/bat.png' | relative_url }})
 
 ### htop
 
@@ -249,7 +247,7 @@ Website: [http://hisham.hm/htop](http://hisham.hm/htop)
 The `htop` command is essentially a `top` replacement with a better looking user
 interface and a few more features.
 
-![htop terminal output]({{ base_path }}/images/htop.png)
+![htop terminal output]({{ '/images/htop.png' | relative_url }})
 
 ### Glances
 
@@ -259,7 +257,7 @@ The `glances` application shows a broader view of what's going on on your system
 than `top` or `htop` provide. In addition to RAM and CPU usage, you can see
 disk I/O, network I/O and warnings/alerts.
 
-![Glances terminal output]({{ base_path }}/images/glances.png)
+![Glances terminal output]({{ '/images/glances.png' | relative_url }})
 
 ## For GUI desktop users
 
@@ -269,7 +267,7 @@ No more fishing through menus to run the applications you use the most. The
 provisioning script pre-pins selected applications to the dock so they're
 ready to use.
 
-![Pre-pinned applications]({{ base_path }}/images/pin-to-launcher.png)
+![Pre-pinned applications]({{ '/images/pin-to-launcher.png' | relative_url }})
 
 ### Choice of dock position
 
@@ -277,7 +275,7 @@ Each user can choose whether they want the dock bar on the left, right or bottom
 of the screen.
 
 {% capture fig_img %}
-![Dock position]({{ base_path }}/images/dock-position.png)
+![Dock position]({{ '/images/dock-position.png' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -292,7 +290,7 @@ Website: [https://wiki.gnome.org/Apps/Seahorse](https://wiki.gnome.org/Apps/Seah
 Graphical user interface for managing your keys, and a SSH agent to save you
 having to put in your SSH password more than once in the same session.
 
-![Seahorse]({{ base_path }}/images/seahorse.png)
+![Seahorse]({{ '/images/seahorse.png' | relative_url }})
 
 ## For developers
 
@@ -313,7 +311,7 @@ money.
 
 By default the Community Edition is installed.
 
-![IntelliJ IDEA IDE]({{ base_path }}/images/intellij.png)
+![IntelliJ IDEA IDE]({{ '/images/intellij.png' | relative_url }})
 
 ### Visual Studio Code
 
@@ -332,7 +330,7 @@ expect from a standalone Git client, it covers the normal development workflow.
 Tip: click on the branch name in the bottom left corner to change/create
 branches.
 
-![Visual Studio Code editor window]({{ base_path }}/images/visual-studio-code.png)
+![Visual Studio Code editor window]({{ '/images/visual-studio-code.png' | relative_url }})
 
 ### EditorConfig
 
@@ -430,7 +428,7 @@ most fully featured open source GUI Git client available for Linux.
 
 Git-GUI is the commit dialog and the UI for performing remote operations.
 
-![Git GUI window]({{ base_path }}/images/git-gui.png)
+![Git GUI window]({{ '/images/git-gui.png' | relative_url }})
 
 Generally, I'd advise only using Git-GUI when you need to amend a commit, the
 rest of the time you're better off using the commit dialog in your editor/IDE.
@@ -446,7 +444,7 @@ most fully featured open source GUI Git client available for Linux.
 
 Gitk is the repository/history browser.
 
-![Gitk window]({{ base_path }}/images/gitk.png)
+![Gitk window]({{ '/images/gitk.png' | relative_url }})
 
 As you can see it's not the prettiest application, but the other options are
 either not free for commercial use, require registration to download, or lack
@@ -466,7 +464,7 @@ Website: [http://meldmerge.org](http://meldmerge.org)
 
 A GUI diff/merge tool with Git support.
 
-![Meld diff/merge tool]({{ base_path }}/images/meld.png)
+![Meld diff/merge tool]({{ '/images/meld.png' | relative_url }})
 
 Tip: run `meld .` in your Git working directory to review your uncommitted
 changes.
@@ -539,7 +537,7 @@ Website: [https://www.getpostman.com](https://www.getpostman.com)
 
 A user friendly tool for testing REST services.
 
-![Postman window]({{ base_path }}/images/postman.png)
+![Postman window]({{ '/images/postman.png' | relative_url }})
 
 ## For containerized development
 
@@ -565,7 +563,7 @@ Website: [https://ctop.sh](https://ctop.sh)
 container metrics. View CPU, memory, network I/O, and disk I/O for your
 Docker containers at a glance from your terminal.
 
-![ctop in terminal window]({{ base_path }}/images/ctop.png)
+![ctop in terminal window]({{ '/images/ctop.png' | relative_url }})
 
 ### Kubernetes
 
@@ -695,7 +693,7 @@ One for all you multi-taskers; if you like to check your email while waiting for
 a long build to finish, this extension will trigger a popup notification to let
 you know when the build is complete.
 
-![Maven Notifier popup]({{ base_path }}/images/maven-notifier.png)
+![Maven Notifier popup]({{ '/images/maven-notifier.png' | relative_url }})
 
 ### IntelliJ IDEA plugins
 
