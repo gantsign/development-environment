@@ -5,14 +5,13 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Oct 2019 17:33:32 +0100</pubDate>
-    <lastBuildDate>Sat, 05 Oct 2019 17:33:32 +0100</lastBuildDate>
-    <generator>Jekyll v3.7.4</generator>
+    <pubDate>Sat, 05 Oct 2019 18:03:33 +0100</pubDate>
+    <lastBuildDate>Sat, 05 Oct 2019 18:03:33 +0100</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Version 2.14.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/603&quot;&gt;#603&lt;/a&gt;:
@@ -44,7 +43,8 @@ Updated Go lang to 1.12.9&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 16 Aug 2019 10:05:48 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.14.0-release/</link>
@@ -59,8 +59,7 @@ Updated Go lang to 1.12.9&lt;/li&gt;
     
       <item>
         <title>Version 2.13.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/599&quot;&gt;#599&lt;/a&gt;:
@@ -76,7 +75,8 @@ Fixed compatibility with vagrant-proxyconf&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 13 Aug 2019 13:57:42 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.13.0-release/</link>
@@ -91,8 +91,7 @@ Fixed compatibility with vagrant-proxyconf&lt;/li&gt;
     
       <item>
         <title>Version 2.12.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/579&quot;&gt;#579&lt;/a&gt;:
@@ -122,7 +121,8 @@ Updated kops to 1.13.0&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Aug 2019 19:20:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.12.0-release/</link>
@@ -137,8 +137,7 @@ Updated kops to 1.13.0&lt;/li&gt;
     
       <item>
         <title>Version 2.11.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/576&quot;&gt;#576&lt;/a&gt;:
@@ -154,7 +153,8 @@ Updated Minikube to 1.1.1&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Jun 2019 10:50:15 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.11.0-release/</link>
@@ -169,8 +169,7 @@ Updated Minikube to 1.1.1&lt;/li&gt;
     
       <item>
         <title>Version 2.10.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/569&quot;&gt;#569&lt;/a&gt;:
@@ -186,7 +185,8 @@ Updated Minikube to 1.1.0&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 May 2019 06:33:53 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.10.0-release/</link>
@@ -201,8 +201,7 @@ Updated Minikube to 1.1.0&lt;/li&gt;
     
       <item>
         <title>Version 2.9.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/563&quot;&gt;#563&lt;/a&gt;:
@@ -222,7 +221,8 @@ Updated kops to 1.12.1&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 19 May 2019 11:47:24 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.9.0-release/</link>
@@ -237,8 +237,7 @@ Updated kops to 1.12.1&lt;/li&gt;
     
       <item>
         <title>Version 2.8.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/560&quot;&gt;#560&lt;/a&gt;:
@@ -254,7 +253,8 @@ Updated Minikube to 1.0.1&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Apr 2019 19:11:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.8.0-release/</link>
@@ -269,8 +269,7 @@ Updated Minikube to 1.0.1&lt;/li&gt;
     
       <item>
         <title>Version 2.7.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/551&quot;&gt;#551&lt;/a&gt;:
@@ -296,7 +295,8 @@ Updated Maven to 3.6.1&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Apr 2019 10:28:31 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.7.0-release/</link>
@@ -311,8 +311,7 @@ Updated Maven to 3.6.1&lt;/li&gt;
     
       <item>
         <title>Version 2.6.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/543&quot;&gt;#543&lt;/a&gt;:
@@ -338,7 +337,8 @@ Updated Minikube to 0.35.0&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Mar 2019 14:47:24 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.6.0-release/</link>
@@ -353,8 +353,7 @@ Updated Minikube to 0.35.0&lt;/li&gt;
     
       <item>
         <title>Version 2.5.0 released</title>
-        <description>
-&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/537&quot;&gt;#537&lt;/a&gt;:
@@ -374,7 +373,8 @@ Updated Go lang to 1.11.5&lt;/li&gt;
 
 &lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
 
-&lt;p&gt;To upgrade follow the &lt;a href=&quot;https://gantsign.github.io/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Feb 2019 19:27:52 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.5.0-release/</link>

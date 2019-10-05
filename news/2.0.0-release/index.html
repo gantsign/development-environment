@@ -284,8 +284,7 @@
 
       <section class="page__content" itemprop="text">
         
-        
-<h2 id="release-highlights">Release highlights</h2>
+        <h2 id="release-highlights">Release highlights</h2>
 
 <h3 id="upgraded-to-ubuntu-bionic-beaver">Upgraded to Ubuntu Bionic Beaver</h3>
 
@@ -296,7 +295,7 @@ latest LTS release of Ubuntu.</p>
 as the standard Ubuntu desktop. We’ve also dropped the option of using the Xfce
 desktop for your development environment. While you no longer have a choice of
 desktops you can now
-<a href="https://gantsign.github.io/development-environment/docs/features/#choice-of-dock-position">configure the placement</a>
+<a href="/development-environment/docs/features/#choice-of-dock-position">configure the placement</a>
 of the dock.</p>
 
 <p>Apart from that you’ll notice newer versions of popular packages, see the
@@ -306,8 +305,8 @@ Ubuntu Bionic Beaver
 <h3 id="improved-java-support">Improved Java support</h3>
 
 <ul>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#sdkman">SDKMAN!</a> Software Development
-Kit Manager</li>
+  <li>Added <a href="/development-environment/docs/features/#sdkman">SDKMAN!</a> Software
+Development Kit Manager</li>
   <li>Java 11 is now the default JDK (Java 8 is still available)
     <ul>
       <li>Use SDKMAN! to switch Java versions e.g.
@@ -320,7 +319,7 @@ Kit Manager</li>
   </li>
   <li>
     <p>Added new GantSign
-<a href="https://gantsign.github.io/development-environment/docs/features/#intellij-code-style">code style</a>
+<a href="/development-environment/docs/features/#intellij-code-style">code style</a>
 for IntelliJ IDE</p>
 
     <p>Note: while the new GantSign code style is the default, we recommend you
@@ -331,7 +330,7 @@ for IntelliJ IDE</p>
   </li>
   <li>
     <p>Added GantSign
-<a href="https://gantsign.github.io/development-environment/docs/features/#intellij-inspection-profile">inspection profile</a>
+<a href="/development-environment/docs/features/#intellij-inspection-profile">inspection profile</a>
 for IntelliJ IDEA</p>
 
     <p>Note: while the new GantSign inspection profile is the default, we recommend
@@ -350,26 +349,26 @@ for IntelliJ IDEA</li>
 <h3 id="improved-python-support">Improved Python support</h3>
 
 <ul>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#pyenv-version-manager">Pyenv</a> Python
-version manager</li>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#pipenv-package-manager">Pipenv</a> Python
-package manager with Virtualenv support</li>
+  <li>Added <a href="/development-environment/docs/features/#pyenv-version-manager">Pyenv</a>
+Python version manager</li>
+  <li>Added <a href="/development-environment/docs/features/#pipenv-package-manager">Pipenv</a>
+Python package manager with Virtualenv support</li>
   <li>Added
-<a href="https://gantsign.github.io/development-environment/docs/features/#python-plugin-for-intellij-idea">Python plugin</a>
+<a href="/development-environment/docs/features/#python-plugin-for-intellij-idea">Python plugin</a>
 for IntelliJ IDEA</li>
 </ul>
 
 <h3 id="improved-kubernetes-support">Improved Kubernetes support</h3>
 
 <ul>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#minikube">Minikube</a> for creating a local
-Kubernetes cluster</li>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#kops">Kops</a> for creating production
-grade Kubernates clusters</li>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#helm">Helm</a> the Kubernetes package
-manager</li>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#kompose">Kompose</a> for using Docker
-Compose files with Kubernetes</li>
+  <li>Added <a href="/development-environment/docs/features/#minikube">Minikube</a> for creating
+a local Kubernetes cluster</li>
+  <li>Added <a href="/development-environment/docs/features/#kops">Kops</a> for creating
+production grade Kubernates clusters</li>
+  <li>Added <a href="/development-environment/docs/features/#helm">Helm</a> the Kubernetes
+package manager</li>
+  <li>Added <a href="/development-environment/docs/features/#kompose">Kompose</a> for using
+Docker Compose files with Kubernetes</li>
 </ul>
 
 <h3 id="improved-zsh-support">Improved Zsh support</h3>
@@ -380,8 +379,8 @@ makes suggestions based on previously executed commands</li>
   <li>Added
 <a href="https://github.com/zsh-users/zsh-syntax-highlighting">syntax-highlighting</a>
 syntax highlighting for shell commands</li>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#antigen">Antigen</a> package manager for
-Zsh</li>
+  <li>Added <a href="/development-environment/docs/features/#antigen">Antigen</a> package
+manager for Zsh</li>
 </ul>
 
 <h3 id="improved-tab-completion-support">Improved tab-completion support</h3>
@@ -416,10 +415,10 @@ support</li>
 <h3 id="improved-git-support">Improved Git support</h3>
 
 <ul>
-  <li>Added <a href="https://gantsign.github.io/development-environment/docs/features/#hub">hub</a> wrapper for Git with
+  <li>Added <a href="/development-environment/docs/features/#hub">hub</a> wrapper for Git with
 additional features for GitHub</li>
   <li>Added
-<a href="https://gantsign.github.io/development-environment/docs/features/#git-credential-manager-for-mac-and-linux">Git Credential Manager for Mac and Linux</a></li>
+<a href="/development-environment/docs/features/#git-credential-manager-for-mac-and-linux">Git Credential Manager for Mac and Linux</a></li>
   <li>
     <p>Added new Git aliases</p>
 
@@ -480,22 +479,24 @@ additional features for GitHub</li>
         <p><code class="highlighter-rouge">git release-notes</code> ≡ <code class="highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
       </li>
       <li>
-        <p><a href="https://gantsign.github.io/development-environment/docs/features/#git-aliases">View all Git aliases</a></p>
+        <p><a href="/development-environment/docs/features/#git-aliases">View all Git aliases</a></p>
       </li>
     </ul>
   </li>
   <li>Added configuration for
-<a href="https://gantsign.github.io/development-environment/docs/configuration/#git-user-name-and-email-address">setting the Git user name and email address</a>
+<a href="/development-environment/docs/configuration/#git-user-name-and-email-address">setting the Git user name and email address</a>
 during provisioning</li>
 </ul>
 
 <h3 id="more-command-line-tools">More command line tools</h3>
 
 <ul>
-  <li><a href="https://gantsign.github.io/development-environment/docs/features/#bat">bat</a> more advanced alternative to <code class="highlighter-rouge">cat</code></li>
-  <li><a href="https://gantsign.github.io/development-environment/docs/features/#ctop">ctop</a> <code class="highlighter-rouge">top</code> like tool for Docker
+  <li><a href="/development-environment/docs/features/#bat">bat</a> more advanced alternative to
+<code class="highlighter-rouge">cat</code></li>
+  <li><a href="/development-environment/docs/features/#ctop">ctop</a> <code class="highlighter-rouge">top</code> like tool for Docker
 containers</li>
-  <li><a href="https://gantsign.github.io/development-environment/docs/features/#fd">fd</a> intuitive alternative to <code class="highlighter-rouge">find</code></li>
+  <li><a href="/development-environment/docs/features/#fd">fd</a> intuitive alternative to
+<code class="highlighter-rouge">find</code></li>
 </ul>
 
 <h3 id="improved-credential-handling">Improved credential handling</h3>
@@ -515,7 +516,7 @@ to change the password on first use.</p>
 
 <p>The original backup mechanism (using Unison file synchronization) was prone to
 failure. For version 2 we’re using a
-<a href="https://gantsign.github.io/development-environment/docs/features/#file-backup--restore-between-rebuilds">new backup mechanism</a>
+<a href="/development-environment/docs/features/#file-backup--restore-between-rebuilds">new backup mechanism</a>
 using rsync.</p>
 
 <h3 id="removed-software">Removed software</h3>
@@ -588,7 +589,7 @@ conflicts with the native triggers feature in recent versions of Vagrant).</p>
 </code></pre></div></div>
 
 <p>If there are any problems follow the
-<a href="https://gantsign.github.io/development-environment/docs/upgrade/#troubleshooting">troubleshooting advice</a>.</p>
+<a href="/development-environment/docs/upgrade/#troubleshooting">troubleshooting advice</a>.</p>
 
 <h2 id="change-your-password">Change your password</h2>
 
@@ -639,15 +640,13 @@ client VM to fix the file permissions:</p>
       
 
       
-
-
   <nav class="pagination">
     
-      <a href="https://gantsign.github.io/development-environment/news/1.27.0-release/" class="pagination--pager" title="Version 1.27.0 released
+      <a href="/development-environment/news/1.27.0-release/" class="pagination--pager" title="Version 1.27.0 released
 ">Previous</a>
     
     
-      <a href="https://gantsign.github.io/development-environment/news/1.28.0-release/" class="pagination--pager" title="Version 1.28.0 released
+      <a href="/development-environment/news/1.28.0-release/" class="pagination--pager" title="Version 1.28.0 released
 ">Next</a>
     
   </nav>

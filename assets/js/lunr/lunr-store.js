@@ -35,22 +35,22 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/docs/upgrade/",
         "teaser":null},{
         "title": "Welcome to the new website!",
-        "excerpt":" The documentation was getting a bit long for the README.md so here is theshiny new website; it&#8217;s built using Jekyll andhosted using GitHub pages. ","categories": [],
+        "excerpt":" The documentation was getting a bit long for the README.md so here is theshiny new website; it’s built using Jekyll andhosted using GitHub pages. ","categories": [],
         "tags": ["documentation"],
         "url": "https://gantsign.github.io/development-environment/new-website/",
         "teaser":null},{
         "title": "Default desktop is now Ubuntu Unity",
-        "excerpt":"To make the development environment as robust as possible, theUbuntu Unity desktop is nowinstalled by default. As Unity is the default desktop on Ubuntu it tends to havebetter support from third party apps. Left: Ubuntu Unity desktop, right: Xfce desktop.For those of you who prefer the previous Xfce desktop,it&#8217;s still...","categories": [],
+        "excerpt":"To make the development environment as robust as possible, theUbuntu Unity desktop is nowinstalled by default. As Unity is the default desktop on Ubuntu it tends to havebetter support from third party apps. Left: Ubuntu Unity desktop, right: Xfce desktop.For those of you who prefer the previous Xfce desktop,it’s still...","categories": [],
         "tags": ["documentation"],
         "url": "https://gantsign.github.io/development-environment/unity/",
         "teaser":null},{
         "title": "Improved and documented proxy support",
-        "excerpt":"While it was always possible to use the development environment behind a proxy,you had to know about thevagrant proxyconf plugin; theprocess wasn&#8217;t part of the documentation and some post install manual setup wasstill required to get Google Chrome to use the proxy. This has now been addressed by updates to...","categories": [],
+        "excerpt":"While it was always possible to use the development environment behind a proxy,you had to know about thevagrant proxyconf plugin; theprocess wasn’t part of the documentation and some post install manual setup wasstill required to get Google Chrome to use the proxy. This has now been addressed by updates to...","categories": [],
         "tags": ["proxy"],
         "url": "https://gantsign.github.io/development-environment/proxy/",
         "teaser":null},{
         "title": "Improved storage of persisted files",
-        "excerpt":"When using a virtual development environment it&#8217;s important to be able torebuild it with the minimum of effort so you can perform software updates orjust repair your environment. When rebuilding your environment you want to keep your workspace and certainother user specific files; this enables you to resume working without...","categories": [],
+        "excerpt":"When using a virtual development environment it’s important to be able torebuild it with the minimum of effort so you can perform software updates orjust repair your environment. When rebuilding your environment you want to keep your workspace and certainother user specific files; this enables you to resume working without...","categories": [],
         "tags": ["storage"],
         "url": "https://gantsign.github.io/development-environment/persistence/",
         "teaser":null},{
@@ -60,7 +60,7 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/xenial/",
         "teaser":null},{
         "title": "Version 1.0 released",
-        "excerpt":"After more than seven months of development, GantSign EnV has matured enough forits first production quality release. From this point it&#8217;s recommended users GantSign EnV use tagged releases of thisproject rather than following development on the master branch. New users can follow thegetting started guide to use thisrelease. Existing users...","categories": [],
+        "excerpt":"After more than seven months of development, GantSign EnV has matured enough forits first production quality release. From this point it’s recommended users GantSign EnV use tagged releases of thisproject rather than following development on the master branch. New users can follow thegetting started guide to usethis release. Existing users...","categories": [],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/1.0-release/",
         "teaser":null},{
@@ -85,12 +85,12 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/1.3-release/",
         "teaser":null},{
         "title": "Node.js support",
-        "excerpt":"While Node.js has been bundled with this development environment for the lastfew months, it hasn&#8217;t been a document feature. After successfully using the Node.js support on a couple of projects it&#8217;s timeto promote it as a documented feature. For details of the Node.js support view thefeaturespage. ","categories": [],
+        "excerpt":"While Node.js has been bundled with this development environment for the lastfew months, it hasn’t been a document feature. After successfully using the Node.js support on a couple of projects it’s timeto promote it as a documented feature. For details of the Node.js support view thefeaturespage. ","categories": [],
         "tags": ["nodejs"],
         "url": "https://gantsign.github.io/development-environment/nodejs/",
         "teaser":null},{
         "title": "Switched to Git-GUI git client",
-        "excerpt":"Since GitKraken is no longer free forcommercial useit&#8217;s been replaced in the GantSign development environment. Installed in place of GitKraken are Git-GUI and Gitk; while they&#8217;re a lot lesspretty, they are more stable, feature complete and are open source. For more details of Git-GUI and Gitk support view thefeatures page....","categories": [],
+        "excerpt":"Since GitKraken is no longer free forcommercial useit’s been replaced in the GantSign development environment. Installed in place of GitKraken are Git-GUI and Gitk; while they’re a lot lesspretty, they are more stable, feature complete and are open source. For more details of Git-GUI and Gitk support view thefeatures page....","categories": [],
         "tags": ["nodejs"],
         "url": "https://gantsign.github.io/development-environment/git-gui/",
         "teaser":null},{
@@ -245,17 +245,17 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/news/1.28.0-release/",
         "teaser":null},{
         "title": "Version 2.1.0 released",
-        "excerpt":"Release highlights   #493:Upgraded Java 8 to 8u192Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #493:Upgraded Java 8 to 8u192Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.1.0-release/",
         "teaser":null},{
         "title": "Version 2.1.1 released",
-        "excerpt":"Release highlights   #496:Fixed Visual Studio Code favouriteFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #496:Fixed Visual Studio Code favouriteFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.1.1-release/",
         "teaser":null},{
         "title": "Version 2.2.0 released",
-        "excerpt":"Release highlights   #500:Updated Maven to 3.6.0  #501:Updated Go lang to 1.11.2  #502:Updated Java 11 to 11.0.1  #509:Added task to upgrade apt packagesFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #500:Updated Maven to 3.6.0  #501:Updated Go lang to 1.11.2  #502:Updated Java 11 to 11.0.1  #509:Added task to upgrade apt packagesFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.2.0-release/",
         "teaser":null},{
@@ -265,17 +265,17 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/news/2.3.0-release/",
         "teaser":null},{
         "title": "Version 2.4.0 released",
-        "excerpt":"Release highlights   #522:Updated Java 8 to 8u202  #526:Updated Helm to 2.12.2  #527:Updated Hub to 2.7.1  #528:Updated kops to 1.11.0  #529:Updated Minikube to 0.33.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #522:Updated Java 8 to 8u202  #526:Updated Helm to 2.12.2  #527:Updated Hub to 2.7.1  #528:Updated kops to 1.11.0  #529:Updated Minikube to 0.33.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.4.0-release/",
         "teaser":null},{
         "title": "Version 2.5.0 released",
-        "excerpt":"Release highlights   #537:Updated gantsign.visual-studio-code role to 6.2.1 (fixes extension install)  #538:Updated gantsign.visual-studio-code-extensions role to 2.1.1 (fixes extension install)  #531:Updated Java 11 to 11.0.2  #535:Updated Go lang to 1.11.5Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #537:Updated gantsign.visual-studio-code role to 6.2.1 (fixes extension install)  #538:Updated gantsign.visual-studio-code-extensions role to 2.1.1 (fixes extension install)  #531:Updated Java 11 to 11.0.2  #535:Updated Go lang to 1.11.5Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.5.0-release/",
         "teaser":null},{
         "title": "Version 2.6.0 released",
-        "excerpt":"Release highlights #543:Updated Node.js to version 10 #544:Updated Go lang to 1.12.1 #545:Updated Helm to 2.13.0 #546:Updated Hub to 2.10.0 #547:Updated Kompose to 1.18.0 #548:Updated kops to 1.11.1 #549:Updated Minikube to 0.35.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade...","categories": ["news"],
+        "excerpt":"Release highlights #543:Updated Node.js to version 10 #544:Updated Go lang to 1.12.1 #545:Updated Helm to 2.13.0 #546:Updated Hub to 2.10.0 #547:Updated Kompose to 1.18.0 #548:Updated kops to 1.11.1 #549:Updated Minikube to 0.35.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation....","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.6.0-release/",
         "teaser":null},{
@@ -285,22 +285,22 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/news/2.7.0-release/",
         "teaser":null},{
         "title": "Version 2.8.0 released",
-        "excerpt":"Release highlights   #560:Updated Go lang to 1.12.4  #561:Updated Minikube to 1.0.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #560:Updated Go lang to 1.12.4  #561:Updated Minikube to 1.0.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.8.0-release/",
         "teaser":null},{
         "title": "Version 2.9.0 released",
-        "excerpt":"Release highlights   #563:Updated bat to 0.11.0  #565:Updated Go lang to 1.12.5  #566:Updated Helm to 2.14.0  #567:Updated kops to 1.12.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #563:Updated bat to 0.11.0  #565:Updated Go lang to 1.12.5  #566:Updated Helm to 2.14.0  #567:Updated kops to 1.12.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.9.0-release/",
         "teaser":null},{
         "title": "Version 2.10.0 released",
-        "excerpt":"Release highlights   #569:Fixed provisioning error for new users  #570:Updated Minikube to 1.1.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #569:Fixed provisioning error for new users  #570:Updated Minikube to 1.1.0Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.10.0-release/",
         "teaser":null},{
         "title": "Version 2.11.0 released",
-        "excerpt":"Release highlights   #576:Updated Helm to 2.14.1  #577:Updated Minikube to 1.1.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #576:Updated Helm to 2.14.1  #577:Updated Minikube to 1.1.1Full change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.11.0-release/",
         "teaser":null},{
@@ -310,7 +310,7 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/news/2.12.0-release/",
         "teaser":null},{
         "title": "Version 2.13.0 released",
-        "excerpt":"Release highlights   #599:Updated Minikube to 1.3.0  #600:Fixed compatibility with vagrant-proxyconfFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow the upgrade documentation. ","categories": ["news"],
+        "excerpt":"Release highlights   #599:Updated Minikube to 1.3.0  #600:Fixed compatibility with vagrant-proxyconfFull change list For a full list of changes view therelease notes. Upgrade procedure To upgrade follow theupgrade documentation. ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.13.0-release/",
         "teaser":null},{

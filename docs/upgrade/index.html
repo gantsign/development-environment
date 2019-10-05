@@ -152,8 +152,6 @@
 
 
 
-
-
 <div id="main" role="main">
   
   <div class="sidebar sticky">
@@ -248,7 +246,7 @@
 
   <article class="page numbered_headings" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Upgrade">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="The following instructions will guide you through the process of upgrading yourlocal GantSign EnV development environment to the latest release.">
     <meta itemprop="datePublished" content="October 12, 2018">
     <meta itemprop="dateModified" content="October 16, 2018">
 
@@ -262,8 +260,7 @@
       
 
       <section class="page__content" itemprop="text">
-        
-<p>The following instructions will guide you through the process of upgrading your
+        <p>The following instructions will guide you through the process of upgrading your
 local GantSign EnV development environment to the latest release.</p>
 
 <ol class="inline_toc" id="markdown-toc">
@@ -325,12 +322,12 @@ the host (from the project root directory):</p>
 
 <h4 id="http-errors">HTTP errors</h4>
 
-<p>It&#8217;s relatively common for provisioning to fail due to transient HTTP failures
+<p>It’s relatively common for provisioning to fail due to transient HTTP failures
 (e.g. connection failures, timeouts, connection reset by peer); this is
 particularly true the first time provisioning is run as everything has to be
 downloaded.</p>
 
-<p>This project will cache most of the downloads on your local machine so you&#8217;ll
+<p>This project will cache most of the downloads on your local machine so you’ll
 find provisioning is much faster and more reliable from the second time it is
 run.</p>
 
@@ -380,8 +377,8 @@ when you rebuild your development-environment (as the Unix password is reset to
 <code class="highlighter-rouge">vagrant</code>) or if you reset the password without specifying the current password
 (e.g. using <code class="highlighter-rouge">sudo passwd vagrant</code>).</p>
 
-<p>Once your GNOME Keyring password is out of sync the keyring won&#8217;t unlock when
-you login. You&#8217;ll be unable use save credentials or save new credentials (e.g.
+<p>Once your GNOME Keyring password is out of sync the keyring won’t unlock when
+you login. You’ll be unable use save credentials or save new credentials (e.g.
 in Google Chrome or for your SSH keys).</p>
 
 <p>If you remember the password used by the GNOME Keyring (e.g. the last password
@@ -389,8 +386,8 @@ before you re-provisioned the development environment), you can change the Unix
 password to match, then logout and log back in and your passwords should work
 again.</p>
 
-<p>If you don&#8217;t remember the password for the GNOME Keyring (or the password
-doesn&#8217;t work) you&#8217;ll need to delete your keyring and create a new one (any saved
+<p>If you don’t remember the password for the GNOME Keyring (or the password
+doesn’t work) you’ll need to delete your keyring and create a new one (any saved
 passwords will be lost).</p>
 
 <p>To delete your keyring run the following from the development environment
@@ -405,7 +402,7 @@ rm ~/.local/share/keyrings/user.keystore
 
 <h4 id="ssh-key-not-loading">SSH key not loading</h4>
 
-<p>If your SSH key isn&#8217;t loading it may be down to the file permissions. If your
+<p>If your SSH key isn’t loading it may be down to the file permissions. If your
 key is readable by other you will get the following error when trying to load
 key:</p>
 
@@ -428,10 +425,10 @@ client VM:</p>
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
-username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You&#8217;ll then be prompted to change
+username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You’ll then be prompted to change
 your password. <strong>Important:</strong> change the password to the password you were
 using before you re-provisioned the development environment. This is necessary
-to restore access to all your saved credentials. Once you&#8217;ve changed your
+to restore access to all your saved credentials. Once you’ve changed your
 password you need to logout and log back in (with the new password) for your
 keyring to be unlocked.</p>
 
@@ -454,8 +451,6 @@ keyring to be unlocked.</p>
 
       
         
-
-
 
 
 
@@ -534,7 +529,7 @@ keyring to be unlocked.</p>
 
   <nav class="pagination">
     
-      <a href="https://gantsign.github.io/development-environment/docs/user-guide/" class="pagination--pager" title="User guide
+      <a href="/development-environment/docs/user-guide/" class="pagination--pager" title="User guide
 ">Previous</a>
     
     

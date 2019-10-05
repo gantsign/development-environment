@@ -152,8 +152,6 @@
 
 
 
-
-
 <div id="main" role="main">
   
   <div class="sidebar sticky">
@@ -248,7 +246,7 @@
 
   <article class="page numbered_headings" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Getting started">
-    <meta itemprop="description" content="">
+    <meta itemprop="description" content="The following instructions will guide you through the process of provisioningyour local development environment using GantSign EnV.">
     <meta itemprop="datePublished" content="August 31, 2016">
     <meta itemprop="dateModified" content="October 12, 2018">
 
@@ -262,8 +260,7 @@
       
 
       <section class="page__content" itemprop="text">
-        
-<p>The following instructions will guide you through the process of provisioning
+        <p>The following instructions will guide you through the process of provisioning
 your local development environment using GantSign EnV.</p>
 
 <ol class="inline_toc" id="markdown-toc">
@@ -320,15 +317,15 @@ your local development environment using GantSign EnV.</p>
   <li>
     <p>The project folder (configuration specific to this clone of the project)</p>
 
-    <p><code class="highlighter-rouge">.vagrantuser</code> (you&#8217;ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
+    <p><code class="highlighter-rouge">.vagrantuser</code> (you’ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
   directory)</p>
   </li>
 </ul>
 
 <h3 id="proxy-configuration">Proxy configuration</h3>
 
-<p>If you&#8217;re behind a firewall and need to access the web through a HTTP proxy
-there&#8217;s a little extra config you need to do; if you have direct internet access
+<p>If you’re behind a firewall and need to access the web through a HTTP proxy
+there’s a little extra config you need to do; if you have direct internet access
 you can skip this section.</p>
 
 <h4 id="host-proxy-config">Host proxy config</h4>
@@ -343,7 +340,7 @@ to set the following environment variable before running the <code class="highli
 
 <p>Note: on Linux / Mac OS use <code class="highlighter-rouge">export</code> rather than <code class="highlighter-rouge">SET</code>.</p>
 
-<p>You&#8217;ll need to reset the environment variable each time you open a new console
+<p>You’ll need to reset the environment variable each time you open a new console
 window before you run <code class="highlighter-rouge">vagrant</code>; while there are ways of setting the environment
 variable permanently care should be taken as doing so may affect other
 applications.</p>
@@ -363,16 +360,17 @@ values for your network):</p>
 </code></pre></div></div>
 
 <p>For more proxy configuration options, including proxy auto-config support,
-see the <a href="https://gantsign.github.io/development-environment/docs/configuration">configuration</a> documentation.</p>
+see the <a href="/development-environment/docs/configuration">configuration</a>
+documentation.</p>
 
 <h3 id="advanced-configuration">Advanced configuration</h3>
 
 <p>For more configuration options, including configuring regional preferences, view
-the <a href="https://gantsign.github.io/development-environment/docs/configuration">configuration</a> documentation.</p>
+the <a href="/development-environment/docs/configuration">configuration</a> documentation.</p>
 
 <h2 id="run-vagrant">Run Vagrant</h2>
 
-<p>All that&#8217;s left is to run Vagrant to provision the virtual machine.</p>
+<p>All that’s left is to run Vagrant to provision the virtual machine.</p>
 
 <p>Run the following command from the project root directory:</p>
 
@@ -386,12 +384,12 @@ the <a href="https://gantsign.github.io/development-environment/docs/configurati
 
 <h4 id="http-errors">HTTP errors</h4>
 
-<p>It&#8217;s relatively common for provisioning to fail due to transient HTTP failures
+<p>It’s relatively common for provisioning to fail due to transient HTTP failures
 (e.g. connection failures, timeouts, connection reset by peer); this is
 particularly true the first time provisioning is run as everything has to be
 downloaded.</p>
 
-<p>This project will cache most of the downloads on your local machine so you&#8217;ll
+<p>This project will cache most of the downloads on your local machine so you’ll
 find provisioning is much faster and more reliable from the second time it is
 run.</p>
 
@@ -412,10 +410,10 @@ vagrant up
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
-username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You&#8217;ll then be prompted to change
+username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You’ll then be prompted to change
 your password.</p>
 
-<p>Pick a strong password and don&#8217;t reuse another password (e.g. don&#8217;t use your
+<p>Pick a strong password and don’t reuse another password (e.g. don’t use your
 Windows password). This password will be used to secure access to saved
 passwords in your browser, SSH key passwords and Git credentials etc.</p>
 
@@ -428,7 +426,7 @@ VM.</p>
 
 <h2 id="stopping-the-virtual-machine">Stopping the virtual machine</h2>
 
-<p>It&#8217;s essential you use Vagrant to stop the VM rather than shutting down via the
+<p>It’s essential you use Vagrant to stop the VM rather than shutting down via the
 OS or the VirtualBox controls; failure to shutdown using Vagrant may result in
 file loss.</p>
 
@@ -455,8 +453,6 @@ directory:</p>
 
       
         
-
-
 
 
 
@@ -510,11 +506,11 @@ directory:</p>
 
   <nav class="pagination">
     
-      <a href="https://gantsign.github.io/development-environment/docs/features/" class="pagination--pager" title="Features
+      <a href="/development-environment/docs/features/" class="pagination--pager" title="Features
 ">Previous</a>
     
     
-      <a href="https://gantsign.github.io/development-environment/docs/configuration/" class="pagination--pager" title="Configuration
+      <a href="/development-environment/docs/configuration/" class="pagination--pager" title="Configuration
 ">Next</a>
     
   </nav>
