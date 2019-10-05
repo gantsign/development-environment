@@ -1,0 +1,19 @@
+# Fix for: https://github.com/gantsign/development-environment/issues/598
+
+- name: fix for vagrant-proxyconf compatibility (docker.service.d)
+  become: yes
+  file:
+    path: /etc/systemd/system/docker.service.d
+    state: directory
+    owner: root
+    group: root
+    mode: 'u=rwx,go=rx'
+
+- name: fix for vagrant-proxyconf compatibility (http-proxy.conf)
+  become: yes
+  copy:
+    content: ''
+    dest: /etc/systemd/system/docker.service.d/http-proxy.conf
+    owner: root
+    group: root
+    mode: 'u=rw,go=r'
