@@ -281,7 +281,7 @@ little easier.</p>
 <ol class="inline_toc" id="markdown-toc">
   <li><a href="#for-everybody" id="markdown-toc-for-everybody">For everybody</a>    <ol>
       <li><a href="#dynamically-allocated-swap-space" id="markdown-toc-dynamically-allocated-swap-space">Dynamically allocated swap space</a></li>
-      <li><a href="#compressed-ram" id="markdown-toc-compressed-ram">Compressed RAM</a></li>
+      <li><a href="#compressed-swap" id="markdown-toc-compressed-swap">Compressed swap</a></li>
       <li><a href="#file-backup--restore-between-rebuilds" id="markdown-toc-file-backup--restore-between-rebuilds">File backup &amp; restore between rebuilds</a></li>
     </ol>
   </li>
@@ -374,18 +374,18 @@ little easier.</p>
 <p>Swapspace is a dynamic swap manager for Linux. It dynamically allocates file
 based swap space to provide virtual memory when needed.</p>
 
-<h3 id="compressed-ram">Compressed RAM</h3>
+<h3 id="compressed-swap">Compressed swap</h3>
 
-<p>Website: <a href="https://www.kernel.org/doc/Documentation/blockdev/zram.txt">https://www.kernel.org/doc/Documentation/blockdev/zram.txt</a></p>
+<p>Website: <a href="https://www.kernel.org/doc/Documentation/vm/zswap.txt">https://www.kernel.org/doc/Documentation/vm/zswap.txt</a></p>
+
+<p>Zswap is a kernel feature that provides a compressed RAM cache for swap pages.</p>
 
 <p>Unless you have 16GB of RAM you’re probably going to struggle to run VirtualBox,
 your IDE, a Maven build, your application, and a few services in Docker at the
 same time.</p>
 
-<p>Enabling RAM compression in the virtual machine allows you to run more things at
-once.</p>
-
-<p>It’s so fast there’s no reason not to enable it by default.</p>
+<p>Enabling swap compression in the virtual machine allows you to run more things
+at once before swap I/O performance becomes an issue.</p>
 
 <h3 id="file-backup--restore-between-rebuilds">File backup &amp; restore between rebuilds</h3>
 
