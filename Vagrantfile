@@ -103,6 +103,7 @@ Vagrant.configure(2) do |config|
       'name' => 'development-environment',
       'gui' => true,
       'cpus' => 2,
+      'graphicscontroller' => nil,
       'vram' => '64',
       'accelerate3d' => 'off',
       'memory' => '4096',
@@ -186,6 +187,9 @@ Vagrant.configure(2) do |config|
     vb.cpus = config.user.virtualbox.cpus
 
     # Customize graphics settings
+    unless config.user.virtualbox.graphicscontroller.nil?
+      vb.customize ['modifyvm', :id, '--graphicscontroller', config.user.virtualbox.graphicscontroller]
+    end
     vb.customize ['modifyvm', :id, '--vram', config.user.virtualbox.vram]
     vb.customize ['modifyvm', :id, '--accelerate3d', config.user.virtualbox.accelerate3d]
 
