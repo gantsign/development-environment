@@ -324,14 +324,17 @@ ansible:
     - java
     - kubernetes
     - maven
+    - maven-notifier
     - nodejs
     - oh-my-zsh
     - postman
     - python
     - sdkman
+    - swapspace
     - vscode
     - zsh-autosuggestions
     - zsh-syntax-highlighting
+    - zswap
 ```
 
 **Note:** there are dependencies between some of the features e.g. skipping
