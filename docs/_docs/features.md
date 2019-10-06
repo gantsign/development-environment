@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2019-10-05T17:13:53+01:00
+modified: 2019-10-06T19:41:35+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -15,6 +15,13 @@ little easier.
 {% include inline_toc.html %}
 
 ## For everybody
+
+### Dynamically allocated swap space
+
+Website: [https://github.com/Tookmund/Swapspace](https://github.com/Tookmund/Swapspace)
+
+Swapspace is a dynamic swap manager for Linux. It dynamically allocates file
+based swap space to provide virtual memory when needed.
 
 ### Compressed RAM
 
