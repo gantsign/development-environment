@@ -262,7 +262,6 @@
 
     # Install GNOME desktop
     - role: gantsign.xdesktop
-      xdesktop_desktop: gnome
       tags:
         - gui
 
