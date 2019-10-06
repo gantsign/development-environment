@@ -102,10 +102,12 @@
       tags:
         - swapspace
 
-    # Enable compressed RAM swap
-    - role: gantsign.zram_config
-      zram_config_min_free_kbytes: 131072
-      zram_config_swappiness: 5
+    # Enable compressed swap with partial RAM storage
+    - role: gantsign.zswap
+      tags:
+        # Needs swap to work
+        - swapspace
+        - zswap
 
     # Install common command line tools
     - gantsign.command-line-tools
