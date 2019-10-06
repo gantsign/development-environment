@@ -70,6 +70,7 @@
 #   name: development-environment
 #   gui: true
 #   cpus: 2
+#   graphicscontroller: 'vboxsvga'
 #   vram: '64'
 #   accelerate3d: 'off'
 #   memory: '4096'
