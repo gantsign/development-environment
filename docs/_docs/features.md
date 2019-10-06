@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2019-10-06T19:41:35+01:00
+modified: 2019-10-06T20:10:36+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -23,18 +23,18 @@ Website: [https://github.com/Tookmund/Swapspace](https://github.com/Tookmund/Swa
 Swapspace is a dynamic swap manager for Linux. It dynamically allocates file
 based swap space to provide virtual memory when needed.
 
-### Compressed RAM
+### Compressed swap
 
-Website: [https://www.kernel.org/doc/Documentation/blockdev/zram.txt](https://www.kernel.org/doc/Documentation/blockdev/zram.txt)
+Website: [https://www.kernel.org/doc/Documentation/vm/zswap.txt](https://www.kernel.org/doc/Documentation/vm/zswap.txt)
+
+Zswap is a kernel feature that provides a compressed RAM cache for swap pages.
 
 Unless you have 16GB of RAM you're probably going to struggle to run VirtualBox,
 your IDE, a Maven build, your application, and a few services in Docker at the
 same time.
 
-Enabling RAM compression in the virtual machine allows you to run more things at
-once.
-
-It's so fast there's no reason not to enable it by default.
+Enabling swap compression in the virtual machine allows you to run more things
+at once before swap I/O performance becomes an issue.
 
 ### File backup & restore between rebuilds
 
