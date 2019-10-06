@@ -25,7 +25,7 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/docs/configuration/",
         "teaser":null},{
         "title": "Features",
-        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in your productivity; this project aims to install the best of them to make life a little easier. For everybody Compressed RAM File backup &amp; restore between rebuilds For command line users Terminator CDPATH Oh My Zsh...","categories": [],
+        "excerpt":"There are a lot of well known projects, and hidden gems, which aid in your productivity; this project aims to install the best of them to make life a little easier. For everybody Dynamically allocated swap space Compressed RAM File backup &amp; restore between rebuilds For command line users Terminator...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/features/",
         "teaser":null},{
