@@ -32,7 +32,8 @@ environment that you can fork to add your project specific configuration.
 
 ## Feature Highlights
 
-* Compressed RAM
+* Dynamically allocated swap space
+* Compressed swap
 * File backup & restore between rebuilds
 * Terminator
 * Oh My Zsh
