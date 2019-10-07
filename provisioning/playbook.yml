@@ -14,6 +14,12 @@
       apt:
         upgrade: dist
 
+    # zram shouldn't be used with Zswap
+    - name: ensure zram-config absent
+      apt:
+        name: zram-config
+        state: absent
+
   roles:
     # Preserve the apt cache
     - role: gantsign.apt
