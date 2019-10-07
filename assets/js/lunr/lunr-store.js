@@ -318,4 +318,9 @@ var store = [{
         "excerpt":"Release highlights #603: Unpinned bat version #604: Unpinned ctop version #605: Unpinned fd version #606: Unpinned Git credential manager version #607: Unpinned Helm version #608: Unpinned hub version #609: Unpinned kompose version #610: Unpinned kops version #611: Unpinned Minikube version #613: Updated Go lang to 1.12.9 Full change list For...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.14.0-release/",
+        "teaser":null},{
+        "title": "Version 2.15.0 released",
+        "excerpt":"Release highlights #623: Added Swapspace dynamic swap manager #624: Replaced zram with Zswap This fixes the issue of the VM freezing when low on RAM. #625: Updated Go lang to 1.13.1 #626: Updated Java 8 to 8u222 #627: Updated Java 11 to 11.0.4 #628: Updated Maven to 3.6.2 #631: Added...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.15.0-release/",
         "teaser":null},]
