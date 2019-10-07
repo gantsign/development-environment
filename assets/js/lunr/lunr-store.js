@@ -1,6 +1,6 @@
 var store = [{
         "title": "Getting started",
-        "excerpt":"The following instructions will guide you through the process of provisioning your local development environment using GantSign EnV. Install dependencies Clone the project Configuration Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting HTTP errors Change your password Stopping the virtual machine Install dependencies Install...","categories": [],
+        "excerpt":"The following instructions will guide you through the process of provisioning your local development environment using GantSign EnV. Install dependencies Clone the project Configuration Proxy configuration Host proxy config Client VM proxy config Advanced configuration Run Vagrant Troubleshooting HTTP errors Issues with VirtualBox GuestAdditions versions Change your password Stopping the...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/getting-started/",
         "teaser":null},{
@@ -30,7 +30,7 @@ var store = [{
         "url": "https://gantsign.github.io/development-environment/docs/features/",
         "teaser":null},{
         "title": "Upgrade",
-        "excerpt":"The following instructions will guide you through the process of upgrading your local GantSign EnV development environment to the latest release. Backup any essential files Halt the development environment Pull the changes for the latest release Re-provision the development environment Troubleshooting HTTP errors Out of disk space Unable to save...","categories": [],
+        "excerpt":"The following instructions will guide you through the process of upgrading your local GantSign EnV development environment to the latest release. Backup any essential files Halt the development environment Pull the changes for the latest release Re-provision the development environment Troubleshooting HTTP errors Out of disk space Issues with VirtualBox...","categories": [],
         "tags": [],
         "url": "https://gantsign.github.io/development-environment/docs/upgrade/",
         "teaser":null},{
