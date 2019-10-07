@@ -5,7 +5,7 @@ description: >
   How to setup the development environment.
 numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2018-10-12T14:13:26+01:00
+modified: 2019-10-07T10:08:35+01:00
 ---
 
 The following instructions will guide you through the process of provisioning
@@ -131,6 +131,38 @@ virtual machine from scratch:
 ```bash
 vagrant destroy
 vagrant up
+```
+
+#### Issues with VirtualBox GuestAdditions versions
+
+If you get the following error message:
+
+```
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+[default] GuestAdditions seems to be installed (6.0.12) correctly, but not running.
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+```
+
+First, change your password ([see below](#change-your-password)). You'll get SSH
+errors when trying to non-interactively execute commands over SSH until the
+password is reset (the default password `vagrant` is marked as expired as part
+of provisioning so you have to change it).
+
+Next, manually reinstall the guest additions by running the following in the
+project root:
+
+```bash
+vagrant vbguest --do install
 ```
 
 ## Change your password
