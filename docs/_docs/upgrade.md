@@ -5,7 +5,7 @@ description: >
   How to upgrade your development environment to the latest release.
 numbered_headings: yes
 date: 2018-10-12T13:07:23+01:00
-modified: 2018-10-16T10:45:23+01:00
+modified: 2019-10-07T10:08:35+01:00
 ---
 
 The following instructions will guide you through the process of upgrading your
@@ -109,6 +109,38 @@ vagrant provision
 Be aware purging the download cache will mean all the software will need to be
 downloaded again. So the first time you provision the VM after purging the
 caches will take longer and be more susceptible to HTTP errors.
+
+#### Issues with VirtualBox GuestAdditions versions
+
+If you get the following error message:
+
+```
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+[default] GuestAdditions seems to be installed (6.0.12) correctly, but not running.
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   5.2.8
+VBoxService inside the vm claims: 6.0.12
+Going on, assuming VBoxService is correct...
+```
+
+First, change your password ([see below](#change-your-password)). You'll get SSH
+errors when trying to non-interactively execute commands over SSH until the
+password is reset (the default password `vagrant` is marked as expired as part
+of provisioning so you have to change it).
+
+Next, manually reinstall the guest additions by running the following in the
+project root:
+
+```bash
+vagrant vbguest --do install
+```
 
 #### Unable to save credentials
 
