@@ -11,27 +11,74 @@
         remote_src: yes
         dest: /usr/local/bin
 
-    # Install repository keys
+    # Reduce the number of times `apt-get update` needs to be run by
+    # pre-registering repositories
+
     - name: add kubernetes key
       become: yes
       apt_key:
         id: '6A030B21BA07F4FB'
         url: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
         state: present
+      tags:
+        - docker
+        - kubernetes
 
-    # Reduce the number of times `apt-get update` needs to be run by
-    # pre-registering repositories
-    - name: pre-register apt repositories
+    - name: add kubernetes repo
       become: yes
       apt_repository:
-        repo: '{{ item }}'
+        repo: 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
         update_cache: no
-      with_items:
-        - 'deb http://apt.kubernetes.io/ kubernetes-xenial main'
-      register: register_repos
+      tags:
+        - docker
+        - kubernetes
+      register: kubernetes_repo
+
+    - name: add Google Linux key
+      become: yes
+      apt_key:
+        url: 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
+        state: present
+      tags:
+        - gui
+        - chrome
+
+    - name: add Google Chrome repo
+      become: yes
+      apt_repository:
+        repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+        filename: google-chrome
+        update_cache: no
+      tags:
+        - gui
+        - chrome
+      register: chrome_repo
+
+    - name: add vscode key
+      become: yes
+      apt_key:
+        url: 'https://packages.microsoft.com/keys/microsoft.asc'
+        state: present
+      tags:
+        - gui
+        - vscode
+
+    - name: add vscode repo
+      become: yes
+      apt_repository:
+        repo: 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
+        filename: vscode
+        update_cache: no
+      tags:
+        - gui
+        - vscode
+      register: vscode_repo
 
     - name: apt-get update
       become: yes
       apt:
         update_cache: yes
-      when: register_repos.changed
+      when: >
+        (kubernetes_repo is defined and kubernetes_repo.changed) 
+        or (chrome_repo is defined and chrome_repo.changed)
+        or (vscode_repo is defined and vscode_repo.changed)

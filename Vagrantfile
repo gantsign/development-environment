@@ -291,6 +291,7 @@ SCRIPT
   # Perform preliminary setup before the main Ansible provisioning
   config.vm.provision 'ansible_local' do |ansible|
     ansible.playbook = 'provisioning/init.yml'
+    ansible.skip_tags = config.user.ansible.skip_tags
   end
 
   # Run Ansible from the Vagrant VM
