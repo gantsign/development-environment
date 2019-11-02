@@ -52,6 +52,8 @@
 - src: gantsign.kops
 - src: gantsign.kubernetes
   version: '3.0.0'
+- src: gantsign.lazygit
+  version: '1.0.0'
 - src: gantsign.lightdm
   version: 'v3.0.0'
 - src: gantsign.maven
