@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2019-10-06T21:16:46+01:00
+modified: 2019-11-02T15:06:36+00:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -425,6 +425,16 @@ Git commands:
 * Reformat the recent changes as Markdown release notes
 
     `git release-notes` ≡ `git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -`
+
+### lazygit
+
+Website: [https://github.com/jesseduffield/lazygit](https://github.com/jesseduffield/lazygit)
+
+`lazygit` is a simple terminal UI for Git commands. This terminal UI gives you
+a quick view of your current repository and gives you easy access to most Git
+commands.
+
+![lazygit view]({{ '/images/lazygit.png' | relative_url }})
 
 ### Git-GUI
 

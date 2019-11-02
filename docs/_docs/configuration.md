@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2019-06-10T21:26:52+01:00
+modified: 2019-11-02T15:06:36+00:00
 ---
 
 The goal of this project is to make it easy to build your development
@@ -323,6 +323,7 @@ ansible:
     - intellij
     - java
     - kubernetes
+    - lazygit
     - maven
     - maven-notifier
     - nodejs

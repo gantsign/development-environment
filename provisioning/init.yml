@@ -74,11 +74,21 @@
         - vscode
       register: vscode_repo
 
+    - name: add lazygit repo
+      become: yes
+      apt_repository:
+        repo: 'ppa:lazygit-team/release'
+        update_cache: no
+      tags:
+        - lazygit
+      register: lazygit_repo
+
     - name: apt-get update
       become: yes
       apt:
         update_cache: yes
       when: >
-        (kubernetes_repo is defined and kubernetes_repo.changed) 
+        (kubernetes_repo is defined and kubernetes_repo.changed)
         or (chrome_repo is defined and chrome_repo.changed)
         or (vscode_repo is defined and vscode_repo.changed)
+        or (lazygit_repo is defined and lazygit_repo.changed)
