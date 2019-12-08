@@ -323,4 +323,9 @@ var store = [{
         "excerpt":"Release highlights #623: Added Swapspace dynamic swap manager #624: Replaced zram with Zswap This fixes the issue of the VM freezing when low on RAM. #625: Updated Go lang to 1.13.1 #626: Updated Java 8 to 8u222 #627: Updated Java 11 to 11.0.4 #628: Updated Maven to 3.6.2 #631: Added...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.15.0-release/",
+        "teaser":null},{
+        "title": "Version 2.16.0 released",
+        "excerpt":"Release highlights #636: Added lazygit a simple terminal UI for Git commands #637: Updated Go lang to 1.13.5 #638: Updated Java 8 to 8u232 #639: Updated Java 11 to 11.0.5 #640: Updated Maven to 3.6.3 Full change list For a full list of changes view the release notes. Upgrade procedure...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.16.0-release/",
         "teaser":null},]
