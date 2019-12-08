@@ -241,7 +241,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: 'jdk-11.0.4+11'
+      java_version: 'jdk-11.0.5+10'
 
     # Install Maven
     - role: gantsign.maven
