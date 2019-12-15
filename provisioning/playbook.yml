@@ -585,9 +585,9 @@
         - username: vagrant
           antigen_bundles:
             # bundles are loaded by name alpabetically
-            # and zsh-syntax-highlighting must be loaded last
+            # and fast-syntax-highlighting must be loaded last
             - name: zzz
-              url: zsh-users/zsh-syntax-highlighting
+              url: zdharma/fast-syntax-highlighting
 
     - role: gantsign.antigen_bundles
       tags:
