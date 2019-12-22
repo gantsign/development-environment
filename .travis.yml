@@ -13,7 +13,7 @@ language: python
 
 python:
   # Specify Python version
-  - '2.7'
+  - '3.6'
 
 install:
   # Install lint tools.
