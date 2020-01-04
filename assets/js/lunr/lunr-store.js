@@ -328,4 +328,9 @@ var store = [{
         "excerpt":"Release highlights #636: Added lazygit a simple terminal UI for Git commands #637: Updated Go lang to 1.13.5 #638: Updated Java 8 to 8u232 #639: Updated Java 11 to 11.0.5 #640: Updated Maven to 3.6.3 Full change list For a full list of changes view the release notes. Upgrade procedure...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.16.0-release/",
+        "teaser":null},{
+        "title": "Version 2.17.0 released",
+        "excerpt":"Release highlights      #643: Updated Node.js to version 12   #645: Added Grazi grammar checker for IntelliJ   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.17.0-release/",
         "teaser":null},]
