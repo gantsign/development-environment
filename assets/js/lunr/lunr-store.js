@@ -333,4 +333,9 @@ var store = [{
         "excerpt":"Release highlights      #643: Updated Node.js to version 12   #645: Added Grazi grammar checker for IntelliJ   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.17.0-release/",
+        "teaser":null},{
+        "title": "Version 2.17.1 released",
+        "excerpt":"Release highlights      #648: Fixed install of IntelliJ plugins   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.17.1-release/",
         "teaser":null},]
