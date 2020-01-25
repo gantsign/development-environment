@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2020-01-25T11:55:37+00:00
+modified: 2020-01-25T12:25:26+00:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -319,6 +319,11 @@ money.
 By default the Community Edition is installed.
 
 ![IntelliJ IDEA IDE]({{ '/images/intellij.png' | relative_url }})
+
+#### IntelliJ plugins
+
+* [Save Actions](https://plugins.jetbrains.com/plugin/7642-save-actions)
+  re-format/clean-up code on save.
 
 ### Visual Studio Code
 
