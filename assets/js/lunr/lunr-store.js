@@ -338,4 +338,9 @@ var store = [{
         "excerpt":"Release highlights      #648: Fixed install of IntelliJ plugins   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.17.1-release/",
+        "teaser":null},{
+        "title": "Version 2.18.0 released",
+        "excerpt":"Release highlights #650: Added colored-man-pages Zsh plugin #651: Added dive tool for Docker #652: Added Save Actions plugin to feature documentation #653: Added Grazie plugin to feature documentation #654: Added Maven Helper plugin for IntelliJ #655: Updated geerlingguy.nodejs role to 5.1.0 #656: Updated Go lang to 1.13.6 #657: Updated Java...","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.18.0-release/",
         "teaser":null},]
