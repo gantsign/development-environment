@@ -556,6 +556,7 @@
           antigen_bundles:
             - name: command-not-found
             - name: common-aliases
+            - name: colored-man-pages
             - name: git
             - name: httpie
             - name: sudo
