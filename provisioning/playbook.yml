@@ -603,6 +603,9 @@
             - name: ctop
               url: gantsign/zsh-plugins
               location: ctop
+            - name: dive
+              url: gantsign/zsh-plugins
+              location: dive
 
     - role: gantsign.antigen_bundles
       tags:

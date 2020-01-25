@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2019-12-15T12:26:27+00:00
+modified: 2020-01-25T11:55:37+00:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -581,6 +581,15 @@ container metrics. View CPU, memory, network I/O, and disk I/O for your
 Docker containers at a glance from your terminal.
 
 ![ctop in terminal window]({{ '/images/ctop.png' | relative_url }})
+
+### dive
+
+Website: [https://github.com/wagoodman/dive](https://github.com/wagoodman/dive)
+
+`dive` is a tool for exploring docker images, layer contents, and discovering
+ways to shrink Docker images.
+
+![dive in terminal window]({{ '/images/dive.png' | relative_url }})
 
 ### Kubernetes
 
