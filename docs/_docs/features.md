@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2020-01-25T12:44:19+00:00
+modified: 2020-01-25T13:35:52+00:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -730,6 +730,8 @@ you know when the build is complete.
 
 ### IntelliJ IDEA plugins
 
+* [Maven Helper](https://plugins.jetbrains.com/plugin/7179-maven-helper)
+  adds the Dependency Analyzer tab to the editor panel for `pom.xml` files.
 * [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea)
   for checking the code style of your Java source files.
 * [Lombok](https://plugins.jetbrains.com/plugin/6317-lombok-plugin) to cut down
