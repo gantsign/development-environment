@@ -468,6 +468,7 @@
             - CheckStyle-IDEA
             - Lombook Plugin
             - LogSupport2
+            - MavenRunHelper
 
     # Install Python plugin for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
