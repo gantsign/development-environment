@@ -305,7 +305,7 @@
       tags:
         - gui
 
-    # Install Google Chrome web broswer
+    # Install Google Chrome web browser
     - role: cmprescott.chrome
       tags:
         - gui
