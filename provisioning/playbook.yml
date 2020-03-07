@@ -469,6 +469,7 @@
             - Lombook Plugin
             - LogSupport2
             - MavenRunHelper
+            - de.platon42.cajon
 
     # Install Python plugin for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
