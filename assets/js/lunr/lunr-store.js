@@ -343,4 +343,9 @@ var store = [{
         "excerpt":"Release highlights #650: Added colored-man-pages Zsh plugin #651: Added dive tool for Docker #652: Added Save Actions plugin to feature documentation #653: Added Grazie plugin to feature documentation #654: Added Maven Helper plugin for IntelliJ #655: Updated geerlingguy.nodejs role to 5.1.0 #656: Updated Go lang to 1.13.6 #657: Updated Java...","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.18.0-release/",
+        "teaser":null},{
+        "title": "Version 2.19.0 released",
+        "excerpt":"Release highlights      #667: Added Concise AssertJ Optimizing Nitpicker plugin for IntelliJ   #668: Added PlantUML plugin for IntelliJ   #669: Updated Go lang to 1.14   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.19.0-release/",
         "teaser":null},]

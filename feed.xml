@@ -5,9 +5,43 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Mar 2020 22:27:35 +0000</pubDate>
-    <lastBuildDate>Sat, 07 Mar 2020 22:27:35 +0000</lastBuildDate>
+    <pubDate>Sat, 07 Mar 2020 22:51:10 +0000</pubDate>
+    <lastBuildDate>Sat, 07 Mar 2020 22:51:10 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Version 2.19.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/667&quot;&gt;#667&lt;/a&gt;:
+Added Concise AssertJ Optimizing Nitpicker plugin for IntelliJ&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/668&quot;&gt;#668&lt;/a&gt;:
+Added PlantUML plugin for IntelliJ&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/669&quot;&gt;#669&lt;/a&gt;:
+Updated Go lang to 1.14&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.19.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Mar 2020 22:29:42 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.19.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.19.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.18.0 released</title>
@@ -351,38 +385,6 @@ Updated Minikube to 1.1.1&lt;/li&gt;
         <pubDate>Sun, 09 Jun 2019 10:50:15 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.11.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.11.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.10.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/569&quot;&gt;#569&lt;/a&gt;:
-Fixed provisioning error for new users&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/570&quot;&gt;#570&lt;/a&gt;:
-Updated Minikube to 1.1.0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.10.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 23 May 2019 06:33:53 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.10.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.10.0-release/</guid>
         
         <category>release</category>
         
