@@ -439,6 +439,8 @@
             - com.dubreuia
             # Spelling and grammar checker
             - tanvd.grazi
+            # For drawing diagrams
+            - 'PlantUML integration'
           intellij_license_key_path: '{{ intellij_license_key_path }}'
 
     # Configure JDKs in IntelliJ IDEA IDE

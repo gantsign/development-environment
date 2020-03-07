@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2020-03-07T18:36:37+00:00
+modified: 2020-03-07T20:14:22+00:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -326,6 +326,11 @@ By default the Community Edition is installed.
   re-format/clean-up code on save.
 * [Grazie](https://plugins.jetbrains.com/plugin/12175-grazie)
   intelligent spelling and grammar checker.
+* [PlantUML integration](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
+  for drawing diagrams using the PlantUML domain-specific language.
+
+  ![PlantUML]({{ '/images/plantuml.png' | relative_url }})
+
 
 ### Visual Studio Code
 
