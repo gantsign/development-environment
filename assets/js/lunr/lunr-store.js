@@ -348,4 +348,9 @@ var store = [{
         "excerpt":"Release highlights      #667: Added Concise AssertJ Optimizing Nitpicker plugin for IntelliJ   #668: Added PlantUML plugin for IntelliJ   #669: Updated Go lang to 1.14   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.19.0-release/",
+        "teaser":null},{
+        "title": "Version 2.19.1 released",
+        "excerpt":"Release highlights      Fix for IntelliJ IDEA 2020.1 (directory layout has changed)            #671: Updated gantsign.intellij_jdks role to 2.0.0       #672: Updated gantsign.intellij-plugins role to 3.0.0           Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.19.1-release/",
         "teaser":null},]
