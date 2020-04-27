@@ -353,4 +353,9 @@ var store = [{
         "excerpt":"Release highlights      Fix for IntelliJ IDEA 2020.1 (directory layout has changed)            #671: Updated gantsign.intellij_jdks role to 2.0.0       #672: Updated gantsign.intellij-plugins role to 3.0.0           Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.19.1-release/",
+        "teaser":null},{
+        "title": "Version 2.20.0 released",
+        "excerpt":"Release highlights #677: Updated Go lang to 1.14.2 #678: Updated Java 8 to 8u252 #679: Updated Java 11 to 11.0.7 #682: Add git lb alias to view recent branches Full change list For a full list of changes view the release notes. Upgrade procedure To upgrade follow the upgrade documentation....","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.20.0-release/",
         "teaser":null},]

@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Apr 2020 20:26:41 +0100</pubDate>
-    <lastBuildDate>Mon, 27 Apr 2020 20:26:41 +0100</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2020 21:50:26 +0100</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2020 21:50:26 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Version 2.20.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/677&quot;&gt;#677&lt;/a&gt;:
+Updated Go lang to 1.14.2&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/678&quot;&gt;#678&lt;/a&gt;:
+Updated Java 8 to 8u252&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/679&quot;&gt;#679&lt;/a&gt;:
+Updated Java 11 to 11.0.7&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/682&quot;&gt;#682&lt;/a&gt;:
+Add git lb alias to view recent branches&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.20.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Apr 2020 21:19:32 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.20.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.20.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.19.1 released</title>
@@ -343,52 +379,6 @@ Fixed compatibility with vagrant-proxyconf&lt;/li&gt;
         <pubDate>Tue, 13 Aug 2019 13:57:42 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.13.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.13.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.12.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/579&quot;&gt;#579&lt;/a&gt;:
-Made persistent storage location configurable&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/584&quot;&gt;#584&lt;/a&gt;:
-Updated Go lang to 1.12.7&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/586&quot;&gt;#586&lt;/a&gt;:
-Updated Hub to 2.12.3&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/589&quot;&gt;#589&lt;/a&gt;:
-Updated Maven Notifier to 2.1.0&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/590&quot;&gt;#590&lt;/a&gt;:
-Updated Minikube to 1.2.0&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/591&quot;&gt;#591&lt;/a&gt;:
-Added tag for skipping Maven Notifier install&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/592&quot;&gt;#592&lt;/a&gt;:
-Updated ctop to 0.7.2&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/593&quot;&gt;#593&lt;/a&gt;:
-Updated Helm to 2.14.3&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/596&quot;&gt;#596&lt;/a&gt;:
-Updated kops to 1.13.0&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.12.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Aug 2019 19:20:52 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.12.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.12.0-release/</guid>
         
         <category>release</category>
         
