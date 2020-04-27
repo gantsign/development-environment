@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2020-04-26T21:29:53+01:00
+modified: 2020-04-27T20:13:27+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -433,6 +433,10 @@ Git commands:
 * Pop the most recent stash
 
     `git pop` ≡ `git stash pop`
+
+* List the most recently checked-out branches
+
+    `git lb` ≡ `!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'`
 
 * Reformat the recent changes as Markdown release notes
 
