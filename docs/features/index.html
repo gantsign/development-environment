@@ -262,7 +262,7 @@
     <meta itemprop="headline" content="Features">
     <meta itemprop="description" content="There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier.">
     <meta itemprop="datePublished" content="January 18, 2017">
-    <meta itemprop="dateModified" content="April 26, 2020">
+    <meta itemprop="dateModified" content="April 27, 2020">
 
     <div class="page__inner-wrap">
       
@@ -813,6 +813,11 @@ Git commands:</p>
     <p><code class="highlighter-rouge">git pop</code> ≡ <code class="highlighter-rouge">git stash pop</code></p>
   </li>
   <li>
+    <p>List the most recently checked-out branches</p>
+
+    <p><code class="highlighter-rouge">git lb</code> ≡ <code class="highlighter-rouge">!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'</code></p>
+  </li>
+  <li>
     <p>Reformat the recent changes as Markdown release notes</p>
 
     <p><code class="highlighter-rouge">git release-notes</code> ≡ <code class="highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
@@ -1320,7 +1325,7 @@ with the <code class="highlighter-rouge">molecule</code> command and enables tab
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-26">April 26, 2020</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-04-27">April 27, 2020</time></p>
         
       </footer>
 
