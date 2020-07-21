@@ -3,14 +3,6 @@
 
   pre_tasks:
 
-    # Install alt-galaxy
-    - name: install alt-galaxy
-      become: yes
-      unarchive:
-        src: https://github.com/gantsign/alt-galaxy/releases/download/1.4.1/alt-galaxy_linux_amd64.tar.xz
-        remote_src: yes
-        dest: /usr/local/bin
-
     # Reduce the number of times `apt-get update` needs to be run by
     # pre-registering repositories
 
