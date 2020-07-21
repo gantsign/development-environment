@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2020-04-27T20:13:27+01:00
+modified: 2020-07-22T20:26:25+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -919,7 +919,7 @@ This development environment comes with Go language
 ### Go plugins for IDEs
 
 * [IntelliJ IDEA (Ultimate Edition only)](https://plugins.jetbrains.com/plugin/9568-go)
-* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
+* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
 ## For Ansible developers
 

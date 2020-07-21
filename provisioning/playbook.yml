@@ -359,7 +359,7 @@
       users:
         - username: vagrant
           visual_studio_code_extensions:
-            - ms-vscode.Go
+            - golang.Go
 
     # Install Python extension for Visual Studio Code editor
     - role: gantsign.visual-studio-code-extensions
