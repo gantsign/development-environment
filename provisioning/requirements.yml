@@ -72,7 +72,7 @@
 - src: gantsign.pyenv
   version: '1.0.0'
 - src: gantsign.sdkman
-  version: '1.1.2'
+  version: '1.2.0'
 - src: gantsign.sdkman_init
   version: '1.2.1'
 - src: gantsign.swapspace
