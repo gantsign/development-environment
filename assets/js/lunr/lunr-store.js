@@ -358,4 +358,9 @@ var store = [{
         "excerpt":"Release highlights #677: Updated Go lang to 1.14.2 #678: Updated Java 8 to 8u252 #679: Updated Java 11 to 11.0.7 #682: Add git lb alias to view recent branches Full change list For a full list of changes view the release notes. Upgrade procedure To upgrade follow the upgrade documentation....","categories": ["news"],
         "tags": ["release"],
         "url": "https://gantsign.github.io/development-environment/news/2.20.0-release/",
+        "teaser":null},{
+        "title": "Version 2.21.0 released",
+        "excerpt":"Release highlights      #689: Updated Java 8 to 8u262   #690: Updated Java 11 to 11.0.8   #691: Updated SDKMAN to 5.8.5   #692: Updated Go lang to 1.14.6   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "https://gantsign.github.io/development-environment/news/2.21.0-release/",
         "teaser":null},]

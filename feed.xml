@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Jul 2020 11:29:00 +0100</pubDate>
-    <lastBuildDate>Sun, 26 Jul 2020 11:29:00 +0100</lastBuildDate>
+    <pubDate>Sun, 26 Jul 2020 14:48:03 +0100</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2020 14:48:03 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Version 2.21.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/689&quot;&gt;#689&lt;/a&gt;:
+Updated Java 8 to 8u262&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/690&quot;&gt;#690&lt;/a&gt;:
+Updated Java 11 to 11.0.8&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/691&quot;&gt;#691&lt;/a&gt;:
+Updated SDKMAN to 5.8.5&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/692&quot;&gt;#692&lt;/a&gt;:
+Updated Go lang to 1.14.6&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.21.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Jul 2020 14:31:27 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.21.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.21.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.20.0 released</title>
@@ -347,38 +383,6 @@ Updated Go lang to 1.12.9&lt;/li&gt;
         <pubDate>Fri, 16 Aug 2019 10:05:48 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.14.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.14.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.13.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/599&quot;&gt;#599&lt;/a&gt;:
-Updated Minikube to 1.3.0&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/600&quot;&gt;#600&lt;/a&gt;:
-Fixed compatibility with vagrant-proxyconf&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.13.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Aug 2019 13:57:42 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.13.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.13.0-release/</guid>
         
         <category>release</category>
         
