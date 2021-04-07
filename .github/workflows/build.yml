@@ -53,6 +53,11 @@ jobs:
       - name: Build docs
         run: (cd docs && sudo chmod go+rw -R . && ./build.sh)
 
+      - name: Configure Git user
+        run: >-
+          git config --global user.name 'John Freeman' &&
+          git config --global user.email '17984707+freemanjp@users.noreply.github.com'
+
       - name: Publish docs
         run: (cd docs && ./build.sh --publish)
         env:
