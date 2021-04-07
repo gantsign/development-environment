@@ -1,7 +1,6 @@
 # GantSign EnV
 
 [![Build](https://github.com/gantsign/development-environment/actions/workflows/build.yml/badge.svg)](https://github.com/gantsign/development-environment/actions/workflows/build.yml)
-[![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE)
 
 A development environment for Java, Python, Node.js and Go built using Vagrant.
