@@ -24,14 +24,14 @@ run() {
 }
 
 docker_build() {
-    docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll/jekyll:3.8.5 \
+    docker run --rm --volume=$(pwd):/srv/jekyll jekyll/jekyll:3.8.5 \
         /srv/jekyll/build.sh --run
 }
 
 publish_git() {
-    REPO_URL="https://$GIT_USERNAME:$GIT_PASSWORD@github.com/gantsign/development-environment.git"
-    TRAVIS_USER=$USER
-    sudo chown -R "$TRAVIS_USER" .
+    REPO_URL="https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/gantsign/development-environment.git"
+    CI_USER=$USER
+    sudo chown -R "$CI_USER" .
     git init
     git fetch --depth=1 $REPO_URL \
       refs/heads/gh-pages:refs/remotes/origin/gh-pages
