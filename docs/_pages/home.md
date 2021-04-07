@@ -14,7 +14,7 @@ description: >
 excerpt: >
   A development environment for Java, Python, Node.js and Go built using
   Vagrant.<br />
-  [![Build Status](https://travis-ci.org/gantsign/development-environment.svg?branch=master)](https://travis-ci.org/gantsign/development-environment)
+  [![Build](https://github.com/gantsign/development-environment/actions/workflows/build.yml/badge.svg)](https://github.com/gantsign/development-environment/actions/workflows/build.yml)
 feature_row:
   - title: Reproducible
     excerpt: >
@@ -45,7 +45,7 @@ intro:
       Get notified when new features are added &nbsp;
       [<i class="fab fa-twitter"></i> @gantsign](https://twitter.com/gantsign){: .btn .btn--twitter}
 date: 2017-01-18T16:51:42+00:00
-modified: 2018-10-07T12:44:22+01:00
+modified: 2021-04-07T23:30:42+01:00
 ---
 
 <div class="home_news">
