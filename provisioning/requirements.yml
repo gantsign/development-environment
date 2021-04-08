@@ -10,7 +10,7 @@
 - src: geerlingguy.nodejs
   version: '5.1.1'
 - src: oefenweb.locales
-  version: 'v1.0.42'
+  version: 'v1.0.48'
 - src: gantsign.antigen
   version: '1.3.2'
 - src: gantsign.antigen_bundles
