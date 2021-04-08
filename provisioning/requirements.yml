@@ -45,7 +45,7 @@
 - src: gantsign.intellij-plugins
   version: '3.0.0'
 - src: gantsign.java
-  version: '9.0.1'
+  version: '9.2.0'
 - src: gantsign.keyboard
   version: '1.4.0'
 - src: gantsign.kompose
