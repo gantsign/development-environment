@@ -62,7 +62,7 @@
   version: '3.0.0'
 - src: gantsign.minikube
 - src: gantsign.pipenv
-  version: '1.0.1'
+  version: '2.0.0'
 - src: gantsign.postman
   version: '2.3.0'
 - src: gantsign.pin-to-launcher
