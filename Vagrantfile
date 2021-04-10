@@ -290,6 +290,7 @@ SCRIPT
 
   # Perform preliminary setup before the main Ansible provisioning
   config.vm.provision 'ansible_local' do |ansible|
+    ansible.extra_vars = { ansible_python_interpreter: '/usr/bin/python3' }
     ansible.playbook = 'provisioning/init.yml'
     ansible.skip_tags = config.user.ansible.skip_tags
   end
@@ -300,6 +301,7 @@ SCRIPT
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
 
     ansible.extra_vars = {
+      ansible_python_interpreter: '/usr/bin/python3',
       timezone: config.user.timezone,
 
       locales_present: config.user.locales.present,
