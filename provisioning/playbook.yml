@@ -563,9 +563,6 @@
             - name: bat
               url: gantsign/zsh-plugins
               location: bat
-            - name: fd
-              url: gantsign/zsh-plugins
-              location: fd
             - name: moleculew
               url: gantsign/molecule-wrapper
               location: zsh
