@@ -41,7 +41,6 @@ environment that you can fork to add your project specific configuration.
 * Kubernetes
 * Minikube
 * Helm
-* kops
 * Visual Studio Code
 * lazygit
 * Git-GUI and Gitk
