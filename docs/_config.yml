@@ -9,7 +9,7 @@
 release:
   git_url: https://github.com/gantsign/development-environment.git
   list_url: https://github.com/gantsign/development-environment/releases
-  version: '2.21.0'
+  version: '2.22.0'
 
 # Site Settings
 locale: en-GB
@@ -24,6 +24,9 @@ url: https://gantsign.github.io
 # The subpath of your site, e.g. "/blog"
 baseurl: /development-environment
 repository: gantsign/development-environment
+
+# Render all pages regardless of date
+future: true
 
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 
