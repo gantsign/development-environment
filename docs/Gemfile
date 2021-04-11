@@ -17,7 +17,7 @@ gem 'github-pages', '214', group: :jekyll_plugins
 # gem "jekyll"
 
 # Install minimal-mistakes theme
-gem 'minimal-mistakes-jekyll', '4.16.5'
+gem 'minimal-mistakes-jekyll', '4.22.0'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
