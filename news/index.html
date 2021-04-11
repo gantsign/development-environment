@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
@@ -13,6 +13,11 @@
 <meta name="description" content="Index of project news.">
 
 
+  <meta name="author" content="GantSign Ltd.">
+  
+  <meta property="article:author" content="GantSign Ltd.">
+  
+
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
@@ -20,6 +25,8 @@
 <meta property="og:title" content="What’s new">
 <meta property="og:url" content="https://gantsign.github.io/development-environment/news/">
 
+
+  <meta property="og:description" content="Index of project news.">
 
 
 
@@ -51,19 +58,15 @@
 
 
 
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
       "@type": "Organization",
-      "name": "GantSign Ltd.",
-      "url": "https://gantsign.github.io/development-environment",
-      "sameAs": ["https://twitter.com/gantsign"]
-    }
-  </script>
-
+      "url": "https://gantsign.github.io/development-environment/"
+    
+  }
+</script>
 
 
 
@@ -73,7 +76,9 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
+  <link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,8 +89,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/development-environment/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
-<!--[if IE ]>
+<!--[if IE]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -99,7 +105,6 @@
     }
   </style>
 <![endif]-->
-
 
 
     <!-- start custom head snippets -->
@@ -136,15 +141,15 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/development-environment/about/" >About</a>
+              <a href="/development-environment/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/docs/features/" >Features</a>
+              <a href="/development-environment/docs/features/">Features</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/docs/" >Documentation</a>
+              <a href="/development-environment/docs/">Documentation</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/news/" >What's New</a>
+              <a href="/development-environment/news/">What's New</a>
             </li><li class="masthead__menu-item">
-              <a href="https://github.com/gantsign/development-environment" >GitHub</a>
+              <a href="https://github.com/gantsign/development-environment">GitHub</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -174,8 +179,6 @@
   
     <div class="author__avatar">
       
-
-      
         <img src="/development-environment/images/logo.png" alt="GantSign Ltd." itemprop="image">
       
     </div>
@@ -186,9 +189,10 @@
       <h3 class="author__name" itemprop="name">GantSign Ltd.</h3>
     
     
-      <p class="author__bio" itemprop="description">
-        Software Consultancy
-      </p>
+      <div class="author__bio" itemprop="description">
+        <p>Software Consultancy</p>
+
+      </div>
     
   </div>
 
@@ -204,11 +208,11 @@
       
         
           
-            <li><a href="https://twitter.com/gantsign" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="https://twitter.com/gantsign" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
-            <li><a href="https://github.com/gantsign" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://github.com/gantsign" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
       
@@ -276,6 +280,7 @@
   </div>
 
 
+
   <div class="archive">
     
       <h1 id="page-title" class="page__title">What's new</h1>
@@ -284,13 +289,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.21.0-release/" rel="permalink">Version 2.21.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: SDKMAN! 5.8.5, Go 1.14.6, Java 8u262 &amp; 11.0.8…
 </p>
   </article>
@@ -299,13 +306,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.20.0-release/" rel="permalink">Version 2.20.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: New git lb alias, Go 1.14.2, Java 8u252 &amp; 11.0.7…
 </p>
   </article>
@@ -314,13 +323,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.19.1-release/" rel="permalink">Version 2.19.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Fix for IntelliJ IDEA 2020.1
 </p>
   </article>
@@ -329,13 +340,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.19.0-release/" rel="permalink">Version 2.19.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.14, AssertJ &amp; PlantUML IntelliJ plugins…
 </p>
   </article>
@@ -344,13 +357,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.18.0-release/" rel="permalink">Version 2.18.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Maven Helper plugin, dive, Go 1.13.6, Java 8u242 &amp; 11.0.6…
 </p>
   </article>
@@ -359,13 +374,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.17.1-release/" rel="permalink">Version 2.17.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Fix for installing IntelliJ plugins…
 </p>
   </article>
@@ -374,13 +391,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.17.0-release/" rel="permalink">Version 2.17.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Node.js 12, added Grazi grammar checker for IntelliJ…
 </p>
   </article>
@@ -389,13 +408,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.16.0-release/" rel="permalink">Version 2.16.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: added lazygit, Go 1.13.5, Java 8u232 &amp; 11.0.5, Maven 3.6.3…
 </p>
   </article>
@@ -404,13 +425,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.15.0-release/" rel="permalink">Version 2.15.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: fix for VM freezing, Go 1.13.1, Java 8u222 &amp; 11.0.4, Maven 3.6.2…
 </p>
   </article>
@@ -419,13 +442,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.14.0-release/" rel="permalink">Version 2.14.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: unpinned versions of CLI tools, Go 1.12.9…
 </p>
   </article>
@@ -434,13 +459,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.13.0-release/" rel="permalink">Version 2.13.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: vagrant-proxyconf fix, Minikube 1.3.0…
 </p>
   </article>
@@ -449,13 +476,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.12.0-release/" rel="permalink">Version 2.12.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.12.7, Minikube 1.2.0…
 </p>
   </article>
@@ -464,13 +493,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.11.0-release/" rel="permalink">Version 2.11.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Helm 2.14.1 &amp; Minikube 1.1.1
 </p>
   </article>
@@ -479,13 +510,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.10.0-release/" rel="permalink">Version 2.10.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: provisioning fix for new users &amp; Minikube 1.1.0
 </p>
   </article>
@@ -494,13 +527,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.9.0-release/" rel="permalink">Version 2.9.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.12.5, bat 0.11.0, Helm 2.14.0, kops 1.12.1…
 </p>
   </article>
@@ -509,13 +544,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.8.0-release/" rel="permalink">Version 2.8.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.12.4 &amp; Minikube 1.0.1
 </p>
   </article>
@@ -524,13 +561,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.7.0-release/" rel="permalink">Version 2.7.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u212 &amp; 11.0.3, Maven 3.6.1, Go 1.12.2…
 </p>
   </article>
@@ -539,13 +578,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.6.0-release/" rel="permalink">Version 2.6.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Node.js 10, Go 1.12.1…
 </p>
   </article>
@@ -554,13 +595,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.5.0-release/" rel="permalink">Version 2.5.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 11.0.2, Go 1.11.5…
 </p>
   </article>
@@ -569,13 +612,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.4.0-release/" rel="permalink">Version 2.4.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u202, Minikube 0.33.1…
 </p>
   </article>
@@ -584,13 +629,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.3.0-release/" rel="permalink">Version 2.3.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.11.4, Minikube 0.31.0…
 </p>
   </article>
@@ -599,13 +646,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.2.0-release/" rel="permalink">Version 2.2.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Maven 3.6.0, Go 1.11.2, Java 11.0.1…
 </p>
   </article>
@@ -614,13 +663,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.1.1-release/" rel="permalink">Version 2.1.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: minor bug fix…
 </p>
   </article>
@@ -629,13 +680,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.1.0-release/" rel="permalink">Version 2.1.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u192…
 </p>
   </article>
@@ -644,13 +697,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.28.0-release/" rel="permalink">Version 1.28.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u192…
 </p>
   </article>
@@ -659,13 +714,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/2.0.0-release/" rel="permalink">Version 2.0.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Major release with many changes, read for details…
 </p>
   </article>
@@ -674,13 +731,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.27.0-release/" rel="permalink">Version 1.27.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go lang 1.11.1…
 </p>
   </article>
@@ -689,13 +748,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.26.0-release/" rel="permalink">Version 1.26.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: replaced Java 10 with Java 11…
 </p>
   </article>
@@ -704,13 +765,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.25.0-release/" rel="permalink">Version 1.25.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: fixed timezone customization…
 </p>
   </article>
@@ -719,13 +782,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.24.0-release/" rel="permalink">Version 1.24.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: fixed franklinkim.environment role not found…
 </p>
   </article>
@@ -734,13 +799,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.23.0-release/" rel="permalink">Version 1.23.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go lang to 1.11…
 </p>
   </article>
@@ -749,13 +816,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.22.0-release/" rel="permalink">Version 1.22.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Molecule 2.17.0 and Postman icon fix…
 </p>
   </article>
@@ -764,13 +833,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.21.1-release/" rel="permalink">Version 1.21.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Bug fix release due to gantsign.zram_config role name change…
 </p>
   </article>
@@ -779,13 +850,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.21.0-release/" rel="permalink">Version 1.21.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Maven 3.5.4…
 </p>
   </article>
@@ -794,13 +867,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.20.0-release/" rel="permalink">Version 1.20.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java upgraded to 8u181 &amp; 10.0.2…
 </p>
   </article>
@@ -809,13 +884,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.19.0-release/" rel="permalink">Version 1.19.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go lang to 1.10.3 &amp; Locales Ansible role fix…
 </p>
   </article>
@@ -824,13 +901,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.18.0-release/" rel="permalink">Version 1.18.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go lang to 1.10.2 &amp; VS Code Go extension fix…
 </p>
   </article>
@@ -839,13 +918,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.17.0-release/" rel="permalink">Version 1.17.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java upgraded to 8u171 &amp; 10.0.1…
 </p>
   </article>
@@ -854,13 +935,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.16.0-release/" rel="permalink">Version 1.16.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Molecule installation fix, Molecule 2.12.1, Maven 3.5.3…
 </p>
   </article>
@@ -869,13 +952,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.15.0-release/" rel="permalink">Version 1.15.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 10, Go 1.10.1, HTTPie, Kubernetes fix…
 </p>
   </article>
@@ -884,13 +969,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.14.0-release/" rel="permalink">Version 1.14.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java upgraded to 8u161 &amp; 9.0.4…
 </p>
   </article>
@@ -899,13 +986,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.13.1-release/" rel="permalink">Version 1.13.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Fixed VS Code Python extension install…
 </p>
   </article>
@@ -914,13 +1003,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.13.0-release/" rel="permalink">Version 1.13.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u151, Java 9.0.1, Node 8.9.0 and Go 1.9.2…
 </p>
   </article>
@@ -929,13 +1020,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.12.0-release/" rel="permalink">Version 1.12.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u144…
 </p>
   </article>
@@ -944,13 +1037,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.11.0-release/" rel="permalink">Version 1.11.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u141 &amp; Go lang 1.8.3…
 </p>
   </article>
@@ -959,13 +1054,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.10.0-release/" rel="permalink">Version 1.10.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u131 &amp; fixed install for IntelliJ plugins distributed as JARs…
 </p>
   </article>
@@ -974,13 +1071,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.9.0-release/" rel="permalink">Version 1.9.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Molecule 1.24 &amp; critical bug fixes for IntelliJ IDEA plugin support…
 </p>
   </article>
@@ -989,13 +1088,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.8.0-release/" rel="permalink">Version 1.8.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Maven 3.5, Go lang 1.8.1, IntelliJ license key support…
 </p>
   </article>
@@ -1004,13 +1105,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.7.0-release/" rel="permalink">Version 1.7.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: additional git aliases and npm-check-updates…
 </p>
   </article>
@@ -1019,13 +1122,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.6.0-release/" rel="permalink">Version 1.6.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: JetBrains Go plugin for IntelliJ, Molecule 1.22 …
 </p>
   </article>
@@ -1034,13 +1139,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/news/1.5.2-release/" rel="permalink">Version 1.5.2 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: fixed plugin install support for IntelliJ IDEA 2017.1…
 </p>
   </article>
@@ -1049,13 +1156,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.5.1-release/" rel="permalink">Version 1.5.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: restored EditorConfig plugin for Visual Studio Code…
 </p>
   </article>
@@ -1064,13 +1173,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.5-release/" rel="permalink">Version 1.5 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: critical bug fixes and Go lang version update…
 </p>
   </article>
@@ -1079,13 +1190,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.4-release/" rel="permalink">Version 1.4 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Java 8u121, Node.js v6.9.4, Git-GUI…
 </p>
   </article>
@@ -1094,13 +1207,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/git-gui/" rel="permalink">Switched to Git-GUI git client
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Since GitKraken is no longer free for commercial use it’s been replaced…
 </p>
   </article>
@@ -1109,13 +1224,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/nodejs/" rel="permalink">Node.js support
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">While Node.js has been bundled with this development environment for the last few months…
 </p>
   </article>
@@ -1124,13 +1241,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.3-release/" rel="permalink">Version 1.3 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: Go 1.7.4, Molecule 1.16, troubleshooting advice…
 </p>
   </article>
@@ -1139,13 +1258,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.2.1-release/" rel="permalink">Version 1.2.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: bug fixes for IntelliJ Ultimate Edition and macOS…
 </p>
   </article>
@@ -1154,13 +1275,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.2-release/" rel="permalink">Version 1.2 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: added Postman HTTP tool, performance improvements…
 </p>
   </article>
@@ -1169,13 +1292,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.1-release/" rel="permalink">Version 1.1 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Release highlights: added support for the Go programming language, added Kubernetes support, performance improvements…
 </p>
   </article>
@@ -1184,13 +1309,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/1.0-release/" rel="permalink">Version 1.0 released
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">After more than seven months of development, GantSign EnV has matured enough for its first production quality release…
 </p>
   </article>
@@ -1199,13 +1326,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/xenial/" rel="permalink">Upgraded to Ubuntu 16.04 LTS
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">Since Ubuntu 15.10 (Wily Werewolf) is out of support this project has moved to Ubuntu 16.04 LTS (Xenial Xerus)…
 </p>
   </article>
@@ -1214,13 +1343,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/persistence/" rel="permalink">Improved storage of persisted files
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">… this project has changed from storing persistent copies of files on the host filesystem using VirtualBox shared folders, to storing persistent copies…
 </p>
   </article>
@@ -1229,13 +1360,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/proxy/" rel="permalink">Improved and documented proxy support
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">While it was always possible to use the development environment behind a proxy, you had to know about the…
 </p>
   </article>
@@ -1244,13 +1377,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/unity/" rel="permalink">Default desktop is now Ubuntu Unity
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">To make the development environment as robust as possible, the Ubuntu Unity desktop is now installed by default…
 </p>
   </article>
@@ -1259,13 +1394,15 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title" itemprop="headline">
+    <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/development-environment/new-website/" rel="permalink">Welcome to the new website!
 </a>
       
     </h2>
     
+
+
     <p class="archive__item-excerpt" itemprop="description">The documentation was getting a bit long for the README.md so here is the shiny new website…
 </p>
   </article>
@@ -1299,7 +1436,9 @@
       
     
 
-    <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+      <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
@@ -1310,7 +1449,6 @@
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 

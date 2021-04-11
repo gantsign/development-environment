@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
@@ -12,6 +12,11 @@
 <!-- begin _includes/seo.html --><title>Features - GantSign EnV</title>
 <meta name="description" content="Features provided by the GantSign EnV development environment.">
 
+
+  <meta name="author" content="GantSign Ltd.">
+  
+  <meta property="article:author" content="GantSign Ltd.">
+  
 
 
 <meta property="og:type" content="article">
@@ -53,19 +58,15 @@
 
 
 
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
       "@type": "Organization",
-      "name": "GantSign Ltd.",
-      "url": "https://gantsign.github.io/development-environment",
-      "sameAs": ["https://twitter.com/gantsign"]
-    }
-  </script>
-
+      "url": "https://gantsign.github.io/development-environment/"
+    
+  }
+</script>
 
 
 
@@ -75,7 +76,9 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
+  <link href="/development-environment/feed.xml" type="application/atom+xml" rel="alternate" title="GantSign EnV Feed">
+
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,8 +89,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/development-environment/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
-<!--[if IE ]>
+<!--[if IE]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -101,7 +105,6 @@
     }
   </style>
 <![endif]-->
-
 
 
     <!-- start custom head snippets -->
@@ -138,15 +141,15 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/development-environment/about/" >About</a>
+              <a href="/development-environment/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/docs/features/" >Features</a>
+              <a href="/development-environment/docs/features/">Features</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/docs/" >Documentation</a>
+              <a href="/development-environment/docs/">Documentation</a>
             </li><li class="masthead__menu-item">
-              <a href="/development-environment/news/" >What's New</a>
+              <a href="/development-environment/news/">What's New</a>
             </li><li class="masthead__menu-item">
-              <a href="https://github.com/gantsign/development-environment" >GitHub</a>
+              <a href="https://github.com/gantsign/development-environment">GitHub</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -187,9 +190,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/requirements/"><span class="nav__sub-title">Requirements</span></a>
         
 
@@ -198,9 +198,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/features/"><span class="nav__sub-title">Features</span></a>
         
 
@@ -209,9 +206,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/getting-started/"><span class="nav__sub-title">Getting started</span></a>
         
 
@@ -220,9 +214,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/configuration/"><span class="nav__sub-title">Configuration</span></a>
         
 
@@ -231,9 +222,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/user-guide/"><span class="nav__sub-title">User guide</span></a>
         
 
@@ -242,9 +230,6 @@
     
       <li>
         
-          
-          
-
           <a href="/development-environment/docs/upgrade/"><span class="nav__sub-title">Upgrade</span></a>
         
 
@@ -253,9 +238,11 @@
     
   </ul>
 </nav>
+
     
   
   </div>
+
 
 
   <article class="page numbered_headings" itemscope itemtype="http://schema.org/CreativeWork">
@@ -1411,7 +1398,9 @@ with the <code class="language-plaintext highlighter-rouge">molecule</code> comm
       
     
 
-    <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+      <li><a href="/development-environment/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
@@ -1422,7 +1411,6 @@ with the <code class="language-plaintext highlighter-rouge">molecule</code> comm
 
     
   <script src="/development-environment/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
