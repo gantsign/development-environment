@@ -5,9 +5,51 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Apr 2021 10:16:38 +0100</pubDate>
-    <lastBuildDate>Sun, 11 Apr 2021 10:16:38 +0100</lastBuildDate>
+    <pubDate>Sun, 11 Apr 2021 11:07:43 +0100</pubDate>
+    <lastBuildDate>Sun, 11 Apr 2021 11:07:43 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Version 2.22.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/709&quot;&gt;#709&lt;/a&gt;:
+Updated Go lang to 1.16.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/712&quot;&gt;#712&lt;/a&gt;:
+Updated Java 8 to 8.0.282&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/713&quot;&gt;#713&lt;/a&gt;:
+Updated Java 11 to 11.0.10&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/714&quot;&gt;#714&lt;/a&gt;:
+Updated Maven to 3.8.1&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/715&quot;&gt;#715&lt;/a&gt;:
+Updated Node.js to version 14&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/717&quot;&gt;#717&lt;/a&gt;:
+Added neofetch&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/718&quot;&gt;#718&lt;/a&gt;:
+Added emoji font&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.22.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Apr 2021 10:33:45 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.22.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.22.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.21.0 released</title>
@@ -335,54 +377,6 @@ Added troubleshooting advice for VirtualBox 6&lt;/li&gt;
         <pubDate>Mon, 07 Oct 2019 14:08:52 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.15.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.15.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.14.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/603&quot;&gt;#603&lt;/a&gt;:
-Unpinned bat version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/604&quot;&gt;#604&lt;/a&gt;:
-Unpinned ctop version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/605&quot;&gt;#605&lt;/a&gt;:
-Unpinned fd version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/606&quot;&gt;#606&lt;/a&gt;:
-Unpinned Git credential manager version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/607&quot;&gt;#607&lt;/a&gt;:
-Unpinned Helm version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/608&quot;&gt;#608&lt;/a&gt;:
-Unpinned hub version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/609&quot;&gt;#609&lt;/a&gt;:
-Unpinned kompose version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/610&quot;&gt;#610&lt;/a&gt;:
-Unpinned kops version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/611&quot;&gt;#611&lt;/a&gt;:
-Unpinned Minikube version&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/613&quot;&gt;#613&lt;/a&gt;:
-Updated Go lang to 1.12.9&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.14.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Aug 2019 10:05:48 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.14.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.14.0-release/</guid>
         
         <category>release</category>
         

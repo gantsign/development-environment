@@ -436,4 +436,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.21.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.22.0 released",
+        "excerpt":"Release highlights #709: Updated Go lang to 1.16.3 #712: Updated Java 8 to 8.0.282 #713: Updated Java 11 to 11.0.10 #714: Updated Maven to 3.8.1 #715: Updated Node.js to version 14 #717: Added neofetch #718: Added emoji font Full change list For a full list of changes view the release...","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.22.0-release/",
+        "teaser": null
       },]
