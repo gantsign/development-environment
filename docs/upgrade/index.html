@@ -311,7 +311,7 @@ for lost files.</p>
 <p>If the development environment is running, shut it down by running the following
 on the host (from the project root directory):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant halt
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant halt
 </code></pre></div></div>
 
 <h2 id="pull-the-changes-for-the-latest-release">Pull the changes for the latest release</h2>
@@ -367,12 +367,12 @@ VM). Provisioning multiple times over months will mean the cache will fill with
 multiple versions of the software being installed. Eventually, this leads to out
 of disk space errors during re-provisioning. To resolve these errors you need to
 purge the download cache. To purge the download cache you need to login to the
-VirtualBox VM (username: <code class="highlighter-rouge">vagrant</code>, password: <code class="highlighter-rouge">vagrant</code>) and run the following
+VirtualBox VM (username: <code class="language-plaintext highlighter-rouge">vagrant</code>, password: <code class="language-plaintext highlighter-rouge">vagrant</code>) and run the following
 commands:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm <span class="nt">-rf</span> /var/persistent/usr/local/src/ansible/data/<span class="k">*</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> /var/persistent/usr/local/src/ansible/data/<span class="k">*</span>
 <span class="c"># Workaround for /bin/rm: cannot execute [Argument list too long]</span>
-<span class="k">for </span>f <span class="k">in</span> /var/persistent/var/cache/apt/archives/<span class="k">*</span>.deb<span class="p">;</span> <span class="k">do </span><span class="nb">sudo </span>rm <span class="nt">-f</span> <span class="s2">"</span><span class="nv">$f</span><span class="s2">"</span><span class="p">;</span> <span class="k">done</span>
+<span class="k">for </span>f <span class="k">in</span> /var/persistent/var/cache/apt/archives/<span class="k">*</span>.deb<span class="p">;</span> <span class="k">do </span><span class="nb">sudo rm</span> <span class="nt">-f</span> <span class="s2">"</span><span class="nv">$f</span><span class="s2">"</span><span class="p">;</span> <span class="k">done</span>
 </code></pre></div></div>
 
 <p>Now go back to the console where you run Vagrant and run the following to retry
@@ -389,7 +389,7 @@ caches will take longer and be more susceptible to HTTP errors.</p>
 
 <p>If you get the following error message:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Got different reports about installed GuestAdditions version:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Got different reports about installed GuestAdditions version:
 Virtualbox on your host claims:   5.2.8
 VBoxService inside the vm claims: 6.0.12
 Going on, assuming VBoxService is correct...
@@ -406,21 +406,21 @@ Going on, assuming VBoxService is correct...
 
 <p>First, change your password (<a href="#change-your-password">see below</a>). You’ll get SSH
 errors when trying to non-interactively execute commands over SSH until the
-password is reset (the default password <code class="highlighter-rouge">vagrant</code> is marked as expired as part
+password is reset (the default password <code class="language-plaintext highlighter-rouge">vagrant</code> is marked as expired as part
 of provisioning so you have to change it).</p>
 
 <p>Next, manually reinstall the guest additions by running the following in the
 project root:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant vbguest <span class="nt">--do</span> install
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant vbguest <span class="nt">--do</span> <span class="nb">install</span>
 </code></pre></div></div>
 
 <h4 id="unable-to-save-credentials">Unable to save credentials</h4>
 
 <p>Your Unix password may get out of sync with the password for your GNOME Keyring
 when you rebuild your development-environment (as the Unix password is reset to
-<code class="highlighter-rouge">vagrant</code>) or if you reset the password without specifying the current password
-(e.g. using <code class="highlighter-rouge">sudo passwd vagrant</code>).</p>
+<code class="language-plaintext highlighter-rouge">vagrant</code>) or if you reset the password without specifying the current password
+(e.g. using <code class="language-plaintext highlighter-rouge">sudo passwd vagrant</code>).</p>
 
 <p>Once your GNOME Keyring password is out of sync the keyring won’t unlock when
 you login. You’ll be unable use save credentials or save new credentials (e.g.
@@ -438,11 +438,11 @@ passwords will be lost).</p>
 <p>To delete your keyring run the following from the development environment
 terminal:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp ~/.local/share/keyrings/login.keyring ~/.local/share/keyrings/login.keyring.bak
-cp ~/.local/share/keyrings/user.keystore ~/.local/share/keyrings/user.keystore.bak
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> ~/.local/share/keyrings/login.keyring ~/.local/share/keyrings/login.keyring.bak
+<span class="nb">cp</span> ~/.local/share/keyrings/user.keystore ~/.local/share/keyrings/user.keystore.bak
 
-rm ~/.local/share/keyrings/login.keyring
-rm ~/.local/share/keyrings/user.keystore
+<span class="nb">rm</span> ~/.local/share/keyrings/login.keyring
+<span class="nb">rm</span> ~/.local/share/keyrings/user.keystore
 </code></pre></div></div>
 
 <h4 id="ssh-key-not-loading">SSH key not loading</h4>
@@ -451,7 +451,7 @@ rm ~/.local/share/keyrings/user.keystore
 key is readable by other you will get the following error when trying to load
 key:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Permissions 0644 for '/home/vagrant/.ssh/id_rsa' are too open.
@@ -462,7 +462,7 @@ This private key will be ignored.
 <p>To fix the file permissions run the following command from the terminal in the
 client VM:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod <span class="s1">'go-rwx'</span> ~/.ssh/<span class="k">*</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> <span class="s1">'go-rwx'</span> ~/.ssh/<span class="k">*</span>
 </code></pre></div></div>
 
 <p>After this is complete logout and log back in so your key is loaded.</p>
@@ -470,7 +470,7 @@ client VM:</p>
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
-username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You’ll then be prompted to change
+username <code class="language-plaintext highlighter-rouge">vagrant</code> and password <code class="language-plaintext highlighter-rouge">vagrant</code>. You’ll then be prompted to change
 your password. <strong>Important:</strong> change the password to the password you were
 using before you re-provisioned the development environment. This is necessary
 to restore access to all your saved credentials. Once you’ve changed your

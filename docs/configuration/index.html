@@ -333,12 +333,12 @@ a users local machine.</p>
   <li>
     <p>Your home folder (configuration shared between projects)</p>
 
-    <p><code class="highlighter-rouge">~/.vagrantuser</code></p>
+    <p><code class="language-plaintext highlighter-rouge">~/.vagrantuser</code></p>
   </li>
   <li>
     <p>The project folder (configuration specific to this clone of the project)</p>
 
-    <p><code class="highlighter-rouge">.vagrantuser</code> (you’ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
+    <p><code class="language-plaintext highlighter-rouge">.vagrantuser</code> (you’ll find a <code class="language-plaintext highlighter-rouge">.vagrantuser.example</code> file in the project
   directory)</p>
   </li>
 </ul>
@@ -355,7 +355,7 @@ you can skip this section.</p>
 <h4 id="common-proxy-config">Common proxy config</h4>
 
 <p>This configuration will apply to most command line tools and GUI applications.
-This can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the
+This can be set by adding the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace the
 proxy host and port with the values for your network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">proxy</span><span class="pi">:</span>
@@ -369,7 +369,7 @@ proxy host and port with the values for your network):</p>
 <h4 id="apt-proxy-override">APT proxy override</h4>
 
 <p>If you need to use a different proxy for the APT package manager, this can be
-set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy host
+set by adding the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace the proxy host
 and port with the values for your network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">apt_proxy</span><span class="pi">:</span>
@@ -381,7 +381,7 @@ and port with the values for your network):</p>
 <h4 id="git-proxy-override">Git proxy override</h4>
 
 <p>If you need to use a different proxy for the Git version control system, this
-can be set by adding the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the proxy
+can be set by adding the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace the proxy
 host and port with the values for your network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">git_proxy</span><span class="pi">:</span>
@@ -400,7 +400,7 @@ applications such as the Google Chrome web browser.</p>
 <h5 id="proxy-auto-config">Proxy auto-config</h5>
 
 <p>To use <a href="https://en.wikipedia.org/wiki/Proxy_auto-config">proxy auto config</a> add
-the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the <code class="highlighter-rouge">autoconfig_url</code> with the
+the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace the <code class="language-plaintext highlighter-rouge">autoconfig_url</code> with the
 value for your network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
@@ -409,7 +409,7 @@ value for your network):</p>
 </code></pre></div></div>
 
 <p>Note: in theory GNOME should be able to auto-discover the value for the
-<code class="highlighter-rouge">autoconfig_url</code> using the
+<code class="language-plaintext highlighter-rouge">autoconfig_url</code> using the
 <a href="https://en.wikipedia.org/wiki/Web_Proxy_Autodiscovery_Protocol">Web Proxy Auto-Discovery Protocol</a>;
 in practice auto-discovery is unlikely to work when you’re running Linux in a
 VM using NAT rather than directly on your corporate network, so you’ll likely
@@ -418,7 +418,7 @@ have to specify the location manually.</p>
 <h5 id="minimal-manual-configuration">Minimal manual configuration</h5>
 
 <p>To manually specify a different proxy for GNOME applications add the following
-to the <code class="highlighter-rouge">.vagrantuser</code> file (replace the hosts and ports with the values for your
+to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace the hosts and ports with the values for your
 network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
@@ -430,13 +430,13 @@ network):</p>
   <span class="na">use_same_proxy</span><span class="pi">:</span> <span class="no">true</span>
   <span class="na">http</span><span class="pi">:</span>
     <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">3128</span>
     <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
 </code></pre></div></div>
 
 <h5 id="full-manual-configuration">Full manual configuration</h5>
 
-<p>For full manual control add the following to the <code class="highlighter-rouge">.vagrantuser</code> file (replace
+<p>For full manual control add the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file (replace
 the hosts, ports and credentials with the values for your network):</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gnome_proxy</span><span class="pi">:</span>
@@ -448,20 +448,20 @@ the hosts, ports and credentials with the values for your network):</p>
   <span class="na">use_same_proxy</span><span class="pi">:</span> <span class="no">false</span>
   <span class="na">http</span><span class="pi">:</span>
     <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">3128</span>
     <span class="na">use_authentication</span><span class="pi">:</span> <span class="no">true</span>
     <span class="na">authentication_user</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_username'</span>
     <span class="na">authentication_password</span><span class="pi">:</span> <span class="s1">'</span><span class="s">example_password'</span>
     <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span>
   <span class="na">https</span><span class="pi">:</span>
     <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">3128</span>
   <span class="na">ftp</span><span class="pi">:</span>
     <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="na">port</span><span class="pi">:</span> <span class="s">3128</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">3128</span>
   <span class="na">socks</span><span class="pi">:</span>
     <span class="na">host</span><span class="pi">:</span> <span class="s1">'</span><span class="s">proxy.example.com'</span>
-    <span class="na">port</span><span class="pi">:</span> <span class="s">9000</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">9000</span>
 </code></pre></div></div>
 
 <h3 id="regional-preferences">Regional preferences</h3>
@@ -508,9 +508,9 @@ defaults are for Great Britain.</p>
 <h3 id="git-user-name-and-email-address">Git user name and email address</h3>
 
 <p>You can set your Git user name and email address manually (after provisioning)
-using <code class="highlighter-rouge">git config --global ...</code> and it will be retained between rebuilds.
+using <code class="language-plaintext highlighter-rouge">git config --global ...</code> and it will be retained between rebuilds.
 However if you want to set it once, and have it be the default for all new VMs,
-you can add the following to your <code class="highlighter-rouge">~/.vagrantuser</code> file (before provisioning).</p>
+you can add the following to your <code class="language-plaintext highlighter-rouge">~/.vagrantuser</code> file (before provisioning).</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">git_user</span><span class="pi">:</span>
   <span class="na">name</span><span class="pi">:</span> <span class="s">Example Name</span>
@@ -529,8 +529,8 @@ of the screen.</p>
   <figcaption>Examples of left and bottom dock positions</figcaption>
 </figure>
 
-<p>The default position for the dockbar is <code class="highlighter-rouge">LEFT</code> but you can change the position
-by specifying <code class="highlighter-rouge">BOTTOM</code> or <code class="highlighter-rouge">RIGHT</code> in your <code class="highlighter-rouge">.vagrantuser</code> file before
+<p>The default position for the dockbar is <code class="language-plaintext highlighter-rouge">LEFT</code> but you can change the position
+by specifying <code class="language-plaintext highlighter-rouge">BOTTOM</code> or <code class="language-plaintext highlighter-rouge">RIGHT</code> in your <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file before
 provisioning your development environment e.g.:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">dock_position</span><span class="pi">:</span> <span class="s">BOTTOM</span>
@@ -563,7 +563,7 @@ more CPU cores to the VM or more RAM.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">virtualbox</span><span class="pi">:</span> <span class="c1"># All VirtualBox configuration has to be under the same `virtualbox` tag.</span>
   <span class="na">memory</span><span class="pi">:</span> <span class="s1">'</span><span class="s">4096'</span> <span class="c1"># in MB</span>
-  <span class="na">cpus</span><span class="pi">:</span> <span class="s">2</span>
+  <span class="na">cpus</span><span class="pi">:</span> <span class="m">2</span>
 </code></pre></div></div>
 
 <h4 id="audio">Audio</h4>
@@ -628,7 +628,7 @@ development environment.</p>
 </code></pre></div></div>
 
 <p><strong>Note:</strong> there are dependencies between some of the features e.g. skipping
-<code class="highlighter-rouge">java</code> will also skip <code class="highlighter-rouge">intellij</code>.</p>
+<code class="language-plaintext highlighter-rouge">java</code> will also skip <code class="language-plaintext highlighter-rouge">intellij</code>.</p>
 
 <h3 id="intellij-idea-edition">IntelliJ IDEA edition</h3>
 
@@ -639,7 +639,7 @@ everyone else this development environment supports individual developers using
 their personal licenses.</p>
 
 <p>To install IntelliJ IDEA Ultimate instead of IntelliJ IDEA Community add the
-following line to your <code class="highlighter-rouge">.vagrantuser</code> file.</p>
+following line to your <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file.</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">intellij_edition</span><span class="pi">:</span> <span class="s">ultimate</span>
 </code></pre></div></div>
@@ -657,20 +657,20 @@ repository either on GitHub or elsewhere.</p>
 <h3 id="default-values-for-user-specific-configuration">Default values for user specific configuration</h3>
 
 <p>The default values for the user specific configuration can be found in the
-<code class="highlighter-rouge">config.user.defaults</code> block in the Vagrant file.</p>
+<code class="language-plaintext highlighter-rouge">config.user.defaults</code> block in the Vagrant file.</p>
 
-<p><strong>Important:</strong> the values in the <code class="highlighter-rouge">Vagrantfile</code> override similar values in the
-<code class="highlighter-rouge">playbook.yml</code> changing the values in the <code class="highlighter-rouge">playbook.yml</code> will have no effect.</p>
+<p><strong>Important:</strong> the values in the <code class="language-plaintext highlighter-rouge">Vagrantfile</code> override similar values in the
+<code class="language-plaintext highlighter-rouge">playbook.yml</code> changing the values in the <code class="language-plaintext highlighter-rouge">playbook.yml</code> will have no effect.</p>
 
 <h3 id="ansible-provisioning">Ansible provisioning</h3>
 
 <p>What you need to install for your development environment and how it needs to be
-configured set in the Ansible <code class="highlighter-rouge">playbook.yml</code>.</p>
+configured set in the Ansible <code class="language-plaintext highlighter-rouge">playbook.yml</code>.</p>
 
 <p>You can find out more about Ansible at:
 <a href="https://www.ansible.com">https://www.ansible.com</a>.</p>
 
-<p>What you may want to configure in the <code class="highlighter-rouge">playbook.yml</code>:</p>
+<p>What you may want to configure in the <code class="language-plaintext highlighter-rouge">playbook.yml</code>:</p>
 
 <ul>
   <li>Software Development Kits and versions</li>

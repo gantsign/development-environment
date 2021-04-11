@@ -327,12 +327,12 @@ your local development environment using GantSign EnV.</p>
   <li>
     <p>Your home folder (configuration shared between projects)</p>
 
-    <p><code class="highlighter-rouge">~/.vagrantuser</code></p>
+    <p><code class="language-plaintext highlighter-rouge">~/.vagrantuser</code></p>
   </li>
   <li>
     <p>The project folder (configuration specific to this clone of the project)</p>
 
-    <p><code class="highlighter-rouge">.vagrantuser</code> (you’ll find a <code class="highlighter-rouge">.vagrantuser.example</code> file in the project
+    <p><code class="language-plaintext highlighter-rouge">.vagrantuser</code> (you’ll find a <code class="language-plaintext highlighter-rouge">.vagrantuser.example</code> file in the project
   directory)</p>
   </li>
 </ul>
@@ -347,22 +347,22 @@ you can skip this section.</p>
 
 <p>On the host machine, Vagrant needs to be able to access the internet to install
 plugins and download the base image for the virtual machine. To do this you need
-to set the following environment variable before running the <code class="highlighter-rouge">vagrant</code> command
+to set the following environment variable before running the <code class="language-plaintext highlighter-rouge">vagrant</code> command
 (replace the proxy host and port with the values for your network):</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SET <span class="nv">https_proxy</span><span class="o">=</span>proxy.example.com:3128
 </code></pre></div></div>
 
-<p>Note: on Linux / Mac OS use <code class="highlighter-rouge">export</code> rather than <code class="highlighter-rouge">SET</code>.</p>
+<p>Note: on Linux / Mac OS use <code class="language-plaintext highlighter-rouge">export</code> rather than <code class="language-plaintext highlighter-rouge">SET</code>.</p>
 
 <p>You’ll need to reset the environment variable each time you open a new console
-window before you run <code class="highlighter-rouge">vagrant</code>; while there are ways of setting the environment
+window before you run <code class="language-plaintext highlighter-rouge">vagrant</code>; while there are ways of setting the environment
 variable permanently care should be taken as doing so may affect other
 applications.</p>
 
 <h4 id="client-vm-proxy-config">Client VM proxy config</h4>
 
-<p>Add the following to the <code class="highlighter-rouge">.vagrantuser</code> file, either in the project root
+<p>Add the following to the <code class="language-plaintext highlighter-rouge">.vagrantuser</code> file, either in the project root
 directory or your user home directory (replace the proxy host and port with the
 values for your network):</p>
 
@@ -426,7 +426,7 @@ vagrant up
 
 <p>If you get the following error message:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Got different reports about installed GuestAdditions version:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Got different reports about installed GuestAdditions version:
 Virtualbox on your host claims:   5.2.8
 VBoxService inside the vm claims: 6.0.12
 Going on, assuming VBoxService is correct...
@@ -443,19 +443,19 @@ Going on, assuming VBoxService is correct...
 
 <p>First, change your password (<a href="#change-your-password">see below</a>). You’ll get SSH
 errors when trying to non-interactively execute commands over SSH until the
-password is reset (the default password <code class="highlighter-rouge">vagrant</code> is marked as expired as part
+password is reset (the default password <code class="language-plaintext highlighter-rouge">vagrant</code> is marked as expired as part
 of provisioning so you have to change it).</p>
 
 <p>Next, manually reinstall the guest additions by running the following in the
 project root:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant vbguest <span class="nt">--do</span> install
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant vbguest <span class="nt">--do</span> <span class="nb">install</span>
 </code></pre></div></div>
 
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
-username <code class="highlighter-rouge">vagrant</code> and password <code class="highlighter-rouge">vagrant</code>. You’ll then be prompted to change
+username <code class="language-plaintext highlighter-rouge">vagrant</code> and password <code class="language-plaintext highlighter-rouge">vagrant</code>. You’ll then be prompted to change
 your password.</p>
 
 <p>Pick a strong password and don’t reuse another password (e.g. don’t use your

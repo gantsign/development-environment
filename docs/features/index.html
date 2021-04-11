@@ -412,22 +412,22 @@ the new client virtual machine.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/home/vagrant/workspace/</code></p>
+    <p><code class="language-plaintext highlighter-rouge">/home/vagrant/workspace/</code></p>
 
     <ul>
       <li><strong>Put all your projects here</strong></li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">/home/vagrant/.gitconfig</code></li>
-  <li><code class="highlighter-rouge">/home/vagrant/.ssh/</code> (except the <code class="highlighter-rouge">authorized_keys</code> file)</li>
-  <li><code class="highlighter-rouge">/home/vagrant/.gnupg/</code></li>
-  <li><code class="highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="highlighter-rouge">repository</code> and <code class="highlighter-rouge">wrapper</code> directories)</li>
+  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.gitconfig</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.ssh/</code> (except the <code class="language-plaintext highlighter-rouge">authorized_keys</code> file)</li>
+  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.gnupg/</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="language-plaintext highlighter-rouge">repository</code> and <code class="language-plaintext highlighter-rouge">wrapper</code> directories)</li>
 </ul>
 
 <p><strong>Caution:</strong> the followings directories are excluded from the backup by
-default: <code class="highlighter-rouge">.bin</code>, <code class="highlighter-rouge">.molecule</code>, <code class="highlighter-rouge">.tmp</code>, <code class="highlighter-rouge">bin</code>, <code class="highlighter-rouge">build</code>, <code class="highlighter-rouge">node_modules</code>, <code class="highlighter-rouge">target</code>.</p>
+default: <code class="language-plaintext highlighter-rouge">.bin</code>, <code class="language-plaintext highlighter-rouge">.molecule</code>, <code class="language-plaintext highlighter-rouge">.tmp</code>, <code class="language-plaintext highlighter-rouge">bin</code>, <code class="language-plaintext highlighter-rouge">build</code>, <code class="language-plaintext highlighter-rouge">node_modules</code>, <code class="language-plaintext highlighter-rouge">target</code>.</p>
 
-<p><strong>Note:</strong> you can find your backup under: <code class="highlighter-rouge">/var/persistent/home/vagrant/</code>.</p>
+<p><strong>Note:</strong> you can find your backup under: <code class="language-plaintext highlighter-rouge">/var/persistent/home/vagrant/</code>.</p>
 
 <p><strong>Notice:</strong> we accept no responsibility for files lost due to a failure of the
 backup/restore process. We recommend you push your work to your source control
@@ -453,16 +453,16 @@ a new tab.</p>
 
 <p>Website: <a href="http://zsh.sourceforge.net/Intro/intro_13.html">http://zsh.sourceforge.net/Intro/intro_13.html</a></p>
 
-<p>This environment variable changes how tab completion and the <code class="highlighter-rouge">cd</code> command works.</p>
+<p>This environment variable changes how tab completion and the <code class="language-plaintext highlighter-rouge">cd</code> command works.</p>
 
-<p>We’ve added the <code class="highlighter-rouge">/home/vagrant/workspace</code> directory to <code class="highlighter-rouge">CDPATH</code>; this enables
-you to <code class="highlighter-rouge">cd</code> into any sub-directory of <code class="highlighter-rouge">/home/vagrant/workspace</code> from any
+<p>We’ve added the <code class="language-plaintext highlighter-rouge">/home/vagrant/workspace</code> directory to <code class="language-plaintext highlighter-rouge">CDPATH</code>; this enables
+you to <code class="language-plaintext highlighter-rouge">cd</code> into any sub-directory of <code class="language-plaintext highlighter-rouge">/home/vagrant/workspace</code> from any
 directory in the file system.</p>
 
 <p>For example:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a directory under /home/vagrant/workspace</span>
-mkdir <span class="nt">-p</span> /home/vagrant/workspace/my-awesome-project
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/vagrant/workspace/my-awesome-project
 
 <span class="c"># Change directory somewhere else</span>
 <span class="nb">cd</span> /etc
@@ -484,15 +484,15 @@ mkdir <span class="nt">-p</span> /home/vagrant/workspace/my-awesome-project
 
 <p>Website: <a href="http://ohmyz.sh">http://ohmyz.sh</a></p>
 
-<p>Rather than a specific command, Oh My Zsh changes your default shell from <code class="highlighter-rouge">bash</code>
-to <code class="highlighter-rouge">zsh</code>, and customizes the <code class="highlighter-rouge">zsh</code> shell.</p>
+<p>Rather than a specific command, Oh My Zsh changes your default shell from <code class="language-plaintext highlighter-rouge">bash</code>
+to <code class="language-plaintext highlighter-rouge">zsh</code>, and customizes the <code class="language-plaintext highlighter-rouge">zsh</code> shell.</p>
 
 <p>Oh My Zsh gives you:</p>
 
 <ul>
   <li>Better tab completion (like expanding partial names in path).</li>
   <li>Themes to enhance your command prompt (like showing the current git branch).</li>
-  <li>Plugins to enable command specific tab completion (e.g. <code class="highlighter-rouge">mvn</code> and <code class="highlighter-rouge">git</code>).</li>
+  <li>Plugins to enable command specific tab completion (e.g. <code class="language-plaintext highlighter-rouge">mvn</code> and <code class="language-plaintext highlighter-rouge">git</code>).</li>
 </ul>
 
 <p><img src="/development-environment/images/oh-my-zsh.png" alt="zsh terminal output" /></p>
@@ -506,7 +506,7 @@ to <code class="highlighter-rouge">zsh</code>, and customizes the <code class="h
 </code></pre></div></div>
 
 <p>Tip: tab-completion for command options often only works after you’ve specified
-the <code class="highlighter-rouge">-</code>. For example <code class="highlighter-rouge">grep</code> <code class="highlighter-rouge">TAB</code> produces no suggestions, but <code class="highlighter-rouge">grep -</code> <code class="highlighter-rouge">TAB</code>
+the <code class="language-plaintext highlighter-rouge">-</code>. For example <code class="language-plaintext highlighter-rouge">grep</code> <code class="language-plaintext highlighter-rouge">TAB</code> produces no suggestions, but <code class="language-plaintext highlighter-rouge">grep -</code> <code class="language-plaintext highlighter-rouge">TAB</code>
 produces 160 suggestions.</p>
 
 <h3 id="antigen">Antigen</h3>
@@ -521,8 +521,8 @@ manager for Zsh and can install Zsh plugins from Git repositories.</p>
 the theme/plugins will be lost the next time you launch the shell. To make
 changes permanent you need to run the Antigen commands as part of the
 initialisation of your shell. To do this you either need to change the
-<code class="highlighter-rouge">playbook.yml</code> of this project and re-provision your VM, or run the Antigen
-commands from the <code class="highlighter-rouge">.zshrc</code> in your home directory.</p>
+<code class="language-plaintext highlighter-rouge">playbook.yml</code> of this project and re-provision your VM, or run the Antigen
+commands from the <code class="language-plaintext highlighter-rouge">.zshrc</code> in your home directory.</p>
 
 <p>You can find a list of third-party plugins at:
 <a href="https://github.com/unixorn/awesome-zsh-plugins#plugins">https://github.com/unixorn/awesome-zsh-plugins#plugins</a></p>
@@ -541,69 +541,69 @@ intuitive command line interface, JSON support and syntax highlighting.</p>
 
 <p>Website: <a href="http://geoff.greer.fm/ag">http://geoff.greer.fm/ag</a></p>
 
-<p>If you’ve used Linux you’ve almost certainly used <code class="highlighter-rouge">grep</code>, but you’ve probably
-never heard of <code class="highlighter-rouge">ag</code> (The Silver Searcher).</p>
+<p>If you’ve used Linux you’ve almost certainly used <code class="language-plaintext highlighter-rouge">grep</code>, but you’ve probably
+never heard of <code class="language-plaintext highlighter-rouge">ag</code> (The Silver Searcher).</p>
 
-<p>While <code class="highlighter-rouge">grep</code> is a great general purpose tool, <code class="highlighter-rouge">ag</code> is a specific tool for
+<p>While <code class="language-plaintext highlighter-rouge">grep</code> is a great general purpose tool, <code class="language-plaintext highlighter-rouge">ag</code> is a specific tool for
 finding matching text in a directory tree and outputting the results in a human
 readable format.</p>
 
-<p>Below is the output of the command <code class="highlighter-rouge">ag java</code> on this project:</p>
+<p>Below is the output of the command <code class="language-plaintext highlighter-rouge">ag java</code> on this project:</p>
 
 <p><img src="/development-environment/images/ag.png" alt="The Silver Searcher terminal output" /></p>
 
 <p>Tip: if you have multiple pages of output you may want to use
-<code class="highlighter-rouge">ag --pager=less PATTERN</code>.</p>
+<code class="language-plaintext highlighter-rouge">ag --pager=less PATTERN</code>.</p>
 
 <h3 id="tree">Tree</h3>
 
 <p>Website: <a href="http://mama.indstate.edu/users/ice/tree">http://mama.indstate.edu/users/ice/tree</a></p>
 
-<p>The <code class="highlighter-rouge">tree</code> command is similar to <code class="highlighter-rouge">find .</code> but outputs in a graphical tree
+<p>The <code class="language-plaintext highlighter-rouge">tree</code> command is similar to <code class="language-plaintext highlighter-rouge">find .</code> but outputs in a graphical tree
 format.</p>
 
-<p>Below is the output of the command <code class="highlighter-rouge">tree</code> on this project:</p>
+<p>Below is the output of the command <code class="language-plaintext highlighter-rouge">tree</code> on this project:</p>
 
 <p><img src="/development-environment/images/tree.png" alt="Tree terminal output" /></p>
 
 <p>Tip: if you have multiple pages of output you may want to use
-<code class="highlighter-rouge">tree -C | less -R</code>.</p>
+<code class="language-plaintext highlighter-rouge">tree -C | less -R</code>.</p>
 
 <h3 id="jq">Jq</h3>
 
 <p>Website: <a href="https://stedolan.github.io/jq">https://stedolan.github.io/jq</a></p>
 
-<p>The <code class="highlighter-rouge">jq</code> command would be worth installing just to be able to use it to pretty
-print JSON in colour, but <code class="highlighter-rouge">jq</code> is amazing at manipulating JSON as well.</p>
+<p>The <code class="language-plaintext highlighter-rouge">jq</code> command would be worth installing just to be able to use it to pretty
+print JSON in colour, but <code class="language-plaintext highlighter-rouge">jq</code> is amazing at manipulating JSON as well.</p>
 
 <p><img src="/development-environment/images/jq.png" alt="Jq output" /></p>
 
-<p>Tip: to pretty print a JSON file run <code class="highlighter-rouge">jq '.' PATH_TO_JSON_FILE</code>.</p>
+<p>Tip: to pretty print a JSON file run <code class="language-plaintext highlighter-rouge">jq '.' PATH_TO_JSON_FILE</code>.</p>
 
 <h3 id="fd">fd</h3>
 
 <p>Website: <a href="https://github.com/sharkdp/fd">https://github.com/sharkdp/fd</a></p>
 
-<p><code class="highlighter-rouge">fd</code> is a simple, fast and user-friendly alternative to <code class="highlighter-rouge">find</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">fd</code> is a simple, fast and user-friendly alternative to <code class="language-plaintext highlighter-rouge">find</code>.</p>
 
 <p>It’s much better for the most common use-case (i.e. finding files/directories by
 name) e.g:</p>
 
 <p><img src="/development-environment/images/fd.png" alt="fd" /></p>
 
-<p>This is obviously easier than <code class="highlighter-rouge">find -iname '*molecule*'</code>.</p>
+<p>This is obviously easier than <code class="language-plaintext highlighter-rouge">find -iname '*molecule*'</code>.</p>
 
-<p><code class="highlighter-rouge">fd</code> is still capable of handling more advanced use-cases as well, e.g. you can
+<p><code class="language-plaintext highlighter-rouge">fd</code> is still capable of handling more advanced use-cases as well, e.g. you can
 specify the type of file or a command to execute.</p>
 
 <h3 id="bat">bat</h3>
 
 <p>Website: <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a></p>
 
-<p><code class="highlighter-rouge">bat</code> is a more advanced alternative to <code class="highlighter-rouge">cat</code> with support for
+<p><code class="language-plaintext highlighter-rouge">bat</code> is a more advanced alternative to <code class="language-plaintext highlighter-rouge">cat</code> with support for
 syntax-highlighting, line numbers, searching and paging.</p>
 
-<p>e.g. running <code class="highlighter-rouge">bat ~/.bashrc</code> will give you:</p>
+<p>e.g. running <code class="language-plaintext highlighter-rouge">bat ~/.bashrc</code> will give you:</p>
 
 <p><img src="/development-environment/images/bat.png" alt="fd" /></p>
 
@@ -611,7 +611,7 @@ syntax-highlighting, line numbers, searching and paging.</p>
 
 <p>Website: <a href="http://hisham.hm/htop">http://hisham.hm/htop</a></p>
 
-<p>The <code class="highlighter-rouge">htop</code> command is essentially a <code class="highlighter-rouge">top</code> replacement with a better looking user
+<p>The <code class="language-plaintext highlighter-rouge">htop</code> command is essentially a <code class="language-plaintext highlighter-rouge">top</code> replacement with a better looking user
 interface and a few more features.</p>
 
 <p><img src="/development-environment/images/htop.png" alt="htop terminal output" /></p>
@@ -620,8 +620,8 @@ interface and a few more features.</p>
 
 <p>Website: <a href="https://nicolargo.github.io/glances">https://nicolargo.github.io/glances</a></p>
 
-<p>The <code class="highlighter-rouge">glances</code> application shows a broader view of what’s going on on your system
-than <code class="highlighter-rouge">top</code> or <code class="highlighter-rouge">htop</code> provide. In addition to RAM and CPU usage, you can see
+<p>The <code class="language-plaintext highlighter-rouge">glances</code> application shows a broader view of what’s going on on your system
+than <code class="language-plaintext highlighter-rouge">top</code> or <code class="language-plaintext highlighter-rouge">htop</code> provide. In addition to RAM and CPU usage, you can see
 disk I/O, network I/O and warnings/alerts.</p>
 
 <p><img src="/development-environment/images/glances.png" alt="Glances terminal output" /></p>
@@ -727,7 +727,7 @@ whitespace).</p>
 Studio Code as part of the provisioning; IntelliJ IDEA supports EditorConfig
 without the need for a plugin.</p>
 
-<p>For an example of an <code class="highlighter-rouge">.editorconfig</code> file see the root directory of this
+<p>For an example of an <code class="language-plaintext highlighter-rouge">.editorconfig</code> file see the root directory of this
 project.</p>
 
 <h3 id="git-aliases">Git aliases</h3>
@@ -739,87 +739,87 @@ Git commands:</p>
   <li>
     <p>View summary lines for recent commits</p>
 
-    <p><code class="highlighter-rouge">git ls</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git ls</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate</code></p>
   </li>
   <li>
     <p>View summary lines and list changed files for recent commits</p>
 
-    <p><code class="highlighter-rouge">git ll</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git ll</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat</code></p>
   </li>
   <li>
     <p>View summary lines and dates for recent commits</p>
 
-    <p><code class="highlighter-rouge">git lds</code> ≡ <code class="highlighter-rouge">git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git lds</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short</code></p>
   </li>
   <li>
     <p>View tree of recent commits (all branches)</p>
 
-    <p><code class="highlighter-rouge">git lt</code> ≡ <code class="highlighter-rouge">git log --oneline --graph --decorate --all</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git lt</code> ≡ <code class="language-plaintext highlighter-rouge">git log --oneline --graph --decorate --all</code></p>
   </li>
   <li>
     <p>Checkout an existing branch</p>
 
-    <p><code class="highlighter-rouge">git co</code> ≡ <code class="highlighter-rouge">git checkout</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git co</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout</code></p>
   </li>
   <li>
     <p>Create a new branch</p>
 
-    <p><code class="highlighter-rouge">git cb</code> ≡ <code class="highlighter-rouge">git checkout -b</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git cb</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout -b</code></p>
   </li>
   <li>
     <p>Amend the last commit and change the commit message</p>
 
-    <p><code class="highlighter-rouge">git ca</code> ≡ <code class="highlighter-rouge">git commit --amend</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git ca</code> ≡ <code class="language-plaintext highlighter-rouge">git commit --amend</code></p>
   </li>
   <li>
     <p>Amend the last commit without changing the commit message</p>
 
-    <p><code class="highlighter-rouge">git cane</code> ≡ <code class="highlighter-rouge">git commit --amend --no-edit</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git cane</code> ≡ <code class="language-plaintext highlighter-rouge">git commit --amend --no-edit</code></p>
   </li>
   <li>
-    <p>Rebase the current branch onto <code class="highlighter-rouge">origin/master</code></p>
+    <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/master</code></p>
 
-    <p><code class="highlighter-rouge">git rom</code> ≡ <code class="highlighter-rouge">git rebase origin/master</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git rom</code> ≡ <code class="language-plaintext highlighter-rouge">git rebase origin/master</code></p>
   </li>
   <li>
-    <p>Rebase the current branch onto <code class="highlighter-rouge">origin/develop</code></p>
+    <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/develop</code></p>
 
-    <p><code class="highlighter-rouge">git rod</code> ≡ <code class="highlighter-rouge">git rebase origin/develop</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git rod</code> ≡ <code class="language-plaintext highlighter-rouge">git rebase origin/develop</code></p>
   </li>
   <li>
-    <p>Push the current branch to <code class="highlighter-rouge">origin HEAD</code></p>
+    <p>Push the current branch to <code class="language-plaintext highlighter-rouge">origin HEAD</code></p>
 
-    <p><code class="highlighter-rouge">git po</code> ≡ <code class="highlighter-rouge">git push origin HEAD</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git po</code> ≡ <code class="language-plaintext highlighter-rouge">git push origin HEAD</code></p>
   </li>
   <li>
-    <p>Force push the current branch to <code class="highlighter-rouge">origin HEAD</code></p>
+    <p>Force push the current branch to <code class="language-plaintext highlighter-rouge">origin HEAD</code></p>
 
-    <p><code class="highlighter-rouge">git pof</code> ≡ <code class="highlighter-rouge">git push origin HEAD --force</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git pof</code> ≡ <code class="language-plaintext highlighter-rouge">git push origin HEAD --force</code></p>
   </li>
   <li>
-    <p>Switch to the <code class="highlighter-rouge">master</code> branch pull changes and prune remote branches</p>
+    <p>Switch to the <code class="language-plaintext highlighter-rouge">master</code> branch pull changes and prune remote branches</p>
 
-    <p><code class="highlighter-rouge">git cmp</code> ≡ <code class="highlighter-rouge">git checkout master &amp;&amp; git pull -p</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git cmp</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout master &amp;&amp; git pull -p</code></p>
   </li>
   <li>
-    <p>Switch to the <code class="highlighter-rouge">develop</code> branch pull changes and prune remote branches</p>
+    <p>Switch to the <code class="language-plaintext highlighter-rouge">develop</code> branch pull changes and prune remote branches</p>
 
-    <p><code class="highlighter-rouge">git cdp</code> ≡ <code class="highlighter-rouge">git checkout develop &amp;&amp; git pull -p</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git cdp</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout develop &amp;&amp; git pull -p</code></p>
   </li>
   <li>
     <p>Pop the most recent stash</p>
 
-    <p><code class="highlighter-rouge">git pop</code> ≡ <code class="highlighter-rouge">git stash pop</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git pop</code> ≡ <code class="language-plaintext highlighter-rouge">git stash pop</code></p>
   </li>
   <li>
     <p>List the most recently checked-out branches</p>
 
-    <p><code class="highlighter-rouge">git lb</code> ≡ <code class="highlighter-rouge">!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git lb</code> ≡ <code class="language-plaintext highlighter-rouge">!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'</code></p>
   </li>
   <li>
     <p>Reformat the recent changes as Markdown release notes</p>
 
-    <p><code class="highlighter-rouge">git release-notes</code> ≡ <code class="highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git release-notes</code> ≡ <code class="language-plaintext highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
   </li>
 </ul>
 
@@ -827,7 +827,7 @@ Git commands:</p>
 
 <p>Website: <a href="https://github.com/jesseduffield/lazygit">https://github.com/jesseduffield/lazygit</a></p>
 
-<p><code class="highlighter-rouge">lazygit</code> is a simple terminal UI for Git commands. This terminal UI gives you
+<p><code class="language-plaintext highlighter-rouge">lazygit</code> is a simple terminal UI for Git commands. This terminal UI gives you
 a quick view of your current repository and gives you easy access to most Git
 commands.</p>
 
@@ -847,7 +847,7 @@ most fully featured open source GUI Git client available for Linux.</p>
 <p>Generally, I’d advise only using Git-GUI when you need to amend a commit, the
 rest of the time you’re better off using the commit dialog in your editor/IDE.</p>
 
-<p>Tip: run <code class="highlighter-rouge">git gui</code> in your Git working directory to launch Git-GUI.</p>
+<p>Tip: run <code class="language-plaintext highlighter-rouge">git gui</code> in your Git working directory to launch Git-GUI.</p>
 
 <h3 id="gitk">Gitk</h3>
 
@@ -867,7 +867,7 @@ support for resetting the working branch to a particular commit.</p>
 <p>While the built in diff viewer is a bit basic, it supports using Meld
 (see below) as an external diff viewer.</p>
 
-<p>Tip: run <code class="highlighter-rouge">gitk</code> in your Git working directory to launch Gitk.</p>
+<p>Tip: run <code class="language-plaintext highlighter-rouge">gitk</code> in your Git working directory to launch Gitk.</p>
 
 <p>Gitk and Git-GUI are integrated, so once you’ve run one of the applications, you
 can launch the other from the menu bar.</p>
@@ -880,7 +880,7 @@ can launch the other from the menu bar.</p>
 
 <p><img src="/development-environment/images/meld.png" alt="Meld diff/merge tool" /></p>
 
-<p>Tip: run <code class="highlighter-rouge">meld .</code> in your Git working directory to review your uncommitted
+<p>Tip: run <code class="language-plaintext highlighter-rouge">meld .</code> in your Git working directory to review your uncommitted
 changes.</p>
 
 <h3 id="git-credential-manager-for-mac-and-linux">Git Credential Manager for Mac and Linux</h3>
@@ -958,7 +958,7 @@ man hub-pull-request
 development, build, test and production.</p>
 
 <p>When using a Docker image, there’s no more worrying if you have the correct
-Java/Ruby/Python version installed, or is the <code class="highlighter-rouge">JAVA_HOME</code> set to the correct
+Java/Ruby/Python version installed, or is the <code class="language-plaintext highlighter-rouge">JAVA_HOME</code> set to the correct
 installation; all of that is provided in the Docker image, you just use it.</p>
 
 <p>It’s also easy to build your own Docker images so you can get the same benefits
@@ -968,7 +968,7 @@ with your own software.</p>
 
 <p>Website: <a href="https://ctop.sh">https://ctop.sh</a></p>
 
-<p><code class="highlighter-rouge">ctop</code> is the terminal based tool that provides a <code class="highlighter-rouge">top</code> like interface for
+<p><code class="language-plaintext highlighter-rouge">ctop</code> is the terminal based tool that provides a <code class="language-plaintext highlighter-rouge">top</code> like interface for
 container metrics. View CPU, memory, network I/O, and disk I/O for your
 Docker containers at a glance from your terminal.</p>
 
@@ -978,7 +978,7 @@ Docker containers at a glance from your terminal.</p>
 
 <p>Website: <a href="https://github.com/wagoodman/dive">https://github.com/wagoodman/dive</a></p>
 
-<p><code class="highlighter-rouge">dive</code> is a tool for exploring docker images, layer contents, and discovering
+<p><code class="language-plaintext highlighter-rouge">dive</code> is a tool for exploring docker images, layer contents, and discovering
 ways to shrink Docker images.</p>
 
 <p><img src="/development-environment/images/dive.png" alt="dive in terminal window" /></p>
@@ -1013,7 +1013,7 @@ minikube dashboard
 </code></pre></div></div>
 
 <p>Note: because we’re already running inside a VM we’re running Minikube with
-<code class="highlighter-rouge">--vm-driver=none</code> using a Zsh
+<code class="language-plaintext highlighter-rouge">--vm-driver=none</code> using a Zsh
 <a href="https://github.com/gantsign/zsh-plugins/tree/master/minikube-none">plugin</a>.</p>
 
 <h3 id="helm">Helm</h3>
@@ -1037,11 +1037,11 @@ kubectl get pods <span class="nt">-w</span> <span class="nt">--namespace</span> 
 <span class="c"># terminate with ctrl-c</span>
 
 <span class="c"># Install Apache Tomcat</span>
-helm install stable/tomcat
+helm <span class="nb">install </span>stable/tomcat
 
 <span class="c"># helm will give the service a name &lt;something&gt;-tomcat</span>
 <span class="c"># you can access the tomcat by running:</span>
-http <span class="s2">"</span><span class="k">$(</span>minikube service <span class="nt">--url</span> &lt;something&gt;-tomcat<span class="k">)</span><span class="s2">"</span>
+http <span class="s2">"</span><span class="si">$(</span>minikube service <span class="nt">--url</span> &lt;something&gt;-tomcat<span class="si">)</span><span class="s2">"</span>
 <span class="c"># You'll get a HTTP 404 response (we haven't provided a</span>
 <span class="c"># webarchive), but you'll see it's come from a</span>
 <span class="c"># `Apache-Coyote` server.</span>
@@ -1106,7 +1106,7 @@ you know when the build is complete.</p>
 
 <ul>
   <li><a href="https://plugins.jetbrains.com/plugin/7179-maven-helper">Maven Helper</a>
-adds the Dependency Analyzer tab to the editor panel for <code class="highlighter-rouge">pom.xml</code> files.</li>
+adds the Dependency Analyzer tab to the editor panel for <code class="language-plaintext highlighter-rouge">pom.xml</code> files.</li>
   <li><a href="https://plugins.jetbrains.com/plugin/1065-checkstyle-idea">CheckStyle-IDEA</a>
 for checking the code style of your Java source files.</li>
   <li><a href="https://plugins.jetbrains.com/plugin/6317-lombok-plugin">Lombok</a> to cut down
@@ -1155,7 +1155,7 @@ Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.</p>
 
 <p>To install Gradle:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk install gradle
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sdk <span class="nb">install </span>gradle
 </code></pre></div></div>
 
 <p>To play with GraalVM:</p>
@@ -1164,7 +1164,7 @@ Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.</p>
 sdk list java
 
 <span class="c"># Install latest GraalVM version</span>
-sdk install java 1.0.0-rc5-graal
+sdk <span class="nb">install </span>java 1.0.0-rc5-graal
 
 <span class="c"># Switch to GraalVM in the current shell</span>
 sdk use java 1.0.0-rc5-graal
@@ -1223,8 +1223,8 @@ currently have installed.</p>
 <p>Website: <a href="https://pipenv.readthedocs.io">https://pipenv.readthedocs.io</a></p>
 
 <p>Pipenv helps you manage a virtualenv for your projects as well as managing
-your packages. It will add/remove packages from your <code class="highlighter-rouge">Pipfile</code> as you
-install/uninstall packages. It also generates the <code class="highlighter-rouge">Pipfile.lock</code> for
+your packages. It will add/remove packages from your <code class="language-plaintext highlighter-rouge">Pipfile</code> as you
+install/uninstall packages. It also generates the <code class="language-plaintext highlighter-rouge">Pipfile.lock</code> for
 deterministic builds.</p>
 
 <h3 id="python-plugin-for-visual-studio-code">Python plugin for Visual Studio Code</h3>
@@ -1234,8 +1234,8 @@ Visual Studio Code:
 <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">ms-python.python</a>.</p>
 
 <p><strong>Tip:</strong> launch Visual Studio Code from your Pipenv shell. This will give Visual
-Studio Code access to your virtualenv and let it install packages e.g. <code class="highlighter-rouge">pylint</code>,
-<code class="highlighter-rouge">autopep8</code> and <code class="highlighter-rouge">rope</code> without needing sudo.</p>
+Studio Code access to your virtualenv and let it install packages e.g. <code class="language-plaintext highlighter-rouge">pylint</code>,
+<code class="language-plaintext highlighter-rouge">autopep8</code> and <code class="language-plaintext highlighter-rouge">rope</code> without needing sudo.</p>
 
 <p>To launch Visual Studio Code from your Pipenv shell run the following commands:</p>
 
@@ -1255,8 +1255,8 @@ If you’re using IntelliJ IDEA Ultimate Edition the plugin installed will provi
 equivalent functionality to <a href="https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html">PyCharm Professional Edition</a>.</p>
 
 <p><strong>Tip:</strong> launch IntelliJ from your Pipenv shell. This will give IntelliJ access
-to your virtualenv and let it install packages e.g. <code class="highlighter-rouge">pylint</code>, <code class="highlighter-rouge">autopep8</code> and
-<code class="highlighter-rouge">rope</code> without needing sudo.</p>
+to your virtualenv and let it install packages e.g. <code class="language-plaintext highlighter-rouge">pylint</code>, <code class="language-plaintext highlighter-rouge">autopep8</code> and
+<code class="language-plaintext highlighter-rouge">rope</code> without needing sudo.</p>
 
 <p>To launch IntelliJ from your Pipenv shell run the following commands:</p>
 
@@ -1274,11 +1274,11 @@ idea <span class="nb">.</span>
 
 <h3 id="go-environment-variables">Go environment variables</h3>
 
-<p><code class="highlighter-rouge">GOROOT</code> is set to the location where Go is installed.</p>
+<p><code class="language-plaintext highlighter-rouge">GOROOT</code> is set to the location where Go is installed.</p>
 
-<p><code class="highlighter-rouge">GOPATH</code> is set to <code class="highlighter-rouge">$HOME/workspace-go</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">GOPATH</code> is set to <code class="language-plaintext highlighter-rouge">$HOME/workspace-go</code>.</p>
 
-<p><code class="highlighter-rouge">$GOROOT\bin</code> and <code class="highlighter-rouge">$GOPATH\bin</code> are added to your <code class="highlighter-rouge">PATH</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">$GOROOT\bin</code> and <code class="language-plaintext highlighter-rouge">$GOPATH\bin</code> are added to your <code class="language-plaintext highlighter-rouge">PATH</code>.</p>
 
 <h3 id="go-plugins-for-ides">Go plugins for IDEs</h3>
 
@@ -1304,8 +1304,8 @@ results.</p>
 Molecule Wrapper is a shell script that installs Molecule (and its dependencies)
 before invoking Molecule.</p>
 
-<p>The Zsh support for Molecule Wrapper adds an alias so you can run <code class="highlighter-rouge">./moleculew</code>
-with the <code class="highlighter-rouge">molecule</code> command and enables tab-completion support.</p>
+<p>The Zsh support for Molecule Wrapper adds an alias so you can run <code class="language-plaintext highlighter-rouge">./moleculew</code>
+with the <code class="language-plaintext highlighter-rouge">molecule</code> command and enables tab-completion support.</p>
 
         
       </section>
