@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2021-04-10T23:45:25+01:00
+modified: 2021-04-22T21:57:37+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -735,8 +735,6 @@ you know when the build is complete.
   adds the Dependency Analyzer tab to the editor panel for `pom.xml` files.
 * [CheckStyle-IDEA](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea)
   for checking the code style of your Java source files.
-* [Lombok](https://plugins.jetbrains.com/plugin/6317-lombok-plugin) to cut down
-  boilerplate in your Java source code.
 * [Concise AssertJ Optimizing Nitpicker](https://plugins.jetbrains.com/plugin/12195-concise-assertj-optimizing-nitpicker-cajon-)
   to help you write more concise assertions using AssertJ.
 * [LogSupport2](https://plugins.jetbrains.com/plugin/9417-log-support-2) to
