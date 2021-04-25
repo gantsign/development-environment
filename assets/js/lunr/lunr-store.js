@@ -442,4 +442,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.22.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.23.0 released",
+        "excerpt":"Release highlights      #727: Updated Java 8 to 8.0.292   #728: Updated Java 11 to 11.0.11   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.23.0-release/",
+        "teaser": null
       },]
