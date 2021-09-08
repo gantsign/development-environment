@@ -47,7 +47,7 @@
 - src: gantsign.java
   version: '9.2.1'
 - src: gantsign.keyboard
-  version: '1.4.0'
+  version: '1.5.0'
 - src: gantsign.kompose
 - src: gantsign.kubernetes
   version: '3.1.0'
