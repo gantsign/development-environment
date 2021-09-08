@@ -170,10 +170,10 @@
         - lazygit
 
     # Install Docker
-    - role: angstwad.docker_ubuntu
+    - role: geerlingguy.docker
       tags:
         - docker
-      docker_group_members:
+      docker_users:
         - vagrant
 
     # Fix Docker for vagrant-proxyconf compatibility
