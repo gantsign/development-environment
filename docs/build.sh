@@ -18,9 +18,13 @@ run() {
     while ! netstat -tna | grep 'LISTEN\>' | grep -q ':4000\>'; do
         sleep 1
     done
-    htmlproofer /tmp/_site --log-level debug \
-        --url-swap "^/development-environment:" \
-        --url-ignore 'http://www.xfce.org,//github.com/gantsign/development-environment/pull/'
+    for i in {1..3}; do
+        htmlproofer /tmp/_site --log-level debug \
+            --url-swap "^/development-environment:" \
+            --url-ignore '//www.xfce.org,//mademistakes.com/,//github.com/gantsign/development-environment/pull/' \
+            && s=0 && break || s=$? && sleep 60
+    done
+    (exit $s)
 }
 
 docker_build() {
