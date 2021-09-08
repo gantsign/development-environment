@@ -108,7 +108,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Switched to Git-GUI git client",
-        "excerpt":"Since GitKraken is no longer free for commercial use it’s been replaced in the GantSign development environment. Installed in place of GitKraken are Git-GUI and Gitk; while they’re a lot less pretty, they are more stable, feature complete and are open source. For more details of Git-GUI and Gitk support...","categories": [],
+        "excerpt":"Since GitKraken is no longer free for commercial use](https://www.gitkraken.com/pricing) it’s been replaced in the GantSign development environment. Installed in place of GitKraken are Git-GUI and Gitk; while they’re a lot less pretty, they are more stable, feature complete and are open source. For more details of Git-GUI and Gitk support...","categories": [],
         "tags": ["nodejs"],
         "url": "/development-environment/git-gui/",
         "teaser": null
