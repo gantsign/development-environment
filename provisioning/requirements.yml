@@ -69,7 +69,7 @@
 - src: gantsign.pwquality
   version: '1.0.0'
 - src: gantsign.pyenv
-  version: '1.0.0'
+  version: '2.0.0'
 - src: gantsign.sdkman
   version: '1.4.1'
 - src: gantsign.sdkman_init
