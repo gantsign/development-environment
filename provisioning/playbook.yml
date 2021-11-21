@@ -676,16 +676,6 @@
             - name: hub
               url: '/usr/local/share/hub/zsh'
 
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - sdkman
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: sdkman
-              url: '$HOME/.sdkman-zsh'
-
     # Install SDKMAN software development kit manager
     - role: gantsign.sdkman
       tags:
