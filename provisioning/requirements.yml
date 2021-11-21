@@ -1,6 +1,6 @@
 ---
 - src: geerlingguy.docker
-  version: '4.1.0'
+  version: '4.1.1'
 - src: weareinteractive.git
   version: '1.3.3'
 - src: weareinteractive.environment
