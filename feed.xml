@@ -5,9 +5,45 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Nov 2021 19:54:40 +0000</pubDate>
-    <lastBuildDate>Sun, 21 Nov 2021 19:54:40 +0000</lastBuildDate>
+    <pubDate>Sun, 21 Nov 2021 21:14:00 +0000</pubDate>
+    <lastBuildDate>Sun, 21 Nov 2021 21:14:00 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Version 2.24.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/759&quot;&gt;#759&lt;/a&gt;:
+Updated Go lang to 1.17.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/760&quot;&gt;#760&lt;/a&gt;:
+Updated Java 8 to 8u312&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/761&quot;&gt;#761&lt;/a&gt;:
+Updated Java 11 to 11.0.13&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/762&quot;&gt;#762&lt;/a&gt;:
+Updated Maven to 3.8.4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.24.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Nov 2021 20:39:35 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.24.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.24.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.23.0 released</title>
@@ -325,44 +361,6 @@ Added Grazi grammar checker for IntelliJ&lt;/li&gt;
         <pubDate>Sat, 04 Jan 2020 20:00:32 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.17.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.17.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.16.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/636&quot;&gt;#636&lt;/a&gt;:
-Added lazygit a simple terminal UI for Git commands&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/637&quot;&gt;#637&lt;/a&gt;:
-Updated Go lang to 1.13.5&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/638&quot;&gt;#638&lt;/a&gt;:
-Updated Java 8 to 8u232&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/639&quot;&gt;#639&lt;/a&gt;:
-Updated Java 11 to 11.0.5&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/640&quot;&gt;#640&lt;/a&gt;:
-Updated Maven to 3.6.3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.16.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 08 Dec 2019 11:01:46 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.16.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.16.0-release/</guid>
         
         <category>release</category>
         

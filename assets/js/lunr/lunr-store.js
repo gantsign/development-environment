@@ -448,4 +448,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.23.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.24.0 released",
+        "excerpt":"Release highlights      #759: Updated Go lang to 1.17.3   #760: Updated Java 8 to 8u312   #761: Updated Java 11 to 11.0.13   #762: Updated Maven to 3.8.4   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.24.0-release/",
+        "teaser": null
       },]
