@@ -229,7 +229,8 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: '8.0.232+9.1'
+      java_version: '8.0.312+7'
+      java_vendor: adoptium
       java_is_default_installation: no
       java_fact_group_name: java_8
 
