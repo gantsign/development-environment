@@ -246,7 +246,7 @@
       tags:
         - java
         - maven
-      maven_version: '3.8.2'
+      maven_version: '3.8.4'
 
     # Add Node.js
     - role: geerlingguy.nodejs
