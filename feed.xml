@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Jan 2022 23:13:33 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Jan 2022 23:13:33 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Jan 2022 23:43:43 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Jan 2022 23:43:43 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Version 2.25.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/767&quot;&gt;#767&lt;/a&gt;:
+Updated Go lang to 1.17.5&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/769&quot;&gt;#769&lt;/a&gt;:
+Migrated to the new .NET based Git Credential Manager&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.25.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Jan 2022 22:57:26 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.25.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.25.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.24.0 released</title>
@@ -329,38 +361,6 @@ Fixed install of IntelliJ plugins&lt;/li&gt;
         <pubDate>Sun, 19 Jan 2020 14:16:35 +0000</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.17.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.17.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.17.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/643&quot;&gt;#643&lt;/a&gt;:
-Updated Node.js to version 12&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/645&quot;&gt;#645&lt;/a&gt;:
-Added Grazi grammar checker for IntelliJ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.17.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 04 Jan 2020 20:00:32 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.17.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.17.0-release/</guid>
         
         <category>release</category>
         

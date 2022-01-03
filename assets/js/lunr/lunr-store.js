@@ -454,4 +454,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.24.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.25.0 released",
+        "excerpt":"Release highlights      #767: Updated Go lang to 1.17.5   #769: Migrated to the new .NET based Git Credential Manager   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.25.0-release/",
+        "teaser": null
       },]
