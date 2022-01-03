@@ -252,7 +252,7 @@
     - role: geerlingguy.nodejs
       tags:
         - nodejs
-      nodejs_version: 14.x
+      nodejs_version: 16.x
       nodejs_install_npm_user: vagrant
       nodejs_npm_global_packages:
         - name: grunt-cli
