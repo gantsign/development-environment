@@ -26,7 +26,7 @@
   name: gantsign.command-line-tools
 - src: gantsign.ctop
 - src: gantsign.default-web-browser
-  version: '3.2.1'
+  version: '4.0.0'
 - src: gantsign.fd
 - src: gantsign.git_credential_manager
 - src: gantsign.git_user
