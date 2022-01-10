@@ -460,4 +460,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.25.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.26.0 released",
+        "excerpt":"Release highlights      #772: Replaced zdharma/fast-syntax-highlighting   #776: Updated Go lang to 1.17.6   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.26.0-release/",
+        "teaser": null
       },]
