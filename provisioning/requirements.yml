@@ -54,7 +54,7 @@
 - src: gantsign.lazygit
   version: '1.0.0'
 - src: gantsign.lightdm
-  version: 'v3.0.0'
+  version: 'v3.0.1'
 - src: gantsign.maven
   version: '5.6.3'
 - src: gantsign.maven-notifier
