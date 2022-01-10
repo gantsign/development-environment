@@ -77,7 +77,7 @@
 - src: gantsign.swapspace
   version: '1.0.0'
 - src: gantsign.terminator
-  version: '2.0.1'
+  version: '2.0.2'
 - src: gantsign.timezone
   version: '1.1.0'
 - src: gantsign.visual-studio-code
