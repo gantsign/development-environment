@@ -67,7 +67,7 @@
 - src: gantsign.pin-to-launcher
   version: '4.0.0'
 - src: gantsign.pwquality
-  version: '1.0.0'
+  version: '1.0.1'
 - src: gantsign.pyenv
   version: '2.0.0'
 - src: gantsign.sdkman
