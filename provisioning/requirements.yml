@@ -73,7 +73,7 @@
 - src: gantsign.sdkman
   version: '2.0.0'
 - src: gantsign.sdkman_init
-  version: '1.2.1'
+  version: '1.2.2'
 - src: gantsign.swapspace
   version: '1.0.0'
 - src: gantsign.terminator
