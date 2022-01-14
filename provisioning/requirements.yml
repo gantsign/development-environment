@@ -75,7 +75,7 @@
 - src: gantsign.sdkman_init
   version: '1.2.2'
 - src: gantsign.swapspace
-  version: '1.0.0'
+  version: '1.0.1'
 - src: gantsign.terminator
   version: '2.0.2'
 - src: gantsign.timezone
