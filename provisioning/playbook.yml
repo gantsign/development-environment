@@ -313,12 +313,6 @@
         - chrome
       default_web_browser: google-chrome
 
-    # Install Postman HTTP tool
-    - role: gantsign.postman
-      tags:
-        - gui
-        - postman
-
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
       tags:
@@ -505,7 +499,7 @@
         - application: terminator.desktop
         - application: org.gnome.Nautilus.desktop
         - application: google-chrome.desktop
-        - application: Postman.desktop
+        - application: postman_postman.desktop
         - application: code.desktop
         - application: "{{ ansible_local.intellij.general.desktop_filename if (ansible_local is defined and ansible_local.intellij is defined) else omit }}"
 
@@ -710,3 +704,14 @@
               path: '{{ ansible_local.maven.general.home }}'
           sdkman_default:
             maven: '3.6'
+
+  post_tasks:
+    # Install Postman HTTP tool
+    - name: install Postman
+      snap:
+        name:
+          - postman
+        state: present
+      tags:
+        - gui
+        - postman
