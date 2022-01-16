@@ -715,3 +715,8 @@
       tags:
         - gui
         - postman
+
+    # Cleanup
+    - name: remove dependencies that are no longer required
+      apt:
+        autoremove: yes
