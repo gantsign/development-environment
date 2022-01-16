@@ -62,8 +62,6 @@
 - src: gantsign.minikube
 - src: gantsign.pipenv
   version: '2.0.0'
-- src: gantsign.postman
-  version: '2.4.0'
 - src: gantsign.pin-to-launcher
   version: '4.0.0'
 - src: gantsign.pwquality
