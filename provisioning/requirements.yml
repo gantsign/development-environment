@@ -76,15 +76,13 @@
   version: '1.2.2'
 - src: gantsign.swapspace
   version: '1.0.1'
-- src: gantsign.terminator
-  version: '2.0.2'
 - src: gantsign.timezone
   version: '1.1.1'
 - src: gantsign.visual-studio-code
   version: '6.7.0'
 - src: gantsign.visual-studio-code-extensions
   version: '2.4.0'
-- src: https://github.com/gantsign/ansible-role-xdesktop/archive/5.2.0.tar.gz
+- src: https://github.com/gantsign/ansible-role-xdesktop/archive/5.3.0.tar.gz
   name: gantsign.xdesktop
 - src: gantsign.zswap
   version: '1.0.1'
