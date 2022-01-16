@@ -466,4 +466,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.26.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.27.0 released",
+        "excerpt":"Release highlights      #795: Upgraded to Ubuntu Focal   #798: Added JetBrainsMono Nerd Font   #799: Updated Node.js to version 16   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.27.0-release/",
+        "teaser": null
       },]
