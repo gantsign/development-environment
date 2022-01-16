@@ -32,7 +32,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   # Important: use Bento boxes https://app.vagrantup.com/bento not the Canonical ones.
   # Bento boxes are officially-recommended by Vagrant https://www.vagrantup.com/docs/boxes.html
-  config.vm.box = 'bento/ubuntu-18.04'
+  config.vm.box = 'bento/ubuntu-20.04'
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
