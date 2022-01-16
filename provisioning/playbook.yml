@@ -298,11 +298,6 @@
         - git-credential-manager
         - gui
 
-    # Install Terminator terminal emulator
-    - role: gantsign.terminator
-      tags:
-        - gui
-
     # Install Google Chrome web browser
     - role: cmprescott.chrome
       tags:
