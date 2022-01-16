@@ -174,7 +174,7 @@ Vagrant.configure(2) do |config|
   config.persistent_storage.volgroupname = 'persist-vg'
 
   # Update the VirtualBox Guest Additions
-  config.vbguest.auto_update = true
+  config.vbguest.auto_update = false
 
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
