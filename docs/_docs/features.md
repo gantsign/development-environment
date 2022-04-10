@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2022-01-16T13:02:24+00:00
+modified: 2022-04-10T22:46:53+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -730,8 +730,6 @@ you know when the build is complete.
   for checking the code style of your Java source files.
 * [Concise AssertJ Optimizing Nitpicker](https://plugins.jetbrains.com/plugin/12195-concise-assertj-optimizing-nitpicker-cajon-)
   to help you write more concise assertions using AssertJ.
-* [LogSupport2](https://plugins.jetbrains.com/plugin/9417-log-support-2) to
-  encourage logging best practice.
 
 ### IntelliJ code style
 

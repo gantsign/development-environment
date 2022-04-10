@@ -455,7 +455,6 @@
         - username: vagrant
           intellij_plugins:
             - CheckStyle-IDEA
-            - LogSupport2
             - MavenRunHelper
             - de.platon42.cajon
 
