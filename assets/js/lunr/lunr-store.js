@@ -472,4 +472,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.27.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.28.0 released",
+        "excerpt":"Release highlights      #807: Updated Java 8 to 8u322   #808: Updated Java 11 to 11.0.14   #813: Updated Go lang to 1.18.1   Full change list   For a full list of changes view the release notes.   Upgrade procedure   To upgrade follow the upgrade documentation.  ","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.28.0-release/",
+        "teaser": null
       },]

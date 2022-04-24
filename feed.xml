@@ -5,9 +5,43 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Apr 2022 14:39:27 +0100</pubDate>
-    <lastBuildDate>Sun, 24 Apr 2022 14:39:27 +0100</lastBuildDate>
+    <pubDate>Sun, 24 Apr 2022 15:00:26 +0100</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2022 15:00:26 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Version 2.28.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/807&quot;&gt;#807&lt;/a&gt;:
+Updated Java 8 to 8u322&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/808&quot;&gt;#808&lt;/a&gt;:
+Updated Java 11 to 11.0.14&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/813&quot;&gt;#813&lt;/a&gt;:
+Updated Go lang to 1.18.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.28.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Apr 2022 14:44:32 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.28.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.28.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.27.0 released</title>
@@ -317,40 +351,6 @@ Updated gantsign.intellij-plugins role to 3.0.0&lt;/li&gt;
         <pubDate>Tue, 14 Apr 2020 22:35:26 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.19.1-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.19.1-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.19.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/667&quot;&gt;#667&lt;/a&gt;:
-Added Concise AssertJ Optimizing Nitpicker plugin for IntelliJ&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/668&quot;&gt;#668&lt;/a&gt;:
-Added PlantUML plugin for IntelliJ&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/669&quot;&gt;#669&lt;/a&gt;:
-Updated Go lang to 1.14&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.19.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 07 Mar 2020 22:29:42 +0000</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.19.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.19.0-release/</guid>
         
         <category>release</category>
         
