@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
   # https://docs.vagrantup.com.
 
   # Every Vagrant development environment requires a box. You can search for
-  # boxes at https://atlas.hashicorp.com/search.
+  # boxes at https://app.vagrantup.com/boxes/search.
   # Important: use Bento boxes https://app.vagrantup.com/bento not the Canonical ones.
   # Bento boxes are officially-recommended by Vagrant https://www.vagrantup.com/docs/boxes.html
   config.vm.box = 'bento/ubuntu-20.04'
