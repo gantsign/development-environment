@@ -28,7 +28,7 @@ run() {
 }
 
 docker_build() {
-    docker run --rm --volume=$(pwd):/srv/jekyll jekyll/jekyll:4.2.0 \
+    docker run --rm --volume=$(pwd):/srv/jekyll jekyll/jekyll:4.2.2 \
         /srv/jekyll/build.sh --run
 }
 
