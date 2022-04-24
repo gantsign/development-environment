@@ -5,9 +5,9 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Apr 2022 12:07:13 +0100</pubDate>
-    <lastBuildDate>Sun, 24 Apr 2022 12:07:13 +0100</lastBuildDate>
-    <generator>Jekyll v3.9.0</generator>
+    <pubDate>Sun, 24 Apr 2022 13:06:55 +0100</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2022 13:06:55 +0100</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Version 2.27.0 released</title>
