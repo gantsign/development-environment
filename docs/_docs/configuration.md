@@ -323,7 +323,6 @@ ansible:
     - intellij
     - java
     - kubernetes
-    - lazygit
     - maven
     - maven-notifier
     - nodejs
