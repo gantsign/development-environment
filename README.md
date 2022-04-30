@@ -42,7 +42,6 @@ environment that you can fork to add your project specific configuration.
 * Minikube
 * Helm
 * Visual Studio Code
-* lazygit
 * Git-GUI and Gitk
 * Postman
 * Open JDK

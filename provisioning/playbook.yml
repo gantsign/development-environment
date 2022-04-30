@@ -164,11 +164,6 @@
       tags:
         - hub
 
-    # Install lazygit command line UI for git
-    - role: gantsign.lazygit
-      tags:
-        - lazygit
-
     # Install Docker
     - role: geerlingguy.docker
       tags:
