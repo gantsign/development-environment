@@ -225,8 +225,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: '11.0.14.1+1'
-      java_vendor: adoptium
+      java_version: '11.0.15+10'
 
     # Install Maven
     - role: gantsign.maven
