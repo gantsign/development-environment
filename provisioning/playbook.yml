@@ -286,12 +286,6 @@
         - git-credential-manager
         - gui
 
-    # Install Google Chrome web browser
-    - role: cmprescott.chrome
-      tags:
-        - gui
-        - chrome
-
     # Set the default web browser
     # This is only a partial solution as Google Chrome will still ask if you
     # want to make it the default browser when it first runs.
@@ -697,6 +691,14 @@
         name: pipenv
       tags:
         - python
+
+    # Install Google Chrome web browser
+    - name: install Google Chrome
+      package:
+        name: google-chrome-stable
+      tags:
+        - gui
+        - chrome
 
     # Install Postman HTTP tool
     - name: install Postman
