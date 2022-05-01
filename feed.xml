@@ -5,9 +5,41 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 May 2022 14:47:50 +0100</pubDate>
-    <lastBuildDate>Sun, 01 May 2022 14:47:50 +0100</lastBuildDate>
+    <pubDate>Sun, 01 May 2022 19:33:11 +0100</pubDate>
+    <lastBuildDate>Sun, 01 May 2022 19:33:11 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Version 2.29.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/827&quot;&gt;#827&lt;/a&gt;:
+Updated Java 8 to 8u332&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/828&quot;&gt;#828&lt;/a&gt;:
+Updated Java 11 to 11.0.15&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.29.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 May 2022 14:58:35 +0100</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.29.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.29.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.28.0 released</title>
@@ -315,42 +347,6 @@ Add git lb alias to view recent branches&lt;/li&gt;
         <pubDate>Mon, 27 Apr 2020 21:19:32 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.20.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.20.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.19.1 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fix for IntelliJ IDEA 2020.1 (directory layout has changed)
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/671&quot;&gt;#671&lt;/a&gt;:
-Updated gantsign.intellij_jdks role to 2.0.0&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/672&quot;&gt;#672&lt;/a&gt;:
-Updated gantsign.intellij-plugins role to 3.0.0&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.19.1&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 14 Apr 2020 22:35:26 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.19.1-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.19.1-release/</guid>
         
         <category>release</category>
         
