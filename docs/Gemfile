@@ -22,5 +22,5 @@ gem 'minimal-mistakes-jekyll', '4.24.0'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
-  gem 'html-proofer', '3.19.4'
+  gem 'html-proofer', '4.1.0'
 end
