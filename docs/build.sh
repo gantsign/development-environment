@@ -22,6 +22,7 @@ run() {
         htmlproofer /tmp/_site --log-level debug \
             --swap-urls "^/development-environment:" \
             --ignore-urls '//www.xfce.org,//mademistakes.com/,//github.com/gantsign/development-environment/pull/' \
+            --ignore-status-codes 307 \
             --enforce-https=false \
             && s=0 && break || s=$? && sleep 60
     done

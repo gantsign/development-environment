@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2022-04-30T15:12:25+01:00
+modified: 2022-10-22T17:21:46+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -729,7 +729,7 @@ support for the following JVM languages:
 * Java: based on the
   [Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)
 * Kotlin: based on the
-  [Kotlin Style Guide](https://kotlinlang.org/docs/reference/coding-conventions.html)
+  [Kotlin Style Guide](https://kotlinlang.org/docs/coding-conventions.html)
 
 ### IntelliJ inspection profile
 
