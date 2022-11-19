@@ -232,7 +232,7 @@
       tags:
         - java
         - maven
-      maven_version: '3.8.4'
+      maven_version: '3.8.6'
 
     # Add Node.js
     - role: geerlingguy.nodejs
@@ -677,10 +677,10 @@
         - username: vagrant
           sdkman_install:
             - candidate: maven
-              version: '3.6'
+              version: '3.8'
               path: '{{ ansible_local.maven.general.home }}'
           sdkman_default:
-            maven: '3.6'
+            maven: '3.8'
 
   post_tasks:
     # Install Pipenv
