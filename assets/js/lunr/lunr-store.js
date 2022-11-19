@@ -484,4 +484,10 @@ var store = [{
         "tags": ["release"],
         "url": "/development-environment/news/2.29.0-release/",
         "teaser": null
+      },{
+        "title": "Version 2.30.0 released",
+        "excerpt":"Release highlights #853: Updated Node.js to version 18 #854: Updated Go lang to 1.19.3 #855: Updated Java 8 to 8u352 #856: Updated Java 11 to 11.0.17 #857: Updated Maven to 3.8.6 #858: Updated SDKMAN to 5.16.0 Full change list For a full list of changes view the release notes. Upgrade...","categories": ["news"],
+        "tags": ["release"],
+        "url": "/development-environment/news/2.30.0-release/",
+        "teaser": null
       },]

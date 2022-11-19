@@ -5,9 +5,49 @@
     <description>A development environment for Java and Ansible built using Vagrant.</description>
     <link>https://gantsign.github.io/development-environment/</link>
     <atom:link href="https://gantsign.github.io/development-environment/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Nov 2022 21:35:01 +0000</pubDate>
-    <lastBuildDate>Sat, 19 Nov 2022 21:35:01 +0000</lastBuildDate>
+    <pubDate>Sat, 19 Nov 2022 22:16:51 +0000</pubDate>
+    <lastBuildDate>Sat, 19 Nov 2022 22:16:51 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Version 2.30.0 released</title>
+        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/853&quot;&gt;#853&lt;/a&gt;:
+Updated Node.js to version 18&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/854&quot;&gt;#854&lt;/a&gt;:
+Updated Go lang to 1.19.3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/855&quot;&gt;#855&lt;/a&gt;:
+Updated Java 8 to 8u352&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/856&quot;&gt;#856&lt;/a&gt;:
+Updated Java 11 to 11.0.17&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/857&quot;&gt;#857&lt;/a&gt;:
+Updated Maven to 3.8.6&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/858&quot;&gt;#858&lt;/a&gt;:
+Updated SDKMAN to 5.16.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
+
+&lt;p&gt;For a full list of changes view the
+&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.30.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
+
+&lt;p&gt;To upgrade follow the
+&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Nov 2022 21:54:24 +0000</pubDate>
+        <link>https://gantsign.github.io/development-environment/news/2.30.0-release/</link>
+        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.30.0-release/</guid>
+        
+        <category>release</category>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Version 2.29.0 released</title>
@@ -311,42 +351,6 @@ Updated Go lang to 1.14.6&lt;/li&gt;
         <pubDate>Sun, 26 Jul 2020 14:31:27 +0100</pubDate>
         <link>https://gantsign.github.io/development-environment/news/2.21.0-release/</link>
         <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.21.0-release/</guid>
-        
-        <category>release</category>
-        
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Version 2.20.0 released</title>
-        <description>&lt;h2 id=&quot;release-highlights&quot;&gt;Release highlights&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/677&quot;&gt;#677&lt;/a&gt;:
-Updated Go lang to 1.14.2&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/678&quot;&gt;#678&lt;/a&gt;:
-Updated Java 8 to 8u252&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/679&quot;&gt;#679&lt;/a&gt;:
-Updated Java 11 to 11.0.7&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gantsign/development-environment/pull/682&quot;&gt;#682&lt;/a&gt;:
-Add git lb alias to view recent branches&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;full-change-list&quot;&gt;Full change list&lt;/h2&gt;
-
-&lt;p&gt;For a full list of changes view the
-&lt;a href=&quot;https://github.com/gantsign/development-environment/releases/tag/2.20.0&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrade-procedure&quot;&gt;Upgrade procedure&lt;/h2&gt;
-
-&lt;p&gt;To upgrade follow the
-&lt;a href=&quot;/development-environment/docs/upgrade/&quot;&gt;upgrade documentation&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 27 Apr 2020 21:19:32 +0100</pubDate>
-        <link>https://gantsign.github.io/development-environment/news/2.20.0-release/</link>
-        <guid isPermaLink="true">https://gantsign.github.io/development-environment/news/2.20.0-release/</guid>
         
         <category>release</category>
         
