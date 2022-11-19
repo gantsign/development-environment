@@ -23,7 +23,7 @@ run() {
             --swap-urls "^/development-environment:" \
             --ignore-urls '//www.xfce.org,//mademistakes.com/,//kompose.io/,//github.com/gantsign/development-environment/pull/' \
             --ignore-status-codes 307 \
-            --enforce-https=false \
+            --no-enforce-https \
             && s=0 && break || s=$? && sleep 60
     done
     (exit $s)
