@@ -1,0 +1,3 @@
+- name: install Pipenv
+  package:
+    name: pipenv

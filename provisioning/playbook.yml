@@ -213,6 +213,11 @@
       pyenv_users:
         - vagrant
 
+    # Install Pipenv
+    - role: pipenv
+      tags:
+        - python
+
     # Install Java JDK 8
     - role: gantsign.java
       tags:
@@ -284,6 +289,12 @@
         - git-credential-manager
         - gui
 
+    # Install Google Chrome web browser
+    - role: google-chrome
+      tags:
+        - chrome
+        - gui
+
     # Set the default web browser
     # This is only a partial solution as Google Chrome will still ask if you
     # want to make it the default browser when it first runs.
@@ -292,6 +303,12 @@
         - gui
         - chrome
       default_web_browser: google-chrome
+
+    # Install Postman HTTP tool
+    - role: postman
+      tags:
+        - gui
+        - postman
 
     # Install Visual Studio Code editor
     - role: gantsign.visual-studio-code
@@ -683,31 +700,6 @@
             maven: '3.8'
 
   post_tasks:
-    # Install Pipenv
-    - name: install Pipenv
-      package:
-        name: pipenv
-      tags:
-        - python
-
-    # Install Google Chrome web browser
-    - name: install Google Chrome
-      package:
-        name: google-chrome-stable
-      tags:
-        - gui
-        - chrome
-
-    # Install Postman HTTP tool
-    - name: install Postman
-      snap:
-        name:
-          - postman
-        state: present
-      tags:
-        - gui
-        - postman
-
     # Cleanup
     - name: remove dependencies that are no longer required
       apt:
