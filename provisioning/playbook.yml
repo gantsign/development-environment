@@ -29,6 +29,11 @@
     - role: gantsign.timezone
       timezone: Europe/London
 
+    # Install Homebrew
+    - role: homebrew
+      tags:
+        - homebrew
+
     # Increase minimum password strength
     - role: gantsign.pwquality
       pwquality_minlen: 16
@@ -547,6 +552,15 @@
             - name: moleculew
               url: gantsign/molecule-wrapper
               location: zsh
+
+    - role: gantsign.antigen
+      tags:
+        - oh-my-zsh
+        - homebrew
+      users:
+        - username: vagrant
+          antigen_bundles:
+            - name: brew
 
     - role: gantsign.antigen
       tags:
