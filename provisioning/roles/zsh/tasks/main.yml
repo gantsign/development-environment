@@ -1,0 +1,46 @@
+---
+- name: Set zsh_user fact
+  ansible.builtin.set_fact:
+    zsh_user: '{{ ansible_env.SUDO_USER }}'
+
+- name: Install Zsh
+  become: true
+  become_user: root
+  ansible.builtin.package:
+    name: zsh
+    state: present
+
+- name: Change user shell to Zsh
+  become: true
+  become_user: root
+  ansible.builtin.user:
+    name: '{{ zsh_user }}'
+    shell: /usr/bin/zsh
+
+- name: Configure .zimrc
+  ansible.builtin.copy:
+    src: zimrc.zsh
+    dest: ~/.zimrc
+    mode: 'u=rw,go='
+
+- name: Create zsh config dir
+  ansible.builtin.file:
+    path: ~/.config/zsh
+    state: directory
+    mode: 'u=rwx,go='
+
+- name: Copy Zsh config
+  ansible.builtin.copy:
+    src: '{{ item }}'
+    dest: '~/.config/zsh/{{ item }}'
+    mode: 'u=rw,go='
+  loop:
+    - completion.zsh
+    - custom.zsh
+    - env.zsh
+
+- name: Configure .zshrc
+  ansible.builtin.copy:
+    src: zshrc.zsh
+    dest: ~/.zshrc
+    mode: 'u=rw,go='

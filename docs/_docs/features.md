@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-08-30T21:21:53+01:00
+modified: 2023-08-31T22:05:24+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -149,20 +149,13 @@ Tip: tab-completion for command options often only works after you've specified
 the `-`. For example `grep` `TAB` produces no suggestions, but `grep -` `TAB`
 produces 160 suggestions.
 
-### Antigen
+### Zim
 
-Website: [https://github.com/zsh-users/antigen](https://github.com/zsh-users/antigen)
+Website: https://zimfw.sh/](https://zimfw.sh/)
 
 Oh My Zsh has a wide selection of plugins, but sometimes you want to install
-plugins from elsewhere. This is where Antigen comes in, Antigen is a plugin
+plugins from elsewhere. This is where Zim comes in, Zim is a plugin
 manager for Zsh and can install Zsh plugins from Git repositories.
-
-Note: the Antigen commands don't make persistent changes. Any change you make to
-the theme/plugins will be lost the next time you launch the shell. To make
-changes permanent you need to run the Antigen commands as part of the
-initialisation of your shell. To do this you either need to change the
-`playbook.yml` of this project and re-provision your VM, or run the Antigen
-commands from the `.zshrc` in your home directory.
 
 You can find a list of third-party plugins at:
 [https://github.com/unixorn/awesome-zsh-plugins#plugins](https://github.com/unixorn/awesome-zsh-plugins#plugins)

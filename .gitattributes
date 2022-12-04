@@ -30,6 +30,7 @@ Customfile.example text
 *.conf eol=lf
 *.desktop eol=lf
 *.j2 eol=lf
+*.zsh text eol=lf
 
 # Denote all files that are truly binary and should not be modified.
 *.png binary
