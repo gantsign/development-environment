@@ -177,7 +177,7 @@
         - docker
 
     # Install ctop
-    - role: gantsign.ctop
+    - role: ctop
       tags:
         - docker
 
@@ -201,7 +201,7 @@
         - docker
 
     # Install Kompose
-    - role: gantsign.kompose
+    - role: kompose
       tags:
         - kubernetes
         - docker
