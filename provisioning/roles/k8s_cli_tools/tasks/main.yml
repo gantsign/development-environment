@@ -1,11 +1,12 @@
 ---
-- name: Install Kompose
+- name: Install Kubernetes CLI tools (Homebrew)
   become: true
   become_user: vagrant
   community.general.homebrew:
-    name: kompose
+    name:
+      - kubectx
+      - kustomize
+      - stern
     state: present
   environment:
     HOMEBREW_INSTALL_FROM_API: '1'
-  tags:
-    - homebrew

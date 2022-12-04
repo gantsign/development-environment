@@ -1,0 +1,19 @@
+---
+- name: Install more CLI tools (Homebrew)
+  become: true
+  become_user: vagrant
+  community.general.homebrew:
+    name:
+      - bandwhich
+      - dust
+      - gh
+      - git-delta
+      - lsd
+      - procs
+      - sd
+      - tokei
+      - watchexec
+      - yq
+    state: present
+  environment:
+    HOMEBREW_INSTALL_FROM_API: '1'

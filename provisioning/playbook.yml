@@ -124,6 +124,11 @@
     # Install common command line tools
     - gantsign.command-line-tools
 
+    # Install more command line tools
+    - role: more_cli_tools
+      tags:
+        - homebrew
+
     # Install and configure Git version control
     - role: weareinteractive.git
       git_config:
@@ -176,10 +181,11 @@
       tags:
         - docker
 
-    # Install ctop
-    - role: ctop
+    # Install Docker command line tools
+    - role: docker_cli_tools
       tags:
         - docker
+        - homebrew
 
     # Install Kubernetes
     - role: gantsign.kubernetes
@@ -200,11 +206,12 @@
         - kubernetes
         - docker
 
-    # Install Kompose
-    - role: kompose
+    # Install Kubernetes command line tools
+    - role: k8s_cli_tools
       tags:
         - kubernetes
         - docker
+        - homebrew
 
     # Install Pyenv
     - role: gantsign.pyenv
