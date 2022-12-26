@@ -101,7 +101,7 @@ Vagrant.configure(2) do |config|
 
     'virtualbox' => {
       'name' => 'development-environment',
-      'gui' => true,
+      'gui' => false,
       'cpus' => 2,
       'graphicscontroller' => nil,
       'vram' => '64',
@@ -157,13 +157,13 @@ Vagrant.configure(2) do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network 'public_network'
+  config.vm.network "public_network", ip: "192.168.1.234"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder '../data', '/vagrant_data'
+  # config.vm.synced_folder '../data', '/home/vagrant_data', fsnotify: true
 
   config.persistent_storage.enabled = true
   config.persistent_storage.location = config.user.persistent_storage_location
