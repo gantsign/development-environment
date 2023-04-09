@@ -6,7 +6,7 @@
 - src: weareinteractive.environment
   version: '1.5.0'
 - src: geerlingguy.nodejs
-  version: '6.1.0'
+  version: '6.1.1'
 - src: oefenweb.locales
   version: 'v1.0.48'
 - src: gantsign.antigen
