@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2022-11-19T19:05:14+00:00
+modified: 2023-04-09T16:08:24+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -697,7 +697,7 @@ To get free patches for longer this project uses builds from
 
 ### Maven
 
-Maven 3.8.6 is installed by default.
+Maven 3.9.1 is installed by default.
 
 Note: Gradle is not installed as Gradle users are recommended to use the
 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
