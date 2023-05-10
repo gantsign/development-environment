@@ -164,6 +164,7 @@ Vagrant.configure(2) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder '../data', '/home/vagrant_data', fsnotify: true
+  # config.vm.synced_folder '../.m2', '/home/vagrant_data/maven/.m2', fsnotify: true
 
   config.persistent_storage.enabled = true
   config.persistent_storage.location = config.user.persistent_storage_location
@@ -175,6 +176,10 @@ Vagrant.configure(2) do |config|
 
   # Update the VirtualBox Guest Additions
   config.vbguest.auto_update = false
+  
+  # SSH auth method: password
+  config.ssh.password = "vagrant"
+  config.ssh.private_key_path = File.expand_path("../private_key", __FILE__)  
 
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
