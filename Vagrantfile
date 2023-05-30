@@ -179,7 +179,7 @@ Vagrant.configure(2) do |config|
   
   # SSH auth method: password
   config.ssh.password = "vagrant"
-  config.ssh.private_key_path = File.expand_path("../private_key", __FILE__)  
+  #config.ssh.private_key_path = File.expand_path("../private_key", __FILE__)  
 
   config.vm.provider 'virtualbox' do |vb|
     # Give the VM a name
