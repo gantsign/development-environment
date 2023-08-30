@@ -16,8 +16,8 @@
     - name: add kubernetes key
       become: yes
       get_url:
-        url: 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
-        dest: '/etc/apt/keyrings/cloud.google.gpg'
+        url: 'https://dl.k8s.io/apt/doc/apt-key.gpg'
+        dest: '/etc/apt/keyrings/kubernetes-archive-keyring.gpg'
         mode: 'u=rw,go=r'
         force: yes
       tags:
@@ -28,7 +28,7 @@
       become: yes
       apt_repository:
         repo: >-
-          deb [signed-by=/etc/apt/keyrings/cloud.google.gpg]
+          deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg]
           http://apt.kubernetes.io/ kubernetes-xenial main
         update_cache: no
       tags:
