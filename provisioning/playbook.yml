@@ -420,7 +420,7 @@
           intellij_default_inspection_profile: GantSign
           intellij_plugins:
             # Save Actions plugin
-            - com.dubreuia
+            - software.xdev.saveactions
             # Spelling and grammar checker
             - tanvd.grazi
             # For drawing diagrams
