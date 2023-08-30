@@ -21,7 +21,7 @@ run() {
     for i in {1..3}; do
         htmlproofer /tmp/_site --log-level debug \
             --swap-urls "^/development-environment:" \
-            --ignore-urls '//www.xfce.org,//mademistakes.com/,//kompose.io/,//github.com/gantsign/development-environment/pull/' \
+            --ignore-urls '//www.xfce.org,//mademistakes.com/,//kompose.io/,//twitter.com/,//github.com/gantsign/development-environment/pull/,//github.com/gantsign/development-environment/blob/1.8.0/' \
             --ignore-status-codes 307 \
             --no-enforce-https \
             && s=0 && break || s=$? && sleep 60
