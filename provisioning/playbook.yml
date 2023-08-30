@@ -421,8 +421,6 @@
           intellij_plugins:
             # Save Actions plugin
             - software.xdev.saveactions
-            # Spelling and grammar checker
-            - tanvd.grazi
             # For drawing diagrams
             - 'PlantUML integration'
           intellij_license_key_path: '{{ intellij_license_key_path }}'
