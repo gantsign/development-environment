@@ -222,7 +222,7 @@
     - role: gantsign.java
       tags:
         - java
-      java_version: '8.0.362+9'
+      java_version: '8.0.382+5'
       java_is_default_installation: no
       java_fact_group_name: java_8
 
