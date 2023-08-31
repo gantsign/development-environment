@@ -1,3 +1,0 @@
-- name: install Google Chrome
-  package:
-    name: google-chrome-stable

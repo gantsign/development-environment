@@ -1,4 +1,5 @@
-- name: install Postman
-  snap:
+---
+- name: Install Postman
+  ansible.builtin.snap:
     name: postman
     state: present
