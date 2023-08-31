@@ -1,3 +1,4 @@
-- name: install Pipenv
-  package:
+---
+- name: Install Pipenv
+  ansible.builtin.package:
     name: pipenv

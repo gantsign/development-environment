@@ -92,7 +92,7 @@
 #   name: Example Name
 #   email: address@example.com
 #   # Uncomment the line below to overwrite your current git user name and email
-#   force: yes
+#   force: true
 
 intellij:
 # Uncomment the line below to install IntelliJ IDEA Ultimate rather than Community

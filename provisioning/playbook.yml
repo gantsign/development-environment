@@ -1,29 +1,29 @@
 ---
 - hosts: all
-  become: yes
+  become: true
 
   vars:
     x_ansible_download_dir: /usr/local/src/ansible/data
     intellij_edition: community
 
   pre_tasks:
-    - name: update apt cache
-      apt: update_cache=yes cache_valid_time=86400
+    - name: Update apt cache
+      ansible.builtin.apt: update_cache=true cache_valid_time=86400
 
-    - name: update all packages to the latest version
-      apt:
+    - name: Update all packages to the latest version
+      ansible.builtin.apt:
         upgrade: dist
 
     # zram shouldn't be used with Zswap
-    - name: ensure zram-config absent
-      apt:
+    - name: Ensure zram-config absent
+      ansible.builtin.apt:
         name: zram-config
         state: absent
 
   roles:
     # Preserve the apt cache
     - role: gantsign.apt
-      apt_preserve_cache: yes
+      apt_preserve_cache: true
 
     # Set system timezone
     - role: gantsign.timezone
@@ -172,7 +172,7 @@
         - vagrant
 
     # Fix Docker for vagrant-proxyconf compatibility
-    - role: docker-proxy-fix
+    - role: docker_proxy_fix
       tags:
         - docker
 
@@ -290,7 +290,7 @@
         - gui
 
     # Install Google Chrome web browser
-    - role: google-chrome
+    - role: google_chrome
       tags:
         - chrome
         - gui
@@ -699,10 +699,10 @@
 
   post_tasks:
     # Cleanup
-    - name: remove dependencies that are no longer required
-      apt:
-        autoremove: yes
+    - name: Remove dependencies that are no longer required
+      ansible.builtin.apt:
+        autoremove: true
 
-    - name: remove obsolete packages from the cache
-      apt:
-        autoclean: yes
+    - name: Remove obsolete packages from the cache
+      ansible.builtin.apt:
+        autoclean: true

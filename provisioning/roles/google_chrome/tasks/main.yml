@@ -1,0 +1,4 @@
+---
+- name: Install Google Chrome
+  ansible.builtin.package:
+    name: google-chrome-stable

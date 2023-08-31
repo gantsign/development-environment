@@ -7,26 +7,26 @@
     # pre-registering repositories
 
     - name: Create APT keyrings dir
-      become: yes
-      file:
+      become: true
+      ansible.builtin.file:
         path: '/etc/apt/keyrings'
         state: directory
         mode: 'u=rwx,go=rx'
 
-    - name: add kubernetes key
-      become: yes
-      get_url:
+    - name: Add kubernetes key
+      become: true
+      ansible.builtin.get_url:
         url: 'https://dl.k8s.io/apt/doc/apt-key.gpg'
         dest: '/etc/apt/keyrings/kubernetes-archive-keyring.gpg'
         mode: 'u=rw,go=r'
-        force: yes
+        force: true
       tags:
         - docker
         - kubernetes
 
-    - name: add kubernetes repo
-      become: yes
-      apt_repository:
+    - name: Add kubernetes repo
+      become: true
+      ansible.builtin.apt_repository:
         repo: >-
           deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg]
           http://apt.kubernetes.io/ kubernetes-xenial main
@@ -36,20 +36,20 @@
         - kubernetes
       register: kubernetes_repo
 
-    - name: add Google Linux key
-      become: yes
-      get_url:
+    - name: Add Google Linux key
+      become: true
+      ansible.builtin.get_url:
         url: 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
         dest: '/etc/apt/keyrings/linux.google.asc'
         mode: 'u=rw,go=r'
-        force: yes
+        force: true
       tags:
         - gui
         - chrome
 
-    - name: add Google Chrome repo
-      become: yes
-      apt_repository:
+    - name: Add Google Chrome repo
+      become: true
+      ansible.builtin.apt_repository:
         repo: >-
           deb [arch=amd64 signed-by=/etc/apt/keyrings/linux.google.asc]
           https://dl.google.com/linux/chrome/deb/ stable main
@@ -60,20 +60,20 @@
         - chrome
       register: chrome_repo
 
-    - name: add vscode key
-      become: yes
-      get_url:
+    - name: Add vscode key
+      become: true
+      ansible.builtin.get_url:
         url: 'https://packages.microsoft.com/keys/microsoft.asc'
         dest: '/etc/apt/keyrings/'
         mode: 'u=rw,go=r'
-        force: yes
+        force: true
       tags:
         - gui
         - vscode
 
-    - name: add vscode repo
-      become: yes
-      apt_repository:
+    - name: Add vscode repo
+      become: true
+      ansible.builtin.apt_repository:
         repo: >-
           deb [arch=amd64 signed-by=/etc/apt/keyrings/microsoft.asc]
           https://packages.microsoft.com/repos/code stable main
@@ -84,10 +84,10 @@
         - vscode
       register: vscode_repo
 
-    - name: apt-get update
-      become: yes
-      apt:
-        update_cache: yes
+    - name: Run apt-get update
+      become: true
+      ansible.builtin.apt:
+        update_cache: true
       when: >
         (kubernetes_repo is defined and kubernetes_repo.changed)
         or (chrome_repo is defined and chrome_repo.changed)
