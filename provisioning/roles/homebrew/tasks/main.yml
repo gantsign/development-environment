@@ -1,0 +1,10 @@
+---
+- name: Install Homebrew
+  become: true
+  become_user: vagrant
+  ansible.builtin.shell: |
+    export HOMEBREW_INSTALL_FROM_API=1
+    export NONINTERACTIVE=1
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  args:
+    creates: /home/linuxbrew
