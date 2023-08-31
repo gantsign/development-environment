@@ -68,6 +68,7 @@
         + /.local
         + /.local/share
         + /.local/share/keyrings
+        + /.local/share/zoxide
         - /.local/share/*
         - /.local/*
         + /.m2
@@ -117,12 +118,6 @@
 
     # Install common command line tools
     - gantsign.command-line-tools
-
-    # Advanced alternative to cat
-    - role: gantsign.bat
-
-    # Intuative alternative to find
-    - role: gantsign.fd
 
     # Install and configure Git version control
     - role: weareinteractive.git
