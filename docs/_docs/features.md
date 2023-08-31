@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-08-31T22:05:24+01:00
+modified: 2023-09-01T07:32:53+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -55,19 +55,19 @@ the new client virtual machine.
 
 The following are some of the files and folders backed-up by default:
 
-* `/home/vagrant/workspace/`
+* `/home/dev/workspace/`
 
     * **Put all your projects here**
 
-* `/home/vagrant/.gitconfig`
-* `/home/vagrant/.ssh/` (except the `authorized_keys` file)
-* `/home/vagrant/.gnupg/`
-* `/home/vagrant/.m2/`  (except the `repository` and `wrapper` directories)
+* `/home/dev/.gitconfig`
+* `/home/dev/.ssh/` (except the `authorized_keys` file)
+* `/home/dev/.gnupg/`
+* `/home/dev/.m2/`  (except the `repository` and `wrapper` directories)
 
 **Caution:** the followings directories are excluded from the backup by
 default: `.bin`, `.molecule`, `.tmp`, `bin`, `build`, `node_modules`, `target`.
 
-**Note:** you can find your backup under: `/var/persistent/home/vagrant/`.
+**Note:** you can find your backup under: `/var/persistent/home/dev/`.
 
 **Notice:** we accept no responsibility for files lost due to a failure of the
 backup/restore process. We recommend you push your work to your source control
@@ -95,15 +95,15 @@ Website: [http://zsh.sourceforge.net/Intro/intro_13.html](http://zsh.sourceforge
 
 This environment variable changes how tab completion and the `cd` command works.
 
-We've added the `/home/vagrant/workspace` directory to `CDPATH`; this enables
-you to `cd` into any sub-directory of `/home/vagrant/workspace` from any
+We've added the `/home/dev/workspace` directory to `CDPATH`; this enables
+you to `cd` into any sub-directory of `/home/dev/workspace` from any
 directory in the file system.
 
 For example:
 
 ```bash
-# Create a directory under /home/vagrant/workspace
-mkdir -p /home/vagrant/workspace/my-awesome-project
+# Create a directory under /home/dev/workspace
+mkdir -p /home/dev/workspace/my-awesome-project
 
 # Change directory somewhere else
 cd /etc
@@ -116,7 +116,7 @@ cd my-awesome-project
 
 # Check you're in the right directory
 pwd
-/home/vagrant/workspace/my-awesome-project
+/home/dev/workspace/my-awesome-project
 ```
 
 This makes it really quick and easy to access your project directories.

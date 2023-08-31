@@ -5,7 +5,7 @@ description: >
   How to setup the development environment.
 numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2019-10-07T10:08:35+01:00
+modified: 2023-09-01T07:29:53+01:00
 ---
 
 The following instructions will guide you through the process of provisioning
@@ -153,12 +153,7 @@ VBoxService inside the vm claims: 6.0.12
 Going on, assuming VBoxService is correct...
 ```
 
-First, change your password ([see below](#change-your-password)). You'll get SSH
-errors when trying to non-interactively execute commands over SSH until the
-password is reset (the default password `vagrant` is marked as expired as part
-of provisioning so you have to change it).
-
-Next, manually reinstall the guest additions by running the following in the
+Manually reinstall the guest additions by running the following in the
 project root:
 
 ```bash
@@ -168,7 +163,7 @@ vagrant vbguest --do install
 ## Change your password
 
 Once provisioning is complete you need to change your password. Login using the
-username `vagrant` and password `vagrant`. You'll then be prompted to change
+username `dev` and password `dev`. You'll then be prompted to change
 your password.
 
 Pick a strong password and don't reuse another password (e.g. don't use your

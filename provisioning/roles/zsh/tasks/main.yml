@@ -1,8 +1,4 @@
 ---
-- name: Set zsh_user fact
-  ansible.builtin.set_fact:
-    zsh_user: '{{ ansible_env.SUDO_USER }}'
-
 - name: Install Zsh
   become: true
   become_user: root
@@ -14,7 +10,7 @@
   become: true
   become_user: root
   ansible.builtin.user:
-    name: '{{ zsh_user }}'
+    name: '{{ my_user }}'
     shell: /usr/bin/zsh
 
 - name: Configure .zimrc

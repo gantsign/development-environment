@@ -5,6 +5,7 @@
   vars:
     x_ansible_download_dir: /usr/local/src/ansible/data
     intellij_edition: community
+    my_user: dev
 
   pre_tasks:
     - name: Update apt cache
@@ -20,6 +21,12 @@
         name: zram-config
         state: absent
 
+    # Workaround https://docs.ansible.com/ansible-core/2.15/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-unprivileged-user
+    - name: Enable access control lists
+      apt:
+        name: acl
+        state: present
+
   roles:
     # Preserve the apt cache
     - role: gantsign.apt
@@ -28,6 +35,9 @@
     # Set system timezone
     - role: gantsign.timezone
       timezone: Europe/London
+
+    # Create user
+    - role: create_user
 
     # Install Homebrew
     - role: homebrew
@@ -45,13 +55,13 @@
     - role: gantsign.inotify
       inotify_max_user_watches: 524288
 
-    # Backup/restore files/directories in vagrant home directory
+    # Backup/restore files/directories in my home directory
     - role: gantsign.backup
       tags:
         - backup
-      backup_user: vagrant
-      backup_src: /home/vagrant/
-      backup_dest: /var/persistent/home/vagrant/
+      backup_user: '{{ my_user }}'
+      backup_src: '/home/{{ my_user }}/'
+      backup_dest: '/var/persistent/home/{{ my_user }}/'
       backup_filter: |
         !
         + /.atom
@@ -159,7 +169,7 @@
     # Configure Git user name and email
     - role: gantsign.git_user
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           git_user_name: '{{ git_user_name | default(None) }}'
           git_user_email: '{{ git_user_email | default(None) }}'
           git_user_force: '{{ git_user_force | default(False) }}'
@@ -174,7 +184,7 @@
       tags:
         - docker
       docker_users:
-        - vagrant
+        - '{{ my_user }}'
 
     # Fix Docker for vagrant-proxyconf compatibility
     - role: docker_proxy_fix
@@ -218,12 +228,12 @@
       tags:
         - python
       pyenv_users:
-        - vagrant
+        - '{{ my_user }}'
 
     # Install Pipenv
     - role: pipenv
       become: yes
-      become_user: vagrant
+      become_user: '{{ my_user }}'
       tags:
         - python
 
@@ -253,7 +263,7 @@
       tags:
         - nodejs
       nodejs_version: 18.x
-      nodejs_install_npm_user: vagrant
+      nodejs_install_npm_user: '{{ my_user }}'
       nodejs_npm_global_packages:
         - name: grunt-cli
         - name: grunt-init
@@ -274,7 +284,7 @@
       tags:
         - gui
       audio_users:
-        - vagrant
+        - '{{ my_user }}'
 
     # Install GNOME desktop
     - role: gantsign.xdesktop
@@ -325,7 +335,7 @@
         - gui
         - vscode
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           visual_studio_code_extensions:
             - EditorConfig.EditorConfig
             - streetsidesoftware.code-spell-checker
@@ -349,7 +359,7 @@
         - vscode
         - golang
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           visual_studio_code_extensions:
             - golang.Go
 
@@ -360,7 +370,7 @@
         - vscode
         - python
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           visual_studio_code_extensions:
             - ms-python.python
 
@@ -370,7 +380,7 @@
         - gui
         - intellij
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           intellij_disabled_plugins:
             - CVS
             - com.intellij.uiDesigner
@@ -442,7 +452,7 @@
         - gui
         - intellij
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           intellij_jdks:
             - name: '1.8'
               home: "{{ ansible_local.java_8.general.home }}"
@@ -457,7 +467,7 @@
         - gui
         - intellij
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           intellij_plugins:
             - CheckStyle-IDEA
             - MavenRunHelper
@@ -470,7 +480,7 @@
         - intellij
         - python
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           intellij_plugins:
             - "{{ (intellij_edition == 'community') | ternary('PythonCore', 'Pythonid') }}"
 
@@ -481,7 +491,7 @@
         - intellij
         - golang
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           intellij_plugins:
             - org.jetbrains.plugins.go
       when: "intellij_edition == 'ultimate'"
@@ -510,7 +520,7 @@
     # Configure general environment variables
     - role: weareinteractive.environment
       environment_config:
-        CDPATH: ".:/home/vagrant/workspace:/home/vagrant/workspace-go/src/github.com/gantsign"
+        CDPATH: ".:/home/{{ my_user }}/workspace:/home/{{ my_user }}/workspace-go/src/github.com/gantsign"
         TREE_COLORS: ':no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.bat=01;32:*.BAT=01;32:*.btm=01;32:*.BTM=01;32:*.cmd=01;32:*.CMD=01;32:*.com=01;32:*.COM=01;32:*.dll=01;32:*.DLL=01;32:*.exe=01;32:*.EXE=01;32:*.arj=01;31:*.bz2=01;31:*.deb=01;31:*.gz=01;31:*.lzh=01;31:*.rpm=01;31:*.tar=01;31:*.taz=01;31:*.tb2=01;31:*.tbz2=01;31:*.tbz=01;31:*.tgz=01;31:*.tz2=01;31:*.z=01;31:*.Z=01;31:*.zip=01;31:*.ZIP=01;31:*.zoo=01;31:*.asf=01;35:*.ASF=01;35:*.avi=01;35:*.AVI=01;35:*.bmp=01;35:*.BMP=01;35:*.flac=01;35:*.FLAC=01;35:*.gif=01;35:*.GIF=01;35:*.jpg=01;35:*.JPG=01;35:*.jpeg=01;35:*.JPEG=01;35:*.m2a=01;35:*.M2a=01;35:*.m2v=01;35:*.M2V=01;35:*.mov=01;35:*.MOV=01;35:*.mp3=01;35:*.MP3=01;35:*.mpeg=01;35:*.MPEG=01;35:*.mpg=01;35:*.MPG=01;35:*.ogg=01;35:*.OGG=01;35:*.ppm=01;35:*.rm=01;35:*.RM=01;35:*.tga=01;35:*.TGA=01;35:*.tif=01;35:*.TIF=01;35:*.wav=01;35:*.WAV=01;35:*.wmv=01;35:*.WMV=01;35:*.xbm=01;35:*.xpm=01;35:'
 
     # Configure Java environment variables
@@ -538,7 +548,7 @@
     # Configure Zsh
     - role: zsh
       become: yes
-      become_user: vagrant
+      become_user: '{{ my_user }}'
       tags:
         - oh-my-zsh
 
@@ -547,7 +557,7 @@
       tags:
         - sdkman
       sdkman_users:
-        - vagrant
+        - '{{ my_user }}'
 
     # Add SDKs to SDKMAN
     - role: gantsign.sdkman_init
@@ -555,7 +565,7 @@
         - sdkman
         - java
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           sdkman_install:
             - candidate: java
               version: '8'
@@ -572,7 +582,7 @@
         - java
         - maven
       users:
-        - username: vagrant
+        - username: '{{ my_user }}'
           sdkman_install:
             - candidate: maven
               version: '3.9'

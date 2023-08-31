@@ -1,7 +1,7 @@
 ---
 - name: Install more CLI tools (Homebrew)
   become: true
-  become_user: vagrant
+  become_user: '{{ my_user }}'
   community.general.homebrew:
     name:
       - bandwhich
