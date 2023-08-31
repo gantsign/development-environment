@@ -1,11 +1,11 @@
 ---
-- name: Install ctop
+- name: Install Docker CLI tools (Homebrew)
   become: true
   become_user: vagrant
   community.general.homebrew:
-    name: ctop
+    name:
+      - ctop
+      - dive
     state: present
   environment:
     HOMEBREW_INSTALL_FROM_API: '1'
-  tags:
-    - homebrew
