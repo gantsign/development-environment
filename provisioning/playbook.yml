@@ -338,7 +338,8 @@
               "Vagrantfile": "ruby",
               ".vagrantuser": "yaml",
               ".vagrantuser.example": "yaml"
-            }
+            },
+            "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Noto Color Emoji, 'Droid Sans Mono', 'monospace', monospace"
           }
 
     # Install Go extension for Visual Studio Code editor
@@ -534,148 +535,12 @@
         # Affects the Gradle client not the Gradle server
         GRADLE_OPTS: '-Xmx64m -XX:TieredStopAtLevel=1 -Xverify:none'
 
-    # Install Antigen Zsh shell enhancements
-    - role: gantsign.antigen
+    # Configure Zsh
+    - role: zsh
+      become: yes
+      become_user: vagrant
       tags:
         - oh-my-zsh
-      users:
-        - username: vagrant
-          antigen_libraries:
-            - name: oh-my-zsh
-              env:
-                DISABLE_AUTO_UPDATE: '"true"' # Should be rebuilding the VM
-          antigen_theme:
-            name: robbyrussell
-          antigen_bundles:
-            - name: command-not-found
-            - name: common-aliases
-            - name: colored-man-pages
-            - name: git
-            - name: httpie
-            - name: sudo
-            - name: bat
-              url: gantsign/zsh-plugins
-              location: bat
-            - name: moleculew
-              url: gantsign/molecule-wrapper
-              location: zsh
-
-    - role: gantsign.antigen
-      tags:
-        - oh-my-zsh
-        - homebrew
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: brew
-
-    - role: gantsign.antigen
-      tags:
-        - oh-my-zsh
-        - zsh-autosuggestions
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: zsh-autosuggestions
-              url: zsh-users/zsh-autosuggestions
-
-    - role: gantsign.antigen
-      tags:
-        - oh-my-zsh
-        - zsh-syntax-highlighting
-      users:
-        - username: vagrant
-          antigen_bundles:
-            # bundles are loaded by name alpabetically
-            # and zsh-syntax-highlighting must be loaded last
-            - name: zzz
-              url: zsh-users/zsh-syntax-highlighting
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - docker
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: docker
-            - name: ctop
-              url: gantsign/zsh-plugins
-              location: ctop
-            - name: dive
-              url: gantsign/zsh-plugins
-              location: dive
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - docker
-        - kubernetes
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: kubectl
-            - name: kubeadm
-              url: gantsign/zsh-plugins
-              location: kubeadm
-            - name: minikube-none
-              url: gantsign/zsh-plugins
-              location: minikube-none
-            - name: helm
-            - name: kompose
-              url: gantsign/zsh-plugins
-              location: kompose
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - java
-        - maven
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: mvn
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - java
-        - gradle
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: gradle
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - nodejs
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: npm
-            - name: yarn
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - python
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: pip
-            - name: pyenv
-            - name: pipenv
-
-    - role: gantsign.antigen_bundles
-      tags:
-        - oh-my-zsh
-        - hub
-      users:
-        - username: vagrant
-          antigen_bundles:
-            - name: hub
-              url: '/usr/local/share/hub/zsh'
 
     # Install SDKMAN software development kit manager
     - role: gantsign.sdkman
