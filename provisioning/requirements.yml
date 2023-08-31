@@ -52,7 +52,7 @@
 - src: gantsign.lightdm
   version: 'v3.0.1'
 - src: gantsign.maven
-  version: '5.7.1'
+  version: '5.7.4'
 - src: gantsign.maven-notifier
   version: '3.0.2'
 - src: gantsign.minikube
