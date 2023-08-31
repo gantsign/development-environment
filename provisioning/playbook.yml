@@ -215,6 +215,8 @@
 
     # Install Pipenv
     - role: pipenv
+      become: yes
+      become_user: vagrant
       tags:
         - python
 
