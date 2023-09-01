@@ -35,9 +35,6 @@ fi
 if (( $+commands[yarn] )); then
     zmodule ohmyzsh/ohmyzsh --root plugins -f 'yarn'
 fi
-if (( $+commands[hub] )); then
-    zmodule /usr/local/share/hub -f 'zsh'
-fi
 
 zmodule "$HOME/.config/zsh" -s 'completion.zsh'
 

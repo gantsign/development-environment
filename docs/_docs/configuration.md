@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2023-09-01T09:23:32+00:00
+modified: 2023-09-01T10:02:23+00:00
 ---
 
 The goal of this project is to make it easy to build your development
@@ -318,7 +318,6 @@ ansible:
     - git-credential-manager
     - gradle
     - gui
-    - hub
     - intellij
     - java
     - kubernetes
