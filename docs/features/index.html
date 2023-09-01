@@ -292,7 +292,7 @@ little easier.</p>
       <li><a href="#gitk" id="markdown-toc-gitk">Gitk</a></li>
       <li><a href="#meld" id="markdown-toc-meld">Meld</a></li>
       <li><a href="#git-credential-manager" id="markdown-toc-git-credential-manager">Git Credential Manager</a></li>
-      <li><a href="#hub" id="markdown-toc-hub">Hub</a></li>
+      <li><a href="#github-cli" id="markdown-toc-github-cli">GitHub CLI</a></li>
       <li><a href="#postman" id="markdown-toc-postman">Postman</a></li>
     </ol>
   </li>
@@ -837,47 +837,28 @@ changes.</p>
 <p>Stores credentials for Git version control securely. Useful if you want to write
 to a Git repository using HTTPS rather than SSH.</p>
 
-<h3 id="hub">Hub</h3>
+<h3 id="github-cli">GitHub CLI</h3>
 
-<p>Website: <a href="https://github.com/github/hub">https://github.com/github/hub</a></p>
+<p>Website: <a href="https://cli.github.com/">https://cli.github.com</a></p>
 
-<p>Hub is a command line tool that wraps Git in order to extend it with extra
-features for GitHub.</p>
-
-<p>Note: Hub only wraps Git when run from Zsh (it works using a shell alias), the
-actual Git executable is unchanged.</p>
+<p>GitHub CLI is a command line tool that makes it easy to interact with GitHub
+from the command line.</p>
 
 <p>e.g. Cloning a GitHub repository</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone Netflix/flamescope
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh repo clone Netflix/flamescope
 <span class="c"># Equivalent to:</span>
 <span class="c"># git clone git@github.com:Netflix/flamescope.git</span>
 </code></pre></div></div>
 
 <p>e.g. Creating a pull request</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull-request <span class="nt">-m</span> <span class="s2">"</span><span class="se">\</span><span class="s2">
-Pull request title here
-
-Pull request body here.
-"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh <span class="nb">pr </span>create <span class="nt">--title</span> <span class="s1">'Pull request title here'</span> <span class="nt">--body</span> <span class="s1">'Pull request body here.'</span>
 </code></pre></div></div>
 
-<p>e.g. Browse issues for current repository</p>
+<p>e.g. List issues for current repository</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git browse <span class="nt">--</span> issues
-</code></pre></div></div>
-
-<p>Run the following to see all the extensions provided by hub:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man hub
-</code></pre></div></div>
-
-<p>To view more information about a specific extension run:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man hub-&lt;subcommand&gt;
-<span class="c"># e.g.</span>
-man hub-pull-request
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh issue list
 </code></pre></div></div>
 
 <h3 id="postman">Postman</h3>
