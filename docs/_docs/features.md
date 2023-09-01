@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T09:24:24+01:00
+modified: 2023-09-01T09:54:32+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -738,13 +738,13 @@ Kotlin, Scala, Maven, Gradle and a bunch of other JVM based SDKs.
 To switch Java version in the current shell:
 
 ```bash
-sdk use java 8
+sdk use java 11
 ```
 
 To change the default Java version:
 
 ```bash
-sdk default java 8
+sdk default java 11
 ```
 
 To install Gradle:
@@ -760,10 +760,10 @@ To play with GraalVM:
 sdk list java
 
 # Install latest GraalVM version
-sdk install java 1.0.0-rc5-graal
+sdk install java 17.0.8-graalce
 
 # Switch to GraalVM in the current shell
-sdk use java 1.0.0-rc5-graal
+sdk use java 17.0.8-graalce
 ```
 
 To list all the supported SDKs:

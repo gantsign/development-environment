@@ -235,13 +235,13 @@
       tags:
         - python
 
-    # Install Java JDK 8
+    # Install Java JDK 11
     - role: gantsign.java
       tags:
         - java
-      java_version: '8.0.382+5'
+      java_version: '11.0.20.1+1'
       java_is_default_installation: no
-      java_fact_group_name: java_8
+      java_fact_group_name: java_11
 
     # Install Java JDK 17
     - role: gantsign.java
@@ -435,8 +435,8 @@
       users:
         - username: '{{ my_user }}'
           intellij_jdks:
-            - name: '1.8'
-              home: "{{ ansible_local.java_8.general.home }}"
+            - name: '11'
+              home: "{{ ansible_local.java_11.general.home }}"
             - name: '17'
               home: "{{ ansible_local.java.general.home }}"
           intellij_jdks_default: '17'
@@ -537,8 +537,8 @@
         - username: '{{ my_user }}'
           sdkman_install:
             - candidate: java
-              version: '8'
-              path: '{{ ansible_local.java_8.general.home }}'
+              version: '11'
+              path: '{{ ansible_local.java_11.general.home }}'
             - candidate: java
               version: '17'
               path: '{{ ansible_local.java.general.home }}'
