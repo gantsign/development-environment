@@ -17,6 +17,14 @@
   ansible.builtin.command: 'chage --lastday 0 {{ my_user }}'
   when: create_user_result.changed
 
+- name: Create remote_tmp directory
+  file:
+    path: '/home/{{ my_user }}/.ansible/tmp'
+    state: directory
+    mode: 'u=rwx,go='
+    owner: '{{ my_user }}'
+    group: '{{ my_user }}'
+
 - name: Create /var/lib/AccountsService
   ansible.builtin.file:
     path: /var/lib/AccountsService
