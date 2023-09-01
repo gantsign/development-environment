@@ -323,9 +323,14 @@
       users:
         - username: '{{ my_user }}'
           visual_studio_code_extensions:
+            - donjayamanne.githistory
             - EditorConfig.EditorConfig
+            - foxundermoon.shell-format
+            - github.vscode-github-actions
+            - ldez.ignore-files
+            - oderwat.indent-rainbow
             - streetsidesoftware.code-spell-checker
-            - wholroyd.jinja
+            - timonwong.shellcheck
             - rebornix.Ruby
           visual_studio_code_settings: {
             "editor.rulers": [80, 100, 120],
@@ -348,6 +353,21 @@
         - username: '{{ my_user }}'
           visual_studio_code_extensions:
             - ms-python.python
+            - ms-python.isort
+            - redhat.ansible
+            - wholroyd.jinja
+
+    # Install Visual Studio Code editor extensions relating to Docker
+    - role: gantsign.visual-studio-code-extensions
+      tags:
+        - gui
+        - vscode
+        - docker
+      users:
+        - username: '{{ my_user }}'
+          visual_studio_code_extensions:
+            - ms-azuretools.vscode-docker
+            - ms-vscode-remote.remote-containers
 
     # Install and configure IntelliJ IDEA IDE
     - role: gantsign.intellij
@@ -414,8 +434,14 @@
               url: 'https://raw.githubusercontent.com/gantsign/inspection-profile-intellij/1.0.0/GantSign.xml'
           intellij_default_inspection_profile: GantSign
           intellij_plugins:
+            # Rainbow colored indenting
+            - indent-rainbow.indent-rainbow
+            # Rainbow colored brackets
+            - izhangzhihao.rainbow.brackets
             # Save Actions plugin
             - software.xdev.saveactions
+            # Transform strings
+            - 'String Manipulation'
             # For drawing diagrams
             - 'PlantUML integration'
           intellij_license_key_path: '{{ intellij_license_key_path }}'
@@ -446,6 +472,7 @@
           intellij_plugins:
             - CheckStyle-IDEA
             - MavenRunHelper
+            - LogSupport2
             - de.platon42.cajon
 
     # Install Python plugin for IntelliJ IDEA IDE

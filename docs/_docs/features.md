@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T10:03:43+01:00
+modified: 2023-09-01T20:16:32+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -314,7 +314,13 @@ By default the Community Edition is installed.
 
 #### IntelliJ plugins
 
-* [Save Actions](https://plugins.jetbrains.com/plugin/22113-save-actions--xdev-edition)
+* [Indent Rainbow](https://plugins.jetbrains.com/plugin/13308-indent-rainbow)
+  add color to the indent based on the indent level.
+* [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+  add color to brackets based on nested pairs.
+* [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
+  case switching, sorting, filtering etc.
+* [Save Actions - XDEV Edition](https://plugins.jetbrains.com/plugin/22113-save-actions--xdev-edition)
   re-format/clean-up code on save.
 * [PlantUML integration](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
   for drawing diagrams using the PlantUML domain-specific language.
@@ -689,6 +695,8 @@ you know when the build is complete.
   for checking the code style of your Java source files.
 * [Concise AssertJ Optimizing Nitpicker](https://plugins.jetbrains.com/plugin/12195-concise-assertj-optimizing-nitpicker-cajon-)
   to help you write more concise assertions using AssertJ.
+* [Log Support 2](https://plugins.jetbrains.com/plugin/9417-log-support-2)
+  code inspections for Slf4j.
 
 ### IntelliJ code style
 
