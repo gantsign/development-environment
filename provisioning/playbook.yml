@@ -486,14 +486,6 @@
           intellij_plugins:
             - "{{ (intellij_edition == 'community') | ternary('PythonCore', 'Pythonid') }}"
 
-    # Add Maven extension to popup a GUI notification when builds finish
-    - role: gantsign.maven-notifier
-      tags:
-        - java
-        - maven
-        - maven-notifier
-        - gui
-
     # Add items to DockbarX launcher
     - role: gantsign.pin-to-launcher
       tags:

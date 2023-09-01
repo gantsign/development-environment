@@ -46,7 +46,6 @@ environment that you can fork to add your project specific configuration.
 * Postman
 * Open JDK
 * Maven
-* Maven Notifier
 * IntelliJ IDEA IDE
 * SDKMAN!
 * Node.js

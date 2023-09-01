@@ -42,8 +42,6 @@
   version: 'v3.0.1'
 - src: gantsign.maven
   version: '5.7.4'
-- src: gantsign.maven-notifier
-  version: '3.0.2'
 - src: gantsign.minikube
 - src: gantsign.pin-to-launcher
   version: '4.0.0'
