@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T20:16:32+01:00
+modified: 2023-09-01T21:38:26+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -676,16 +676,6 @@ Maven 3.9.4 is installed by default.
 
 Note: Gradle is not installed as Gradle users are recommended to use the
 [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
-
-### Maven Notifier
-
-Website: [https://github.com/jcgay/maven-notifier](https://github.com/jcgay/maven-notifier)
-
-One for all you multi-taskers; if you like to check your email while waiting for
-a long build to finish, this extension will trigger a popup notification to let
-you know when the build is complete.
-
-![Maven Notifier popup]({{ '/images/maven-notifier.png' | relative_url }})
 
 ### IntelliJ IDEA plugins
 
