@@ -51,5 +51,5 @@
   environment:
     MY_USER: '{{ my_user }}'
   register: migrate_files_result
-  changed_when: "{{ 'Migrating user files' in migrate_files_result.stdout }}"
+  changed_when: "'Migrating user files' in migrate_files_result.stdout"
   when: create_user_result.changed
