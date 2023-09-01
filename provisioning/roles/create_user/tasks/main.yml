@@ -1,0 +1,55 @@
+---
+- name: Create user
+  ansible.builtin.user:
+    name: '{{ my_user }}'
+    # Initial password is "dev" (must be changed on first login)
+    password: '$6$ab38evLL$WgKntDGuJnk9Ev3xqA3rFm/PFtV2iTLRgbGZqrvFrIyJm6ELqoupPTULJEg3TKc4OD3z1KS90kC94xNVBbIF61'
+    groups:
+      - adm
+      - cdrom
+      - sudo
+      - dip
+      - plugdev
+      - lxd
+  register: create_user_result
+
+- name: Change password on first login
+  ansible.builtin.command: 'chage --lastday 0 {{ my_user }}'
+  when: create_user_result.changed
+
+- name: Create /var/lib/AccountsService
+  ansible.builtin.file:
+    path: /var/lib/AccountsService
+    state: directory
+    owner: root
+    group: root
+    mode: 'ug=rwx,o=rx'
+
+- name: Create /var/lib/AccountsService/users
+  ansible.builtin.file:
+    path: /var/lib/AccountsService/users
+    state: directory
+    owner: root
+    group: root
+    mode: 'u=rw,go=r'
+
+- name: Hide vagrant user
+  ansible.builtin.template:
+    src: hide-user.j2
+    dest: /var/lib/AccountsService/users/vagrant
+    owner: root
+    group: root
+    mode: 'u=rw,go=r'
+
+- name: Migrate user files
+  ansible.builtin.shell: |
+    if [ -d /var/persistent/home/vagrant ]; then
+      echo 'Migrating user files'
+      mv /var/persistent/home/vagrant "/var/persistent/home/$MY_USER"
+      chown -R "$MY_USER:$MY_USER" "/var/persistent/home/$MY_USER"
+    fi
+  environment:
+    MY_USER: '{{ my_user }}'
+  register: migrate_files_result
+  changed_when: "{{ 'Migrating user files' in migrate_files_result.stdout }}"
+  when: create_user_result.changed

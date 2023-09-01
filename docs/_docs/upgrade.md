@@ -5,7 +5,7 @@ description: >
   How to upgrade your development environment to the latest release.
 numbered_headings: yes
 date: 2018-10-12T13:07:23+01:00
-modified: 2019-10-07T10:08:35+01:00
+modified: 2023-09-01T07:35:24+01:00
 ---
 
 The following instructions will guide you through the process of upgrading your
@@ -130,12 +130,7 @@ VBoxService inside the vm claims: 6.0.12
 Going on, assuming VBoxService is correct...
 ```
 
-First, change your password ([see below](#change-your-password)). You'll get SSH
-errors when trying to non-interactively execute commands over SSH until the
-password is reset (the default password `vagrant` is marked as expired as part
-of provisioning so you have to change it).
-
-Next, manually reinstall the guest additions by running the following in the
+Manually reinstall the guest additions by running the following in the
 project root:
 
 ```bash
@@ -146,8 +141,8 @@ vagrant vbguest --do install
 
 Your Unix password may get out of sync with the password for your GNOME Keyring
 when you rebuild your development-environment (as the Unix password is reset to
-`vagrant`) or if you reset the password without specifying the current password
-(e.g. using `sudo passwd vagrant`).
+`dev`) or if you reset the password without specifying the current password
+(e.g. using `sudo passwd dev`).
 
 Once your GNOME Keyring password is out of sync the keyring won't unlock when
 you login. You'll be unable use save credentials or save new credentials (e.g.
@@ -183,7 +178,7 @@ key:
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0644 for '/home/vagrant/.ssh/id_rsa' are too open.
+Permissions 0644 for '/home/dev/.ssh/id_rsa' are too open.
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 ```
@@ -200,7 +195,7 @@ After this is complete logout and log back in so your key is loaded.
 ## Change your password
 
 Once provisioning is complete you need to change your password. Login using the
-username `vagrant` and password `vagrant`. You'll then be prompted to change
+username `dev` and password `dev`. You'll then be prompted to change
 your password. **Important:** change the password to the password you were
 using before you re-provisioned the development environment. This is necessary
 to restore access to all your saved credentials. Once you've changed your

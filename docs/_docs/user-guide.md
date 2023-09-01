@@ -4,7 +4,7 @@ permalink: /docs/user-guide/
 description: >
   How to use the development environment.
 date: 2016-08-31T09:05:34+01:00
-modified: 2016-08-31T09:05:34+01:00
+modified: 2023-09-01T07:36:34+01:00
 ---
 
 ## Using Vagrant
@@ -48,7 +48,7 @@ git pull
 Before you can rebuild your development environment you have to destroy your
 current one; make sure all your files your important files have been backed up
 to the persistent disk before rebuilding your virtual machine; you can find the
-persistent copies of your files under `/var/persistent/home/vagrant`.
+persistent copies of your files under `/var/persistent/home/dev`.
 
 When you're ready to destroy the development environment, run the following
 command from the project root directory:
