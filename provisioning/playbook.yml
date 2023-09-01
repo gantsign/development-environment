@@ -243,11 +243,11 @@
       java_is_default_installation: no
       java_fact_group_name: java_8
 
-    # Install Java JDK 11
+    # Install Java JDK 17
     - role: gantsign.java
       tags:
         - java
-      java_version: '11.0.20.1+1'
+      java_version: '17.0.8.1+1'
 
     # Install Maven
     - role: gantsign.maven
@@ -437,9 +437,9 @@
           intellij_jdks:
             - name: '1.8'
               home: "{{ ansible_local.java_8.general.home }}"
-            - name: '11'
+            - name: '17'
               home: "{{ ansible_local.java.general.home }}"
-          intellij_jdks_default: '11'
+          intellij_jdks_default: '17'
 
     # Install Java related plugins for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
@@ -540,10 +540,10 @@
               version: '8'
               path: '{{ ansible_local.java_8.general.home }}'
             - candidate: java
-              version: '11'
+              version: '17'
               path: '{{ ansible_local.java.general.home }}'
           sdkman_default:
-            java: '11'
+            java: '17'
 
     - role: gantsign.sdkman_init
       tags:
