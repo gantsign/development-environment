@@ -236,7 +236,7 @@
     <meta itemprop="headline" content="Upgrade">
     <meta itemprop="description" content="The following instructions will guide you through the process of upgrading yourlocal GantSign EnV development environment to the latest release.">
     <meta itemprop="datePublished" content="October 12, 2018">
-    <meta itemprop="dateModified" content="October 07, 2019">
+    <meta itemprop="dateModified" content="September 01, 2023">
 
     <div class="page__inner-wrap">
       
@@ -378,12 +378,7 @@ VBoxService inside the vm claims: 6.0.12
 Going on, assuming VBoxService is correct...
 </code></pre></div></div>
 
-<p>First, change your password (<a href="#change-your-password">see below</a>). You’ll get SSH
-errors when trying to non-interactively execute commands over SSH until the
-password is reset (the default password <code class="language-plaintext highlighter-rouge">vagrant</code> is marked as expired as part
-of provisioning so you have to change it).</p>
-
-<p>Next, manually reinstall the guest additions by running the following in the
+<p>Manually reinstall the guest additions by running the following in the
 project root:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vagrant vbguest <span class="nt">--do</span> <span class="nb">install</span>
@@ -393,8 +388,8 @@ project root:</p>
 
 <p>Your Unix password may get out of sync with the password for your GNOME Keyring
 when you rebuild your development-environment (as the Unix password is reset to
-<code class="language-plaintext highlighter-rouge">vagrant</code>) or if you reset the password without specifying the current password
-(e.g. using <code class="language-plaintext highlighter-rouge">sudo passwd vagrant</code>).</p>
+<code class="language-plaintext highlighter-rouge">dev</code>) or if you reset the password without specifying the current password
+(e.g. using <code class="language-plaintext highlighter-rouge">sudo passwd dev</code>).</p>
 
 <p>Once your GNOME Keyring password is out of sync the keyring won’t unlock when
 you login. You’ll be unable use save credentials or save new credentials (e.g.
@@ -428,7 +423,7 @@ key:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Permissions 0644 for '/home/vagrant/.ssh/id_rsa' are too open.
+Permissions 0644 for '/home/dev/.ssh/id_rsa' are too open.
 It is required that your private key files are NOT accessible by others.
 This private key will be ignored.
 </code></pre></div></div>
@@ -444,7 +439,7 @@ client VM:</p>
 <h2 id="change-your-password">Change your password</h2>
 
 <p>Once provisioning is complete you need to change your password. Login using the
-username <code class="language-plaintext highlighter-rouge">vagrant</code> and password <code class="language-plaintext highlighter-rouge">vagrant</code>. You’ll then be prompted to change
+username <code class="language-plaintext highlighter-rouge">dev</code> and password <code class="language-plaintext highlighter-rouge">dev</code>. You’ll then be prompted to change
 your password. <strong>Important:</strong> change the password to the password you were
 using before you re-provisioned the development environment. This is necessary
 to restore access to all your saved credentials. Once you’ve changed your
@@ -462,7 +457,7 @@ keyring to be unlocked.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-10-07">October 07, 2019</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-01">September 01, 2023</time></p>
         
       </footer>
 

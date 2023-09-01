@@ -236,7 +236,7 @@
     <meta itemprop="headline" content="Features">
     <meta itemprop="description" content="There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier.">
     <meta itemprop="datePublished" content="January 18, 2017">
-    <meta itemprop="dateModified" content="August 31, 2023">
+    <meta itemprop="dateModified" content="September 01, 2023">
 
     <div class="page__inner-wrap">
       
@@ -385,22 +385,22 @@ the new client virtual machine.</p>
 
 <ul>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">/home/vagrant/workspace/</code></p>
+    <p><code class="language-plaintext highlighter-rouge">/home/dev/workspace/</code></p>
 
     <ul>
       <li><strong>Put all your projects here</strong></li>
     </ul>
   </li>
-  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.gitconfig</code></li>
-  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.ssh/</code> (except the <code class="language-plaintext highlighter-rouge">authorized_keys</code> file)</li>
-  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.gnupg/</code></li>
-  <li><code class="language-plaintext highlighter-rouge">/home/vagrant/.m2/</code>  (except the <code class="language-plaintext highlighter-rouge">repository</code> and <code class="language-plaintext highlighter-rouge">wrapper</code> directories)</li>
+  <li><code class="language-plaintext highlighter-rouge">/home/dev/.gitconfig</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/home/dev/.ssh/</code> (except the <code class="language-plaintext highlighter-rouge">authorized_keys</code> file)</li>
+  <li><code class="language-plaintext highlighter-rouge">/home/dev/.gnupg/</code></li>
+  <li><code class="language-plaintext highlighter-rouge">/home/dev/.m2/</code>  (except the <code class="language-plaintext highlighter-rouge">repository</code> and <code class="language-plaintext highlighter-rouge">wrapper</code> directories)</li>
 </ul>
 
 <p><strong>Caution:</strong> the followings directories are excluded from the backup by
 default: <code class="language-plaintext highlighter-rouge">.bin</code>, <code class="language-plaintext highlighter-rouge">.molecule</code>, <code class="language-plaintext highlighter-rouge">.tmp</code>, <code class="language-plaintext highlighter-rouge">bin</code>, <code class="language-plaintext highlighter-rouge">build</code>, <code class="language-plaintext highlighter-rouge">node_modules</code>, <code class="language-plaintext highlighter-rouge">target</code>.</p>
 
-<p><strong>Note:</strong> you can find your backup under: <code class="language-plaintext highlighter-rouge">/var/persistent/home/vagrant/</code>.</p>
+<p><strong>Note:</strong> you can find your backup under: <code class="language-plaintext highlighter-rouge">/var/persistent/home/dev/</code>.</p>
 
 <p><strong>Notice:</strong> we accept no responsibility for files lost due to a failure of the
 backup/restore process. We recommend you push your work to your source control
@@ -428,14 +428,14 @@ a new tab.</p>
 
 <p>This environment variable changes how tab completion and the <code class="language-plaintext highlighter-rouge">cd</code> command works.</p>
 
-<p>We’ve added the <code class="language-plaintext highlighter-rouge">/home/vagrant/workspace</code> directory to <code class="language-plaintext highlighter-rouge">CDPATH</code>; this enables
-you to <code class="language-plaintext highlighter-rouge">cd</code> into any sub-directory of <code class="language-plaintext highlighter-rouge">/home/vagrant/workspace</code> from any
+<p>We’ve added the <code class="language-plaintext highlighter-rouge">/home/dev/workspace</code> directory to <code class="language-plaintext highlighter-rouge">CDPATH</code>; this enables
+you to <code class="language-plaintext highlighter-rouge">cd</code> into any sub-directory of <code class="language-plaintext highlighter-rouge">/home/dev/workspace</code> from any
 directory in the file system.</p>
 
 <p>For example:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a directory under /home/vagrant/workspace</span>
-<span class="nb">mkdir</span> <span class="nt">-p</span> /home/vagrant/workspace/my-awesome-project
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a directory under /home/dev/workspace</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /home/dev/workspace/my-awesome-project
 
 <span class="c"># Change directory somewhere else</span>
 <span class="nb">cd</span> /etc
@@ -448,7 +448,7 @@ directory in the file system.</p>
 
 <span class="c"># Check you're in the right directory</span>
 <span class="nb">pwd</span>
-/home/vagrant/workspace/my-awesome-project
+/home/dev/workspace/my-awesome-project
 </code></pre></div></div>
 
 <p>This makes it really quick and easy to access your project directories.</p>
@@ -1259,7 +1259,7 @@ with the <code class="language-plaintext highlighter-rouge">molecule</code> comm
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-08-31">August 31, 2023</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-01">September 01, 2023</time></p>
         
       </footer>
 
