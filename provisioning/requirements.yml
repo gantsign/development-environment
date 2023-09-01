@@ -24,8 +24,6 @@
   version: '1.2.0'
 - src: gantsign.gnome-proxy
   version: '1.2.1'
-- src: gantsign.golang
-  version: '3.1.3'
 - src: gantsign.helm
 - src: gantsign.hub
 - src: gantsign.inotify
