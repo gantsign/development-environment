@@ -70,7 +70,6 @@
         - /.atom/*
         + /.bash_history
         + /.config
-        + /.config/hub
         + /.config/Code
         + /.config/Code/User
         + /.config/Code/User/settings.json
@@ -171,11 +170,6 @@
           git_user_name: '{{ git_user_name | default(None) }}'
           git_user_email: '{{ git_user_email | default(None) }}'
           git_user_force: '{{ git_user_force | default(False) }}'
-
-    # Install Hub (GitHub wrapper for Git)
-    - role: gantsign.hub
-      tags:
-        - hub
 
     # Install Docker
     - role: geerlingguy.docker

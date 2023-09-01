@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T09:58:23+01:00
+modified: 2023-09-01T10:03:43+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -489,20 +489,17 @@ Website: [https://github.com/GitCredentialManager/git-credential-manager](https:
 Stores credentials for Git version control securely. Useful if you want to write
 to a Git repository using HTTPS rather than SSH.
 
-### Hub
+### GitHub CLI
 
-Website: [https://github.com/github/hub](https://github.com/github/hub)
+Website: [https://cli.github.com](https://cli.github.com/)
 
-Hub is a command line tool that wraps Git in order to extend it with extra
-features for GitHub.
-
-Note: Hub only wraps Git when run from Zsh (it works using a shell alias), the
-actual Git executable is unchanged.
+GitHub CLI is a command line tool that makes it easy to interact with GitHub
+from the command line.
 
 e.g. Cloning a GitHub repository
 
 ```bash
-git clone Netflix/flamescope
+gh repo clone Netflix/flamescope
 # Equivalent to:
 # git clone git@github.com:Netflix/flamescope.git
 ```
@@ -510,31 +507,13 @@ git clone Netflix/flamescope
 e.g. Creating a pull request
 
 ```bash
-git pull-request -m "\
-Pull request title here
-
-Pull request body here.
-"
+gh pr create --title 'Pull request title here' --body 'Pull request body here.'
 ```
 
-e.g. Browse issues for current repository
+e.g. List issues for current repository
 
 ```bash
-git browse -- issues
-```
-
-Run the following to see all the extensions provided by hub:
-
-```bash
-man hub
-```
-
-To view more information about a specific extension run:
-
-```bash
-man hub-<subcommand>
-# e.g.
-man hub-pull-request
+gh issue list
 ```
 
 ### Postman
