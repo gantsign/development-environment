@@ -3,7 +3,7 @@
 [![Build](https://github.com/gantsign/development-environment/actions/workflows/build.yml/badge.svg)](https://github.com/gantsign/development-environment/actions/workflows/build.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/development-environment/master/LICENSE)
 
-A development environment for Java, Python, Node.js and Go built using Vagrant.
+A development environment for Java, Python and Node.js built using Vagrant.
 
 ## About
 
@@ -50,7 +50,6 @@ environment that you can fork to add your project specific configuration.
 * IntelliJ IDEA IDE
 * SDKMAN!
 * Node.js
-* Go language SDK
 * Pyenv
 * Pipenv
 

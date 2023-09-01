@@ -9,10 +9,10 @@ header:
       url: /docs/getting-started
   caption:
 description: >
-  GantSign EnV: A development environment for Java, Python, Node.js and Go built
+  GantSign EnV: A development environment for Java, Python and Node.js built
   using Vagrant.
 excerpt: >
-  A development environment for Java, Python, Node.js and Go built using
+  A development environment for Java, Python and Node.js built using
   Vagrant.<br />
   [![Build](https://github.com/gantsign/development-environment/actions/workflows/build.yml/badge.svg)](https://github.com/gantsign/development-environment/actions/workflows/build.yml)
 feature_row:

@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T07:32:53+01:00
+modified: 2023-09-01T09:24:24+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -299,8 +299,7 @@ having to put in your SSH password more than once in the same session.
 Website: [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)
 
 In my opinion IntelliJ IDEA is the best IDE whether you're working in Java,
-Python, Node.js or Go (Node.js and Go support requires IntelliJ IDEA Ultimate
-Edition).
+Python or Node.js (Node.js support requires IntelliJ IDEA Ultimate Edition).
 
 The Community Edition is excellent at what it does but it's quite limited in
 support for languages and frameworks. You need to pay for the
@@ -862,26 +861,6 @@ cd your-python-project
 pipenv shell
 idea .
 ```
-
-## For Go developers
-
-### Go SDK
-
-This development environment comes with Go language
-[SDK 1.20.3](https://golang.org/dl/#go1.20.3) installed.
-
-### Go environment variables
-
-`GOROOT` is set to the location where Go is installed.
-
-`GOPATH` is set to `$HOME/workspace-go`.
-
-`$GOROOT\bin` and `$GOPATH\bin` are added to your `PATH`.
-
-### Go plugins for IDEs
-
-* [IntelliJ IDEA (Ultimate Edition only)](https://plugins.jetbrains.com/plugin/9568-go)
-* [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 
 ## For Ansible developers
 
