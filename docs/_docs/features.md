@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T09:54:32+01:00
+modified: 2023-09-01T09:58:23+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -777,7 +777,7 @@ sdk list
 ### Node.js runtime
 
 This development environment comes with Node.js
-[v16](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md)
+[v18](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V18.md)
 installed.
 
 ### Pre-installed global packages
