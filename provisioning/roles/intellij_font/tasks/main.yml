@@ -1,0 +1,8 @@
+---
+- name: Set IntelliJ Editor Font
+  ansible.builtin.template:
+    src: editor-font.xml.j2
+    dest: '~{{ my_user }}/{{ ansible_local.intellij.general.user_config_dir }}/options/editor-font.xml'
+    owner: '{{ my_user }}'
+    group: '{{ my_user }}'
+    mode: 'ug=rw,o=r'

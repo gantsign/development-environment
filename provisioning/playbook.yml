@@ -461,6 +461,9 @@
               home: "{{ ansible_local.java.general.home }}"
           intellij_jdks_default: '17'
 
+    # Set IntelliJ Editor Font
+    - role: intellij_font
+
     # Install Java related plugins for IntelliJ IDEA IDE
     - role: gantsign.intellij-plugins
       tags:
