@@ -340,7 +340,7 @@
               ".vagrantuser": "yaml",
               ".vagrantuser.example": "yaml"
             },
-            "editor.fontFamily": "JetBrainsMono Nerd Font Mono, Noto Color Emoji, 'Droid Sans Mono', 'monospace', monospace"
+            "editor.fontFamily": "JetBrainsMono Nerd Font, Noto Color Emoji, 'Droid Sans Mono', 'monospace', monospace"
           }
 
     # Install Python extension for Visual Studio Code editor
