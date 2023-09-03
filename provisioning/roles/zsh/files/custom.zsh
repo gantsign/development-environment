@@ -1,14 +1,41 @@
 # Enable support for multibyte characters
 setopt COMBINING_CHARS
 
-if (( $+commands[bat] )); then
-  alias cat='bat --style=plain --pager=never'
-  alias less='bat --paging=always'
-elif (( $+commands[batcat] )); then
-  # Ubuntu OS package uses batcat
-  alias cat='batcat --style=plain --pager=never'
-  alias less='batcat --paging=always'
-  alias bat='batcat'
+if (( $+commands[bat] )) || (( $+commands[batcat] )); then
+  if (( ! $+commands[bat] )); then
+    # Ubuntu OS package uses batcat
+    alias bat='batcat'
+  fi
+
+  # So we get syntax highlighting by default
+  cat_or_bat() {
+    if [[ $# -ne 1 ]] || [[ "${1:-}" == '-'* ]] || [[ ! -f "${1:-}" ]]; then
+      cat "$@"
+    else
+      if (( $+commands[bat] )); then
+        bat --style=plain --pager=never "$@"
+      else
+        batcat --style=plain --pager=never "$@"
+      fi
+    fi
+  }
+  compdef cat_or_bat=cat
+  alias cat=cat_or_bat
+
+  # So we get syntax highlighting by default
+  less_or_bat() {
+    if [[ $# -ne 1 ]] || [[ "${1:-}" == '-'* ]] || [[ ! -f "${1:-}" ]]; then
+      less "$@"
+    else
+      if (( $+commands[bat] )); then
+        bat --paging=always "$@"
+      else
+        batcat --paging=always "$@"
+      fi
+    fi
+  }
+  compdef less_or_bat=less
+  alias less=less_or_bat
 fi
 
 if (( $+commands[lsd] )); then
