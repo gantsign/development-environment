@@ -1,3 +1,5 @@
+{{ ansible_managed | comment }}
+
 zmodule ohmyzsh/ohmyzsh --root lib \
   -s 'clipboard.zsh' \
   -s 'compfix.zsh' \
@@ -97,10 +99,14 @@ zmodule gantsign/molecule-wrapper -s 'zsh/moleculew.plugin.zsh'
 if [ -f  ~/.sdkman/bin/sdkman-init.sh ]; then
     zmodule ~/.sdkman/bin -s 'sdkman-init.sh'
 fi
+{% if "zsh-you-should-use" not in ansible_skip_tags -%}
 zmodule MichaelAquilina/zsh-you-should-use -s 'you-should-use.plugin.zsh'
+{% endif %}
+{% if "zsh-fzf-tab" not in ansible_skip_tags -%}
 if (( $+commands[fzf] )); then
     zmodule Aloxaf/fzf-tab
 fi
+{% endif %}
 
 if [ ! $commands[starship] ]; then
     # Use asciiship prompt if starship not found
@@ -113,5 +119,9 @@ fi
 zmodule ~/.config/zsh -s 'custom.zsh'
 
 # Must be last
+{% if "zsh-autosuggestions" not in ansible_skip_tags -%}
 zmodule zsh-users/zsh-autosuggestions
+{% endif %}
+{% if "zsh-syntax-highlighting" not in ansible_skip_tags -%}
 zmodule zsh-users/zsh-syntax-highlighting
+{% endif %}
