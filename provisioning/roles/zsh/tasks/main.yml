@@ -14,8 +14,8 @@
     shell: /usr/bin/zsh
 
 - name: Configure .zimrc
-  ansible.builtin.copy:
-    src: zimrc.zsh
+  ansible.builtin.template:
+    src: zimrc.zsh.j2
     dest: ~/.zimrc
     mode: 'u=rw,go='
 

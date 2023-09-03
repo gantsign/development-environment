@@ -5,7 +5,7 @@ description: >
   Instructions for how to configure your development environment.
 numbered_headings: yes
 date: 2016-09-02T14:47:02+01:00
-modified: 2023-09-01T21:38:32+00:00
+modified: 2023-09-03T12:50:13+00:00
 ---
 
 The goal of this project is to make it easy to build your development
@@ -318,6 +318,7 @@ ansible:
     - git-credential-manager
     - gradle
     - gui
+    - homebrew
     - intellij
     - java
     - kubernetes
@@ -330,7 +331,9 @@ ansible:
     - swapspace
     - vscode
     - zsh-autosuggestions
+    - zsh-fzf-tab
     - zsh-syntax-highlighting
+    - zsh-you-should-use
     - zswap
 ```
 
