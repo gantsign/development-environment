@@ -4,6 +4,7 @@
   become_user: '{{ my_user }}'
   community.general.homebrew:
     name:
+      - bat # to get newer version with --language help
       - bandwhich
       - dust
       - gh
