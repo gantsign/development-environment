@@ -67,9 +67,6 @@ fi
 
 if (( $+commands[xdg-open] )); then
   alias open='xdg-open'
-else
-  alias open='code --reuse-window'
-  alias xdg-open='code --reuse-window'
 fi
 
 alias la='ls -lAFh'
