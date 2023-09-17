@@ -236,7 +236,7 @@
     <meta itemprop="headline" content="Upgrade">
     <meta itemprop="description" content="The following instructions will guide you through the process of upgrading yourlocal GantSign EnV development environment to the latest release.">
     <meta itemprop="datePublished" content="October 12, 2018">
-    <meta itemprop="dateModified" content="September 01, 2023">
+    <meta itemprop="dateModified" content="September 17, 2023">
 
     <div class="page__inner-wrap">
       
@@ -387,8 +387,8 @@ project root:</p>
 <h4 id="unable-to-save-credentials">Unable to save credentials</h4>
 
 <p>Your Unix password may get out of sync with the password for your GNOME Keyring
-when you rebuild your development-environment (as the Unix password is reset to
-<code class="language-plaintext highlighter-rouge">dev</code>) or if you reset the password without specifying the current password
+when you rebuild your development-environment
+or if you reset the password without specifying the current password
 (e.g. using <code class="language-plaintext highlighter-rouge">sudo passwd dev</code>).</p>
 
 <p>Once your GNOME Keyring password is out of sync the keyring won’t unlock when
@@ -438,15 +438,13 @@ client VM:</p>
 
 <h2 id="change-your-password">Change your password</h2>
 
-<p>Once provisioning is complete you need to change your password. Login using the
-username <code class="language-plaintext highlighter-rouge">dev</code> and password <code class="language-plaintext highlighter-rouge">dev</code>. You’ll then be prompted to change
-your password. <strong>Important:</strong> change the password to the password you were
+<p>Once provisioning is complete you need to set your password. Login using the
+username <code class="language-plaintext highlighter-rouge">dev</code>. You’ll then be prompted to set
+your password. <strong>Important:</strong> set the password to the password you were
 using before you re-provisioned the development environment. This is necessary
-to restore access to all your saved credentials. Once you’ve changed your
+to restore access to all your saved credentials. Once you’ve set your
 password you need to logout and log back in (with the new password) for your
 keyring to be unlocked.</p>
-
-<p><strong>Important:</strong> you need to change the password before you stop/reload the VM.</p>
 
         
       </section>
@@ -457,7 +455,7 @@ keyring to be unlocked.</p>
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-01">September 01, 2023</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-17">September 17, 2023</time></p>
         
       </footer>
 
