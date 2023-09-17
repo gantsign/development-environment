@@ -1,0 +1,11 @@
+---
+- name: Copy Git helper scripts
+  ansible.builtin.copy:
+    src: '{{ item }}.sh'
+    dest: '/usr/local/bin/{{ item }}'
+    mode: 'u=rwx,go=rx'
+    owner: root
+    group: root
+  loop:
+    - git-develop-branch
+    - git-main-branch

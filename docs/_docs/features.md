@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-01T21:38:26+01:00
+modified: 2023-09-17T12:02:25+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -370,29 +370,49 @@ project.
 Git aliases save you a lot of typing and make it easy to execute more complex
 Git commands:
 
+* Print the main branch (searches for `main`, `trunk`, `mainline`, `default` and `master`)
+
+    `git main` = `git-main-branch` (shell script)
+
+* Print the develop branch (searches for `dev`, `devel`, `development` and `develop`)
+
+    `git dev` = `git-develop-branch` (shell script)
+
+* Print the remote` HEAD` branch
+
+    `git rhead` = `git remote show origin | grep -Po 'HEAD branch: \K.*'`
+
+* Print the repository root directory
+
+    `git root` = `git rev-parse --show-toplevel`
+
+* Execute a command in the repository root
+
+    `git exec` = `f() { exec "$@"; }; f` (shell function)
+
 * View summary lines for recent commits
 
-    `git ls` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate`
+    `git ls` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate`
 
 * View summary lines and list changed files for recent commits
 
-    `git ll` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat`
+    `git ll` ≡ `git log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --numstat`
 
 * View summary lines and dates for recent commits
 
-    `git lds` ≡ `git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short`
+    `git lds` ≡ `git log --pretty=format:"%C(yellow)%h\ %ad%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --date=short`
 
 * View tree of recent commits (all branches)
 
     `git lt` ≡ `git log --oneline --graph --decorate --all`
 
-* Checkout an existing branch
+* Switch to an existing branch
 
-    `git co` ≡ `git checkout`
+    `git sw` ≡ `git switch`
 
 * Create a new branch
 
-    `git cb` ≡ `git checkout -b`
+    `git cb` ≡ `git switch -c`
 
 * Amend the last commit and change the commit message
 
@@ -402,13 +422,17 @@ Git commands:
 
     `git cane` ≡ `git commit --amend --no-edit`
 
-* Rebase the current branch onto `origin/master`
+* Rebase the current branch onto `origin/main`
 
-    `git rom` ≡ `git rebase origin/master`
+    `git rom` ≡ `git fetch -p && git rebase origin/$(git main)`
 
 * Rebase the current branch onto `origin/develop`
 
-    `git rod` ≡ `git rebase origin/develop`
+    `git rod` ≡ `git fetch -p && git rebase origin/$(git dev)`
+
+* Rebase the current branch onto `origin/HEAD`
+
+    `git roh` ≡ `!git fetch -p && git rebase origin/$(git rhead)`
 
 * Push the current branch to `origin HEAD`
 
@@ -418,13 +442,17 @@ Git commands:
 
     `git pof` ≡ `git push origin HEAD --force`
 
-* Switch to the `master` branch pull changes and prune remote branches
+* Switch to the `main` branch, pull changes and prune remote branches
 
-    `git cmp` ≡ `git checkout master && git pull -p`
+    `git smp` ≡ `git switch $(git main) && git pull -p`
 
-* Switch to the `develop` branch pull changes and prune remote branches
+* Switch to the `develop` branch, pull changes and prune remote branches
 
-    `git cdp` ≡ `git checkout develop && git pull -p`
+    `git sdp` ≡ `git switch $(git dev) && git pull -p`
+
+* Switch to the local branch with the same name as the remote head, pull changes and prune remote branches
+
+    `git shp` ≡ `git fetch -p && git switch $(git rhead) && git pull -p`
 
 * Pop the most recent stash
 
@@ -432,11 +460,11 @@ Git commands:
 
 * List the most recently checked-out branches
 
-    `git lb` ≡ `!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'`
+    `git lb` ≡ `git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf("  \033[33m%s: \033[37m %s\033[0m\n", substr($2, 1, length($2)-1), $1)}'`
 
 * Reformat the recent changes as Markdown release notes
 
-    `git release-notes` ≡ `git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -`
+    `git release-notes` ≡ `git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \((\#[0-9]+)\)/* \2: \1/' | tac -`
 
 ### Git-GUI
 

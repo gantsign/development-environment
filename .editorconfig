@@ -15,5 +15,9 @@ trim_trailing_whitespace = true
 indent_size = 2
 
 # Shell scripts can be fussy about line endings
-[*.sh]
+[*.{sh,zsh}]
 end_of_line = lf
+
+# Match shfmt
+[*.sh]
+indent_style = tab

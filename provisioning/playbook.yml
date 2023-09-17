@@ -136,32 +136,133 @@
       tags:
         - homebrew
 
-    # Install and configure Git version control
-    - role: weareinteractive.git
+    # Install Git helper scripts
+    - role: git_helpers
+
+    # Configure Git version control
+    - role: git_config
+      become_user: '{{ my_user }}'
       git_config:
-        core:
-          autocrlf: input
-        alias:
-          ls: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate'
-          ll: 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
-          lds: 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
-          lt: 'log --oneline --graph --decorate --all'
-          co: 'checkout'
-          cb: 'checkout -b'
-          ca: 'commit --amend'
-          cane: 'commit --amend --no-edit'
-          rom: 'rebase origin/master'
-          rod: 'rebase origin/develop'
-          po: 'push origin HEAD'
-          pof: 'push origin HEAD --force'
-          cmp: '!git checkout master && git pull -p'
-          cdp: '!git checkout develop && git pull -p'
-          pop: 'stash pop'
-          # git needs the following commands below to be quoted so we use > to preserve quotes
-          lb: >
-            "!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'"
-          release-notes: >
-            "!git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -"
+        core.autocrlf: input # Force Linux line endings
+        diff.algorithm: histogram # For improved diff
+        diff.indentHeuristic: 'true' # For improved diff
+        diff.mnemonicPrefix: 'true' # For more readable diff
+        difftool.prompt: 'false' # Suppress annoying prompt launching difftool
+        init.defaultBranch: main
+        log.date: 'format:%a %Y-%m-%d %H:%M:%S %z' # Use ISO format
+        mergetool.prompt: 'false' # Suppress annoying prompt launching mergetool
+        push.autoSetupRemote: 'true' # So you can pull the branch later
+        push.default: simple # Use same branch names for local and remote
+        rerere.autoUpdate: 'true' # Avoid having to redo a merge
+        rerere.enabled: 'true' # Avoid having to redo a merge
+        user.useConfigOnly: 'true' # Don't guess username / email
+
+        # utility aliases
+        alias.dev: '!git-develop-branch'
+        alias.main: '!git-main-branch'
+        alias.rhead: >-
+          !git remote show origin | grep -Po 'HEAD branch: \K.*'
+        alias.root: 'rev-parse --show-toplevel'
+        alias.lb: >-
+          !git reflog show --pretty=format:'%gs ~ %gd' --date=relative
+          | grep 'checkout:'
+          | grep -oE '[^ ]+ ~ .*'
+          | awk -F~ '!seen[$1]++'
+          | head -n 10
+          | awk -F' ~ HEAD@{' '{printf("  \033[33m%s: \033[37m %s\033[0m\n", substr($2, 1, length($2)-1), $1)}'
+        alias.exec: '!f() { exec "$@"; }; f'
+        # log output
+        alias.lds: 'log --pretty=format:"%C(yellow)%h\ %ad%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --date=short'
+        alias.ll: 'log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --numstat'
+        alias.ls: 'log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate'
+        alias.lt: 'log --oneline --graph --decorate --all'
+        alias.release-notes: >-
+          !git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \((\#[0-9]+)\)/* \2: \1/' | tac -
+        # switching branch
+        alias.sw: 'switch'
+        alias.cb: 'switch -c'
+        alias.sdp: '!git switch $(git dev) && git pull -p'
+        alias.shp: '!git fetch -p && git switch $(git rhead) && git pull -p'
+        alias.smp: '!git switch $(git main) && git pull -p'
+        # amending commits
+        alias.ca: 'commit --amend'
+        alias.cane: 'commit --amend --no-edit'
+        # pushing
+        alias.po: 'push origin HEAD'
+        alias.pof: 'push origin HEAD --force'
+        # rebasing
+        alias.rod: '!git fetch -p && git rebase origin/$(git dev)'
+        alias.roh: '!git fetch -p && git rebase origin/$(git rhead)'
+        alias.rom: '!git fetch -p && git rebase origin/$(git main)'
+        # other
+        alias.pop: 'stash pop'
+
+    # Configure Git version control for Delta
+    - role: git_config
+      become_user: '{{ my_user }}'
+      git_config:
+        # Delta configuration
+        pager.diff: delta
+        pager.log: delta
+        pager.reflog: delta
+        pager.show: delta
+        delta.line-numbers: 'true'
+        # Adjust appearance to match bat theme
+        delta.line-numbers-left-style: '#619DD7'
+        delta.line-numbers-right-style: '#619DD7'
+        delta.file-style: white bold
+        delta.file-decoration-style: white ol
+        delta.hunk-header-line-number-style: '#619DD7'
+        delta.hunk-header-decoration-style: '#619DD7 ul'
+        # Improve contrast between background and foreground colors
+        delta.minus-style: 'syntax #6A1212'
+        delta.minus-non-emph-style: 'syntax #481818'
+        delta.minus-emph-style: 'syntax #6A1212'
+        delta.line-numbers-minus-style: '#8C1717'
+        delta.plus-style: 'syntax #4C5631'
+        delta.plus-non-emph-style: 'syntax #383D28'
+        delta.plus-emph-style: 'syntax #4C5631'
+        delta.line-numbers-plus-style: '#7C8C4F'
+      tags:
+        - homebrew
+
+    # Configure Git version control for GIRT
+    - role: git_config
+      become_user: '{{ my_user }}'
+      git_config:
+        sequence.editor: interactive-rebase-tool
+      tags:
+        - homebrew
+
+    # Configure Git version control for Meld
+    - role: git_config
+      become_user: '{{ my_user }}'
+      git_config:
+        difftool.meld.cmd: 'meld "$LOCAL" "$REMOTE"'
+        merge.tool: meld
+        mergetool.meld.cmd: 'meld "$LOCAL" "$MERGED" "$REMOTE"'
+      tags:
+        - gui
+
+    # Configure Git version control for VS Code
+    - role: git_config
+      become_user: '{{ my_user }}'
+      git_config:
+        difftool.code.cmd: 'code --reuse-window --wait --diff "$LOCAL" "$REMOTE"'
+        mergetool.code.cmd: 'code --reuse-window --wait "$MERGED"'
+      tags:
+        - gui
+        - vscode
+
+    # Configure Git version control for IntelliJ
+    - role: git_config
+      become_user: '{{ my_user }}'
+      git_config:
+        difftool.idea.cmd: 'idea diff "$LOCAL" "$REMOTE"'
+        mergetool.idea.cmd: 'idea merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"'
+      tags:
+        - gui
+        - intellij
 
     # Configure Git user name and email
     - role: gantsign.git_user
