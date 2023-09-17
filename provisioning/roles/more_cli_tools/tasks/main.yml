@@ -9,6 +9,7 @@
       - dust
       - gh
       - git-delta
+      - git-interactive-rebase-tool
       - lsd
       - procs
       - sd

@@ -1,0 +1,9 @@
+---
+- name: Configure Git
+  community.general.git_config:
+    scope: global
+    name: '{{ item.key }}'
+    value: '{{ item.value }}'
+  loop_control:
+    label: "{{ item.key }}={{ item.value }}"
+  loop: '{{ git_config | dict2items }}'

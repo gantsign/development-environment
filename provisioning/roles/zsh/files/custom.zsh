@@ -101,27 +101,6 @@ alias -s tar.zsd='tar -I zstd -tf'
 alias -s ace='unace l'
 alias -s 7z='7z l'
 
-# Git branch helpers
-if [ ! -f ~/.local/bin/git-main-branch ]; then
-    mkdir -p "$HOME/.local/bin"
-    echo "\
-#!/usr/bin/bash
-
-$(which git_main_branch)
-
-git_main_branch" > ~/.local/bin/git-main-branch
-    chmod 'u=rwx,go=r' ~/.local/bin/git-main-branch
-fi
-if [ ! -f ~/.local/bin/git-develop-branch ]; then
-    echo "\
-#!/usr/bin/bash
-
-$(which git_develop_branch)
-
-git_develop_branch" > ~/.local/bin/git-develop-branch
-    chmod 'u=rwx,go=r' ~/.local/bin/git-develop-branch
-fi
-
 # Git clone and cd
 git-clone-cd() {
     local arg
