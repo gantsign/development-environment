@@ -53,6 +53,11 @@ if (( $+commands[bat] )) || (( $+commands[batcat] )); then
     # compdef shfmt_with_bat=shfmt
     alias shfmt=shfmt_with_bat
   fi
+
+  if (( $+commands[bat] )); then
+    # batcat doesn't support --language=help (old version)
+    alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+  fi
 fi
 
 if (( $+commands[lsd] )); then
