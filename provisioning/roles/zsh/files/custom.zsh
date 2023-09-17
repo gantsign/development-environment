@@ -36,6 +36,23 @@ if (( $+commands[bat] )) || (( $+commands[batcat] )); then
   }
   compdef less_or_bat=less
   alias less=less_or_bat
+
+  if (( $+commands[shfmt] )); then
+    shfmt_with_bat() {
+      if [[ $# -ne 1 ]] || [[ "${1:-}" == '-'* ]] || [[ ! -e "${1:-}" ]]; then
+         shfmt "$@"
+      else
+        if (( $+commands[bat] )); then
+          shfmt "$@" | bat --plain --language bash
+        else
+          shfmt "$@" | batcat --plain --language bash
+        fi
+      fi
+    }
+    # shfmt doesn't currently have Zsh tab-completion
+    # compdef shfmt_with_bat=shfmt
+    alias shfmt=shfmt_with_bat
+  fi
 fi
 
 if (( $+commands[lsd] )); then
