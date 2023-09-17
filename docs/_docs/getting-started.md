@@ -5,7 +5,7 @@ description: >
   How to setup the development environment.
 numbered_headings: yes
 date: 2016-08-31T09:05:34+01:00
-modified: 2023-09-01T07:29:53+01:00
+modified: 2023-09-17T08:06:24+01:00
 ---
 
 The following instructions will guide you through the process of provisioning
@@ -162,9 +162,8 @@ vagrant vbguest --do install
 
 ## Change your password
 
-Once provisioning is complete you need to change your password. Login using the
-username `dev` and password `dev`. You'll then be prompted to change
-your password.
+Once provisioning is complete you need to set your password. Login using the
+username `dev`. You'll then be prompted to set your password.
 
 Pick a strong password and don't reuse another password (e.g. don't use your
 Windows password). This password will be used to secure access to saved
@@ -173,9 +172,6 @@ passwords in your browser, SSH key passwords and Git credentials etc.
 The password needs to be at least 16 characters long and you cannot repeat the
 same character more than 3 times in a row. Prefer long easy to remember phrases
 over difficult to remember random passwords.
-
-**Important:** you need to complete this procedure before you stop/reload the
-VM.
 
 ## Stopping the virtual machine
 

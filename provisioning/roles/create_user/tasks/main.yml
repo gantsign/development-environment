@@ -2,8 +2,8 @@
 - name: Create user
   ansible.builtin.user:
     name: '{{ my_user }}'
-    # Initial password is "dev" (must be changed on first login)
-    password: '$6$ab38evLL$WgKntDGuJnk9Ev3xqA3rFm/PFtV2iTLRgbGZqrvFrIyJm6ELqoupPTULJEg3TKc4OD3z1KS90kC94xNVBbIF61'
+    password: '!' # This sets the password to 'locked'
+    update_password: on_create
     groups:
       - adm
       - cdrom
@@ -11,14 +11,31 @@
       - dip
       - plugdev
       - lxd
+    append: true
   register: create_user_result
+
+- name: Don't require password on first login
+  ansible.builtin.command: 'passwd -d {{ my_user }}'
+  args:
+    creates: ~{{ my_user }}/.setpwd
+  when: create_user_result.changed
 
 - name: Change password on first login
   ansible.builtin.command: 'chage --lastday 0 {{ my_user }}'
+  args:
+    creates: ~{{ my_user }}/.setpwd
   when: create_user_result.changed
 
+- name: Remember change password on first login
+  become: true
+  become_user: '{{ my_user }}'
+  ansible.builtin.copy:
+    content: ''
+    dest: ~/.setpwd
+    force: false
+
 - name: Create remote_tmp directory
-  file:
+  ansible.builtin.file:
     path: '/home/{{ my_user }}/.ansible/tmp'
     state: directory
     mode: 'u=rwx,go='
