@@ -5,7 +5,7 @@ description: >
   How to upgrade your development environment to the latest release.
 numbered_headings: yes
 date: 2018-10-12T13:07:23+01:00
-modified: 2023-09-01T07:35:24+01:00
+modified: 2023-09-17T08:09:35+01:00
 ---
 
 The following instructions will guide you through the process of upgrading your
@@ -140,8 +140,8 @@ vagrant vbguest --do install
 #### Unable to save credentials
 
 Your Unix password may get out of sync with the password for your GNOME Keyring
-when you rebuild your development-environment (as the Unix password is reset to
-`dev`) or if you reset the password without specifying the current password
+when you rebuild your development-environment
+or if you reset the password without specifying the current password
 (e.g. using `sudo passwd dev`).
 
 Once your GNOME Keyring password is out of sync the keyring won't unlock when
@@ -194,12 +194,10 @@ After this is complete logout and log back in so your key is loaded.
 
 ## Change your password
 
-Once provisioning is complete you need to change your password. Login using the
-username `dev` and password `dev`. You'll then be prompted to change
-your password. **Important:** change the password to the password you were
+Once provisioning is complete you need to set your password. Login using the
+username `dev`. You'll then be prompted to set
+your password. **Important:** set the password to the password you were
 using before you re-provisioned the development environment. This is necessary
-to restore access to all your saved credentials. Once you've changed your
+to restore access to all your saved credentials. Once you've set your
 password you need to logout and log back in (with the new password) for your
 keyring to be unlocked.
-
-**Important:** you need to change the password before you stop/reload the VM.
