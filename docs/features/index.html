@@ -236,7 +236,7 @@
     <meta itemprop="headline" content="Features">
     <meta itemprop="description" content="There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier.">
     <meta itemprop="datePublished" content="January 18, 2017">
-    <meta itemprop="dateModified" content="September 01, 2023">
+    <meta itemprop="dateModified" content="September 17, 2023">
 
     <div class="page__inner-wrap">
       
@@ -699,19 +699,44 @@ Git commands:</p>
 
 <ul>
   <li>
+    <p>Print the main branch (searches for <code class="language-plaintext highlighter-rouge">main</code>, <code class="language-plaintext highlighter-rouge">trunk</code>, <code class="language-plaintext highlighter-rouge">mainline</code>, <code class="language-plaintext highlighter-rouge">default</code> and <code class="language-plaintext highlighter-rouge">master</code>)</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git main</code> = <code class="language-plaintext highlighter-rouge">git-main-branch</code> (shell script)</p>
+  </li>
+  <li>
+    <p>Print the develop branch (searches for <code class="language-plaintext highlighter-rouge">dev</code>, <code class="language-plaintext highlighter-rouge">devel</code>, <code class="language-plaintext highlighter-rouge">development</code> and <code class="language-plaintext highlighter-rouge">develop</code>)</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git dev</code> = <code class="language-plaintext highlighter-rouge">git-develop-branch</code> (shell script)</p>
+  </li>
+  <li>
+    <p>Print the remote<code class="language-plaintext highlighter-rouge"> HEAD</code> branch</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git rhead</code> = <code class="language-plaintext highlighter-rouge">git remote show origin | grep -Po 'HEAD branch: \K.*'</code></p>
+  </li>
+  <li>
+    <p>Print the repository root directory</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git root</code> = <code class="language-plaintext highlighter-rouge">git rev-parse --show-toplevel</code></p>
+  </li>
+  <li>
+    <p>Execute a command in the repository root</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git exec</code> = <code class="language-plaintext highlighter-rouge">f() { exec "$@"; }; f</code> (shell function)</p>
+  </li>
+  <li>
     <p>View summary lines for recent commits</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git ls</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git ls</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate</code></p>
   </li>
   <li>
     <p>View summary lines and list changed files for recent commits</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git ll</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git ll</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --numstat</code></p>
   </li>
   <li>
     <p>View summary lines and dates for recent commits</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git lds</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git lds</code> ≡ <code class="language-plaintext highlighter-rouge">git log --pretty=format:"%C(yellow)%h\ %ad%Cred%d\ %Creset%s%Cblue\ [%an]" --decorate --date=short</code></p>
   </li>
   <li>
     <p>View tree of recent commits (all branches)</p>
@@ -719,14 +744,14 @@ Git commands:</p>
     <p><code class="language-plaintext highlighter-rouge">git lt</code> ≡ <code class="language-plaintext highlighter-rouge">git log --oneline --graph --decorate --all</code></p>
   </li>
   <li>
-    <p>Checkout an existing branch</p>
+    <p>Switch to an existing branch</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git co</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git sw</code> ≡ <code class="language-plaintext highlighter-rouge">git switch</code></p>
   </li>
   <li>
     <p>Create a new branch</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git cb</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout -b</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git cb</code> ≡ <code class="language-plaintext highlighter-rouge">git switch -c</code></p>
   </li>
   <li>
     <p>Amend the last commit and change the commit message</p>
@@ -739,14 +764,19 @@ Git commands:</p>
     <p><code class="language-plaintext highlighter-rouge">git cane</code> ≡ <code class="language-plaintext highlighter-rouge">git commit --amend --no-edit</code></p>
   </li>
   <li>
-    <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/master</code></p>
+    <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/main</code></p>
 
-    <p><code class="language-plaintext highlighter-rouge">git rom</code> ≡ <code class="language-plaintext highlighter-rouge">git rebase origin/master</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git rom</code> ≡ <code class="language-plaintext highlighter-rouge">git fetch -p &amp;&amp; git rebase origin/$(git main)</code></p>
   </li>
   <li>
     <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/develop</code></p>
 
-    <p><code class="language-plaintext highlighter-rouge">git rod</code> ≡ <code class="language-plaintext highlighter-rouge">git rebase origin/develop</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git rod</code> ≡ <code class="language-plaintext highlighter-rouge">git fetch -p &amp;&amp; git rebase origin/$(git dev)</code></p>
+  </li>
+  <li>
+    <p>Rebase the current branch onto <code class="language-plaintext highlighter-rouge">origin/HEAD</code></p>
+
+    <p><code class="language-plaintext highlighter-rouge">git roh</code> ≡ <code class="language-plaintext highlighter-rouge">!git fetch -p &amp;&amp; git rebase origin/$(git rhead)</code></p>
   </li>
   <li>
     <p>Push the current branch to <code class="language-plaintext highlighter-rouge">origin HEAD</code></p>
@@ -759,14 +789,19 @@ Git commands:</p>
     <p><code class="language-plaintext highlighter-rouge">git pof</code> ≡ <code class="language-plaintext highlighter-rouge">git push origin HEAD --force</code></p>
   </li>
   <li>
-    <p>Switch to the <code class="language-plaintext highlighter-rouge">master</code> branch pull changes and prune remote branches</p>
+    <p>Switch to the <code class="language-plaintext highlighter-rouge">main</code> branch, pull changes and prune remote branches</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git cmp</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout master &amp;&amp; git pull -p</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git smp</code> ≡ <code class="language-plaintext highlighter-rouge">git switch $(git main) &amp;&amp; git pull -p</code></p>
   </li>
   <li>
-    <p>Switch to the <code class="language-plaintext highlighter-rouge">develop</code> branch pull changes and prune remote branches</p>
+    <p>Switch to the <code class="language-plaintext highlighter-rouge">develop</code> branch, pull changes and prune remote branches</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git cdp</code> ≡ <code class="language-plaintext highlighter-rouge">git checkout develop &amp;&amp; git pull -p</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git sdp</code> ≡ <code class="language-plaintext highlighter-rouge">git switch $(git dev) &amp;&amp; git pull -p</code></p>
+  </li>
+  <li>
+    <p>Switch to the local branch with the same name as the remote head, pull changes and prune remote branches</p>
+
+    <p><code class="language-plaintext highlighter-rouge">git shp</code> ≡ <code class="language-plaintext highlighter-rouge">git fetch -p &amp;&amp; git switch $(git rhead) &amp;&amp; git pull -p</code></p>
   </li>
   <li>
     <p>Pop the most recent stash</p>
@@ -776,12 +811,12 @@ Git commands:</p>
   <li>
     <p>List the most recently checked-out branches</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git lb</code> ≡ <code class="language-plaintext highlighter-rouge">!git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git lb</code> ≡ <code class="language-plaintext highlighter-rouge">git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf("  \033[33m%s: \033[37m %s\033[0m\n", substr($2, 1, length($2)-1), $1)}'</code></p>
   </li>
   <li>
     <p>Reformat the recent changes as Markdown release notes</p>
 
-    <p><code class="language-plaintext highlighter-rouge">git release-notes</code> ≡ <code class="language-plaintext highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \\((\\#[0-9]+)\\)/* \\2: \\1/' | tac -</code></p>
+    <p><code class="language-plaintext highlighter-rouge">git release-notes</code> ≡ <code class="language-plaintext highlighter-rouge">git log --color --pretty=format:'%s%Cred%d%Creset' --decorate | sed -E 's/(.*) \((\#[0-9]+)\)/* \2: \1/' | tac -</code></p>
   </li>
 </ul>
 
@@ -1208,7 +1243,7 @@ with the <code class="language-plaintext highlighter-rouge">molecule</code> comm
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-01">September 01, 2023</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-17">September 17, 2023</time></p>
         
       </footer>
 
