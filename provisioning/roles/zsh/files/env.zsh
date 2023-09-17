@@ -40,3 +40,6 @@ elif (( $+commands[batcat] )); then
     # bat's man syntax highlighting only works well with the default theme
     export MANPAGER="sh -c 'col -bx | batcat -l man -p --pager less --theme default'"
 fi
+
+# Don't suggest these aliases
+export YSU_IGNORED_ALIASES=('cd..' 'cd-')
