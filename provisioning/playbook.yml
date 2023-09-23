@@ -475,6 +475,8 @@
       tags:
         - gui
         - intellij
+      intellij_install_user: '{{ my_user }}'
+      intellij_install_dir: '/opt/idea/idea-{{ intellij_edition }}'
       users:
         - username: '{{ my_user }}'
           intellij_disabled_plugins:
