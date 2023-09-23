@@ -5,7 +5,6 @@
   community.general.homebrew:
     name:
       - bat # to get newer version with --language help
-      - bandwhich
       - dust
       - gh
       - git-delta
