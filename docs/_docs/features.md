@@ -5,7 +5,7 @@ description: >
   Features provided by the GantSign EnV development environment.
 numbered_headings: yes
 date: 2017-01-18T16:35:52+00:00
-modified: 2023-09-17T12:02:25+01:00
+modified: 2023-10-01T10:25:53+01:00
 ---
 
 There are a lot of well known projects, and hidden gems, which aid in your
@@ -89,6 +89,18 @@ grids of separate console windows (as well as supporting multiple tabs).
 Tip: right click on the window to bring up the menu to split the screen or open
 a new tab.
 
+### Fonts
+
+NotoColorEmoji: [https://github.com/googlefonts/noto-emoji](https://github.com/googlefonts/noto-emoji)
+
+JetBrainsMono Nerd Font: [https://www.nerdfonts.com](https://www.nerdfonts.com)
+
+Many modern command line tools output emojis so we've included NotoColorEmoji to
+display those characters. Starship prompt and LSD also require a Nerd Font to
+display correctly, so we've included JetBrainsMono Nerd Font.
+
+![Fonts sample]({{ '/images/fonts.png' | relative_url }})
+
 ### CDPATH
 
 Website: [http://zsh.sourceforge.net/Intro/intro_13.html](http://zsh.sourceforge.net/Intro/intro_13.html)
@@ -151,7 +163,7 @@ produces 160 suggestions.
 
 ### Zim
 
-Website: https://zimfw.sh/](https://zimfw.sh/)
+Website: [https://zimfw.sh](https://zimfw.sh)
 
 Oh My Zsh has a wide selection of plugins, but sometimes you want to install
 plugins from elsewhere. This is where Zim comes in, Zim is a plugin
@@ -159,6 +171,57 @@ manager for Zsh and can install Zsh plugins from Git repositories.
 
 You can find a list of third-party plugins at:
 [https://github.com/unixorn/awesome-zsh-plugins#plugins](https://github.com/unixorn/awesome-zsh-plugins#plugins)
+
+### Starship Prompt
+
+Website: [https://starship.rs](https://starship.rs)
+
+A fast command line prompt with lots of features.
+
+![Starship Prompt]({{ '/images/starship.png' | relative_url }})
+
+### Zoxide
+
+Website: [https://github.com/ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide)
+
+Easily `cd` into directories you've previously visited. Run `zi` so see a
+searchable list of previous directories.
+
+![Zoxide]({{ '/images/zoxide.png' | relative_url }})
+
+
+### Generic Colouriser
+
+Website: [https://github.com/garabik/grc](https://github.com/garabik/grc)
+
+Colorizes the output of several common command line tools.
+
+![Dig with GRC]({{ '/images/grc.png' | relative_url }})
+
+### fzf
+
+Website: [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+
+Command line fuzzy finder.
+
+Integrates in several ways:
+* Reverse shell history search `CTRL-R`
+* Find files or directories e.g. `cd **<TAB>`
+* Complete process IDs e.g. `kill -9 **<TAB>`
+
+[fzf-tab](https://github.com/Aloxaf/fzf-tab) is used to integrate `fzf` with
+Zsh tab completion.
+
+![Zsh reverse search]({{ '/images/reverse-search.png' | relative_url }})
+
+### LSD (LSDeluxe)
+
+Website: [https://github.com/lsd-rs/lsd](https://github.com/lsd-rs/lsd)
+
+A `ls` replacement with more colorful output filetype icons. A Zsh alias is used
+to invoke `lsd` when running `ls`.
+
+![LSDeluxe]({{ '/images/lsd.png' | relative_url }})
 
 ### HTTPie
 
@@ -229,6 +292,15 @@ This is obviously easier than `find -iname '*molecule*'`.
 `fd` is still capable of handling more advanced use-cases as well, e.g. you can
 specify the type of file or a command to execute.
 
+### sd
+
+Website: [https://github.com/chmln/sd](https://github.com/chmln/sd)
+
+A tool for performing find and replace in files/streams from the command line.
+Simple alternative to `sed`.
+
+![sd]({{ '/images/sd.png' | relative_url }})
+
 ### bat
 
 Website: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat)
@@ -258,6 +330,48 @@ than `top` or `htop` provide. In addition to RAM and CPU usage, you can see
 disk I/O, network I/O and warnings/alerts.
 
 ![Glances terminal output]({{ '/images/glances.png' | relative_url }})
+
+### Btop++
+
+Website: [https://github.com/aristocratos/btop](https://github.com/aristocratos/btop)
+
+`Btop++` shows a broad view of the what's going on on your system in a more
+graphical style.
+
+![Btop++]({{ '/images/btop.png' | relative_url }})
+
+### lnav
+
+Website: [https://lnav.org](https://lnav.org)
+
+A tool for viewing and navigating log files.
+
+![lnav]({{ '/images/lnav.png' | relative_url }})
+
+### duf
+
+Website: [https://github.com/muesli/duf](https://github.com/muesli/duf)
+
+An alternative to `df` for showing disk usage and free space.
+
+![duf]({{ '/images/duf.png' | relative_url }})
+
+### dust
+
+Website: [https://github.com/bootandy/dust](https://github.com/bootandy/dust)
+
+A more graphical alternative to `du` for displaying dusk usage for files and
+directories.
+
+![dust]({{ '/images/dust.png' | relative_url }})
+
+### procs
+
+Website: [https://github.com/dalance/procs](https://github.com/dalance/procs)
+
+An improved alternative to `ps` with color output and additional features.
+
+![procs]({{ '/images/procs.png' | relative_url }})
 
 ## For GUI desktop users
 
@@ -549,6 +663,14 @@ e.g. List issues for current repository
 ```bash
 gh issue list
 ```
+
+### Git Interactive Rebase Tool
+
+Website: [https://github.com/MitMaro/git-interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+
+A terminal based sequence editor for Git rebase.
+
+![Git Interactive Rebase Tool]({{ '/images/girt.png' | relative_url }})
 
 ### Postman
 
