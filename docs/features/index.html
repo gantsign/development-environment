@@ -236,7 +236,7 @@
     <meta itemprop="headline" content="Features">
     <meta itemprop="description" content="There are a lot of well known projects, and hidden gems, which aid in yourproductivity; this project aims to install the best of them to make life alittle easier.">
     <meta itemprop="datePublished" content="January 18, 2017">
-    <meta itemprop="dateModified" content="September 17, 2023">
+    <meta itemprop="dateModified" content="October 01, 2023">
 
     <div class="page__inner-wrap">
       
@@ -261,17 +261,29 @@ little easier.</p>
   </li>
   <li><a href="#for-command-line-users" id="markdown-toc-for-command-line-users">For command line users</a>    <ol>
       <li><a href="#terminator" id="markdown-toc-terminator">Terminator</a></li>
+      <li><a href="#fonts" id="markdown-toc-fonts">Fonts</a></li>
       <li><a href="#cdpath" id="markdown-toc-cdpath">CDPATH</a></li>
       <li><a href="#oh-my-zsh" id="markdown-toc-oh-my-zsh">Oh My Zsh</a></li>
       <li><a href="#zim" id="markdown-toc-zim">Zim</a></li>
+      <li><a href="#starship-prompt" id="markdown-toc-starship-prompt">Starship Prompt</a></li>
+      <li><a href="#zoxide" id="markdown-toc-zoxide">Zoxide</a></li>
+      <li><a href="#generic-colouriser" id="markdown-toc-generic-colouriser">Generic Colouriser</a></li>
+      <li><a href="#fzf" id="markdown-toc-fzf">fzf</a></li>
+      <li><a href="#lsd-lsdeluxe" id="markdown-toc-lsd-lsdeluxe">LSD (LSDeluxe)</a></li>
       <li><a href="#httpie" id="markdown-toc-httpie">HTTPie</a></li>
       <li><a href="#the-silver-searcher" id="markdown-toc-the-silver-searcher">The Silver Searcher</a></li>
       <li><a href="#tree" id="markdown-toc-tree">Tree</a></li>
       <li><a href="#jq" id="markdown-toc-jq">Jq</a></li>
       <li><a href="#fd" id="markdown-toc-fd">fd</a></li>
+      <li><a href="#sd" id="markdown-toc-sd">sd</a></li>
       <li><a href="#bat" id="markdown-toc-bat">bat</a></li>
       <li><a href="#htop" id="markdown-toc-htop">htop</a></li>
       <li><a href="#glances" id="markdown-toc-glances">Glances</a></li>
+      <li><a href="#btop" id="markdown-toc-btop">Btop++</a></li>
+      <li><a href="#lnav" id="markdown-toc-lnav">lnav</a></li>
+      <li><a href="#duf" id="markdown-toc-duf">duf</a></li>
+      <li><a href="#dust" id="markdown-toc-dust">dust</a></li>
+      <li><a href="#procs" id="markdown-toc-procs">procs</a></li>
     </ol>
   </li>
   <li><a href="#for-gui-desktop-users" id="markdown-toc-for-gui-desktop-users">For GUI desktop users</a>    <ol>
@@ -293,6 +305,7 @@ little easier.</p>
       <li><a href="#meld" id="markdown-toc-meld">Meld</a></li>
       <li><a href="#git-credential-manager" id="markdown-toc-git-credential-manager">Git Credential Manager</a></li>
       <li><a href="#github-cli" id="markdown-toc-github-cli">GitHub CLI</a></li>
+      <li><a href="#git-interactive-rebase-tool" id="markdown-toc-git-interactive-rebase-tool">Git Interactive Rebase Tool</a></li>
       <li><a href="#postman" id="markdown-toc-postman">Postman</a></li>
     </ol>
   </li>
@@ -415,6 +428,18 @@ grids of separate console windows (as well as supporting multiple tabs).</p>
 <p>Tip: right click on the window to bring up the menu to split the screen or open
 a new tab.</p>
 
+<h3 id="fonts">Fonts</h3>
+
+<p>NotoColorEmoji: <a href="https://github.com/googlefonts/noto-emoji">https://github.com/googlefonts/noto-emoji</a></p>
+
+<p>JetBrainsMono Nerd Font: <a href="https://www.nerdfonts.com">https://www.nerdfonts.com</a></p>
+
+<p>Many modern command line tools output emojis so we’ve included NotoColorEmoji to
+display those characters. Starship prompt and LSD also require a Nerd Font to
+display correctly, so we’ve included JetBrainsMono Nerd Font.</p>
+
+<p><img src="/development-environment/images/fonts.png" alt="Fonts sample" /></p>
+
 <h3 id="cdpath">CDPATH</h3>
 
 <p>Website: <a href="http://zsh.sourceforge.net/Intro/intro_13.html">http://zsh.sourceforge.net/Intro/intro_13.html</a></p>
@@ -477,7 +502,7 @@ produces 160 suggestions.</p>
 
 <h3 id="zim">Zim</h3>
 
-<p>Website: https://zimfw.sh/](https://zimfw.sh/)</p>
+<p>Website: <a href="https://zimfw.sh">https://zimfw.sh</a></p>
 
 <p>Oh My Zsh has a wide selection of plugins, but sometimes you want to install
 plugins from elsewhere. This is where Zim comes in, Zim is a plugin
@@ -485,6 +510,58 @@ manager for Zsh and can install Zsh plugins from Git repositories.</p>
 
 <p>You can find a list of third-party plugins at:
 <a href="https://github.com/unixorn/awesome-zsh-plugins#plugins">https://github.com/unixorn/awesome-zsh-plugins#plugins</a></p>
+
+<h3 id="starship-prompt">Starship Prompt</h3>
+
+<p>Website: <a href="https://starship.rs">https://starship.rs</a></p>
+
+<p>A fast command line prompt with lots of features.</p>
+
+<p><img src="/development-environment/images/starship.png" alt="Starship Prompt" /></p>
+
+<h3 id="zoxide">Zoxide</h3>
+
+<p>Website: <a href="https://github.com/ajeetdsouza/zoxide">https://github.com/ajeetdsouza/zoxide</a></p>
+
+<p>Easily <code class="language-plaintext highlighter-rouge">cd</code> into directories you’ve previously visited. Run <code class="language-plaintext highlighter-rouge">zi</code> so see a
+searchable list of previous directories.</p>
+
+<p><img src="/development-environment/images/zoxide.png" alt="Zoxide" /></p>
+
+<h3 id="generic-colouriser">Generic Colouriser</h3>
+
+<p>Website: <a href="https://github.com/garabik/grc">https://github.com/garabik/grc</a></p>
+
+<p>Colorizes the output of several common command line tools.</p>
+
+<p><img src="/development-environment/images/grc.png" alt="Dig with GRC" /></p>
+
+<h3 id="fzf">fzf</h3>
+
+<p>Website: <a href="https://github.com/junegunn/fzf">https://github.com/junegunn/fzf</a></p>
+
+<p>Command line fuzzy finder.</p>
+
+<p>Integrates in several ways:</p>
+<ul>
+  <li>Reverse shell history search <code class="language-plaintext highlighter-rouge">CTRL-R</code></li>
+  <li>Find files or directories e.g. <code class="language-plaintext highlighter-rouge">cd **&lt;TAB&gt;</code></li>
+  <li>Complete process IDs e.g. <code class="language-plaintext highlighter-rouge">kill -9 **&lt;TAB&gt;</code></li>
+</ul>
+
+<p><a href="https://github.com/Aloxaf/fzf-tab">fzf-tab</a> is used to integrate <code class="language-plaintext highlighter-rouge">fzf</code> with
+Zsh tab completion.</p>
+
+<p><img src="/development-environment/images/reverse-search.png" alt="Zsh reverse search" /></p>
+
+<h3 id="lsd-lsdeluxe">LSD (LSDeluxe)</h3>
+
+<p>Website: <a href="https://github.com/lsd-rs/lsd">https://github.com/lsd-rs/lsd</a></p>
+
+<p>A <code class="language-plaintext highlighter-rouge">ls</code> replacement with more colorful output filetype icons. A Zsh alias is used
+to invoke <code class="language-plaintext highlighter-rouge">lsd</code> when running <code class="language-plaintext highlighter-rouge">ls</code>.</p>
+
+<p><img src="/development-environment/images/lsd.png" alt="LSDeluxe" /></p>
 
 <h3 id="httpie">HTTPie</h3>
 
@@ -555,6 +632,15 @@ name) e.g:</p>
 <p><code class="language-plaintext highlighter-rouge">fd</code> is still capable of handling more advanced use-cases as well, e.g. you can
 specify the type of file or a command to execute.</p>
 
+<h3 id="sd">sd</h3>
+
+<p>Website: <a href="https://github.com/chmln/sd">https://github.com/chmln/sd</a></p>
+
+<p>A tool for performing find and replace in files/streams from the command line.
+Simple alternative to <code class="language-plaintext highlighter-rouge">sed</code>.</p>
+
+<p><img src="/development-environment/images/sd.png" alt="sd" /></p>
+
 <h3 id="bat">bat</h3>
 
 <p>Website: <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a></p>
@@ -584,6 +670,48 @@ than <code class="language-plaintext highlighter-rouge">top</code> or <code clas
 disk I/O, network I/O and warnings/alerts.</p>
 
 <p><img src="/development-environment/images/glances.png" alt="Glances terminal output" /></p>
+
+<h3 id="btop">Btop++</h3>
+
+<p>Website: <a href="https://github.com/aristocratos/btop">https://github.com/aristocratos/btop</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Btop++</code> shows a broad view of the what’s going on on your system in a more
+graphical style.</p>
+
+<p><img src="/development-environment/images/btop.png" alt="Btop++" /></p>
+
+<h3 id="lnav">lnav</h3>
+
+<p>Website: <a href="https://lnav.org">https://lnav.org</a></p>
+
+<p>A tool for viewing and navigating log files.</p>
+
+<p><img src="/development-environment/images/lnav.png" alt="lnav" /></p>
+
+<h3 id="duf">duf</h3>
+
+<p>Website: <a href="https://github.com/muesli/duf">https://github.com/muesli/duf</a></p>
+
+<p>An alternative to <code class="language-plaintext highlighter-rouge">df</code> for showing disk usage and free space.</p>
+
+<p><img src="/development-environment/images/duf.png" alt="duf" /></p>
+
+<h3 id="dust">dust</h3>
+
+<p>Website: <a href="https://github.com/bootandy/dust">https://github.com/bootandy/dust</a></p>
+
+<p>A more graphical alternative to <code class="language-plaintext highlighter-rouge">du</code> for displaying dusk usage for files and
+directories.</p>
+
+<p><img src="/development-environment/images/dust.png" alt="dust" /></p>
+
+<h3 id="procs">procs</h3>
+
+<p>Website: <a href="https://github.com/dalance/procs">https://github.com/dalance/procs</a></p>
+
+<p>An improved alternative to <code class="language-plaintext highlighter-rouge">ps</code> with color output and additional features.</p>
+
+<p><img src="/development-environment/images/procs.png" alt="procs" /></p>
 
 <h2 id="for-gui-desktop-users">For GUI desktop users</h2>
 
@@ -900,6 +1028,14 @@ from the command line.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gh issue list
 </code></pre></div></div>
+
+<h3 id="git-interactive-rebase-tool">Git Interactive Rebase Tool</h3>
+
+<p>Website: <a href="https://github.com/MitMaro/git-interactive-rebase-tool">https://github.com/MitMaro/git-interactive-rebase-tool</a></p>
+
+<p>A terminal based sequence editor for Git rebase.</p>
+
+<p><img src="/development-environment/images/girt.png" alt="Git Interactive Rebase Tool" /></p>
 
 <h3 id="postman">Postman</h3>
 
@@ -1243,7 +1379,7 @@ with the <code class="language-plaintext highlighter-rouge">molecule</code> comm
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-09-17">September 17, 2023</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-10-01">October 01, 2023</time></p>
         
       </footer>
 
