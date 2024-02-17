@@ -170,7 +170,7 @@ plugins from elsewhere. This is where Zim comes in, Zim is a plugin
 manager for Zsh and can install Zsh plugins from Git repositories.
 
 You can find a list of third-party plugins at:
-[https://github.com/unixorn/awesome-zsh-plugins#plugins](https://github.com/unixorn/awesome-zsh-plugins#plugins)
+[https://github.com/unixorn/awesome-zsh-plugins/blob/main/README.md](https://github.com/unixorn/awesome-zsh-plugins/blob/main/README.md)
 
 ### Starship Prompt
 
