@@ -21,3 +21,7 @@ end_of_line = lf
 # Match shfmt
 [*.sh]
 indent_style = tab
+
+# Follow VS Code defaults
+[devcontainer.json]
+indent_style = tab
