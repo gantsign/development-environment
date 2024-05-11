@@ -20,7 +20,7 @@ gem 'webrick', '1.8.1', group: :jekyll_plugins
 # gem "jekyll"
 
 # Install minimal-mistakes theme
-gem 'minimal-mistakes-jekyll', '4.24.0'
+gem 'minimal-mistakes-jekyll', '4.26.1'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
